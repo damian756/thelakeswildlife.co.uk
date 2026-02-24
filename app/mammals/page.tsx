@@ -16,5 +16,26 @@ export const metadata: Metadata = {
 
 export default function MammalsPage() {
   const species = getAllSpecies("mammals");
-  return <SpeciesList category="mammals" species={species} />;
+
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Mammals of the Sefton Coast",
+    description: "Mammals, reptiles and amphibians of the Sefton Coast — including Red Squirrels, Grey Seals, Natterjack Toads, Otters and bats.",
+    url,
+    numberOfItems: species.length,
+    itemListElement: species.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: s.commonName,
+      url: `https://seftoncoastwildlife.co.uk/mammals/${s.id}`,
+    })),
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      <SpeciesList category="mammals" species={species} />
+    </>
+  );
 }

@@ -13,8 +13,45 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title, description },
 };
 
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://seftoncoastwildlife.co.uk/#website",
+      url: "https://seftoncoastwildlife.co.uk",
+      name: "Sefton Coast Wildlife",
+      description: "Independent guide to wildlife on the Sefton Coast — birds, insects, plants and mammals from Southport to Formby.",
+      publisher: { "@id": "https://seftoncoastwildlife.co.uk/#organization" },
+      inLanguage: "en-GB",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://seftoncoastwildlife.co.uk/#organization",
+      name: "Sefton Coast Wildlife",
+      url: "https://seftoncoastwildlife.co.uk",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://seftoncoastwildlife.co.uk/og-default.png",
+        width: 1200,
+        height: 630,
+      },
+      sameAs: [
+        "https://www.southportguide.co.uk",
+        "https://www.formbyguide.co.uk",
+        "https://www.seftonlinks.com",
+        "https://seftoncoast.network",
+        "https://www.linkedin.com/company/churchtownmedia",
+        "https://churchtownmedia.co.uk",
+      ],
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
     <div className="mx-auto max-w-6xl px-4 py-12">
       <section className="mb-16">
         <p className="text-sm font-medium text-[var(--marsh)] uppercase tracking-wider mb-2">
@@ -92,5 +129,6 @@ export default function HomePage() {
         </ul>
       </section>
     </div>
+    </>
   );
 }

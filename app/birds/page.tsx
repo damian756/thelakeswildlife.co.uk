@@ -16,5 +16,26 @@ export const metadata: Metadata = {
 
 export default function BirdsPage() {
   const species = getAllSpecies("birds");
-  return <SpeciesList category="birds" species={species} />;
+
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Birds of the Sefton Coast",
+    description: "Species database of birds recorded on the Sefton Coast — Marshside RSPB, the marshes, dunes and coastline from Southport to Formby.",
+    url,
+    numberOfItems: species.length,
+    itemListElement: species.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: s.commonName,
+      url: `https://seftoncoastwildlife.co.uk/birds/${s.id}`,
+    })),
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      <SpeciesList category="birds" species={species} />
+    </>
+  );
 }

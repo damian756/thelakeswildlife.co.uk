@@ -71,6 +71,12 @@ export function SpeciesJsonLd({ species, category, slug, imageUrl }: SpeciesJson
     headline: `${species.commonName} on the Sefton Coast`,
     description: species.description,
     about: { "@id": pageUrl },
+    author: {
+      "@type": "Person",
+      name: "Ed",
+      description: "Ed has been walking the Sefton Coast since the 1980s. He keeps a yearly bird tally, owns more waterproof jackets than he'd care to admit, and has strong opinions about which hide has the best light in the morning. Retired geography teacher. Still gets up at five.",
+      url: baseUrl,
+    },
     publisher: {
       "@type": "Organization",
       name: "Sefton Coast Wildlife",

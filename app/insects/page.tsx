@@ -16,5 +16,26 @@ export const metadata: Metadata = {
 
 export default function InsectsPage() {
   const species = getAllSpecies("insects");
-  return <SpeciesList category="insects" species={species} />;
+
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Insects of the Sefton Coast",
+    description: "Butterflies, moths, dragonflies, beetles and bees recorded on the Sefton Coast dunes, heathland and dune slacks.",
+    url,
+    numberOfItems: species.length,
+    itemListElement: species.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: s.commonName,
+      url: `https://seftoncoastwildlife.co.uk/insects/${s.id}`,
+    })),
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      <SpeciesList category="insects" species={species} />
+    </>
+  );
 }
