@@ -14,6 +14,27 @@ const statusConfig = {
 
 type StatusFilter = "all" | "red" | "amber" | "green";
 
+type SortOption = "default" | "alpha" | "rarity" | "season" | "scientific";
+
+const SORT_OPTIONS: { value: SortOption; label: string }[] = [
+  { value: "default",    label: "Default" },
+  { value: "alpha",      label: "A–Z (common name)" },
+  { value: "rarity",     label: "Rarity (Red first)" },
+  { value: "season",     label: "Season (year-round first)" },
+  { value: "scientific", label: "Scientific name (A–Z)" },
+];
+
+const STATUS_ORDER: Record<string, number> = { red: 0, amber: 1, green: 2, unknown: 3 };
+
+const SEASON_ORDER: Record<string, number> = {
+  "year-round": 0,
+  winter: 1,
+  summer: 2,
+  passage: 3,
+  spring: 4,
+  autumn: 5,
+};
+
 interface SeasonOption {
   value: SeasonTag | "all";
   label: string;
@@ -60,6 +81,7 @@ export function SpeciesListClient({ category, species, imageMap }: SpeciesListCl
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
   const [seasonFilter, setSeasonFilter] = useState<SeasonTag | "all">("all");
   const [habitatFilter, setHabitatFilter] = useState("all");
+  const [sortBy, setSortBy] = useState<SortOption>("default");
 
   const seasonOptions = seasonOptionsByCategory[category] ?? null;
 
@@ -69,7 +91,7 @@ export function SpeciesListClient({ category, species, imageMap }: SpeciesListCl
   );
 
   const filtered = useMemo(() => {
-    return species.filter((s) => {
+    const result = species.filter((s) => {
       if (query) {
         const q = query.toLowerCase();
         if (
@@ -85,16 +107,40 @@ export function SpeciesListClient({ category, species, imageMap }: SpeciesListCl
       }
       return true;
     });
-  }, [species, query, statusFilter, seasonFilter, habitatFilter, category]);
+
+    if (sortBy === "default") return result;
+
+    return [...result].sort((a, b) => {
+      switch (sortBy) {
+        case "alpha":
+          return a.commonName.localeCompare(b.commonName);
+        case "rarity": {
+          const ra = STATUS_ORDER[a.conservationStatus ?? "unknown"] ?? 3;
+          const rb = STATUS_ORDER[b.conservationStatus ?? "unknown"] ?? 3;
+          return ra !== rb ? ra - rb : a.commonName.localeCompare(b.commonName);
+        }
+        case "season": {
+          const sa = SEASON_ORDER[classifySeason(a.seasonalPresence, category) ?? ""] ?? 99;
+          const sb = SEASON_ORDER[classifySeason(b.seasonalPresence, category) ?? ""] ?? 99;
+          return sa !== sb ? sa - sb : a.commonName.localeCompare(b.commonName);
+        }
+        case "scientific":
+          return a.scientificName.localeCompare(b.scientificName);
+        default:
+          return 0;
+      }
+    });
+  }, [species, query, statusFilter, seasonFilter, habitatFilter, category, sortBy]);
 
   const hasActiveFilter =
-    query !== "" || statusFilter !== "all" || seasonFilter !== "all" || habitatFilter !== "all";
+    query !== "" || statusFilter !== "all" || seasonFilter !== "all" || habitatFilter !== "all" || sortBy !== "default";
 
   function clearAll() {
     setQuery("");
     setStatusFilter("all");
     setSeasonFilter("all");
     setHabitatFilter("all");
+    setSortBy("default");
   }
 
   return (
@@ -183,23 +229,40 @@ export function SpeciesListClient({ category, species, imageMap }: SpeciesListCl
         )}
       </div>
 
-      {/* Results count + clear */}
-      <div className="flex items-center justify-between mb-5">
+      {/* Results count + arrange by */}
+      <div className="flex items-center justify-between gap-4 mb-5">
         <p className="text-sm text-[var(--slate)]/60">
           {hasActiveFilter ? (
-            <>Showing <strong className="text-[var(--slate)]">{filtered.length}</strong> of {species.length} species</>
+            <>
+              Showing <strong className="text-[var(--slate)]">{filtered.length}</strong> of {species.length} species
+              {" · "}
+              <button onClick={clearAll} className="text-[var(--marsh)] hover:underline font-medium">
+                Clear
+              </button>
+            </>
           ) : (
             <>{species.length} species</>
           )}
         </p>
-        {hasActiveFilter && (
-          <button
-            onClick={clearAll}
-            className="text-xs text-[var(--marsh)] hover:underline font-medium"
+
+        {/* Arrange by */}
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <label htmlFor="sort-select" className="text-xs text-[var(--slate)]/60 hidden sm:block whitespace-nowrap">
+            Arrange by
+          </label>
+          <select
+            id="sort-select"
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as SortOption)}
+            className="text-xs border border-[var(--dune)] rounded-lg px-3 py-1.5 bg-white text-[var(--slate)] focus:outline-none focus:border-[var(--marsh)] cursor-pointer transition"
           >
-            Clear filters
-          </button>
-        )}
+            {SORT_OPTIONS.map((o) => (
+              <option key={o.value} value={o.value}>
+                {o.label}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* Grid */}
