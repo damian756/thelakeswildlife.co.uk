@@ -265,6 +265,14 @@ export function SpeciesDetail({ category, species, related, wikiImage, slug }: S
                     → Formby & Sefton Coast guide
                   </Link>
                 )}
+                {species.shortLocation.includes("Formby") && category === "mammals" && (
+                  <a
+                    href="https://www.formbyguide.co.uk/red-squirrels-formby"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition"
+                  >
+                    → Visiting the Formby red squirrel reserve — practical guide
+                  </a>
+                )}
                 {species.shortLocation.includes("Ainsdale") && (
                   <Link href="/nature/sefton-coast" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
                     → Ainsdale NNR & Sefton Coast guide

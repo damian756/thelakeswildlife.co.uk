@@ -238,6 +238,18 @@ export default function MarshsidePage() {
           ))}
         </div>
 
+        {/* Planning your visit */}
+        <p className="text-[var(--slate)] text-sm leading-relaxed mb-10">
+          Marshside is on the northern edge of Southport — Churchtown village is five minutes from the reserve and has good options for lunch or coffee after a morning on the marsh. If you&apos;re making a full day or an overnight trip,{" "}
+          <a
+            href="https://www.southportguide.co.uk"
+            className="font-medium text-[var(--marsh)] underline underline-offset-2 hover:text-[var(--forest)] transition-colors"
+          >
+            SouthportGuide covers accommodation and dining in Southport
+          </a>
+          .
+        </p>
+
         {/* Links */}
         <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--dune)]">
           <Link href="/birds" className="text-[var(--marsh)] font-medium hover:underline text-sm">Browse the bird species database →</Link>

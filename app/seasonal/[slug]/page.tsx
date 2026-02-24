@@ -307,14 +307,14 @@ export default async function SeasonalSlugPage({ params }: Props) {
 
       {/* Page header band */}
       <div className="bg-[var(--forest)] text-white">
-        <div className="mx-auto max-w-3xl px-4 py-10">
+    <div className="mx-auto max-w-3xl px-4 py-10">
           <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <Link href="/seasonal" className="hover:text-white/80 transition">Seasonal guides</Link>
             <span>/</span>
             <span className="text-white/80">{page.title}</span>
-          </nav>
+      </nav>
           <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">
             Seasonal guide · {page.period}
           </p>
@@ -369,7 +369,7 @@ export default async function SeasonalSlugPage({ params }: Props) {
             )
           )}
         </div>
-      </div>
+    </div>
     </>
   );
 }
