@@ -39,7 +39,7 @@ export function SpeciesList({ category, species, imageMap }: SpeciesListProps) {
             <span>/</span>
             <span className="text-white/80">{label}</span>
           </nav>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+          <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">
             {label} of the Sefton Coast
           </h1>
           <p className="text-white/70 max-w-2xl leading-relaxed">{description}</p>

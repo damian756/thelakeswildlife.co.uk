@@ -219,7 +219,7 @@ export function SpeciesListClient({ category, species, imageMap }: SpeciesListCl
               <li key={s.id}>
                 <Link
                   href={`/${category}/${s.id}`}
-                  className="block rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] hover:shadow-md transition group h-full overflow-hidden"
+                  className="card-hover block rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] transition group h-full overflow-hidden"
                 >
                   {thumb && (
                     <div className="aspect-[4/3] overflow-hidden bg-[var(--dune)]">

@@ -36,23 +36,35 @@ export default function SeftonCoastPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
 
-      <div className="mx-auto max-w-3xl px-4 py-10">
-        <nav className="text-sm text-[var(--slate)]/60 mb-6 flex items-center gap-1.5">
-          <Link href="/" className="hover:text-[var(--marsh)] transition">Home</Link>
-          <span>/</span>
-          <Link href="/nature" className="hover:text-[var(--marsh)] transition">Nature</Link>
-          <span>/</span>
-          <span className="text-[var(--slate)]">The Sefton Coast</span>
-        </nav>
+      {/* Page header band */}
+      <div className="bg-[var(--forest)] text-white">
+        <div className="mx-auto max-w-3xl px-4 py-10">
+          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-white/80 transition">Home</Link>
+            <span>/</span>
+            <Link href="/nature" className="hover:text-white/80 transition">Nature</Link>
+            <span>/</span>
+            <span className="text-white/80">The Sefton Coast</span>
+          </nav>
+          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">
+            SSSI · 21 miles · Merseyside to Lancashire
+          </p>
+          <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+            The Sefton Coast
+          </h1>
+          <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
+            Twenty-one miles of coastline between the Mersey and the Ribble — saltmarsh, sand dunes, pinewoods and one of the most important stretches of coastal habitat in England.
+          </p>
+        </div>
+      </div>
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-[var(--forest)] mb-4">
-          The Sefton Coast
-        </h1>
+      <div className="mx-auto max-w-3xl px-4 py-10">
         <p className="text-lg text-[var(--slate)] mb-8 leading-relaxed">
-          Twenty-one miles of coastline between the Mersey and the Ribble. Saltmarsh, sand dunes, pinewoods, managed reserves and one of the most important stretches of coastal habitat in England. Not many people outside the North West know it exists. That's their loss.
+          Not many people outside the North West know it exists. That&apos;s their loss. From Marshside&apos;s 80,000+ Pink-footed Geese to Red Squirrels in the Formby pinewoods — this coastline punches well above its weight for wildlife.
         </p>
 
-        <h2 className="text-2xl font-bold text-[var(--forest)] mb-3">Where it is</h2>
+        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">Geography</p>
+        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-3">Where it is</h2>
         <p className="text-[var(--slate)] mb-6 leading-relaxed text-sm">
           The Sefton Coast runs along the Lancashire and Merseyside shoreline from Crosby in the south to Southport in the north — taking in Formby, Ainsdale, and the Ribble Estuary at the top end. It sits on the edge of two major conurbations (Liverpool and Manchester are both within an hour) but feels entirely separate from both.
         </p>
@@ -60,7 +72,8 @@ export default function SeftonCoastPage() {
           The whole stretch is designated as a Site of Special Scientific Interest (SSSI). Large portions are managed by the National Trust, RSPB, Natural England and the Sefton Council ranger service. It's one of the few places in lowland England where you can still see nationally rare habitats in reasonable condition.
         </p>
 
-        <h2 className="text-2xl font-bold text-[var(--forest)] mb-4">Key habitats</h2>
+        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">Ecosystems</p>
+        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">Key habitats</h2>
 
         <div className="space-y-6 mb-10">
           <div className="rounded-xl border border-[var(--dune)] p-5">
@@ -98,7 +111,8 @@ export default function SeftonCoastPage() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold text-[var(--forest)] mb-4">Wildlife summary</h2>
+        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">Species database</p>
+        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">Wildlife summary</h2>
         <div className="grid sm:grid-cols-2 gap-4 mb-10">
           {[
             { category: "Birds", stat: "119 species recorded", detail: "Including 42 winter visitors and 13 breeding summer species", href: "/birds" },
@@ -109,7 +123,7 @@ export default function SeftonCoastPage() {
             <Link
               key={item.href}
               href={item.href}
-              className="block p-4 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] hover:shadow-sm transition"
+              className="card-hover block p-4 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] transition"
             >
               <span className="text-xs font-bold uppercase tracking-wide text-[var(--marsh)]">{item.category}</span>
               <p className="font-semibold text-[var(--forest)] mt-1">{item.stat}</p>
@@ -118,7 +132,8 @@ export default function SeftonCoastPage() {
           ))}
         </div>
 
-        <h2 className="text-2xl font-bold text-[var(--forest)] mb-4">Conservation</h2>
+        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">Looking after it</p>
+        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">Conservation</h2>
         <p className="text-[var(--slate)] mb-4 text-sm leading-relaxed">
           The Sefton Coast faces the same pressures as coastal habitats everywhere — sea level rise, erosion, visitor pressure and invasive species. The dune system is naturally eroding at the seaward edge while scrubbing over at the landward side. Both processes reduce habitat quality for dune specialists.
         </p>

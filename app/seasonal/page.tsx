@@ -1,9 +1,8 @@
 import Link from "next/link";
-
 import type { Metadata } from "next";
 
 const title = "Seasonal Wildlife Guides — Sefton Coast";
-const description = "What to see when on the Sefton Coast — pink-footed geese, wader migration, breeding birds and seasonal highlights.";
+const description = "What to see when on the Sefton Coast — pink-footed geese, wader migration, breeding birds and winter wildfowl.";
 const url = "https://seftoncoastwildlife.co.uk/seasonal";
 
 export const metadata: Metadata = {
@@ -15,32 +14,78 @@ export const metadata: Metadata = {
 };
 
 const seasons = [
-  { slug: "pink-footed-geese", title: "Pink-footed geese", period: "October–March" },
-  { slug: "wader-migration", title: "Wader migration", period: "Spring & autumn" },
-  { slug: "breeding-birds", title: "Breeding birds", period: "April–July" },
-  { slug: "winter-wildfowl", title: "Winter wildfowl", period: "November–February" },
+  {
+    slug: "pink-footed-geese",
+    title: "Pink-footed Geese",
+    period: "October – March",
+    desc: "Up to 80,000 geese arrive from Iceland each autumn — one of the great wildlife spectacles of northern England.",
+    tag: "Peak season",
+  },
+  {
+    slug: "wader-migration",
+    title: "Wader Migration",
+    period: "Spring & Autumn",
+    desc: "Dunlin, Curlew Sandpiper, Little Stint and Black-tailed Godwit — the scrapes fill with birds that have crossed continents.",
+    tag: "April–May & Jul–Oct",
+  },
+  {
+    slug: "breeding-birds",
+    title: "Breeding Birds",
+    period: "April – July",
+    desc: "Avocets on the Marshside scrapes, Little Terns at Ainsdale, Sedge Warblers and Reed Buntings on the marsh edge.",
+    tag: "Nesting season",
+  },
+  {
+    slug: "winter-wildfowl",
+    title: "Winter Wildfowl",
+    period: "November – February",
+    desc: "Teal, Wigeon, Pintail and Shoveler pack the lagoons. Short-eared Owls quarter the saltmarsh at dusk.",
+    tag: "Winter guide",
+  },
 ];
 
 export default function SeasonalPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="text-3xl font-bold text-[var(--forest)] mb-6">Seasonal guides</h1>
-      <p className="text-[var(--slate)] mb-8 max-w-2xl">
-        When to visit the Sefton Coast for specific wildlife — from the spectacle of tens of thousands of pink-footed geese to spring wader passage and summer breeders.
-      </p>
-      <ul className="grid gap-4 md:grid-cols-2">
-        {seasons.map((s) => (
-          <li key={s.slug}>
-            <Link
-              href={`/seasonal/${s.slug}`}
-              className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
-            >
-              <h2 className="text-xl font-semibold text-[var(--forest)]">{s.title}</h2>
-              <p className="text-sm text-[var(--slate)] mt-1">{s.period}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      {/* Page header */}
+      <div className="bg-[var(--forest)] text-white">
+        <div className="mx-auto max-w-5xl px-4 py-10">
+          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-white/80 transition">Home</Link>
+            <span>/</span>
+            <span className="text-white/80">Seasonal guides</span>
+          </nav>
+          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">
+            Year-round watching
+          </p>
+          <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">Seasonal guides</h1>
+          <p className="text-white/70 max-w-2xl leading-relaxed">
+            When to visit the Sefton Coast for specific wildlife — from the spectacle of 80,000 Pink-footed Geese to spring wader passage and summer breeders.
+          </p>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl px-4 py-10">
+        <ul className="grid gap-5 md:grid-cols-2">
+          {seasons.map((s) => (
+            <li key={s.slug}>
+              <Link
+                href={`/seasonal/${s.slug}`}
+                className="card-hover group block p-6 rounded-2xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)]/50"
+              >
+                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--marsh)] bg-[var(--marsh)]/10 px-2 py-0.5 rounded-full mb-3">
+                  {s.tag}
+                </span>
+                <h2 className="font-display text-xl font-bold text-[var(--forest)] group-hover:text-[var(--marsh)] transition mb-1">
+                  {s.title}
+                </h2>
+                <p className="text-xs text-[var(--slate)]/60 mb-3">{s.period}</p>
+                <p className="text-sm text-[var(--slate)] leading-relaxed">{s.desc}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }

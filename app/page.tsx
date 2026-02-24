@@ -1,9 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllSpecies } from "@/lib/species";
+import { getWikipediaImage } from "@/lib/wikipedia";
+import { BLOG_POSTS } from "@/content/blog/posts";
 
 const title = "Sefton Coast Wildlife — Birds, Nature & Wildlife Guide";
-const description = "Independent guide to wildlife on the Sefton Coast — Marshside RSPB, bird species database, insects, plants and mammals from Southport to Formby.";
+const description =
+  "Independent guide to wildlife on the Sefton Coast — Marshside RSPB, bird species database, insects, plants and mammals from Southport to Formby.";
 const url = "https://seftoncoastwildlife.co.uk";
 
 export const metadata: Metadata = {
@@ -49,104 +52,334 @@ const orgJsonLd = {
   ],
 };
 
-export default function HomePage() {
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+}
+
+export default async function HomePage() {
   const birdCount = getAllSpecies("birds").length;
   const insectCount = getAllSpecies("insects").length;
   const plantCount = getAllSpecies("plants").length;
   const mammalCount = getAllSpecies("mammals").length;
+  const totalCount = birdCount + insectCount + plantCount + mammalCount;
+
+  // Fetch hero image for homepage (Dunlin flock landscape)
+  const heroImage = await getWikipediaImage("Red Knot").then((img) => img?.src ?? null);
+
+  // Fetch 3 recent blog post hero images
+  const recentPosts = BLOG_POSTS.slice(0, 3);
+  const blogImages = await Promise.all(
+    recentPosts.map((p) =>
+      getWikipediaImage(p.heroWikipediaTitle).then((img) => img?.src ?? null)
+    )
+  );
+
+  const speciesCategories = [
+    {
+      href: "/birds",
+      label: "Birds",
+      count: birdCount,
+      desc: "Waders, wildfowl, raptors and passerines",
+      wikiTitle: "Dunlin",
+    },
+    {
+      href: "/insects",
+      label: "Insects",
+      count: insectCount,
+      desc: "Butterflies, moths and invertebrates",
+      wikiTitle: "Natterjack toad",
+    },
+    {
+      href: "/plants",
+      label: "Plants",
+      count: plantCount,
+      desc: "Saltmarsh and dune flora",
+      wikiTitle: "Ammophila arenaria",
+    },
+    {
+      href: "/mammals",
+      label: "Mammals",
+      count: mammalCount,
+      desc: "Including red squirrels at Formby",
+      wikiTitle: "Red squirrel",
+    },
+  ];
+
+  const categoryImages = await Promise.all(
+    speciesCategories.map((c) =>
+      getWikipediaImage(c.wikiTitle).then((img) => img?.src ?? null)
+    )
+  );
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
-    <div className="mx-auto max-w-6xl px-4 py-12">
-      <section className="mb-16">
-        <p className="text-sm font-medium text-[var(--marsh)] uppercase tracking-wider mb-2">
-          Sefton Coast · Merseyside
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
+
+      {/* ── HERO ─────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden">
+        <div className="grid lg:grid-cols-2 min-h-[520px]">
+          {/* Left panel */}
+          <div className="bg-[var(--forest)] flex flex-col justify-center px-8 md:px-14 py-16 lg:py-20 relative z-10">
+            <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-4">
+              Marshside · Ainsdale · Formby
+            </p>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              Wildlife on the<br />
+              <span className="text-[var(--gold)]">Sefton Coast.</span>
+            </h1>
+            <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-lg">
+              {totalCount}+ species recorded. An independent guide to the birds, insects, plants
+              and mammals of the marshes, reserves and coastline from Southport to Formby.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/nature/marshside-rspb"
+                className="rounded-lg bg-[var(--gold)] px-6 py-3 text-sm font-semibold text-[var(--forest)] hover:opacity-90 transition"
+              >
+                Marshside RSPB →
+              </Link>
+              <Link
+                href="/birds"
+                className="rounded-lg border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition"
+              >
+                Species database
+              </Link>
+            </div>
+          </div>
+
+          {/* Right panel — hero image */}
+          <div className="relative min-h-[300px] lg:min-h-0 overflow-hidden bg-[var(--forest)]">
+            {heroImage ? (
+              <img
+                src={heroImage}
+                alt="Wading birds on the Sefton Coast"
+                className="absolute inset-0 w-full h-full object-cover object-center"
+              />
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-br from-[var(--marsh)] to-[var(--forest)]" />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--forest)]/40 via-transparent to-transparent lg:from-transparent" />
+          </div>
+        </div>
+
+        {/* Wave divider */}
+        <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
+          <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-8 lg:h-10">
+            <path d="M0 40 Q360 0 720 20 Q1080 40 1440 10 L1440 40 Z" fill="var(--sand)" />
+          </svg>
+        </div>
+      </section>
+
+      {/* ── STATS STRIP ──────────────────────────────────────── */}
+      <section className="bg-[var(--dune)] border-b border-[var(--foam)]/30">
+        <div className="mx-auto max-w-6xl px-4 py-5">
+          <div className="flex flex-wrap gap-6 md:gap-10 items-center justify-center md:justify-start text-sm text-[var(--slate)]">
+            <span className="flex items-center gap-2">
+              <strong className="text-[var(--forest)] font-bold">{totalCount}+</strong> species recorded
+            </span>
+            <span className="flex items-center gap-2">
+              <strong className="text-[var(--forest)] font-bold">80,000+</strong> Pink-footed Geese (peak winter)
+            </span>
+            <span className="flex items-center gap-2">
+              <strong className="text-[var(--forest)] font-bold">Free entry</strong> to Marshside RSPB
+            </span>
+            <span className="flex items-center gap-2">
+              <strong className="text-[var(--forest)] font-bold">67km</strong> of protected coastline
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SPECIES DATABASE ─────────────────────────────────── */}
+      <section className="mx-auto max-w-6xl px-4 pt-16 pb-12">
+        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+          Species database
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold text-[var(--forest)] leading-tight mb-4">
-          Wildlife on the Sefton Coast
-        </h1>
-        <p className="text-lg text-[var(--slate)] max-w-2xl mb-8">
-          An independent guide to the birds, insects, plants and mammals you’ll find on the marshes, 
-          reserves and coastline from Southport to Formby — including Marshside RSPB Reserve.
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mb-3">
+          What lives here
+        </h2>
+        <p className="text-[var(--slate)] max-w-2xl mb-8 leading-relaxed">
+          From Pink-footed Geese arriving from Iceland in October to Red Squirrels in the Formby pinewoods — the Sefton Coast holds some of the most important wildlife in northwest England.
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {speciesCategories.map(({ href, label, count, desc }, i) => (
+            <Link
+              key={href}
+              href={href}
+              className="card-hover group relative rounded-2xl overflow-hidden border border-[var(--dune)] bg-white block"
+            >
+              {/* Image */}
+              <div className="relative h-44 overflow-hidden bg-[var(--dune)]">
+                {categoryImages[i] ? (
+                  <img
+                    src={categoryImages[i]!}
+                    alt={label}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-[var(--marsh)] to-[var(--forest)]" />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <span className="absolute bottom-3 left-4 text-2xl font-bold text-white">
+                  {count}
+                </span>
+              </div>
+              {/* Text */}
+              <div className="p-4">
+                <h3 className="font-semibold text-[var(--forest)] mb-0.5">{label}</h3>
+                <p className="text-sm text-[var(--slate)]/80 leading-snug">{desc}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ── NATURE & COAST ───────────────────────────────────── */}
+      <section className="bg-[var(--dune)] py-14">
+        <div className="mx-auto max-w-6xl px-4">
+          <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+            Reserves & guides
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mb-8">
+            Nature & coast
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                href: "/nature/marshside-rspb",
+                title: "Marshside RSPB",
+                desc: "Free entry. Managed lagoons, Avocets, and 80,000+ Pink-footed Geese in winter. The best birdwatching in the North West.",
+                tag: "Reserve guide",
+              },
+              {
+                href: "/nature/sefton-coast",
+                title: "The Sefton Coast",
+                desc: "67km of dunes, slacks, pinewoods and saltmarsh — one of England's most significant coastal wildlife habitats.",
+                tag: "Habitat overview",
+              },
+              {
+                href: "/birdwatching-guide",
+                title: "Birdwatching Guide",
+                desc: "Best spots by season, what to bring, and how to get started — from a birder who has watched these marshes for decades.",
+                tag: "Practical guide",
+              },
+              {
+                href: "/seasonal",
+                title: "Seasonal Guides",
+                desc: "Pink-footed Geese, wader migration, breeding birds and winter wildfowl — when to come and what to expect.",
+                tag: "4 guides",
+              },
+            ].map(({ href, title, desc, tag }) => (
+              <Link
+                key={href}
+                href={href}
+                className="card-hover group block rounded-2xl border border-[var(--foam)]/40 bg-white p-5 hover:border-[var(--marsh)]/50"
+              >
+                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--marsh)] bg-[var(--marsh)]/10 px-2 py-0.5 rounded-full mb-3">
+                  {tag}
+                </span>
+                <h3 className="font-semibold text-[var(--forest)] mb-2 group-hover:text-[var(--marsh)] transition">
+                  {title}
+                </h3>
+                <p className="text-sm text-[var(--slate)]/80 leading-relaxed">{desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── BLOG ─────────────────────────────────────────────── */}
+      <section className="mx-auto max-w-6xl px-4 py-14">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+              From the blog
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)]">
+              Ed&apos;s notes
+            </h2>
+          </div>
           <Link
-            href="/nature/marshside-rspb"
-            className="inline-flex items-center gap-2 rounded-lg bg-[var(--forest)] px-5 py-2.5 text-white font-medium hover:bg-[var(--marsh)] transition"
+            href="/blog"
+            className="text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition hidden sm:block"
           >
-            Marshside RSPB Reserve
+            All posts →
           </Link>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {recentPosts.map((post, i) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="card-hover group block rounded-2xl border border-[var(--dune)] bg-white overflow-hidden"
+            >
+              <div className="relative h-44 overflow-hidden bg-[var(--dune)]">
+                {blogImages[i] ? (
+                  <img
+                    src={blogImages[i]!}
+                    alt={post.heroAlt}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-[var(--marsh)] to-[var(--forest)]" />
+                )}
+              </div>
+              <div className="p-5">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--marsh)]">
+                  {post.categoryLabel}
+                </span>
+                <h3 className="mt-1 font-semibold text-[var(--forest)] leading-snug mb-2 group-hover:text-[var(--marsh)] transition">
+                  {post.title}
+                </h3>
+                <p className="text-xs text-[var(--slate)]/60">{formatDate(post.date)}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-6 sm:hidden">
           <Link
-            href="/birds"
-            className="inline-flex items-center gap-2 rounded-lg border border-[var(--forest)] px-5 py-2.5 text-[var(--forest)] font-medium hover:bg-[var(--dune)] transition"
+            href="/blog"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition"
           >
-            Bird species database
+            All posts →
           </Link>
         </div>
       </section>
 
-      <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-        {[
-          { href: "/birds", label: "Birds", count: birdCount, desc: "Waders, wildfowl, raptors and passerines" },
-          { href: "/insects", label: "Insects", count: insectCount, desc: "Butterflies, moths and invertebrates" },
-          { href: "/plants", label: "Plants", count: plantCount, desc: "Saltmarsh and dune flora" },
-          { href: "/mammals", label: "Mammals", count: mammalCount, desc: "Including red squirrels at Formby" },
-        ].map(({ href, label, count, desc }) => (
-          <Link
-            key={href}
-            href={href}
-            className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow-md transition"
-          >
-            <span className="text-2xl font-bold text-[var(--forest)]">{count}</span>
-            <h2 className="mt-1 font-semibold text-[var(--slate)]">{label}</h2>
-            <p className="mt-1 text-sm text-[var(--slate)]/80">{desc}</p>
-          </Link>
-        ))}
+      {/* ── NETWORK BANNER ───────────────────────────────────── */}
+      <section className="bg-[var(--forest)] text-white py-10">
+        <div className="mx-auto max-w-6xl px-4">
+          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-2">
+            Sefton Coast Network
+          </p>
+          <p className="text-white/80 text-sm max-w-2xl mb-5">
+            Also from Churchtown Media — local guides covering the wider Sefton Coast.
+          </p>
+          <div className="flex flex-wrap gap-3 text-sm">
+            {[
+              { href: "https://www.southportguide.co.uk", label: "SouthportGuide" },
+              { href: "https://www.formbyguide.co.uk", label: "FormbyGuide" },
+              { href: "https://www.seftonlinks.com", label: "SeftonLinks" },
+              { href: "https://seftoncoast.network", label: "SeftonCoast.network" },
+            ].map(({ href, label }) => (
+              <a
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-white/20 rounded-lg px-4 py-2 text-white/70 hover:text-white hover:border-white/40 transition"
+              >
+                {label} →
+              </a>
+            ))}
+          </div>
+        </div>
       </section>
-
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold text-[var(--forest)] mb-4">From the blog</h2>
-        <p className="text-[var(--slate)] mb-4 text-sm">
-          Conservation, species spotlights, seasonal watching and more — written by Ed.
-        </p>
-        <Link
-          href="/blog"
-          className="inline-flex items-center gap-2 rounded-lg border border-[var(--forest)] px-5 py-2.5 text-[var(--forest)] font-medium text-sm hover:bg-[var(--dune)] transition"
-        >
-          Read the blog →
-        </Link>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-[var(--forest)] mb-4">Nature & coast</h2>
-        <ul className="space-y-2">
-          <li>
-            <Link href="/nature/marshside-rspb" className="text-[var(--marsh)] hover:underline font-medium">
-              Marshside RSPB Reserve
-            </Link>
-            <span className="text-[var(--slate)]/80"> — Parking, access, what to bring</span>
-          </li>
-          <li>
-            <Link href="/nature/sefton-coast" className="text-[var(--marsh)] hover:underline font-medium">
-              The Sefton Coast
-            </Link>
-            <span className="text-[var(--slate)]/80"> — Geography and habitats</span>
-          </li>
-          <li>
-            <Link href="/birdwatching-guide" className="text-[var(--marsh)] hover:underline font-medium">
-              Birdwatching guide
-            </Link>
-            <span className="text-[var(--slate)]/80"> — Best spots, seasons, kit</span>
-          </li>
-          <li>
-            <Link href="/seasonal" className="text-[var(--marsh)] hover:underline font-medium">
-              Seasonal guides
-            </Link>
-            <span className="text-[var(--slate)]/80"> — Pink-footed geese, waders, migration</span>
-          </li>
-        </ul>
-      </section>
-    </div>
     </>
   );
 }

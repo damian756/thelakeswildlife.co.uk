@@ -104,7 +104,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Header */}
         <div className="mb-8">
           <span className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)]">{post.categoryLabel}</span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[var(--forest)] mt-2 mb-3 leading-tight">{post.title}</h1>
+          <h1 className="font-display text-3xl sm:text-4xl font-bold text-[var(--forest)] mt-2 mb-3 leading-tight">{post.title}</h1>
           <p className="text-sm text-[var(--slate)]/60">{formatDate(post.date)}</p>
         </div>
 
@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Sections */}
         {post.sections.map((section) => (
           <div key={section.heading} className="mb-8">
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-3">{section.heading}</h2>
+            <h2 className="font-display text-xl font-bold text-[var(--forest)] mb-3">{section.heading}</h2>
             {section.body.map((para, i) => (
               <p key={i} className="text-[var(--slate)] text-sm leading-relaxed mb-3">{para}</p>
             ))}

@@ -40,7 +40,7 @@ export default async function BlogIndexPage() {
             <span>/</span>
             <span className="text-white/80">Blog</span>
           </nav>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Wildlife Blog</h1>
+          <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">Wildlife Blog</h1>
           <p className="text-white/70 max-w-2xl leading-relaxed">
             Notes from the Sefton Coast — conservation, species spotlights, seasonal guides, habitat and photography. Written by Ed.
           </p>
@@ -72,7 +72,7 @@ export default async function BlogIndexPage() {
           return (
             <section key={catSlug} id={catSlug} className="mb-14 scroll-mt-8">
               <div className="flex items-baseline justify-between mb-5">
-                <h2 className="text-2xl font-bold text-[var(--forest)]">{cat.label}</h2>
+                <h2 className="font-display text-2xl font-bold text-[var(--forest)]">{cat.label}</h2>
                 <span className="text-xs text-[var(--slate)]/50">{posts.length} post{posts.length !== 1 ? "s" : ""}</span>
               </div>
               <div className="grid gap-6 sm:grid-cols-2">
@@ -80,7 +80,7 @@ export default async function BlogIndexPage() {
                   <Link
                     key={post.slug}
                     href={`/blog/${post.slug}`}
-                    className="block rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] hover:shadow-md transition group overflow-hidden"
+                    className="card-hover block rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] transition group overflow-hidden"
                   >
                     {post.heroSrc && (
                       <div className="aspect-[16/9] overflow-hidden bg-[var(--dune)]">

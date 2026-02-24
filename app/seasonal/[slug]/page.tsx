@@ -305,32 +305,38 @@ export default async function SeasonalSlugPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
-      <div className="mx-auto max-w-3xl px-4 py-10">
-        <nav className="text-sm text-[var(--slate)]/60 mb-6 flex items-center gap-1.5">
-          <Link href="/" className="hover:text-[var(--marsh)] transition">Home</Link>
-          <span>/</span>
-          <Link href="/seasonal" className="hover:text-[var(--marsh)] transition">Seasonal guides</Link>
-          <span>/</span>
-          <span className="text-[var(--slate)]">{page.title}</span>
-        </nav>
-
-        <div className="mb-2">
-          <span className="text-xs font-bold uppercase tracking-wide text-[var(--marsh)]">{page.period}</span>
+      {/* Page header band */}
+      <div className="bg-[var(--forest)] text-white">
+        <div className="mx-auto max-w-3xl px-4 py-10">
+          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-white/80 transition">Home</Link>
+            <span>/</span>
+            <Link href="/seasonal" className="hover:text-white/80 transition">Seasonal guides</Link>
+            <span>/</span>
+            <span className="text-white/80">{page.title}</span>
+          </nav>
+          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">
+            Seasonal guide · {page.period}
+          </p>
+          <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">{page.title}</h1>
+          <p className="text-white/75 text-lg leading-relaxed max-w-2xl">{page.intro}</p>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold text-[var(--forest)] mb-4">{page.title}</h1>
-        <p className="text-lg text-[var(--slate)] mb-8 leading-relaxed">{page.intro}</p>
+      </div>
+
+      <div className="mx-auto max-w-3xl px-4 py-10">
 
         {page.sections.map((section) => (
-          <div key={section.heading} className="mb-8">
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-3">{section.heading}</h2>
+          <div key={section.heading} className="mb-10">
+            <h2 className="font-display text-xl font-bold text-[var(--forest)] mb-3">{section.heading}</h2>
             {section.body.map((para, i) => (
               <p key={i} className="text-[var(--slate)] text-sm leading-relaxed mb-3">{para}</p>
             ))}
           </div>
         ))}
 
-        <div className="bg-[var(--dune)] rounded-xl p-5 mb-8">
-          <h2 className="font-bold text-[var(--forest)] mb-3">Practical tips</h2>
+        <div className="bg-[var(--dune)] rounded-xl p-5 mb-10">
+          <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-3">Quick reference</p>
+          <h2 className="font-semibold text-[var(--forest)] mb-3">Practical tips</h2>
           <ul className="space-y-1.5">
             {page.practicalTips.map((tip) => (
               <li key={tip} className="flex gap-2 text-sm text-[var(--slate)]">
@@ -339,6 +345,15 @@ export default async function SeasonalSlugPage({ params }: Props) {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Author bio */}
+        <div className="p-5 rounded-xl bg-[var(--dune)] border border-[var(--foam)] mb-10">
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)] mb-1">About the author</p>
+          <p className="text-sm font-semibold text-[var(--forest)]">Ed</p>
+          <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
+            Ed has been walking the Sefton Coast since the 1980s. He keeps a yearly bird tally, owns more waterproof jackets than he&apos;d care to admit, and has strong opinions about which hide has the best light in the morning. Retired geography teacher. Still gets up at five.
+          </p>
         </div>
 
         <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--dune)]">
