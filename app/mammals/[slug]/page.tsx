@@ -1,45 +1,45 @@
 import { notFound } from "next/navigation";
 import { getSpeciesBySlug, getAllSlugs, getAllSpecies } from "@/lib/species";
+import { getWikipediaImage } from "@/lib/wikipedia";
 import { SpeciesDetail } from "@/components/SpeciesDetail";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ slug: string }> };
 
-async function getWikipediaImage(title: string) {
-  try {
-    const res = await fetch(
-      `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`,
-      { next: { revalidate: 604800 } }
-    );
-    if (!res.ok) return null;
-    const data = await res.json();
-    const src = data.originalimage?.source ?? data.thumbnail?.source ?? null;
-    if (!src) return null;
-    const resized = src.replace(/\/\d+px-([^/]+)$/, "/800px-$1");
-    return {
-      src: resized,
-      pageUrl: data.content_urls?.desktop?.page ?? `https://en.wikipedia.org/wiki/${encodeURIComponent(title)}`,
-    };
-  } catch {
-    return null;
-  }
-}
-
 export function generateStaticParams() {
-  const slugs = getAllSlugs("mammals");
-  return slugs.map((slug) => ({ slug }));
+  return getAllSlugs("mammals").map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const species = getSpeciesBySlug("mammals", slug);
   if (!species) return {};
+
   const location = species.shortLocation ?? "the Sefton Coast";
+  const title = `${species.commonName} at ${location} | Sefton Coast Wildlife`;
+  const description = species.faq?.[0]?.answer
+    ? species.faq[0].answer.substring(0, 160)
+    : `${species.commonName} (${species.scientificName}) on the Sefton Coast — where to see it, identification tips, and seasonal presence. ${species.seasonalPresence}.`;
+
+  const wikiImage = species.wikipediaTitle ? await getWikipediaImage(species.wikipediaTitle) : null;
+
   return {
-    title: `${species.commonName} at ${location} | Sefton Coast Wildlife`,
-    description: species.faq?.[0]?.answer
-      ? species.faq[0].answer.substring(0, 160)
-      : `${species.commonName} (${species.scientificName}) on the Sefton Coast — where to see it, identification tips, and seasonal presence. ${species.seasonalPresence}.`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `https://seftoncoastwildlife.co.uk/mammals/${slug}`,
+      siteName: "Sefton Coast Wildlife",
+      type: "article",
+      ...(wikiImage && { images: [{ url: wikiImage.src, width: 800, alt: species.commonName }] }),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      ...(wikiImage && { images: [wikiImage.src] }),
+    },
   };
 }
 
@@ -52,5 +52,5 @@ export default async function MammalPage({ params }: Props) {
     ? all.filter((s) => species.relatedSpecies!.includes(s.id))
     : [];
   const wikiImage = species.wikipediaTitle ? await getWikipediaImage(species.wikipediaTitle) : null;
-  return <SpeciesDetail category="mammals" species={species} related={related} wikiImage={wikiImage} />;
+  return <SpeciesDetail category="mammals" species={species} related={related} wikiImage={wikiImage} slug={slug} />;
 }

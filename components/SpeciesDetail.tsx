@@ -1,6 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Species, SpeciesCategory } from "@/lib/types";
+import type { WikiImage } from "@/lib/wikipedia";
+import { ImageLightbox } from "@/components/ImageLightbox";
+import { SpeciesJsonLd } from "@/components/SpeciesJsonLd";
 
 const categoryLabels: Record<SpeciesCategory, string> = {
   birds: "Birds",
@@ -56,19 +58,15 @@ const difficultyColor: Record<string, string> = {
   specialist: "text-red-700 bg-red-50 border-red-200",
 };
 
-interface WikiImage {
-  src: string;
-  pageUrl: string;
-}
-
 interface SpeciesDetailProps {
   category: SpeciesCategory;
   species: Species;
   related: Species[];
   wikiImage?: WikiImage | null;
+  slug: string;
 }
 
-export function SpeciesDetail({ category, species, related, wikiImage }: SpeciesDetailProps) {
+export function SpeciesDetail({ category, species, related, wikiImage, slug }: SpeciesDetailProps) {
   const label = categoryLabels[category];
   const status = species.conservationStatus ?? "unknown";
   const sc = statusConfig[status];
@@ -82,302 +80,309 @@ export function SpeciesDetail({ category, species, related, wikiImage }: Species
     (species.habitat && species.habitat.length > 0);
 
   return (
-    <article>
-      {/* ── HERO HEADER ── */}
-      <div className="bg-[var(--forest)] text-white">
-        <div className="mx-auto max-w-5xl px-4 py-10">
-          {/* Breadcrumb */}
-          <nav className="text-sm text-white/50 mb-5 flex items-center gap-1.5">
-            <Link href="/" className="hover:text-white/80 transition">Home</Link>
-            <span>/</span>
-            <Link href={`/${category}`} className="hover:text-white/80 transition">{label}</Link>
-            <span>/</span>
-            <span className="text-white/80">{species.commonName}</span>
-          </nav>
+    <>
+      {/* JSON-LD structured data */}
+      <SpeciesJsonLd
+        species={species}
+        category={category}
+        slug={slug}
+        imageUrl={wikiImage?.src ?? null}
+      />
 
-          <div className="flex flex-col lg:flex-row lg:items-start gap-8">
-            {/* Left: name + pills */}
-            <div className="flex-1">
-              <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
-                {species.commonName}
-              </h1>
-              <p className="text-lg italic text-white/60 mt-1">{species.scientificName}</p>
+      <article>
+        {/* ── HERO HEADER ── */}
+        <div className="bg-[var(--forest)] text-white">
+          <div className="mx-auto max-w-5xl px-4 py-10">
+            {/* Breadcrumb */}
+            <nav className="text-sm text-white/50 mb-5 flex items-center gap-1.5">
+              <Link href="/" className="hover:text-white/80 transition">Home</Link>
+              <span>/</span>
+              <Link href={`/${category}`} className="hover:text-white/80 transition">{label}</Link>
+              <span>/</span>
+              <span className="text-white/80">{species.commonName}</span>
+            </nav>
 
-              {/* Status + difficulty pills */}
-              <div className="flex flex-wrap gap-2 mt-4">
-                {species.conservationStatus && species.conservationStatus !== "unknown" && (
-                  <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${sc.bg} ${sc.text}`}>
-                    UK {sc.label}
-                  </span>
-                )}
-                {species.difficulty && (
-                  <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${difficultyColor[species.difficulty]}`}>
-                    {difficultyLabel[species.difficulty]}
-                  </span>
-                )}
-                {species.shortLocation && (
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-white/80 border border-white/20">
-                    📍 {species.shortLocation}
-                  </span>
-                )}
-              </div>
+            <div className="flex flex-col lg:flex-row lg:items-start gap-8">
+              {/* Left: name + pills */}
+              <div className="flex-1">
+                <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                  {species.commonName}
+                </h1>
+                <p className="text-lg italic text-white/60 mt-1">{species.scientificName}</p>
 
-              {/* Quick facts strip */}
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                  <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Season</div>
-                  <div className="text-sm text-white/90">{species.seasonalPresence}</div>
+                {/* Status + difficulty pills */}
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {species.conservationStatus && species.conservationStatus !== "unknown" && (
+                    <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${sc.bg} ${sc.text}`}>
+                      UK {sc.label}
+                    </span>
+                  )}
+                  {species.difficulty && (
+                    <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${difficultyColor[species.difficulty]}`}>
+                      {difficultyLabel[species.difficulty]}
+                    </span>
+                  )}
+                  {species.shortLocation && (
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-white/80 border border-white/20">
+                      📍 {species.shortLocation}
+                    </span>
+                  )}
                 </div>
-                {species.bestTimeOfDay && (
+
+                {/* Quick facts strip */}
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                    <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Best time of day</div>
-                    <div className="text-sm text-white/90">{species.bestTimeOfDay}</div>
+                    <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Season</div>
+                    <div className="text-sm text-white/90">{species.seasonalPresence}</div>
                   </div>
-                )}
-                {species.seftonPopulation && (
-                  <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                    <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Sefton Coast</div>
-                    <div className="text-sm text-white/90">{species.seftonPopulation}</div>
-                  </div>
-                )}
-                {species.ukPopulation && (
-                  <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                    <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">UK population</div>
-                    <div className="text-sm text-white/90">{species.ukPopulation}</div>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            {/* Right: Wikipedia image */}
-            {wikiImage && (
-              <div className="lg:w-72 flex-shrink-0">
-                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
-                  <Image
-                    src={wikiImage.src}
-                    alt={species.commonName}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 288px"
-                  />
-                </div>
-                <p className="text-xs text-white/30 mt-1.5 text-right">
-                  Image:{" "}
-                  <a href={wikiImage.pageUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white/60 underline">
-                    Wikimedia Commons
-                  </a>
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-
-      {/* ── BODY ── */}
-      <div className="mx-auto max-w-5xl px-4 py-10 space-y-12">
-
-        {/* Overview */}
-        <section>
-          <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Overview</h2>
-          <div className="prose prose-slate max-w-none text-[var(--slate)] leading-relaxed">
-            <p>{species.description}</p>
-          </div>
-        </section>
-
-        {/* At a Glance table */}
-        {hasAtAGlance && (
-          <section>
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">At a Glance</h2>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <tbody>
-                  {species.order && (
-                    <tr className="border-b border-[var(--dune)]">
-                      <td className="py-2.5 pr-6 font-medium text-[var(--forest)] w-40">Order</td>
-                      <td className="py-2.5 text-[var(--slate)]">{species.order}</td>
-                    </tr>
-                  )}
-                  {species.family && (
-                    <tr className="border-b border-[var(--dune)]">
-                      <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Family</td>
-                      <td className="py-2.5 text-[var(--slate)]">{species.family}</td>
-                    </tr>
-                  )}
-                  {species.habitat && species.habitat.length > 0 && (
-                    <tr className="border-b border-[var(--dune)]">
-                      <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Habitat</td>
-                      <td className="py-2.5 text-[var(--slate)]">{species.habitat.join(" · ")}</td>
-                    </tr>
-                  )}
-                  {species.diet && (
-                    <tr className="border-b border-[var(--dune)]">
-                      <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Diet</td>
-                      <td className="py-2.5 text-[var(--slate)]">{species.diet}</td>
-                    </tr>
-                  )}
-                  {species.ukPopulation && (
-                    <tr className="border-b border-[var(--dune)]">
-                      <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">UK population</td>
-                      <td className="py-2.5 text-[var(--slate)]">{species.ukPopulation}</td>
-                    </tr>
+                  {species.bestTimeOfDay && (
+                    <div className="bg-white/8 rounded-lg p-3 border border-white/10">
+                      <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Best time of day</div>
+                      <div className="text-sm text-white/90">{species.bestTimeOfDay}</div>
+                    </div>
                   )}
                   {species.seftonPopulation && (
-                    <tr className="border-b border-[var(--dune)]">
-                      <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Sefton Coast</td>
-                      <td className="py-2.5 text-[var(--slate)]">{species.seftonPopulation}</td>
-                    </tr>
+                    <div className="bg-white/8 rounded-lg p-3 border border-white/10">
+                      <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Sefton Coast</div>
+                      <div className="text-sm text-white/90">{species.seftonPopulation}</div>
+                    </div>
                   )}
-                  <tr className="border-b border-[var(--dune)]">
-                    <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Conservation</td>
-                    <td className="py-2.5">
-                      {species.conservationStatus && species.conservationStatus !== "unknown" ? (
-                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold ${sc.bg} ${sc.text}`}>
-                          UK {sc.label}
-                        </span>
-                      ) : (
-                        <span className="text-[var(--slate)]">Not assessed</span>
-                      )}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-        )}
+                  {species.ukPopulation && (
+                    <div className="bg-white/8 rounded-lg p-3 border border-white/10">
+                      <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">UK population</div>
+                      <div className="text-sm text-white/90">{species.ukPopulation}</div>
+                    </div>
+                  )}
+                </div>
+              </div>
 
-        {/* Where to see */}
-        <section>
-          <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Where to See It</h2>
-          <p className="text-[var(--slate)] leading-relaxed">{species.whereToSee}</p>
-          {species.shortLocation && (
-            <div className="mt-4">
-              {species.shortLocation.includes("Marshside") && (
-                <Link href="/nature/marshside-rspb" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
-                  → Marshside RSPB reserve guide
-                </Link>
-              )}
-              {species.shortLocation.includes("Formby") && (
-                <Link href="/nature/sefton-coast" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
-                  → Formby & Sefton Coast guide
-                </Link>
-              )}
-              {species.shortLocation.includes("Ainsdale") && (
-                <Link href="/nature/sefton-coast" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
-                  → Ainsdale NNR & Sefton Coast guide
-                </Link>
-              )}
-            </div>
-          )}
-        </section>
-
-        {/* Identification */}
-        {species.identification && (
-          <section>
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Identification</h2>
-            <p className="text-[var(--slate)] leading-relaxed">{species.identification}</p>
-          </section>
-        )}
-
-        {/* Tips */}
-        {species.tips && (
-          <section>
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Viewing & Photography Tips</h2>
-            <div className="bg-[var(--dune)]/40 rounded-xl p-5 border border-[var(--dune)]">
-              <p className="text-[var(--slate)] leading-relaxed">{species.tips}</p>
-            </div>
-          </section>
-        )}
-
-        {/* Conservation callout */}
-        {species.conservationStatus && species.conservationStatus !== "unknown" && (
-          <section>
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Conservation Status</h2>
-            <div className={`rounded-xl p-5 border ${sc.callout}`}>
-              <h3 className={`font-semibold text-sm mb-1 ${sc.calloutHead}`}>
-                UK {sc.label}
-              </h3>
-              <p className={`text-sm leading-relaxed ${sc.calloutText}`}>
-                {status === "red" && "This species is on the UK Red List for Birds (BoCC5), indicating serious concern about its population decline or unfavourable conservation status. Monitoring this species on the Sefton Coast contributes to national population tracking."}
-                {status === "amber" && "This species is on the UK Amber List for Birds (BoCC5), indicating moderate concern. Population monitoring and habitat management remain important for its continued recovery."}
-                {status === "green" && "This species is on the UK Green List, indicating a healthy population status in the UK context. It remains an important component of Sefton Coast biodiversity."}
-              </p>
-              {species.externalLinks && (
-                <div className="flex flex-wrap gap-3 mt-3">
-                  {species.externalLinks.bto && (
-                    <a href={species.externalLinks.bto} target="_blank" rel="noopener noreferrer" className={`text-xs font-medium underline ${sc.calloutHead}`}>BTO species page →</a>
-                  )}
-                  {species.externalLinks.rspb && (
-                    <a href={species.externalLinks.rspb} target="_blank" rel="noopener noreferrer" className={`text-xs font-medium underline ${sc.calloutHead}`}>RSPB species guide →</a>
-                  )}
-                  {species.externalLinks.iucn && (
-                    <a href={species.externalLinks.iucn} target="_blank" rel="noopener noreferrer" className={`text-xs font-medium underline ${sc.calloutHead}`}>IUCN Red List →</a>
-                  )}
-                  {species.externalLinks.nbnatlas && (
-                    <a href={species.externalLinks.nbnatlas} target="_blank" rel="noopener noreferrer" className={`text-xs font-medium underline ${sc.calloutHead}`}>NBN Atlas records →</a>
-                  )}
+              {/* Right: Wikipedia image — click to enlarge */}
+              {wikiImage && (
+                <div className="lg:w-72 flex-shrink-0">
+                  <ImageLightbox image={wikiImage} alt={species.commonName} />
+                  <p className="text-xs text-white/30 mt-1.5 text-right">
+                    Tap image to enlarge ·{" "}
+                    <a
+                      href={wikiImage.pageUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-white/60"
+                    >
+                      Wikimedia Commons
+                    </a>
+                  </p>
                 </div>
               )}
             </div>
-          </section>
-        )}
-
-        {/* FAQ */}
-        {species.faq && species.faq.length > 0 && (
-          <section>
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              {species.faq.map((item, i) => (
-                <div key={i} className="border border-[var(--dune)] rounded-xl p-5 bg-white">
-                  <h3 className="font-semibold text-[var(--forest)] mb-2">{item.question}</h3>
-                  <p className="text-sm text-[var(--slate)] leading-relaxed">{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Related species */}
-        {related.length > 0 && (
-          <section>
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Related Species</h2>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map((r) => (
-                <Link
-                  key={r.id}
-                  href={`/${category}/${r.id}`}
-                  className="block p-4 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] hover:shadow-sm transition group"
-                >
-                  <div className="font-medium text-[var(--forest)] group-hover:text-[var(--marsh)] transition">{r.commonName}</div>
-                  <div className="text-xs italic text-[var(--slate)]/60 mt-0.5">{r.scientificName}</div>
-                  {r.seasonalPresence && (
-                    <div className="text-xs text-[var(--slate)]/50 mt-1.5 leading-snug">{r.seasonalPresence.split('.')[0]}</div>
-                  )}
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* CTA */}
-        <section className="bg-[var(--forest)] rounded-2xl p-6 sm:p-8 text-white">
-          <h2 className="text-xl font-bold mb-2">Plan your visit to the Sefton Coast</h2>
-          <p className="text-white/70 text-sm mb-5 max-w-xl">
-            Marshside RSPB, Formby pinewoods, Ainsdale NNR — practical guides to getting there, what to bring, and the best spots for each season.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white text-[var(--forest)] text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-[var(--sand)] transition">
-              Birdwatching guide →
-            </Link>
-            <Link href="/nature/marshside-rspb" className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
-              Marshside RSPB
-            </Link>
-            <Link href={`/${category}`} className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
-              All {label} →
-            </Link>
           </div>
-        </section>
+        </div>
 
-      </div>
-    </article>
+        {/* ── BODY ── */}
+        <div className="mx-auto max-w-5xl px-4 py-10 space-y-12">
+
+          {/* Overview */}
+          <section>
+            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Overview</h2>
+            <div className="prose prose-slate max-w-none text-[var(--slate)] leading-relaxed">
+              <p>{species.description}</p>
+            </div>
+          </section>
+
+          {/* At a Glance table */}
+          {hasAtAGlance && (
+            <section>
+              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">At a Glance</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <tbody>
+                    {species.order && (
+                      <tr className="border-b border-[var(--dune)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)] w-40">Order</td>
+                        <td className="py-2.5 text-[var(--slate)]">{species.order}</td>
+                      </tr>
+                    )}
+                    {species.family && (
+                      <tr className="border-b border-[var(--dune)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Family</td>
+                        <td className="py-2.5 text-[var(--slate)]">{species.family}</td>
+                      </tr>
+                    )}
+                    {species.habitat && species.habitat.length > 0 && (
+                      <tr className="border-b border-[var(--dune)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Habitat</td>
+                        <td className="py-2.5 text-[var(--slate)]">{species.habitat.join(" · ")}</td>
+                      </tr>
+                    )}
+                    {species.diet && (
+                      <tr className="border-b border-[var(--dune)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Diet</td>
+                        <td className="py-2.5 text-[var(--slate)]">{species.diet}</td>
+                      </tr>
+                    )}
+                    {species.ukPopulation && (
+                      <tr className="border-b border-[var(--dune)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">UK population</td>
+                        <td className="py-2.5 text-[var(--slate)]">{species.ukPopulation}</td>
+                      </tr>
+                    )}
+                    {species.seftonPopulation && (
+                      <tr className="border-b border-[var(--dune)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Sefton Coast</td>
+                        <td className="py-2.5 text-[var(--slate)]">{species.seftonPopulation}</td>
+                      </tr>
+                    )}
+                    <tr className="border-b border-[var(--dune)]">
+                      <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Conservation</td>
+                      <td className="py-2.5">
+                        {species.conservationStatus && species.conservationStatus !== "unknown" ? (
+                          <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold ${sc.bg} ${sc.text}`}>
+                            UK {sc.label}
+                          </span>
+                        ) : (
+                          <span className="text-[var(--slate)]">Not assessed</span>
+                        )}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+
+          {/* Where to see */}
+          <section>
+            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Where to See It</h2>
+            <p className="text-[var(--slate)] leading-relaxed">{species.whereToSee}</p>
+            {species.shortLocation && (
+              <div className="mt-4">
+                {species.shortLocation.includes("Marshside") && (
+                  <Link href="/nature/marshside-rspb" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
+                    → Marshside RSPB reserve guide
+                  </Link>
+                )}
+                {species.shortLocation.includes("Formby") && (
+                  <Link href="/nature/sefton-coast" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
+                    → Formby & Sefton Coast guide
+                  </Link>
+                )}
+                {species.shortLocation.includes("Ainsdale") && (
+                  <Link href="/nature/sefton-coast" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
+                    → Ainsdale NNR & Sefton Coast guide
+                  </Link>
+                )}
+              </div>
+            )}
+          </section>
+
+          {/* Identification */}
+          {species.identification && (
+            <section>
+              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Identification</h2>
+              <p className="text-[var(--slate)] leading-relaxed">{species.identification}</p>
+            </section>
+          )}
+
+          {/* Tips */}
+          {species.tips && (
+            <section>
+              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Viewing & Photography Tips</h2>
+              <div className="bg-[var(--dune)]/40 rounded-xl p-5 border border-[var(--dune)]">
+                <p className="text-[var(--slate)] leading-relaxed">{species.tips}</p>
+              </div>
+            </section>
+          )}
+
+          {/* Conservation callout */}
+          {species.conservationStatus && species.conservationStatus !== "unknown" && (
+            <section>
+              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Conservation Status</h2>
+              <div className={`rounded-xl p-5 border ${sc.callout}`}>
+                <h3 className={`font-semibold text-sm mb-1 ${sc.calloutHead}`}>
+                  UK {sc.label}
+                </h3>
+                <p className={`text-sm leading-relaxed ${sc.calloutText}`}>
+                  {status === "red" && "This species is on the UK Red List for Birds (BoCC5), indicating serious concern about its population decline or unfavourable conservation status. Monitoring this species on the Sefton Coast contributes to national population tracking."}
+                  {status === "amber" && "This species is on the UK Amber List for Birds (BoCC5), indicating moderate concern. Population monitoring and habitat management remain important for its continued recovery."}
+                  {status === "green" && "This species is on the UK Green List, indicating a healthy population status in the UK context. It remains an important component of Sefton Coast biodiversity."}
+                </p>
+                {species.externalLinks && (
+                  <div className="flex flex-wrap gap-3 mt-3">
+                    {species.externalLinks.bto && (
+                      <a href={species.externalLinks.bto} target="_blank" rel="noopener noreferrer" className={`text-xs font-medium underline ${sc.calloutHead}`}>BTO species page →</a>
+                    )}
+                    {species.externalLinks.rspb && (
+                      <a href={species.externalLinks.rspb} target="_blank" rel="noopener noreferrer" className={`text-xs font-medium underline ${sc.calloutHead}`}>RSPB species guide →</a>
+                    )}
+                    {species.externalLinks.iucn && (
+                      <a href={species.externalLinks.iucn} target="_blank" rel="noopener noreferrer" className={`text-xs font-medium underline ${sc.calloutHead}`}>IUCN Red List →</a>
+                    )}
+                    {species.externalLinks.nbnatlas && (
+                      <a href={species.externalLinks.nbnatlas} target="_blank" rel="noopener noreferrer" className={`text-xs font-medium underline ${sc.calloutHead}`}>NBN Atlas records →</a>
+                    )}
+                  </div>
+                )}
+              </div>
+            </section>
+          )}
+
+          {/* FAQ */}
+          {species.faq && species.faq.length > 0 && (
+            <section>
+              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Frequently Asked Questions</h2>
+              <div className="space-y-4">
+                {species.faq.map((item, i) => (
+                  <div key={i} className="border border-[var(--dune)] rounded-xl p-5 bg-white">
+                    <h3 className="font-semibold text-[var(--forest)] mb-2">{item.question}</h3>
+                    <p className="text-sm text-[var(--slate)] leading-relaxed">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Related species */}
+          {related.length > 0 && (
+            <section>
+              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Related Species</h2>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {related.map((r) => (
+                  <Link
+                    key={r.id}
+                    href={`/${category}/${r.id}`}
+                    className="block p-4 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] hover:shadow-sm transition group"
+                  >
+                    <div className="font-medium text-[var(--forest)] group-hover:text-[var(--marsh)] transition">{r.commonName}</div>
+                    <div className="text-xs italic text-[var(--slate)]/60 mt-0.5">{r.scientificName}</div>
+                    {r.seasonalPresence && (
+                      <div className="text-xs text-[var(--slate)]/50 mt-1.5 leading-snug">{r.seasonalPresence.split('.')[0]}</div>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* CTA */}
+          <section className="bg-[var(--forest)] rounded-2xl p-6 sm:p-8 text-white">
+            <h2 className="text-xl font-bold mb-2">Plan your visit to the Sefton Coast</h2>
+            <p className="text-white/70 text-sm mb-5 max-w-xl">
+              Marshside RSPB, Formby pinewoods, Ainsdale NNR — practical guides to getting there, what to bring, and the best spots for each season.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white text-[var(--forest)] text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-[var(--sand)] transition">
+                Birdwatching guide →
+              </Link>
+              <Link href="/nature/marshside-rspb" className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
+                Marshside RSPB
+              </Link>
+              <Link href={`/${category}`} className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
+                All {label} →
+              </Link>
+            </div>
+          </section>
+
+        </div>
+      </article>
+    </>
   );
 }
