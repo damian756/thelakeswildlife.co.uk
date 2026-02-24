@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { Species, SpeciesCategory } from "@/lib/types";
-import { classifySeason, type SeasonTag } from "@/lib/species";
+import { classifySeason, type SeasonTag } from "@/lib/season";
 
 const statusConfig = {
   red: { label: "Red", bg: "bg-red-600", text: "text-white", pill: "bg-red-100 text-red-800 border-red-200" },
