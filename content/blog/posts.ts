@@ -102,8 +102,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-01-20",
     metaDescription:
       "Short-eared Owls at Marshside RSPB — when to look, where to look, and what to expect from one of the Sefton Coast's most sought-after winter visitors.",
-    heroWikipediaTitle: "Short-eared owl",
-    heroAlt: "Short-eared Owl in flight — a winter visitor to the Sefton Coast marshes",
+    heroWikipediaTitle: "Ribble Estuary",
+    heroAlt: "Ribble Estuary — the marshes and mudflats where Short-eared Owls hunt in winter",
     intro:
       "Short-eared Owls are not guaranteed at Marshside. Some winters you'll see three in an afternoon; some years they're barely present at all. That unpredictability is part of what makes finding one feel like a proper reward. Here's what you need to know to give yourself the best chance.",
     sections: [
@@ -147,8 +147,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2025-10-05",
     metaDescription:
       "October birdwatching at Marshside RSPB — Pink-footed Geese arriving, wader passage wrapping up and the first winter wildfowl. What to expect and when to go.",
-    heroWikipediaTitle: "Pink-footed goose",
-    heroAlt: "Pink-footed Geese — arriving at Marshside from Iceland in October",
+    heroWikipediaTitle: "Brent goose",
+    heroAlt: "Brent Geese flock in flight — the kind of spectacle October brings to the Sefton Coast",
     intro:
       "October is the month I look forward to most. The summer is over, the Little Terns have left for West Africa, and something changes in the air. By the second week of October, the first skeins of Pink-footed Geese are arriving from Iceland and the winter is beginning. There is no better month to be at Marshside.",
     sections: [
@@ -245,8 +245,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-01-08",
     metaDescription:
       "How to photograph waders at Marshside RSPB — camera settings, the best hides, timing, light direction and how to avoid the most common mistakes.",
-    heroWikipediaTitle: "Black-tailed godwit",
-    heroAlt: "Black-tailed Godwit — a regularly photographed wader at Marshside RSPB",
+    heroWikipediaTitle: "Calidris canutus",
+    heroAlt: "Red Knot flock on the beach — the kind of wader photography the Sefton Coast makes possible",
     intro:
       "Marshside RSPB is one of the more accessible sites for photographing waders in the North West. The hides are close to the scrapes, the birds are relatively undisturbed, and the range of species through autumn and winter gives you something to work with even when the star species aren't performing. Here's how to get better results.",
     sections: [

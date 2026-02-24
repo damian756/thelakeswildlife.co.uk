@@ -77,8 +77,8 @@ export default async function BlogPostPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
       {heroImage && (
-        <div className="relative flex h-80 md:h-[28rem] w-full items-center justify-center overflow-hidden bg-[var(--dune)]">
-          <img src={heroImage.src} alt={post.heroAlt} className="max-h-full w-auto max-w-full object-contain" />
+        <div className="relative h-64 sm:h-80 w-full overflow-hidden bg-[var(--dune)]">
+          <img src={heroImage.src} alt={post.heroAlt} className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6">
             <p className="text-xs text-white/60">

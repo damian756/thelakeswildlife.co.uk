@@ -23,8 +23,8 @@ const seasonalPages: Record<string, SeasonalPageData> = {
     period: "October – March",
     metaDescription:
       "Pink-footed Geese on the Sefton Coast — when they arrive, where to see them, and how to get the best out of a winter visit to Marshside RSPB.",
-    heroWikipediaTitle: "Pink-footed goose",
-    heroAlt: "Pink-footed Goose in flight",
+    heroWikipediaTitle: "Greater white-fronted goose",
+    heroAlt: "Geese flock in flight over the estuary",
     intro:
       "The Pink-footed Goose is the reason Marshside RSPB exists on most birders' lists. Every autumn, tens of thousands fly south from their Icelandic breeding grounds and settle on the Ribble Estuary and surrounding farmland. By November, there can be 80,000 or more in the area. It is one of the great wildlife spectacles in England — and most people have never heard of it.",
     sections: [
@@ -80,8 +80,8 @@ const seasonalPages: Record<string, SeasonalPageData> = {
     period: "Spring (April–May) & Autumn (July–October)",
     metaDescription:
       "Wader migration on the Sefton Coast — when to go, what you'll see and how to identify the key species passing through Marshside RSPB each spring and autumn.",
-    heroWikipediaTitle: "Dunlin",
-    heroAlt: "Dunlin — one of the most numerous waders on the Sefton Coast",
+    heroWikipediaTitle: "Red knot",
+    heroAlt: "Red Knot flock on coastal mudflats during migration",
     intro:
       "The Sefton Coast sits on one of the main wader migration routes along the west coast of Britain. In spring and autumn, the managed scrapes at Marshside and Hesketh Out Marsh fill with birds that have flown extraordinary distances — some heading to the Arctic to breed, others returning from it. Dunlin, Knot, Bar-tailed Godwit, Little Stint, Curlew Sandpiper. On a good autumn morning, the list can be remarkable.",
     sections: [
@@ -140,8 +140,8 @@ const seasonalPages: Record<string, SeasonalPageData> = {
     period: "April – July",
     metaDescription:
       "Breeding birds on the Sefton Coast — Avocets at Marshside, Little Terns at Ainsdale, and what to look and listen for from April through July.",
-    heroWikipediaTitle: "Little tern",
-    heroAlt: "Little Tern — one of England's rarest breeding seabirds, nesting at Ainsdale",
+    heroWikipediaTitle: "Grey plover",
+    heroAlt: "Grey Plover in breeding plumage on coastal habitat",
     intro:
       "Spring and summer bring a different Sefton Coast. The winter geese have gone back to Iceland, but in their place come breeding Avocets on the Marshside scrapes, Little Terns on the Ainsdale beach, Sedge Warblers in the reedbed edge and Skylarks above the dunes. It's less dramatic than October geese but it requires more attention — and some of the breeding species here are genuinely rare.",
     sections: [
@@ -197,8 +197,8 @@ const seasonalPages: Record<string, SeasonalPageData> = {
     period: "November – February",
     metaDescription:
       "Winter wildfowl at Marshside RSPB — Teal, Wigeon, Shoveler, Pintail and Goldeneye on the lagoons from November through February.",
-    heroWikipediaTitle: "Eurasian teal",
-    heroAlt: "Eurasian Teal — a common winter wildfowl on the Marshside lagoons",
+    heroWikipediaTitle: "Northern pintail",
+    heroAlt: "Northern Pintail pair — elegant winter wildfowl on the Marshside lagoons",
     intro:
       "While the Pink-footed Geese dominate the winter headlines at Marshside, the lagoons and scrapes hold a consistently good selection of wildfowl from November through February. Teal are usually present in the hundreds. Wigeon, Shoveler and Pintail are regular. Goldeneye and Smew turn up in cold weather. It's not showy in the same way as the goose flighting, but it rewards patience and a proper look.",
     sections: [
@@ -307,8 +307,8 @@ export default async function SeasonalSlugPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
       {heroImage && (
-        <div className="relative flex h-80 md:h-[28rem] w-full items-center justify-center overflow-hidden bg-[var(--dune)]">
-          <img src={heroImage.src} alt={page.heroAlt} className="max-h-full w-auto max-w-full object-contain" />
+        <div className="relative h-64 sm:h-80 w-full overflow-hidden bg-[var(--dune)]">
+          <img src={heroImage.src} alt={page.heroAlt} className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6">
             <p className="text-xs text-white/60">
