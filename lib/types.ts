@@ -2,23 +2,64 @@ export type SpeciesCategory = 'birds' | 'insects' | 'plants' | 'mammals';
 
 export type ConservationStatus = 'red' | 'amber' | 'green' | 'unknown';
 
+export type ViewingDifficulty = 'easy' | 'moderate' | 'specialist';
+
+export interface SpeciesFaq {
+  question: string;
+  answer: string;
+}
+
+export interface SpeciesExternalLinks {
+  bto?: string;
+  rspb?: string;
+  iucn?: string;
+  nbnatlas?: string;
+  wikipedia?: string;
+}
+
 export interface Species {
   id: string;
   commonName: string;
   scientificName: string;
   category: SpeciesCategory;
   conservationStatus?: ConservationStatus;
-  /** When you'll see it on the Sefton Coast (e.g. "October–March", "Year-round") */
+
+  // Taxonomy
+  order?: string;
+  family?: string;
+
+  // Presence & location
   seasonalPresence: string;
-  /** Where on the reserve / coast (e.g. "Marshside pools", "Saltmarsh") */
+  bestTimeOfDay?: string;
   whereToSee: string;
+  /** Short primary location for meta titles e.g. "Marshside RSPB", "Formby Beach" */
+  shortLocation?: string;
+
+  // Population
+  ukPopulation?: string;
+  seftonPopulation?: string;
+
+  // Ecology
+  habitat?: string[];
+  diet?: string;
+
+  // Content
   description: string;
-  /** Brief ID / appearance notes */
   identification?: string;
-  /** Photography or viewing tips */
   tips?: string;
-  /** Related species IDs for internal linking */
+
+  // Viewing
+  difficulty?: ViewingDifficulty;
+
+  // Rich content
+  faq?: SpeciesFaq[];
+
+  // Related & links
   relatedSpecies?: string[];
+  externalLinks?: SpeciesExternalLinks;
+
+  /** Wikipedia article title for image fetching e.g. "Pink-footed goose" */
+  wikipediaTitle?: string;
 }
 
 export const SPECIES_CATEGORIES: SpeciesCategory[] = ['birds', 'insects', 'plants', 'mammals'];

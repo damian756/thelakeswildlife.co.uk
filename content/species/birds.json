@@ -4,491 +4,1351 @@
     "scientificName": "Anser brachyrhynchus",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "October–March. Peak November–January. Tens of thousands roost at Marshside overnight.",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "seasonalPresence": "October–March. Peak November–January.",
+    "bestTimeOfDay": "Dusk — arrive 30 minutes before sunset to see the roost flight",
     "whereToSee": "Marshside RSPB lagoons and surrounding fields. Hesketh Out Marsh. Feeding on farmland inland during the day, returning to roost at dusk in spectacular skeins.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 360,000 wintering birds — one of the largest Pink-footed Goose populations in the world",
+    "seftonPopulation": "Up to 40,000 birds roost at Marshside nightly at peak; regularly 20,000–30,000",
+    "habitat": ["Coastal marsh", "Farmland", "Estuary"],
+    "diet": "Grass, grain, winter cereals, sugar beet tops",
     "description": "The pink-footed goose is the star of Marshside in winter. Flocks of 20,000–40,000 birds are not unusual — the noise and spectacle at dusk as they come in to roost is genuinely one of the best wildlife experiences in England, and most people don't know it exists. They breed in Iceland and Greenland and use the Ribble Estuary and Marshside as a key wintering site. Watch from the Marshside car park at dusk for the full effect.",
     "identification": "Medium-sized grey-brown goose. Pink bill with dark base, pink legs. Shorter neck than Greylag. Orange legs would mean Greylag — legs are the key check.",
     "tips": "Arrive 30 minutes before sunset at Marshside. The skeins build from the south as they come off farmland. Bring a flask — it can be very cold and the wait is worth it.",
-    "relatedSpecies": ["greylag-goose", "white-fronted-goose", "barnacle-goose"]
+    "difficulty": "easy",
+    "relatedSpecies": ["greylag-goose", "barnacle-goose"],
+    "wikipediaTitle": "Pink-footed goose",
+    "externalLinks": {
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/pink-footed-goose",
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/pink-footed-goose"
+    },
+    "faq": [
+      {
+        "question": "When is the best time to see Pink-footed Geese at Marshside?",
+        "answer": "October to January, at dusk. Flocks of 20,000–40,000 birds fly in from feeding grounds at sunset, creating one of the most spectacular wildlife spectacles in England. Arrive 30 minutes before sunset at the Marshside RSPB car park."
+      },
+      {
+        "question": "How many Pink-footed Geese winter at Marshside RSPB?",
+        "answer": "Peak counts at Marshside regularly exceed 30,000–40,000 birds, representing a significant portion of the entire UK wintering population of around 360,000. The Ribble Estuary is one of the most important wintering sites in Europe."
+      },
+      {
+        "question": "Where do Pink-footed Geese breed?",
+        "answer": "In Iceland and Greenland, on tundra and mountain areas. They make a direct transatlantic migration to reach UK wintering grounds each autumn, arriving on the Sefton Coast from late September onwards."
+      }
+    ]
   },
   {
     "commonName": "Avocet",
     "scientificName": "Recurvirostra avosetta",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "March–September. Breeding birds from April. Some winter birds too.",
+    "order": "Charadriiformes",
+    "family": "Recurvirostridae",
+    "seasonalPresence": "March–September. Breeding birds from April. Some winter birds.",
+    "bestTimeOfDay": "Morning — calm conditions improve visibility on the scrape",
     "whereToSee": "Marshside RSPB — the scrape and lagoons close to the road are ideal. Visible from the car without leaving it on good days.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 2,000 breeding pairs in the UK — a conservation success story since recolonisation in 1947",
+    "seftonPopulation": "Small but regular breeding colony at Marshside RSPB; one of few northwest England sites",
+    "habitat": ["Coastal lagoon", "Estuary", "Saltmarsh"],
+    "diet": "Aquatic invertebrates, small crustaceans swept with bill",
     "description": "Avocets breed at Marshside RSPB, which makes it one of a small number of sites in northwest England where this can happen. They were extinct in the UK until the 1940s and their return is one of conservation's genuine success stories. At Marshside you can get excellent close views from the road-side bank. Pairs are territorial and vocal in spring.",
     "identification": "Unmistakeable. Black and white with a long upturned bill. Sweeps bill through water while feeding. Blue-grey legs.",
     "tips": "April–June is best for breeding behaviour. Use the bank along the road to scan the scrape — you don't need the main RSPB path.",
-    "relatedSpecies": ["black-tailed-godwit", "dunlin", "lapwing"]
+    "difficulty": "easy",
+    "relatedSpecies": ["black-tailed-godwit", "dunlin", "lapwing"],
+    "wikipediaTitle": "Pied avocet",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/avocet",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/avocet"
+    },
+    "faq": [
+      {
+        "question": "Do Avocets breed at Marshside RSPB?",
+        "answer": "Yes. Marshside RSPB is one of a small number of sites in northwest England where Avocets breed. They nest on the scrape from April and can be watched from the road bank without disturbing them."
+      },
+      {
+        "question": "When were Avocets extinct in Britain?",
+        "answer": "Avocets were extinct in Britain as a breeding bird by the mid-19th century, returning naturally to breed in 1947 at Minsmere in Suffolk. They are now the symbol of the RSPB and breed at Marshside RSPB among other northwest England sites."
+      }
+    ]
   },
   {
     "commonName": "Knot",
     "scientificName": "Calidris canutus",
     "category": "birds",
     "conservationStatus": "red",
-    "seasonalPresence": "August–April. Peak numbers October–March. Up to 100,000+ on the Ribble Estuary.",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "seasonalPresence": "August–April. Peak numbers October–March.",
+    "bestTimeOfDay": "2 hours before high tide — birds are pushed off the mudflats and pack into roosting sites",
     "whereToSee": "Ribble Estuary and Hesketh Out Marsh. High tide roosts push birds up onto Marshside lagoons. Best views at high tide when they pack tightly.",
+    "shortLocation": "Ribble Estuary",
+    "ukPopulation": "Around 320,000 wintering birds — the Ribble Estuary holds one of the UK's largest concentrations",
+    "seftonPopulation": "100,000+ on the Ribble Estuary at peak — the aerial murmurations are among the greatest wildlife spectacles in England",
+    "habitat": ["Estuary", "Mudflat", "Coastal lagoon"],
+    "diet": "Bivalves, crustaceans, marine worms on mudflats",
     "description": "The knot flocks on the Ribble Estuary are among the largest wader gatherings in Europe. The Ribble is designated a Ramsar site partly because of these birds. At high tide they form dense silver-grey clouds that roll and twist in the sky — a phenomenon called a murmuration equivalent for waders. In summer plumage (April–May) birds develop a rich brick-red breast. They breed on the high Arctic tundra and the Sefton Coast is one of their key UK wintering grounds.",
     "identification": "Stocky, compact wader. Pale grey in winter with straight medium-length bill. In summer, bright brick-red below. Dumps in tight flocks.",
     "tips": "2 hours before high tide on the Ribble. They feed on the mudflats then roost as the tide pushes them off. Frodsham or Marshside banks for close roost views.",
-    "relatedSpecies": ["dunlin", "grey-plover", "bar-tailed-godwit"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["dunlin", "grey-plover", "bar-tailed-godwit"],
+    "wikipediaTitle": "Red knot",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/knot",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/knot"
+    },
+    "faq": [
+      {
+        "question": "Where can I see Knot murmurations on the Sefton Coast?",
+        "answer": "The Ribble Estuary holds one of England's largest Knot flocks — 100,000+ birds at peak. The aerial murmurations at high tide are visible from the Hesketh Out Marsh sea wall and from Marshside RSPB. Arrive 2 hours before high tide."
+      },
+      {
+        "question": "Why is the Ribble Estuary important for Knot?",
+        "answer": "The Ribble Estuary is designated a Ramsar Wetland of International Importance partly because of its Knot population. The mudflats provide critical feeding grounds for birds wintering from Arctic breeding sites in Greenland, Canada and Siberia."
+      }
+    ]
   },
   {
     "commonName": "Dunlin",
     "scientificName": "Calidris alpina",
     "category": "birds",
     "conservationStatus": "red",
-    "seasonalPresence": "Year-round, but mainly August–April as wintering and passage birds. Some breed nearby.",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "seasonalPresence": "Year-round, mainly August–April as wintering and passage birds.",
+    "bestTimeOfDay": "Any time; most active at tide edges",
     "whereToSee": "Marshside RSPB lagoons and mudflats. Ribble Estuary at low tide. Often in mixed flocks with Knot.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 340,000 wintering birds, declining",
+    "seftonPopulation": "Thousands along the Ribble Estuary and Marshside lagoons in winter",
+    "habitat": ["Mudflat", "Coastal lagoon", "Estuary", "Saltmarsh"],
+    "diet": "Small invertebrates, marine worms, crustaceans picked from mud",
     "description": "The most abundant wader on the Sefton Coast in winter. Often overlooked because of its small size and tendency to feed in dense flocks with other species, but worth a closer look — the drooped bill tip is distinctive. Dunlin from several different breeding populations pass through or winter here, from Greenland to Siberia. Numbers have declined significantly in recent decades, which is why it now sits on the red list.",
     "identification": "Small brown wader with distinctive drooped bill tip. Black belly patch in summer plumage. Pale greyish-brown in winter.",
     "tips": "Look for the drooped bill to pick them out in mixed wader flocks. They often feed right at the water's edge.",
-    "relatedSpecies": ["knot", "sanderling", "little-stint"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["knot", "sanderling"],
+    "wikipediaTitle": "Dunlin",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/dunlin",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/dunlin"
+    },
+    "faq": [
+      {
+        "question": "How do I identify Dunlin?",
+        "answer": "The key feature is the drooped tip to the bill — no other common small wader has this. In summer plumage the black belly patch is obvious. In winter they are dull greyish-brown and easily confused with other small waders, but the drooped bill always gives them away."
+      },
+      {
+        "question": "Why is Dunlin on the Red List?",
+        "answer": "Dunlin populations have declined significantly due to loss of intertidal habitat, agricultural intensification on breeding grounds, and climate change affecting Arctic breeding areas. The UK wintering population has fallen by more than 50% over recent decades."
+      }
+    ]
   },
   {
     "commonName": "Black-tailed Godwit",
     "scientificName": "Limosa limosa",
     "category": "birds",
     "conservationStatus": "red",
-    "seasonalPresence": "Year-round. Icelandic birds winter October–March. Passage birds April–May and July–August.",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "seasonalPresence": "Year-round. Icelandic birds winter October–March. Passage April–May and July–August.",
+    "bestTimeOfDay": "Morning and afternoon; active throughout the day",
     "whereToSee": "Marshside RSPB lagoons. Often stands in deeper water than other waders, sometimes up to its belly.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 50,000 wintering Icelandic birds; UK breeding population critically endangered with fewer than 100 pairs",
+    "seftonPopulation": "Regular at Marshside; peak counts of 50–200 birds in winter",
+    "habitat": ["Coastal lagoon", "Estuary", "Flooded fields"],
+    "diet": "Worms, molluscs, crustaceans probed from mud and shallow water",
     "description": "A large, elegant wader that is one of the more reliable sights at Marshside RSPB. The Icelandic subspecies winters in good numbers along the Sefton Coast. They're strikingly orange-red on the breast in spring plumage. The black and white tail pattern is diagnostic in flight. The UK breeding population is critically endangered — fewer than 100 pairs remain — making the wintering flocks here particularly important.",
     "identification": "Large, long-billed wader. Straight bill (compare Bar-tailed's upturned). Bold black tail with white base visible in flight. Orange-red breast in summer.",
     "tips": "The lagoon closest to the Marshside road often holds a group. Scan for birds standing in mid-depth water.",
-    "relatedSpecies": ["bar-tailed-godwit", "curlew", "avocet"]
+    "difficulty": "easy",
+    "relatedSpecies": ["bar-tailed-godwit", "curlew", "avocet"],
+    "wikipediaTitle": "Black-tailed godwit",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/black-tailed-godwit",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/black-tailed-godwit"
+    },
+    "faq": [
+      {
+        "question": "How do I tell Black-tailed from Bar-tailed Godwit?",
+        "answer": "The key difference in flight is the tail — Black-tailed has a bold black and white tail; Bar-tailed has a barred tail with no white base. On the ground, Black-tailed has a straight bill; Bar-tailed's bill curves gently upward. Both are large waders."
+      },
+      {
+        "question": "Are Black-tailed Godwits endangered in the UK?",
+        "answer": "The UK breeding population (islandica subspecies) is critically endangered with fewer than 100 pairs, mainly in the Nene and Ouse Washes. However, the Icelandic subspecies (islandica) is much more numerous and winters in large numbers on the Sefton Coast."
+      }
+    ]
   },
   {
     "commonName": "Curlew",
     "scientificName": "Numenius arquata",
     "category": "birds",
     "conservationStatus": "red",
-    "seasonalPresence": "Year-round. Wintering numbers highest October–March. Some breed on nearby moorland.",
-    "whereToSee": "Marshside fields and lagoon edges. Farmland around Hesketh Bank. The beach and dunes at Formby.",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "seasonalPresence": "Year-round. Wintering numbers highest October–March.",
+    "bestTimeOfDay": "Dawn and dusk for feeding activity; calls carry best at dusk",
+    "whereToSee": "Marshside fields and lagoon edges. Farmland around Hesketh Bank. Occasionally the beach and dunes at Formby.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 65,000 wintering birds, declining. Breeding population collapsed by 46% since 1995",
+    "seftonPopulation": "Regular wintering birds; small numbers present year-round on the Sefton marshes",
+    "habitat": ["Coastal marsh", "Farmland", "Estuary", "Mudflat"],
+    "diet": "Worms, crabs, molluscs probed from mud and soil with long bill",
     "description": "The curlew's bubbling call is one of the defining sounds of the Sefton Coast. Once common across Britain as a breeding bird, numbers have crashed — it's now red-listed and considered one of the UK's most threatened birds. The Sefton Coast is important for wintering curlews from northern Europe. They probe the mud with that extraordinary long curved bill, pulling out worms and small crabs. Hearing one call at dusk over the marsh is something you don't forget.",
     "identification": "Large brown wader. Very long, strongly decurved bill. Streaked brown plumage. No wing bar in flight. Call — a rising bubbling 'cur-lee' — is unmistakeable.",
     "tips": "Listen as much as look. The call carries a long way over open marsh. They often feed in fields behind the sea wall before heading to the estuary.",
-    "relatedSpecies": ["whimbrel", "black-tailed-godwit", "bar-tailed-godwit"]
+    "difficulty": "easy",
+    "relatedSpecies": ["whimbrel", "black-tailed-godwit", "bar-tailed-godwit"],
+    "wikipediaTitle": "Eurasian curlew",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/curlew",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/curlew"
+    },
+    "faq": [
+      {
+        "question": "Is the Curlew endangered in the UK?",
+        "answer": "The Curlew is on the UK Red List and has declined by 46% since 1995. The UK holds around 25% of the European breeding population, making it particularly important for global conservation. Wintering birds from northern Europe are still common on the Sefton Coast."
+      },
+      {
+        "question": "How do I identify a Curlew?",
+        "answer": "The Curlew is unmistakeable — Britain's largest wader, with a very long, strongly downward-curved bill. The bubbling, rising 'cur-lee' call is one of the most distinctive bird sounds in Britain. The Whimbrel is similar but smaller with a shorter, less curved bill and a striped crown."
+      }
+    ]
   },
   {
     "commonName": "Marsh Harrier",
     "scientificName": "Circus aeruginosus",
     "category": "birds",
     "conservationStatus": "green",
-    "seasonalPresence": "March–October. Some overwinter. Breeding confirmed at Marshside in recent years.",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "seasonalPresence": "March–October. Some overwinter. Breeding confirmed at Marshside.",
+    "bestTimeOfDay": "Early morning — most active over reed beds at dawn",
     "whereToSee": "Marshside RSPB — quartering low over the reed beds and lagoon edges. Best in early morning.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 400 breeding females in the UK — recovered from near-extinction in the 1970s",
+    "seftonPopulation": "Breeding pair(s) at or near Marshside; regular year-round sightings",
+    "habitat": ["Reed bed", "Coastal marsh", "Lagoon edge"],
+    "diet": "Small mammals, birds, frogs, large insects",
     "description": "Marsh Harriers were virtually extinct in the UK by the 1970s — fewer than five breeding females remained. Recovery has been remarkable and the Sefton Coast has been part of that story. They breed in or near Marshside RSPB and can be seen regularly in spring and summer quartering the reed beds in that characteristic low, buoyant flight with wings held in a shallow V. Males are grey and chestnut; females are chocolate brown with a cream crown. Seeing a food pass — the male dropping prey to the female in flight — is spectacular.",
     "identification": "Large, broad-winged raptor. Males grey with chestnut body and black wingtips. Females dark brown with cream crown and throat. Glides with wings in shallow V.",
     "tips": "Early morning in spring and summer. Watch from the RSPB car park along Marshside Road. They often work the lagoon edges systematically.",
-    "relatedSpecies": ["hen-harrier", "peregrine-falcon", "short-eared-owl"]
+    "difficulty": "easy",
+    "relatedSpecies": ["hen-harrier", "peregrine-falcon", "short-eared-owl"],
+    "wikipediaTitle": "Western marsh harrier",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/marsh-harrier",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/marsh-harrier"
+    },
+    "faq": [
+      {
+        "question": "Do Marsh Harriers breed at Marshside RSPB?",
+        "answer": "Yes. Marsh Harriers breed at or very close to Marshside RSPB and are a regular sight throughout spring and summer. The best views are from the Marshside Road bank early in the morning, watching birds quarter the reed bed margins."
+      },
+      {
+        "question": "How did the Marsh Harrier recover in the UK?",
+        "answer": "By the early 1970s, Marsh Harriers were almost extinct in the UK with just a handful of breeding females remaining in East Anglia. The ban on organochlorine pesticides and improved habitat management allowed recovery — there are now around 400 breeding females."
+      }
+    ]
   },
   {
     "commonName": "Hen Harrier",
     "scientificName": "Circus cyaneus",
     "category": "birds",
     "conservationStatus": "red",
-    "seasonalPresence": "October–March. Winter visitor from moorland breeding sites.",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "seasonalPresence": "October–March. Winter visitor.",
+    "bestTimeOfDay": "Late afternoon — often roost in rank grass at dusk",
     "whereToSee": "Marshside RSPB and Crossens Marsh. Occasionally over the dunes at Ainsdale. Generally one or two birds in a winter.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 600 breeding pairs in the UK uplands; severely persecuted on grouse moors",
+    "seftonPopulation": "One or two birds most winters at Marshside; occasional communal roost",
+    "habitat": ["Open marsh", "Dune grassland", "Rough grassland"],
+    "diet": "Small mammals (especially voles), small birds, carrion",
     "description": "One of Britain's most persecuted birds of prey — illegally killed on grouse moors — the Hen Harrier is a rare and special winter sight on the Sefton Coast. Males are pale grey with black wingtips ('grey ghost'), females are brown with a bold white rump. They roost communally in some winters and a roosting site near Marshside has been used historically. If you see one quartering low over the marsh in January, count yourself lucky.",
     "identification": "Similar to Marsh Harrier but slimmer, longer-tailed. Males pale grey. Females/immatures brown with white rump and barred tail. White rump is key.",
     "tips": "Late afternoon in winter. They often roost in rank grass or rush beds. Scan open marsh areas from the sea wall.",
-    "relatedSpecies": ["marsh-harrier", "peregrine-falcon", "short-eared-owl"]
+    "difficulty": "specialist",
+    "relatedSpecies": ["marsh-harrier", "peregrine-falcon", "short-eared-owl"],
+    "wikipediaTitle": "Hen harrier",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/hen-harrier",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/hen-harrier"
+    },
+    "faq": [
+      {
+        "question": "How do I distinguish Hen Harrier from Marsh Harrier?",
+        "answer": "Hen Harriers are slimmer and longer-tailed than Marsh Harriers. The white rump (on females and young) is the key field mark. Male Hen Harriers are pale grey with black wingtips — very different from the chestnut and grey of male Marsh Harriers. Both glide with wings in a shallow V."
+      },
+      {
+        "question": "Why is the Hen Harrier so rare?",
+        "answer": "Hen Harriers are illegally persecuted on grouse moors because they predate grouse chicks. Despite legal protection, the shooting of Hen Harriers persists — Natural England's tracking data shows many birds disappear over grouse moor areas. The Sefton Coast birds are winter visitors from upland breeding grounds."
+      }
+    ]
   },
   {
     "commonName": "Peregrine Falcon",
     "scientificName": "Falco peregrinus",
     "category": "birds",
     "conservationStatus": "green",
-    "seasonalPresence": "Year-round, though most frequently seen October–March when wader flocks are present.",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "seasonalPresence": "Year-round, most frequently seen October–March.",
+    "bestTimeOfDay": "Any time — most dramatic at high tide when wader flocks are present",
     "whereToSee": "Anywhere along the Sefton Coast. Marshside RSPB is a good bet. They hunt over the beach, dunes and marsh.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 1,800 breeding pairs — fully recovered since organochlorine pesticide bans",
+    "seftonPopulation": "Regular visitor; several birds range across the Sefton Coast in winter",
+    "habitat": ["Open coast", "Coastal marsh", "Estuary"],
+    "diet": "Medium-sized birds — waders, ducks, pigeons; stoops at up to 240mph",
     "description": "The Peregrine is the world's fastest animal in a stoop and the Sefton Coast's wader flocks attract them regularly. Watching a Peregrine put 20,000 Knot to flight and then pick one out of the panicking flock is breathtaking. They've recovered well since organochlorine pesticides were banned and are now resident near several Lancashire towns, with birds ranging out to the coast to hunt. A single stoop can scatter every wader on the marsh.",
     "identification": "Medium-large falcon. Blue-grey above, pale below with dark barring. Dark moustache. Pointed wings. Stoops at extreme speed with wings half-folded.",
     "tips": "Watch for sudden panic in wader or duck flocks — that's usually a Peregrine. Check fence posts and structures for perching birds.",
-    "relatedSpecies": ["merlin", "kestrel", "hen-harrier"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["merlin", "hen-harrier"],
+    "wikipediaTitle": "Peregrine falcon",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/peregrine",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/peregrine"
+    },
+    "faq": [
+      {
+        "question": "How fast can a Peregrine Falcon stoop?",
+        "answer": "A Peregrine's stoop (power dive) can reach speeds of 240mph (390kph), making it the fastest animal on Earth. On the Sefton Coast you can watch stoops over wader flocks — a sudden explosion of 10,000 birds taking to the air usually means a Peregrine is hunting."
+      }
+    ]
   },
   {
     "commonName": "Merlin",
     "scientificName": "Falco columbarius",
     "category": "birds",
     "conservationStatus": "red",
-    "seasonalPresence": "September–March. Winter visitor from upland breeding sites.",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "seasonalPresence": "September–March. Winter visitor.",
+    "bestTimeOfDay": "Morning, hunting over open dune grassland in calm conditions",
     "whereToSee": "Open dune areas at Ainsdale and Formby. Crossens Marsh. Often chases Meadow Pipits low over grass.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Around 1,300 breeding pairs in uplands; winter population swelled by Icelandic and northern birds",
+    "seftonPopulation": "One or two birds most winters on the dunes and marsh",
+    "habitat": ["Dune grassland", "Open marsh", "Coastal heath"],
+    "diet": "Small birds (especially Meadow Pipits and Skylarks), large insects",
     "description": "Britain's smallest falcon is a regular winter visitor to the Sefton Coast. Easy to miss — the size of a Mistle Thrush and fast-flying, it tends to appear suddenly, pursue a small bird at low level across the dunes, and disappear just as quickly. Males are steel blue above; females and immatures are brown. They breed on upland heather moors and winter on the coast. Worth looking for over the open dune grassland at Ainsdale.",
     "identification": "Very small falcon. Males blue-grey above with orange-buff underparts. Females dark brown. Short tail, pointed wings. Fast direct flight, often low.",
     "tips": "Scan low over dune grassland for fast, direct flight chasing small birds. Often seen from the Ainsdale NNR board walk.",
-    "relatedSpecies": ["peregrine-falcon", "kestrel", "hen-harrier"]
+    "difficulty": "specialist",
+    "relatedSpecies": ["peregrine-falcon", "hen-harrier"],
+    "wikipediaTitle": "Merlin (bird)",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/merlin",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/merlin"
+    },
+    "faq": [
+      {
+        "question": "What is Britain's smallest falcon?",
+        "answer": "The Merlin is Britain's smallest falcon, roughly the size of a Mistle Thrush. It breeds on upland heather moors and winters on coastal areas including the Sefton Coast, where it hunts Meadow Pipits over open dune grassland."
+      }
+    ]
   },
   {
     "commonName": "Short-eared Owl",
     "scientificName": "Asio flammeus",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "October–March. Numbers vary year to year — irruptions in some winters bring dozens.",
-    "whereToSee": "Marshside RSPB and Crossens Marsh. Hesketh Out Marsh. They hunt in daylight, quartering low over rough grass.",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "seasonalPresence": "October–March. Numbers vary year to year.",
+    "bestTimeOfDay": "Late afternoon and dusk — they become more active before dark",
+    "whereToSee": "Marshside RSPB and Crossens Marsh. Hesketh Out Marsh. They hunt in daylight over rough grass.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 1,000 breeding pairs in UK uplands; winter influx from northern Europe",
+    "seftonPopulation": "1–8 birds most winters; occasional irruption years with higher numbers",
+    "habitat": ["Open marsh", "Rough grassland", "Coastal farmland"],
+    "diet": "Field voles (primary prey), small mammals, birds",
     "description": "The Short-eared Owl is one of those birds you can watch for a long time. It hunts in full daylight, drifting on buoyant wings low over rush and grass areas, dropping suddenly onto voles. On a good winter afternoon at Marshside you might see four or five working the same area. Numbers vary enormously year to year depending on vole cycles — in irruption years when voles crash on the breeding grounds, owls move south in large numbers.",
     "identification": "Medium-large owl. Streaked tawny-brown. Yellow eyes with dark patches below. Short 'ear' tufts rarely visible. Pale underwing with dark carpal patch.",
     "tips": "Late afternoon in winter — they become more active before dusk. The marsh between Marshside car park and Hesketh Bank is reliable.",
-    "relatedSpecies": ["barn-owl", "marsh-harrier", "hen-harrier"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["barn-owl", "marsh-harrier", "hen-harrier"],
+    "wikipediaTitle": "Short-eared owl",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/short-eared-owl",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/short-eared-owl"
+    },
+    "faq": [
+      {
+        "question": "Why do Short-eared Owl numbers vary so much each winter at Marshside?",
+        "answer": "Short-eared Owl populations track field vole cycles. When voles crash on Scandinavian breeding grounds, owls move south in large irruption events. In good years, 5–10 birds can be seen over Marshside; in poor years, just one or two. Check recent sightings reports before visiting."
+      }
+    ]
   },
   {
     "commonName": "Barn Owl",
     "scientificName": "Tyto alba",
     "category": "birds",
     "conservationStatus": "green",
-    "seasonalPresence": "Year-round. Crepuscular — best seen at dusk and dawn.",
+    "order": "Strigiformes",
+    "family": "Tytonidae",
+    "seasonalPresence": "Year-round. Most visible at dusk in autumn and winter.",
+    "bestTimeOfDay": "Dusk and dawn; occasionally hunts in daylight in winter",
     "whereToSee": "Farmland and rough grassland around Hesketh Bank, Crossens and Banks. Occasional at Marshside RSPB edges.",
+    "shortLocation": "Hesketh Bank",
+    "ukPopulation": "Around 4,000 breeding pairs in the UK",
+    "seftonPopulation": "Small resident population in the farmland around Banks and Hesketh Bank",
+    "habitat": ["Farmland", "Rough grassland", "Marsh edge"],
+    "diet": "Field voles, wood mice, shrews — detected by hearing through snow and vegetation",
     "description": "Ghost-pale and silent, the Barn Owl is one of the most atmospheric birds you can see. The Sefton Coast hinterland — particularly the flat farmland around Banks and Hesketh Bank — holds a decent population. They hunt by quartering low over rough grass margins, listening for voles with those heart-shaped, satellite-dish ears. Most reliably seen at dusk in late autumn and winter when they hunt earlier due to food pressure.",
     "identification": "Unmistakeable. White below, golden-buff above with grey mottling. Heart-shaped face. Silent flight. Ghostly pale in headlights.",
     "tips": "Drive slowly along country lanes around Banks and Hesketh Bank at dusk. They often hunt road verges.",
-    "relatedSpecies": ["short-eared-owl", "kestrel"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["short-eared-owl"],
+    "wikipediaTitle": "Barn owl",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/barn-owl",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/barn-owl"
+    },
+    "faq": [
+      {
+        "question": "Where is the best place to see Barn Owls near the Sefton Coast?",
+        "answer": "Drive slowly along the country lanes around Banks and Hesketh Bank at dusk, particularly in autumn and winter. Barn Owls regularly hunt the grass verges and rough field margins. The area around the Crossens pumping station is also good."
+      }
+    ]
   },
   {
     "commonName": "Lapwing",
     "scientificName": "Vanellus vanellus",
     "category": "birds",
     "conservationStatus": "red",
-    "seasonalPresence": "Year-round. Breeding birds March–July. Large wintering flocks October–March.",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
+    "seasonalPresence": "Year-round. Breeding March–July. Large wintering flocks October–March.",
+    "bestTimeOfDay": "Morning for displaying breeding birds in spring; any time for winter flocks",
     "whereToSee": "Marshside RSPB lagoons and surrounding fields. Hesketh Out Marsh. Farmland behind the sea wall.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 140,000 breeding pairs, down 80% since 1960",
+    "seftonPopulation": "Breeding colony at Marshside; winter flocks of several thousand on surrounding farmland",
+    "habitat": ["Coastal marsh", "Farmland", "Lagoon edge", "Flooded fields"],
+    "diet": "Earthworms, soil invertebrates, beetles",
     "description": "Once one of the most familiar farmland birds in Britain, the Lapwing has declined badly — lost from most lowland farmland due to agricultural intensification. The Sefton Coast retains good numbers as a breeding and wintering species. At Marshside the displays in early spring — tumbling, 'pee-wit' calling, iridescent green wings — are a sign that the season has turned. Winter flocks can be large and spectacular, rolling across fields in coordinated movement.",
     "identification": "Medium wader with distinctive wispy crest. Iridescent green-black above, white below, black breast band. Orange-red undertail. Broad, rounded wings with slow wingbeats.",
     "tips": "Breeding birds display noisily from March. Winter flocks tend to roost on flooded fields — look for them from the sea wall.",
-    "relatedSpecies": ["golden-plover", "dunlin", "curlew"]
+    "difficulty": "easy",
+    "relatedSpecies": ["golden-plover", "dunlin", "curlew"],
+    "wikipediaTitle": "Northern lapwing",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/lapwing",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/lapwing"
+    },
+    "faq": [
+      {
+        "question": "Why are Lapwings declining in the UK?",
+        "answer": "Lapwings have declined by 80% since 1960, mainly due to agricultural intensification — silage cutting destroys nests, drainage removes wet grassland feeding habitat, and pesticides reduce invertebrate food. The Marshside RSPB management (maintaining wet, grazed grassland) directly benefits Lapwing breeding success."
+      }
+    ]
   },
   {
     "commonName": "Golden Plover",
     "scientificName": "Pluvialis apricaria",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "October–March. Flocks sometimes massive — up to 10,000 birds on the Ribble plain.",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
+    "seasonalPresence": "October–March. Large wintering flocks.",
+    "bestTimeOfDay": "Morning and afternoon when feeding in fields",
     "whereToSee": "Farmland around Hesketh Bank and Crossens. Often with Lapwing. Fields immediately behind Marshside sometimes hold large flocks.",
+    "shortLocation": "Hesketh Bank",
+    "ukPopulation": "Around 300,000 wintering birds",
+    "seftonPopulation": "Flocks of hundreds to several thousand on Sefton Coast farmland in winter",
+    "habitat": ["Farmland", "Rough grassland", "Coastal fields"],
+    "diet": "Earthworms, beetles, seeds, berries",
     "description": "Golden Plovers often mix with Lapwings in winter on the flat farmland behind the sea wall. When the flock takes to the air together — Lapwings with their slow wingbeats, Golden Plovers with rapid, flickering wings — the aerial display is extraordinary. In summer plumage (April–May) birds develop a striking black face and belly bordered by white. They breed on northern and upland moors and winter across the Sefton Coast plain in large numbers.",
     "identification": "Round-headed plover. Golden-speckled brown above. Black face and belly in summer, pale below in winter. Rapid wingbeats. High-pitched whistle.",
     "tips": "Look in fields with Lapwings in winter. They tend to feed slightly separately then flush together. The whistling call helps locate flocks.",
-    "relatedSpecies": ["lapwing", "grey-plover", "dunlin"]
+    "difficulty": "easy",
+    "relatedSpecies": ["lapwing", "grey-plover", "dunlin"],
+    "wikipediaTitle": "European golden plover",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/golden-plover",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/golden-plover"
+    },
+    "faq": [
+      {
+        "question": "How do I tell Golden Plover from Grey Plover?",
+        "answer": "In winter, Golden Plovers are warm golden-buff above, while Grey Plovers are cooler grey. In flight, the definitive feature is the 'armpit' — Grey Plover has black axillary feathers; Golden Plover has pale armpits. Golden Plovers also form huge dense flocks on farmland, which Grey Plovers rarely do."
+      }
+    ]
   },
   {
     "commonName": "Grey Plover",
     "scientificName": "Pluvialis squatarola",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "August–April. Passage and wintering. Rarely breeds in UK.",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
+    "seasonalPresence": "August–April. Passage and wintering.",
+    "bestTimeOfDay": "Low tide for feeding on mudflats",
     "whereToSee": "Ribble Estuary mudflats at low tide. Marshside lagoons.",
+    "shortLocation": "Ribble Estuary",
+    "ukPopulation": "Around 43,000 wintering birds",
+    "seftonPopulation": "Regular on the Ribble Estuary and Marshside; numbers in tens to low hundreds",
+    "habitat": ["Mudflat", "Estuary", "Coastal lagoon"],
+    "diet": "Marine worms, bivalves, crustaceans picked from mud surface",
     "description": "The Grey Plover is an Arctic breeder that winters on the Sefton Coast's mudflats and lagoons. Stockier than Golden Plover, it tends to be solitary or in small groups rather than the huge flocks of its cousin. The black axillary feathers ('armpits') visible in flight are distinctive. In April departing birds may be starting to show the black belly of summer plumage.",
     "identification": "Stocky plover. Pale grey above in winter, with spangled black-and-white in summer. Black armpits in flight — diagnostic. Stands upright, tilts forward to feed.",
     "tips": "Check mudflats at low tide for solitary birds. The black armpits visible in flight are the clincher.",
-    "relatedSpecies": ["golden-plover", "lapwing", "knot"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["golden-plover", "lapwing", "knot"],
+    "wikipediaTitle": "Grey plover",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/grey-plover",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/grey-plover"
+    },
+    "faq": [
+      {
+        "question": "What is the best way to identify a Grey Plover in flight?",
+        "answer": "The 'black armpits' — the axillary feathers beneath the wing — are diagnostic of Grey Plover in flight and distinguishable from all other similarly-sized plovers. Golden Plover has pale armpits. The feature is visible even at distance with binoculars."
+      }
+    ]
   },
   {
     "commonName": "Oystercatcher",
     "scientificName": "Haematopus ostralegus",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "Year-round. Breeding birds March–August. Winter flocks from northern birds.",
+    "order": "Charadriiformes",
+    "family": "Haematopodidae",
+    "seasonalPresence": "Year-round. Breeding March–August. Winter flocks from northern birds.",
+    "bestTimeOfDay": "Any time; roost at high tide on rocky or shingle areas",
     "whereToSee": "Formby and Ainsdale beaches. Ribble Estuary. Marshside lagoons.",
-    "description": "Noisy, striking, and hard to miss. Oystercatchers are one of the characteristic birds of the Sefton Coast shoreline. They breed on the beaches — look for nest scrapes on shingle areas — and overwinter in large numbers from northern breeding populations. Their loud, piping alarm call is one of the sounds of the coast. Despite the name, they eat mostly cockles and mussels on the Sefton Coast, not oysters. They prise open bivalves with that heavy orange bill.",
+    "shortLocation": "Formby Beach",
+    "ukPopulation": "Around 110,000 breeding pairs; winter population includes continental birds",
+    "seftonPopulation": "Common year-round; both breeding and wintering birds",
+    "habitat": ["Beach", "Estuary", "Mudflat", "Coastal lagoon"],
+    "diet": "Cockles, mussels, worms — opened by stabbing or hammering with the bill",
+    "description": "Noisy, striking, and hard to miss. Oystercatchers are one of the characteristic birds of the Sefton Coast shoreline. They breed on the beaches and overwinter in large numbers from northern breeding populations. Their loud, piping alarm call is one of the sounds of the coast. They're named for oysters but eat mostly cockles and mussels on the Sefton Coast, prying open bivalves with that heavy orange bill.",
     "identification": "Black and white with long orange-red bill, pink legs and red eye. Very loud piping call. Bold white wing bar in flight.",
     "tips": "Look on the beach above the tide line for breeding birds. Roost at high tide on rocks or shingle. Call announces their presence from some distance.",
-    "relatedSpecies": ["lapwing", "curlew", "redshank"]
+    "difficulty": "easy",
+    "relatedSpecies": ["lapwing", "curlew", "redshank"],
+    "wikipediaTitle": "Eurasian oystercatcher",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/oystercatcher",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/oystercatcher"
+    },
+    "faq": [
+      {
+        "question": "Do Oystercatchers really catch oysters?",
+        "answer": "Despite their name, Oystercatchers rarely eat oysters on the Sefton Coast. They predominantly eat cockles, mussels and worms, using their powerful orange bill to either stab open bivalves or hammer them on rocks. Specialist 'stabbers' and 'hammerers' exist as distinct feeding strategies within populations."
+      }
+    ]
   },
   {
     "commonName": "Redshank",
     "scientificName": "Tringa totanus",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
     "seasonalPresence": "Year-round. Breeds on coastal marsh. Wintering birds from Iceland and Faroe.",
+    "bestTimeOfDay": "Any time; most vocal when predators are present",
     "whereToSee": "Marshside RSPB lagoons and salt marsh. Ribble Estuary. Crossens Marsh.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 24,000 breeding pairs; winter population boosted by Icelandic birds",
+    "seftonPopulation": "Common year-round; breeds at Marshside RSPB and surrounds",
+    "habitat": ["Coastal marsh", "Lagoon edge", "Saltmarsh", "Mudflat"],
+    "diet": "Small invertebrates, worms, small fish, crustaceans",
     "description": "The Redshank is the 'sentinel of the marsh' — always the first bird to call the alarm and take flight, warning everything else on the lagoon. They breed in the long grass and rush beds around Marshside and are present year-round, with wintering numbers boosted by birds from Iceland. The orange-red legs and base to the bill are obvious at any range; the white trailing edge to the wing is the best flight feature.",
     "identification": "Medium wader. Brown above, paler below with dense spotting. Bright orange-red legs and bill base. Bold white trailing wing edge and white back in flight.",
     "tips": "If Redshanks suddenly call and fly up, look for the predator that caused it — often a harrier, Peregrine, or Sparrowhawk.",
-    "relatedSpecies": ["spotted-redshank", "greenshank", "dunlin"]
+    "difficulty": "easy",
+    "relatedSpecies": ["spotted-redshank", "greenshank", "dunlin"],
+    "wikipediaTitle": "Common redshank",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/redshank",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/redshank"
+    },
+    "faq": [
+      {
+        "question": "Why is the Redshank called the sentinel of the marsh?",
+        "answer": "Redshanks are famously alert and are invariably the first birds to call and take flight when a predator appears. Their sharp, repeated alarm call immediately alerts all other waders and wildfowl on the lagoon. Experienced birdwatchers use a sudden Redshank alarm as a cue to look for the cause — usually a harrier or Peregrine."
+      }
+    ]
   },
   {
     "commonName": "Spotted Redshank",
     "scientificName": "Tringa erythropus",
     "category": "birds",
     "conservationStatus": "green",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
     "seasonalPresence": "Mainly July–October on autumn passage. Occasional winter birds.",
+    "bestTimeOfDay": "Morning and afternoon; active feeders",
     "whereToSee": "Marshside RSPB lagoons — usually one or two birds among the Redshanks.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Passage visitor only; does not breed in UK",
+    "seftonPopulation": "1–3 birds most autumns at Marshside; occasional winter birds",
+    "habitat": ["Coastal lagoon", "Mudflat", "Estuary"],
+    "diet": "Small fish, invertebrates caught by active pursuit in deeper water",
     "description": "A scarcer cousin of the Redshank, the Spotted Redshank is a passage visitor worth picking out from the commoner bird. In summer plumage it is almost entirely sooty-black — one of the most striking waders you'll see. Autumn birds are paler grey, and winter birds are very similar to Redshank but longer-legged and more elegant. Tends to feed in deeper water, sometimes almost swimming.",
     "identification": "Larger and more elegant than Redshank. Longer bill with drooped tip, longer red legs. Summer: sooty black. Winter: pale grey. No white wing bar — key difference from Redshank in flight.",
     "tips": "Look for a slightly taller, paler bird among the Redshanks. The call — a sharp 'chu-it' — is a useful alert.",
-    "relatedSpecies": ["redshank", "greenshank", "black-tailed-godwit"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["redshank", "greenshank", "black-tailed-godwit"],
+    "wikipediaTitle": "Spotted redshank",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/spotted-redshank",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/spotted-redshank"
+    },
+    "faq": [
+      {
+        "question": "How do I tell Spotted Redshank from Common Redshank?",
+        "answer": "In winter, Spotted Redshank is paler grey and more elegant than the brown Common Redshank. The key flight feature is the absence of a white wing bar — Common Redshank has a very obvious white trailing edge to the wing; Spotted Redshank does not. The call (a sharp 'chu-it') is also distinctive."
+      }
+    ]
   },
   {
     "commonName": "Greenshank",
     "scientificName": "Tringa nebularia",
     "category": "birds",
     "conservationStatus": "green",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
     "seasonalPresence": "Late June–October on autumn passage. Some winter birds.",
+    "bestTimeOfDay": "Morning — most actively feeding early in the day",
     "whereToSee": "Marshside RSPB lagoons. Often one or two birds at a time.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 1,200 breeding pairs in Scotland; passage birds from Scandinavia winter on coasts",
+    "seftonPopulation": "Regular passage visitor; usually 1–4 birds at Marshside in July–September",
+    "habitat": ["Coastal lagoon", "Mudflat", "Estuary"],
+    "diet": "Small fish, invertebrates, crustaceans chased actively in shallow water",
     "description": "The Greenshank is one of the more elegant passage waders at Marshside — tall, pale, and with a slightly upturned bill. It feeds actively, often running after small fish and invertebrates in the shallower lagoons. They breed on Scottish moorland and pass through the Sefton Coast on their way south in autumn. The loud, ringing 'tew-tew-tew' call in flight is one of the better sounds of an autumn morning at Marshside.",
     "identification": "Large, pale wader. Greenish legs. Slightly upturned bill. White back visible in flight (no wing bar). Loud ringing call.",
     "tips": "The call is often heard before the bird is seen. Check the lagoon edges at Marshside throughout August and September.",
-    "relatedSpecies": ["redshank", "spotted-redshank", "black-tailed-godwit"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["redshank", "spotted-redshank", "black-tailed-godwit"],
+    "wikipediaTitle": "Common greenshank",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/greenshank",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/greenshank"
+    },
+    "faq": [
+      {
+        "question": "What does a Greenshank call sound like?",
+        "answer": "The Greenshank's call is a loud, ringing 'tew-tew-tew' — three notes, slightly descending. Once learned it is one of the most distinctive calls of autumn migration. It is often heard as a bird flies overhead and is the best way to detect them at Marshside before getting a visual."
+      }
+    ]
   },
   {
     "commonName": "Little Egret",
     "scientificName": "Egretta garzetta",
     "category": "birds",
     "conservationStatus": "green",
-    "seasonalPresence": "Year-round. Breeds locally in small colonies.",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "seasonalPresence": "Year-round. Breeds locally.",
+    "bestTimeOfDay": "Any time; most active while actively fishing",
     "whereToSee": "Marshside RSPB lagoons and ditches. Ribble Estuary margins. Formby ponds.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 700 breeding pairs; first bred in 1996 and expanding rapidly",
+    "seftonPopulation": "Common year-round; small breeding colony nearby",
+    "habitat": ["Coastal lagoon", "Estuary margin", "Drainage ditch", "Pond"],
+    "diet": "Small fish, frogs, insects, crustaceans",
     "description": "The Little Egret was not on the British list until 1989. Now it's a common sight along the entire Sefton Coast. This is a genuine conservation success story — the species colonised from France and has spread northward as winters have become milder. At Marshside you can watch them fishing actively in the lagoons, running and wing-flapping to disturb prey, or standing motionless as statues. Pure white with black bill, black legs and bright yellow feet.",
     "identification": "Small, all-white heron. Black bill, black legs, yellow feet. The yellow feet are visible even in flight. Wispy plumes in breeding season.",
     "tips": "The yellow feet catch the light and make ID straightforward. Look for them in shallow lagoon margins and drainage ditches.",
-    "relatedSpecies": ["grey-heron", "great-white-egret"]
+    "difficulty": "easy",
+    "relatedSpecies": ["grey-heron", "great-white-egret"],
+    "wikipediaTitle": "Little egret",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/little-egret",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/little-egret"
+    },
+    "faq": [
+      {
+        "question": "When did the Little Egret colonise Britain?",
+        "answer": "Little Egrets began appearing in Britain in the 1980s and first bred in 1996 in Dorset. The colonisation has been rapid — there are now around 700 breeding pairs. On the Sefton Coast they are now a common year-round sight at Marshside RSPB and along the estuary, representing a dramatic range expansion northward."
+      }
+    ]
   },
   {
     "commonName": "Great White Egret",
     "scientificName": "Ardea alba",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "Year-round but irregular. More frequent in recent years as UK population grows.",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "seasonalPresence": "Year-round but irregular. More frequent in recent years.",
+    "bestTimeOfDay": "Any time — active feeders when present",
     "whereToSee": "Marshside RSPB lagoons. Check any Little Egret flock carefully.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 50 breeding pairs in Somerset; rapidly expanding",
+    "seftonPopulation": "Irregular visitor; usually 1–2 birds present at Marshside in any given month",
+    "habitat": ["Coastal lagoon", "Reed bed", "Estuary margin"],
+    "diet": "Fish, frogs, large invertebrates",
     "description": "The Great White Egret is now breeding in England in small numbers and is an increasingly regular sight at Marshside. Much larger than the Little Egret — about the size of a Grey Heron — it's easy to pick out once you know what to look for. Yellow bill (turns dark in breeding season), dark legs and feet. It feeds similarly to Little Egret but takes larger prey. One or two are usually present at Marshside in any given month.",
     "identification": "Like a very large Little Egret. Heron-sized. Yellow bill, dark legs. No yellow feet (Little Egret's key feature). Kinked neck in flight like Grey Heron.",
     "tips": "Scan any white egret on the lagoon for large size — it will dwarf a Little Egret if both are present.",
-    "relatedSpecies": ["little-egret", "grey-heron"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["little-egret", "grey-heron"],
+    "wikipediaTitle": "Great egret",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/great-white-egret",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/great-white-egret"
+    },
+    "faq": [
+      {
+        "question": "How do I tell Great White Egret from Little Egret?",
+        "answer": "Size is the most obvious difference — Great White Egret is heron-sized, nearly three times the bulk of a Little Egret. Bill colour is also key: Little Egret has a black bill with yellow feet; Great White Egret has a yellow bill with dark feet. In flight, Great White Egret holds its neck kinked like a Grey Heron."
+      }
+    ]
   },
   {
     "commonName": "Grey Heron",
     "scientificName": "Ardea cinerea",
     "category": "birds",
     "conservationStatus": "green",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
     "seasonalPresence": "Year-round.",
+    "bestTimeOfDay": "Any time; most productive at dawn when prey is less wary",
     "whereToSee": "Any water on the Sefton Coast — Marshside lagoons, the beach, drainage ditches, garden ponds.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 13,000 breeding pairs in the UK",
+    "seftonPopulation": "Common year-round; several pairs breed locally",
+    "habitat": ["Coastal lagoon", "Estuary", "Drainage ditch", "Pond", "Beach"],
+    "diet": "Fish, amphibians, small mammals, large invertebrates",
     "description": "The Grey Heron needs no introduction to anyone who's ever had fish in their garden pond. On the Sefton Coast they're everywhere — standing motionless on lagoon edges, flapping heavily over the marsh, or stabbing at fish with that javelin bill. They breed colonially in heronry sites and roost communally. At Marshside there's usually one or two standing on the bank, occasionally getting dive-bombed by Black-headed Gulls protecting their nests.",
-    "identification": "Very large grey and white heron. Black stripe above eye. Dagger bill. Slow, heavy wingbeats with kinked neck. White in younger birds.",
+    "identification": "Very large grey and white heron. Black stripe above eye. Dagger bill. Slow, heavy wingbeats with kinked neck.",
     "tips": "Look for them on the sea wall and lagoon banks at Marshside. They tend to stand still for long periods before striking.",
-    "relatedSpecies": ["little-egret", "great-white-egret"]
+    "difficulty": "easy",
+    "relatedSpecies": ["little-egret", "great-white-egret"],
+    "wikipediaTitle": "Grey heron",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/grey-heron",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/grey-heron"
+    },
+    "faq": [
+      {
+        "question": "How long can a Grey Heron stand still while hunting?",
+        "answer": "Grey Herons are famous for their patience — they can stand motionless for 30 minutes or more, waiting for fish to come within striking range. Their strike, when it comes, takes around 0.3 seconds. On the Sefton Coast they often feed at dawn and dusk when fish are least wary."
+      }
+    ]
   },
   {
     "commonName": "Whooper Swan",
     "scientificName": "Cygnus cygnus",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Anseriformes",
+    "family": "Anatidae",
     "seasonalPresence": "October–March. Wintering birds from Iceland.",
-    "whereToSee": "Hesketh Out Marsh and Crossens Marsh. Occasionally Marshside RSPB lagoons. Sometimes on flooded fields.",
-    "description": "Whooper Swans are winter visitors from Iceland — they fly direct across the Atlantic to reach the UK. The Sefton Coast is within range of the Ribble Valley wintering sites and birds can be seen around Crossens and Hesketh Out Marsh. Larger and more upright-necked than Mute Swan, with a distinctive yellow and black bill rather than orange. The loud bugling call — quite different from a Mute Swan — announces their arrival.",
+    "bestTimeOfDay": "Morning and evening when feeding in fields",
+    "whereToSee": "Hesketh Out Marsh and Crossens Marsh. Occasionally Marshside RSPB lagoons.",
+    "shortLocation": "Hesketh Out Marsh",
+    "ukPopulation": "Around 15,000 wintering birds from Iceland",
+    "seftonPopulation": "Small numbers most winters; check Crossens Marsh and surrounding fields",
+    "habitat": ["Coastal marsh", "Flooded fields", "Lagoon"],
+    "diet": "Aquatic plants, grass, grain",
+    "description": "Whooper Swans are winter visitors from Iceland — they fly direct across the Atlantic to reach the UK. The Sefton Coast is within range of the Ribble Valley wintering sites and birds can be seen around Crossens and Hesketh Out Marsh. Larger and more upright-necked than Mute Swan, with a distinctive yellow and black bill rather than orange. The loud bugling call is quite different from a Mute Swan.",
     "identification": "Large white swan. Yellow triangular bill patch extending to nostril — key feature. Holds neck straight and upright (not curved). Loud bugling call.",
     "tips": "Check any swan flock in winter for yellow-billed birds. The call is very different from Mute Swan — a loud trumpeting 'whoop'.",
-    "relatedSpecies": ["mute-swan", "bewick-s-swan"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["greylag-goose", "pink-footed-goose"],
+    "wikipediaTitle": "Whooper swan",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/whooper-swan",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/whooper-swan"
+    },
+    "faq": [
+      {
+        "question": "How do I tell Whooper Swan from Mute Swan?",
+        "answer": "Bill colour and shape are the key differences. Whooper Swan has a yellow and black bill — the yellow forms a triangular patch extending to the nostril. Mute Swan has an orange bill with a black knob at the base. Whooper also holds its neck straighter (Mute curves it), and calls loudly (Mute is largely silent in flight)."
+      }
+    ]
   },
   {
     "commonName": "Teal",
     "scientificName": "Anas crecca",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "Year-round but mainly October–March. A few breed. Large wintering flocks.",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "seasonalPresence": "Year-round but mainly October–March. Large wintering flocks.",
+    "bestTimeOfDay": "Morning and evening; most active at low light",
     "whereToSee": "Marshside RSPB lagoons. Crossens Marsh. Any shallow water with emergent vegetation.",
-    "description": "Britain's smallest duck, the Teal is a common and delightful winter visitor to Marshside. Males are beautifully marked — chestnut head with an iridescent green eye stripe bordered in yellow. They take flight suddenly in tight, fast-wheeling flocks, almost like waders. The whistling call of the male is one of the most evocative sounds of the winter marsh. They feed in very shallow water, filtering mud and invertebrates.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 700,000 wintering birds",
+    "seftonPopulation": "Hundreds at Marshside in winter; small number of breeding pairs",
+    "habitat": ["Coastal lagoon", "Shallow marsh", "Reed edge"],
+    "diet": "Seeds, aquatic invertebrates, plant material filtered from shallow water",
+    "description": "Britain's smallest duck, the Teal is a common and delightful winter visitor to Marshside. Males are beautifully marked — chestnut head with an iridescent green eye stripe bordered in yellow. They take flight suddenly in tight, fast-wheeling flocks, almost like waders. The whistling call of the male is one of the most evocative sounds of the winter marsh.",
     "identification": "Very small duck. Males: chestnut head, green eye stripe, grey body, cream-yellow triangle under tail. Females: brown, like small Mallard. Green speculum visible in flight.",
     "tips": "Look at the edge of the lagoon where there's shallow water and vegetation. They hide well but take off explosively when disturbed.",
-    "relatedSpecies": ["wigeon", "shoveler", "pintail"]
+    "difficulty": "easy",
+    "relatedSpecies": ["wigeon", "shoveler", "pintail"],
+    "wikipediaTitle": "Eurasian teal",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/teal",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/teal"
+    },
+    "faq": [
+      {
+        "question": "What is Britain's smallest duck?",
+        "answer": "The Teal is Britain's smallest native duck — about half the size of a Mallard. On the Sefton Coast it is a common winter visitor to Marshside RSPB, where flocks of hundreds can be seen in shallow lagoon margins. The male's high, musical whistle is one of the characteristic sounds of the winter marsh."
+      }
+    ]
   },
   {
     "commonName": "Wigeon",
     "scientificName": "Mareca penelope",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "October–March. Large wintering flocks. Rare breeder.",
-    "whereToSee": "Marshside RSPB lagoons and surrounding grass. Hesketh Out Marsh. Grazes short grass as well as feeding on water.",
-    "description": "Wigeons are one of the commoner winter ducks on the Sefton Coast. Unlike most ducks, they spend much of their time grazing short grass like geese, often in large flocks mixed with Canada Geese and Lapwings. The male's whistling 'whee-oo' call is very distinctive. Chestnut head with a cream forehead, grey body and white flank patch. Females are rusty brown. They breed in Iceland, Scotland and Scandinavia and are classic Sefton Coast winter birds.",
-    "identification": "Medium duck. Males: chestnut-red head, cream forehead, grey body, white flank patch. Females: warm rusty brown. Pointed tail. Whistling 'whee-oo' call from males.",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "seasonalPresence": "October–March. Large wintering flocks.",
+    "bestTimeOfDay": "Daytime — feeds actively throughout the day on grass and water",
+    "whereToSee": "Marshside RSPB lagoons and surrounding grass. Hesketh Out Marsh. Often grazes short grass.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 450,000 wintering birds from Iceland and Scandinavia",
+    "seftonPopulation": "Hundreds to thousands at Marshside in peak winter; large grazingflocks on surrounding fields",
+    "habitat": ["Coastal lagoon", "Coastal grassland", "Marsh"],
+    "diet": "Short grass, aquatic vegetation, seeds",
+    "description": "Wigeons are one of the commoner winter ducks on the Sefton Coast. Unlike most ducks, they spend much of their time grazing short grass like geese. The male's whistling 'whee-oo' call is very distinctive. They breed in Iceland, Scotland and Scandinavia and are classic Sefton Coast winter birds.",
+    "identification": "Medium duck. Males: chestnut-red head, cream forehead, grey body, white flank patch. Females: warm rusty brown. Pointed tail. Whistling 'whee-oo' call.",
     "tips": "Listen for the whistling call. Large flocks often graze the grass behind the sea wall as well as on the lagoons.",
-    "relatedSpecies": ["teal", "pintail", "shoveler"]
+    "difficulty": "easy",
+    "relatedSpecies": ["teal", "pintail", "shoveler"],
+    "wikipediaTitle": "Eurasian wigeon",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wigeon",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/wigeon"
+    },
+    "faq": [
+      {
+        "question": "What does a Wigeon call sound like?",
+        "answer": "The male Wigeon's call is a distinctive, musical 'whee-oo' whistle — once learned it's instantly recognisable and heard from some distance. The female makes a soft growling purr. Wigeon flocks at Marshside RSPB are often heard before they are seen."
+      }
+    ]
   },
   {
     "commonName": "Pintail",
     "scientificName": "Anas acuta",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "October–March. Wintering flocks. UK breeding is very small.",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "seasonalPresence": "October–March. Wintering flocks.",
+    "bestTimeOfDay": "Morning and afternoon; active feeders",
     "whereToSee": "Marshside RSPB — one of the more reliable UK sites for Pintail. The deeper lagoons.",
-    "description": "The Pintail is one of the most elegant ducks in the world and Marshside RSPB is one of the best places in the northwest to see it. Males have a chocolate-brown head, white neck stripe, grey body and the distinctive long pointed tail — like a mini-needle at the rear. They feed in deeper water than Teal, often up-ending. Numbers at Marshside have held up better than on many sites and a winter visit might yield 50–200 birds.",
-    "identification": "Slim, elegant duck. Males: chocolate head, white neck, grey body, very long pointed tail. Females: pale brown, more streamlined than Mallard. Upswept tail visible even at distance.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 26,000 wintering birds; UK breeding almost non-existent",
+    "seftonPopulation": "50–200 birds regularly at Marshside in winter; counts sometimes higher",
+    "habitat": ["Deep lagoon", "Estuary", "Open water"],
+    "diet": "Aquatic plants, seeds, invertebrates — up-ends in deeper water to feed",
+    "description": "The Pintail is one of the most elegant ducks in the world and Marshside RSPB is one of the best places in the northwest to see it. Males have a chocolate-brown head, white neck stripe, grey body and the distinctive long pointed tail. They feed in deeper water than Teal, often up-ending. Numbers at Marshside have held up better than on many sites and a winter visit might yield 50–200 birds.",
+    "identification": "Slim, elegant duck. Males: chocolate head, white neck, grey body, very long pointed tail. Females: pale brown, more streamlined than Mallard.",
     "tips": "Look in the deeper parts of the Marshside lagoon. They up-end to feed and the long tail is visible even when swimming.",
-    "relatedSpecies": ["teal", "wigeon", "shoveler"]
+    "difficulty": "easy",
+    "relatedSpecies": ["teal", "wigeon", "shoveler"],
+    "wikipediaTitle": "Northern pintail",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/pintail",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/pintail"
+    },
+    "faq": [
+      {
+        "question": "Why is Marshside RSPB good for Pintail?",
+        "answer": "Marshside RSPB holds one of the better concentrations of wintering Pintail in northwest England, with counts regularly reaching 50–200 birds. The deep lagoons offer ideal feeding habitat and the site's management specifically benefits wintering wildfowl. Pintail are among the most elegant ducks and the males' long tail is visible at distance."
+      }
+    ]
   },
   {
     "commonName": "Shoveler",
     "scientificName": "Spatula clypeata",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Anseriformes",
+    "family": "Anatidae",
     "seasonalPresence": "Year-round. Breeds at Marshside. Wintering numbers boosted October–March.",
+    "bestTimeOfDay": "Any time; often seen spinning in pairs while feeding",
     "whereToSee": "Marshside RSPB lagoons. Breeds in rush beds around the lagoon.",
-    "description": "The Shoveler breeds at Marshside RSPB, which makes it a particularly special duck for the site. The spatula-shaped bill — enormously wide and spatulate — is unlike any other duck and is used to filter surface water for invertebrates. Males are striking: iridescent green head, white breast, chestnut flanks. They often spin in circles while feeding, stirring up the water. Numbers peak in autumn when local breeders are joined by northern visitors.",
-    "identification": "Medium duck with massive spatula-shaped bill — unmistakeable. Males: green head, white breast, orange-chestnut flanks. Females: brown with huge bill. Heavy-looking in flight.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 18,000 breeding pairs; winter population much larger with continental birds",
+    "seftonPopulation": "Breeding species at Marshside; winter counts of 50–300+ birds",
+    "habitat": ["Shallow lagoon", "Coastal marsh", "Reed edge"],
+    "diet": "Aquatic invertebrates, plant seeds, algae — filtered from the water surface with the spatulate bill",
+    "description": "The Shoveler breeds at Marshside RSPB, which makes it a particularly special duck for the site. The spatula-shaped bill is unlike any other duck and is used to filter surface water for invertebrates. Males are striking: iridescent green head, white breast, chestnut flanks. They often spin in circles while feeding, stirring up the water.",
+    "identification": "Medium duck with massive spatula-shaped bill — unmistakeable. Males: green head, white breast, orange-chestnut flanks. Females: brown with huge bill.",
     "tips": "The bill makes ID instant even at distance. Look for pairs spinning together on the lagoon surface in spring.",
-    "relatedSpecies": ["teal", "wigeon", "pintail"]
+    "difficulty": "easy",
+    "relatedSpecies": ["teal", "wigeon", "pintail"],
+    "wikipediaTitle": "Northern shoveler",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/shoveler",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/shoveler"
+    },
+    "faq": [
+      {
+        "question": "Why do Shovelers spin in circles while feeding?",
+        "answer": "Shovelers spin in circles (sometimes in coordinated pairs or groups) to create a vortex that draws up invertebrates and algae from the bottom. They then filter this stirred-up water through their comb-like bill lamellae. This cooperative feeding behaviour concentrates food and is one of the most distinctive behaviours of the Sefton Coast lagoons."
+      }
+    ]
   },
   {
     "commonName": "Little Tern",
     "scientificName": "Sternula albifrons",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "May–August. Breeding summer visitor. UK's smallest tern.",
-    "whereToSee": "Formby and Ainsdale beaches. Nests in scrapes on upper beach. Do not approach nesting areas.",
-    "description": "The Little Tern nests on Formby and Ainsdale beaches — fragile scrapes on the upper beach above the tide line. They're the smallest tern and one of the most vulnerable beach-nesting birds, subject to predation, human disturbance and extreme weather. The RSPB and Natural England wardening schemes protect the colonies. Watch from the appointed viewpoints rather than approaching the beach during nesting season. The hovering, diving hunting behaviour over the surf is delightful.",
+    "order": "Charadriiformes",
+    "family": "Laridae",
+    "seasonalPresence": "May–August. Breeding summer visitor.",
+    "bestTimeOfDay": "Morning fishing activity over the surf is most active at lower tides",
+    "whereToSee": "Formby and Ainsdale beaches. Nests in scrapes on upper beach. View from approved viewpoints only.",
+    "shortLocation": "Formby Beach",
+    "ukPopulation": "Around 1,900 breeding pairs in the UK — one of the most threatened seabirds",
+    "seftonPopulation": "Small colony at Formby/Ainsdale beaches; wardened by RSPB and Natural England in season",
+    "habitat": ["Sandy beach", "Dune edge", "Inshore sea"],
+    "diet": "Sand eels, small fish caught by hovering and plunge-diving",
+    "description": "The Little Tern nests on Formby and Ainsdale beaches — fragile scrapes on the upper beach above the tide line. They're the smallest tern and one of the most vulnerable beach-nesting birds, subject to predation, human disturbance and extreme weather. The RSPB and Natural England wardening schemes protect the colonies. Watch from the appointed viewpoints rather than approaching the beach during nesting season.",
     "identification": "Very small tern. Yellow bill with black tip. White forehead. Rapid, flickering wingbeats. Yellow legs. Hovers before diving.",
     "tips": "View from the sand dune edge at approved viewpoints — there are usually RSPB signs in season. Don't let dogs onto the upper beach.",
-    "relatedSpecies": ["sandwich-tern", "common-tern", "arctic-tern"]
+    "difficulty": "easy",
+    "relatedSpecies": ["sandwich-tern", "common-tern"],
+    "wikipediaTitle": "Little tern",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/little-tern",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/little-tern"
+    },
+    "faq": [
+      {
+        "question": "Where do Little Terns nest at Formby?",
+        "answer": "Little Terns nest in shallow scrapes directly on the upper beach sand at Formby and Ainsdale, above the high tide line. The nests are virtually invisible — just a slight depression with 2–3 speckled eggs. RSPB and Natural England wardens protect the colony from May–August; look for the advisory signs on the beach."
+      },
+      {
+        "question": "Are dogs allowed on the beach during Little Tern nesting season?",
+        "answer": "Dogs must be kept away from the upper beach in the areas where Little Terns nest (typically May–August). Wardened fencing and signs mark the exclusion zones. A single dog running through the nesting area can flush all birds and destroy the entire colony's season."
+      }
+    ]
   },
   {
     "commonName": "Sandwich Tern",
     "scientificName": "Thalasseus sandvicensis",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Charadriiformes",
+    "family": "Laridae",
     "seasonalPresence": "April–September. Passage and occasional breeding nearby.",
+    "bestTimeOfDay": "Morning — fishing offshore at lower tides",
     "whereToSee": "Formby and Ainsdale beaches. Offshore over the sea. Marshside lagoons on passage.",
-    "description": "Sandwich Terns are the largest common tern on the Sefton Coast, regularly seen fishing just offshore at Formby. They have a shaggy black crest and a distinctive yellow-tipped black bill. The harsh 'kirrick' call is unmistakeable. They plunge-dive from height into the sea for sand eels and small fish. Good numbers pass through on spring and autumn migration and they breed at nearby colonies in the Irish Sea.",
+    "shortLocation": "Formby Beach",
+    "ukPopulation": "Around 10,000 breeding pairs in the UK",
+    "seftonPopulation": "Regular passage visitor; good numbers offshore at Formby in summer",
+    "habitat": ["Open sea", "Sandy beach", "Coastal lagoon"],
+    "diet": "Sand eels, sprats — caught by high-altitude plunge-diving",
+    "description": "Sandwich Terns are the largest common tern on the Sefton Coast, regularly seen fishing just offshore at Formby. They have a shaggy black crest and a distinctive yellow-tipped black bill. The harsh 'kirrick' call is unmistakeable. They plunge-dive from height into the sea for sand eels and small fish.",
     "identification": "Large tern. Shaggy black crest (flattens in winter). Black bill with yellow tip — distinctive. Pale grey above, white below. Loud kirrick call.",
     "tips": "Stand on Formby Beach on a summer morning and scan offshore. They're usually the biggest tern visible.",
-    "relatedSpecies": ["common-tern", "little-tern", "arctic-tern"]
+    "difficulty": "easy",
+    "relatedSpecies": ["common-tern", "little-tern"],
+    "wikipediaTitle": "Sandwich tern",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/sandwich-tern",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/sandwich-tern"
+    },
+    "faq": [
+      {
+        "question": "How do I identify a Sandwich Tern?",
+        "answer": "Sandwich Tern is the largest common tern and identifiable by its black bill with a yellow tip — visible at reasonable range. The shaggy black crest and loud 'kirrick' call are also distinctive. It plunge-dives from greater heights than Common or Arctic Terns."
+      }
+    ]
   },
   {
     "commonName": "Common Tern",
     "scientificName": "Sterna hirundo",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Charadriiformes",
+    "family": "Laridae",
     "seasonalPresence": "April–September. Breeding and passage.",
-    "whereToSee": "Marshside RSPB lagoons — rafts are provided for nesting. Formby Beach offshore.",
-    "description": "Common Terns breed on the rafts at Marshside RSPB, making it one of the more reliable inland spots to watch them. They're agile, graceful birds that make up-for the lack of spectacular looks with their aerobatic fishing — hovering then plunging headfirst into the lagoon. Distinguishing them from Arctic Terns requires care but at Marshside the breeding birds are assumed Common. The colony is visible from the road bank.",
+    "bestTimeOfDay": "Morning and evening; active throughout the day",
+    "whereToSee": "Marshside RSPB lagoons — nesting rafts provided. Formby Beach offshore.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 12,000 breeding pairs",
+    "seftonPopulation": "Breeding colony on rafts at Marshside RSPB; good numbers offshore at Formby",
+    "habitat": ["Coastal lagoon", "Open sea", "Beach"],
+    "diet": "Small fish, sand eels — caught by hovering and plunge-diving",
+    "description": "Common Terns breed on the rafts at Marshside RSPB, making it one of the more reliable inland spots to watch them. They're agile, graceful birds that make up for the lack of spectacular looks with their aerobatic fishing — hovering then plunging headfirst into the lagoon. The colony is visible from the road bank.",
     "identification": "Medium tern. Red bill with black tip. Black cap. Pale grey above, white-grey below. Long tail streamers. Orange-red legs.",
     "tips": "The Marshside nesting rafts are visible from the road. Breeding birds are tolerant of watching from a distance.",
-    "relatedSpecies": ["arctic-tern", "sandwich-tern", "little-tern"]
+    "difficulty": "easy",
+    "relatedSpecies": ["sandwich-tern", "little-tern"],
+    "wikipediaTitle": "Common tern",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/common-tern",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/common-tern"
+    },
+    "faq": [
+      {
+        "question": "Do Common Terns breed at Marshside RSPB?",
+        "answer": "Yes. Common Terns nest on specially provided floating rafts on the Marshside RSPB lagoon. The colony is visible from the road bank and the birds can be watched actively fishing over the lagoon throughout the summer. Numbers vary year to year but the rafts are a reliable breeding site."
+      }
+    ]
   },
   {
     "commonName": "Skylark",
     "scientificName": "Alauda arvensis",
     "category": "birds",
     "conservationStatus": "red",
-    "seasonalPresence": "Year-round. Breeding birds March–August. Winter flocks from northern Europe.",
-    "whereToSee": "Dune grassland at Ainsdale and Formby. Farmland fields behind the sea wall. Often heard before seen.",
-    "description": "The Skylark's song — delivered in sustained, hovering flight — is one of the most evocative sounds in nature, and one that is becoming rarer across Britain as the species declines. The dune grassland at Ainsdale NNR and the fields behind the Sefton Coast sea wall remain reasonable spots. In winter, large flocks arrive from the continent and can be seen in fields around Hesketh Bank. They feed on seeds and invertebrates on the ground.",
-    "identification": "Medium brown bird with short crest (often raised). Streaked brown above, paler below. White outer tail feathers in flight. Sustained, complex song in hovering flight.",
+    "order": "Passeriformes",
+    "family": "Alaudidae",
+    "seasonalPresence": "Year-round. Breeding March–August. Winter flocks from northern Europe.",
+    "bestTimeOfDay": "Morning in spring for song flight; afternoon for winter flocks",
+    "whereToSee": "Dune grassland at Ainsdale and Formby. Farmland fields behind the sea wall.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Around 1.5 million breeding territories, declined by 60% since 1970",
+    "seftonPopulation": "Breeding birds on dune grassland; large winter flocks on farmland",
+    "habitat": ["Dune grassland", "Farmland", "Open heath"],
+    "diet": "Seeds, invertebrates, plant shoots",
+    "description": "The Skylark's song — delivered in sustained, hovering flight — is one of the most evocative sounds in nature. The dune grassland at Ainsdale NNR and the fields behind the Sefton Coast sea wall remain reasonable spots. In winter, large flocks arrive from the continent and can be seen in fields around Hesketh Bank.",
+    "identification": "Medium brown bird with short crest (often raised). Streaked brown above, paler below. White outer tail feathers. Sustained, complex song in hovering flight.",
     "tips": "Look up in spring over dune grassland — the song can go on for minutes and the bird is tiny. In winter, scan stubble fields for flocks.",
-    "relatedSpecies": ["meadow-pipit", "reed-bunting"]
+    "difficulty": "easy",
+    "relatedSpecies": ["meadow-pipit", "reed-bunting"],
+    "wikipediaTitle": "Eurasian skylark",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/skylark",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/skylark"
+    },
+    "faq": [
+      {
+        "question": "Where is the best place to hear Skylarks on the Sefton Coast?",
+        "answer": "The open dune grassland at Ainsdale NNR and Birkdale Sandhills in spring (March–June) is one of the better spots on the northwest coast. Listen for the sustained, continuous song delivered from hovering flight high above. The birds are often difficult to see against a bright sky."
+      }
+    ]
   },
   {
     "commonName": "Meadow Pipit",
     "scientificName": "Anthus pratensis",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Passeriformes",
+    "family": "Motacillidae",
     "seasonalPresence": "Year-round. Common breeder on dunes and grassland. Large numbers pass through in autumn.",
+    "bestTimeOfDay": "Morning for song flight; any time for feeding birds",
     "whereToSee": "Dune grassland and rough grass anywhere on the Sefton Coast. Very common.",
-    "description": "The Meadow Pipit is the most abundant small bird on the Sefton Coast's open habitats. It breeds in the dune grassland, coastal heath and rough pasture, and is the main prey item for Merlin. In autumn, thousands pour through on visible migration, and the calls — a thin 'seep seep' — are constantly overhead on October mornings. Easy to overlook but worth a close look for the streaked breast and pinkish legs.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Around 2 million breeding pairs — the most abundant upland bird",
+    "seftonPopulation": "Very common year-round; breeds on dune grassland, thousands pass through in autumn",
+    "habitat": ["Dune grassland", "Coastal heath", "Open marsh", "Rough grassland"],
+    "diet": "Insects, spiders, small seeds",
+    "description": "The Meadow Pipit is the most abundant small bird on the Sefton Coast's open habitats. It breeds in the dune grassland, coastal heath and rough pasture, and is the main prey item for Merlin. In autumn, thousands pour through on visible migration, and the calls — a thin 'seep seep' — are constantly overhead on October mornings.",
     "identification": "Small, streaked brown bird. Pinkish-buff legs (Skylark has pale legs). Streaked breast. White outer tail feathers. Parachutes down from song flight.",
     "tips": "Merlins hunt Meadow Pipits on the dunes — if you see one in fast, direct pursuit of a small brown bird, that's the chase.",
-    "relatedSpecies": ["skylark", "reed-bunting", "rock-pipit"]
+    "difficulty": "easy",
+    "relatedSpecies": ["skylark", "reed-bunting"],
+    "wikipediaTitle": "Meadow pipit",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/meadow-pipit",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/meadow-pipit"
+    },
+    "faq": [
+      {
+        "question": "Why is the Meadow Pipit important on the Sefton Coast?",
+        "answer": "Meadow Pipits are the primary prey of Merlins on the Sefton Coast dunes and the main host of Cuckoos in nearby moorland areas. The dune grassland at Ainsdale and Formby supports breeding Meadow Pipits — their presence is an indicator of good quality open grassland habitat."
+      }
+    ]
   },
   {
     "commonName": "Reed Bunting",
     "scientificName": "Emberiza schoeniclus",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "Year-round. Breeds in rush and reed beds. Winter flocks visit farmland.",
+    "order": "Passeriformes",
+    "family": "Emberizidae",
+    "seasonalPresence": "Year-round. Breeds in rush and reed beds.",
+    "bestTimeOfDay": "Morning for singing males in spring and summer",
     "whereToSee": "Rushes and reed margins at Marshside RSPB. Any marshy area along the coast.",
-    "description": "Reed Buntings breed in the rush and sedge beds at Marshside and in damp areas along the Sefton Coast. Males in breeding plumage are handsome — black head and throat, white collar. They cling to reed stems and give a repetitive, unmusical song. In winter they sometimes visit garden feeders and mix with finch flocks on farmland. A reliable bird at Marshside at any time of year.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 250,000 breeding pairs, declined by 40% since 1970s",
+    "seftonPopulation": "Breeding and wintering; common in rush beds at Marshside year-round",
+    "habitat": ["Reed bed", "Coastal marsh", "Rush bed", "Damp grassland edge"],
+    "diet": "Seeds, insects (especially in breeding season)",
+    "description": "Reed Buntings breed in the rush and sedge beds at Marshside and in damp areas along the Sefton Coast. Males in breeding plumage are handsome — black head and throat, white collar. They cling to reed stems and give a repetitive, unmusical song. In winter they sometimes visit garden feeders.",
     "identification": "Males: black head and throat, white collar, streaked brown body. Females: brown with pale supercilium and streaked crown. White outer tail feathers.",
     "tips": "Look along the margins of the Marshside lagoon where rushes meet open water. Males sing from prominent perches from February.",
-    "relatedSpecies": ["skylark", "meadow-pipit", "sedge-warbler"]
+    "difficulty": "easy",
+    "relatedSpecies": ["skylark", "meadow-pipit", "sedge-warbler"],
+    "wikipediaTitle": "Common reed bunting",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/reed-bunting",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/reed-bunting"
+    },
+    "faq": [
+      {
+        "question": "Where can I see Reed Buntings at Marshside RSPB?",
+        "answer": "Reed Buntings are present year-round at Marshside RSPB in the rush beds around the lagoon margins. Males sing from prominent reed or rush stems from February onwards. They're also visible from the road bank — scan any dense rush vegetation at the lagoon edge."
+      }
+    ]
   },
   {
     "commonName": "Sedge Warbler",
     "scientificName": "Acrocephalus scirpaceus",
     "category": "birds",
     "conservationStatus": "green",
+    "order": "Passeriformes",
+    "family": "Acrocephalidae",
     "seasonalPresence": "April–September. Summer visitor from sub-Saharan Africa.",
+    "bestTimeOfDay": "Early morning — most vocal at dawn",
     "whereToSee": "Reed beds and tall vegetation at Marshside RSPB. Dense rushes at Ainsdale NNR.",
-    "description": "Sedge Warblers arrive in April with a rush of energy and song. The male sings a rambling, scratchy medley from deep in the vegetation — often incorporating mimicry of other species. They fatten heavily on aphids and other insects before migrating back to Africa in August. At Marshside the scrubby vegetation around the lagoon edges is good habitat and the song is constant from April to July. Seen less often than heard.",
-    "identification": "Small, streaked brown warbler. Bold cream supercilium. Streaked back, plain rufous rump. Flicks tail. Loud, scratchy, variable song.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 280,000 breeding pairs",
+    "seftonPopulation": "Breeding species at Marshside; present April–August in suitable vegetation",
+    "habitat": ["Reed bed", "Tall marsh vegetation", "Willow scrub edge"],
+    "diet": "Insects, spiders, small invertebrates",
+    "description": "Sedge Warblers arrive in April with a rush of energy and song. The male sings a rambling, scratchy medley from deep in the vegetation — often incorporating mimicry of other species. They fatten heavily on aphids and other insects before migrating back to Africa in August.",
+    "identification": "Small, streaked brown warbler. Bold cream supercilium. Streaked back, plain rufous rump. Loud, scratchy, variable song.",
     "tips": "Listen for the song from any tall vegetation near water from April. They occasionally sing from exposed perches early morning.",
-    "relatedSpecies": ["reed-warbler", "reed-bunting"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["reed-warbler", "reed-bunting"],
+    "wikipediaTitle": "Sedge warbler",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/sedge-warbler",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/sedge-warbler"
+    },
+    "faq": [
+      {
+        "question": "How do I tell Sedge Warbler from Reed Warbler?",
+        "answer": "Sedge Warbler has a bold cream supercilium (eyebrow stripe) and a streaked back — Reed Warbler has no supercilium and a plain warm brown back. Sedge Warbler's song is more varied and scratchy, often incorporating mimicry; Reed Warbler's song is more rhythmic and repetitive."
+      }
+    ]
   },
   {
     "commonName": "Reed Warbler",
     "scientificName": "Acrocephalus scirpaceus",
     "category": "birds",
     "conservationStatus": "green",
+    "order": "Passeriformes",
+    "family": "Acrocephalidae",
     "seasonalPresence": "April–September. Summer visitor. Requires true reed bed habitat.",
+    "bestTimeOfDay": "Early morning for song",
     "whereToSee": "Reed beds at Marshside RSPB. Wherever Phragmites reed grows.",
-    "description": "Where Sedge Warbler will use any tall, dense vegetation, the Reed Warbler requires stands of common reed (Phragmites). Marshside has enough to support a small breeding population. The song is rhythmic and churring — repetitive phrases that have a mechanical quality compared to Sedge Warbler's variety. Reed Warblers are frequent Cuckoo hosts and it's worth checking any Cuckoo calls heard around reed beds in May.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 130,000 breeding pairs",
+    "seftonPopulation": "Small breeding population at Marshside where Phragmites reed grows",
+    "habitat": ["Phragmites reed bed", "Tall marsh vegetation"],
+    "diet": "Insects, spiders, small invertebrates",
+    "description": "Where Sedge Warbler will use any tall, dense vegetation, the Reed Warbler requires stands of common reed (Phragmites). Marshside has enough to support a small breeding population. The song is rhythmic and churring — repetitive phrases that have a mechanical quality compared to Sedge Warbler's variety. Reed Warblers are frequent Cuckoo hosts.",
     "identification": "Plain warm brown above, buff below. No supercilium (unlike Sedge Warbler). Rounded tail. Climbs reed stems. Song: repetitive churring phrases.",
     "tips": "Listen for churring from dense reed stands. They're more regular in their phrases than Sedge Warbler — almost mechanical.",
-    "relatedSpecies": ["sedge-warbler", "reed-bunting"]
+    "difficulty": "specialist",
+    "relatedSpecies": ["sedge-warbler", "reed-bunting"],
+    "wikipediaTitle": "Eurasian reed warbler",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/reed-warbler",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/reed-warbler"
+    },
+    "faq": [
+      {
+        "question": "Are Reed Warblers Cuckoo hosts on the Sefton Coast?",
+        "answer": "Reed Warblers are one of the primary hosts of Cuckoos in England. If Cuckoos are present near reed beds at Marshside, there is a real chance of seeing the parasitic relationship — the female Cuckoo lays a single egg in a Reed Warbler nest, which then raises the much larger Cuckoo chick."
+      }
+    ]
   },
   {
     "commonName": "Sanderling",
     "scientificName": "Calidris alba",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
     "seasonalPresence": "August–May. Passage and wintering. Rare in midsummer.",
-    "whereToSee": "Formby Beach and Ainsdale Beach. Runs along the surf line.",
-    "description": "The Sanderling is the small white wader that chases the waves up and down Formby Beach. It feeds at the very edge of the surf, running up as a wave breaks to pick invertebrates exposed by the water, then retreating as the next wave comes in. In winter plumage they're pale grey and white — almost pure white in bright sunlight. They breed on the high Arctic tundra. The endless running along the tide line is something children love to watch.",
+    "bestTimeOfDay": "Any time on the beach; most active at low tide",
+    "whereToSee": "Formby Beach and Ainsdale Beach. Runs along the surf line chasing waves.",
+    "shortLocation": "Formby Beach",
+    "ukPopulation": "Around 15,000 wintering birds; passage numbers much higher",
+    "seftonPopulation": "Common winter visitor to Formby Beach; tens to hundreds of birds",
+    "habitat": ["Sandy beach", "Surf zone"],
+    "diet": "Small crustaceans, sand hoppers, worms exposed by retreating waves",
+    "description": "The Sanderling is the small white wader that chases the waves up and down Formby Beach. It feeds at the very edge of the surf, running up as a wave breaks to pick invertebrates exposed by the water, then retreating as the next wave comes in. In winter plumage they're pale grey and white — almost pure white in bright sunlight. They breed on the high Arctic tundra.",
     "identification": "Small wader. Very pale grey and white in winter. Bright orange-buff and black in summer. Runs fast along surf. Bold white wing bar in flight.",
     "tips": "Just walk along the beach at Formby — they're usually there in winter. The wave-chasing behaviour makes them easy to spot.",
-    "relatedSpecies": ["dunlin", "knot", "ringed-plover"]
+    "difficulty": "easy",
+    "relatedSpecies": ["dunlin", "knot", "ringed-plover"],
+    "wikipediaTitle": "Sanderling",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/sanderling",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/sanderling"
+    },
+    "faq": [
+      {
+        "question": "Why do Sanderlings run in and out with the waves?",
+        "answer": "Sanderlings feed on tiny invertebrates — sand hoppers, small crabs, worms — that are exposed by breaking waves at the surf line. As each wave retreats it uncovers food; the Sanderling dashes in to pick it up before the next wave arrives. This characteristic wave-chasing behaviour makes them one of the easiest waders to watch on Formby Beach."
+      }
+    ]
   },
   {
     "commonName": "Ringed Plover",
     "scientificName": "Charadrius hiaticula",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
     "seasonalPresence": "Year-round. Breeds on beaches. Winter visitors join local birds.",
+    "bestTimeOfDay": "Any time; most active in morning and late afternoon",
     "whereToSee": "Formby Beach and Ainsdale Beach. Ribble Estuary. Marshside lagoons on passage.",
-    "description": "Ringed Plovers breed on Formby and Ainsdale beaches in small numbers — look for the nest scrapes on the upper beach in spring. They run and stop, run and stop, picking at invertebrates between. The bold black and white head pattern and orange bill are distinctive. Breeding birds are very vulnerable to disturbance so keep dogs under control on the upper beach May–July. A Ringed Plover doing a distraction display (dragging a wing) means a nest nearby — back away.",
+    "shortLocation": "Formby Beach",
+    "ukPopulation": "Around 5,500 breeding pairs in the UK",
+    "seftonPopulation": "Breeding birds on Formby Beach; wintering birds from Greenland and Iceland",
+    "habitat": ["Sandy beach", "Shingle", "Mudflat", "Coastal lagoon"],
+    "diet": "Small invertebrates, insects picked from surface",
+    "description": "Ringed Plovers breed on Formby and Ainsdale beaches in small numbers — look for the nest scrapes on the upper beach in spring. They run and stop, run and stop, picking at invertebrates between. The bold black and white head pattern and orange bill are distinctive. Breeding birds are very vulnerable to disturbance — a Ringed Plover doing a distraction display (dragging a wing) means a nest nearby — back away.",
     "identification": "Small brown plover. Black breast band, white collar, black and white head pattern. Orange bill with black tip, orange legs. White wing bar in flight.",
     "tips": "Run-and-stop feeding behaviour is characteristic. If a bird is doing an injury display (dragging wing), retreat — nest very close.",
-    "relatedSpecies": ["little-ringed-plover", "grey-plover", "dunlin"]
+    "difficulty": "easy",
+    "relatedSpecies": ["dunlin", "grey-plover", "sanderling"],
+    "wikipediaTitle": "Common ringed plover",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/ringed-plover",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/ringed-plover"
+    },
+    "faq": [
+      {
+        "question": "What does a Ringed Plover injury display look like?",
+        "answer": "If a Ringed Plover drags one wing along the ground and runs away from you, it is performing a distraction display to draw predators away from a nearby nest or chicks. If you see this, stop moving, back away slowly and leave the area — the nest is very close. This behaviour is most common May–July."
+      }
+    ]
   },
   {
     "commonName": "Bar-tailed Godwit",
     "scientificName": "Limosa lapponica",
     "category": "birds",
     "conservationStatus": "red",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
     "seasonalPresence": "August–May. Passage and winter. Absent most of summer.",
+    "bestTimeOfDay": "Low tide for feeding on estuary mudflats",
     "whereToSee": "Ribble Estuary at low tide. Marshside lagoons. Sandy beach at low tide.",
-    "description": "The Bar-tailed Godwit is a long-haul migration specialist — some individuals fly non-stop from Alaska to New Zealand, the longest non-stop bird migration on Earth. The Sefton Coast birds are from Scandinavian breeding grounds, wintering on the Ribble Estuary. In autumn passage, adults still in brick-red summer plumage are spectacular. The upturned bill distinguishes it from Black-tailed at any range. A Ramsar site qualifying species for the Ribble.",
+    "shortLocation": "Ribble Estuary",
+    "ukPopulation": "Around 40,000 wintering birds from Scandinavian and Siberian breeding grounds",
+    "seftonPopulation": "Regular on the Ribble Estuary; numbers in hundreds in winter",
+    "habitat": ["Estuary", "Mudflat", "Sandy beach"],
+    "diet": "Marine worms, bivalves, crustaceans probed from mud and sand",
+    "description": "The Bar-tailed Godwit is a long-haul migration specialist — some individuals fly non-stop from Alaska to New Zealand, the longest non-stop bird migration on Earth. The Sefton Coast birds are from Scandinavian breeding grounds, wintering on the Ribble Estuary. In autumn passage, adults still in brick-red summer plumage are spectacular.",
     "identification": "Large wader. Long, slightly upturned bill. No white wing bar (unlike Black-tailed). Barred tail visible in flight. Brick-red below in summer, grey-brown in winter.",
     "tips": "Check the Ribble Estuary mudflats at low tide. In August, some birds retain summer plumage and stand out.",
-    "relatedSpecies": ["black-tailed-godwit", "curlew", "whimbrel"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["black-tailed-godwit", "curlew", "whimbrel"],
+    "wikipediaTitle": "Bar-tailed godwit",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/bar-tailed-godwit",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/bar-tailed-godwit"
+    },
+    "faq": [
+      {
+        "question": "Do Bar-tailed Godwits really fly non-stop from Alaska to New Zealand?",
+        "answer": "Yes. The Bar-tailed Godwit (Baueri subspecies) undertakes the longest non-stop migration of any bird — around 11,000km in approximately 8–11 days without landing, eating or drinking. The Sefton Coast birds are a different subspecies (lapponica) from Scandinavian breeding grounds, but still undertake substantial migrations of several thousand kilometres."
+      }
+    ]
   },
   {
     "commonName": "Whimbrel",
     "scientificName": "Numenius phaeopus",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "April–May and July–September on passage. Rare in winter.",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "seasonalPresence": "April–May and July–September on passage.",
+    "bestTimeOfDay": "Early morning on spring migration — most likely overhead calling",
     "whereToSee": "Marshside RSPB and the Ribble Estuary. Most often overhead, calling, on spring passage.",
-    "description": "The Whimbrel is a smaller, faster Curlew that passes through the Sefton Coast in spring and autumn. In spring especially, they call constantly as they fly overhead — a distinctive rippling seven-note whistle, quite different from the Curlew's bubbling song. Small groups feed on the Ribble mudflats before continuing their migration. Worth listening out overhead on May mornings — they often pass through without landing.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 400 breeding pairs in Scotland; much larger passage population",
+    "seftonPopulation": "Regular spring and autumn passage visitor; mostly heard overhead rather than seen",
+    "habitat": ["Estuary", "Coastal marsh", "Mudflat"],
+    "diet": "Worms, crustaceans, berries on migration",
+    "description": "The Whimbrel is a smaller, faster Curlew that passes through the Sefton Coast in spring and autumn. In spring especially, they call constantly as they fly overhead — a distinctive rippling seven-note whistle, quite different from the Curlew's bubbling song. Worth listening out overhead on May mornings — they often pass through without landing.",
     "identification": "Like a small Curlew with a shorter, less curved bill. Striped crown (two dark stripes) — key feature. Rippling seven-note call.",
     "tips": "Listen overhead on April and May mornings. The call is very distinctive once known — a rippling 'ti-ti-ti-ti-ti-ti-ti'.",
-    "relatedSpecies": ["curlew", "black-tailed-godwit", "bar-tailed-godwit"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["curlew", "black-tailed-godwit", "bar-tailed-godwit"],
+    "wikipediaTitle": "Whimbrel",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/whimbrel",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/whimbrel"
+    },
+    "faq": [
+      {
+        "question": "How do I tell a Whimbrel from a Curlew?",
+        "answer": "Whimbrel is noticeably smaller and has a shorter, less curved bill than Curlew. The best field mark is the striped crown — two dark lateral stripes visible at close range. The call is the most reliable distinction: Whimbrel gives a rippling seven-note whistle; Curlew has a bubbling, rising 'cur-lee'."
+      }
+    ]
   },
   {
     "commonName": "Greylag Goose",
     "scientificName": "Anser anser",
     "category": "birds",
     "conservationStatus": "amber",
+    "order": "Anseriformes",
+    "family": "Anatidae",
     "seasonalPresence": "Year-round. Resident flock, boosted by winter visitors.",
+    "bestTimeOfDay": "Any time",
     "whereToSee": "Marshside RSPB and surrounding farmland. Often with Pink-footed Geese in winter.",
-    "description": "The Greylag is the ancestor of the farmyard goose and the largest of the grey geese. A resident flock is present around Marshside and Hesketh Out Marsh year-round, and in winter they mix with the enormous Pink-footed Goose flocks on farmland. Orange bill and legs (not pink — that's the key Pink-foot distinction). They're noisy, social, and tend to be present in any group of geese on the Sefton Coast.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 50,000 breeding pairs; winter population much larger with continental birds",
+    "seftonPopulation": "Resident flock year-round; numbers increase in winter",
+    "habitat": ["Coastal marsh", "Farmland", "Lagoon"],
+    "diet": "Grass, grain, aquatic vegetation",
+    "description": "The Greylag is the ancestor of the farmyard goose and the largest of the grey geese. A resident flock is present around Marshside and Hesketh Out Marsh year-round. Orange bill and legs (not pink — that's the key Pink-foot distinction). They're noisy, social, and tend to be present in any group of geese on the Sefton Coast.",
     "identification": "Large grey-brown goose. Orange bill and legs — not pink (compare Pink-footed). Large pale wing panel visible in flight. Loud cackling call.",
     "tips": "Check any goose flock for the orange bill and legs to confirm Greylag rather than Pink-footed.",
-    "relatedSpecies": ["pink-footed-goose", "barnacle-goose", "canada-goose"]
+    "difficulty": "easy",
+    "relatedSpecies": ["pink-footed-goose", "barnacle-goose"],
+    "wikipediaTitle": "Greylag goose",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/greylag-goose",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/greylag-goose"
+    },
+    "faq": [
+      {
+        "question": "How do I tell Greylag Goose from Pink-footed Goose?",
+        "answer": "Leg and bill colour are the key features. Greylag has orange-pink legs and an all-orange bill. Pink-footed Goose has pink legs and a pink bill with a dark base. Greylag is also noticeably larger and heavier-looking, with a pale grey forewing panel visible in flight."
+      }
+    ]
   },
   {
     "commonName": "Barnacle Goose",
     "scientificName": "Branta leucopsis",
     "category": "birds",
     "conservationStatus": "amber",
-    "seasonalPresence": "October–March. Winter visitor from Svalbard/Greenland. Occasional small flocks.",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "seasonalPresence": "October–March. Winter visitor. Small numbers with Pink-feet.",
+    "bestTimeOfDay": "Any time when feeding in fields",
     "whereToSee": "Farmland around Crossens and Hesketh Out Marsh. Usually in small numbers with Pink-feet.",
-    "description": "Barnacle Geese from Svalbard or Greenland occasionally turn up with the Pink-footed Goose flocks on Sefton Coast farmland. Numbers are usually small — one to twenty birds — but they stand out with their striking black, white and grey plumage. Worth checking any large goose flock carefully in November and December. The Solway and Islay hold the main UK flocks; Sefton birds are usually strays or small parties.",
+    "shortLocation": "Hesketh Out Marsh",
+    "ukPopulation": "Around 44,000 wintering Svalbard birds; Scottish-wintering birds also",
+    "seftonPopulation": "Occasional; small numbers (1–20) with Pink-footed Goose flocks most winters",
+    "habitat": ["Farmland", "Coastal marsh", "Salt grass"],
+    "diet": "Grass, grain, agricultural crops",
+    "description": "Barnacle Geese from Svalbard or Greenland occasionally turn up with the Pink-footed Goose flocks on Sefton Coast farmland. Numbers are usually small — one to twenty birds — but they stand out with their striking black, white and grey plumage. Worth checking any large goose flock carefully in November and December.",
     "identification": "Black and white head (white face, black crown and neck). Grey barred body. Black breast. Compact shape.",
     "tips": "Check Pink-footed Goose flocks carefully — Barnacles sometimes tag along. The black and white head is unmistakeable.",
-    "relatedSpecies": ["pink-footed-goose", "greylag-goose", "brent-goose"]
+    "difficulty": "moderate",
+    "relatedSpecies": ["pink-footed-goose", "greylag-goose"],
+    "wikipediaTitle": "Barnacle goose",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/barnacle-goose",
+      "bto": "https://www.bto.org/understanding-birds/birdfacts/barnacle-goose"
+    },
+    "faq": [
+      {
+        "question": "Why are Barnacle Geese called Barnacle Geese?",
+        "answer": "Medieval scholars, puzzled by the disappearance of Barnacle Geese in summer (to Arctic breeding grounds unknown to Europeans), invented the myth that they hatched from Barnacles growing on driftwood. This allowed them to be eaten on Fridays and during Lent as they were technically 'not meat'. The name stuck."
+      }
+    ]
   }
 ]

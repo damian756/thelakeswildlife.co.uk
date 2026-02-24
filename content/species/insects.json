@@ -4,143 +4,343 @@
     "scientificName": "Speyeria aglaja",
     "category": "insects",
     "conservationStatus": "green",
-    "seasonalPresence": "Late June–August. One generation per year. Flies in hot sunshine.",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae",
+    "seasonalPresence": "Late June–August. One generation per year. Flies in hot sunshine only.",
+    "bestTimeOfDay": "11am–4pm on warm, sunny days — will not fly in cloud",
     "whereToSee": "Dune grassland at Ainsdale NNR and Formby. Forages on Ragwort and thistles.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Widespread but declining in England; strongholds in coastal dunes and upland grassland",
+    "seftonPopulation": "One of the better northwest England sites; regularly seen in July on open dune grassland",
+    "habitat": ["Open dune grassland", "Coastal heath", "Calcareous grassland"],
+    "diet": "Adults: Ragwort, thistle, Viper's Bugloss nectar. Larvae: violets (Viola spp.)",
     "description": "The Dark Green Fritillary is the powerhouse butterfly of the Sefton Coast dunes. Large, fast-flying and striking, it careers across open dune grassland at speed, stopping to feed on Ragwort and thistles in sunshine. The Sefton Coast is one of the best places in northwest England to see it — the combination of open dune grassland and its larval foodplant (violets) makes it ideal. On warm days in July the numbers can be impressive. The green and silver underside gives it its name.",
     "identification": "Large orange-brown butterfly with black spots above. Underside hindwing has green wash with large silver spots — distinctive. Fast, powerful flight.",
-    "tips": "Visit Ainsdale NNR on a hot, sunny day in July. Watch Ragwort and thistle patches for feeding adults.",
-    "relatedSpecies": ["small-pearl-bordered-fritillary", "common-blue"]
+    "tips": "Visit Ainsdale NNR on a hot, sunny day in July. Watch Ragwort and thistle patches for feeding adults. They are fast but will feed for several minutes if undisturbed.",
+    "difficulty": "moderate",
+    "relatedSpecies": ["silver-studded-blue", "common-blue"],
+    "wikipediaTitle": "Dark green fritillary",
+    "faq": [
+      {
+        "question": "Where is the best place to see Dark Green Fritillary on the Sefton Coast?",
+        "answer": "Ainsdale NNR is the most reliable site — walk the open dune grassland on a hot, sunny day in July (temperatures above 20°C are ideal). Look for large, fast-flying orange butterflies visiting Ragwort and thistle flowers. The boardwalk trail passes through good habitat."
+      },
+      {
+        "question": "Why is the Dark Green Fritillary called 'dark green'?",
+        "answer": "The name refers to the underside of the hindwing, which has a distinctive green wash with large silver spots — not the upper surface, which is orange-brown. The underside is only visible when the butterfly settles with wings closed, which it does occasionally when roosting in vegetation."
+      }
+    ]
   },
   {
     "commonName": "Grayling",
     "scientificName": "Hipparchia semele",
     "category": "insects",
     "conservationStatus": "amber",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae",
     "seasonalPresence": "July–September. Single generation.",
+    "bestTimeOfDay": "11am–4pm on warm days. Basks on bare ground on cooler days.",
     "whereToSee": "Open sandy areas in fixed dunes at Ainsdale NNR and Birkdale. Rests on bare sand.",
-    "description": "The Grayling is a master of camouflage — it rests on bare ground or bark and tilts toward the sun to minimise its shadow, becoming virtually invisible. The Sefton Coast's sandy dune habitats are perfect for it. When disturbed it flies a short distance and lands again, instantly vanishing. The undersides are beautifully patterned in grey, white and brown. The UK population has declined significantly and the coastal dune populations are increasingly important. Numbers at Ainsdale NNR are worth visiting for.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Declining significantly — lost from inland England, now mainly coastal and specialist habitats",
+    "seftonPopulation": "Regular in open sandy dune areas at Ainsdale; one of the more reliable northwest England sites",
+    "habitat": ["Open bare sand", "Fixed dune", "Dune heath", "Coastal grassland"],
+    "diet": "Adults: little feeding — mainly honeydew and occasional flowers. Larvae: various grasses.",
+    "description": "The Grayling is a master of camouflage — it rests on bare ground or bark and tilts toward the sun to minimise its shadow, becoming virtually invisible. The Sefton Coast's sandy dune habitats are perfect for it. When disturbed it flies a short distance and lands again, instantly vanishing. The undersides are beautifully patterned in grey, white and brown. The UK population has declined significantly and the coastal dune populations are increasingly important.",
     "identification": "Medium butterfly. Brown above with an orange-ringed eye spot. Sits with wings closed showing mottled grey-brown underside. Tilts toward sun when resting.",
-    "tips": "Walk slowly across open sandy dunes and watch for butterflies that land and instantly disappear. Mark where they land and approach slowly.",
-    "relatedSpecies": ["dark-green-fritillary", "common-blue"]
+    "tips": "Walk slowly across open sandy dunes and watch for butterflies that land and instantly disappear. Mark where they land and approach very slowly — they hold their position remarkably well.",
+    "difficulty": "moderate",
+    "relatedSpecies": ["dark-green-fritillary", "common-blue"],
+    "wikipediaTitle": "Grayling butterfly",
+    "faq": [
+      {
+        "question": "Why does the Grayling tilt toward the sun?",
+        "answer": "The Grayling tilts its body toward the sun to reduce the shadow it casts on the ground — a shadow would reveal its presence to predators. By angling perpendicular to the sun, it minimises its visible profile. This behaviour, combined with its exceptional camouflage, makes it one of the most difficult butterflies to spot once it has landed."
+      }
+    ]
   },
   {
     "commonName": "Common Blue",
     "scientificName": "Polyommatus icarus",
     "category": "insects",
     "conservationStatus": "green",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae",
     "seasonalPresence": "May–September. Two generations. Most abundant July–August.",
+    "bestTimeOfDay": "10am–5pm on sunny days",
     "whereToSee": "Dune grassland wherever Bird's-foot Trefoil grows. Formby and Ainsdale.",
-    "description": "The Common Blue is the most abundant blue butterfly on the Sefton Coast and one of the most reliable. Males are a beautiful, vivid blue; females are brown with blue scaling at the wing base. They require Bird's-foot Trefoil as a larval foodplant, which is common on the dune grassland. In July the dune slopes can be alive with them. Males are territorial and will see off rivals and investigate any small blue object. A good butterfly for beginners — easy to find and straightforward to identify.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Widespread but declining in England due to grassland loss",
+    "seftonPopulation": "Common on dune grassland throughout the Sefton Coast; locally abundant in good years",
+    "habitat": ["Dune grassland", "Coastal grassland", "Rough grass with trefoil"],
+    "diet": "Adults: various flowers. Larvae: Bird's-foot Trefoil (primary), other Fabaceae",
+    "description": "The Common Blue is the most abundant blue butterfly on the Sefton Coast and one of the most reliable. Males are a beautiful, vivid blue; females are brown with blue scaling at the wing base. They require Bird's-foot Trefoil as a larval foodplant, which is common on the dune grassland. In July the dune slopes can be alive with them. Males are territorial and will see off rivals and investigate any small blue object.",
     "identification": "Males: bright violet-blue above with thin black border. Females: brown with orange spots and variable blue sheen. Both have spotted pale grey underside.",
-    "tips": "Walk any area of dune grassland with Bird's-foot Trefoil in July. Males puddle on damp sand.",
-    "relatedSpecies": ["brown-argus", "small-copper"]
-  },
-  {
-    "commonName": "Small Copper",
-    "scientificName": "Lycaena phlaeas",
-    "category": "insects",
-    "conservationStatus": "green",
-    "seasonalPresence": "April–October. Two or three generations. Most abundant August–September.",
-    "whereToSee": "Open dune grassland and disturbed ground. Active in sunshine, settles on low vegetation.",
-    "description": "A small but brilliantly-coloured butterfly of open grassland and dune edges. The copper and black upper wing pattern is unmistakeable and catches the eye in sunlight. Males are highly territorial, launching from a perch to investigate passing insects. The Sefton Coast's dune grassland holds good numbers. It's one of those butterflies that rewards patience — sit near a warm, sheltered south-facing dune slope and you'll find them.",
-    "identification": "Small. Upper forewing brilliant copper-orange with black spots. Hindwing dark with orange band. Underside pale. Very fast flight.",
-    "tips": "Watch warm, sheltered south-facing dune slopes in late summer. Males often return to the same prominent perch.",
-    "relatedSpecies": ["common-blue", "brown-argus"]
-  },
-  {
-    "commonName": "Six-spot Burnet Moth",
-    "scientificName": "Zygaena filipendulae",
-    "category": "insects",
-    "conservationStatus": "green",
-    "seasonalPresence": "June–August. Flies in sunshine.",
-    "whereToSee": "Dune grassland where Bird's-foot Trefoil grows. Formby and Ainsdale. Often abundant.",
-    "description": "The Six-spot Burnet is one of the most striking insects on the Sefton Coast dunes — a day-flying moth with metallic green-black wings spotted with six brilliant red dots. They congregate on Ragwort, thistles and other flowers in groups. The red spots are a warning signal — Burnet Moths contain hydrogen cyanide and birds learn to leave them alone. The papery, boat-shaped cocoons attached to grass stems are a feature of the dune grassland in early summer before adults emerge.",
-    "identification": "Day-flying moth. Metallic blue-green forewings with six red spots. Red hindwings. Slow, fluttering flight. Papery cocoon on grass stems in June.",
-    "tips": "Ragwort patches in July are the place to look. Easy to photograph — they're sluggish and unconcerned about approach.",
-    "relatedSpecies": ["cinnabar-moth"]
-  },
-  {
-    "commonName": "Cinnabar Moth",
-    "scientificName": "Tyria jacobaeae",
-    "category": "insects",
-    "conservationStatus": "green",
-    "seasonalPresence": "Adults May–July. Caterpillars July–September.",
-    "whereToSee": "Wherever Ragwort grows on the dune grassland. Formby and Ainsdale.",
-    "description": "The Cinnabar Moth is one of the most distinctive insects on the Sefton Coast. Adults are striking — black with crimson-red stripes and spots. But the caterpillars are even more obvious: jet black and bright orange in bold stripes, feeding openly on Ragwort in groups of 10, 20 or more. The warning colouring of both adult and caterpillar signals toxicity — they sequester the pyrrolizidine alkaloids from Ragwort. The bright orange and black caterpillars on Ragwort in August are one of the most striking sights on the dune grassland.",
-    "identification": "Adult: black with red stripes on forewings, red hindwings. Caterpillar: bold black and orange hoops, on Ragwort. Very distinctive both stages.",
-    "tips": "Look for the caterpillars on Ragwort in August — they're conspicuous and easy to find. Multiple caterpillars on a single plant is typical.",
-    "relatedSpecies": ["six-spot-burnet-moth"]
-  },
-  {
-    "commonName": "Shore Wainscot Moth",
-    "scientificName": "Mythimna litoralis",
-    "category": "insects",
-    "conservationStatus": "green",
-    "seasonalPresence": "July–September. Flies at night.",
-    "whereToSee": "Mobile and semi-fixed dunes at Formby and Ainsdale. Specific to coastal dune habitats.",
-    "description": "The Shore Wainscot is a specialist of coastal dunes — one of the few moth species almost entirely restricted to dune habitats. The larvae feed on Marram Grass inside the rolled leaves. The adult is a pale buff moth, unremarkable to look at but significant as an indicator of dune quality. It's found across the Sefton Coast wherever good Marram habitat exists. A moth trap on the dunes in August will typically catch this species.",
-    "identification": "Pale straw-buff moth. Wainscot-type pattern with pale streaking on forewing. Wingspan 30–35mm. Best identified by habitat — coastal dunes with Marram.",
-    "tips": "A moth trap (or a white sheet with a UV lamp) on the dunes in August will usually produce this species.",
-    "relatedSpecies": ["six-spot-burnet-moth"]
-  },
-  {
-    "commonName": "Emperor Moth",
-    "scientificName": "Saturnia pavonia",
-    "category": "insects",
-    "conservationStatus": "green",
-    "seasonalPresence": "Males April–May (afternoon). Females nocturnal, same period.",
-    "whereToSee": "Dune heath and heather areas at Ainsdale NNR. Males fly fast along heather edges in afternoon sunshine.",
-    "description": "Britain's only wild silk moth, the Emperor is spectacular. Males fly in afternoon sunshine in April, using their extraordinary feathery antennae to detect female pheromones from over a kilometre away. The large eye spots on all four wings are dramatic. Females are nocturnal. The caterpillars are vivid green with pink and black spots, feeding on Heather and Bramble. The Sefton Coast's dune heath is one of the better places to see this species in northwest England.",
-    "identification": "Large moth. Males: orange-brown with large eye spots on all four wings. Females: grey with same eye spots. Feathery antennae on males. Wingspan to 85mm.",
-    "tips": "Walk the heather areas at Ainsdale on a warm, sunny April afternoon. Males fly fast, low over the heather — you'll need sharp eyes.",
-    "relatedSpecies": []
-  },
-  {
-    "commonName": "Dune Tiger Beetle",
-    "scientificName": "Cicindela hybrida",
-    "category": "insects",
-    "conservationStatus": "amber",
-    "seasonalPresence": "May–August. Active in hot sunshine.",
-    "whereToSee": "Open bare sandy areas on the dunes at Ainsdale NNR and Birkdale. Runs fast on hot sand.",
-    "description": "The Dune Tiger Beetle is one of the most exciting insects of the Sefton Coast. It's fast, iridescent and a voracious predator. The bronze-green body with pale markings catches the light and the massive jaws are a giveaway — these beetles hunt other invertebrates on the sand surface, running them down with speed or ambushing from shallow burrows in the sand. The Sefton Coast holds one of the better populations in England. Hot, sunny conditions are needed — they disappear in cloud.",
-    "identification": "Medium beetle to 16mm. Reddish-brown with pale markings on elytra. Long legs, prominent eyes, massive mandibles. Very fast on bare sand. Flies short distances if approached.",
-    "tips": "Visit the hottest, most exposed bare sandy areas of the dunes on a hot summer day. They're obvious if you move slowly and look ahead.",
-    "relatedSpecies": []
-  },
-  {
-    "commonName": "Large Marsh Grasshopper",
-    "scientificName": "Stethophyma grossum",
-    "category": "insects",
-    "conservationStatus": "amber",
-    "seasonalPresence": "July–October. Single generation.",
-    "whereToSee": "Wet dune slacks and boggy areas at Ainsdale NNR. Specific to wet Sphagnum and rush habitats.",
-    "description": "Britain's largest grasshopper and one of its rarest. The Sefton Coast is one of a small number of sites in England where the Large Marsh Grasshopper can be found, making it a genuinely special species to see. It lives in wet sphagnum moss and rush beds in the dune slack system. The call — a series of ticks rather than a typical grasshopper chirp — is distinctive. Males are brownish with a yellow-striped abdomen; females are larger. The NNR management at Ainsdale specifically supports the wet slacks this species needs.",
-    "identification": "Britain's largest grasshopper, to 40mm. Mottled brown and yellow. Red and yellow underside to abdomen visible from below. Ticking call rather than chirp.",
-    "tips": "Walk the wet slack areas at Ainsdale in August. Listen for the ticking call from wet grass and rushes.",
-    "relatedSpecies": ["dark-green-fritillary"]
-  },
-  {
-    "commonName": "Bee Wolf",
-    "scientificName": "Philanthus triangulum",
-    "category": "insects",
-    "conservationStatus": "green",
-    "seasonalPresence": "July–September.",
-    "whereToSee": "South-facing sandy banks in the dune system. Formby and Ainsdale. Hunts Honey Bees.",
-    "description": "The Bee Wolf is a large, striking solitary wasp that hunts Honey Bees — paralysing them with a sting and burying them in sand tunnels as food for larvae. The Sefton Coast dunes provide ideal nesting habitat on warm, sheltered sandy banks. Females are yellow and black with distinctive markings; they dig burrows in loose sand and make multiple trips carrying paralysed bees. Watching a Bee Wolf locate, sting and carry a bee as large as itself back to the burrow is extraordinary.",
-    "identification": "Large wasp to 18mm. Broad yellow bands on abdomen. Three yellow spots on thorax. Powerful build. Carries paralysed Honey Bees in flight.",
-    "tips": "Look on warm, south-facing sandy banks in the dune system in August. Several females may nest close together forming a loose aggregation.",
-    "relatedSpecies": []
+    "tips": "Walk any area of dune grassland with Bird's-foot Trefoil in July. Males puddle on damp sand and are very approachable when drinking.",
+    "difficulty": "easy",
+    "relatedSpecies": ["silver-studded-blue", "small-copper"],
+    "wikipediaTitle": "Common blue butterfly",
+    "faq": [
+      {
+        "question": "How do I find Common Blue butterflies at Ainsdale?",
+        "answer": "Look for patches of Bird's-foot Trefoil (a small yellow pea flower) on the dune grassland — wherever the foodplant grows, Common Blues will follow. Males are territorial and often visible on prominent perches. Damp patches of sand attract males puddling for minerals, and they are easy to photograph while drinking."
+      }
+    ]
   },
   {
     "commonName": "Silver-studded Blue",
     "scientificName": "Plebejus argus",
     "category": "insects",
     "conservationStatus": "amber",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae",
     "seasonalPresence": "Late June–August. Single generation.",
+    "bestTimeOfDay": "Morning — most active early in the day, roosting in vegetation by afternoon",
     "whereToSee": "Dune heath with Heather at Ainsdale NNR. Found in colonies — specific to heathland habitat.",
-    "description": "The Silver-studded Blue is one of the more special butterfly records for the Sefton Coast, associated with the dune heath habitat where Heather grows. Males are a vivid violet-blue with a distinctive silver-studded underside hindwing; females are brown with orange spots. They live in colonies and tend not to travel far, making habitat management critical. The Ainsdale NNR's heath management benefits this species. A national amber-listed butterfly that's more reliable on the coast than many think.",
-    "identification": "Small blue butterfly. Males: bright violet-blue with black border. Females: brown with orange marginal spots. Underside has distinctive silver-studded spots on hindwing.",
-    "tips": "Search the Heather areas at Ainsdale NNR in July. They tend to stay low, nectaring on Heather flowers.",
-    "relatedSpecies": ["common-blue", "small-copper"]
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Declining nationally; strongholds on southern heathland and coastal dunes",
+    "seftonPopulation": "Colony present in the heather areas at Ainsdale NNR; one of the more northerly sites in England",
+    "habitat": ["Dune heath", "Heather heath", "Coastal heath"],
+    "diet": "Adults: Heather, Bird's-foot Trefoil, thyme. Larvae: Heather, Bell Heather, Gorse",
+    "description": "The Silver-studded Blue is one of the more special butterfly records for the Sefton Coast, associated with the dune heath habitat where Heather grows. Males are a vivid violet-blue with a distinctive silver-studded underside hindwing; females are brown with orange spots. They live in colonies and tend not to travel far, making habitat management critical. The Ainsdale NNR heath management benefits this species.",
+    "identification": "Small blue butterfly. Males: bright violet-blue with black border. Females: brown with orange marginal spots. Underside has distinctive silver-studded spots on hindwing — key feature.",
+    "tips": "Search the Heather areas at Ainsdale NNR in July. They tend to stay low, nectaring on Heather flowers. Visit in the morning when they are most active.",
+    "difficulty": "specialist",
+    "relatedSpecies": ["common-blue", "small-copper"],
+    "wikipediaTitle": "Silver-studded blue",
+    "faq": [
+      {
+        "question": "What is the relationship between Silver-studded Blue and ants?",
+        "answer": "Silver-studded Blue caterpillars have a mutualistic relationship with black ants (Lasius niger). The caterpillars produce secretions from a dorsal nectary organ that ants collect, and in return the ants protect the caterpillars from predators. At pupation, ants may carry caterpillars into ant nests where they pupate. This ant-butterfly relationship is one of the reasons the Silver-studded Blue is so habitat-specific."
+      }
+    ]
+  },
+  {
+    "commonName": "Small Copper",
+    "scientificName": "Lycaena phlaeas",
+    "category": "insects",
+    "conservationStatus": "green",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae",
+    "seasonalPresence": "April–October. Two or three generations. Most abundant August–September.",
+    "bestTimeOfDay": "10am–4pm on sunny days; territorial males active on warm afternoons",
+    "whereToSee": "Open dune grassland and disturbed ground. Active in sunshine, settles on low vegetation.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Widespread but declining across Britain",
+    "seftonPopulation": "Regular on dune grassland throughout the Sefton Coast",
+    "habitat": ["Open dune grassland", "Disturbed ground", "Rough grassland"],
+    "diet": "Adults: various small flowers. Larvae: Common Sorrel, Sheep's Sorrel",
+    "description": "A small but brilliantly-coloured butterfly of open grassland and dune edges. The copper and black upper wing pattern is unmistakeable and catches the eye in sunlight. Males are highly territorial, launching from a perch to investigate passing insects. The Sefton Coast's dune grassland holds good numbers. It's one of those butterflies that rewards patience — sit near a warm, sheltered south-facing dune slope and they will come to you.",
+    "identification": "Small. Upper forewing brilliant copper-orange with black spots. Hindwing dark with orange band. Underside pale. Very fast flight.",
+    "tips": "Watch warm, sheltered south-facing dune slopes in late summer. Males often return to the same prominent perch after chasing rivals.",
+    "difficulty": "easy",
+    "relatedSpecies": ["common-blue", "silver-studded-blue"],
+    "wikipediaTitle": "Small copper",
+    "faq": [
+      {
+        "question": "Why are male Small Copper butterflies so aggressive?",
+        "answer": "Male Small Coppers hold small territories and aggressively chase away any other insect that enters — including much larger butterflies, bees and even passing dragonflies. This is mate-guarding behaviour: the territory is a perch from which males spot and court passing females. The same perch is often used repeatedly, so if you find one, wait for the resident male to return."
+      }
+    ]
+  },
+  {
+    "commonName": "Six-spot Burnet Moth",
+    "scientificName": "Zygaena filipendulae",
+    "category": "insects",
+    "conservationStatus": "green",
+    "order": "Lepidoptera",
+    "family": "Zygaenidae",
+    "seasonalPresence": "June–August. Flies in sunshine.",
+    "bestTimeOfDay": "10am–4pm in sunshine; inactive in cloud or rain",
+    "whereToSee": "Dune grassland where Bird's-foot Trefoil grows. Formby and Ainsdale. Often abundant.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Widespread and locally common in grassland throughout Britain",
+    "seftonPopulation": "Abundant on dune grassland at Ainsdale and Formby in July; one of the most conspicuous dune insects",
+    "habitat": ["Open dune grassland", "Calcareous grassland", "Rough grassland"],
+    "diet": "Adults: Ragwort, thistle, knapweed nectar. Larvae: Bird's-foot Trefoil",
+    "description": "The Six-spot Burnet is one of the most striking insects on the Sefton Coast dunes — a day-flying moth with metallic green-black wings spotted with six brilliant red dots. They congregate on Ragwort, thistles and other flowers in groups. The red spots are a warning signal — Burnet Moths contain hydrogen cyanide and birds learn to leave them alone. The papery, boat-shaped cocoons attached to grass stems are a feature of the dune grassland in early summer before adults emerge.",
+    "identification": "Day-flying moth. Metallic blue-green forewings with six red spots. Red hindwings. Slow, fluttering flight. Papery, spindle-shaped cocoon on grass stems in June.",
+    "tips": "Ragwort patches in July are the place to look. Easy to photograph — they're sluggish and unconcerned about approach. Look for cocoons on grass stems in June before adults emerge.",
+    "difficulty": "easy",
+    "relatedSpecies": ["cinnabar-moth"],
+    "wikipediaTitle": "Six-spot burnet",
+    "faq": [
+      {
+        "question": "Why do Six-spot Burnet Moths contain cyanide?",
+        "answer": "Six-spot Burnet Moths synthesise hydrogen cyanide as a defence against predators. The HCN is stored throughout the body — including the eggs — making the moths genuinely toxic. The bright red spots on metallic green wings are aposematic warning colouration, teaching predators to avoid them. Some spiders have been observed cutting Burnets out of their webs rather than eating them."
+      }
+    ]
+  },
+  {
+    "commonName": "Cinnabar Moth",
+    "scientificName": "Tyria jacobaeae",
+    "category": "insects",
+    "conservationStatus": "green",
+    "order": "Lepidoptera",
+    "family": "Erebidae",
+    "seasonalPresence": "Adults May–July. Caterpillars July–September.",
+    "bestTimeOfDay": "Adults: dusk to dawn (rarely seen in day). Caterpillars: visible on Ragwort all day.",
+    "whereToSee": "Wherever Ragwort grows on the dune grassland. Formby and Ainsdale.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Widespread in England; numbers fluctuate with Ragwort availability",
+    "seftonPopulation": "Common wherever Ragwort grows on dune grassland throughout the Sefton Coast",
+    "habitat": ["Open dune grassland", "Rough grassland", "Disturbed ground with Ragwort"],
+    "diet": "Adults: minimal feeding. Larvae: Ragwort almost exclusively — the caterpillars sequester toxic alkaloids from the plant.",
+    "description": "The Cinnabar Moth is one of the most distinctive insects on the Sefton Coast. Adults are striking — black with crimson-red stripes and spots. But the caterpillars are even more obvious: jet black and bright orange in bold stripes, feeding openly on Ragwort in groups of 10, 20 or more. The warning colouring of both adult and caterpillar signals toxicity — they sequester the pyrrolizidine alkaloids from Ragwort. The bright orange and black caterpillars on Ragwort in August are one of the most striking sights on the dune grassland.",
+    "identification": "Adult: black with red stripes on forewings, red hindwings. Caterpillar: bold black and orange hoops, feeding on Ragwort. Very distinctive at both stages.",
+    "tips": "Look for the caterpillars on Ragwort in August — they're conspicuous and easy to find. Multiple caterpillars on a single plant is typical. Adults are night-flying so usually found at rest in daytime.",
+    "difficulty": "easy",
+    "relatedSpecies": ["six-spot-burnet-moth"],
+    "wikipediaTitle": "Cinnabar moth",
+    "faq": [
+      {
+        "question": "Why are Cinnabar Moth caterpillars orange and black?",
+        "answer": "The bold orange and black pattern of Cinnabar caterpillars is aposematic (warning) colouration. By feeding on Ragwort, the caterpillars accumulate toxic pyrrolizidine alkaloids in their bodies. The bright colours advertise their toxicity to birds and other predators. Inexperienced birds may attempt to eat one but quickly learn to avoid the pattern."
+      },
+      {
+        "question": "Are Cinnabar Moths used for biological control of Ragwort?",
+        "answer": "Cinnabar Moth has been trialled as a biocontrol agent for Ragwort in New Zealand, Australia and North America where Ragwort is an invasive weed. In the UK context, both Cinnabar Moth and Ragwort are native species and part of the dune grassland ecosystem — high caterpillar numbers can defoliate Ragwort plants but rarely eliminate them, and the moths themselves are an important part of the food web."
+      }
+    ]
+  },
+  {
+    "commonName": "Shore Wainscot Moth",
+    "scientificName": "Mythimna litoralis",
+    "category": "insects",
+    "conservationStatus": "green",
+    "order": "Lepidoptera",
+    "family": "Noctuidae",
+    "seasonalPresence": "July–September. Flies at night.",
+    "bestTimeOfDay": "After dark — moth traps most effective from 10pm",
+    "whereToSee": "Mobile and semi-fixed dunes at Formby and Ainsdale. Specific to coastal dune habitats with Marram Grass.",
+    "shortLocation": "Formby Beach",
+    "ukPopulation": "Largely restricted to coastal dunes; found wherever good Marram Grass habitat exists",
+    "seftonPopulation": "Present throughout the Sefton Coast dune system; a reliable catch in any moth trap set on the dunes",
+    "habitat": ["Mobile sand dune", "Semi-fixed dune", "Marram Grass stands"],
+    "diet": "Adults: nectar. Larvae: inside the rolled leaves of Marram Grass",
+    "description": "The Shore Wainscot is a specialist of coastal dunes — one of the few moth species almost entirely restricted to dune habitats. The larvae feed on Marram Grass inside the rolled leaves. The adult is a pale buff moth, unremarkable to look at but significant as an indicator of dune quality. Found across the Sefton Coast wherever good Marram habitat exists.",
+    "identification": "Pale straw-buff moth. Wainscot-type pattern with pale streaking on forewing. Wingspan 30–35mm. Best identified by habitat — coastal dunes with Marram.",
+    "tips": "A moth trap (or a white sheet with a UV lamp) on the dunes in August will usually produce this species. It is a reliable dune specialist.",
+    "difficulty": "specialist",
+    "relatedSpecies": ["six-spot-burnet-moth"],
+    "wikipediaTitle": "Mythimna litoralis",
+    "faq": [
+      {
+        "question": "Why is the Shore Wainscot Moth restricted to coastal dunes?",
+        "answer": "The Shore Wainscot Moth's larvae feed almost exclusively inside the rolled leaves of Marram Grass (Ammophila arenaria), which only grows on coastal sand dunes. This specialist relationship makes the moth entirely dependent on dune habitat. The moth's distribution closely tracks the distribution of Marram Grass around the British coast."
+      }
+    ]
+  },
+  {
+    "commonName": "Emperor Moth",
+    "scientificName": "Saturnia pavonia",
+    "category": "insects",
+    "conservationStatus": "green",
+    "order": "Lepidoptera",
+    "family": "Saturniidae",
+    "seasonalPresence": "Males April–May (afternoon). Females nocturnal, same period.",
+    "bestTimeOfDay": "Male: 12pm–4pm in warm sunshine in April. Female: after dark.",
+    "whereToSee": "Dune heath and heather areas at Ainsdale NNR. Males fly fast along heather edges in afternoon sunshine.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Widespread on heathland and moorland; declining due to heathland loss",
+    "seftonPopulation": "Present in the heather areas at Ainsdale NNR; one of the better northwest England sites",
+    "habitat": ["Dune heath", "Heather heath", "Moorland edge"],
+    "diet": "Adults: do not feed. Larvae: Heather, Bramble, Hawthorn, Blackthorn",
+    "description": "Britain's only wild silk moth, the Emperor is spectacular. Males fly in afternoon sunshine in April, using their extraordinary feathery antennae to detect female pheromones from over a kilometre away. The large eye spots on all four wings are dramatic. Females are nocturnal. The caterpillars are vivid green with pink and black spots, feeding on Heather and Bramble. The Sefton Coast's dune heath is one of the better places to see this species in northwest England.",
+    "identification": "Large moth. Males: orange-brown with large eye spots on all four wings, fly in daylight. Females: grey with same eye spots, nocturnal. Feathery comb-like antennae on males. Wingspan to 85mm.",
+    "tips": "Walk the heather areas at Ainsdale on a warm, sunny April afternoon. Males fly fast, low over the heather in a zig-zagging searching flight. They can be attracted by a caged female if you know someone who breeds them.",
+    "difficulty": "moderate",
+    "relatedSpecies": [],
+    "wikipediaTitle": "Emperor moth",
+    "faq": [
+      {
+        "question": "How do male Emperor Moths find females?",
+        "answer": "Male Emperor Moths have extremely large, feathery (bipectinate) antennae that can detect female pheromones at concentrations as low as a few molecules per cubic metre. Males can locate a female from over a kilometre downwind. This is why male Emperor Moths fly rapidly in a searching pattern — they are following a pheromone plume back to its source."
+      }
+    ]
+  },
+  {
+    "commonName": "Dune Tiger Beetle",
+    "scientificName": "Cicindela hybrida",
+    "category": "insects",
+    "conservationStatus": "amber",
+    "order": "Coleoptera",
+    "family": "Carabidae",
+    "seasonalPresence": "May–August. Active only in hot sunshine.",
+    "bestTimeOfDay": "11am–4pm on the hottest, sunniest days",
+    "whereToSee": "Open bare sandy areas on the dunes at Ainsdale NNR and Birkdale. Runs fast on hot sand.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Restricted to coastal dunes; declining due to habitat loss — amber-listed beetle",
+    "seftonPopulation": "One of the better populations in England; present on open bare sandy areas at Ainsdale NNR",
+    "habitat": ["Bare sand dune", "Open sandy ground", "Dune blowout"],
+    "diet": "Other invertebrates — ants, beetles, flies — pursued and caught on the sand surface or ambushed from burrows",
+    "description": "The Dune Tiger Beetle is one of the most exciting insects of the Sefton Coast. It's fast, iridescent and a voracious predator. The bronze-green body with pale markings catches the light and the massive jaws are a giveaway — these beetles hunt other invertebrates on the sand surface, running them down with speed or ambushing from shallow burrows in the sand. The Sefton Coast holds one of the better populations in England. Hot, sunny conditions are needed — they disappear in cloud.",
+    "identification": "Medium beetle to 16mm. Reddish-brown with pale cream markings on elytra. Long legs, prominent eyes, massive mandibles. Very fast on bare sand. Flies short distances if approached.",
+    "tips": "Visit the hottest, most exposed bare sandy areas of the dunes on a hot summer day. Move slowly and look several metres ahead — they see you before you see them and take flight if approached quickly.",
+    "difficulty": "moderate",
+    "relatedSpecies": [],
+    "wikipediaTitle": "Cicindela hybrida",
+    "faq": [
+      {
+        "question": "Why are Tiger Beetles so hard to approach?",
+        "answer": "Tiger Beetles have large, forward-facing eyes that give them excellent wide-angle vision, combined with very fast running speed (relative to body size they are among the fastest insects). As you approach, they see you and run or fly a short distance, then land and turn to face you again. The trick is to approach very slowly, pausing when they turn to face you, allowing them to habituate to your presence."
+      }
+    ]
+  },
+  {
+    "commonName": "Large Marsh Grasshopper",
+    "scientificName": "Stethophyma grossum",
+    "category": "insects",
+    "conservationStatus": "amber",
+    "order": "Orthoptera",
+    "family": "Acrididae",
+    "seasonalPresence": "July–October. Single generation.",
+    "bestTimeOfDay": "Warm sunny afternoons — most active and calling 11am–4pm",
+    "whereToSee": "Wet dune slacks and boggy areas at Ainsdale NNR. Specific to wet Sphagnum and rush habitats.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Nationally rare — restricted to a handful of wet heathland and dune slack sites in England",
+    "seftonPopulation": "One of the most important populations in England; Ainsdale NNR is a stronghold",
+    "habitat": ["Wet dune slack", "Sphagnum bog", "Rush beds", "Boggy heath"],
+    "diet": "Grasses, sedges, rush leaves",
+    "description": "Britain's largest grasshopper and one of its rarest. The Sefton Coast is one of a small number of sites in England where the Large Marsh Grasshopper can be found, making it a genuinely special species to see. It lives in wet sphagnum moss and rush beds in the dune slack system. The call — a series of ticks rather than a typical grasshopper chirp — is distinctive. Males are brownish with a yellow-striped abdomen; females are larger.",
+    "identification": "Britain's largest grasshopper, to 40mm. Mottled brown and yellow. Red and yellow underside to abdomen visible from below. Ticking call rather than chirp — like a finger nail flicked against a comb.",
+    "tips": "Walk the wet slack areas at Ainsdale in August. Listen for the ticking call from wet grass and rushes. They are well-camouflaged but often bask on rush stems in sunshine.",
+    "difficulty": "specialist",
+    "relatedSpecies": [],
+    "wikipediaTitle": "Large marsh grasshopper",
+    "faq": [
+      {
+        "question": "Why is the Large Marsh Grasshopper so rare?",
+        "answer": "The Large Marsh Grasshopper is restricted to wet, boggy habitats — Sphagnum-dominated dune slacks, wet heathland and valley bogs — which have been drained or destroyed across most of England. The remaining populations are fragmented and small. Ainsdale NNR is one of a handful of English sites with a viable population, making it a nationally important conservation site for this species."
+      }
+    ]
+  },
+  {
+    "commonName": "Bee Wolf",
+    "scientificName": "Philanthus triangulum",
+    "category": "insects",
+    "conservationStatus": "green",
+    "order": "Hymenoptera",
+    "family": "Crabronidae",
+    "seasonalPresence": "July–September.",
+    "bestTimeOfDay": "11am–4pm on warm, sunny days — females hunting and nest building",
+    "whereToSee": "South-facing sandy banks in the dune system. Formby and Ainsdale. Hunts Honey Bees on flowering plants.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Spreading northward from southern England as climate warms; now recorded in Lancashire",
+    "seftonPopulation": "Present on suitable south-facing sandy banks in the dune system; relatively recent coloniser of the Sefton Coast",
+    "habitat": ["South-facing sandy bank", "Open dune", "Sandy heathland"],
+    "diet": "Adults: nectar. Females provision nests with paralysed Honey Bees as food for larvae.",
+    "description": "The Bee Wolf is a large, striking solitary wasp that hunts Honey Bees — paralysing them with a sting and burying them in sand tunnels as food for larvae. The Sefton Coast dunes provide ideal nesting habitat on warm, sheltered sandy banks. Females are yellow and black with distinctive markings; they dig burrows in loose sand and make multiple trips carrying paralysed bees. Watching a Bee Wolf locate, sting and carry a bee as large as itself back to the burrow is extraordinary.",
+    "identification": "Large wasp to 18mm. Broad yellow bands on abdomen. Three yellow spots on thorax. Powerful build. Carries paralysed Honey Bees in flight, held under the body.",
+    "tips": "Look on warm, south-facing sandy banks in the dune system in August. Several females may nest close together forming a loose aggregation. Wait near a good flower patch and watch for the distinctive hunting behaviour.",
+    "difficulty": "moderate",
+    "relatedSpecies": [],
+    "wikipediaTitle": "Philanthus triangulum",
+    "faq": [
+      {
+        "question": "How does the Bee Wolf find its nest burrow among thousands of identical sand grains?",
+        "answer": "The Bee Wolf learns the visual landmarks surrounding its nest entrance on each departure, flying in increasing spirals to memorise the pattern. Research by Niko Tinbergen (who won the Nobel Prize) showed that Bee Wolves use pine cone arrangements, stones and other objects as landmark arrays. If the landmarks are moved while the wasp is away, it searches at the old position — a classic demonstration of landmark navigation."
+      }
+    ]
   }
 ]

@@ -2,8 +2,8 @@ import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
 
 export const metadata = {
-  title: "Insects of the Sefton Coast",
-  description: "Butterflies, moths and invertebrates you can find on the Sefton Coast marshes and reserves.",
+  title: "Sefton Coast Insects — Butterflies, Moths & Beetles Guide",
+  description: "Butterflies, moths and beetles of the Sefton Coast dunes and heathland — Dark Green Fritillary, Grayling, Six-spot Burnet, Dune Tiger Beetle and more. Where to see them and identification tips.",
 };
 
 export default function InsectsPage() {

@@ -2,8 +2,8 @@ import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
 
 export const metadata = {
-  title: "Plants of the Sefton Coast",
-  description: "Flora of the Sefton Coast — saltmarsh, dune and coastal plants.",
+  title: "Sefton Coast Plants — Dune & Marsh Flora Species Guide",
+  description: "Dune and marsh plants of the Sefton Coast — including nationally rare species like Grass of Parnassus and Round-leaved Wintergreen at Ainsdale NNR. Identification guides and where to find them.",
 };
 
 export default function PlantsPage() {

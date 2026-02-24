@@ -1,146 +1,385 @@
 [
   {
+    "commonName": "Red Squirrel",
+    "scientificName": "Sciurus vulgaris",
+    "category": "mammals",
+    "conservationStatus": "red",
+    "order": "Rodentia",
+    "family": "Sciuridae",
+    "seasonalPresence": "Year-round. Most active and visible September–February.",
+    "bestTimeOfDay": "8–10am — most active in early morning, especially in autumn when caching food",
+    "whereToSee": "National Trust pinewoods at Formby — the red squirrel trail from the NT car park (L37 1YH). Feeding platforms along the trail are baited to bring them close.",
+    "shortLocation": "Formby NT Pinewoods",
+    "ukPopulation": "Around 140,000 — 85% in Scotland; fewer than 20,000 in England, mostly in the north",
+    "seftonPopulation": "Isolated but stable population of around 1,000–1,500 individuals in the Formby pinewoods; one of England's most accessible wild populations",
+    "habitat": ["Coniferous pinewood", "Mixed woodland edge"],
+    "diet": "Pine seeds, acorns, hazelnuts, fungi, bark, insects — caches food for winter",
+    "description": "The red squirrel at Formby is an icon. This is one of the most accessible populations in England, managed carefully by the National Trust, and a visit in autumn or winter almost always produces sightings. They've been lost from most of England, outcompeted and displaced by introduced Grey Squirrels. Formby's isolated pinewood population survives because Grey Squirrels struggle in pure pine — there's not enough food for them, but the reds are adapted to pine seed. The squirrel trail is well-signed and early morning gives the best chance.",
+    "identification": "Smaller and more slender than Grey Squirrel. Russet-red coat (can be darker in winter, occasionally near-black). Ear tufts in winter — distinctive. No grey colouring. Much more compact than Grey Squirrel.",
+    "tips": "Go early morning (8–10am) in autumn. Bring binoculars and keep quiet near the feeding platforms. Dogs must be on leads. Autumn is best — they spend more time on the ground caching seeds.",
+    "difficulty": "easy",
+    "relatedSpecies": [],
+    "wikipediaTitle": "Red squirrel",
+    "externalLinks": {
+      "rspb": "https://www.rspb.org.uk/birds-and-wildlife/red-squirrel",
+      "nbnatlas": "https://records.nbnatlas.org/species/NHMSYS0000080157"
+    },
+    "faq": [
+      {
+        "question": "Where is the best place to see Red Squirrels at Formby?",
+        "answer": "The National Trust Red Squirrel Trail at Formby (postcode L37 1YH) is the most reliable spot in England to see red squirrels. Follow the trail from the NT car park — the feeding platforms along the route are baited and squirrels visit regularly. Arrive early morning (8–10am) for the best chance, especially in autumn."
+      },
+      {
+        "question": "Why do Red Squirrels survive at Formby when they've been lost elsewhere?",
+        "answer": "Formby's pinewoods are dominated by Scots Pine, which produces small seeds that Red Squirrels can efficiently harvest but Grey Squirrels struggle with. The isolation of the pinewood also slows recolonisation by Greys. The National Trust actively manages the woodland and controls Grey Squirrel numbers to protect the population."
+      },
+      {
+        "question": "How many Red Squirrels are at Formby?",
+        "answer": "The Formby population is estimated at 1,000–1,500 individuals, making it one of the larger Red Squirrel populations in England. It is considered a key conservation site and the National Trust invests significantly in habitat management and monitoring."
+      }
+    ]
+  },
+  {
     "commonName": "Grey Seal",
     "scientificName": "Halichoerus grypus",
     "category": "mammals",
     "conservationStatus": "green",
+    "order": "Carnivora",
+    "family": "Phocidae",
     "seasonalPresence": "Year-round. Most visible September–January during pupping season.",
-    "whereToSee": "Formby and Ainsdale beaches. Offshore in the Irish Sea. Occasionally hauled out on sandbanks visible from the beach.",
+    "bestTimeOfDay": "Any time; most visible when hauled out on sandbanks at low tide",
+    "whereToSee": "Formby and Ainsdale beaches. Offshore in the Irish Sea. Ribble sandbanks visible from the beach.",
+    "shortLocation": "Formby Beach",
+    "ukPopulation": "Around 120,000 — the UK holds approximately 40% of the world population of Grey Seals",
+    "seftonPopulation": "Regular visitor; occasional hauled-out individuals; pupping on Ribble sandbanks in autumn",
+    "habitat": ["Open sea", "Sandy beach", "Sandbank", "Estuary"],
+    "diet": "Fish (sand eels, whiting, cod), crustaceans, cephalopods",
     "description": "Grey Seals are the largest native land predator in Britain and a regular sight from Formby Beach. Pups are born on beaches and sandbanks in autumn — pure white at first, moulting to grey. They can haul out on the Ribble sandbanks and are often visible in the surf at Formby. Britain holds about 40% of the world population of Grey Seals, making the Sefton Coast sightings part of a genuinely important global story.",
-    "identification": "Large, dog-like head with long Roman nose. Males (bulls) to 2.5m, dark grey. Females (cows) smaller, paler. Long muzzle distinguishes from Common/Harbour Seal (which has rounder, dog-like face).",
-    "tips": "Walk Formby Beach in autumn and scan offshore. Heads visible in the surf. Keep your distance from any hauled-out animals — 50m minimum.",
-    "relatedSpecies": ["common-seal"]
+    "identification": "Large, dog-like head with long Roman nose. Males (bulls) to 2.5m, dark grey. Females (cows) smaller, paler. Long muzzle distinguishes from Common/Harbour Seal (which has a rounder face).",
+    "tips": "Walk Formby Beach in autumn and scan offshore. Heads visible in the surf. Keep your distance from any hauled-out animals — 50m minimum. Never approach a pup on the beach.",
+    "difficulty": "moderate",
+    "relatedSpecies": ["common-seal"],
+    "wikipediaTitle": "Grey seal",
+    "externalLinks": {
+      "iucn": "https://www.iucnredlist.org/species/9660/45226042",
+      "nbnatlas": "https://records.nbnatlas.org/species/NHMSYS0000080665"
+    },
+    "faq": [
+      {
+        "question": "Can I see Grey Seals from Formby Beach?",
+        "answer": "Yes. Grey Seals are regularly spotted from Formby Beach, particularly in autumn and winter. Scan offshore for heads in the surf, or look for hauled-out animals on the sandbanks visible at low tide. Keep a minimum distance of 50m from any seal on the beach — approaching seals causes stress and can cause them to abandon pups."
+      },
+      {
+        "question": "What should I do if I find a seal pup on Formby Beach?",
+        "answer": "Do not approach, touch or try to return it to the sea. Seal pups are often left alone by their mothers while she feeds — this is normal. Keep dogs on leads and people back. If the pup appears injured or distressed after 24 hours, call the BDMLR (British Divers Marine Life Rescue) on 01825 765546."
+      }
+    ]
   },
   {
     "commonName": "Common Seal",
     "scientificName": "Phoca vitulina",
     "category": "mammals",
     "conservationStatus": "green",
+    "order": "Carnivora",
+    "family": "Phocidae",
     "seasonalPresence": "Year-round but less regular than Grey Seal on this stretch of coast.",
+    "bestTimeOfDay": "Low tide when sandbanks are exposed",
     "whereToSee": "Occasional on Ribble sandbanks. Less frequent than Grey Seal at Formby.",
-    "description": "The Common (or Harbour) Seal is less frequently seen on the Sefton Coast than the Grey Seal, but does occur. Smaller and with a distinctly rounded, more dog-like face compared to the Grey Seal's long Roman nose. Pups are born in June and can swim immediately unlike Grey Seal pups. Worth checking any seal sighting carefully for the rounder head shape.",
+    "shortLocation": "Ribble Estuary",
+    "ukPopulation": "Around 30,000 — smaller than Grey Seal population",
+    "seftonPopulation": "Occasional visitor; less frequent than Grey Seal",
+    "habitat": ["Estuary", "Sandbank", "Open sea"],
+    "diet": "Fish, squid, crustaceans",
+    "description": "The Common (or Harbour) Seal is less frequently seen on the Sefton Coast than the Grey Seal. Smaller and with a distinctly rounded, more dog-like face compared to the Grey Seal's long Roman nose. Pups are born in June and can swim immediately unlike Grey Seal pups. Worth checking any seal sighting carefully for the rounder head shape.",
     "identification": "Smaller than Grey Seal. Round head, concave profile, large eyes. Mottled grey-brown. V-shaped nostrils (Grey Seal has parallel nostrils).",
     "tips": "Compare head shape with any Grey Seals present. Common Seal's rounder, more 'puppy-faced' look is distinctive with practice.",
-    "relatedSpecies": ["grey-seal"]
-  },
-  {
-    "commonName": "Brown Hare",
-    "scientificName": "Lepus europaeus",
-    "category": "mammals",
-    "conservationStatus": "amber",
-    "seasonalPresence": "Year-round. Most visible February–April during boxing season.",
-    "whereToSee": "Farmland around Hesketh Bank, Banks and Crossens. Fields behind the sea wall. Occasionally on open dune grassland.",
-    "description": "The Brown Hare is one of Britain's most charismatic mammals and the Sefton Coast's farmland hinterland holds a reasonable population. In March — 'mad March hares' — females box pursuing males in open fields. Unlike rabbits, hares live entirely above ground, resting in a shallow depression (form) in the grass. The long black-tipped ears, powerful hind legs and rust-brown colouring make them unmistakeable. They're most active at dawn and dusk.",
-    "identification": "Much larger than rabbit. Very long black-tipped ears. Rusty-brown with pale underparts. Long hind legs. Yellow eyes. Does not use burrows.",
-    "tips": "Drive slowly along farm lanes around Banks and Hesketh Bank at dawn. They often sit in fields in the open. Watch for boxing pairs in February and March.",
-    "relatedSpecies": ["rabbit"]
-  },
-  {
-    "commonName": "Otter",
-    "scientificName": "Lutra lutra",
-    "category": "mammals",
-    "conservationStatus": "green",
-    "seasonalPresence": "Year-round but rarely seen. Dawn and dusk best.",
-    "whereToSee": "Drainage ditches and watercourses behind the sea wall. Marshside RSPB — occasional sightings on the main lagoon.",
-    "description": "Otters have recovered well in northwest England following water quality improvements, and the Sefton Coast's network of drainage channels, pools and ditches provides good habitat. They're rarely seen but signs — spraint (droppings) on prominent rocks and bankside, footprints in mud, fish remains — are more frequent. A sighting at Marshside RSPB is an exceptional event but has been recorded. Worth scanning ditches at dawn.",
-    "identification": "Long, low-slung, chocolate-brown. Pale throat. Flat head with small ears and long whiskers. Thick tapering tail. Swims with back barely visible, leaving V-wake.",
-    "tips": "Look for spraint (fishy-smelling, tarry droppings) on prominent rocks beside water. Check drainage channels at dusk.",
-    "relatedSpecies": ["grey-seal"]
-  },
-  {
-    "commonName": "Water Vole",
-    "scientificName": "Arvicola amphibius",
-    "category": "mammals",
-    "conservationStatus": "red",
-    "seasonalPresence": "Year-round but inactive in cold weather. April–October most visible.",
-    "whereToSee": "Dense reed and rush beds alongside drainage channels behind the Sefton Coast sea wall. Any suitable slow-moving water with good bankside vegetation.",
-    "description": "Britain's fastest-declining mammal. Water Voles have been lost from 95% of their former sites, largely due to American Mink predation. The Sefton Coast has pockets of suitable habitat in the network of ditches behind the sea wall and there have been local conservation efforts. If you hear a 'plop' as you walk beside a ditch and see ripples, that might be a Water Vole. They eat waterside vegetation and leave neat piles of cut grass stems.",
-    "identification": "Like a fat, blunt-nosed brown rat with a short tail. Much rounder face than Brown Rat, smaller ears, shorter tail. Chestnut-brown. Swims readily.",
-    "tips": "Sit quietly beside a suitable ditch in May or June. Look for 'plop' entry into water and piles of neatly cut grass stems at the water's edge.",
-    "relatedSpecies": ["brown-rat"]
-  },
-  {
-    "commonName": "Fox",
-    "scientificName": "Vulpes vulpes",
-    "category": "mammals",
-    "conservationStatus": "green",
-    "seasonalPresence": "Year-round. Most vocal January–February during breeding season.",
-    "whereToSee": "Anywhere on the Sefton Coast — dunes, farmland, suburban edges, beach. Common and widespread.",
-    "description": "Foxes are common across the Sefton Coast and can be seen at almost any time. The dune system at Formby and Ainsdale provides good denning habitat, and the farmland hinterland offers rich feeding. In January, the eerie screaming call of the vixen is one of the most dramatic sounds of a winter night. Foxes are a significant predator of ground-nesting birds — including the Little Terns at Formby Beach — which is why wardening schemes are so important.",
-    "identification": "Rusty orange-red with white chest and black legs. Large bushy tail with white tip. Pointed muzzle, large ears. Dog-like but more lithe.",
-    "tips": "Check the dune edge at dawn. Foxes often move along the beach early morning before human activity picks up.",
-    "relatedSpecies": []
-  },
-  {
-    "commonName": "Stoat",
-    "scientificName": "Mustela erminea",
-    "category": "mammals",
-    "conservationStatus": "green",
-    "seasonalPresence": "Year-round.",
-    "whereToSee": "Dune grassland at Ainsdale and Formby. Hedgerows and rough ground behind the sea wall.",
-    "description": "Stoats are agile, fast-moving predators that hunt rabbits, voles and birds across the Sefton Coast. They sometimes turn white in winter (ermine) though this is more common in colder parts of Britain — Sefton birds may show partial whitening. They're seen less often than heard — the squeal of a rabbit being caught is not an unusual sound in the dunes. Sometimes they perform a 'dance' to hypnotise rabbits, bounding around until the confused prey stands still.",
-    "identification": "Long, slender body. Orange-brown above, white below. Black tip to tail — always, in all seasons. Faster and longer than Weasel, with that black tail tip.",
-    "tips": "Watch along fence lines and grass margins. They tend to move in a bounding gait and can be surprisingly bold.",
-    "relatedSpecies": ["weasel"]
-  },
-  {
-    "commonName": "Weasel",
-    "scientificName": "Mustela nivalis",
-    "category": "mammals",
-    "conservationStatus": "green",
-    "seasonalPresence": "Year-round.",
-    "whereToSee": "Rough grassland, dune margins, hedgerows. Similar habitat to Stoat but smaller territories.",
-    "description": "The Weasel is Britain's smallest carnivore and a fierce hunter of voles and mice. Much smaller than the Stoat and without the black tail tip. They can pursue prey into burrows underground. On the Sefton Coast dunes they hunt in the rank grass and heather areas. Often overlooked — people mistake them for Stoats — but a close view reveals a noticeably smaller, more compact animal.",
-    "identification": "Very small, slender. Brown above, white below. No black tail tip (key difference from Stoat). Shorter tail proportionally. Rapid movement.",
-    "tips": "Any small brown mustelid without a black tail tip is a Weasel. They often pop up to look around before diving back into cover.",
-    "relatedSpecies": ["stoat"]
-  },
-  {
-    "commonName": "Pipistrelle Bat",
-    "scientificName": "Pipistrellus pipistrellus",
-    "category": "mammals",
-    "conservationStatus": "green",
-    "seasonalPresence": "April–October. Hibernates in winter.",
-    "whereToSee": "Any sheltered woodland edge, over water, around buildings at dusk. Formby pinewoods are good.",
-    "description": "The Common Pipistrelle is Britain's smallest and most abundant bat and the most likely bat you'll see on the Sefton Coast. A pipistrelle weighs about 5 grams — less than a 20p coin — and eats 3,000 insects per night. At Formby, where the pinewoods meet open grassland, bat numbers can be good on summer evenings. They emerge about 20 minutes after sunset, flying erratically low over vegetation catching moths and midges.",
-    "identification": "Very small, dark brown bat. Rapid, jerky flight. Black face and ears. Wingspan about 22cm.",
-    "tips": "Walk the pinewoods at Formby at dusk in June or July. A bat detector (or phone app) will reveal pipistrelle echolocation at 45kHz.",
-    "relatedSpecies": ["soprano-pipistrelle"]
-  },
-  {
-    "commonName": "Soprano Pipistrelle",
-    "scientificName": "Pipistrellus pygmaeus",
-    "category": "mammals",
-    "conservationStatus": "green",
-    "seasonalPresence": "April–October. Hibernates in winter.",
-    "whereToSee": "Over water and wetland habitat. Marshside RSPB at dusk in summer.",
-    "description": "The Soprano Pipistrelle was only distinguished as a separate species from Common Pipistrelle in 1997 using echolocation frequency analysis. It prefers waterside habitats — which makes Marshside RSPB a likely spot. Physically almost identical to Common Pipistrelle, it echolocates at a higher frequency (55kHz versus 45kHz). A bat detector is needed for confident identification. Maternity colonies can be large.",
-    "identification": "Virtually identical to Common Pipistrelle in the field. Slightly pinkish face compared to Common's black face. Distinguishable by echolocation frequency (55kHz) with a detector.",
-    "tips": "Use a bat detector app at Marshside at dusk. 55kHz calls indicate Soprano; 45kHz indicates Common Pipistrelle.",
-    "relatedSpecies": ["pipistrelle-bat"]
+    "difficulty": "specialist",
+    "relatedSpecies": ["grey-seal"],
+    "wikipediaTitle": "Harbor seal",
+    "externalLinks": {
+      "iucn": "https://www.iucnredlist.org/species/17013/45229114"
+    },
+    "faq": [
+      {
+        "question": "How do I tell Common Seal from Grey Seal?",
+        "answer": "Head shape is the key difference. Common Seal has a round, concave-profiled, puppy-like face. Grey Seal has a long, straight Roman nose — particularly obvious in bulls. At close range, Common Seal's nostrils form a V-shape; Grey Seal's are more parallel. Common Seal is also smaller — about two-thirds the size of an adult Grey Seal."
+      }
+    ]
   },
   {
     "commonName": "Natterjack Toad",
     "scientificName": "Epidalea calamita",
     "category": "mammals",
     "conservationStatus": "red",
-    "seasonalPresence": "March–September. Hibernates in winter. Breeding calls April–June.",
-    "whereToSee": "Ainsdale NNR and Birkdale green beach dune slacks. One of the UK's most important populations.",
-    "description": "The Sefton Coast holds one of the largest Natterjack Toad populations in the UK — a fact that most visitors don't know. They breed in the shallow, warm dune slack pools at Ainsdale NNR and Birkdale, and on warm spring nights the males' chorus — a remarkably loud, mechanical rattle that carries for a kilometre — fills the dunes. They're smaller than Common Toads, run rather than hop, and have a distinctive yellow line down the back. Natural England runs breeding surveys each spring.",
+    "order": "Anura",
+    "family": "Bufonidae",
+    "seasonalPresence": "March–September. Breeding calls April–June on warm evenings.",
+    "bestTimeOfDay": "After dark on warm evenings in April and May — males call loudly from breeding pools",
+    "whereToSee": "Ainsdale NNR and Birkdale green beach dune slacks — one of the UK's most important populations. Red-light torches only to avoid disturbing them.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Around 30,000–60,000 adults in the UK — restricted to coastal dunes, Breckland and a few upland sites",
+    "seftonPopulation": "One of the largest UK populations; the Sefton Coast holds several hundred breeding females across Ainsdale NNR and Birkdale",
+    "habitat": ["Dune slack", "Shallow pool", "Sandy dune"],
+    "diet": "Beetles, ants, flies, woodlice, small invertebrates",
+    "description": "The Sefton Coast holds one of the largest Natterjack Toad populations in the UK — a fact that most visitors don't know. They breed in the shallow, warm dune slack pools at Ainsdale NNR and Birkdale, and on warm spring nights the males' chorus — a remarkably loud, mechanical rattle that carries for a kilometre — fills the dunes. They're smaller than Common Toads, run rather than hop, and have a distinctive yellow line down the back.",
     "identification": "Smaller than Common Toad. Yellow stripe down centre of back — distinctive. Runs rather than hops. Warty brown skin. Short hind legs.",
-    "tips": "Visit Ainsdale NNR on a warm evening in April or May. You'll hear the chorus before you get close. Red lights only to avoid disturbing them.",
-    "relatedSpecies": []
+    "tips": "Visit Ainsdale NNR on a warm evening (above 10°C) in April or May. You'll hear the chorus before you get close. Use red-light torches only — white light disturbs them. Check shallow slack pools.",
+    "difficulty": "moderate",
+    "relatedSpecies": [],
+    "wikipediaTitle": "Natterjack toad",
+    "externalLinks": {
+      "iucn": "https://www.iucnredlist.org/species/55263/11269256",
+      "nbnatlas": "https://records.nbnatlas.org/species/NHMSYS0000080224"
+    },
+    "faq": [
+      {
+        "question": "Where is the best place to hear Natterjack Toads on the Sefton Coast?",
+        "answer": "Ainsdale NNR is the most accessible site. Visit on a warm, calm evening in April or May (air temperature above 10°C) and walk toward the dune slacks. The male's call — a loud, mechanical churring rattle — carries up to a kilometre and is heard before the toad is seen. Use a red torch only."
+      },
+      {
+        "question": "How is the Natterjack Toad different from a Common Toad?",
+        "answer": "Natterjacks are smaller and have shorter hind legs — they run rather than hop. The yellow stripe down the centre of the back is the key identification feature. Their call is also very different: a loud, repetitive churring rattle rather than Common Toad's quieter calls. They breed in warm, shallow pools rather than deeper water."
+      },
+      {
+        "question": "Why is the Sefton Coast important for Natterjack Toads?",
+        "answer": "The Sefton Coast holds one of the UK's largest Natterjack Toad populations in the dune slack system at Ainsdale NNR and Birkdale. The warm, shallow slack pools are ideal breeding habitat. Natural England's management of the dune system specifically includes maintaining water levels in slacks to support breeding."
+      }
+    ]
   },
   {
-    "commonName": "Red Squirrel",
-    "scientificName": "Sciurus vulgaris",
+    "commonName": "Brown Hare",
+    "scientificName": "Lepus europaeus",
+    "category": "mammals",
+    "conservationStatus": "amber",
+    "order": "Lagomorpha",
+    "family": "Leporidae",
+    "seasonalPresence": "Year-round. Most visible February–April during boxing season.",
+    "bestTimeOfDay": "Dawn and dusk — most active at low light",
+    "whereToSee": "Farmland around Hesketh Bank, Banks and Crossens. Fields behind the sea wall. Occasionally on open dune grassland.",
+    "shortLocation": "Hesketh Bank",
+    "ukPopulation": "Around 800,000 — declined by 80% since the 1880s",
+    "seftonPopulation": "Resident on farmland behind the Sefton Coast sea wall; best seen March–April",
+    "habitat": ["Farmland", "Rough grassland", "Field margin", "Dune grassland edge"],
+    "diet": "Grasses, herbs, bark, crops — feeds above ground at night",
+    "description": "The Brown Hare is one of Britain's most charismatic mammals and the Sefton Coast's farmland hinterland holds a reasonable population. In March — 'mad March hares' — females box pursuing males in open fields. Unlike rabbits, hares live entirely above ground, resting in a shallow depression (form) in the grass. The long black-tipped ears, powerful hind legs and rust-brown colouring make them unmistakeable. They're most active at dawn and dusk.",
+    "identification": "Much larger than rabbit. Very long black-tipped ears. Rusty-brown with pale underparts. Long hind legs. Yellow eyes. Does not use burrows.",
+    "tips": "Drive slowly along farm lanes around Banks and Hesketh Bank at dawn. They often sit in fields in the open. Watch for boxing pairs in February and March.",
+    "difficulty": "moderate",
+    "relatedSpecies": [],
+    "wikipediaTitle": "European hare",
+    "externalLinks": {
+      "nbnatlas": "https://records.nbnatlas.org/species/NHMSYS0000080230",
+      "iucn": "https://www.iucnredlist.org/species/41280/45189336"
+    },
+    "faq": [
+      {
+        "question": "What is the 'mad March hares' boxing behaviour?",
+        "answer": "The 'mad March hares' behaviour seen in early spring is females boxing pursuing males who won't leave them alone. Contrary to popular belief it is not usually males fighting each other — it's the female (doe) striking at unwanted suitors. This behaviour peaks in March and can be watched from a distance on the farmland around Hesketh Bank."
+      }
+    ]
+  },
+  {
+    "commonName": "Otter",
+    "scientificName": "Lutra lutra",
+    "category": "mammals",
+    "conservationStatus": "green",
+    "order": "Carnivora",
+    "family": "Mustelidae",
+    "seasonalPresence": "Year-round but rarely seen. Dawn and dusk best.",
+    "bestTimeOfDay": "Dawn — most active in the hour after sunrise",
+    "whereToSee": "Drainage ditches and watercourses behind the sea wall. Marshside RSPB — occasional sightings on the main lagoon.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Recovering — estimated 11,000 in England, having recovered from near-extinction in the 1970s",
+    "seftonPopulation": "Low density; present in suitable watercourses; occasional sightings at Marshside",
+    "habitat": ["Drainage ditch", "Freshwater channel", "Coastal lagoon edge", "River"],
+    "diet": "Fish (primary), frogs, crayfish, waterfowl",
+    "description": "Otters have recovered well in northwest England following water quality improvements, and the Sefton Coast's network of drainage channels, pools and ditches provides good habitat. They're rarely seen but signs — spraint (droppings) on prominent rocks and bankside, footprints in mud, fish remains — are more frequent. A sighting at Marshside RSPB is an exceptional event but has been recorded.",
+    "identification": "Long, low-slung, chocolate-brown. Pale throat. Flat head with small ears and long whiskers. Thick tapering tail. Swims with back barely visible, leaving V-wake.",
+    "tips": "Look for spraint (fishy-smelling, tarry droppings) on prominent rocks beside water. Check drainage channels at dusk. Footprints in mud (5-toed, webbed) are a reliable sign.",
+    "difficulty": "specialist",
+    "relatedSpecies": ["grey-seal"],
+    "wikipediaTitle": "Eurasian otter",
+    "externalLinks": {
+      "iucn": "https://www.iucnredlist.org/species/12302/218787544",
+      "nbnatlas": "https://records.nbnatlas.org/species/NHMSYS0000080210"
+    },
+    "faq": [
+      {
+        "question": "How do I find signs of Otter on the Sefton Coast?",
+        "answer": "Otter spraint (droppings) is the most reliable sign — it is left on prominent rocks, bridge buttresses and bankside vegetation as territorial markers. Otter spraint has a distinctive fishy, musky smell and contains fish bones and scales. Footprints in soft mud (5-toed, star-shaped with webbing) are also diagnostic."
+      }
+    ]
+  },
+  {
+    "commonName": "Water Vole",
+    "scientificName": "Arvicola amphibius",
     "category": "mammals",
     "conservationStatus": "red",
-    "seasonalPresence": "Year-round. Most active and visible September–February when caching and finding food.",
-    "whereToSee": "National Trust pinewoods at Formby — one of the most accessible red squirrel sites in England. Follow the red squirrel trail from the NT car park.",
-    "description": "The red squirrel at Formby is an icon. This is one of the most accessible populations in England, managed carefully by the National Trust, and a visit in autumn or winter almost always produces sightings. They've been lost from most of England, outcompeted and displaced by introduced Grey Squirrels. Formby's isolated pinewood population survives because Grey Squirrels struggle in pure pine — there's not enough food for them, but the reds are adapted to pine seed. The squirrel trail is well-signed and early morning gives the best chance.",
-    "identification": "Smaller and more slender than Grey Squirrel. Russet-red coat (can be darker in winter). Ear tufts in winter — distinctive. No grey colouring.",
-    "tips": "Go early morning (8–10am) in autumn. Bring binoculars and keep quiet near the feeding platforms. Dogs must be on leads.",
-    "relatedSpecies": []
+    "order": "Rodentia",
+    "family": "Cricetidae",
+    "seasonalPresence": "Year-round but inactive in cold weather. April–October most visible.",
+    "bestTimeOfDay": "Late morning and afternoon — most active in daylight hours",
+    "whereToSee": "Dense reed and rush beds alongside drainage channels behind the Sefton Coast sea wall. Any suitable slow-moving water with good bankside vegetation.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Estimated 132,000 — declined by 95% since the 1970s",
+    "seftonPopulation": "Present in suitable habitat but at low density; pockets in the ditch network behind the sea wall",
+    "habitat": ["Drainage ditch", "Reed bank", "Slow-moving freshwater edge"],
+    "diet": "Aquatic and bankside vegetation — grasses, sedges, rushes",
+    "description": "Britain's fastest-declining mammal. Water Voles have been lost from 95% of their former sites, largely due to American Mink predation. The Sefton Coast has pockets of suitable habitat in the network of ditches behind the sea wall. If you hear a 'plop' as you walk beside a ditch and see ripples, that might be a Water Vole.",
+    "identification": "Like a fat, blunt-nosed brown rat with a short tail. Much rounder face than Brown Rat, smaller ears, shorter tail. Chestnut-brown. Swims readily.",
+    "tips": "Sit quietly beside a suitable ditch in May or June. Look for 'plop' entry into water and piles of neatly cut grass stems at the water's edge. A latrine (pile of small, cylindrical, olive-green droppings) confirms their presence.",
+    "difficulty": "specialist",
+    "relatedSpecies": [],
+    "wikipediaTitle": "European water vole",
+    "externalLinks": {
+      "nbnatlas": "https://records.nbnatlas.org/species/NHMSYS0000080231",
+      "iucn": "https://www.iucnredlist.org/species/2149/197691749"
+    },
+    "faq": [
+      {
+        "question": "Why have Water Voles declined so severely in the UK?",
+        "answer": "The primary cause of the 95% decline in Water Voles is predation by American Mink, which were released or escaped from fur farms from the 1950s onwards. Mink can follow voles into their burrows and devastate entire colonies. Habitat loss (drainage of ditches, channel management) is a secondary factor. Trapping of Mink is now a key part of Water Vole conservation."
+      }
+    ]
+  },
+  {
+    "commonName": "Fox",
+    "scientificName": "Vulpes vulpes",
+    "category": "mammals",
+    "conservationStatus": "green",
+    "order": "Carnivora",
+    "family": "Canidae",
+    "seasonalPresence": "Year-round. Most vocal January–February during breeding season.",
+    "bestTimeOfDay": "Dawn and dusk; occasionally seen in daytime on quieter stretches",
+    "whereToSee": "Anywhere on the Sefton Coast — dunes, farmland, suburban edges, beach. Common and widespread.",
+    "shortLocation": "Formby Beach",
+    "ukPopulation": "Around 350,000 in the UK",
+    "seftonPopulation": "Common year-round; dune system provides good denning habitat",
+    "habitat": ["Sand dune", "Farmland", "Suburban edge", "Beach"],
+    "diet": "Rabbits, voles, birds, eggs, earthworms, fruit, carrion — opportunistic generalist",
+    "description": "Foxes are common across the Sefton Coast. The dune system at Formby and Ainsdale provides good denning habitat. In January, the eerie screaming call of the vixen is one of the most dramatic sounds of a winter night. Foxes are a significant predator of ground-nesting birds — including the Little Terns at Formby Beach — which is why wardening schemes are so important.",
+    "identification": "Rusty orange-red with white chest and black legs. Large bushy tail with white tip. Pointed muzzle, large ears. Dog-like but more lithe.",
+    "tips": "Check the dune edge at dawn. Foxes often move along the beach early morning before human activity picks up. Listen for the screaming call in January and February.",
+    "difficulty": "easy",
+    "relatedSpecies": [],
+    "wikipediaTitle": "Red fox",
+    "faq": [
+      {
+        "question": "Are Foxes a threat to the Little Tern colony at Formby?",
+        "answer": "Yes. Foxes are one of the main predators of Little Tern eggs and chicks on Formby Beach. A single fox entering the colony at night can destroy an entire season's breeding. The RSPB and Natural England wardening and electric fencing around nest areas is largely aimed at excluding foxes."
+      }
+    ]
+  },
+  {
+    "commonName": "Stoat",
+    "scientificName": "Mustela erminea",
+    "category": "mammals",
+    "conservationStatus": "green",
+    "order": "Carnivora",
+    "family": "Mustelidae",
+    "seasonalPresence": "Year-round.",
+    "bestTimeOfDay": "Morning — most active hunting in early morning",
+    "whereToSee": "Dune grassland at Ainsdale and Formby. Hedgerows and rough ground behind the sea wall.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Around 450,000 in the UK — widespread but declining",
+    "seftonPopulation": "Present throughout the dune system and surrounding farmland",
+    "habitat": ["Dune grassland", "Farmland hedge", "Rough grassland", "Woodland edge"],
+    "diet": "Rabbits (primary prey), voles, birds, eggs",
+    "description": "Stoats are agile, fast-moving predators that hunt rabbits, voles and birds across the Sefton Coast. They sometimes turn white in winter (ermine) though this is more common in colder parts of Britain — Sefton birds may show partial whitening. They're seen less often than heard — the squeal of a rabbit being caught is not an unusual sound in the dunes. Sometimes they perform a 'dance' to hypnotise rabbits, bounding around until the confused prey stands still.",
+    "identification": "Long, slender body. Orange-brown above, white below. Black tip to tail — always, in all seasons. Faster and longer than Weasel, with that black tail tip.",
+    "tips": "Watch along fence lines and grass margins. They tend to move in a bounding gait and can be surprisingly bold — they'll often stop and investigate a still observer.",
+    "difficulty": "moderate",
+    "relatedSpecies": ["weasel"],
+    "wikipediaTitle": "Stoat",
+    "faq": [
+      {
+        "question": "How do I tell a Stoat from a Weasel?",
+        "answer": "Size and tail are the key features. Stoats are noticeably larger — about the size of a small squirrel. The black tip to the tail is always present on a Stoat in all seasons, and is the most reliable field mark. Weasels are smaller, shorter-tailed, and have no black tail tip. Both have the same orange-brown above and white below colouring."
+      }
+    ]
+  },
+  {
+    "commonName": "Weasel",
+    "scientificName": "Mustela nivalis",
+    "category": "mammals",
+    "conservationStatus": "green",
+    "order": "Carnivora",
+    "family": "Mustelidae",
+    "seasonalPresence": "Year-round.",
+    "bestTimeOfDay": "Morning — most active in early morning when prey is moving",
+    "whereToSee": "Rough grassland, dune margins, hedgerows. Similar habitat to Stoat but smaller territories.",
+    "shortLocation": "Ainsdale NNR",
+    "ukPopulation": "Around 450,000 in the UK",
+    "seftonPopulation": "Present in suitable dune and grassland habitats across the coast",
+    "habitat": ["Dune grassland", "Farmland hedge", "Rough grassland"],
+    "diet": "Voles (primary prey), mice, small birds",
+    "description": "The Weasel is Britain's smallest carnivore and a fierce hunter of voles and mice. Much smaller than the Stoat and without the black tail tip. They can pursue prey into burrows underground. On the Sefton Coast dunes they hunt in the rank grass and heather areas. Often overlooked — people mistake them for Stoats — but a close view reveals a noticeably smaller, more compact animal.",
+    "identification": "Very small, slender. Brown above, white below. No black tail tip (key difference from Stoat). Shorter tail proportionally. Rapid movement.",
+    "tips": "Any small brown mustelid without a black tail tip is a Weasel. They often pop up to look around before diving back into cover — stand still and wait after seeing one move.",
+    "difficulty": "specialist",
+    "relatedSpecies": ["stoat"],
+    "wikipediaTitle": "Least weasel",
+    "faq": [
+      {
+        "question": "What is Britain's smallest carnivore?",
+        "answer": "The Weasel is Britain's smallest carnivore, and one of the smallest in the world. Adult males weigh only 60–130g. Despite their tiny size they regularly prey on rabbits much larger than themselves, killing by a bite to the base of the skull. On the Sefton Coast they are the primary predators of field voles in dune grassland."
+      }
+    ]
+  },
+  {
+    "commonName": "Common Pipistrelle",
+    "scientificName": "Pipistrellus pipistrellus",
+    "category": "mammals",
+    "conservationStatus": "green",
+    "order": "Chiroptera",
+    "family": "Vespertilionidae",
+    "seasonalPresence": "April–October. Hibernates in winter.",
+    "bestTimeOfDay": "20 minutes after sunset — emerges early, often before dark",
+    "whereToSee": "Any sheltered woodland edge, over water, around buildings at dusk. Formby pinewoods are particularly good.",
+    "shortLocation": "Formby NT Pinewoods",
+    "ukPopulation": "Around 2.4 million — Britain's most common bat",
+    "seftonPopulation": "Common across the Sefton Coast wherever there is woodland edge, water or buildings",
+    "habitat": ["Woodland edge", "Garden", "Waterway", "Open dune edge"],
+    "diet": "Midges, moths, mosquitoes, small beetles — up to 3,000 per night",
+    "description": "The Common Pipistrelle is Britain's smallest and most abundant bat and the most likely bat you'll see on the Sefton Coast. A pipistrelle weighs about 5 grams — less than a 20p coin — and eats 3,000 insects per night. At Formby, where the pinewoods meet open grassland, bat numbers can be good on summer evenings. They emerge about 20 minutes after sunset, flying erratically low over vegetation catching moths and midges.",
+    "identification": "Very small, dark brown bat. Rapid, jerky flight. Black face and ears. Wingspan about 22cm. Echolocates at 45kHz (detectable with bat detector).",
+    "tips": "Walk the pinewoods at Formby at dusk in June or July. A bat detector app on your phone (many free apps available) will reveal pipistrelle echolocation at 45kHz.",
+    "difficulty": "easy",
+    "relatedSpecies": ["soprano-pipistrelle"],
+    "wikipediaTitle": "Common pipistrelle",
+    "faq": [
+      {
+        "question": "How can I tell Common Pipistrelle from Soprano Pipistrelle?",
+        "answer": "They are almost identical visually. The key difference is echolocation frequency — Common Pipistrelle echolocates at around 45kHz; Soprano Pipistrelle at around 55kHz. A bat detector app on your phone can detect and display these frequencies. Soprano Pipistrelle also tends to prefer waterside habitats."
+      }
+    ]
+  },
+  {
+    "commonName": "Soprano Pipistrelle",
+    "scientificName": "Pipistrellus pygmaeus",
+    "category": "mammals",
+    "conservationStatus": "green",
+    "order": "Chiroptera",
+    "family": "Vespertilionidae",
+    "seasonalPresence": "April–October. Hibernates in winter.",
+    "bestTimeOfDay": "20–30 minutes after sunset",
+    "whereToSee": "Over water and wetland habitat. Marshside RSPB at dusk in summer.",
+    "shortLocation": "Marshside RSPB",
+    "ukPopulation": "Around 1.3 million — separated from Common Pipistrelle as a distinct species in 1997",
+    "seftonPopulation": "Present in waterside habitats across the coast; likely at Marshside RSPB",
+    "habitat": ["Reed bed edge", "Waterway", "Wetland edge", "Woodland near water"],
+    "diet": "Chironomid midges, small moths, aquatic insects",
+    "description": "The Soprano Pipistrelle was only distinguished as a separate species from Common Pipistrelle in 1997 using echolocation frequency analysis. It prefers waterside habitats — which makes Marshside RSPB a likely spot. Physically almost identical to Common Pipistrelle, it echolocates at a higher frequency (55kHz versus 45kHz). A bat detector is needed for confident identification.",
+    "identification": "Virtually identical to Common Pipistrelle in the field. Slightly pinkish face compared to Common's black face. Reliably distinguishable only by echolocation frequency (55kHz) with a detector.",
+    "tips": "Use a bat detector app at Marshside at dusk. 55kHz calls indicate Soprano; 45kHz indicates Common Pipistrelle. The waterside habitat preference is a useful clue.",
+    "difficulty": "specialist",
+    "relatedSpecies": ["common-pipistrelle"],
+    "wikipediaTitle": "Soprano pipistrelle",
+    "faq": [
+      {
+        "question": "How was the Soprano Pipistrelle discovered as a separate species?",
+        "answer": "In the 1990s, researchers noticed that some pipistrelle bats echolocated at 55kHz rather than the usual 45kHz. Genetic analysis confirmed these were a separate species. The Soprano Pipistrelle (Pipistrellus pygmaeus) was formally described in 1997. The two species can be found roosting in the same buildings but have different ecological preferences — Soprano preferring waterside habitats."
+      }
+    ]
   }
 ]

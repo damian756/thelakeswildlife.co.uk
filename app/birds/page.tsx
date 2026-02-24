@@ -2,8 +2,8 @@ import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
 
 export const metadata = {
-  title: "Birds of the Sefton Coast",
-  description: "Bird species you can see on the Sefton Coast — Marshside RSPB, waders, wildfowl, pink-footed geese and more.",
+  title: "Sefton Coast Birds — Species Guide, Where to See & ID Tips",
+  description: "40+ bird species recorded on the Sefton Coast — Pink-footed Geese at Marshside RSPB, breeding Avocets, Peregrines, waders and wildfowl. Seasonal presence, identification and viewing tips for each.",
 };
 
 export default function BirdsPage() {
