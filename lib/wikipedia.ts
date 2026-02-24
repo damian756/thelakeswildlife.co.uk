@@ -18,10 +18,24 @@ export async function getCardThumbnail(title: string): Promise<string | null> {
     const data = await res.json();
     const base: string | undefined = data.originalimage?.source ?? data.thumbnail?.source;
     if (!base) return null;
-    return base.replace(/\/\d+px-([^/]+)$/, "/200px-$1");
+    const sized = base.replace(/\/\d+px-([^/]+)$/, "/200px-$1");
+    return sized || base;
   } catch {
     return null;
   }
+}
+
+/** Try primary title, then fallback to scientific name if no image. Use for species cards. */
+export async function getSpeciesCardThumbnail(
+  wikipediaTitle: string | undefined,
+  scientificName: string | undefined
+): Promise<string | null> {
+  if (wikipediaTitle) {
+    const thumb = await getCardThumbnail(wikipediaTitle);
+    if (thumb) return thumb;
+  }
+  if (scientificName) return getCardThumbnail(scientificName);
+  return null;
 }
 
 export async function getWikipediaImage(title: string): Promise<WikiImage | null> {

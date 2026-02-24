@@ -1,6 +1,6 @@
 import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
-import { getCardThumbnail } from "@/lib/wikipedia";
+import { getSpeciesCardThumbnail } from "@/lib/wikipedia";
 import type { Metadata } from "next";
 
 const title = "Sefton Coast Birds — Species Guide, Where to See & ID Tips";
@@ -22,7 +22,7 @@ export default async function BirdsPage() {
     Promise.all(
       species.map(async (s) => ({
         id: s.id,
-        src: s.wikipediaTitle ? await getCardThumbnail(s.wikipediaTitle) : null,
+        src: await getSpeciesCardThumbnail(s.wikipediaTitle, s.scientificName),
       }))
     ),
   ]);

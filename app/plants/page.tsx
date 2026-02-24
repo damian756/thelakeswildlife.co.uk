@@ -1,6 +1,6 @@
 import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
-import { getCardThumbnail } from "@/lib/wikipedia";
+import { getSpeciesCardThumbnail } from "@/lib/wikipedia";
 import type { Metadata } from "next";
 
 const title = "Sefton Coast Plants — Dune & Marsh Flora Species Guide";
@@ -21,7 +21,7 @@ export default async function PlantsPage() {
   const thumbnails = await Promise.all(
     species.map(async (s) => ({
       id: s.id,
-      src: s.wikipediaTitle ? await getCardThumbnail(s.wikipediaTitle) : null,
+        src: await getSpeciesCardThumbnail(s.wikipediaTitle, s.scientificName),
     }))
   );
   const imageMap = new Map(thumbnails.map((t) => [t.id, t.src]));
