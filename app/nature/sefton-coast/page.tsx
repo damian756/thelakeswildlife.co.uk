@@ -69,7 +69,7 @@ export default function SeftonCoastPage() {
           The Sefton Coast runs along the Lancashire and Merseyside shoreline from Crosby in the south to Southport in the north — taking in Formby, Ainsdale, and the Ribble Estuary at the top end. It sits on the edge of two major conurbations (Liverpool and Manchester are both within an hour) but feels entirely separate from both.
         </p>
         <p className="text-[var(--slate)] mb-8 leading-relaxed text-sm">
-          The whole stretch is designated as a Site of Special Scientific Interest (SSSI). Large portions are managed by the National Trust, RSPB, Natural England and the Sefton Council ranger service. It's one of the few places in lowland England where you can still see nationally rare habitats in reasonable condition.
+          The whole stretch is designated as a Site of Special Scientific Interest (SSSI). Large portions are managed by the National Trust, RSPB, Natural England and the Sefton Council ranger service. It&apos;s one of the few places in lowland England where you can still see nationally rare habitats in reasonable condition.
         </p>
 
         <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">Ecosystems</p>
@@ -89,14 +89,14 @@ export default function SeftonCoastPage() {
               The dune system at Ainsdale is one of the most extensive in England — mobile yellow dunes at the seaward edge, fixed grey dunes further back, and dune slacks (wet hollows between the ridges) that support nationally rare plants and the only natural breeding population of Natterjack Toad in the North West.
             </p>
             <p className="text-[var(--slate)] text-sm leading-relaxed mt-2">
-              Rare dune plants including Grass of Parnassus, Round-leaved Wintergreen and Dune Helleborine grow at Ainsdale NNR. Access is managed — check Natural England's guidance before visiting the most sensitive areas.
+              Rare dune plants including Grass of Parnassus, Round-leaved Wintergreen and Dune Helleborine grow at Ainsdale NNR. Access is managed — check Natural England&apos;s guidance before visiting the most sensitive areas.
             </p>
           </div>
 
           <div className="rounded-xl border border-[var(--dune)] p-5">
             <h3 className="font-bold text-[var(--forest)] mb-2">Pinewoods — Formby (National Trust)</h3>
             <p className="text-[var(--slate)] text-sm leading-relaxed">
-              Planted Victorian pinewoods at Formby now support one of the last viable populations of Red Squirrel in England. The NT manages the site for squirrel conservation — Grey Squirrel control is an ongoing requirement for the population's survival. Red Squirrels are most active and visible from September through to February.
+              Planted Victorian pinewoods at Formby now support one of the last viable populations of Red Squirrel in England. The NT manages the site for squirrel conservation — Grey Squirrel control is an ongoing requirement for the population&apos;s survival. Red Squirrels are most active and visible from September through to February.
             </p>
             <p className="text-[var(--slate)] text-sm leading-relaxed mt-2">
               The pinewoods also hold Woodcock, Treecreeper and Lesser Spotted Woodpecker in the older sections. Worth exploring beyond the squirrel trail if you have the time.
@@ -138,7 +138,7 @@ export default function SeftonCoastPage() {
           The Sefton Coast faces the same pressures as coastal habitats everywhere — sea level rise, erosion, visitor pressure and invasive species. The dune system is naturally eroding at the seaward edge while scrubbing over at the landward side. Both processes reduce habitat quality for dune specialists.
         </p>
         <p className="text-[var(--slate)] mb-10 text-sm leading-relaxed">
-          Active management — scrub removal, grazing by cattle and rabbits, Natterjack Toad egg-string translocations, Little Tern wardening — keeps the system in better condition than it would otherwise be. It's unglamorous work and it makes a difference.
+          Active management — scrub removal, grazing by cattle and rabbits, Natterjack Toad egg-string translocations, Little Tern wardening — keeps the system in better condition than it would otherwise be. It&apos;s unglamorous work and it makes a difference.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--dune)]">

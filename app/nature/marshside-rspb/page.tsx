@@ -98,7 +98,7 @@ export default function MarshsidePage() {
             Marshside RSPB Reserve
           </h1>
           <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
-            If you're going to visit one place on the Sefton Coast for birdwatching, make it Marshside. Free entry. Managed lagoons, breeding Avocets, and in winter — the sky fills with Pink-footed Geese. No excuses.
+            If you&apos;re going to visit one place on the Sefton Coast for birdwatching, make it Marshside. Free entry. Managed lagoons, breeding Avocets, and in winter — the sky fills with Pink-footed Geese. No excuses.
           </p>
         </div>
       </div>
@@ -129,7 +129,7 @@ export default function MarshsidePage() {
             <tbody className="divide-y divide-[var(--foam)]">
               <tr className="py-2"><td className="py-2 font-medium w-36">Postcode</td><td className="py-2">PR9 9PH</td></tr>
               <tr><td className="py-2 font-medium">Entry</td><td className="py-2">Free. RSPB members and non-members alike</td></tr>
-              <tr><td className="py-2 font-medium">Car park</td><td className="py-2">Free roadside parking on Marshside Road. Small layby — arrive early in winter or you'll park further up</td></tr>
+              <tr><td className="py-2 font-medium">Car park</td><td className="py-2">Free roadside parking on Marshside Road. Small layby — arrive early in winter or you&apos;ll park further up</td></tr>
               <tr><td className="py-2 font-medium">Hides</td><td className="py-2">Two hides: Sandgrounder Hide (main lagoon) and the sea wall viewpoint</td></tr>
               <tr><td className="py-2 font-medium">Dogs</td><td className="py-2">Allowed on leads on the paths. Keep them well clear of nesting areas April–July</td></tr>
               <tr><td className="py-2 font-medium">Facilities</td><td className="py-2">No café or toilets on site. Southport town centre is 15 minutes on foot</td></tr>
@@ -144,17 +144,17 @@ export default function MarshsidePage() {
         </p>
         <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">When to visit</h2>
         <p className="text-[var(--slate)] mb-6 leading-relaxed">
-          Marshside is worth visiting any time of year. The honest answer is that October through March is the best of it — but there's always something happening.
+          Marshside is worth visiting any time of year. The honest answer is that October through March is the best of it — but there&apos;s always something happening.
         </p>
 
         <div className="space-y-6 mb-10">
           <div className="border-l-4 border-sky-400 pl-5">
             <h3 className="font-semibold text-[var(--forest)] mb-1">October – March: the peak</h3>
             <p className="text-[var(--slate)] text-sm leading-relaxed">
-              Pink-footed Geese arrive from Iceland in October and by November there can be 80,000+ on the Ribble Estuary. Stand on the sea wall around dusk and you'll hear the noise before you see anything — a low, constant calling that builds until the sky goes dark with birds. It's one of the best wildlife spectacles in the North West and it costs nothing.
+              Pink-footed Geese arrive from Iceland in October and by November there can be 80,000+ on the Ribble Estuary. Stand on the sea wall around dusk and you&apos;ll hear the noise before you see anything — a low, constant calling that builds until the sky goes dark with birds. It&apos;s one of the best wildlife spectacles in the North West and it costs nothing.
             </p>
             <p className="text-[var(--slate)] text-sm leading-relaxed mt-2">
-              Through winter the lagoons hold Teal, Wigeon, Shoveler and Pintail. Ruff and Golden Plover work the fields behind the reserve. If it's cold and clear, check for Short-eared Owl quartering the saltmarsh at dusk.
+              Through winter the lagoons hold Teal, Wigeon, Shoveler and Pintail. Ruff and Golden Plover work the fields behind the reserve. If it&apos;s cold and clear, check for Short-eared Owl quartering the saltmarsh at dusk.
             </p>
           </div>
 
@@ -206,7 +206,7 @@ export default function MarshsidePage() {
         </p>
         <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">The hides</h2>
         <p className="text-[var(--slate)] mb-4 leading-relaxed text-sm">
-          The main hide looks over the managed lagoon and scrapes — this is where you'll see most of the waders and wildfowl. It faces south-west, which means afternoon sun straight in your eyes in winter. Go in the morning if you can. The light is better and the geese are usually still on the fields before they move to the estuary. Check the left-hand corner of the scrape first — that's where the waders tend to congregate.
+          The main hide looks over the managed lagoon and scrapes — this is where you&apos;ll see most of the waders and wildfowl. It faces south-west, which means afternoon sun straight in your eyes in winter. Go in the morning if you can. The light is better and the geese are usually still on the fields before they move to the estuary. Check the left-hand corner of the scrape first — that&apos;s where the waders tend to congregate.
         </p>
         <p className="text-[var(--slate)] mb-10 leading-relaxed text-sm">
           The sea wall gives you an open view over the Ribble Estuary — essential for the Pink-footed Goose flocks and the winter waders on the mudflats. Bring the scope here.

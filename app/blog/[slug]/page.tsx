@@ -137,7 +137,7 @@ export default async function BlogPostPage({ params }: Props) {
           <p className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)] mb-1">About the author</p>
           <p className="text-sm font-semibold text-[var(--forest)]">Ed</p>
           <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
-            Ed has been walking the Sefton Coast since the 1980s. He keeps a yearly bird tally, owns more waterproof jackets than he'd care to admit, and has strong opinions about which hide has the best light in the morning. Retired geography teacher. Still gets up at five.
+            Ed has been walking the Sefton Coast since the 1980s. He keeps a yearly bird tally, owns more waterproof jackets than he&apos;d care to admit, and has strong opinions about which hide has the best light in the morning. Retired geography teacher. Still gets up at five.
           </p>
         </div>
 

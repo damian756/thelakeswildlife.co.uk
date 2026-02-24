@@ -1,4 +1,5 @@
 import { getAllSlugs } from "@/lib/species";
+import { BLOG_POSTS } from "@/content/blog/posts";
 import type { MetadataRoute } from "next";
 
 const baseUrl = "https://seftoncoastwildlife.co.uk";
@@ -18,6 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  const blogUrls: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/birds`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
@@ -33,7 +41,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/seasonal/wader-migration`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/seasonal/breeding-birds`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/seasonal/winter-wildfowl`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ];
 
-  return [...staticPages, ...speciesUrls];
+  return [...staticPages, ...speciesUrls, ...blogUrls];
 }
