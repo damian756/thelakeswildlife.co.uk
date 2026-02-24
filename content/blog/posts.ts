@@ -198,8 +198,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2025-11-15",
     metaDescription:
       "The Sefton Coast sand dune system — how it formed, why it's changing, and what lives in the different dune zones from mobile yellow dunes to wet slacks.",
-    heroWikipediaTitle: "Marram grass",
-    heroAlt: "Marram grass stabilising the sand dunes of the Sefton Coast",
+    heroWikipediaTitle: "Ammophila arenaria",
+    heroAlt: "Marram grass (Ammophila arenaria) stabilising the sand dunes of the Sefton Coast",
     intro:
       "The sand dune system on the Sefton Coast is one of the most extensive in England. It stretches nearly 20 miles from Crosby to Southport, averaging a kilometre wide. From the beach looking inland, it looks uniform — just sand and rough grass. It isn't. There are distinct zones, each with its own ecology, and some of the most unusual plant and animal communities in lowland England are hiding in the damper hollows.",
     sections: [
