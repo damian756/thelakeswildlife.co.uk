@@ -1,6 +1,15 @@
-export const metadata = {
-  title: "Birdwatching on the Sefton Coast — Guide & Best Spots",
-  description: "How to birdwatch on the Sefton Coast — best reserves, seasons, what to bring and where to see pink-footed geese, waders and more.",
+import type { Metadata } from "next";
+
+const title = "Birdwatching on the Sefton Coast — Guide & Best Spots";
+const description = "How to birdwatch on the Sefton Coast — best reserves, seasons, what to bring and where to see pink-footed geese, waders and more.";
+const url = "https://seftoncoastwildlife.co.uk/birdwatching-guide";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: url },
+  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "article" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function BirdwatchingGuidePage() {

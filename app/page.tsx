@@ -1,4 +1,17 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+const title = "Sefton Coast Wildlife — Birds, Nature & Wildlife Guide";
+const description = "Independent guide to wildlife on the Sefton Coast — Marshside RSPB, bird species database, insects, plants and mammals from Southport to Formby.";
+const url = "https://seftoncoastwildlife.co.uk";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: url },
+  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "website" },
+  twitter: { card: "summary_large_image", title, description },
+};
 
 export default function HomePage() {
   return (
@@ -32,10 +45,10 @@ export default function HomePage() {
 
       <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         {[
-          { href: "/birds", label: "Birds", count: "250+", desc: "Waders, wildfowl, raptors and passerines" },
-          { href: "/insects", label: "Insects", count: "—", desc: "Butterflies, moths and invertebrates" },
-          { href: "/plants", label: "Plants", count: "—", desc: "Saltmarsh and dune flora" },
-          { href: "/mammals", label: "Mammals", count: "—", desc: "Including red squirrels at Formby" },
+          { href: "/birds", label: "Birds", count: "40", desc: "Waders, wildfowl, raptors and passerines" },
+          { href: "/insects", label: "Insects", count: "12", desc: "Butterflies, moths and invertebrates" },
+          { href: "/plants", label: "Plants", count: "15", desc: "Saltmarsh and dune flora" },
+          { href: "/mammals", label: "Mammals", count: "12", desc: "Including red squirrels at Formby" },
         ].map(({ href, label, count, desc }) => (
           <Link
             key={href}

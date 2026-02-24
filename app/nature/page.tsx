@@ -1,8 +1,17 @@
 import Link from "next/link";
 
-export const metadata = {
-  title: "Nature & Coast",
-  description: "Marshside RSPB Reserve, the Sefton Coast, birdwatching and seasonal wildlife guides.",
+import type { Metadata } from "next";
+
+const title = "Nature & Coast — Sefton Coast Wildlife";
+const description = "Marshside RSPB Reserve, the Sefton Coast, birdwatching and seasonal wildlife guides.";
+const url = "https://seftoncoastwildlife.co.uk/nature";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: url },
+  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "website" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function NaturePage() {

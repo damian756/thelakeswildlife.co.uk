@@ -1,8 +1,17 @@
 import Link from "next/link";
 
-export const metadata = {
-  title: "The Sefton Coast — Geography & Habitats",
-  description: "What the Sefton Coast is — from Southport to Formby, marshes, dunes, pinewoods and the wildlife that depends on it.",
+import type { Metadata } from "next";
+
+const title = "The Sefton Coast — Geography & Habitats";
+const description = "What the Sefton Coast is — from Southport to Formby, marshes, dunes, pinewoods and the wildlife that depends on it.";
+const url = "https://seftoncoastwildlife.co.uk/nature/sefton-coast";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: url },
+  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "article" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function SeftonCoastPage() {

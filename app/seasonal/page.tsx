@@ -1,8 +1,17 @@
 import Link from "next/link";
 
-export const metadata = {
-  title: "Seasonal Wildlife Guides — Sefton Coast",
-  description: "What to see when on the Sefton Coast — pink-footed geese, wader migration, breeding birds and seasonal highlights.",
+import type { Metadata } from "next";
+
+const title = "Seasonal Wildlife Guides — Sefton Coast";
+const description = "What to see when on the Sefton Coast — pink-footed geese, wader migration, breeding birds and seasonal highlights.";
+const url = "https://seftoncoastwildlife.co.uk/seasonal";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: url },
+  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "website" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 const seasons = [

@@ -18,9 +18,15 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const page = seasonalPages[slug];
   if (!page) return {};
+  const title = `${page.title} — Sefton Coast`;
+  const description = `${page.title} on the Sefton Coast. ${page.period}. When and where to see them.`;
+  const url = `https://seftoncoastwildlife.co.uk/seasonal/${slug}`;
   return {
-    title: `${page.title} — Sefton Coast`,
-    description: `${page.title} on the Sefton Coast. ${page.period}. When and where to see them.`,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "article" },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 

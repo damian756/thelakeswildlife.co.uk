@@ -1,8 +1,17 @@
 import Link from "next/link";
 
-export const metadata = {
-  title: "Marshside RSPB Reserve — Parking, Access & What to Bring",
-  description: "Practical guide to Marshside RSPB Reserve near Southport — postcode, parking, when to visit, what to see and what to bring.",
+import type { Metadata } from "next";
+
+const title = "Marshside RSPB Reserve — Parking, Access & What to Bring";
+const description = "Practical guide to Marshside RSPB Reserve near Southport — postcode, parking, when to visit, what to see and what to bring.";
+const url = "https://seftoncoastwildlife.co.uk/nature/marshside-rspb";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: url },
+  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "article" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function MarshsidePage() {
