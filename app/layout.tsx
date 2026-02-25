@@ -56,6 +56,9 @@ export default function RootLayout({
           window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
           plausible.init()
         `}</Script>
+        <Script id="crisp-chat" strategy="afterInteractive">{`
+          window.$crisp=[];window.CRISP_WEBSITE_ID="0b0c0739-61b6-42ff-b218-c8a21122c242";(function(){var d=document;var s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+        `}</Script>
       </head>
       <body className="min-h-screen flex flex-col bg-[var(--sand)] text-[var(--ink)] antialiased">
         <Header />
