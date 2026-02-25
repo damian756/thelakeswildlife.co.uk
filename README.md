@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SeftonCoastWildlife.co.uk
 
-## Getting Started
+**A 257-species wildlife database covering the birds, mammals, insects and plants of the Sefton Coast.**
 
-First, run the development server:
+Live site: [seftoncoastwildlife.co.uk](https://www.seftoncoastwildlife.co.uk)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What This Is
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+SeftonCoastWildlife is an editorial wildlife guide to one of England's most biodiverse coastal stretches — from Seaforth Nature Reserve in the south to Southport and Formby in the north. It covers 257 species across four taxonomic groups, plus dedicated guides to the coast's major nature reserves.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Built for birdwatchers, naturalists, wildlife photographers, and anyone interested in the ecology of the Sefton Coast.
 
-## Learn More
+Part of the [Sefton Coast Network](https://www.churchtownmedia.co.uk/about) — built and operated by Churchtown Media.
 
-To learn more about Next.js, take a look at the following resources:
+## Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Deployment**: Vercel
+- **Analytics**: Plausible
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Features
 
-## Deploy on Vercel
+- 257-species database across birds, mammals, insects and plants
+- Client-side Wikipedia image fetching — avoids build-time API failures
+- Deterministic Wikipedia `Special:FilePath` URLs for OpenGraph images
+- Nature reserve guides: Marshside RSPB, Ainsdale Sand Dunes NNR, WWT Martin Mere, Seaforth Nature Reserve
+- Full Schema.org JSON-LD (Taxon, Article, TouristAttraction, FAQPage, BreadcrumbList)
+- Species pages with conservation status, seasonal patterns, identification notes, photography tips
+- Lightbox image viewer per species
+- Sitemap covering all species and reserve pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Nature Reserves Covered
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Marshside RSPB Reserve
+- Ainsdale Sand Dunes NNR (Natural England)
+- WWT Martin Mere
+- Seaforth Nature Reserve (Wildlife Trust for Lancashire)
+- The Sefton Coast (overview)
+
+## SEO Targets
+
+Primary keywords: `sefton coast wildlife`, `marshside rspb`, `ainsdale sand dunes`, `formby red squirrels`, `sefton coast birds`, `natterjack toad sefton`
+
+## Developer
+
+**Damian Roche** — Churchtown Media  
+[churchtownmedia.co.uk](https://www.churchtownmedia.co.uk) · [LinkedIn](https://www.linkedin.com/in/damian-roche-7ba8293a5/)
