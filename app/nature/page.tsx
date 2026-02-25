@@ -2,8 +2,8 @@ import Link from "next/link";
 
 import type { Metadata } from "next";
 
-const title = "Nature & Coast — Sefton Coast Wildlife";
-const description = "Marshside RSPB Reserve, the Sefton Coast, birdwatching and seasonal wildlife guides.";
+const title = "Nature Reserves — Sefton Coast Wildlife";
+const description = "Guides to the Sefton Coast's best nature reserves — Marshside RSPB, Ainsdale Sand Dunes NNR, WWT Martin Mere, Seaforth and more.";
 const url = "https://seftoncoastwildlife.co.uk/nature";
 
 export const metadata: Metadata = {
@@ -14,38 +14,73 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title, description },
 };
 
+const reserves = [
+  {
+    href: "/nature/marshside-rspb",
+    name: "Marshside RSPB Reserve",
+    tag: "RSPB · Free entry · Southport",
+    desc: "80,000+ Pink-footed Geese in winter. Free entry. Managed lagoons and breeding Avocets. The best single wildlife site on the Sefton Coast.",
+  },
+  {
+    href: "/nature/ainsdale-sand-dunes",
+    name: "Ainsdale Sand Dunes NNR",
+    tag: "Natural England · Free entry · Ainsdale",
+    desc: "Natterjack toads, sand lizards and rare dune plants on one of Europe's most important dune systems. Almost nobody comes here. That's the point.",
+  },
+  {
+    href: "/nature/martin-mere",
+    name: "WWT Martin Mere",
+    tag: "WWT · Entry charge · Burscough",
+    desc: "Up to 1,000 whooper swans arrive from Iceland in November. Flamingos, otters, and a proper day out any time of year.",
+  },
+  {
+    href: "/nature/seaforth-nature-reserve",
+    name: "Seaforth Nature Reserve",
+    tag: "Wildlife Trust · Free entry · Crosby",
+    desc: "Mediterranean Gulls breeding, Little Terns nesting, and autumn rarities — squeezed between a container terminal and the suburbs of Liverpool.",
+  },
+  {
+    href: "/nature/sefton-coast",
+    name: "The Sefton Coast",
+    tag: "Overview",
+    desc: "Geography, habitats and how all the reserves fit together along the 22-mile Sefton Coast.",
+  },
+];
+
 export default function NaturePage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="text-3xl font-bold text-[var(--forest)] mb-6">Nature & Coast</h1>
+      <h1 className="text-3xl font-bold text-[var(--forest)] mb-2">Nature Reserves</h1>
+      <p className="text-[var(--slate)] mb-8 max-w-2xl">
+        The Sefton Coast has some of the best wildlife sites in the North West — from RSPB managed lagoons to internationally designated sand dunes. Here&apos;s where to go and what to see.
+      </p>
       <div className="grid gap-6 md:grid-cols-2">
-        <Link
-          href="/nature/marshside-rspb"
-          className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
-        >
-          <h2 className="text-xl font-semibold text-[var(--forest)]">Marshside RSPB Reserve</h2>
-          <p className="mt-2 text-[var(--slate)]">Parking, access, what to bring and when to visit.</p>
-        </Link>
-        <Link
-          href="/nature/sefton-coast"
-          className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
-        >
-          <h2 className="text-xl font-semibold text-[var(--forest)]">The Sefton Coast</h2>
-          <p className="mt-2 text-[var(--slate)]">Geography, habitats and how the marshes fit in.</p>
-        </Link>
+        {reserves.map(({ href, name, tag, desc }) => (
+          <Link
+            key={href}
+            href={href}
+            className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
+          >
+            <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-1">{tag}</p>
+            <h2 className="text-xl font-semibold text-[var(--forest)] mb-2">{name}</h2>
+            <p className="text-[var(--slate)] text-sm leading-relaxed">{desc}</p>
+          </Link>
+        ))}
         <Link
           href="/birdwatching-guide"
           className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
         >
-          <h2 className="text-xl font-semibold text-[var(--forest)]">Birdwatching guide</h2>
-          <p className="mt-2 text-[var(--slate)]">Best spots, seasons and kit for the Sefton Coast.</p>
+          <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-1">Guide</p>
+          <h2 className="text-xl font-semibold text-[var(--forest)] mb-2">Birdwatching guide</h2>
+          <p className="text-[var(--slate)] text-sm leading-relaxed">Best spots, seasons and kit for the Sefton Coast.</p>
         </Link>
         <Link
           href="/seasonal"
           className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
         >
-          <h2 className="text-xl font-semibold text-[var(--forest)]">Seasonal guides</h2>
-          <p className="mt-2 text-[var(--slate)]">Pink-footed geese, waders, migration and what to see when.</p>
+          <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-1">Guide</p>
+          <h2 className="text-xl font-semibold text-[var(--forest)] mb-2">Seasonal guides</h2>
+          <p className="text-[var(--slate)] text-sm leading-relaxed">Pink-footed geese, waders, migration and what to see when.</p>
         </Link>
       </div>
     </div>

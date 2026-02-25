@@ -13,6 +13,9 @@ const nav = [
     href: "/nature",
     children: [
       { label: "Marshside RSPB", href: "/nature/marshside-rspb" },
+      { label: "Ainsdale Sand Dunes NNR", href: "/nature/ainsdale-sand-dunes" },
+      { label: "WWT Martin Mere", href: "/nature/martin-mere" },
+      { label: "Seaforth Nature Reserve", href: "/nature/seaforth-nature-reserve" },
       { label: "The Sefton Coast", href: "/nature/sefton-coast" },
       { label: "Birdwatching Guide", href: "/birdwatching-guide" },
       { label: "Seasonal Guides", href: "/seasonal" },
