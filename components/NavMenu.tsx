@@ -23,6 +23,16 @@ const nav = [
   },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
+  {
+    label: "In Southport",
+    href: "https://www.southportguide.co.uk",
+    children: [
+      { label: "🐾 Dog-friendly pubs",      href: "https://www.southportguide.co.uk/collections/dog-friendly-pubs-southport" },
+      { label: "☕ Dog-friendly cafés",      href: "https://www.southportguide.co.uk/collections/dog-friendly-cafes-southport" },
+      { label: "🎟️ Free things to do",       href: "https://www.southportguide.co.uk/collections/free-things-to-do-southport" },
+      { label: "👨‍👩‍👧‍👦 Family-friendly days",  href: "https://www.southportguide.co.uk/collections/family-friendly-things-to-do-southport" },
+    ],
+  },
 ];
 
 export function NavMenu() {
@@ -62,8 +72,20 @@ export function NavMenu() {
                   </svg>
                 </span>
                 <div className="absolute top-full left-0 pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-                  <div className="bg-white border border-[var(--dune)] rounded-xl shadow-lg py-1.5 min-w-[210px]">
-                    {item.children.map((child) => (
+                  <div className="bg-white border border-[var(--dune)] rounded-xl shadow-lg py-1.5 min-w-[230px]">
+                    {item.children.map((child) =>
+                      child.href.startsWith("http") ? (
+                        <a
+                          key={child.href}
+                          href={child.href}
+                          target="_blank"
+                          rel="noopener"
+                          className="flex items-center gap-2.5 px-4 py-2.5 text-sm text-[var(--slate)] hover:bg-[var(--sand)] hover:text-[var(--forest)] transition"
+                        >
+                          {child.label}
+                          <span className="ml-auto text-[10px] text-gray-400">↗</span>
+                        </a>
+                      ) : (
                       <Link
                         key={child.href}
                         href={child.href}
@@ -71,7 +93,8 @@ export function NavMenu() {
                       >
                         {child.label}
                       </Link>
-                    ))}
+                      )
+                    )}
                   </div>
                 </div>
               </div>
@@ -130,7 +153,19 @@ export function NavMenu() {
                 </Link>
                 {item.children && (
                   <div className="pl-4 mt-0.5 flex flex-col gap-0.5">
-                    {item.children.map((child) => (
+                    {item.children.map((child) =>
+                      child.href.startsWith("http") ? (
+                        <a
+                          key={child.href}
+                          href={child.href}
+                          target="_blank"
+                          rel="noopener"
+                          onClick={() => setMobileOpen(false)}
+                          className="block px-3 py-2 rounded-md text-sm text-[var(--slate)]/80 hover:bg-[var(--dune)] hover:text-[var(--forest)] transition"
+                        >
+                          {child.label} ↗
+                        </a>
+                      ) : (
                       <Link
                         key={child.href}
                         href={child.href}
@@ -139,7 +174,8 @@ export function NavMenu() {
                       >
                         {child.label}
                       </Link>
-                    ))}
+                      )
+                    )}
                   </div>
                 )}
               </div>
