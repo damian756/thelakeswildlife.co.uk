@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const title = "Terms of Use — Sefton Coast Wildlife";
 const description = "Terms of use for seftoncoastwildlife.co.uk.";
-const url = "https://seftoncoastwildlife.co.uk/terms";
+const url = "https://www.seftoncoastwildlife.co.uk/terms";
 
 export const metadata: Metadata = {
   title,
@@ -21,7 +21,7 @@ export default function TermsPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--forest)] mb-2">About this site</h2>
           <p>
-            Sefton Coast Wildlife (<a href="https://seftoncoastwildlife.co.uk" className="text-[var(--marsh)] hover:underline">seftoncoastwildlife.co.uk</a>) is
+            Sefton Coast Wildlife (<a href="https://www.seftoncoastwildlife.co.uk" className="text-[var(--marsh)] hover:underline">seftoncoastwildlife.co.uk</a>) is
             operated by Churchtown Media. Part of the{" "}
             <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--marsh)] hover:underline">
               Sefton Coast Network

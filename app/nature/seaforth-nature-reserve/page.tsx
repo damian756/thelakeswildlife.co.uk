@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 const title = "Seaforth Nature Reserve — Mediterranean Gulls, Terns & Visitor Guide";
 const description =
   "Practical guide to Seaforth Nature Reserve near Crosby — managed by the Wildlife Trust for Lancashire, free entry, Mediterranean Gulls, Little Terns and urban birding on the Mersey.";
-const url = "https://seftoncoastwildlife.co.uk/nature/seaforth-nature-reserve";
+const url = "https://www.seftoncoastwildlife.co.uk/nature/seaforth-nature-reserve";
 
 export const metadata: Metadata = {
   title,

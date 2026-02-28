@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 const title = "WWT Martin Mere — Whooper Swans, Flamingos & Visitor Guide";
 const description =
   "Practical guide to WWT Martin Mere Wetland Centre near Burscough — postcode L40 0TA, opening times, whooper swans, entry prices and what to see each season.";
-const url = "https://seftoncoastwildlife.co.uk/nature/martin-mere";
+const url = "https://www.seftoncoastwildlife.co.uk/nature/martin-mere";
 
 export const metadata: Metadata = {
   title,

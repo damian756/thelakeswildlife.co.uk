@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 const title = "Nature Reserves — Sefton Coast Wildlife";
 const description = "Guides to the Sefton Coast's best nature reserves — Marshside RSPB, Ainsdale Sand Dunes NNR, WWT Martin Mere, Seaforth and more.";
-const url = "https://seftoncoastwildlife.co.uk/nature";
+const url = "https://www.seftoncoastwildlife.co.uk/nature";
 
 export const metadata: Metadata = {
   title,

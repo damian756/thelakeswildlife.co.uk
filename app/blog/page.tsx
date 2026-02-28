@@ -7,7 +7,7 @@ import { BlogListClient } from "@/components/BlogListClient";
 const title = "Wildlife Blog — Sefton Coast Wildlife";
 const description =
   "Ed's notes from the Sefton Coast — conservation news, species spotlights, seasonal watching guides, habitat guides and wildlife photography tips.";
-const url = "https://seftoncoastwildlife.co.uk/blog";
+const url = "https://www.seftoncoastwildlife.co.uk/blog";
 
 export const metadata: Metadata = {
   title,

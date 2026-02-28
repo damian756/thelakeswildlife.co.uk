@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? species.faq[0].answer.substring(0, 160)
     : `${species.commonName} (${species.scientificName}) on the Sefton Coast — where to see it, identification tips, and seasonal presence. ${species.seasonalPresence}.`;
 
-  const canonical = `https://seftoncoastwildlife.co.uk/mammals/${slug}`;
+  const canonical = `https://www.seftoncoastwildlife.co.uk/mammals/${slug}`;
   const ogImage = species.wikipediaTitle
     ? `https://en.wikipedia.org/wiki/Special:FilePath/${encodeURIComponent(species.wikipediaTitle)}`
     : undefined;

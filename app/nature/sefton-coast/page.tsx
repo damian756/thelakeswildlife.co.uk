@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 const title = "The Sefton Coast — Geography, Habitats & Wildlife";
 const description =
   "The Sefton Coast stretches from the Mersey to the Ribble — saltmarsh, sand dunes, pinewoods and some of the best birdwatching in northwest England.";
-const url = "https://seftoncoastwildlife.co.uk/nature/sefton-coast";
+const url = "https://www.seftoncoastwildlife.co.uk/nature/sefton-coast";
 
 export const metadata: Metadata = {
   title,

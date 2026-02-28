@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 const title = "Ainsdale Sand Dunes NNR — Natterjack Toads, Sand Lizards & Access Guide";
 const description =
   "Practical guide to Ainsdale Sand Dunes National Nature Reserve — postcode PR8 2QA, free entry, natterjack toads, sand lizards and rare dune plants managed by Natural England.";
-const url = "https://seftoncoastwildlife.co.uk/nature/ainsdale-sand-dunes";
+const url = "https://www.seftoncoastwildlife.co.uk/nature/ainsdale-sand-dunes";
 
 export const metadata: Metadata = {
   title,

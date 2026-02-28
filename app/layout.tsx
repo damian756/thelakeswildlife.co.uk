@@ -20,7 +20,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const BASE_URL = "https://seftoncoastwildlife.co.uk";
+const BASE_URL = "https://www.seftoncoastwildlife.co.uk";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sefton Coast Wildlife",
     description: "Birds, nature and wildlife on the Sefton Coast — Marshside, the marshes and beyond.",
-    url: "https://seftoncoastwildlife.co.uk",
+    url: "https://www.seftoncoastwildlife.co.uk",
     siteName: "Sefton Coast Wildlife",
   },
   icons: {

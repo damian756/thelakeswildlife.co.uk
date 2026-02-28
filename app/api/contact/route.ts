@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
           <div style="background: #f5f2eb; border-left: 4px solid #4a6b5a; padding: 16px; font-size: 14px; color: #2d3a3a; line-height: 1.6; white-space: pre-wrap;">${message}</div>
 
           <p style="font-size: 12px; color: #999; margin-top: 24px;">
-            Sent from <a href="https://seftoncoastwildlife.co.uk/contact" style="color: #4a6b5a;">seftoncoastwildlife.co.uk/contact</a>
+            Sent from <a href="https://www.seftoncoastwildlife.co.uk/contact" style="color: #4a6b5a;">seftoncoastwildlife.co.uk/contact</a>
           </p>
         </div>
       `,

@@ -262,7 +262,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = seasonalPages[slug];
   if (!page) return {};
-  const url = `https://seftoncoastwildlife.co.uk/seasonal/${slug}`;
+  const url = `https://www.seftoncoastwildlife.co.uk/seasonal/${slug}`;
   return {
     title: `${page.title} — Sefton Coast Wildlife`,
     description: page.metaDescription,
@@ -284,7 +284,7 @@ export default async function SeasonalSlugPage({ params }: Props) {
   const page = seasonalPages[slug];
   if (!page) notFound();
 
-  const url = `https://seftoncoastwildlife.co.uk/seasonal/${slug}`;
+  const url = `https://www.seftoncoastwildlife.co.uk/seasonal/${slug}`;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -296,9 +296,9 @@ export default async function SeasonalSlugPage({ params }: Props) {
       "@type": "Person",
       name: "Ed",
       description: "Ed has been walking the Sefton Coast since the 1980s. Retired geography teacher. Still gets up at five.",
-      url: "https://seftoncoastwildlife.co.uk",
+      url: "https://www.seftoncoastwildlife.co.uk",
     },
-    publisher: { "@type": "Organization", name: "Sefton Coast Wildlife", url: "https://seftoncoastwildlife.co.uk" },
+    publisher: { "@type": "Organization", name: "Sefton Coast Wildlife", url: "https://www.seftoncoastwildlife.co.uk" },
   };
 
   return (

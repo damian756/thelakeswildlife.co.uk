@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 const title = "Birdwatching on the Sefton Coast — Guide, Best Spots & What to Bring";
 const description =
   "Where to go birdwatching on the Sefton Coast — Marshside RSPB, Hesketh Out Marsh, Ainsdale NNR. What to bring, when to go and what you'll see each season.";
-const url = "https://seftoncoastwildlife.co.uk/birdwatching-guide";
+const url = "https://www.seftoncoastwildlife.co.uk/birdwatching-guide";
 
 export const metadata: Metadata = {
   title,
@@ -49,12 +49,12 @@ const pageJsonLd = [
       name: "Ed",
       description:
         "Ed has been walking the Sefton Coast since the 1980s. Retired geography teacher. Keeps a yearly bird tally. Still gets up at five.",
-      url: "https://seftoncoastwildlife.co.uk",
+      url: "https://www.seftoncoastwildlife.co.uk",
     },
     publisher: {
       "@type": "Organization",
       name: "Sefton Coast Wildlife",
-      url: "https://seftoncoastwildlife.co.uk",
+      url: "https://www.seftoncoastwildlife.co.uk",
     },
   },
   {

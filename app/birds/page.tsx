@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 const title = "Sefton Coast Birds — Species Guide, Where to See & ID Tips";
 const description = "119 bird species recorded on the Sefton Coast — Pink-footed Geese at Marshside RSPB, breeding Avocets, Peregrines, waders and wildfowl. Seasonal presence, identification and viewing tips for each.";
-const url = "https://seftoncoastwildlife.co.uk/birds";
+const url = "https://www.seftoncoastwildlife.co.uk/birds";
 
 export const metadata: Metadata = {
   title,
@@ -28,7 +28,7 @@ export default async function BirdsPage() {
       "@type": "ListItem",
       position: i + 1,
       name: s.commonName,
-      url: `https://seftoncoastwildlife.co.uk/birds/${s.id}`,
+      url: `https://www.seftoncoastwildlife.co.uk/birds/${s.id}`,
     })),
   };
 

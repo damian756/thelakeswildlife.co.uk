@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 const title = "Marshside RSPB Reserve — Parking, Access & What to Bring";
 const description =
   "Practical guide to Marshside RSPB Reserve near Southport — postcode PR9 9PH, free entry, hides, seasonal highlights and 80,000+ Pink-footed Geese in winter.";
-const url = "https://seftoncoastwildlife.co.uk/nature/marshside-rspb";
+const url = "https://www.seftoncoastwildlife.co.uk/nature/marshside-rspb";
 
 export const metadata: Metadata = {
   title,

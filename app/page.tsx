@@ -7,7 +7,7 @@ import { BLOG_POSTS } from "@/content/blog/posts";
 const title = "Sefton Coast Wildlife — Birds, Nature & Wildlife Guide";
 const description =
   "Independent guide to wildlife on the Sefton Coast — Marshside RSPB, bird species database, insects, plants and mammals from Southport to Formby.";
-const url = "https://seftoncoastwildlife.co.uk";
+const url = "https://www.seftoncoastwildlife.co.uk";
 
 export const metadata: Metadata = {
   title,
@@ -22,21 +22,21 @@ const orgJsonLd = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://seftoncoastwildlife.co.uk/#website",
-      url: "https://seftoncoastwildlife.co.uk",
+      "@id": "https://www.seftoncoastwildlife.co.uk/#website",
+      url: "https://www.seftoncoastwildlife.co.uk",
       name: "Sefton Coast Wildlife",
       description: "Independent guide to wildlife on the Sefton Coast — birds, insects, plants and mammals from Southport to Formby.",
-      publisher: { "@id": "https://seftoncoastwildlife.co.uk/#organization" },
+      publisher: { "@id": "https://www.seftoncoastwildlife.co.uk/#organization" },
       inLanguage: "en-GB",
     },
     {
       "@type": "Organization",
-      "@id": "https://seftoncoastwildlife.co.uk/#organization",
+      "@id": "https://www.seftoncoastwildlife.co.uk/#organization",
       name: "Sefton Coast Wildlife",
-      url: "https://seftoncoastwildlife.co.uk",
+      url: "https://www.seftoncoastwildlife.co.uk",
       logo: {
         "@type": "ImageObject",
-        url: "https://seftoncoastwildlife.co.uk/og-default.png",
+        url: "https://www.seftoncoastwildlife.co.uk/og-default.png",
         width: 1200,
         height: 630,
       },

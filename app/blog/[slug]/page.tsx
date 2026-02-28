@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
-  const url = `https://seftoncoastwildlife.co.uk/blog/${slug}`;
+  const url = `https://www.seftoncoastwildlife.co.uk/blog/${slug}`;
   return {
     title: `${post.title} — Sefton Coast Wildlife`,
     description: post.metaDescription,
@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const heroImage = await getWikipediaImage(post.heroWikipediaTitle);
-  const url = `https://seftoncoastwildlife.co.uk/blog/${slug}`;
+  const url = `https://www.seftoncoastwildlife.co.uk/blog/${slug}`;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -55,12 +55,12 @@ export default async function BlogPostPage({ params }: Props) {
       name: "Ed",
       description:
         "Ed has been walking the Sefton Coast since the 1980s. Retired geography teacher. Keeps a yearly bird tally. Still gets up at five.",
-      url: "https://seftoncoastwildlife.co.uk",
+      url: "https://www.seftoncoastwildlife.co.uk",
     },
     publisher: {
       "@type": "Organization",
       name: "Sefton Coast Wildlife",
-      url: "https://seftoncoastwildlife.co.uk",
+      url: "https://www.seftoncoastwildlife.co.uk",
     },
     keywords: post.tags.join(", "),
     ...(heroImage && {

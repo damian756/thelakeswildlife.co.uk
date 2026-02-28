@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 const title = "Sefton Coast Mammals & Wildlife — Red Squirrels, Seals, Sand Lizards, Natterjack Toads";
 const description = "Mammals, reptiles and amphibians of the Sefton Coast — Red Squirrels at Formby NT pinewoods, Grey Seals on the beach, Sand Lizards at Ainsdale NNR and the Natterjack Toad chorus. Where to see them, ID tips and seasonal guidance.";
-const url = "https://seftoncoastwildlife.co.uk/mammals";
+const url = "https://www.seftoncoastwildlife.co.uk/mammals";
 
 export const metadata: Metadata = {
   title,
@@ -29,7 +29,7 @@ export default async function MammalsPage() {
       "@type": "ListItem",
       position: i + 1,
       name: s.commonName,
-      url: `https://seftoncoastwildlife.co.uk/mammals/${s.id}`,
+      url: `https://www.seftoncoastwildlife.co.uk/mammals/${s.id}`,
     })),
   };
 

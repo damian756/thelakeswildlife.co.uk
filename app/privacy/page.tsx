@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const title = "Privacy Policy — Sefton Coast Wildlife";
 const description = "Privacy policy for seftoncoastwildlife.co.uk — how we handle your data.";
-const url = "https://seftoncoastwildlife.co.uk/privacy";
+const url = "https://www.seftoncoastwildlife.co.uk/privacy";
 
 export const metadata: Metadata = {
   title,
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--forest)] mb-2">Who we are</h2>
           <p>
-            Sefton Coast Wildlife (<a href="https://seftoncoastwildlife.co.uk" className="text-[var(--marsh)] hover:underline">seftoncoastwildlife.co.uk</a>) is
+            Sefton Coast Wildlife (<a href="https://www.seftoncoastwildlife.co.uk" className="text-[var(--marsh)] hover:underline">seftoncoastwildlife.co.uk</a>) is
             operated by Churchtown Media. Part of the{" "}
             <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--marsh)] hover:underline">
               Sefton Coast Network

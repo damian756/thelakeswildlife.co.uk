@@ -14,7 +14,7 @@ interface SpeciesJsonLdProps {
 }
 
 export function SpeciesJsonLd({ species, category, slug }: SpeciesJsonLdProps) {
-  const baseUrl = "https://seftoncoastwildlife.co.uk";
+  const baseUrl = "https://www.seftoncoastwildlife.co.uk";
   const pageUrl = `${baseUrl}/${category}/${slug}`;
   const categoryLabel = categoryLabels[category];
 

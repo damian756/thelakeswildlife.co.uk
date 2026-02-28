@@ -3,7 +3,7 @@ import { ContactForm } from "@/components/ContactForm";
 
 const title = "Contact — Sefton Coast Wildlife";
 const description = "Get in touch with Sefton Coast Wildlife — questions, species records, local knowledge or listing enquiries.";
-const url = "https://seftoncoastwildlife.co.uk/contact";
+const url = "https://www.seftoncoastwildlife.co.uk/contact";
 
 export const metadata: Metadata = {
   title,

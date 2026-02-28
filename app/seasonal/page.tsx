@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 const title = "Seasonal Wildlife Guides — Sefton Coast";
 const description = "What to see when on the Sefton Coast — pink-footed geese, wader migration, breeding birds and winter wildfowl.";
-const url = "https://seftoncoastwildlife.co.uk/seasonal";
+const url = "https://www.seftoncoastwildlife.co.uk/seasonal";
 
 export const metadata: Metadata = {
   title,

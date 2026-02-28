@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { BLOG_POSTS } from "@/content/blog/posts";
 
-const BASE_URL = "https://seftoncoastwildlife.co.uk";
+const BASE_URL = "https://www.seftoncoastwildlife.co.uk";
 
 function toRfc2822(dateStr: string): string {
   const d = new Date(dateStr);
