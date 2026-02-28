@@ -20,8 +20,15 @@ const inter = Inter({
   display: "swap",
 });
 
+const BASE_URL = "https://seftoncoastwildlife.co.uk";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://seftoncoastwildlife.co.uk"),
+  metadataBase: new URL(BASE_URL),
+  alternates: {
+    types: {
+      "application/rss+xml": `${BASE_URL}/feed`,
+    },
+  },
   title: {
     default: "Sefton Coast Wildlife — Birds, Nature & Wildlife on the Sefton Coast",
     template: "%s | Sefton Coast Wildlife",
