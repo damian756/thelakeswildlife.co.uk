@@ -13,6 +13,7 @@ export interface BlogPost {
   date: string; // ISO date string
   metaDescription: string;
   heroWikipediaTitle: string;
+  heroLocalSrc?: string; // overrides Wikipedia fetch when set
   heroAlt: string;
   intro: string;
   sections: { heading: string; body: string[] }[];
@@ -246,7 +247,8 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "How to photograph waders at Marshside RSPB — camera settings, the best hides, timing, light direction and how to avoid the most common mistakes.",
     heroWikipediaTitle: "Calidris canutus",
-    heroAlt: "Red Knot flock on the beach — the kind of wader photography the Sefton Coast makes possible",
+    heroLocalSrc: "/images/reserves/marshside/nels-hide-camera.jpg",
+    heroAlt: "Camera on the window ledge of Nel's Hide at Marshside RSPB, pointed at the flooded scrape — clouds reflected in still water",
     intro:
       "Marshside RSPB is one of the more accessible sites for photographing waders in the North West. The hides are close to the scrapes, the birds are relatively undisturbed, and the range of species through autumn and winter gives you something to work with even when the star species aren't performing. Here's how to get better results.",
     sections: [
@@ -283,6 +285,150 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     tags: ["photography", "waders", "Marshside", "camera settings", "Black-tailed Godwit"],
+  },
+  {
+    slug: "nels-hide-marshside-guide",
+    category: "photography",
+    categoryLabel: "Wildlife Photography",
+    title: "What It's Actually Like Inside Nel's Hide at Marshside RSPB",
+    date: "2026-03-02",
+    metaDescription:
+      "A practical guide to Nel's Hide at Marshside RSPB — what's inside, how to set up, when to arrive, what to bring, and whether it's worth visiting in winter.",
+    heroWikipediaTitle: "Ribble Estuary",
+    heroLocalSrc: "/images/reserves/marshside/nels-hide-lifestyle.jpg",
+    heroAlt: "Inside Nel's Hide at Marshside RSPB — birdwatcher with flask, mugs and sandwiches photographing through the window with a telephoto lens",
+    intro:
+      "Search 'RSPB Marshside hides' and you'll find almost nothing useful. The RSPB website tells you the hide exists. Nobody tells you what it's actually like, how to set up, whether it's worth going in January, or what you'll find when you get there. This is that post.",
+    sections: [
+      {
+        heading: "The hide itself",
+        body: [
+          "Nel's Hide is the main enclosed hide — a raised, corrugated metal structure with a decking approach, a wooden open-sided viewing enclosure to one side, and a proper enclosed room with opening windows facing the flooded scrape. It's functional rather than glamorous but it does the job: wind protection, a counter shelf for scopes and bean bags, and a row of blue plastic chairs.",
+          "The hide opens at 8:30am and closes at 4pm. The car park is locked at closing time so don't push it. Guide dogs only inside the hide itself — if your dog is coming, the open wooden viewing platform adjacent to the hide is the place. No smoking in the hide.",
+        ],
+      },
+      {
+        heading: "When to arrive",
+        body: [
+          "Morning. Nel's Hide faces roughly east, which means morning light is behind you and working in your favour — the birds on the scrape are well lit and the water surface isn't glaring. By midday the light flattens out; by afternoon on bright days you're shooting into the sun.",
+          "In winter, arriving at 8:30am means you're there for the birds feeding in the first hours of daylight. Pink-footed Geese come off roost on the estuary and move to the fields — you'll hear them overhead. The scrape at that hour often holds waders close in before the disturbance builds.",
+        ],
+      },
+      {
+        heading: "Setting up in the hide",
+        body: [
+          "The counter shelf running below the windows is solid — adequate for a long lens on a bean bag. Bring your own bean bag if you're shooting with anything over 300mm; the ledge angle isn't always right for tripod heads without some shimming.",
+          "Check the left corner of the scrape immediately on arrival. Waders consistently work that edge. If the scrape is busy with wildfowl, scan the margins first — the less conspicuous species (Jack Snipe, Ruff, Little Stint in season) tend to be tucked in at the edge rather than out in the open.",
+        ],
+      },
+      {
+        heading: "Bring your own food and drink",
+        body: [
+          "There is no café at Marshside. There's a toilet at the car park but no hot drinks, no food, no vending machine. A thermos is not optional in winter — the hide is unheated and you might be sitting still for two hours. The experience of watching a Short-eared Owl quarter the marsh with a mug of tea in hand is qualitatively different from doing it cold and hungry.",
+          "The ledge in the hide is wide enough for a flask, two mugs and a sandwich. We've confirmed this empirically.",
+        ],
+      },
+      {
+        heading: "Is it worth visiting in winter?",
+        body: [
+          "Yes, absolutely. Winter is arguably the best season. The scrape holds Teal, Wigeon, Shoveler and Pintail in numbers, plus Snipe and Jack Snipe working the margins. The viewpoints along the path give you the Pink-footed Goose spectacle — 80,000+ birds on the estuary is not an exaggeration.",
+          "Short-eared Owls quarter the saltmarsh in the late afternoon — not guaranteed, but good winters produce reliable sightings. Position yourself on the sea wall by 3pm. The car park closes at 4pm in winter so you need to be back at the car before then.",
+        ],
+      },
+    ],
+    tags: ["Nel's Hide", "hides", "Marshside", "photography", "winter birdwatching", "practical guide"],
+  },
+  {
+    slug: "marshside-coastal-path-guide",
+    category: "habitat-guides",
+    categoryLabel: "Habitat Guides",
+    title: "The Coastal Path at Marshside — The Bit Most People Miss",
+    date: "2026-03-02",
+    metaDescription:
+      "The Marshside Saltmarsh coastal walk on Redshank Road — what to expect, dog rules, safety, and why it's a completely different experience from the reserve path.",
+    heroWikipediaTitle: "Ribble Estuary",
+    heroLocalSrc: "/images/reserves/marshside/hero-coastal-reflection.jpg",
+    heroAlt: "The Marshside coastal path — sky reflected in a tidal pool, a dog walker silhouetted against blue sky and saltmarsh",
+    intro:
+      "Most people who visit Marshside RSPB stay on the reserve path — Nel's Hide, the viewpoints, the scrape. They miss the coastal walk entirely. The path on the other side of the sea wall, along Redshank Road on the Ribble Estuary edge, is a completely different experience: flat, exposed, tidal pools, saltmarsh and a very big sky. This is the bit worth knowing about.",
+    sections: [
+      {
+        heading: "What it is",
+        body: [
+          "The Marshside Saltmarsh is part of the Ribble Estuary Special Protection Area — protected at the highest level because of the birds it holds. The coastal path runs along the top of the sea wall from the RSPB car park area, with the reserve and managed lagoons behind the wall on your left and the open saltmarsh and estuary on your right.",
+          "It's free to access. There's no entrance fee, no booking system, no opening times — the coastal path is open at any reasonable hour. Park at the RSPB car park on Redshank Road and the coastal path starts from there.",
+        ],
+      },
+      {
+        heading: "What you'll find",
+        body: [
+          "Tidal pools, scattered shells, old timber half-buried in the estuary mud. After wet weather the pools on the upper saltmarsh are deep and clear — on bright days the sky reflects perfectly in them. Saltmarsh grass, sea purslane, and in winter the dominant colour is tawny yellow against grey sky.",
+          "In winter: Pink-footed Geese in the fields beyond the wall, waders working the exposed mud at low tide, possibly Short-eared Owl quartering over the marsh edge. In spring: ground-nesting birds on the saltmarsh — the path is dog-zoned for this reason.",
+        ],
+      },
+      {
+        heading: "Dog rules — read this first",
+        body: [
+          "Dogs are allowed on the coastal path on leads. The signage is clear: keep to the track, keep the dog on the track, give feeding and resting birds space. The saltmarsh holds ground-nesting birds including Lapwing and Redshank from spring onwards.",
+          "The path is genuinely good for dogs — tidal pools, open space, interesting smells. Just be realistic about leads. The reserve has 'guide dogs only' in Nel's Hide but the coastal path is a proper dog walk.",
+        ],
+      },
+      {
+        heading: "Safety — not optional reading",
+        body: [
+          "The Redshank Road sign is explicit: beware soft mud and beware creeks and incoming tides. This is tidal estuary terrain. Stay on the track. The mud off the path can be deep, unpredictable and fast to flood at high tide.",
+          "In an emergency: grid reference SD 353204. Dial 999 and ask for the Coastguard. Tell them the grid reference. This is the information on the official sign for a reason.",
+          "No drones or kites. No motorised vehicles. No fires or barbecues. No horses. The cockle beds are closed to fishing under NWIFCA Byelaw 3 — any removal of cockles from this beach is an offence.",
+        ],
+      },
+      {
+        heading: "When to go",
+        body: [
+          "Any season, any weather. Bright days in winter give the tidal pool reflections at their best — an absolutely still pool on a blue-sky day is worth the drive by itself. Grey days are fine too — the flat light suits the landscape.",
+          "Time your visit around the car park hours: 8:30am–4pm in winter (1 November–1 March), 8:30am–5pm in summer (2 March–31 October). The car park is locked at closing time. Don't get caught out.",
+        ],
+      },
+    ],
+    tags: ["Marshside Saltmarsh", "coastal path", "dog walking", "Ribble Estuary", "saltmarsh", "habitat"],
+  },
+  {
+    slug: "stan-and-peggy-scott-marshside",
+    category: "conservation",
+    categoryLabel: "Conservation",
+    title: "Stan and Peggy Scott — The People Behind the Bench at Marshside",
+    date: "2026-03-02",
+    metaDescription:
+      "The memorial bench on the Marshside RSPB reserve path commemorates Stan and Peggy Scott, Founder Members of North Cheshire Group RSPB 1976–1999. Who were they?",
+    heroWikipediaTitle: "Ribble Estuary",
+    heroLocalSrc: "/images/reserves/marshside/memorial-bench.jpg",
+    heroAlt: "Memorial bench on the Marshside RSPB reserve path dedicated to Stan and Peggy Scott, Founder Members of North Cheshire Group RSPB 1976-1999",
+    intro:
+      "There's a wooden bench on the reserve path at Marshside with a small metal plaque screwed to it. In Memory of Stan and Peggy Scott — Founder Members of North Cheshire Group RSPB 1976–1999. Donated by Family and Friends. Most people walk past it. It's worth stopping for.",
+    sections: [
+      {
+        heading: "Who were Stan and Peggy Scott?",
+        body: [
+          "Stan and Peggy Scott were founder members of the North Cheshire Group RSPB — a local group that ran from 1976 to 1999. Local RSPB groups in the 1970s and 1980s were the grassroots infrastructure of British birdwatching: the people who organised the walks, ran the surveys, did the membership drives, turned up to the parish council meetings to object to drainage proposals, and generally kept the conservation machine running at a local level.",
+          "Being a founder member in 1976 means they were in at the start — building something from nothing in an era before the internet, before Bird Forum, before anyone could check a patch list on their phone. The group ran for 23 years. That's not a hobby; that's a vocation.",
+        ],
+      },
+      {
+        heading: "The bench",
+        body: [
+          "The bench sits on the reserve path with a view across the fields and marsh — a good spot. Not the most dramatic viewpoint on the path, but a solid place to sit and watch. On a clear day in autumn you can hear the Pink-footed Geese before you see them from that bench.",
+          "The plaque is modest. It doesn't tell you what Stan and Peggy looked like, what birds they most liked to see, or why they gave 23 years of their lives to protecting this coastline. It just says they were here, they cared, and someone loved them enough to buy a bench.",
+        ],
+      },
+      {
+        heading: "Why it matters",
+        body: [
+          "Marshside RSPB exists because of people like Stan and Peggy Scott. The reserves on the Sefton Coast — the managed lagoons, the scrapes that hold 80,000 geese and breeding Avocets — are the product of decades of local advocacy, fundraising, and the unglamorous work of keeping conservation groups functioning year after year.",
+          "The RSPB is a national charity with 1.2 million members. But its power at a local level has always depended on local groups, local knowledge, and local people who showed up consistently. The North Cheshire Group was one of those. Stan and Peggy Scott were part of building it.",
+          "Next time you're at Marshside and the hide is quiet and the geese are coming in overhead, it's worth knowing that the reserve you're standing in was partly made possible by people whose names are now on a bench by the path.",
+        ],
+      },
+    ],
+    tags: ["RSPB", "conservation", "local history", "Marshside", "North Cheshire Group", "volunteer"],
   },
 ];
 

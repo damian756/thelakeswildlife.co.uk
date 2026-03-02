@@ -1,27 +1,35 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 const title = "Marshside RSPB Reserve — Parking, Access & What to Bring";
 const description =
-  "Practical guide to Marshside RSPB Reserve near Southport — postcode PR9 9PH, free entry, hides, seasonal highlights and 80,000+ Pink-footed Geese in winter.";
+  "Practical guide to Marshside RSPB Reserve near Southport — car park, Nel's Hide, viewpoints, seasonal highlights and 80,000+ Pink-footed Geese in winter.";
 const url = "https://www.seftoncoastwildlife.co.uk/nature/marshside-rspb";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "article" },
+  openGraph: {
+    title,
+    description,
+    url,
+    siteName: "Sefton Coast Wildlife",
+    type: "article",
+    images: [{ url: "https://www.seftoncoastwildlife.co.uk/images/reserves/marshside/hero-coastal-reflection.jpg" }],
+  },
   twitter: { card: "summary_large_image", title, description },
 };
 
 const faqs = [
   {
     q: "Is Marshside RSPB free to enter?",
-    a: "Yes. Entry is free for everyone — RSPB members and non-members alike. The car park on Marshside Road is also free.",
+    a: "Entry to the reserve is free. The RSPB car park on Redshank Road charges £1.50 for up to two hours or £3.00 for longer — this covers parking and access to all visitor facilities including Nel's Hide, paths and the toilet. RSPB members and Blue Badge holders park free.",
   },
   {
     q: "What is the postcode for Marshside RSPB?",
-    a: "PR9 9PH. Parking is in the roadside layby on Marshside Road. The reserve entrance is on the left heading north from Southport, about a mile up the road.",
+    a: "PR9 9PH gets you onto Marshside Road for the free roadside layby near the sea wall. For the RSPB car park and Nel's Hide, follow signs for Redshank Road off Marine Drive — grid reference SD 353204. The Flowbird pay machine accepts card and contactless.",
   },
   {
     q: "When is the best time to visit Marshside RSPB?",
@@ -29,7 +37,7 @@ const faqs = [
   },
   {
     q: "Are dogs allowed at Marshside RSPB?",
-    a: "Yes, dogs are allowed on leads on the main paths. Keep them well clear of nesting areas between April and July — Avocets, Lapwing and Redshank nest on and near the scrapes.",
+    a: "Dogs are allowed on leads on the paths at all times. The coastal saltmarsh section along Redshank Road is a dog zone — keep them on the track and give nesting and feeding birds space. Nel's Hide allows guide dogs only.",
   },
   {
     q: "How do I get to Marshside RSPB by public transport?",
@@ -38,6 +46,10 @@ const faqs = [
   {
     q: "What birds can I see at Marshside in winter?",
     a: "Pink-footed Goose (80,000+), Teal, Wigeon, Shoveler, Pintail, Golden Plover, Ruff, and — on good evenings — Short-eared Owl quartering the saltmarsh. Bring a scope for the geese on the estuary.",
+  },
+  {
+    q: "What are Nel's Hide opening times?",
+    a: "Nel's Hide is open 08:30am to 4:00pm daily. No smoking inside. Guide dogs only in the hide itself.",
   },
 ];
 
@@ -52,7 +64,7 @@ const pageJsonLd = [
     geo: { "@type": "GeoCoordinates", latitude: 53.676, longitude: -2.993 },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Marshside Road",
+      streetAddress: "Redshank Road",
       addressLocality: "Southport",
       postalCode: "PR9 9PH",
       addressCountry: "GB",
@@ -60,8 +72,9 @@ const pageJsonLd = [
     amenityFeature: [
       { "@type": "LocationFeatureSpecification", name: "Car park", value: true },
       { "@type": "LocationFeatureSpecification", name: "Hides", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Free entry", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Free entry to reserve", value: true },
       { "@type": "LocationFeatureSpecification", name: "Dogs on leads", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Toilet", value: true },
     ],
     touristType: ["Birdwatchers", "Wildlife photographers", "Families", "Dog walkers"],
   },
@@ -80,6 +93,22 @@ export default function MarshsidePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
+
+      {/* Hero image */}
+      <div className="relative h-72 sm:h-96 w-full overflow-hidden bg-[var(--slate)]">
+        <Image
+          src="/images/reserves/marshside/hero-coastal-reflection.jpg"
+          alt="The coastal saltmarsh path at Marshside — sky and clouds reflected in a tidal pool, a dog walker in the distance"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 p-6">
+          <p className="text-xs text-white/50">Marshside coastal path — Redshank Road, SD 353204</p>
+        </div>
+      </div>
 
       {/* Page header band */}
       <div className="bg-[var(--forest)] text-white">
@@ -124,18 +153,32 @@ export default function MarshsidePage() {
         <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
           Practical information
         </p>
-        <div className="bg-[var(--dune)] rounded-xl p-6 mb-10">
+        <div className="bg-[var(--dune)] rounded-xl p-6 mb-6">
           <table className="w-full text-sm text-[var(--slate)]">
             <tbody className="divide-y divide-[var(--foam)]">
-              <tr className="py-2"><td className="py-2 font-medium w-36">Postcode</td><td className="py-2">PR9 9PH</td></tr>
+              <tr className="py-2"><td className="py-2 font-medium w-36">Postcode</td><td className="py-2">PR9 9PH (Marshside Road layby) · SD 353204 (Redshank Road car park)</td></tr>
               <tr><td className="py-2 font-medium">Entry</td><td className="py-2">Free. RSPB members and non-members alike</td></tr>
-              <tr><td className="py-2 font-medium">Car park</td><td className="py-2">Free roadside parking on Marshside Road. Small layby — arrive early in winter or you&apos;ll park further up</td></tr>
-              <tr><td className="py-2 font-medium">Hides</td><td className="py-2">Two hides: Sandgrounder Hide (main lagoon) and the sea wall viewpoint</td></tr>
-              <tr><td className="py-2 font-medium">Dogs</td><td className="py-2">Allowed on leads on the paths. Keep them well clear of nesting areas April–July</td></tr>
-              <tr><td className="py-2 font-medium">Facilities</td><td className="py-2">No café or toilets on site. Southport town centre is 15 minutes on foot</td></tr>
-              <tr><td className="py-2 font-medium">Accessibility</td><td className="py-2">The main path along the sea wall is flat and firm. Hides are step-free</td></tr>
+              <tr><td className="py-2 font-medium">Car park</td><td className="py-2">RSPB car park on Redshank Road — £1.50 up to 2 hours, £3.00 over 2 hours. RSPB members and Blue Badge holders free. Pay and display (Flowbird machine, card/contactless). Car park locked at closing time.</td></tr>
+              <tr><td className="py-2 font-medium">Car park hours</td><td className="py-2">8:30am–4pm (1 Nov–1 Mar) · 8:30am–5pm (2 Mar–31 Oct) · Open every day including bank holidays and Christmas</td></tr>
+              <tr><td className="py-2 font-medium">Nel&apos;s Hide</td><td className="py-2">Open 8:30am–4pm. Guide dogs only inside the hide. No smoking.</td></tr>
+              <tr><td className="py-2 font-medium">Dogs</td><td className="py-2">On leads at all times. Dog zone on the coastal saltmarsh path — keep to the track. Nel&apos;s Hide: guide dogs only.</td></tr>
+              <tr><td className="py-2 font-medium">Facilities</td><td className="py-2">Toilet on site. No café. Southport town centre 15 minutes on foot — see <a href="https://www.southportguide.co.uk" className="text-[var(--marsh)] underline">SouthportGuide</a> for nearby lunch options.</td></tr>
+              <tr><td className="py-2 font-medium">Accessibility</td><td className="py-2">The main path along the sea wall is flat and firm. Hides are step-free. Car park has level access.</td></tr>
+              <tr><td className="py-2 font-medium">Emergency</td><td className="py-2">Grid reference SD 353204. Dial 999 and ask for the Coastguard. Beware soft mud and incoming tides off the main path.</td></tr>
             </tbody>
           </table>
+        </div>
+
+        {/* Car park photo */}
+        <div className="mb-10 rounded-xl overflow-hidden">
+          <Image
+            src="/images/reserves/marshside/car-park-pricing.jpg"
+            alt="RSPB Marshside car park pricing and opening times sign — up to 2 hours £1.50, over 2 hours £3, RSPB members free"
+            width={900}
+            height={700}
+            className="w-full object-cover"
+          />
+          <p className="text-xs text-[var(--slate)]/50 mt-1.5 px-1">Car park pricing as of February 2026. RSPB members park free — display membership card on dashboard.</p>
         </div>
 
         {/* When to visit */}
@@ -179,6 +222,141 @@ export default function MarshsidePage() {
           </div>
         </div>
 
+        {/* Nel's Hide section */}
+        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+          Hides &amp; viewpoints
+        </p>
+        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">Nel&apos;s Hide</h2>
+        <p className="text-[var(--slate)] mb-5 leading-relaxed text-sm">
+          Nel&apos;s Hide is the main enclosed hide — a raised structure with a row of opening windows along a counter shelf, looking out over the flooded scrape. Get there early for morning light and the birds feeding close in. It faces east, so the light is with you until mid-morning. A row of seating chairs, no heating, but it cuts the wind. Take a flask.
+        </p>
+
+        {/* Nel's Hide photo gallery */}
+        <div className="grid grid-cols-2 gap-3 mb-5">
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/images/reserves/marshside/nels-hide-exterior.jpg"
+              alt="Nel's Hide exterior — RSPB Marshside, corrugated green metal building with decking and wooden viewing enclosure"
+              width={600}
+              height={450}
+              className="w-full h-44 object-cover"
+            />
+          </div>
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/images/reserves/marshside/nels-hide-interior.jpg"
+              alt="Inside Nel's Hide — row of blue chairs along the viewing shelf with windows overlooking the flooded marsh"
+              width={600}
+              height={450}
+              className="w-full h-44 object-cover"
+            />
+          </div>
+        </div>
+
+        <div className="rounded-xl overflow-hidden mb-5">
+          <Image
+            src="/images/reserves/marshside/nels-hide-lifestyle.jpg"
+            alt="Birdwatcher inside Nel's Hide with flask, mugs and sandwiches, photographing through the window with a telephoto lens"
+            width={900}
+            height={500}
+            className="w-full h-56 sm:h-72 object-cover"
+          />
+          <p className="text-xs text-[var(--slate)]/50 mt-1.5 px-1">The full experience: flask, sandwiches, telephoto lens. Nel&apos;s Hide does not provide refreshments — bring your own.</p>
+        </div>
+
+        <div className="bg-[var(--dune)] rounded-xl p-5 mb-10 text-sm text-[var(--slate)] leading-relaxed">
+          <p className="font-semibold text-[var(--forest)] mb-2">Nel&apos;s Hide — practical notes</p>
+          <ul className="space-y-1.5">
+            <li>Open 8:30am–4pm daily</li>
+            <li>Counter shelf runs the length of the hide — useful ledge for scopes and bean bags</li>
+            <li>Guide dogs only inside the hide</li>
+            <li>No smoking</li>
+            <li>Check the left-hand corner of the scrape first — waders tend to congregate there</li>
+            <li>Afternoon sun comes straight in — morning visits give better light for photography</li>
+          </ul>
+        </div>
+
+        {/* Viewpoints section */}
+        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-2">The viewpoints</h2>
+        <p className="text-[var(--slate)] mb-5 text-sm leading-relaxed">
+          Along the reserve path there are two named open viewpoints — Junction Viewpoint and Halfway Viewpoint — each with seating and open views over the flooded marsh. These are the spots for the Pink-footed Goose spectacle at dusk: the birds rise off the fields and stream overhead in long skeins heading to roost on the estuary.
+        </p>
+
+        <div className="grid grid-cols-2 gap-3 mb-10">
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/images/reserves/marshside/halfway-viewpoint.jpg"
+              alt="Halfway Viewpoint at Marshside RSPB — person and dog looking out over the flooded winter marsh"
+              width={600}
+              height={500}
+              className="w-full h-44 object-cover"
+            />
+            <p className="text-xs text-[var(--slate)]/50 mt-1 px-0.5">Halfway Viewpoint — dogs welcome on the path</p>
+          </div>
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/images/reserves/marshside/junction-viewpoint-bench.jpg"
+              alt="Bench at the Junction Viewpoint looking out over the flooded marsh at Marshside RSPB"
+              width={600}
+              height={500}
+              className="w-full h-44 object-cover"
+            />
+            <p className="text-xs text-[var(--slate)]/50 mt-1 px-0.5">Junction Viewpoint bench</p>
+          </div>
+        </div>
+
+        {/* Coastal path section */}
+        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+          The saltmarsh walk
+        </p>
+        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">The coastal path</h2>
+        <p className="text-[var(--slate)] mb-5 text-sm leading-relaxed">
+          The path along the outside of the sea wall — on the Redshank Road coastal side — is a completely different experience from the reserve walk. Exposed, flat, with tidal pools and the Ribble Estuary to your right. This is the Marshside Saltmarsh: part of the Ribble Estuary Special Protection Area. Dogs are allowed on leads on the designated track. The saltmarsh is free to access with no entry charge.
+        </p>
+        <p className="text-[var(--slate)] mb-5 text-sm leading-relaxed">
+          Stay on the track. The saltmarsh holds ground-nesting birds, and soft mud and incoming creeks make going off-path genuinely dangerous. In an emergency, grid reference SD 353204 — dial 999 and ask for the Coastguard.
+        </p>
+
+        <div className="rounded-xl overflow-hidden mb-4">
+          <Image
+            src="/images/reserves/marshside/coastal-path-walk.jpg"
+            alt="Walking the coastal path at Marshside — person and dog on the grass embankment with the Ribble Estuary saltmarsh to the right, blue sky"
+            width={900}
+            height={600}
+            className="w-full h-64 object-cover"
+          />
+        </div>
+
+        <div className="grid grid-cols-3 gap-2 mb-10">
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/images/reserves/marshside/dog-in-water.jpg"
+              alt="Dog running through a tidal pool on the Marshside coastal path — saltmarsh and blue sky behind"
+              width={400}
+              height={400}
+              className="w-full h-28 object-cover"
+            />
+          </div>
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/images/reserves/marshside/coastal-driftwood.jpg"
+              alt="Weathered driftwood in coastal grass at Marshside — typical Ribble Estuary saltmarsh vegetation"
+              width={400}
+              height={400}
+              className="w-full h-28 object-cover"
+            />
+          </div>
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/images/reserves/marshside/coastal-timber-shell.jpg"
+              alt="Old timber with a cockle shell on top — coastal path at Marshside RSPB, person walking in the distance"
+              width={400}
+              height={400}
+              className="w-full h-28 object-cover"
+            />
+          </div>
+        </div>
+
         {/* What to bring */}
         <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
           Kit list
@@ -189,8 +367,8 @@ export default function MarshsidePage() {
             { label: "Binoculars", body: "The basic requirement. 8×42 covers everything you'll see from the hides. Waders on the far mud are manageable at that magnification." },
             { label: "Scope", body: "Useful in winter when the geese are on the estuary. Not essential but if you've got one, bring it." },
             { label: "Layers and waterproofs", body: "Marshside is exposed. The wind off the Ribble is relentless. Dress warmer than you think you need to." },
-            { label: "Walking boots or wellies", body: "The sea wall path is firm but field edges can be muddy after rain. Trainers are fine in summer." },
-            { label: "Thermos", body: "Optional but you'll be glad of it. There's nowhere to get a coffee on site." },
+            { label: "Walking boots or wellies", body: "The sea wall path is firm but the saltmarsh coastal path can be muddy. Trainers are fine in summer on the main paths." },
+            { label: "Thermos and food", body: "No café on site. There is a toilet at the car park but no refreshments — bring your own. The Nel's Hide experience is significantly improved with a flask." },
             { label: "Field guide", body: "Collins Bird Guide is the one. The waders especially benefit from having a book on hand in autumn passage." },
           ].map(({ label, body }) => (
             <li key={label} className="flex gap-3">
@@ -200,29 +378,38 @@ export default function MarshsidePage() {
           ))}
         </ul>
 
-        {/* Hides */}
-        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
-          Hides & viewpoints
-        </p>
-        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">The hides</h2>
-        <p className="text-[var(--slate)] mb-4 leading-relaxed text-sm">
-          The main hide looks over the managed lagoon and scrapes — this is where you&apos;ll see most of the waders and wildfowl. It faces south-west, which means afternoon sun straight in your eyes in winter. Go in the morning if you can. The light is better and the geese are usually still on the fields before they move to the estuary. Check the left-hand corner of the scrape first — that&apos;s where the waders tend to congregate.
-        </p>
-        <p className="text-[var(--slate)] mb-10 leading-relaxed text-sm">
-          The sea wall gives you an open view over the Ribble Estuary — essential for the Pink-footed Goose flocks and the winter waders on the mudflats. Bring the scope here.
-        </p>
-
         {/* Getting there */}
         <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
           Getting there
         </p>
-        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-3">How to find us</h2>
+        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-3">How to find it</h2>
         <p className="text-[var(--slate)] mb-3 text-sm leading-relaxed">
-          Marshside Road runs north from Southport town centre. The reserve entrance is on the left about a mile up, well before you reach Crossens. Postcode <strong>PR9 9PH</strong> gets you close — park in the layby on the road.
+          <strong>By car:</strong> From Southport, head north along Marshside Road (postcode PR9 9PH). For Nel&apos;s Hide and the RSPB car park, follow signs for Redshank Road off Marine Drive — the blue &apos;RSPB Marshside P&apos; directional signs are visible at the junction. Grid reference SD 353204. The car park is locked at closing time — do not stay past 4pm (winter) or 5pm (summer).
         </p>
         <p className="text-[var(--slate)] mb-10 text-sm leading-relaxed">
-          By public transport: Southport is on the Merseyrail Northern Line from Liverpool. The reserve is about 25 minutes on foot from Lord Street, or a short bus ride to Marshside Road.
+          <strong>By public transport:</strong> Southport is on the Merseyrail Northern Line from Liverpool. The reserve is about 25 minutes on foot from Lord Street, or a short bus ride to Marshside Road.
         </p>
+
+        {/* Memorial bench — local detail */}
+        <div className="bg-[var(--dune)] rounded-xl p-5 mb-10">
+          <div className="flex gap-4 items-start">
+            <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden">
+              <Image
+                src="/images/reserves/marshside/memorial-bench-plaque.jpg"
+                alt="Memorial bench plaque for Stan and Peggy Scott — Founder Members of North Cheshire Group RSPB 1976-1999"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)] mb-1">On the path</p>
+              <p className="text-sm text-[var(--slate)] leading-relaxed">
+                One of the benches along the reserve path is dedicated to <strong>Stan and Peggy Scott</strong> — Founder Members of North Cheshire Group RSPB, 1976–1999. Donated by family and friends. The sort of detail that reminds you this reserve was built by people who just loved birds.
+              </p>
+            </div>
+          </div>
+        </div>
 
         {/* FAQ */}
         <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
@@ -255,6 +442,7 @@ export default function MarshsidePage() {
           <Link href="/birds" className="text-[var(--marsh)] font-medium hover:underline text-sm">Browse the bird species database →</Link>
           <Link href="/birdwatching-guide" className="text-[var(--marsh)] font-medium hover:underline text-sm">Birdwatching guide →</Link>
           <Link href="/seasonal/pink-footed-geese" className="text-[var(--marsh)] font-medium hover:underline text-sm">Pink-footed Geese guide →</Link>
+          <Link href="/blog/photographing-waders-marshside" className="text-[var(--marsh)] font-medium hover:underline text-sm">Photography tips for Marshside →</Link>
         </div>
       </div>
     </>

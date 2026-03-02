@@ -40,7 +40,9 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const heroImage = await getWikipediaImage(post.heroWikipediaTitle);
+  const heroImage = post.heroLocalSrc ? null : await getWikipediaImage(post.heroWikipediaTitle);
+  const heroSrc = post.heroLocalSrc ?? heroImage?.src ?? null;
+  const heroPageUrl = heroImage?.pageUrl ?? null;
   const url = `https://www.seftoncoastwildlife.co.uk/blog/${slug}`;
 
   const articleJsonLd = {
@@ -63,10 +65,10 @@ export default async function BlogPostPage({ params }: Props) {
       url: "https://www.seftoncoastwildlife.co.uk",
     },
     keywords: post.tags.join(", "),
-    ...(heroImage && {
+    ...(heroSrc && {
       image: {
         "@type": "ImageObject",
-        url: heroImage.src,
+        url: heroSrc.startsWith("/") ? `https://www.seftoncoastwildlife.co.uk${heroSrc}` : heroSrc,
         width: 800,
       },
     }),
@@ -76,18 +78,20 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
-      {heroImage && (
+      {heroSrc && (
         <div className="relative h-64 sm:h-80 w-full overflow-hidden bg-[var(--dune)]">
-          <img src={heroImage.src} alt={post.heroAlt} className="w-full h-full object-cover object-center" />
+          <img src={heroSrc} alt={post.heroAlt} className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-6">
-            <p className="text-xs text-white/60">
-              Image:{" "}
-              <a href={heroImage.pageUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-white/80">
-                Wikimedia Commons
-              </a>
-            </p>
-          </div>
+          {heroPageUrl && (
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <p className="text-xs text-white/60">
+                Image:{" "}
+                <a href={heroPageUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-white/80">
+                  Wikimedia Commons
+                </a>
+              </p>
+            </div>
+          )}
         </div>
       )}
 
