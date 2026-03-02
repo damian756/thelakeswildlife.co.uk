@@ -7,9 +7,11 @@ interface Props {
   alt: string;
   className?: string;
   caption?: string;
+  /** Set true when the parent is a relative container with a fixed height — makes the button absolute inset-0 */
+  fill?: boolean;
 }
 
-export function ClickableImage({ src, alt, className, caption }: Props) {
+export function ClickableImage({ src, alt, className, caption, fill }: Props) {
   const [open, setOpen] = useState(false);
   const close = useCallback(() => setOpen(false), []);
 
@@ -29,7 +31,7 @@ export function ClickableImage({ src, alt, className, caption }: Props) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="group relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--marsh)]"
+        className={`group focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--marsh)] ${fill ? "absolute inset-0 w-full h-full" : "relative block w-full"}`}
         aria-label={`Enlarge: ${alt}`}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}

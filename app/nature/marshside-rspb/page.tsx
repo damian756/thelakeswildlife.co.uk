@@ -99,8 +99,9 @@ export default function MarshsidePage() {
         <ClickableImage
           src="/images/reserves/marshside/hero-coastal-reflection.jpg"
           alt="The coastal saltmarsh path at Marshside — sky and clouds reflected in a tidal pool, a dog walker in the distance"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center"
           caption="Marshside coastal path — Redshank Road, SD 353204. February 2026."
+          fill
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
         <div className="absolute bottom-0 left-0 right-0 p-6 pointer-events-none">

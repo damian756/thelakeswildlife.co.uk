@@ -84,7 +84,8 @@ export default async function BlogPostPage({ params }: Props) {
           <ClickableImage
             src={heroSrc}
             alt={post.heroAlt}
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center"
+            fill
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
           {heroPageUrl && (
