@@ -64,9 +64,6 @@ export default async function HomePage() {
   const mammalCount = getAllSpecies("mammals").length;
   const totalCount = birdCount + insectCount + plantCount + mammalCount;
 
-  // Fetch hero image for homepage (Dunlin flock landscape)
-  const heroImage = await getWikipediaImage("Red Knot").then((img) => img?.src ?? null);
-
   // Fetch 3 recent blog post hero images
   const recentPosts = BLOG_POSTS.slice(-3).reverse();
   const blogImages = await Promise.all(
@@ -83,36 +80,30 @@ export default async function HomePage() {
       label: "Birds",
       count: birdCount,
       desc: "Waders, wildfowl, raptors and passerines",
-      wikiTitle: "Dunlin",
+      localImage: "/images/species/birds/dunlin.jpg",
     },
     {
       href: "/insects",
       label: "Insects",
       count: insectCount,
       desc: "Butterflies, moths and invertebrates",
-      wikiTitle: "Natterjack toad",
+      localImage: "/images/species/insects/six-spot-burnet-moth.jpg",
     },
     {
       href: "/plants",
       label: "Plants",
       count: plantCount,
       desc: "Saltmarsh and dune flora",
-      wikiTitle: "Ammophila arenaria",
+      localImage: "/images/species/plants/sea-holly.jpg",
     },
     {
       href: "/mammals",
       label: "Mammals",
       count: mammalCount,
       desc: "Including red squirrels at Formby",
-      wikiTitle: "Red squirrel",
+      localImage: "/images/species/mammals/red-squirrel.jpg",
     },
   ];
-
-  const categoryImages = await Promise.all(
-    speciesCategories.map((c) =>
-      getWikipediaImage(c.wikiTitle).then((img) => img?.src ?? null)
-    )
-  );
 
   return (
     <>
@@ -155,15 +146,12 @@ export default async function HomePage() {
 
           {/* Right panel — hero image */}
           <div className="relative min-h-[300px] lg:min-h-0 overflow-hidden bg-[var(--forest)]">
-            {heroImage ? (
-              <img
-                src={heroImage}
-                alt="Wading birds on the Sefton Coast"
-                className="absolute inset-0 w-full h-full object-cover object-center"
-              />
-            ) : (
-              <div className="absolute inset-0 bg-gradient-to-br from-[var(--marsh)] to-[var(--forest)]" />
-            )}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/species/birds/pink-footed-goose.jpg"
+              alt="Pink-footed Geese in flight over the Sefton Coast"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-[var(--forest)]/40 via-transparent to-transparent lg:from-transparent" />
           </div>
         </div>
@@ -208,7 +196,7 @@ export default async function HomePage() {
           From Pink-footed Geese arriving from Iceland in October to Red Squirrels in the Formby pinewoods — the Sefton Coast holds some of the most important wildlife in northwest England.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {speciesCategories.map(({ href, label, count, desc }, i) => (
+          {speciesCategories.map(({ href, label, count, desc, localImage }) => (
             <Link
               key={href}
               href={href}
@@ -216,15 +204,12 @@ export default async function HomePage() {
             >
               {/* Image */}
               <div className="relative h-44 overflow-hidden bg-[var(--dune)]">
-                {categoryImages[i] ? (
-                  <img
-                    src={categoryImages[i]!}
-                    alt={label}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-[var(--marsh)] to-[var(--forest)]" />
-                )}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={localImage}
+                  alt={label}
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span className="absolute bottom-3 left-4 text-2xl font-bold text-white">
                   {count}

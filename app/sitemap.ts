@@ -3,7 +3,7 @@ import { BLOG_POSTS } from "@/content/blog/posts";
 import type { MetadataRoute } from "next";
 
 const baseUrl = "https://www.seftoncoastwildlife.co.uk";
-const SITE_UPDATED = new Date("2026-02-01");
+const SITE_UPDATED = new Date("2026-03-02");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const categories = ["birds", "insects", "plants", "mammals"] as const;
