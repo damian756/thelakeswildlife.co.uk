@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { BLOG_POSTS, getPostBySlug } from "@/content/blog/posts";
 import { getWikipediaImage } from "@/lib/wikipedia";
+import { ClickableImage } from "@/components/ClickableImage";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -80,13 +81,17 @@ export default async function BlogPostPage({ params }: Props) {
 
       {heroSrc && (
         <div className="relative h-64 sm:h-80 w-full overflow-hidden bg-[var(--dune)]">
-          <img src={heroSrc} alt={post.heroAlt} className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+          <ClickableImage
+            src={heroSrc}
+            alt={post.heroAlt}
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
           {heroPageUrl && (
-            <div className="absolute bottom-0 left-0 right-0 p-6">
+            <div className="absolute bottom-0 left-0 right-0 p-6 pointer-events-none">
               <p className="text-xs text-white/60">
                 Image:{" "}
-                <a href={heroPageUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-white/80">
+                <a href={heroPageUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-white/80 pointer-events-auto">
                   Wikimedia Commons
                 </a>
               </p>

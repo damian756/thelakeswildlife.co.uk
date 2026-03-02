@@ -400,8 +400,8 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "The memorial bench on the Marshside RSPB reserve path commemorates Stan and Peggy Scott, Founder Members of North Cheshire Group RSPB 1976–1999. Who were they?",
     heroWikipediaTitle: "Ribble Estuary",
-    heroLocalSrc: "/images/reserves/marshside/memorial-bench.jpg",
-    heroAlt: "Memorial bench on the Marshside RSPB reserve path dedicated to Stan and Peggy Scott, Founder Members of North Cheshire Group RSPB 1976-1999",
+    heroLocalSrc: "/images/reserves/marshside/memorial-bench-plaque.jpg",
+    heroAlt: "Close-up of the memorial plaque for Stan and Peggy Scott — Founder Members of North Cheshire Group RSPB 1976-1999, donated by family and friends",
     intro:
       "There's a wooden bench on the reserve path at Marshside with a small metal plaque screwed to it. In Memory of Stan and Peggy Scott — Founder Members of North Cheshire Group RSPB 1976–1999. Donated by Family and Friends. Most people walk past it. It's worth stopping for.",
     sections: [

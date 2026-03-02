@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getAllSpecies } from "@/lib/species";
 import { getWikipediaImage } from "@/lib/wikipedia";
 import { BLOG_POSTS } from "@/content/blog/posts";
+import { PhotoGallery } from "@/components/PhotoGallery";
 
 const title = "Sefton Coast Wildlife — Birds, Nature & Wildlife Guide";
 const description =
@@ -67,10 +68,12 @@ export default async function HomePage() {
   const heroImage = await getWikipediaImage("Red Knot").then((img) => img?.src ?? null);
 
   // Fetch 3 recent blog post hero images
-  const recentPosts = BLOG_POSTS.slice(0, 3);
+  const recentPosts = BLOG_POSTS.slice(-3).reverse();
   const blogImages = await Promise.all(
     recentPosts.map((p) =>
-      getWikipediaImage(p.heroWikipediaTitle).then((img) => img?.src ?? null)
+      p.heroLocalSrc
+        ? Promise.resolve(p.heroLocalSrc)
+        : getWikipediaImage(p.heroWikipediaTitle).then((img) => img?.src ?? null)
     )
   );
 
@@ -348,6 +351,48 @@ export default async function HomePage() {
           >
             All posts →
           </Link>
+        </div>
+      </section>
+
+      {/* ── GALLERY ──────────────────────────────────────────── */}
+      <section className="bg-[var(--dune)] py-14">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="flex items-end justify-between mb-6">
+            <div>
+              <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+                From the reserve
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mb-1">
+                Photos from Marshside
+              </h2>
+              <p className="text-[var(--slate)] text-sm">Real shots. No stock, no AI. Click any photo to enlarge.</p>
+            </div>
+            <Link
+              href="/nature/marshside-rspb"
+              className="text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition hidden sm:block"
+            >
+              Reserve guide →
+            </Link>
+          </div>
+          <PhotoGallery
+            photos={[
+              { src: "/images/reserves/marshside/hero-coastal-reflection.jpg", alt: "Tidal pool reflection on the Marshside coastal path", caption: "The coastal saltmarsh path at Marshside — sky reflected in a tidal pool." },
+              { src: "/images/reserves/marshside/nels-hide-lifestyle.jpg", alt: "Birdwatcher in Nel's Hide with flask and telephoto lens", caption: "Nel's Hide — bring a flask. No café on site." },
+              { src: "/images/reserves/marshside/coastal-path-walk.jpg", alt: "Dog walker on the Marshside coastal saltmarsh path", caption: "The coastal path looking north — big estuary sky, flat marsh." },
+              { src: "/images/reserves/marshside/dog-in-water.jpg", alt: "Black Labrador in a tidal pool on the Marshside coastal path", caption: "Dogs love this path. Keep them on leads near the saltmarsh." },
+              { src: "/images/reserves/marshside/nels-hide-exterior.jpg", alt: "Nel's Hide exterior — RSPB Marshside", caption: "Nel's Hide from the reserve path — corrugated metal, wooden decking." },
+              { src: "/images/reserves/marshside/nels-hide-interior.jpg", alt: "Inside Nel's Hide — viewing shelf and windows over the marsh", caption: "Inside Nel's Hide — blue chairs, viewing shelf, windows over the scrape." },
+              { src: "/images/reserves/marshside/halfway-viewpoint.jpg", alt: "Halfway Viewpoint at Marshside RSPB", caption: "Halfway Viewpoint — Nel's Hide visible ahead on the path." },
+              { src: "/images/reserves/marshside/junction-viewpoint-bench.jpg", alt: "Bench at the Junction Viewpoint, Marshside RSPB", caption: "Junction Viewpoint bench — looking out over the flooded winter marsh." },
+              { src: "/images/reserves/marshside/car-park-pricing.jpg", alt: "RSPB Marshside car park pricing sign", caption: "Car park: £1.50 up to 2hrs, £3 over 2hrs. RSPB members free." },
+              { src: "/images/reserves/marshside/coastal-driftwood.jpg", alt: "Driftwood on the Marshside coastal strandline", caption: "Driftwood on the strandline — Ribble Estuary brings in plenty." },
+              { src: "/images/reserves/marshside/coastal-timber-shell.jpg", alt: "Old sea-defence timber on the Marshside foreshore", caption: "Barnacle-encrusted timber — remnants of old sea defences." },
+              { src: "/images/reserves/marshside/memorial-bench-plaque.jpg", alt: "Memorial plaque for Stan and Peggy Scott, Marshside RSPB", caption: "In Memory of Stan and Peggy Scott — Founder Members, North Cheshire Group RSPB 1976–1999." },
+            ]}
+          />
+          <div className="mt-5 sm:hidden text-center">
+            <Link href="/nature/marshside-rspb" className="text-sm text-[var(--marsh)] font-medium">Reserve guide →</Link>
+          </div>
         </div>
       </section>
 

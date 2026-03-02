@@ -28,7 +28,9 @@ export default async function BlogIndexPage() {
       metaDescription: post.metaDescription,
       heroAlt: post.heroAlt,
       tags: post.tags,
-      heroSrc: await getWikipediaImage(post.heroWikipediaTitle).then((img) => img?.src ?? null),
+      heroSrc: post.heroLocalSrc != null
+          ? post.heroLocalSrc
+          : await getWikipediaImage(post.heroWikipediaTitle).then((img) => img?.src ?? null),
     }))
   );
 

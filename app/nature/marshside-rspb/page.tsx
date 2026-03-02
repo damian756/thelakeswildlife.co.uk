@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
+import { ClickableImage } from "@/components/ClickableImage";
 
 const title = "Marshside RSPB Reserve — Parking, Access & What to Bring";
 const description =
@@ -96,16 +96,14 @@ export default function MarshsidePage() {
 
       {/* Hero image */}
       <div className="relative h-72 sm:h-96 w-full overflow-hidden bg-[var(--slate)]">
-        <Image
+        <ClickableImage
           src="/images/reserves/marshside/hero-coastal-reflection.jpg"
           alt="The coastal saltmarsh path at Marshside — sky and clouds reflected in a tidal pool, a dog walker in the distance"
-          fill
-          sizes="100vw"
-          className="object-cover object-center"
-          priority
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          caption="Marshside coastal path — Redshank Road, SD 353204. February 2026."
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-6">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 p-6 pointer-events-none">
           <p className="text-xs text-white/50">Marshside coastal path — Redshank Road, SD 353204</p>
         </div>
       </div>
@@ -171,12 +169,11 @@ export default function MarshsidePage() {
 
         {/* Car park photo */}
         <div className="mb-10 rounded-xl overflow-hidden">
-          <Image
+          <ClickableImage
             src="/images/reserves/marshside/car-park-pricing.jpg"
             alt="RSPB Marshside car park pricing and opening times sign — up to 2 hours £1.50, over 2 hours £3, RSPB members free"
-            width={900}
-            height={700}
             className="w-full object-cover"
+            caption="Car park pricing as of February 2026. RSPB members park free — display membership card on dashboard."
           />
           <p className="text-xs text-[var(--slate)]/50 mt-1.5 px-1">Car park pricing as of February 2026. RSPB members park free — display membership card on dashboard.</p>
         </div>
@@ -233,33 +230,30 @@ export default function MarshsidePage() {
 
         {/* Nel's Hide photo gallery */}
         <div className="grid grid-cols-2 gap-3 mb-5">
-          <div className="rounded-xl overflow-hidden">
-            <Image
+          <div className="rounded-xl overflow-hidden h-44">
+            <ClickableImage
               src="/images/reserves/marshside/nels-hide-exterior.jpg"
               alt="Nel's Hide exterior — RSPB Marshside, corrugated green metal building with decking and wooden viewing enclosure"
-              width={600}
-              height={450}
               className="w-full h-44 object-cover"
+              caption="Nel's Hide exterior — the corrugated metal building on Redshank Road."
             />
           </div>
-          <div className="rounded-xl overflow-hidden">
-            <Image
+          <div className="rounded-xl overflow-hidden h-44">
+            <ClickableImage
               src="/images/reserves/marshside/nels-hide-interior.jpg"
               alt="Inside Nel's Hide — row of blue chairs along the viewing shelf with windows overlooking the flooded marsh"
-              width={600}
-              height={450}
               className="w-full h-44 object-cover"
+              caption="Inside Nel's Hide — viewing shelf, blue chairs, windows overlooking the scrape."
             />
           </div>
         </div>
 
         <div className="rounded-xl overflow-hidden mb-5">
-          <Image
+          <ClickableImage
             src="/images/reserves/marshside/nels-hide-lifestyle.jpg"
             alt="Birdwatcher inside Nel's Hide with flask, mugs and sandwiches, photographing through the window with a telephoto lens"
-            width={900}
-            height={500}
             className="w-full h-56 sm:h-72 object-cover"
+            caption="The full experience: flask, sandwiches, telephoto lens. No café on site — bring your own."
           />
           <p className="text-xs text-[var(--slate)]/50 mt-1.5 px-1">The full experience: flask, sandwiches, telephoto lens. Nel&apos;s Hide does not provide refreshments — bring your own.</p>
         </div>
@@ -283,23 +277,21 @@ export default function MarshsidePage() {
         </p>
 
         <div className="grid grid-cols-2 gap-3 mb-10">
-          <div className="rounded-xl overflow-hidden">
-            <Image
+          <div className="rounded-xl overflow-hidden h-44">
+            <ClickableImage
               src="/images/reserves/marshside/halfway-viewpoint.jpg"
               alt="Halfway Viewpoint at Marshside RSPB — person and dog looking out over the flooded winter marsh"
-              width={600}
-              height={500}
               className="w-full h-44 object-cover"
+              caption="Halfway Viewpoint — dogs are welcome on the path. Nel's Hide is just ahead."
             />
             <p className="text-xs text-[var(--slate)]/50 mt-1 px-0.5">Halfway Viewpoint — dogs welcome on the path</p>
           </div>
-          <div className="rounded-xl overflow-hidden">
-            <Image
+          <div className="rounded-xl overflow-hidden h-44">
+            <ClickableImage
               src="/images/reserves/marshside/junction-viewpoint-bench.jpg"
               alt="Bench at the Junction Viewpoint looking out over the flooded marsh at Marshside RSPB"
-              width={600}
-              height={500}
               className="w-full h-44 object-cover"
+              caption="Junction Viewpoint bench — looking out over the flooded winter marsh."
             />
             <p className="text-xs text-[var(--slate)]/50 mt-1 px-0.5">Junction Viewpoint bench</p>
           </div>
@@ -318,41 +310,37 @@ export default function MarshsidePage() {
         </p>
 
         <div className="rounded-xl overflow-hidden mb-4">
-          <Image
+          <ClickableImage
             src="/images/reserves/marshside/coastal-path-walk.jpg"
             alt="Walking the coastal path at Marshside — person and dog on the grass embankment with the Ribble Estuary saltmarsh to the right, blue sky"
-            width={900}
-            height={600}
             className="w-full h-64 object-cover"
+            caption="The coastal path looking north — Ribble Estuary saltmarsh to the right."
           />
         </div>
 
         <div className="grid grid-cols-3 gap-2 mb-10">
-          <div className="rounded-xl overflow-hidden">
-            <Image
+          <div className="rounded-xl overflow-hidden h-28">
+            <ClickableImage
               src="/images/reserves/marshside/dog-in-water.jpg"
               alt="Dog running through a tidal pool on the Marshside coastal path — saltmarsh and blue sky behind"
-              width={400}
-              height={400}
               className="w-full h-28 object-cover"
+              caption="Dogs love the tidal pools. Keep them on the path — the saltmarsh itself is protected ground."
             />
           </div>
-          <div className="rounded-xl overflow-hidden">
-            <Image
+          <div className="rounded-xl overflow-hidden h-28">
+            <ClickableImage
               src="/images/reserves/marshside/coastal-driftwood.jpg"
               alt="Weathered driftwood in coastal grass at Marshside — typical Ribble Estuary saltmarsh vegetation"
-              width={400}
-              height={400}
               className="w-full h-28 object-cover"
+              caption="Driftwood on the Marshside strandline."
             />
           </div>
-          <div className="rounded-xl overflow-hidden">
-            <Image
+          <div className="rounded-xl overflow-hidden h-28">
+            <ClickableImage
               src="/images/reserves/marshside/coastal-timber-shell.jpg"
               alt="Old timber with a cockle shell on top — coastal path at Marshside RSPB, person walking in the distance"
-              width={400}
-              height={400}
               className="w-full h-28 object-cover"
+              caption="Old sea-defence timber with barnacles — Marshside foreshore."
             />
           </div>
         </div>
@@ -394,12 +382,11 @@ export default function MarshsidePage() {
         <div className="bg-[var(--dune)] rounded-xl p-5 mb-10">
           <div className="flex gap-4 items-start">
             <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden">
-              <Image
+              <ClickableImage
                 src="/images/reserves/marshside/memorial-bench-plaque.jpg"
                 alt="Memorial bench plaque for Stan and Peggy Scott — Founder Members of North Cheshire Group RSPB 1976-1999"
-                width={200}
-                height={200}
                 className="w-full h-full object-cover"
+                caption="In Memory of Stan and Peggy Scott — Founder Members of North Cheshire Group RSPB 1976–1999. Donated by Family and Friends."
               />
             </div>
             <div>
