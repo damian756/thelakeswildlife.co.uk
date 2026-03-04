@@ -16,7 +16,11 @@ export interface BlogPost {
   heroLocalSrc?: string; // overrides Wikipedia fetch when set
   heroAlt: string;
   intro: string;
-  sections: { heading: string; body: string[] }[];
+  sections: {
+    heading: string;
+    body: string[];
+    imageAfter?: { src: string; alt: string; caption: string; objectPosition?: string };
+  }[];
   tags: string[];
 }
 
@@ -429,6 +433,131 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     tags: ["RSPB", "conservation", "local history", "Marshside", "North Cheshire Group", "volunteer"],
+  },
+
+  // ── BEACHCOMBING SERIES ────────────────────────────────────────────────────
+
+  {
+    slug: "what-is-a-mermaids-purse",
+    category: "species-spotlight",
+    categoryLabel: "Species Spotlight",
+    title: "What Is a Mermaid's Purse? Shark Egg Cases on the Sefton Coast",
+    date: "2026-03-04",
+    metaDescription:
+      "Found a black leathery pouch with curly tendrils on a Sefton Coast beach? That's a mermaid's purse — the empty egg case of a small-spotted catshark. Here's what it is, where it comes from, and what to do with it.",
+    heroLocalSrc: "/images/blog/beachcombing/mermaids-purse-held-hand-ainsdale.webp",
+    heroAlt: "A mermaid's purse — small-spotted catshark egg case — held in a hand on Ainsdale Beach, Sefton Coast",
+    intro:
+      "Found a black leathery pouch with curly tendrils on a Sefton Coast beach? That's a mermaid's purse — and it once contained a shark. A small one, but a shark. Here's what it is, why it's here, and what you can do with it beyond putting it back down.",
+    sections: [
+      {
+        heading: "What it actually is",
+        body: [
+          "A mermaid's purse is the egg case of a cartilaginous fish — usually a small-spotted catshark (Scyliorhinus canicula), which most people in the UK know by its older name, dogfish. They're common in the Irish Sea. They're not dangerous. At full size they're about 60–80cm long and live on the seabed.",
+          "The leathery case — made from collagen fibres, structurally similar to fingernail — is produced by the female to protect a single fertilised egg. She deposits it on rocky or kelpy seabed, where the four curly tendrils at the corners anchor it in place. The embryo develops inside for nine to twelve months, nourished by a yolk sac. Once the pup hatches, the empty case detaches and drifts until it washes ashore.",
+        ],
+        imageAfter: {
+          src: "/images/blog/beachcombing/mermaids-purse-held-hand-ainsdale.webp",
+          alt: "Mermaid's purse — small-spotted catshark egg case — held in a hand on Ainsdale Beach",
+          caption: "A freshly washed-in mermaid's purse on Ainsdale Beach. The curly tendrils anchored it to kelp on the seabed. The embryo chamber is visible when held to the light.",
+          objectPosition: "center center",
+        },
+      },
+      {
+        heading: "Why they wash up on the Sefton Coast",
+        body: [
+          "The Irish Sea is one of the UK's more productive fishing grounds for small-spotted catshark. The species is not endangered — it's one of the most abundant elasmobranchs in UK waters. The Sefton Coast, with its exposed westerly aspect and significant tidal range, collects what the Irish Sea delivers, which is why beachcombers here find mermaid's purses year-round.",
+          "Numbers peak after storms and high tides, when wave action scours the seabed. Early morning after an overnight high tide is the best time to look — the tide deposits them while you sleep and they haven't been disturbed yet. Winter is more productive than summer for exactly this reason.",
+        ],
+      },
+      {
+        heading: "How to identify it",
+        body: [
+          "Small-spotted catshark cases are roughly rectangular, dark brown to black, leathery but flexible. Size varies — typically 4–7cm across the body, with tendrils adding several centimetres. Fresh cases are flexible and slightly slippery. Older ones dry out, become brittle, and lighten in colour.",
+          "Hold a fresh case up to bright light and you can often see the hollow embryo chamber, sometimes with the remains of the yolk sac. This is easiest with a torch or strong sunlight behind the case.",
+          "You may also find skate and ray egg cases — these are larger, harder, and have pointed horns rather than curly tendrils. The starry ray and thornback ray both occur in the Irish Sea, and their cases turn up occasionally on Sefton beaches.",
+        ],
+      },
+      {
+        heading: "The Great Eggcase Hunt",
+        body: [
+          "The Shark Trust runs the Great Eggcase Hunt — a citizen science project that uses public finds to map shark and ray distribution in UK waters. Recording a mermaid's purse takes about two minutes: photograph it, note the location and date, and submit via the Shark Trust website or app.",
+          "The Sefton Coast data feeds into a national picture of where small-spotted catshark is breeding and where other species may be establishing themselves. It's one of those rare cases where picking something up off the beach and taking a photo has a direct conservation use.",
+        ],
+      },
+      {
+        heading: "What else to look for",
+        body: [
+          "The tideline along the Sefton Coast regularly produces razor clams, whelk egg masses (also called sea wash balls or mermaid's necklaces — a white, spongy cluster of tiny capsules), and various bivalve shells. In winter and early spring, jellyfish strandings are common — compass jellyfish and barrel jellyfish both wash up regularly after storms. Full guide at the link below.",
+          "The best beachcombing stretch is at low tide on the broad flat sands at Ainsdale or along the Formby Point tideline. Go early, go after a high tide, and bring a bag.",
+        ],
+      },
+    ],
+    tags: ["beachcombing", "mermaid's purse", "shark egg case", "catshark", "Ainsdale Beach", "Sefton Coast", "Irish Sea"],
+  },
+
+  {
+    slug: "jellyfish-sefton-coast",
+    category: "species-spotlight",
+    categoryLabel: "Species Spotlight",
+    title: "Jellyfish on the Sefton Coast — What Are They and Do They Sting?",
+    date: "2026-03-04",
+    metaDescription:
+      "Finding jellyfish on Ainsdale or Formby Beach? They're almost certainly compass jellyfish or barrel jellyfish — here's how to tell them apart, whether they sting, and what to do if your dog goes for one.",
+    heroLocalSrc: "/images/blog/beachcombing/barrel-jellyfish-dog-ainsdale-beach.webp",
+    heroAlt: "A large barrel jellyfish stranded on Ainsdale Beach on the Sefton Coast, with a dog investigating in the background",
+    intro:
+      "Jellyfish strandings on the Sefton Coast are common, particularly in late winter and spring. Two species dominate: barrel jellyfish and compass jellyfish. They look alarming. One of them will sting you (mildly). Here's how to tell them apart and what to actually do about it.",
+    sections: [
+      {
+        heading: "Barrel jellyfish — the big flat one",
+        body: [
+          "If you've found a large, flat, disc-shaped jellyfish — dark brown or grey-purple, iridescent in the light, the size of a dinner plate or bigger — that's a barrel jellyfish (Rhizostoma pulmo). It's the UK's largest jellyfish species, capable of reaching 90cm across the bell and 35kg in weight. The ones that wash up on the Sefton coast are typically 30–60cm.",
+          "The sting of a barrel jellyfish is considered negligible for most people. The tentacles are fused and the nematocysts are too small to penetrate adult human skin effectively. You can handle one without concern. That said, don't rub your eyes afterwards, and don't let the dog eat it — digested nematocysts can still cause a reaction.",
+        ],
+        imageAfter: {
+          src: "/images/blog/beachcombing/barrel-jellyfish-dog-ainsdale-beach.webp",
+          alt: "Barrel jellyfish stranded on Ainsdale Beach — large flat disc with iridescent purple sheen, dog in background",
+          caption: "A barrel jellyfish on Ainsdale Beach. The dog has correctly identified it as interesting. The iridescent purple colouring is typical of freshly stranded specimens.",
+          objectPosition: "center 35%",
+        },
+      },
+      {
+        heading: "Compass jellyfish — the one with the markings",
+        body: [
+          "Compass jellyfish (Chrysaora hysoscella) are identifiable by the brown V-shaped markings radiating outward from the centre of the bell, like the points on a compass. They're typically smaller than barrel jellyfish — 15–30cm bell diameter — and more translucent, with long trailing tentacles.",
+          "These do sting. The sting is mild compared to lion's mane jellyfish, but it's real and it's uncomfortable — similar to a nettle sting that lingers. If you or a child makes contact, rinse with seawater (not fresh water, which causes nematocysts to discharge further), don't rub, and remove any remaining tentacle fragments with something flat. Most people have no reaction beyond temporary irritation.",
+        ],
+        imageAfter: {
+          src: "/images/blog/beachcombing/compass-jellyfish-closeup-ainsdale.webp",
+          alt: "Compass jellyfish on the Sefton Coast beach — brown V-shaped markings radiating from the centre are clearly visible",
+          caption: "Compass jellyfish (Chrysaora hysoscella) — identifiable by the brown V-shaped patterning. This species has a real sting. Rinse with seawater if contact occurs.",
+          objectPosition: "center center",
+        },
+      },
+      {
+        heading: "Why they strand here",
+        body: [
+          "Jellyfish strandings are a normal feature of the Sefton coast in winter and early spring. Storms and strong westerly winds push them toward shore; the broad flat beaches and significant tidal range strand them as the tide drops. It's not a sign that something is wrong — in fact, jellyfish blooms follow plankton blooms, which signal a productive, healthy sea.",
+          "Numbers vary year to year. Some winters produce dozens of strandings per day over a stretch of beach; some years the coast is mostly clear. A notable stranding is worth reporting to the Marine Conservation Society's jellyfish survey, which tracks distribution and abundance around UK coasts.",
+        ],
+      },
+      {
+        heading: "Dogs and jellyfish",
+        body: [
+          "Dogs are attracted to jellyfish on beaches and will try to bite or roll on them. A stranded jellyfish retains functional nematocysts for hours after death — the sting reflex is automatic and does not require the animal to be alive. Compass jellyfish in particular can sting a dog's mouth and tongue, causing drooling, pawing at the mouth, and occasional vomiting.",
+          "The standard advice: keep dogs away from stranded jellyfish, particularly anything with visible trailing tentacles. If contact occurs, rinse the dog's mouth with water and monitor. Severe reactions are uncommon but seek veterinary advice if symptoms persist.",
+        ],
+      },
+      {
+        heading: "Other species to be aware of",
+        body: [
+          "Moon jellyfish (Aurelia aurita) also wash up occasionally — these are the classic translucent disc with four pink rings visible through the bell. They have no significant sting.",
+          "Portuguese man o'war (Physalia physalis) is a different organism entirely — a siphonophore, not a true jellyfish — with a potentially serious sting. It has been recorded on UK Atlantic coasts but is genuinely rare on the Sefton coast. It looks like a blue/purple translucent bladder with long trailing tentacles and is unmistakable. If you see one, don't touch it, move children away, and report to the Marine Conservation Society.",
+        ],
+      },
+    ],
+    tags: ["jellyfish", "barrel jellyfish", "compass jellyfish", "Ainsdale Beach", "Sefton Coast", "beachcombing", "marine wildlife"],
   },
 ];
 

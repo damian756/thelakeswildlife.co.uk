@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 interface Props {
   src: string;
@@ -9,9 +9,11 @@ interface Props {
   caption?: string;
   /** Set true when the parent is a relative container with a fixed height — makes the button absolute inset-0 */
   fill?: boolean;
+  /** Optional inline style applied to the img element (e.g. objectPosition) */
+  style?: React.CSSProperties;
 }
 
-export function ClickableImage({ src, alt, className, caption, fill }: Props) {
+export function ClickableImage({ src, alt, className, caption, fill, style }: Props) {
   const [open, setOpen] = useState(false);
   const close = useCallback(() => setOpen(false), []);
 
@@ -39,6 +41,7 @@ export function ClickableImage({ src, alt, className, caption, fill }: Props) {
           src={src}
           alt={alt}
           className={className ?? "w-full h-full object-cover"}
+          style={style}
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all flex items-end justify-end p-2 pointer-events-none">
           <span className="opacity-0 group-hover:opacity-100 transition bg-black/70 text-white text-xs font-medium px-2 py-1 rounded-lg flex items-center gap-1">

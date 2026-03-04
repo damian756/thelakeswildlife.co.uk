@@ -36,17 +36,19 @@ export function BlogListClient({ posts }: Props) {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return posts.filter((p) => {
-      const matchesCat = activeCategory === ALL || p.category === activeCategory;
-      if (!matchesCat) return false;
-      if (!q) return true;
-      return (
-        p.title.toLowerCase().includes(q) ||
-        p.metaDescription.toLowerCase().includes(q) ||
-        p.categoryLabel.toLowerCase().includes(q) ||
-        p.tags.some((t) => t.toLowerCase().includes(q))
-      );
-    });
+    return [...posts]
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .filter((p) => {
+        const matchesCat = activeCategory === ALL || p.category === activeCategory;
+        if (!matchesCat) return false;
+        if (!q) return true;
+        return (
+          p.title.toLowerCase().includes(q) ||
+          p.metaDescription.toLowerCase().includes(q) ||
+          p.categoryLabel.toLowerCase().includes(q) ||
+          p.tags.some((t) => t.toLowerCase().includes(q))
+        );
+      });
   }, [posts, query, activeCategory]);
 
   const categories = Object.entries(BLOG_CATEGORIES) as [BlogCategory, { label: string }][];

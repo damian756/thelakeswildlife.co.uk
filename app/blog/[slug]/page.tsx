@@ -128,6 +128,25 @@ export default async function BlogPostPage({ params }: Props) {
             {section.body.map((para, i) => (
               <p key={i} className="text-[var(--slate)] text-sm leading-relaxed mb-3">{para}</p>
             ))}
+            {section.imageAfter && (
+              <div className="mt-5 rounded-xl overflow-hidden border border-[var(--foam)]">
+                <div className="relative w-full h-72 sm:h-80 md:h-96">
+                  <ClickableImage
+                    src={section.imageAfter.src}
+                    alt={section.imageAfter.alt}
+                    caption={section.imageAfter.caption}
+                    fill
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: section.imageAfter.objectPosition ?? "center center" }}
+                  />
+                </div>
+                {section.imageAfter.caption && (
+                  <p className="text-xs text-[var(--slate)]/60 px-4 py-2 bg-[var(--dune)]/40 text-center leading-relaxed">
+                    {section.imageAfter.caption}
+                  </p>
+                )}
+              </div>
+            )}
           </div>
         ))}
 
