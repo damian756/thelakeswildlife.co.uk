@@ -347,10 +347,10 @@ export default async function HomePage() {
           <div className="flex items-end justify-between mb-6">
             <div>
               <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
-                From the reserve
+                From the coast
               </p>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mb-1">
-                Photos from Marshside
+                Photos from the Sefton Coast
               </h2>
               <p className="text-[var(--slate)] text-sm">Real shots. No stock, no AI. Click any photo to enlarge.</p>
             </div>
@@ -364,17 +364,23 @@ export default async function HomePage() {
           <PhotoGallery
             photos={[
               { src: "/images/reserves/marshside/hero-coastal-reflection.jpg", alt: "Tidal pool reflection on the Marshside coastal path", caption: "The coastal saltmarsh path at Marshside — sky reflected in a tidal pool." },
+              { src: "/images/blog/beachcombing/barrel-jellyfish-dog-ainsdale-beach.webp", alt: "Barrel jellyfish washed up on Ainsdale Beach with a dog investigating", caption: "A barrel jellyfish on Ainsdale beach — one of the largest species found on the Sefton Coast." },
               { src: "/images/reserves/marshside/nels-hide-lifestyle.jpg", alt: "Birdwatcher in Nel's Hide with flask and telephoto lens", caption: "Nel's Hide — bring a flask. No café on site." },
+              { src: "/images/blog/beachcombing/compass-jellyfish-closeup-ainsdale.webp", alt: "Compass jellyfish close-up on Ainsdale Beach, Sefton Coast", caption: "Compass jellyfish — named for the brown markings radiating from the centre." },
               { src: "/images/reserves/marshside/coastal-path-walk.jpg", alt: "Dog walker on the Marshside coastal saltmarsh path", caption: "The coastal path looking north — big estuary sky, flat marsh." },
+              { src: "/images/blog/beachcombing/mermaids-purse-held-hand-ainsdale.webp", alt: "A mermaid's purse held in a hand on Ainsdale Beach", caption: "A mermaid's purse — the empty egg case of a small-spotted catshark." },
               { src: "/images/reserves/marshside/dog-in-water.jpg", alt: "Black Labrador in a tidal pool on the Marshside coastal path", caption: "Dogs love this path. Keep them on leads near the saltmarsh." },
+              { src: "/images/blog/beachcombing/jellyfish-iridescent-ainsdale.webp", alt: "Iridescent jellyfish on the tideline at Ainsdale Beach", caption: "Iridescent colouring on a jellyfish at the Ainsdale tideline — most vivid when freshly stranded." },
               { src: "/images/reserves/marshside/nels-hide-exterior.jpg", alt: "Nel's Hide exterior — RSPB Marshside", caption: "Nel's Hide from the reserve path — corrugated metal, wooden decking." },
+              { src: "/images/blog/beachcombing/sea-spurge-ainsdale-dunes.webp", alt: "Sea spurge growing in Ainsdale sand dunes, Sefton Coast", caption: "Sea spurge on the Ainsdale dunes — a protected plant of the Sefton Coast SSSI." },
               { src: "/images/reserves/marshside/nels-hide-interior.jpg", alt: "Inside Nel's Hide — viewing shelf and windows over the marsh", caption: "Inside Nel's Hide — blue chairs, viewing shelf, windows over the scrape." },
-              { src: "/images/reserves/marshside/halfway-viewpoint.jpg", alt: "Halfway Viewpoint at Marshside RSPB", caption: "Halfway Viewpoint — Nel's Hide visible ahead on the path." },
-              { src: "/images/reserves/marshside/junction-viewpoint-bench.jpg", alt: "Bench at the Junction Viewpoint, Marshside RSPB", caption: "Junction Viewpoint bench — looking out over the flooded winter marsh." },
-              { src: "/images/reserves/marshside/car-park-pricing.jpg", alt: "RSPB Marshside car park pricing sign", caption: "Car park: £1.50 up to 2hrs, £3 over 2hrs. RSPB members free." },
+              { src: "/images/blog/beachcombing/whelk-egg-mass-ainsdale-beach.webp", alt: "Whelk egg mass washed up on Ainsdale Beach", caption: "Whelk egg mass on the Ainsdale tideline — looks like a clump of bubble wrap." },
               { src: "/images/reserves/marshside/coastal-driftwood.jpg", alt: "Driftwood on the Marshside coastal strandline", caption: "Driftwood on the strandline — Ribble Estuary brings in plenty." },
+              { src: "/images/blog/beachcombing/compass-jellyfish-dogprints-ainsdale.webp", alt: "Compass jellyfish surrounded by dog paw prints on Ainsdale Beach", caption: "Compass jellyfish with dog prints on the wet sand at Ainsdale." },
               { src: "/images/reserves/marshside/coastal-timber-shell.jpg", alt: "Old sea-defence timber on the Marshside foreshore", caption: "Barnacle-encrusted timber — remnants of old sea defences." },
               { src: "/images/reserves/marshside/memorial-bench-plaque.jpg", alt: "Memorial plaque for Stan and Peggy Scott, Marshside RSPB", caption: "In Memory of Stan and Peggy Scott — Founder Members, North Cheshire Group RSPB 1976–1999." },
+              { src: "/images/blog/beachcombing/sea-spurge-closeup-ainsdale.webp", alt: "Sea spurge plant close-up in Ainsdale dunes", caption: "Sea spurge close-up — yellow-green flowers, fleshy leaves. Toxic sap. Do not touch." },
+              { src: "/images/reserves/marshside/junction-viewpoint-bench.jpg", alt: "Bench at the Junction Viewpoint, Marshside RSPB", caption: "Junction Viewpoint bench — looking out over the flooded winter marsh." },
             ]}
           />
           <div className="mt-5 sm:hidden text-center">
