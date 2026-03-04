@@ -41,7 +41,9 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const heroImage = post.heroLocalSrc ? null : await getWikipediaImage(post.heroWikipediaTitle);
+  const heroImage = (post.heroLocalSrc != null || post.heroWikipediaTitle == null)
+    ? null
+    : await getWikipediaImage(post.heroWikipediaTitle);
   const heroSrc = post.heroLocalSrc ?? heroImage?.src ?? null;
   const heroPageUrl = heroImage?.pageUrl ?? null;
   const url = `https://www.seftoncoastwildlife.co.uk/blog/${slug}`;
