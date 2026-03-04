@@ -12,7 +12,7 @@ export interface BlogPost {
   title: string;
   date: string; // ISO date string
   metaDescription: string;
-  heroWikipediaTitle: string;
+  heroWikipediaTitle?: string;
   heroLocalSrc?: string; // overrides Wikipedia fetch when set
   heroAlt: string;
   intro: string;
