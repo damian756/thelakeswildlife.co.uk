@@ -47,8 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/seasonal/winter-wildfowl`, lastModified: SITE_UPDATED, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/blog`, lastModified: SITE_UPDATED, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.4 },
-    { url: `${baseUrl}/privacy`, lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${baseUrl}/terms`, lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   return [...staticPages, ...speciesUrls, ...blogUrls];

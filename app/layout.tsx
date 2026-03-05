@@ -40,6 +40,18 @@ export const metadata: Metadata = {
     description: "Birds, nature and wildlife on the Sefton Coast — Marshside, the marshes and beyond.",
     url: "https://www.seftoncoastwildlife.co.uk",
     siteName: "Sefton Coast Wildlife",
+    images: [
+      {
+        url: `${BASE_URL}/images/species/birds/pink-footed-goose.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Pink-footed Geese over the Sefton Coast",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [`${BASE_URL}/images/species/birds/pink-footed-goose.jpg`],
   },
   icons: {
     icon: [{ url: "/icon", sizes: "32x32", type: "image/png" }],
@@ -55,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <head>
-        <Script id="crisp-chat" strategy="afterInteractive">{`
+        <Script id="crisp-chat" strategy="lazyOnload">{`
           window.$crisp=[];window.CRISP_WEBSITE_ID="0b0c0739-61b6-42ff-b218-c8a21122c242";(function(){var d=document;var s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
         `}</Script>
       </head>
