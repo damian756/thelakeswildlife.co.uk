@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -66,11 +65,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <head>
-        <Script id="crisp-chat" strategy="lazyOnload">{`
-          window.$crisp=[];window.CRISP_WEBSITE_ID="0b0c0739-61b6-42ff-b218-c8a21122c242";(function(){var d=document;var s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-        `}</Script>
-      </head>
       <body className="min-h-screen flex flex-col bg-[var(--sand)] text-[var(--ink)] antialiased">
         <Header />
         <main className="flex-1">{children}</main>
