@@ -5,6 +5,16 @@ import type { Metadata } from "next";
 
 type Props = { params: Promise<{ slug: string }> };
 
+const BASE = "https://www.seftoncoastwildlife.co.uk";
+
+function truncateAtSentence(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const lastDot = cut.lastIndexOf(".");
+  if (lastDot > max * 0.4) return cut.slice(0, lastDot + 1);
+  return cut.replace(/\s+\S*$/, "") + "...";
+}
+
 export function generateStaticParams() {
   return getAllSlugs("insects").map((slug) => ({ slug }));
 }
@@ -15,14 +25,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!species) return {};
 
   const location = species.shortLocation ?? "the Sefton Coast";
-  const title = `${species.commonName} at ${location} | Sefton Coast Wildlife`;
-  const description = species.faq?.[0]?.answer
-    ? species.faq[0].answer.substring(0, 160)
-    : `${species.commonName} (${species.scientificName}) on the Sefton Coast — where to see it, identification tips, and seasonal presence. ${species.seasonalPresence}.`;
+  const title = `${species.commonName} at ${location}`;
+  const description = truncateAtSentence(
+    species.description || `${species.commonName} (${species.scientificName}) on the Sefton Coast. ${species.seasonalPresence}.`,
+    155
+  );
 
-  const canonical = `https://www.seftoncoastwildlife.co.uk/insects/${slug}`;
-  const ogImage = species.wikipediaTitle
-    ? `https://en.wikipedia.org/wiki/Special:FilePath/${encodeURIComponent(species.wikipediaTitle)}`
+  const canonical = `${BASE}/insects/${slug}`;
+  const image = species.localImage
+    ? `${BASE}${species.localImage}`
     : undefined;
 
   return {
@@ -30,18 +41,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: { canonical },
     openGraph: {
-      title,
+      title: `${title} | Sefton Coast Wildlife`,
       description,
       url: canonical,
       siteName: "Sefton Coast Wildlife",
       type: "article",
-      ...(ogImage && { images: [{ url: ogImage, width: 800, alt: species.commonName }] }),
+      ...(image && { images: [{ url: image, width: 800, alt: species.commonName }] }),
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: `${title} | Sefton Coast Wildlife`,
       description,
-      ...(ogImage && { images: [ogImage] }),
+      ...(image && { images: [image] }),
     },
   };
 }
