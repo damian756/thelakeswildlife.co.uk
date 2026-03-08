@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { getAllSpecies } from "@/lib/species";
 import { getWikipediaImage } from "@/lib/wikipedia";
@@ -148,11 +149,13 @@ export default async function HomePage() {
 
           {/* Right panel — hero image */}
           <div className="relative min-h-[300px] lg:min-h-0 overflow-hidden bg-[var(--forest)]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/images/species/birds/pink-footed-goose.jpg"
               alt="Pink-footed Geese in flight over the Sefton Coast"
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-center"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[var(--forest)]/40 via-transparent to-transparent lg:from-transparent" />
           </div>
@@ -206,11 +209,12 @@ export default async function HomePage() {
             >
               {/* Image */}
               <div className="relative h-44 overflow-hidden bg-[var(--dune)]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={localImage}
                   alt={label}
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span className="absolute bottom-3 left-4 text-2xl font-bold text-white">
@@ -309,10 +313,12 @@ export default async function HomePage() {
             >
               <div className="relative h-44 overflow-hidden bg-[var(--dune)]">
                 {blogImages[i] ? (
-                  <img
+                  <Image
                     src={blogImages[i]!}
                     alt={post.heroAlt}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-[var(--marsh)] to-[var(--forest)]" />

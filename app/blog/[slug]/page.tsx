@@ -88,6 +88,7 @@ export default async function BlogPostPage({ params }: Props) {
             alt={post.heroAlt}
             className="w-full h-full object-cover object-center"
             fill
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
           {heroPageUrl && (

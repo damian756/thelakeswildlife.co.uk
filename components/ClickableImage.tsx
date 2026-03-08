@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState, useEffect, useCallback } from "react";
 
 interface Props {
@@ -7,13 +8,15 @@ interface Props {
   alt: string;
   className?: string;
   caption?: string;
-  /** Set true when the parent is a relative container with a fixed height — makes the button absolute inset-0 */
+  /** Set true when the parent is a relative container with a fixed height */
   fill?: boolean;
-  /** Optional inline style applied to the img element (e.g. objectPosition) */
+  /** Pass true for the above-fold hero image on each page */
+  priority?: boolean;
+  /** Optional inline style applied to the image (e.g. objectPosition) */
   style?: React.CSSProperties;
 }
 
-export function ClickableImage({ src, alt, className, caption, fill, style }: Props) {
+export function ClickableImage({ src, alt, className, caption, fill, priority, style }: Props) {
   const [open, setOpen] = useState(false);
   const close = useCallback(() => setOpen(false), []);
 
@@ -36,12 +39,15 @@ export function ClickableImage({ src, alt, className, caption, fill, style }: Pr
         className={`group focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--marsh)] ${fill ? "absolute inset-0 w-full h-full" : "relative block w-full"}`}
         aria-label={`Enlarge: ${alt}`}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={src}
           alt={alt}
-          className={className ?? "w-full h-full object-cover"}
+          fill={fill}
+          {...(!fill && { width: 800, height: 600 })}
+          sizes="(max-width: 768px) 100vw, 768px"
+          className={className ?? "object-cover"}
           style={style}
+          priority={priority}
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all flex items-end justify-end p-2 pointer-events-none">
           <span className="opacity-0 group-hover:opacity-100 transition bg-black/70 text-white text-xs font-medium px-2 py-1 rounded-lg flex items-center gap-1">

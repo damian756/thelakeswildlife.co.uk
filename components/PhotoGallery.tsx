@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
 interface Photo {
@@ -48,12 +49,12 @@ export function PhotoGallery({ photos }: Props) {
             className="group relative aspect-square overflow-hidden rounded-xl block focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--marsh)]"
             aria-label={`View: ${photo.alt}`}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={photo.src}
               alt={photo.alt}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
+              fill
+              sizes="(max-width: 640px) 33vw, (max-width: 1024px) 25vw, 16vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 rounded-xl" />
             <div className="absolute inset-0 flex items-end justify-end p-1.5 opacity-0 group-hover:opacity-100 transition-opacity">

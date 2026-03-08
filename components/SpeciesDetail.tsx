@@ -153,13 +153,12 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                 </div>
               </div>
 
-              {/* Right: species image — local if available, Wikipedia API fallback */}
-              {(species.localImage ?? species.wikipediaTitle) && (
+              {/* Right: species image */}
+              {species.localImage && (
                 <div className="lg:w-72 flex-shrink-0">
                   <WikiImage
-                    title={species.wikipediaTitle ?? species.commonName}
-                    alt={species.commonName}
                     localSrc={species.localImage}
+                    alt={species.commonName}
                   />
                 </div>
               )}
