@@ -82,21 +82,21 @@ export default async function HomePage() {
       label: "Birds",
       count: birdCount,
       desc: "Waders, wildfowl, raptors and passerines",
-      localImage: "/images/species/birds/dunlin.jpg",
+      localImage: "/images/species/birds/goldeneye.jpg",
     },
     {
       href: "/insects",
       label: "Insects",
       count: insectCount,
       desc: "Butterflies, moths and invertebrates",
-      localImage: "/images/species/insects/six-spot-burnet-moth.jpg",
+      localImage: "/images/species/insects/emperor-moth.jpg",
     },
     {
       href: "/plants",
       label: "Plants",
       count: plantCount,
       desc: "Upland and moorland flora",
-      localImage: "/images/species/plants/sea-holly.jpg",
+      localImage: "/images/species/plants/heather.jpg",
     },
     {
       href: "/mammals",
@@ -293,7 +293,7 @@ export default async function HomePage() {
               From the blog
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--fell)]">
-              Ed&apos;s notes
+              Damian&apos;s notes
             </h2>
           </div>
           <Link
@@ -372,9 +372,9 @@ export default async function HomePage() {
             photos={[
               { src: "/images/species/birds/osprey.jpg", alt: "Osprey in flight over the Lake District", caption: "Osprey at RSPB Haweswater. The reintroduction has been a success." },
               { src: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel in Grizedale Forest", caption: "Red squirrel in Grizedale. One of the last strongholds in England." },
-              { src: "/images/species/birds/dunlin.jpg", alt: "Dunlin wader in the Lake District", caption: "Dunlin and other waders at Leighton Moss and the Solway." },
-              { src: "/images/species/plants/sea-holly.jpg", alt: "Upland flora in the Lake District", caption: "Upland flora. The fells hold rare plants in the right habitats." },
-              { src: "/images/species/insects/six-spot-burnet-moth.jpg", alt: "Six-spot burnet moth on heather", caption: "Six-spot burnet moth. Common on heather moorland in summer." },
+              { src: "/images/species/birds/goldeneye.jpg", alt: "Goldeneye on a Lake District tarn", caption: "Goldeneye and other winter wildfowl at Haweswater and Ullswater." },
+              { src: "/images/species/plants/heather.jpg", alt: "Heather moorland in the Lake District", caption: "Heather moorland. The fells hold rare plants in the right habitats." },
+              { src: "/images/species/insects/emperor-moth.jpg", alt: "Emperor moth on upland heath", caption: "Emperor moth. Common on heather moorland in spring and summer." },
               { src: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel in woodland", caption: "Red squirrels at Grizedale and Foulshaw Moss. Go early for the best chance." },
             ]}
           />

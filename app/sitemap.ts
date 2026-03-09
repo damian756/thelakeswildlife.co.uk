@@ -60,6 +60,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/seasonal/red-deer-rut`, lastModified: new Date("2026-01-18"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/seasonal/red-squirrel-watching`, lastModified: new Date("2026-01-22"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/seasonal/winter-wildfowl`, lastModified: new Date("2026-01-10"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/fishing-guide`, lastModified: new Date("2026-03-09"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/mammal-watching-guide`, lastModified: new Date("2026-03-09"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/upland-habitats`, lastModified: new Date("2026-03-09"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/woodland-habitats`, lastModified: new Date("2026-03-09"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified: new Date("2026-03-05"), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified: new Date("2025-12-01"), changeFrequency: "yearly", priority: 0.4 },
   ];

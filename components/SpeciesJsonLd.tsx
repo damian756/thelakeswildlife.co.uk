@@ -72,7 +72,7 @@ export function SpeciesJsonLd({ species, category, slug }: SpeciesJsonLdProps) {
     about: { "@id": pageUrl },
     author: {
       "@type": "Person",
-      name: "Ed",
+      name: "Damian Roche",
       description: "Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.",
       url: baseUrl,
     },

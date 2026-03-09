@@ -23,6 +23,15 @@ const faqs = [
 const pageJsonLd = [
   {
     "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thelakeswildlife.co.uk" },
+      { "@type": "ListItem", position: 2, name: "Nature", item: "https://www.thelakeswildlife.co.uk/nature" },
+      { "@type": "ListItem", position: 3, name: "RSPB Haweswater", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "TouristAttraction",
     name: "RSPB Haweswater Reserve",
     description: "RSPB reserve in the Lake District — ospreys, pied flycatchers, red squirrels. The flagship Lakeland wildlife site.",
