@@ -73,7 +73,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
     species.order ||
     species.family ||
     species.ukPopulation ||
-    species.seftonPopulation ||
+    species.lakesPopulation ||
     species.diet ||
     (species.habitat && species.habitat.length > 0);
 
@@ -138,10 +138,10 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                       <div className="text-sm text-white/90">{species.bestTimeOfDay}</div>
                     </div>
                   )}
-                  {species.seftonPopulation && (
+                  {species.lakesPopulation && (
                     <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                      <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Sefton Coast</div>
-                      <div className="text-sm text-white/90">{species.seftonPopulation}</div>
+                      <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Lake District</div>
+                      <div className="text-sm text-white/90">{species.lakesPopulation}</div>
                     </div>
                   )}
                   {species.ukPopulation && (
@@ -214,10 +214,10 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                         <td className="py-2.5 text-[var(--slate)]">{species.ukPopulation}</td>
                       </tr>
                     )}
-                    {species.seftonPopulation && (
+                    {species.lakesPopulation && (
                       <tr className="border-b border-[var(--dune)]">
-                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Sefton Coast</td>
-                        <td className="py-2.5 text-[var(--slate)]">{species.seftonPopulation}</td>
+                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Lake District</td>
+                        <td className="py-2.5 text-[var(--slate)]">{species.lakesPopulation}</td>
                       </tr>
                     )}
                     <tr className="border-b border-[var(--dune)]">

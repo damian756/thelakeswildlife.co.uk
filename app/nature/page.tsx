@@ -2,48 +2,48 @@ import Link from "next/link";
 
 import type { Metadata } from "next";
 
-const title = "Nature Reserves — Sefton Coast Wildlife";
-const description = "Guides to the Sefton Coast's best nature reserves — Marshside RSPB, Ainsdale Sand Dunes NNR, WWT Martin Mere, Seaforth and more.";
-const url = "https://www.seftoncoastwildlife.co.uk/nature";
+const title = "Nature Reserves — The Lakes Wildlife";
+const description = "Guides to the Lake District's best nature reserves — RSPB Haweswater, Grizedale Forest, Foulshaw Moss, Leighton Moss and more.";
+const url = "https://www.thelakeswildlife.co.uk/nature";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
   twitter: { card: "summary_large_image", title, description },
 };
 
 const reserves = [
   {
-    href: "/nature/marshside-rspb",
-    name: "Marshside RSPB Reserve",
-    tag: "RSPB · Free entry · Southport",
-    desc: "80,000+ Pink-footed Geese in winter. Free entry. Managed lagoons and breeding Avocets. The best single wildlife site on the Sefton Coast.",
+    href: "/nature/haweswater-rspb",
+    name: "RSPB Haweswater Reserve",
+    tag: "RSPB · Free entry · Haweswater",
+    desc: "Ospreys, pied flycatchers and red squirrels. The flagship Lake District wildlife site. Get there before 10am for a spot at the osprey hide.",
   },
   {
-    href: "/nature/ainsdale-sand-dunes",
-    name: "Ainsdale Sand Dunes NNR",
-    tag: "Natural England · Free entry · Ainsdale",
-    desc: "Natterjack toads, sand lizards and rare dune plants on one of Europe's most important dune systems. Almost nobody comes here. That's the point.",
+    href: "/nature/grizedale-forest",
+    name: "Grizedale Forest",
+    tag: "Forestry England · Free entry · Grizedale",
+    desc: "Red squirrels, red deer, red kites. The visitor centre has feeders. One of the best places in England to see red squirrels.",
   },
   {
-    href: "/nature/martin-mere",
-    name: "WWT Martin Mere",
-    tag: "WWT · Entry charge · Burscough",
-    desc: "Up to 1,000 whooper swans arrive from Iceland in November. Flamingos, otters, and a proper day out any time of year.",
+    href: "/nature/foulshaw-moss",
+    name: "Foulshaw Moss",
+    tag: "Cumbria Wildlife Trust · Free entry · Grange-over-Sands",
+    desc: "Osprey viewing platform. Nest visible from the hide. Foulshaw is one of the Lake District's osprey reintroduction success stories.",
   },
   {
-    href: "/nature/seaforth-nature-reserve",
-    name: "Seaforth Nature Reserve",
-    tag: "Wildlife Trust · Free entry · Crosby",
-    desc: "Mediterranean Gulls breeding, Little Terns nesting, and autumn rarities — squeezed between a container terminal and the suburbs of Liverpool.",
+    href: "/nature/leighton-moss-rspb",
+    name: "Leighton Moss RSPB",
+    tag: "RSPB · Entry charge · Silverdale",
+    desc: "Bittern, marsh harrier, bearded tit. The largest reedbed in north-west England. A proper day out.",
   },
   {
-    href: "/nature/sefton-coast",
-    name: "The Sefton Coast",
+    href: "/nature/ullswater",
+    name: "Ullswater",
     tag: "Overview",
-    desc: "Geography, habitats and how all the reserves fit together along the 22-mile Sefton Coast.",
+    desc: "Red deer, goldeneye, the Martindale valley. The second largest lake in the Lake District. Wildlife and landscape.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function NaturePage() {
     <div className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="text-3xl font-bold text-[var(--forest)] mb-2">Nature Reserves</h1>
       <p className="text-[var(--slate)] mb-8 max-w-2xl">
-        The Sefton Coast has some of the best wildlife sites in the North West — from RSPB managed lagoons to internationally designated sand dunes. Here&apos;s where to go and what to see.
+        The Lake District has some of the best wildlife sites in England — from RSPB osprey reserves to ancient woodland. Here&apos;s where to go and what to see.
       </p>
       <div className="grid gap-6 md:grid-cols-2">
         {reserves.map(({ href, name, tag, desc }) => (
@@ -72,7 +72,7 @@ export default function NaturePage() {
         >
           <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-1">Guide</p>
           <h2 className="text-xl font-semibold text-[var(--forest)] mb-2">Birdwatching guide</h2>
-          <p className="text-[var(--slate)] text-sm leading-relaxed">Best spots, seasons and kit for the Sefton Coast.</p>
+          <p className="text-[var(--slate)] text-sm leading-relaxed">Best spots, seasons and kit for the Lake District.</p>
         </Link>
         <Link
           href="/seasonal"
@@ -80,7 +80,7 @@ export default function NaturePage() {
         >
           <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-1">Guide</p>
           <h2 className="text-xl font-semibold text-[var(--forest)] mb-2">Seasonal guides</h2>
-          <p className="text-[var(--slate)] text-sm leading-relaxed">Pink-footed geese, waders, migration and what to see when.</p>
+          <p className="text-[var(--slate)] text-sm leading-relaxed">Ospreys, red deer rut, red squirrels and what to see when.</p>
         </Link>
       </div>
     </div>

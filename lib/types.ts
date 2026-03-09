@@ -32,12 +32,12 @@ export interface Species {
   seasonalPresence: string;
   bestTimeOfDay?: string;
   whereToSee: string;
-  /** Short primary location for meta titles e.g. "Marshside RSPB", "Formby Beach" */
+  /** Short primary location for meta titles e.g. "RSPB Haweswater", "Grizedale Forest" */
   shortLocation?: string;
 
   // Population
   ukPopulation?: string;
-  seftonPopulation?: string;
+  lakesPopulation?: string;
 
   // Ecology
   habitat?: string[];

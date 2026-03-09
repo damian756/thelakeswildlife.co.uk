@@ -14,8 +14,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "seftoncoastwildlife.co.uk" }],
-        destination: "https://www.seftoncoastwildlife.co.uk/:path*",
+        has: [{ type: "host", value: "thelakeswildlife.co.uk" }],
+        destination: "https://www.thelakeswildlife.co.uk/:path*",
         permanent: true,
       },
     ];

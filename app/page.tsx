@@ -6,16 +6,16 @@ import { getWikipediaImage } from "@/lib/wikipedia";
 import { BLOG_POSTS } from "@/content/blog/posts";
 import { PhotoGallery } from "@/components/PhotoGallery";
 
-const title = "Sefton Coast Wildlife — Birds, Nature & Wildlife Guide";
+const title = "The Lakes Wildlife — Birds, Nature & Wildlife in the Lake District";
 const description =
-  "Independent guide to wildlife on the Sefton Coast — Marshside RSPB, bird species database, insects, plants and mammals from Southport to Formby.";
-const url = "https://www.seftoncoastwildlife.co.uk";
+  "Independent guide to wildlife in the Lake District — RSPB Haweswater, ospreys, red deer, red squirrels, and a database of birds, insects, plants and mammals.";
+const url = "https://www.thelakeswildlife.co.uk";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -24,29 +24,28 @@ const orgJsonLd = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://www.seftoncoastwildlife.co.uk/#website",
-      url: "https://www.seftoncoastwildlife.co.uk",
-      name: "Sefton Coast Wildlife",
-      description: "Independent guide to wildlife on the Sefton Coast — birds, insects, plants and mammals from Southport to Formby.",
-      publisher: { "@id": "https://www.seftoncoastwildlife.co.uk/#organization" },
+      "@id": "https://www.thelakeswildlife.co.uk/#website",
+      url: "https://www.thelakeswildlife.co.uk",
+      name: "The Lakes Wildlife",
+      description: "Independent guide to wildlife in the Lake District — birds, insects, plants and mammals.",
+      publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
       inLanguage: "en-GB",
     },
     {
       "@type": "Organization",
-      "@id": "https://www.seftoncoastwildlife.co.uk/#organization",
-      name: "Sefton Coast Wildlife",
-      url: "https://www.seftoncoastwildlife.co.uk",
+      "@id": "https://www.thelakeswildlife.co.uk/#organization",
+      name: "The Lakes Wildlife",
+      url: "https://www.thelakeswildlife.co.uk",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.seftoncoastwildlife.co.uk/og-default.png",
+        url: "https://www.thelakeswildlife.co.uk/og-default.png",
         width: 1200,
         height: 630,
       },
       sameAs: [
-        "https://www.southportguide.co.uk",
-        "https://www.formbyguide.co.uk",
-        "https://www.seftonlinks.com",
-        "https://seftoncoast.network",
+        "https://www.thelakesguide.co.uk",
+        "https://www.hikethelakes.com",
+        "https://thelakes.network",
         "https://www.linkedin.com/company/churchtownmedia",
         "https://churchtownmedia.co.uk",
       ],
@@ -96,14 +95,14 @@ export default async function HomePage() {
       href: "/plants",
       label: "Plants",
       count: plantCount,
-      desc: "Saltmarsh and dune flora",
+      desc: "Upland and moorland flora",
       localImage: "/images/species/plants/sea-holly.jpg",
     },
     {
       href: "/mammals",
       label: "Mammals",
       count: mammalCount,
-      desc: "Including red squirrels at Formby",
+      desc: "Including red squirrels at Grizedale",
       localImage: "/images/species/mammals/red-squirrel.jpg",
     },
   ];
@@ -121,22 +120,22 @@ export default async function HomePage() {
           {/* Left panel */}
           <div className="bg-[var(--forest)] flex flex-col justify-center px-8 md:px-14 py-16 lg:py-20 relative z-10">
             <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-4">
-              Marshside · Ainsdale · Formby
+              Haweswater · Grizedale · Martindale
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Wildlife on the<br />
-              <span className="text-[var(--gold)]">Sefton Coast.</span>
+              Wildlife in the<br />
+              <span className="text-[var(--gold)]">Lake District.</span>
             </h1>
             <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-lg">
               {totalCount}+ species recorded. An independent guide to the birds, insects, plants
-              and mammals of the marshes, reserves and coastline from Southport to Formby.
+              and mammals of the Lake District.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/nature/marshside-rspb"
+                href="/nature/haweswater-rspb"
                 className="rounded-lg bg-[var(--gold)] px-6 py-3 text-sm font-semibold text-[var(--forest)] hover:opacity-90 transition"
               >
-                Marshside RSPB →
+                RSPB Haweswater →
               </Link>
               <Link
                 href="/birds"
@@ -150,8 +149,8 @@ export default async function HomePage() {
           {/* Right panel — hero image */}
           <div className="relative min-h-[300px] lg:min-h-0 overflow-hidden bg-[var(--forest)]">
             <Image
-              src="/images/species/birds/pink-footed-goose.jpg"
-              alt="Pink-footed Geese in flight over the Sefton Coast"
+              src="/images/species/birds/osprey.jpg"
+              alt="Osprey in flight over the Lake District"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover object-center"
@@ -177,13 +176,13 @@ export default async function HomePage() {
               <strong className="text-[var(--forest)] font-bold">{totalCount}+</strong> species recorded
             </span>
             <span className="flex items-center gap-2">
-              <strong className="text-[var(--forest)] font-bold">80,000+</strong> Pink-footed Geese (peak winter)
+              <strong className="text-[var(--forest)] font-bold">Ospreys</strong> at RSPB Haweswater
             </span>
             <span className="flex items-center gap-2">
-              <strong className="text-[var(--forest)] font-bold">Free entry</strong> to Marshside RSPB
+              <strong className="text-[var(--forest)] font-bold">Free entry</strong> to RSPB Haweswater
             </span>
             <span className="flex items-center gap-2">
-              <strong className="text-[var(--forest)] font-bold">67km</strong> of protected coastline
+              <strong className="text-[var(--forest)] font-bold">214</strong> Wainwright fells
             </span>
           </div>
         </div>
@@ -198,7 +197,7 @@ export default async function HomePage() {
           What lives here
         </h2>
         <p className="text-[var(--slate)] max-w-2xl mb-8 leading-relaxed">
-          From Pink-footed Geese arriving from Iceland in October to Red Squirrels in the Formby pinewoods — the Sefton Coast holds some of the most important wildlife in northwest England.
+          From ospreys at RSPB Haweswater to red deer in Martindale and red squirrels in Grizedale, the Lake District holds some of the most important wildlife in England.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {speciesCategories.map(({ href, label, count, desc, localImage }) => (
@@ -243,27 +242,27 @@ export default async function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
-                href: "/nature/marshside-rspb",
-                title: "Marshside RSPB",
-                desc: "Free entry. Managed lagoons, Avocets, and 80,000+ Pink-footed Geese in winter. The best birdwatching in the North West.",
+                href: "/nature/haweswater-rspb",
+                title: "RSPB Haweswater",
+                desc: "Ospreys, goldeneye, red deer. The flagship Lake District wildlife site. Get there early at weekends.",
                 tag: "Reserve guide",
               },
               {
-                href: "/nature/sefton-coast",
-                title: "The Sefton Coast",
-                desc: "67km of dunes, slacks, pinewoods and saltmarsh — one of England's most significant coastal wildlife habitats.",
-                tag: "Habitat overview",
+                href: "/nature/grizedale-forest",
+                title: "Grizedale Forest",
+                desc: "Red squirrels, red deer, woodland birds. Miles of trails through Forestry England woodland.",
+                tag: "Reserve guide",
               },
               {
                 href: "/birdwatching-guide",
                 title: "Birdwatching Guide",
-                desc: "Best spots by season, what to bring, and how to get started — from a birder who has watched these marshes for decades.",
+                desc: "Best spots by season, what to bring, and how to get started.",
                 tag: "Practical guide",
               },
               {
                 href: "/seasonal",
                 title: "Seasonal Guides",
-                desc: "Pink-footed Geese, wader migration, breeding birds and winter wildfowl — when to come and what to expect.",
+                desc: "Osprey season, red deer rut, red squirrel watching, winter wildfowl. When to come and what to expect.",
                 tag: "4 guides",
               },
             ].map(({ href, title, desc, tag }) => (
@@ -286,6 +285,7 @@ export default async function HomePage() {
       </section>
 
       {/* ── BLOG ─────────────────────────────────────────────── */}
+      {recentPosts.length > 0 && (
       <section className="mx-auto max-w-6xl px-4 py-14">
         <div className="flex items-end justify-between mb-8">
           <div>
@@ -346,6 +346,7 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
+      )}
 
       {/* ── GALLERY ──────────────────────────────────────────── */}
       <section className="bg-[var(--dune)] py-14">
@@ -353,15 +354,15 @@ export default async function HomePage() {
           <div className="flex items-end justify-between mb-6">
             <div>
               <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
-                From the coast
+                From the fells
               </p>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mb-1">
-                Photos from the Sefton Coast
+                Photos from the Lake District
               </h2>
               <p className="text-[var(--slate)] text-sm">Real shots. No stock, no AI. Click any photo to enlarge.</p>
             </div>
             <Link
-              href="/nature/marshside-rspb"
+              href="/nature/haweswater-rspb"
               className="text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition hidden sm:block"
             >
               Reserve guide →
@@ -369,28 +370,16 @@ export default async function HomePage() {
           </div>
           <PhotoGallery
             photos={[
-              { src: "/images/reserves/marshside/hero-coastal-reflection.jpg", alt: "Tidal pool reflection on the Marshside coastal path", caption: "The coastal saltmarsh path at Marshside — sky reflected in a tidal pool." },
-              { src: "/images/blog/beachcombing/barrel-jellyfish-dog-ainsdale-beach.webp", alt: "Barrel jellyfish washed up on Ainsdale Beach with a dog investigating", caption: "A barrel jellyfish on Ainsdale beach — one of the largest species found on the Sefton Coast." },
-              { src: "/images/reserves/marshside/nels-hide-lifestyle.jpg", alt: "Birdwatcher in Nel's Hide with flask and telephoto lens", caption: "Nel's Hide — bring a flask. No café on site." },
-              { src: "/images/blog/beachcombing/compass-jellyfish-closeup-ainsdale.webp", alt: "Compass jellyfish close-up on Ainsdale Beach, Sefton Coast", caption: "Compass jellyfish — named for the brown markings radiating from the centre." },
-              { src: "/images/reserves/marshside/coastal-path-walk.jpg", alt: "Dog walker on the Marshside coastal saltmarsh path", caption: "The coastal path looking north — big estuary sky, flat marsh." },
-              { src: "/images/blog/beachcombing/mermaids-purse-held-hand-ainsdale.webp", alt: "A mermaid's purse held in a hand on Ainsdale Beach", caption: "A mermaid's purse — the empty egg case of a small-spotted catshark." },
-              { src: "/images/reserves/marshside/dog-in-water.jpg", alt: "Black Labrador in a tidal pool on the Marshside coastal path", caption: "Dogs love this path. Keep them on leads near the saltmarsh." },
-              { src: "/images/blog/beachcombing/jellyfish-iridescent-ainsdale.webp", alt: "Iridescent jellyfish on the tideline at Ainsdale Beach", caption: "Iridescent colouring on a jellyfish at the Ainsdale tideline — most vivid when freshly stranded." },
-              { src: "/images/reserves/marshside/nels-hide-exterior.jpg", alt: "Nel's Hide exterior — RSPB Marshside", caption: "Nel's Hide from the reserve path — corrugated metal, wooden decking." },
-              { src: "/images/blog/beachcombing/sea-spurge-ainsdale-dunes.webp", alt: "Sea spurge growing in Ainsdale sand dunes, Sefton Coast", caption: "Sea spurge on the Ainsdale dunes — a protected plant of the Sefton Coast SSSI." },
-              { src: "/images/reserves/marshside/nels-hide-interior.jpg", alt: "Inside Nel's Hide — viewing shelf and windows over the marsh", caption: "Inside Nel's Hide — blue chairs, viewing shelf, windows over the scrape." },
-              { src: "/images/blog/beachcombing/whelk-egg-mass-ainsdale-beach.webp", alt: "Whelk egg mass washed up on Ainsdale Beach", caption: "Whelk egg mass on the Ainsdale tideline — looks like a clump of bubble wrap." },
-              { src: "/images/reserves/marshside/coastal-driftwood.jpg", alt: "Driftwood on the Marshside coastal strandline", caption: "Driftwood on the strandline — Ribble Estuary brings in plenty." },
-              { src: "/images/blog/beachcombing/compass-jellyfish-dogprints-ainsdale.webp", alt: "Compass jellyfish surrounded by dog paw prints on Ainsdale Beach", caption: "Compass jellyfish with dog prints on the wet sand at Ainsdale." },
-              { src: "/images/reserves/marshside/coastal-timber-shell.jpg", alt: "Old sea-defence timber on the Marshside foreshore", caption: "Barnacle-encrusted timber — remnants of old sea defences." },
-              { src: "/images/reserves/marshside/memorial-bench-plaque.jpg", alt: "Memorial plaque for Stan and Peggy Scott, Marshside RSPB", caption: "In Memory of Stan and Peggy Scott — Founder Members, North Cheshire Group RSPB 1976–1999." },
-              { src: "/images/blog/beachcombing/sea-spurge-closeup-ainsdale.webp", alt: "Sea spurge plant close-up in Ainsdale dunes", caption: "Sea spurge close-up — yellow-green flowers, fleshy leaves. Toxic sap. Do not touch." },
-              { src: "/images/reserves/marshside/junction-viewpoint-bench.jpg", alt: "Bench at the Junction Viewpoint, Marshside RSPB", caption: "Junction Viewpoint bench — looking out over the flooded winter marsh." },
+              { src: "/images/species/birds/osprey.jpg", alt: "Osprey in flight over the Lake District", caption: "Osprey at RSPB Haweswater. The reintroduction has been a success." },
+              { src: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel in Grizedale Forest", caption: "Red squirrel in Grizedale. One of the last strongholds in England." },
+              { src: "/images/species/birds/dunlin.jpg", alt: "Dunlin wader in the Lake District", caption: "Dunlin and other waders at Leighton Moss and the Solway." },
+              { src: "/images/species/plants/sea-holly.jpg", alt: "Upland flora in the Lake District", caption: "Upland flora. The fells hold rare plants in the right habitats." },
+              { src: "/images/species/insects/six-spot-burnet-moth.jpg", alt: "Six-spot burnet moth on heather", caption: "Six-spot burnet moth. Common on heather moorland in summer." },
+              { src: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel in woodland", caption: "Red squirrels at Grizedale and Foulshaw Moss. Go early for the best chance." },
             ]}
           />
           <div className="mt-5 sm:hidden text-center">
-            <Link href="/nature/marshside-rspb" className="text-sm text-[var(--marsh)] font-medium">Reserve guide →</Link>
+            <Link href="/nature/haweswater-rspb" className="text-sm text-[var(--marsh)] font-medium">Reserve guide →</Link>
           </div>
         </div>
       </section>
@@ -399,17 +388,16 @@ export default async function HomePage() {
       <section className="bg-[var(--forest)] text-white py-10">
         <div className="mx-auto max-w-6xl px-4">
           <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-2">
-            Sefton Coast Network
+            The Lakes Network
           </p>
           <p className="text-white/80 text-sm max-w-2xl mb-5">
-            Also from Churchtown Media — local guides covering the wider Sefton Coast.
+            Three guides covering the Lake District. Wildlife, walks, villages and accommodation.
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
             {[
-              { href: "https://www.southportguide.co.uk", label: "SouthportGuide" },
-              { href: "https://www.formbyguide.co.uk", label: "FormbyGuide" },
-              { href: "https://www.seftonlinks.com", label: "SeftonLinks" },
-              { href: "https://seftoncoast.network", label: "SeftonCoast.network" },
+              { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide" },
+              { href: "https://www.hikethelakes.com", label: "Hike The Lakes" },
+              { href: "https://thelakes.network", label: "TheLakes.network" },
             ].map(({ href, label }) => (
               <a
                 key={href}

@@ -1,45 +1,45 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const title = "Seasonal Wildlife Guides — Sefton Coast";
-const description = "What to see when on the Sefton Coast — pink-footed geese, wader migration, breeding birds and winter wildfowl.";
-const url = "https://www.seftoncoastwildlife.co.uk/seasonal";
+const title = "Seasonal Wildlife Guides — Lake District";
+const description = "What to see when in the Lake District — ospreys, red deer rut, red squirrels and winter wildfowl.";
+const url = "https://www.thelakeswildlife.co.uk/seasonal";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
   twitter: { card: "summary_large_image", title, description },
 };
 
 const seasons = [
   {
-    slug: "pink-footed-geese",
-    title: "Pink-footed Geese",
-    period: "October – March",
-    desc: "Up to 80,000 geese arrive from Iceland each autumn — one of the great wildlife spectacles of northern England.",
+    slug: "osprey-season",
+    title: "Osprey Season",
+    period: "April – August",
+    desc: "Ospreys return from West Africa to breed at RSPB Haweswater and Foulshaw Moss. Get there before 10am for a spot at the hide.",
     tag: "Peak season",
   },
   {
-    slug: "wader-migration",
-    title: "Wader Migration",
-    period: "Spring & Autumn",
-    desc: "Dunlin, Curlew Sandpiper, Little Stint and Black-tailed Godwit — the scrapes fill with birds that have crossed continents.",
-    tag: "April–May & Jul–Oct",
+    slug: "red-deer-rut",
+    title: "Red Deer Rut",
+    period: "October",
+    desc: "Martindale and the eastern fells. Dawn or dusk. You'll hear the stags roaring before you see them.",
+    tag: "October only",
   },
   {
-    slug: "breeding-birds",
-    title: "Breeding Birds",
-    period: "April – July",
-    desc: "Avocets on the Marshside scrapes, Little Terns at Ainsdale, Sedge Warblers and Reed Buntings on the marsh edge.",
-    tag: "Nesting season",
+    slug: "red-squirrel-watching",
+    title: "Red Squirrel Watching",
+    period: "Year-round",
+    desc: "Grizedale Forest and Whinlatter. The visitor centre feeders. Morning is best. One of England's strongholds.",
+    tag: "Best in morning",
   },
   {
     slug: "winter-wildfowl",
     title: "Winter Wildfowl",
     period: "November – February",
-    desc: "Teal, Wigeon, Pintail and Shoveler pack the lagoons. Short-eared Owls quarter the saltmarsh at dusk.",
+    desc: "Goldeneye, tufted duck and wigeon on Ullswater and Windermere. The big lakes hold good numbers.",
     tag: "Winter guide",
   },
 ];
@@ -60,7 +60,7 @@ export default function SeasonalPage() {
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">Seasonal guides</h1>
           <p className="text-white/70 max-w-2xl leading-relaxed">
-            When to visit the Sefton Coast for specific wildlife — from the spectacle of 80,000 Pink-footed Geese to spring wader passage and summer breeders.
+            When to visit the Lake District for specific wildlife — from ospreys at Haweswater to the red deer rut in Martindale.
           </p>
         </div>
       </div>

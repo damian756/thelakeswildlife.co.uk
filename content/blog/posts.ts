@@ -27,27 +27,29 @@ export interface BlogPost {
 export const BLOG_CATEGORIES: Record<BlogCategory, { label: string; description: string }> = {
   conservation: {
     label: "Conservation",
-    description: "The issues, the work and the numbers — what's being done to protect the Sefton Coast.",
+    description: "The issues, the work and the numbers. What's being done to protect Lake District wildlife.",
   },
   "species-spotlight": {
     label: "Species Spotlights",
-    description: "A closer look at individual species — their ecology, behaviour and where to find them.",
+    description: "A closer look at individual species. Their ecology, behaviour and where to find them.",
   },
   "seasonal-watching": {
     label: "Seasonal Watching",
-    description: "What to look for each month — migration, breeding, winter arrivals.",
+    description: "What to look for each month. Migration, breeding, winter arrivals.",
   },
   "habitat-guides": {
     label: "Habitat Guides",
-    description: "The dunes, marshes, pinewoods and beach — understanding what each habitat holds.",
+    description: "The fells, lakes, woodland and moorland. Understanding what each habitat holds.",
   },
   photography: {
     label: "Wildlife Photography",
-    description: "Practical tips for photographing birds and wildlife on the Sefton Coast.",
+    description: "Practical tips for photographing birds and wildlife in the Lake District.",
   },
 };
 
-export const BLOG_POSTS: BlogPost[] = [
+export const BLOG_POSTS: BlogPost[] = [];
+/* Placeholder: add Lakes-specific blog posts when ready
+[
   {
     slug: "natterjack-toad-sefton-coast",
     category: "conservation",
@@ -560,6 +562,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["jellyfish", "barrel jellyfish", "compass jellyfish", "Ainsdale Beach", "Sefton Coast", "beachcombing", "marine wildlife"],
   },
 ];
+*/
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);

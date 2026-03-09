@@ -2,7 +2,7 @@ import { getAllSlugs } from "@/lib/species";
 import { BLOG_POSTS } from "@/content/blog/posts";
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://www.seftoncoastwildlife.co.uk";
+const baseUrl = "https://www.thelakeswildlife.co.uk";
 
 /**
  * Deterministic staggered date for species pages.
@@ -49,16 +49,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/plants`, lastModified: new Date("2026-02-15"), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/mammals`, lastModified: new Date("2026-02-12"), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/nature`, lastModified: new Date("2026-02-10"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/nature/marshside-rspb`, lastModified: new Date("2026-02-08"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/nature/ainsdale-sand-dunes`, lastModified: new Date("2026-02-05"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/nature/martin-mere`, lastModified: new Date("2026-01-28"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/nature/seaforth-nature-reserve`, lastModified: new Date("2026-01-25"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/nature/sefton-coast`, lastModified: new Date("2026-01-20"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/nature/haweswater-rspb`, lastModified: new Date("2026-02-08"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/nature/grizedale-forest`, lastModified: new Date("2026-02-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/nature/foulshaw-moss`, lastModified: new Date("2026-01-28"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/nature/leighton-moss-rspb`, lastModified: new Date("2026-01-25"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/nature/ullswater`, lastModified: new Date("2026-01-20"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/birdwatching-guide`, lastModified: new Date("2026-02-22"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/seasonal`, lastModified: new Date("2026-02-01"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/seasonal/pink-footed-geese`, lastModified: new Date("2026-01-15"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/seasonal/wader-migration`, lastModified: new Date("2026-01-18"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/seasonal/breeding-birds`, lastModified: new Date("2026-01-22"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/seasonal/osprey-season`, lastModified: new Date("2026-01-15"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/seasonal/red-deer-rut`, lastModified: new Date("2026-01-18"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/seasonal/red-squirrel-watching`, lastModified: new Date("2026-01-22"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/seasonal/winter-wildfowl`, lastModified: new Date("2026-01-10"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/blog`, lastModified: new Date("2026-03-05"), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified: new Date("2025-12-01"), changeFrequency: "yearly", priority: 0.4 },

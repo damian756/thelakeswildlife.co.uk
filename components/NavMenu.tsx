@@ -9,14 +9,14 @@ const nav = [
   { label: "Plants", href: "/plants" },
   { label: "Mammals & Wildlife", href: "/mammals" },
   {
-    label: "Nature & Coast",
+    label: "Nature",
     href: "/nature",
     children: [
-      { label: "Marshside RSPB", href: "/nature/marshside-rspb" },
-      { label: "Ainsdale Sand Dunes NNR", href: "/nature/ainsdale-sand-dunes" },
-      { label: "WWT Martin Mere", href: "/nature/martin-mere" },
-      { label: "Seaforth Nature Reserve", href: "/nature/seaforth-nature-reserve" },
-      { label: "The Sefton Coast", href: "/nature/sefton-coast" },
+      { label: "RSPB Haweswater", href: "/nature/haweswater-rspb" },
+      { label: "Grizedale Forest", href: "/nature/grizedale-forest" },
+      { label: "Foulshaw Moss", href: "/nature/foulshaw-moss" },
+      { label: "Leighton Moss RSPB", href: "/nature/leighton-moss-rspb" },
+      { label: "Ullswater", href: "/nature/ullswater" },
       { label: "Birdwatching Guide", href: "/birdwatching-guide" },
       { label: "Seasonal Guides", href: "/seasonal" },
     ],
@@ -24,13 +24,13 @@ const nav = [
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
   {
-    label: "In Southport",
-    href: "https://www.southportguide.co.uk",
+    label: "In the Lakes",
+    href: "https://www.thelakesguide.co.uk",
     children: [
-      { label: "🐾 Dog-friendly pubs",      href: "https://www.southportguide.co.uk/collections/dog-friendly-pubs-southport" },
-      { label: "☕ Dog-friendly cafés",      href: "https://www.southportguide.co.uk/collections/dog-friendly-cafes-southport" },
-      { label: "🎟️ Free things to do",       href: "https://www.southportguide.co.uk/collections/free-things-to-do-southport" },
-      { label: "👨‍👩‍👧‍👦 Family-friendly days",  href: "https://www.southportguide.co.uk/collections/family-friendly-things-to-do-southport" },
+      { label: "Walks & Hiking", href: "https://www.thelakesguide.co.uk/walks" },
+      { label: "Villages", href: "https://www.thelakesguide.co.uk/villages" },
+      { label: "Restaurants", href: "https://www.thelakesguide.co.uk/restaurants" },
+      { label: "Accommodation", href: "https://www.thelakesguide.co.uk/accommodation" },
     ],
   },
 ];
@@ -55,7 +55,7 @@ export function NavMenu() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group" onClick={() => setMobileOpen(false)}>
           <span className="text-base sm:text-lg font-semibold text-[var(--forest)] group-hover:text-[var(--marsh)] transition leading-none">
-            Sefton Coast{" "}
+            The Lakes{" "}
             <span className="text-[var(--marsh)]">Wildlife</span>
           </span>
         </Link>
@@ -113,10 +113,10 @@ export function NavMenu() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="/nature/marshside-rspb"
+            href="/nature/haweswater-rspb"
             className="rounded-lg bg-[var(--forest)] px-4 py-2 text-sm font-medium text-white hover:bg-[var(--marsh)] transition"
           >
-            Visit Marshside
+            Visit Haweswater
           </Link>
         </div>
 
@@ -181,11 +181,11 @@ export function NavMenu() {
               </div>
             ))}
             <Link
-              href="/nature/marshside-rspb"
+              href="/nature/haweswater-rspb"
               onClick={() => setMobileOpen(false)}
               className="mt-2 block text-center rounded-lg bg-[var(--forest)] px-4 py-2.5 text-sm font-medium text-white hover:bg-[var(--marsh)] transition"
             >
-              Visit Marshside
+              Visit Haweswater
             </Link>
           </nav>
         </div>

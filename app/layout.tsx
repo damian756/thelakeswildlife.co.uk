@@ -19,7 +19,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const BASE_URL = "https://www.seftoncoastwildlife.co.uk";
+const BASE_URL = "https://www.thelakeswildlife.co.uk";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -29,28 +29,28 @@ export const metadata: Metadata = {
     },
   },
   title: {
-    default: "Sefton Coast Wildlife — Birds, Nature & Wildlife on the Sefton Coast",
-    template: "%s | Sefton Coast Wildlife",
+    default: "The Lakes Wildlife — Birds, Nature & Wildlife in the Lake District",
+    template: "%s | The Lakes Wildlife",
   },
   description:
-    "Independent guide to wildlife on the Sefton Coast — Marshside RSPB Reserve, birdwatching, seasonal guides, and a database of birds, insects, plants and mammals.",
+    "Independent guide to wildlife in the Lake District — RSPB Haweswater, ospreys, red deer, red squirrels, and a database of birds, insects, plants and mammals.",
   openGraph: {
-    title: "Sefton Coast Wildlife",
-    description: "Birds, nature and wildlife on the Sefton Coast — Marshside, the marshes and beyond.",
-    url: "https://www.seftoncoastwildlife.co.uk",
-    siteName: "Sefton Coast Wildlife",
+    title: "The Lakes Wildlife",
+    description: "Birds, nature and wildlife in the Lake District — Haweswater, Grizedale and beyond.",
+    url: "https://www.thelakeswildlife.co.uk",
+    siteName: "The Lakes Wildlife",
     images: [
       {
-        url: `${BASE_URL}/images/species/birds/pink-footed-goose.jpg`,
+        url: `${BASE_URL}/images/species/birds/osprey.jpg`,
         width: 1200,
         height: 630,
-        alt: "Pink-footed Geese over the Sefton Coast",
+        alt: "Osprey at RSPB Haweswater, Lake District",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: [`${BASE_URL}/images/species/birds/pink-footed-goose.jpg`],
+    images: [`${BASE_URL}/images/species/birds/osprey.jpg`],
   },
   icons: {
     icon: [{ url: "/icon", sizes: "32x32", type: "image/png" }],

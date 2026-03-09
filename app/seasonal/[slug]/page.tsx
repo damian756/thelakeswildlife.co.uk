@@ -17,237 +17,79 @@ interface SeasonalPageData {
 }
 
 const seasonalPages: Record<string, SeasonalPageData> = {
-  "pink-footed-geese": {
-    title: "Pink-footed Geese at Marshside",
-    period: "October – March",
-    metaDescription:
-      "Pink-footed Geese on the Sefton Coast — when they arrive, where to see them, and how to get the best out of a winter visit to Marshside RSPB.",
-    heroWikipediaTitle: "Greater white-fronted goose",
-    heroAlt: "Geese flock in flight over the estuary",
-    intro:
-      "The Pink-footed Goose is the reason Marshside RSPB exists on most birders' lists. Every autumn, tens of thousands fly south from their Icelandic breeding grounds and settle on the Ribble Estuary and surrounding farmland. By November, there can be 80,000 or more in the area. It is one of the great wildlife spectacles in England — and most people have never heard of it.",
+  "osprey-season": {
+    title: "Osprey Season in the Lake District",
+    period: "April – August",
+    metaDescription: "When and where to see ospreys in the Lake District — RSPB Haweswater, Foulshaw Moss. Get there before 10am.",
+    heroWikipediaTitle: "Osprey",
+    heroAlt: "Osprey in flight over water",
+    intro: "Ospreys return to the Lake District from West Africa in March. By April they're on the nest. RSPB Haweswater and Foulshaw Moss are the main sites. Get there before 10am if you want a decent spot at the hide.",
     sections: [
-      {
-        heading: "When they arrive",
-        body: [
-          "The first skeins appear in mid-September, usually in small groups. Numbers build steadily through October and peak between late October and late November. The birds use the Ribble Estuary as a roost site and feed on the surrounding arable fields — sugar beet tops, winter stubble, potato fields.",
-          "By December numbers often drop slightly as some birds move further south in hard weather. In mild winters, good numbers stay into March. The last birds tend to leave for Iceland in late March or early April.",
-        ],
-      },
-      {
-        heading: "Where to see them",
-        body: [
-          "The sea wall at Marshside RSPB (PR9 9PH) is the best viewpoint. The geese roost on the estuary and flight out to the fields at dawn — stand on the wall at first light in October and you'll hear them before you see them. The calling builds from a murmur to something that fills the sky.",
-          "Evening flighting is equally good — watch from the same spot an hour before dusk as the birds come back onto the estuary. In the right light it's unforgettable.",
-          "The fields around Southport and Crossens hold feeding flocks during the day. You can often see birds from the road — look for large brown geese in ploughed or stubble fields, usually in flocks of hundreds.",
-        ],
-      },
-      {
-        heading: "Identification",
-        body: [
-          "Pink-footed Geese are medium-sized, brown-grey geese with a short neck and round head. The key features are the pink bill with a dark base, and pink legs — distinctive from the larger Greylag (orange-pink bill, orange legs) and the Canada Goose (entirely different shape and colouring).",
-          "In flight, the wings show a blue-grey forewing panel. The call is a nasal 'wink-wink' or 'ung-ung' — once you know it, you'll hear it from a considerable distance.",
-        ],
-      },
-      {
-        heading: "Photography tips",
-        body: [
-          "The best light for photography is morning, with the low sun behind you on the sea wall. The birds are backlit in the evening but evening flighting can still produce dramatic silhouette shots.",
-          "A 400mm lens is a minimum for flight shots; 500-600mm for reasonable frame-filling. Mirrorless cameras with fast autofocus tracking have made goose flight photography much more accessible. That said, even a decent phone can capture the spectacle of thousands of birds in the sky.",
-          "Don't push towards the flocks on the fields. They'll flush, which stresses the birds and ruins the experience for other observers. The sea wall gives you everything you need.",
-        ],
-      },
+      { heading: "When they arrive", body: ["Birds return in March. Nesting starts in April. Chicks fledge in August. April to July is peak viewing."] },
+      { heading: "Where to go", body: ["RSPB Haweswater is the flagship site. Foulshaw Moss near Grange-over-Sands has a viewing platform. Bassenthwaite has a nest with live webcam."] },
     ],
-    practicalTips: [
-      "Arrive before dawn for morning flighting — the spectacle starts at first light",
-      "Evening flighting: be in position an hour before dusk",
-      "Dress warmly — the sea wall is exposed and you may be standing still for a while",
-      "Bring a scope if you have one — useful for picking through the flocks",
-      "Peak viewing: late October to late November",
-      "Postcode for Marshside: PR9 9PH",
-    ],
+    practicalTips: ["Get there before 10am", "Take binoculars", "April to July is best", "RSPB Haweswater postcode: CA10 2LX"],
     relatedLinks: [
-      { href: "/nature/marshside-rspb", label: "Marshside RSPB guide" },
-      { href: "/birds/pink-footed-goose", label: "Pink-footed Goose species page" },
-      { href: "/seasonal/winter-wildfowl", label: "Winter wildfowl guide" },
+      { href: "/nature/haweswater-rspb", label: "RSPB Haweswater guide" },
+      { href: "/birds/osprey", label: "Osprey species page" },
       { href: "/birdwatching-guide", label: "Birdwatching guide" },
     ],
   },
-
-  "wader-migration": {
-    title: "Wader Migration on the Sefton Coast",
-    period: "Spring (April–May) & Autumn (July–October)",
-    metaDescription:
-      "Wader migration on the Sefton Coast — when to go, what you'll see and how to identify the key species passing through Marshside RSPB each spring and autumn.",
-    heroWikipediaTitle: "Red knot",
-    heroAlt: "Red Knot flock on coastal mudflats during migration",
-    intro:
-      "The Sefton Coast sits on one of the main wader migration routes along the west coast of Britain. In spring and autumn, the managed scrapes at Marshside and Hesketh Out Marsh fill with birds that have flown extraordinary distances — some heading to the Arctic to breed, others returning from it. Dunlin, Knot, Bar-tailed Godwit, Little Stint, Curlew Sandpiper. On a good autumn morning, the list can be remarkable.",
+  "red-deer-rut": {
+    title: "Red Deer Rut in the Lake District",
+    period: "October",
+    metaDescription: "When and where to see the red deer rut in the Lake District. Martindale. Dawn or dusk.",
+    heroWikipediaTitle: "Red deer",
+    heroAlt: "Red deer stag during rut",
+    intro: "The red deer rut in October. Martindale is the place. Dawn or dusk. You'll hear the stags roaring before you see them. Keep your distance. They're wild.",
     sections: [
-      {
-        heading: "Spring passage (April – May)",
-        body: [
-          "Spring wader passage on the Sefton Coast is less dramatic than autumn but can produce good birds. Dunlin in breeding plumage arrive in April — the black belly patch and rusty back are a dramatic change from the grey winter birds. Ringed Plovers pass through in numbers. Whimbrel appear in late April and May, usually on the saltmarsh.",
-          "The rarer spring waders require some luck — Temminck's Stint, Broad-billed Sandpiper and Dotterel have all been recorded. Black-tailed Godwit numbers peak in late April.",
-        ],
-      },
-      {
-        heading: "Autumn passage (July – October)",
-        body: [
-          "Autumn passage is when Marshside is at its wader best. Failed breeders start returning in late June and numbers build rapidly through July. By August the scrapes can have impressive counts: 500+ Dunlin is not unusual, with smaller numbers of Ringed Plover, Ruff, Knot and the more sought-after species.",
-          "Late August into September is prime time for scarcer waders. Little Stint and Curlew Sandpiper both appear regularly in good autumns — watch for them among the Dunlin flocks on the scrape edges. A Curlew Sandpiper in fresh plumage, all brick-red above, is one of the better-looking waders you'll see on the coast.",
-          "Greenshank, Green Sandpiper and Common Sandpiper pass through from July. Black-tailed Godwit can arrive in large numbers in August — flocks of several hundred are regular. The odd Spotted Redshank or Marsh Sandpiper is possible.",
-        ],
-      },
-      {
-        heading: "Key species to look for",
-        body: [
-          "Dunlin — by far the most numerous wader, present almost year-round but peak passage July–October. Learn this one first — everything else is easier once you know your baseline.",
-          "Curlew Sandpiper — similar size to Dunlin but with a longer, drooped bill and white rump in flight. Fresh autumn adults are unmistakable in reddish-brown plumage.",
-          "Little Stint — tiny, shorter-billed than Dunlin. Juveniles in August–September are neat, scaly-backed birds. Usually a few per good autumn day.",
-          "Ruff — variable in size and plumage. The breeding-plumage males in May are extraordinary; autumn birds are plainer. Often with Black-tailed Godwit on the saltmarsh.",
-          "Spotted Redshank — slightly larger than Common Redshank, longer bill, more elegant. Breeding birds are almost entirely black. Usually in small numbers.",
-        ],
-      },
-      {
-        heading: "Viewing tips",
-        body: [
-          "The main hide at Marshside looks directly over the managed scrape — this is where most of the passage waders concentrate. Visit early morning for best light and least disturbance.",
-          "High tide pushes waders off the estuary mudflats and onto the scrapes — check tide times before you go. The two hours either side of high tide are usually the best.",
-          "Hesketh Out Marsh, a short drive north of Marshside, holds good wader numbers in autumn and is often quieter. Worth including on a wader day.",
-        ],
-      },
+      { heading: "When to go", body: ["October. Dawn or dusk. The stags are most active in the first and last hours of light."] },
+      { heading: "Where to go", body: ["Martindale is the stronghold. The valley is a designated refuge. Grizedale and Ullswater also hold red deer."] },
     ],
-    practicalTips: [
-      "Check the tide — high tide concentrates waders on the scrapes",
-      "Best times: early morning for light and quiet",
-      "Peak autumn passage: mid-August to mid-September",
-      "Bring a scope — distant wader identification requires magnification",
-      "The Collins Bird Guide wader plates are worth studying before you go",
-      "Marshside postcode: PR9 9PH · Hesketh Out Marsh: PR9 8DS",
-    ],
+    practicalTips: ["Dawn or dusk", "Martindale", "Keep your distance", "Join a guided walk if you want to get closer"],
     relatedLinks: [
-      { href: "/nature/marshside-rspb", label: "Marshside RSPB guide" },
-      { href: "/birds/dunlin", label: "Dunlin species page" },
-      { href: "/birds/curlew-sandpiper", label: "Curlew Sandpiper species page" },
+      { href: "/nature/ullswater", label: "Ullswater guide" },
+      { href: "/mammals/red-deer", label: "Red Deer species page" },
       { href: "/birdwatching-guide", label: "Birdwatching guide" },
     ],
   },
-
-  "breeding-birds": {
-    title: "Breeding Birds of the Sefton Coast",
-    period: "April – July",
-    metaDescription:
-      "Breeding birds on the Sefton Coast — Avocets at Marshside, Little Terns at Ainsdale, and what to look and listen for from April through July.",
-    heroWikipediaTitle: "Grey plover",
-    heroAlt: "Grey Plover in breeding plumage on coastal habitat",
-    intro:
-      "Spring and summer bring a different Sefton Coast. The winter geese have gone back to Iceland, but in their place come breeding Avocets on the Marshside scrapes, Little Terns on the Ainsdale beach, Sedge Warblers in the reedbed edge and Skylarks above the dunes. It's less dramatic than October geese but it requires more attention — and some of the breeding species here are genuinely rare.",
+  "red-squirrel-watching": {
+    title: "Red Squirrel Watching in the Lake District",
+    period: "Year-round",
+    metaDescription: "Where to see red squirrels in the Lake District. Grizedale Forest, Whinlatter. Morning is best.",
+    heroWikipediaTitle: "Red squirrel",
+    heroAlt: "Red squirrel in woodland",
+    intro: "Grizedale Forest is the place for red squirrels. The visitor centre has feeders. Whinlatter too. Go in the morning. They're used to people.",
     sections: [
-      {
-        heading: "Avocets at Marshside",
-        body: [
-          "Avocets began breeding at Marshside in the early 2000s as the RSPB managed the scrapes specifically for them. The colony now holds 15–25 pairs in most years. They arrive in March and eggs are usually laid by late April. Chicks hatch in May and the adults are ferociously defensive of the colony through June.",
-          "The sweeping, upturned bill and pied plumage make Avocets unmistakable. Watch them feeding in the shallows — the characteristic side-to-side sweep of the bill through the water. They were extinct as a British breeding bird for over a century before returning to the east coast in 1947. Their presence at Marshside is a direct result of managed habitat.",
-        ],
-      },
-      {
-        heading: "Little Terns at Ainsdale",
-        body: [
-          "The Little Tern colony at Ainsdale is one of the most important in England — typically 80–120 pairs in a good year. Little Terns arrive from West Africa in late April and begin nesting on the open beach in May. The nests are just scrapes in the sand, barely visible.",
-          "RSPB wardens manage the colony through the breeding season — electric fences keep foxes out, and volunteers help monitor nest success and discourage disturbance. Do not enter the fenced area. The birds have flown 4,000 miles to nest here.",
-          "Watch from the dune edge. The terns are constantly active — small, fast, with a distinctive hovering before plunge-diving. Their call is a sharp, persistent 'kik-kik'.",
-        ],
-      },
-      {
-        heading: "Marshside in spring",
-        body: [
-          "Alongside the Avocets, Marshside holds breeding Lapwing, Redshank and Yellow Wagtail. Sedge Warblers arrive in April and can be heard from the hide — a rapid, scratchy, energetic song from the reedbed edge. Reed Buntings breed in the taller vegetation.",
-          "Marsh Harriers are now regular over the reserve from April — usually one or two birds hunting the marsh edges. They have bred close by in recent years.",
-          "The peak for seeing the most species simultaneously is late May — early June. Breeding activity is at its height, summer migrants have arrived, and the scrapes still hold a few late-passage waders.",
-        ],
-      },
-      {
-        heading: "Woodland and dune species",
-        body: [
-          "The Formby pinewoods hold Goldcrest, Treecreeper, Coal Tit and occasional Crossbill. Woodcock rods at dusk in April and May — walk the woodland edge at last light. Spotted Flycatcher arrives in May and breeds in the older pinewood sections.",
-          "Stonechats are resident on the scrub edge at Ainsdale. Linnets and Yellowhammers breed in the dune scrub — both have declined nationally and the Sefton Coast remains a relative stronghold for both.",
-        ],
-      },
+      { heading: "Where to go", body: ["Grizedale visitor centre has feeders. Whinlatter has a red squirrel trail. Conifer woodland throughout the Lakes holds them."] },
+      { heading: "When to go", body: ["Morning. First few hours after dawn. They're most active then. Year-round."] },
     ],
-    practicalTips: [
-      "Visit Marshside in May to see Avocets with chicks",
-      "Little Tern colony at Ainsdale: respect the wardened area, view from the dune edge",
-      "Dawn and dusk are best for breeding activity — less foot traffic and more song",
-      "Keep dogs on leads near nesting areas — a dog flushing a tern nest can destroy it",
-      "Sedge Warblers at Marshside: listen for the fast, scratchy song from the reedbed edge",
-      "April–early July is the season — after mid-July breeding activity winds down quickly",
-    ],
+    practicalTips: ["Grizedale visitor centre", "Morning", "Whinlatter red squirrel trail", "Conifer woodland"],
     relatedLinks: [
-      { href: "/nature/marshside-rspb", label: "Marshside RSPB guide" },
-      { href: "/birds/avocet", label: "Avocet species page" },
-      { href: "/birds/little-tern", label: "Little Tern species page" },
+      { href: "/nature/grizedale-forest", label: "Grizedale Forest guide" },
+      { href: "/mammals/red-squirrel", label: "Red Squirrel species page" },
       { href: "/birdwatching-guide", label: "Birdwatching guide" },
     ],
   },
-
   "winter-wildfowl": {
-    title: "Winter Wildfowl on the Sefton Coast",
+    title: "Winter Wildfowl in the Lake District",
     period: "November – February",
-    metaDescription:
-      "Winter wildfowl at Marshside RSPB — Teal, Wigeon, Shoveler, Pintail and Goldeneye on the lagoons from November through February.",
-    heroWikipediaTitle: "Northern pintail",
-    heroAlt: "Northern Pintail pair — elegant winter wildfowl on the Marshside lagoons",
-    intro:
-      "While the Pink-footed Geese dominate the winter headlines at Marshside, the lagoons and scrapes hold a consistently good selection of wildfowl from November through February. Teal are usually present in the hundreds. Wigeon, Shoveler and Pintail are regular. Goldeneye and Smew turn up in cold weather. It's not showy in the same way as the goose flighting, but it rewards patience and a proper look.",
+    metaDescription: "Goldeneye, tufted duck and wigeon on the Lake District lakes. Ullswater, Windermere, Coniston.",
+    heroWikipediaTitle: "Common goldeneye",
+    heroAlt: "Goldeneye on lake",
+    intro: "The big lakes hold winter wildfowl. Ullswater, Windermere, Coniston. Goldeneye, tufted duck, wigeon. They dive. Watch for a few seconds and they'll go under.",
     sections: [
-      {
-        heading: "The regular species",
-        body: [
-          "Teal are the most numerous dabbling duck — typically 200–500 birds on the main lagoon from October. Small and fast in flight, they lift off suddenly and wheel in tight groups. The green eye-stripe and yellow undertail of the drake are good marks; females are brown and easily overlooked.",
-          "Wigeon arrive in October and numbers peak November–January. The rusty-brown head and yellow forehead of the drake is distinctive. They often graze on the saltmarsh in large flocks — the whistling call is one of the characteristic sounds of a winter marsh.",
-          "Shoveler — the spatulate bill identifies them at any distance. Usually a few dozen on the lagoon. They feed by sieving the water with the bill just submerged, moving slowly in circles.",
-          "Pintail are among the most elegant ducks. Long tail feathers on the drake, a clean chocolate-brown head against a white neck stripe. Numbers at Marshside fluctuate — ten birds is typical, occasional larger flocks in cold weather.",
-        ],
-      },
-      {
-        heading: "Cold weather movement",
-        body: [
-          "Hard winters bring birds down from the north and east. Smew — small, striking sawbill ducks — turn up on the lagoons in freezing weather. The males are white with black markings ('cracked ice'), females are grey-brown with a rusty cap. Any cold snap is worth a visit.",
-          "Goldeneye appear most winters in small numbers. Goosander are irregular but possible. Long-tailed Duck occasionally appears on the sea off Formby during easterly winds.",
-        ],
-      },
-      {
-        heading: "Diving ducks",
-        body: [
-          "Tufted Duck are year-round on the main lagoon, numbers increasing in winter. Pochard — the round-headed, red-eyed diving duck — can be present in reasonable numbers. Both species are easy to overlook but worth checking for the scarcer diving ducks mixed in.",
-          "The lagoon at Marshside is shallow and the diving ducks tend to concentrate where the water is deepest — usually the central area visible from the main hide.",
-        ],
-      },
-      {
-        heading: "Going beyond the ducks",
-        body: [
-          "Winter mornings at Marshside are rarely just about wildfowl. The saltmarsh holds Water Rail — you'll hear them more than see them, a squealing call from the vegetation edge. Jack Snipe are present through winter but require specific conditions to see — muddy areas in low sun, and patience.",
-          "Short-eared Owl hunts the marsh in winter, usually late afternoon. They're not guaranteed but a winter visit without scanning the marsh edge at dusk is a missed opportunity.",
-        ],
-      },
+      { heading: "Where to go", body: ["Ullswater, Windermere, Coniston. The larger lakes hold the best numbers. Goldeneye are the star."] },
+      { heading: "What to look for", body: ["Goldeneye dive for food. The male has a white face patch. Tufted duck and wigeon are also regular."] },
     ],
-    practicalTips: [
-      "Morning visits give the best light on the lagoon from the main hide",
-      "Cold spells bring unusual species — worth visiting after a hard frost",
-      "Wigeon can often be heard before you reach the hide — a whistling call from the marsh",
-      "Check the saltmarsh edge carefully for Jack Snipe and Water Rail",
-      "Late afternoon in January: scan for Short-eared Owl over the marsh",
-      "Postcode: PR9 9PH · Free entry",
-    ],
+    practicalTips: ["Winter", "Ullswater is reliable", "They dive", "Bring binoculars"],
     relatedLinks: [
-      { href: "/nature/marshside-rspb", label: "Marshside RSPB guide" },
-      { href: "/birds/teal", label: "Teal species page" },
-      { href: "/birds/wigeon", label: "Wigeon species page" },
-      { href: "/seasonal/pink-footed-geese", label: "Pink-footed Geese guide" },
+      { href: "/nature/ullswater", label: "Ullswater guide" },
+      { href: "/birds/goldeneye", label: "Goldeneye species page" },
       { href: "/birdwatching-guide", label: "Birdwatching guide" },
     ],
   },
+
 };
 
 /* ─── page component ─────────────────────────────────────── */
@@ -262,16 +104,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = seasonalPages[slug];
   if (!page) return {};
-  const url = `https://www.seftoncoastwildlife.co.uk/seasonal/${slug}`;
+  const url = `https://www.thelakeswildlife.co.uk/seasonal/${slug}`;
   return {
-    title: `${page.title} — Sefton Coast Wildlife`,
+    title: `${page.title} — The Lakes Wildlife`,
     description: page.metaDescription,
     alternates: { canonical: url },
     openGraph: {
-      title: `${page.title} — Sefton Coast Wildlife`,
+      title: `${page.title} — The Lakes Wildlife`,
       description: page.metaDescription,
       url,
-      siteName: "Sefton Coast Wildlife",
+      siteName: "The Lakes Wildlife",
       type: "article",
     },
     twitter: { card: "summary_large_image", title: page.title, description: page.metaDescription },
@@ -284,7 +126,7 @@ export default async function SeasonalSlugPage({ params }: Props) {
   const page = seasonalPages[slug];
   if (!page) notFound();
 
-  const url = `https://www.seftoncoastwildlife.co.uk/seasonal/${slug}`;
+  const url = `https://www.thelakeswildlife.co.uk/seasonal/${slug}`;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -294,11 +136,11 @@ export default async function SeasonalSlugPage({ params }: Props) {
     url,
     author: {
       "@type": "Person",
-      name: "Ed",
-      description: "Ed has been walking the Sefton Coast since the 1980s. Retired geography teacher. Still gets up at five.",
-      url: "https://www.seftoncoastwildlife.co.uk",
+      name: "Damian Roche",
+      description: "Damian walks the Lake District fells, watches the wildlife, and writes about what he finds. Ex-army, hiker, fisherman.",
+      url: "https://www.thelakeswildlife.co.uk",
     },
-    publisher: { "@type": "Organization", name: "Sefton Coast Wildlife", url: "https://www.seftoncoastwildlife.co.uk" },
+    publisher: { "@type": "Organization", name: "The Lakes Wildlife", url: "https://www.thelakeswildlife.co.uk" },
   };
 
   return (
@@ -350,9 +192,9 @@ export default async function SeasonalSlugPage({ params }: Props) {
         {/* Author bio */}
         <div className="p-5 rounded-xl bg-[var(--dune)] border border-[var(--foam)] mb-10">
           <p className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)] mb-1">About the author</p>
-          <p className="text-sm font-semibold text-[var(--forest)]">Ed</p>
+          <p className="text-sm font-semibold text-[var(--forest)]">Damian Roche</p>
           <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
-            Ed has been walking the Sefton Coast since the 1980s. He keeps a yearly bird tally, owns more waterproof jackets than he&apos;d care to admit, and has strong opinions about which hide has the best light in the morning. Retired geography teacher. Still gets up at five.
+            Damian walks the Lake District fells, watches the wildlife, and writes about what he finds. Ex-army, hiker, fisherman. Southport-based. Regular Lakes visitor for decades.
           </p>
         </div>
 
