@@ -303,17 +303,28 @@ export default async function SeasonalSlugPage({ params }: Props) {
 
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: page.title,
-    description: page.metaDescription,
-    url,
-    author: {
-      "@type": "Person",
-      name: "Damian Roche",
-      description: "Damian walks the Lake District fells, watches the wildlife, and writes about what he finds. Ex-army, hiker, fisherman.",
-      url: "https://www.thelakeswildlife.co.uk",
+    "@graph": [
+    {
+      "@type": "Article",
+      "@id": url + "#article",
+      headline: page.title,
+      description: page.metaDescription,
+      url,
+      mainEntityOfPage: url,
+      datePublished: "2024-04-01",
+      dateModified: "2025-03-01",
+      author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
+      publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
     },
-    publisher: { "@type": "Organization", name: "The Lakes Wildlife", url: "https://www.thelakeswildlife.co.uk" },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thelakeswildlife.co.uk" },
+        { "@type": "ListItem", position: 2, name: "Seasonal Guides", item: "https://www.thelakeswildlife.co.uk/seasonal" },
+        { "@type": "ListItem", position: 3, name: page.title, item: url },
+      ],
+    },
+    ],
   };
 
   return (

@@ -50,31 +50,36 @@ export default async function BlogPostPage({ params }: Props) {
 
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.metaDescription,
-    url,
-    datePublished: post.date,
-    author: {
-      "@type": "Person",
-      name: "Damian",
-      description:
-        "Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.",
-      url: "https://www.thelakeswildlife.co.uk",
+    "@graph": [
+    {
+      "@type": "Article",
+      "@id": url + "#article",
+      headline: post.title,
+      description: post.metaDescription,
+      url,
+      mainEntityOfPage: url,
+      datePublished: post.date,
+      dateModified: post.date,
+      author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
+      publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
+      keywords: post.tags.join(", "),
+      ...(heroSrc && {
+        image: {
+          "@type": "ImageObject",
+          url: heroSrc.startsWith("/") ? `https://www.thelakeswildlife.co.uk${heroSrc}` : heroSrc,
+          width: 800,
+        },
+      }),
     },
-    publisher: {
-      "@type": "Organization",
-      name: "The Lakes Wildlife",
-      url: "https://www.thelakeswildlife.co.uk",
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thelakeswildlife.co.uk" },
+        { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.thelakeswildlife.co.uk/blog" },
+        { "@type": "ListItem", position: 3, name: post.title, item: url },
+      ],
     },
-    keywords: post.tags.join(", "),
-    ...(heroSrc && {
-      image: {
-        "@type": "ImageObject",
-        url: heroSrc.startsWith("/") ? `https://www.thelakeswildlife.co.uk${heroSrc}` : heroSrc,
-        width: 800,
-      },
-    }),
+    ],
   };
 
   return (

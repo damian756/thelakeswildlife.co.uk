@@ -37,28 +37,29 @@ const faqs = [
   },
 ];
 
-const pageJsonLd = [
+const pageJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
   {
-    "@context": "https://schema.org",
     "@type": "Article",
+    "@id": url + "#article",
     headline: title,
     description,
     url,
-    author: {
-      "@type": "Person",
-      name: "Damian",
-      description:
-        "Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.",
-      url: "https://www.thelakeswildlife.co.uk",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "The Lakes Wildlife",
-      url: "https://www.thelakeswildlife.co.uk",
-    },
+    mainEntityOfPage: url,
+    datePublished: "2024-04-01",
+    dateModified: "2025-03-01",
+    author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
+    publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
   },
   {
-    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thelakeswildlife.co.uk" },
+      { "@type": "ListItem", position: 2, name: "Birdwatching Guide", item: url },
+    ],
+  },
+  {
     "@type": "FAQPage",
     mainEntity: faqs.map(({ q, a }) => ({
       "@type": "Question",
@@ -66,7 +67,8 @@ const pageJsonLd = [
       acceptedAnswer: { "@type": "Answer", text: a },
     })),
   },
-];
+  ],
+};
 
 export default function BirdwatchingGuidePage() {
   return (

@@ -65,5 +65,43 @@ export default async function MammalPage({ params }: Props) {
   const related = species.relatedSpecies
     ? all.filter((s) => species.relatedSpecies!.includes(s.id))
     : [];
-  return <SpeciesDetail category="mammals" species={species} related={related} slug={slug} />;
+
+  const pageUrl = `${BASE}/mammals/${slug}`;
+  const image = species.localImage ? `${BASE}${species.localImage}` : undefined;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Taxon", "Article"],
+        "@id": pageUrl,
+        name: species.commonName,
+        scientificName: species.scientificName,
+        taxonRank: "Species",
+        description: species.description,
+        url: pageUrl,
+        mainEntityOfPage: pageUrl,
+        datePublished: "2024-04-01",
+        dateModified: "2025-03-01",
+        author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
+        publisher: { "@id": `${BASE}/#organization` },
+        ...(image && { image: { "@type": "ImageObject", url: image, width: 800 } }),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+          { "@type": "ListItem", position: 2, name: "Mammals", item: `${BASE}/mammals` },
+          { "@type": "ListItem", position: 3, name: species.commonName, item: pageUrl },
+        ],
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <SpeciesDetail category="mammals" species={species} related={related} slug={slug} />
+    </>
+  );
 }

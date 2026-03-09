@@ -2,9 +2,10 @@ import Link from "next/link";
 
 import type { Metadata } from "next";
 
+const BASE = "https://www.thelakeswildlife.co.uk";
 const title = "Nature Reserves | The Lakes Wildlife";
 const description = "Guides to the Lake District's best nature reserves — RSPB Haweswater, Grizedale Forest, Foulshaw Moss, Leighton Moss and more.";
-const url = "https://www.thelakeswildlife.co.uk/nature";
+const url = `${BASE}/nature`;
 
 export const metadata: Metadata = {
   title,
@@ -12,6 +13,41 @@ export const metadata: Metadata = {
   alternates: { canonical: url },
   openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
   twitter: { card: "summary_large_image", title, description },
+};
+
+const pageJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": url,
+      name: "Lake District Nature Reserves",
+      description,
+      url,
+      publisher: { "@id": `${BASE}/#organization` },
+      breadcrumb: { "@id": url + "#breadcrumb" },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": url + "#breadcrumb",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Nature Reserves", item: url },
+      ],
+    },
+    {
+      "@type": "ItemList",
+      name: "Lake District Nature Reserves",
+      numberOfItems: 5,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, url: `${BASE}/nature/haweswater-rspb`, name: "RSPB Haweswater Reserve" },
+        { "@type": "ListItem", position: 2, url: `${BASE}/nature/grizedale-forest`, name: "Grizedale Forest" },
+        { "@type": "ListItem", position: 3, url: `${BASE}/nature/foulshaw-moss`, name: "Foulshaw Moss" },
+        { "@type": "ListItem", position: 4, url: `${BASE}/nature/leighton-moss-rspb`, name: "Leighton Moss RSPB" },
+        { "@type": "ListItem", position: 5, url: `${BASE}/nature/ullswater`, name: "Ullswater" },
+      ],
+    },
+  ],
 };
 
 const reserves = [
@@ -49,6 +85,8 @@ const reserves = [
 
 export default function NaturePage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
     <div className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="text-3xl font-bold text-[var(--fell)] mb-2">Nature Reserves</h1>
       <p className="text-[var(--slate)] mb-8 max-w-2xl">
@@ -84,5 +122,6 @@ export default function NaturePage() {
         </Link>
       </div>
     </div>
+    </>
   );
 }
