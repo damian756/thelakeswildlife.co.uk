@@ -12,13 +12,18 @@
     "shortLocation": "Lakeland fells",
     "ukPopulation": "Widespread in upland Britain.",
     "lakesPopulation": "Dominant on acid moorland across the Lakes. You'll walk through it. Berries in late summer.",
-    "habitat": ["Heather moorland", "Upland", "Acid soil"],
+    "habitat": [
+      "Heather moorland",
+      "Upland",
+      "Acid soil"
+    ],
     "description": "Bilberry is everywhere on the fells. That low shrub with the purple berries. July to September. Pick a few. Leave most. It's the food of grouse and red deer.",
     "identification": "Low shrub. Small oval leaves. Purple berries. Smaller than cultivated blueberry.",
     "tips": "Late summer for berries. The fells. It's underfoot on most walks. Don't strip it.",
     "difficulty": "easy",
     "wikipediaTitle": "Vaccinium myrtillus",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/bilberry.jpg"
   },
   {
     "commonName": "Bog Asphodel",
@@ -33,13 +38,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread in upland and western Britain.",
     "lakesPopulation": "Foulshaw Moss has good displays. Wet moorland throughout the Lakes. Yellow spikes in June and July.",
-    "habitat": ["Blanket bog", "Wet moorland", "Flushes"],
+    "habitat": [
+      "Blanket bog",
+      "Wet moorland",
+      "Flushes"
+    ],
     "description": "Bog asphodel lights up the wet moorland. Yellow spikes in June and July. Foulshaw Moss. The fells. It likes wet feet. The name ossifragum means bone-breaker. Old belief that sheep eating it got brittle bones. Not true. But the name stuck.",
     "identification": "Yellow flower spike. Grass-like leaves. Grows in wet bog. Unmistakeable in flower.",
     "tips": "June and July. Foulshaw Moss. Wet moorland. Sunny day for the flowers.",
     "difficulty": "easy",
     "wikipediaTitle": "Bog asphodel",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/bog-asphodel.jpg"
   },
   {
     "commonName": "Heath Spotted Orchid",
@@ -54,13 +64,18 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread in western and northern Britain.",
     "lakesPopulation": "Common on damp grassland and moorland edge across the Lakes. Foulshaw Moss has good numbers.",
-    "habitat": ["Damp grassland", "Moorland edge", "Heath"],
+    "habitat": [
+      "Damp grassland",
+      "Moorland edge",
+      "Heath"
+    ],
     "description": "Heath spotted orchids are common in the Lakes. Damp grassland. Moorland edge. That spotted leaf. Pink flowers. June and July. Don't pick. They're slow to recover.",
     "identification": "Spotted leaves. Pink flowers in a spike. Orchid. Several similar species. The spots on the leaves help.",
     "tips": "June and July. Damp grassland. Foulshaw Moss. Don't pick.",
     "difficulty": "easy",
     "wikipediaTitle": "Heath spotted orchid",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/heath-spotted-orchid.jpg"
   },
   {
     "commonName": "Sundew",
@@ -75,13 +90,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread in boggy upland areas.",
     "lakesPopulation": "Foulshaw Moss has good populations. Wet bog throughout the Lakes. Carnivorous. The sticky leaves catch insects.",
-    "habitat": ["Peat bog", "Wet flush", "Sphagnum"],
+    "habitat": [
+      "Peat bog",
+      "Wet flush",
+      "Sphagnum"
+    ],
     "description": "Sundew is a carnivorous plant. Those red leaves with sticky droplets. They catch insects. Foulshaw Moss. Wet bog. Get down low to see them. Morning dew makes them shine.",
     "identification": "Small. Red leaves with sticky droplets. Round-leaved sundew is the common one. Grows in sphagnum.",
     "tips": "Foulshaw Moss. Get down low. Morning for the dew. Don't touch. The sticky stuff is the trap.",
     "difficulty": "moderate",
     "wikipediaTitle": "Drosera rotundifolia",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/sundew.jpg"
   },
   {
     "commonName": "Juniper",
@@ -96,13 +116,18 @@
     "shortLocation": "Eastern fells",
     "ukPopulation": "Declining. Fragmented populations.",
     "lakesPopulation": "Eastern Lakes. Limestone. Scout Scar. Orrest Head. The berries are used for gin. Don't strip the bushes.",
-    "habitat": ["Limestone", "Heath", "Woodland edge"],
+    "habitat": [
+      "Limestone",
+      "Heath",
+      "Woodland edge"
+    ],
     "description": "Juniper is the gin plant. Those blue berries. Two years to ripen. The eastern Lakes. Scout Scar. Orrest Head. It's declining. Grazing and disease. Worth seeking out.",
     "identification": "Conifer. Prickly needles. Blue berries. Low shrub or small tree.",
     "tips": "Eastern Lakes. Limestone. Scout Scar. The berries. Don't strip them. Leave some for the birds.",
     "difficulty": "moderate",
     "wikipediaTitle": "Juniper",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/juniper.jpg"
   },
   {
     "commonName": "Wood Anemone",
@@ -117,13 +142,18 @@
     "shortLocation": "Rannerdale",
     "ukPopulation": "Widespread in ancient woodland.",
     "lakesPopulation": "Rannerdale is famous for the bluebell and anemone display. Borrowdale woods. Grizedale. Spring. That white carpet.",
-    "habitat": ["Ancient woodland", "Woodland floor", "Deciduous forest"],
+    "habitat": [
+      "Ancient woodland",
+      "Woodland floor",
+      "Deciduous forest"
+    ],
     "description": "Wood anemones carpet the woodland floor in spring. Rannerdale. Borrowdale. White flowers. They close at night and in rain. March to May. Get there before the canopy closes.",
     "identification": "White flowers. Six petals. Actually sepals. Leaves divided. Woodland floor. Spring.",
     "tips": "March to May. Rannerdale for the display. Morning. They close in rain.",
     "difficulty": "easy",
     "wikipediaTitle": "Anemone nemorosa",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/wood-anemone.jpg"
   },
   {
     "commonName": "Heather",
@@ -138,13 +168,18 @@
     "shortLocation": "Lakeland fells",
     "ukPopulation": "Widespread on acid moorland.",
     "lakesPopulation": "Dominant on moorland across the Lakes. That purple carpet in August. The food of grouse. You'll walk through it.",
-    "habitat": ["Heather moorland", "Upland", "Acid soil"],
+    "habitat": [
+      "Heather moorland",
+      "Upland",
+      "Acid soil"
+    ],
     "description": "Heather is the moorland. That purple carpet in August. The fells. Grizedale. Foulshaw Moss. The food of grouse. Ling. Different to bell heather. Finer leaves. Flowers later.",
     "identification": "Low shrub. Fine leaves. Purple flowers. Bell heather has larger bells. Heather is finer.",
     "tips": "August for the purple. The fells. It's everywhere. Don't confuse with bell heather.",
     "difficulty": "easy",
     "wikipediaTitle": "Calluna",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/heather.jpg"
   },
   {
     "commonName": "Bell Heather",
@@ -159,13 +194,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread on acid heath.",
     "lakesPopulation": "Foulshaw Moss. Heath. Moorland. That purple bell. Flowers June. Before heather. Finer leaves than cross-leaved heath.",
-    "habitat": ["Heath", "Moorland", "Acid soil"],
+    "habitat": [
+      "Heath",
+      "Moorland",
+      "Acid soil"
+    ],
     "description": "Bell heather has larger bells. Purple. Flowers June. Before heather. Foulshaw Moss. Heath. Finer leaves than cross-leaved heath. Three species of heather. Learn them.",
     "identification": "Purple bells. Finer leaves. Flowers June. Before heather. Cross-leaved heath has leaves in whorls of four.",
     "tips": "June. Heath. That bell. Before heather. Foulshaw Moss.",
     "difficulty": "easy",
     "wikipediaTitle": "Erica cinerea",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/bell-heather.jpg"
   },
   {
     "commonName": "Cross-leaved Heath",
@@ -180,13 +220,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread on wet heath.",
     "lakesPopulation": "Foulshaw Moss. Wet heath. Bog. That pink. Leaves in whorls of four. Crossed. Likes wet feet. Different to bell heather.",
-    "habitat": ["Wet heath", "Bog", "Flush"],
+    "habitat": [
+      "Wet heath",
+      "Bog",
+      "Flush"
+    ],
     "description": "Cross-leaved heath likes wet feet. Foulshaw Moss. That pink. Leaves in whorls of four. Crossed. Wet heath. Bog. Different to bell heather. Bell heather has finer leaves.",
     "identification": "Pink. Leaves in whorls of four. Crossed. Wet heath. Likes wet feet.",
     "tips": "Wet heath. Foulshaw Moss. That crossed leaves. Wet feet.",
     "difficulty": "easy",
     "wikipediaTitle": "Erica tetralix",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/cross-leaved-heath.jpg"
   },
   {
     "commonName": "Cotton Grass",
@@ -201,13 +246,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread on bog.",
     "lakesPopulation": "Foulshaw Moss. Bog. Wet moorland. That white cotton. May to July. Common cotton grass. Several spikes. Hare's tail has one. Learn them.",
-    "habitat": ["Bog", "Wet moorland", "Flush"],
+    "habitat": [
+      "Bog",
+      "Wet moorland",
+      "Flush"
+    ],
     "description": "Cotton grass is the white on the bog. Foulshaw Moss. That cotton. May to July. Common cotton grass has several spikes. Hare's tail has one. Bog plant. Wet feet.",
     "identification": "White cotton. Several spikes. Common. Hare's tail has one spike. Bog.",
     "tips": "May to July. Bog. Foulshaw Moss. That white cotton.",
     "difficulty": "easy",
     "wikipediaTitle": "Eriophorum angustifolium",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/cotton-grass.jpg"
   },
   {
     "commonName": "Sphagnum Moss",
@@ -222,13 +272,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread on bog.",
     "lakesPopulation": "Foulshaw Moss. Bog. Wet flushes. That sponge. Peat former. Many species. Red, green, brown. Don't walk on it. It's fragile.",
-    "habitat": ["Bog", "Wet flush", "Peat"],
+    "habitat": [
+      "Bog",
+      "Wet flush",
+      "Peat"
+    ],
     "description": "Sphagnum builds the bog. That sponge. Foulshaw Moss. Peat former. Many species. Red, green, brown. Don't walk on it. It's fragile. Holds water. Acid. The foundation of the bog.",
     "identification": "Spongy. Bog. Many species. Red, green, brown. Don't walk on it.",
     "tips": "Bog. Foulshaw Moss. Don't walk on it. Fragile. Many species.",
     "difficulty": "moderate",
     "wikipediaTitle": "Sphagnum",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/sphagnum-moss.jpg"
   },
   {
     "commonName": "Bogbean",
@@ -243,13 +298,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread on bog and shallow water.",
     "lakesPopulation": "Foulshaw Moss. Bog pools. Tarn edges. That white fringe. Three leaves. Clover-like. Shallow water. May to July.",
-    "habitat": ["Bog pool", "Shallow water", "Tarn edge"],
+    "habitat": [
+      "Bog pool",
+      "Shallow water",
+      "Tarn edge"
+    ],
     "description": "Bogbean has three leaves. Clover-like. That white fringe of flowers. Foulshaw Moss. Bog pools. Shallow water. May to July. Unmistakeable. Grows in water.",
     "identification": "Three leaves. Clover-like. White fringed flowers. Shallow water. Unmistakeable.",
     "tips": "Bog pools. Foulshaw Moss. That white fringe. Three leaves. May to July.",
     "difficulty": "easy",
     "wikipediaTitle": "Menyanthes",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/bogbean.jpg"
   },
   {
     "commonName": "Marsh Marigold",
@@ -264,13 +324,18 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread in wet places.",
     "lakesPopulation": "Wet ground. Stream edges. That yellow. Kingcup. April to June. Common. Wet feet. Unmistakeable.",
-    "habitat": ["Wet ground", "Stream edge", "Marsh"],
+    "habitat": [
+      "Wet ground",
+      "Stream edge",
+      "Marsh"
+    ],
     "description": "Marsh marigolds are kingcups. That yellow. Wet ground. Stream edges. April to June. Common. Wet feet. Unmistakeable. Not a marigold. Buttercup family.",
     "identification": "Yellow. Shiny. Wet ground. Kingcup. April to June. Unmistakeable.",
     "tips": "April to June. Wet ground. That yellow. Kingcup. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Caltha palustris",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/marsh-marigold.jpg"
   },
   {
     "commonName": "Globe Flower",
@@ -285,13 +350,18 @@
     "shortLocation": "Eastern Lakes",
     "ukPopulation": "Localised. Northern England. Declining.",
     "lakesPopulation": "Eastern Lakes. Damp grassland. Limestone. That yellow globe. May to July. Declining. Worth seeking out. Unmistakeable.",
-    "habitat": ["Damp grassland", "Hay meadow", "Limestone"],
+    "habitat": [
+      "Damp grassland",
+      "Hay meadow",
+      "Limestone"
+    ],
     "description": "Globe flowers are yellow globes. The eastern Lakes. Damp grassland. Limestone. May to July. Declining. Worth seeking out. Unmistakeable. Not marsh marigold. Globe. Closed.",
     "identification": "Yellow globe. Closed. Not marsh marigold. Damp grassland. Unmistakeable.",
     "tips": "May to July. Eastern Lakes. Damp grassland. That globe. Declining. Worth seeking out.",
     "difficulty": "moderate",
     "wikipediaTitle": "Globe flower",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/globe-flower.jpg"
   },
   {
     "commonName": "Bird's Eye Primrose",
@@ -306,13 +376,18 @@
     "shortLocation": "Eastern Lakes",
     "ukPopulation": "Localised. Northern England. Limestone.",
     "lakesPopulation": "Eastern Lakes. Limestone. Orrest Head. Scout Scar. That pink. Yellow eye. Meal on the leaves. May to July. Rare. Worth seeking out.",
-    "habitat": ["Limestone grassland", "Flush", "Base-rich"],
+    "habitat": [
+      "Limestone grassland",
+      "Flush",
+      "Base-rich"
+    ],
     "description": "Bird's eye primrose has a yellow eye. That pink. Meal on the leaves. Eastern Lakes. Limestone. Orrest Head. Scout Scar. May to July. Rare. Worth seeking out. Don't pick.",
     "identification": "Pink. Yellow eye. Meal on leaves. Limestone. Rare.",
     "tips": "May to July. Eastern Lakes. Limestone. Orrest Head. That yellow eye. Rare. Don't pick.",
     "difficulty": "moderate",
     "wikipediaTitle": "Primula farinosa",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/bird-s-eye-primrose.jpg"
   },
   {
     "commonName": "Mountain Pansy",
@@ -327,13 +402,18 @@
     "shortLocation": "High fells",
     "ukPopulation": "Localised. Upland. Northern England.",
     "lakesPopulation": "The fells. Helvellyn. High ground. That yellow. Or purple. Variable. June to August. Upland specialist. Walk to find them.",
-    "habitat": ["Upland grassland", "Mountain", "High fell"],
+    "habitat": [
+      "Upland grassland",
+      "Mountain",
+      "High fell"
+    ],
     "description": "Mountain pansies are variable. Yellow. Or purple. The fells. Helvellyn. High ground. June to August. Upland specialist. You need to walk. Worth it.",
     "identification": "Pansy. Yellow or purple. Variable. Upland. High fell.",
     "tips": "The fells. June to August. High ground. Variable colour. Walk to find them.",
     "difficulty": "moderate",
     "wikipediaTitle": "Viola lutea",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/mountain-pansy.jpg"
   },
   {
     "commonName": "Grass of Parnassus",
@@ -348,13 +428,18 @@
     "shortLocation": "Lakeland fells",
     "ukPopulation": "Localised. Northern and western Britain.",
     "lakesPopulation": "The fells. Flushes. Wet grassland. That white. Five petals. Veins. July to September. Unmistakeable. Worth seeking out.",
-    "habitat": ["Flush", "Wet grassland", "Marsh"],
+    "habitat": [
+      "Flush",
+      "Wet grassland",
+      "Marsh"
+    ],
     "description": "Grass of Parnassus has five white petals. Those veins. Flushes. The fells. July to September. Unmistakeable. Not a grass. Worth seeking out.",
     "identification": "White. Five petals. Veins. Flush. Wet ground. Unmistakeable.",
     "tips": "July to September. Flushes. The fells. That white. Five petals. Worth seeking out.",
     "difficulty": "moderate",
     "wikipediaTitle": "Parnassia palustris",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/grass-of-parnassus.jpg"
   },
   {
     "commonName": "Round-leaved Wintergreen",
@@ -369,13 +454,18 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Localised. Northern Britain.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. That white spike. Round leaves. June to August. Rare. Worth seeking out. Often under conifers.",
-    "habitat": ["Woodland", "Conifer", "Shade"],
+    "habitat": [
+      "Woodland",
+      "Conifer",
+      "Shade"
+    ],
     "description": "Round-leaved wintergreen has round leaves. That white spike. Grizedale. Borrowdale. Woodland. Often under conifers. June to August. Rare. Worth seeking out.",
     "identification": "Round leaves. White spike. Woodland. Conifer. Rare.",
     "tips": "June to August. Woodland. Grizedale. Borrowdale. That round leaf. Rare.",
     "difficulty": "moderate",
     "wikipediaTitle": "Pyrola rotundifolia",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/round-leaved-wintergreen.jpg"
   },
   {
     "commonName": "Common Spotted Orchid",
@@ -390,13 +480,18 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread. Our commonest orchid.",
     "lakesPopulation": "Grassland. Woodland edge. Throughout the Lakes. That spotted leaf. Pink flowers. June to August. Common. Don't pick. They're slow to recover.",
-    "habitat": ["Grassland", "Woodland edge", "Roadside"],
+    "habitat": [
+      "Grassland",
+      "Woodland edge",
+      "Roadside"
+    ],
     "description": "Common spotted orchids have spotted leaves. That pink. Throughout the Lakes. June to August. Our commonest orchid. Don't pick. They're slow to recover. Several similar species.",
     "identification": "Spotted leaves. Pink flowers. Orchid. Common. Several similar. The spots help.",
     "tips": "June to August. Grassland. That spotted leaf. Don't pick.",
     "difficulty": "easy",
     "wikipediaTitle": "Dactylorhiza fuchsii",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/common-spotted-orchid.jpg"
   },
   {
     "commonName": "Yellow Mountain Saxifrage",
@@ -411,13 +506,18 @@
     "shortLocation": "High fells",
     "ukPopulation": "Localised. Upland. Northern Britain.",
     "lakesPopulation": "The high fells. Helvellyn. Scafell. Mountain flushes. That yellow. Orange spots. June to August. Alpine. Walk to find them.",
-    "habitat": ["Mountain flush", "Wet rock", "Alpine"],
+    "habitat": [
+      "Mountain flush",
+      "Wet rock",
+      "Alpine"
+    ],
     "description": "Yellow mountain saxifrage is alpine. That yellow. Orange spots. The high fells. Helvellyn. Scafell. Mountain flushes. June to August. Walk to find them. Worth it.",
     "identification": "Yellow. Orange spots. Alpine. Wet rock. Mountain flush.",
     "tips": "The high fells. June to August. Mountain flushes. That yellow. Walk to find them.",
     "difficulty": "moderate",
     "wikipediaTitle": "Saxifraga aizoides",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/yellow-mountain-saxifrage.jpg"
   },
   {
     "commonName": "Alpine Lady's Mantle",
@@ -432,13 +532,18 @@
     "shortLocation": "High fells",
     "ukPopulation": "Localised. Upland. Northern Britain.",
     "lakesPopulation": "The high fells. Helvellyn. Upland grassland. That silver. Silky leaves. June to August. Alpine. Several lady's mantles. Alpine has silky leaves.",
-    "habitat": ["Upland grassland", "Mountain", "Alpine"],
+    "habitat": [
+      "Upland grassland",
+      "Mountain",
+      "Alpine"
+    ],
     "description": "Alpine lady's mantle has silky leaves. That silver. The high fells. Helvellyn. June to August. Alpine. Several lady's mantles. Alpine is the silky one. Common lady's mantle is hairless.",
     "identification": "Silky leaves. Silver. Alpine. Several species. Alpine has silky leaves.",
     "tips": "The high fells. June to August. That silver. Silky leaves.",
     "difficulty": "moderate",
     "wikipediaTitle": "Alchemilla alpina",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/alpine-lady-s-mantle.jpg"
   },
   {
     "commonName": "Tormentil",
@@ -453,13 +558,18 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread. Common.",
     "lakesPopulation": "Heath. Grassland. Moorland. Throughout the Lakes. That yellow. Four petals. Not five. Cinquefoils have five. Tormentil has four. May to September. Common.",
-    "habitat": ["Heath", "Grassland", "Moorland"],
+    "habitat": [
+      "Heath",
+      "Grassland",
+      "Moorland"
+    ],
     "description": "Tormentil has four petals. That yellow. Cinquefoils have five. Heath. Grassland. Moorland. Throughout the Lakes. May to September. Common. Easy to see.",
     "identification": "Yellow. Four petals. Not five. Cinquefoil has five. Common.",
     "tips": "Heath. Moorland. Four petals. Not five. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Potentilla erecta",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/tormentil.jpg"
   },
   {
     "commonName": "Wild Thyme",
@@ -474,13 +584,18 @@
     "shortLocation": "Lakeland fells",
     "ukPopulation": "Widespread. Common.",
     "lakesPopulation": "Short grassland. Heath. The fells. That pink. That smell. June to September. Crush it. Common. Dry banks.",
-    "habitat": ["Short grassland", "Heath", "Dry bank"],
+    "habitat": [
+      "Short grassland",
+      "Heath",
+      "Dry bank"
+    ],
     "description": "Wild thyme smells. That pink. Short grassland. Heath. The fells. Crush it. June to September. Common. Dry banks. Unmistakeable smell.",
     "identification": "Pink. Small. That smell. Crush it. Short grassland.",
     "tips": "Short grassland. Crush it. That smell. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Thymus polytrichus",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/wild-thyme.jpg"
   },
   {
     "commonName": "Bracken",
@@ -495,13 +610,18 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread. Invasive.",
     "lakesPopulation": "Everywhere. The fells. Woodland edge. That green carpet. Uncurls in spring. Invasive. Carcinogenic. Don't camp in it. Don't breathe the spores. Ticks like it.",
-    "habitat": ["Acid ground", "Woodland edge", "Moorland"],
+    "habitat": [
+      "Acid ground",
+      "Woodland edge",
+      "Moorland"
+    ],
     "description": "Bracken is everywhere. That green carpet. Uncurls in spring. Invasive. Carcinogenic. Don't camp in it. Don't breathe the spores. Ticks like it. The fells. Woodland edge.",
     "identification": "Fern. Uncurls. Green carpet. Invasive. Ticks. Don't camp in it.",
     "tips": "Everywhere. Don't camp in it. Ticks. Carcinogenic. Invasive.",
     "difficulty": "easy",
     "wikipediaTitle": "Pteridium aquilinum",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/bracken.jpg"
   },
   {
     "commonName": "Purple Moor-grass",
@@ -516,13 +636,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread on wet moorland.",
     "lakesPopulation": "Foulshaw Moss. Wet moorland. Flush. That purple. Tussock. July to September. Dominant on wet ground. Wet feet.",
-    "habitat": ["Wet moorland", "Flush", "Bog edge"],
+    "habitat": [
+      "Wet moorland",
+      "Flush",
+      "Bog edge"
+    ],
     "description": "Purple moor-grass dominates wet ground. That tussock. Foulshaw Moss. The fells. Wet feet. July to September. That purple. Dominant. You'll walk through it.",
     "identification": "Tussock. Purple. Wet ground. Dominant. Wet moor.",
     "tips": "Wet moorland. Foulshaw Moss. That tussock. Wet feet.",
     "difficulty": "easy",
     "wikipediaTitle": "Molinia caerulea",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/purple-moor-grass.jpg"
   },
   {
     "commonName": "Common Butterwort",
@@ -537,13 +662,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread on wet ground.",
     "lakesPopulation": "Foulshaw Moss. Wet flush. Bog. That sticky leaf. Carnivorous. Catches insects. That purple flower. May to July. Get down low.",
-    "habitat": ["Wet flush", "Bog", "Sphagnum"],
+    "habitat": [
+      "Wet flush",
+      "Bog",
+      "Sphagnum"
+    ],
     "description": "Common butterwort is carnivorous. That sticky leaf. Catches insects. Foulshaw Moss. Wet flush. That purple flower. May to July. Get down low. Don't touch. The sticky stuff is the trap.",
     "identification": "Sticky leaves. Purple flower. Wet flush. Carnivorous. Get down low.",
     "tips": "Wet flush. Foulshaw Moss. Get down low. Don't touch. Carnivorous.",
     "difficulty": "moderate",
     "wikipediaTitle": "Pinguicula vulgaris",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/common-butterwort.jpg"
   },
   {
     "commonName": "Marsh Violet",
@@ -558,13 +688,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread on wet ground.",
     "lakesPopulation": "Foulshaw Moss. Wet ground. Flush. That pale violet. April to June. Wet feet. Foodplant for small pearl-bordered fritillary. Common. Look for it where the butterflies are.",
-    "habitat": ["Wet ground", "Flush", "Bog edge"],
+    "habitat": [
+      "Wet ground",
+      "Flush",
+      "Bog edge"
+    ],
     "description": "Marsh violet has pale flowers. Wet ground. Foulshaw Moss. April to June. Foodplant for small pearl-bordered fritillary. Look for it where the butterflies are. Wet feet.",
     "identification": "Pale violet. Wet ground. April to June. Foodplant for fritillaries.",
     "tips": "Wet ground. Foulshaw Moss. April to June. Look for fritillaries. They need the violets.",
     "difficulty": "easy",
     "wikipediaTitle": "Viola palustris",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/marsh-violet.jpg"
   },
   {
     "commonName": "Harebell",
@@ -579,13 +714,18 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread. Common.",
     "lakesPopulation": "Grassland. Heath. Throughout the Lakes. That blue bell. Delicate. June to September. Common. Scottish bluebell. Not the woodland one.",
-    "habitat": ["Grassland", "Heath", "Moorland edge"],
+    "habitat": [
+      "Grassland",
+      "Heath",
+      "Moorland edge"
+    ],
     "description": "Harebells are the Scottish bluebell. That blue bell. Delicate. Grassland. Heath. Throughout the Lakes. June to September. Common. Not the woodland bluebell. Different plant.",
     "identification": "Blue bell. Delicate. Grassland. Not woodland bluebell. Scottish bluebell.",
     "tips": "Grassland. Heath. That blue bell. June to September. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Campanula rotundifolia",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/harebell.jpg"
   },
   {
     "commonName": "Foxglove",
@@ -600,13 +740,18 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread. Common.",
     "lakesPopulation": "Woodland clearings. Roadside. Throughout the Lakes. That purple spike. June to September. Toxic. Don't eat. Biennial. First year rosette. Second year flowers.",
-    "habitat": ["Woodland clearing", "Roadside", "Banks"],
+    "habitat": [
+      "Woodland clearing",
+      "Roadside",
+      "Banks"
+    ],
     "description": "Foxgloves are that purple spike. Woodland clearings. Roadside. Throughout the Lakes. June to September. Toxic. Don't eat. Digitalis. Heart medicine. Biennial.",
     "identification": "Purple spike. Spotted inside. Toxic. Biennial. Unmistakeable.",
     "tips": "Woodland clearings. That purple spike. Toxic. Don't eat.",
     "difficulty": "easy",
     "wikipediaTitle": "Digitalis purpurea",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/foxglove.jpg"
   },
   {
     "commonName": "Lady's Bedstraw",
@@ -621,12 +766,17 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread. Common.",
     "lakesPopulation": "Grassland. Roadside. Throughout the Lakes. That yellow. Whorled leaves. June to September. Smells of hay when dried. Used to stuff mattresses. Common.",
-    "habitat": ["Grassland", "Roadside", "Dry bank"],
+    "habitat": [
+      "Grassland",
+      "Roadside",
+      "Dry bank"
+    ],
     "description": "Lady's bedstraw is yellow. Whorled leaves. Grassland. Roadside. June to September. Smells of hay when dried. Used to stuff mattresses. Hence the name. Common.",
     "identification": "Yellow. Whorled leaves. Grassland. Smells of hay when dried.",
     "tips": "Grassland. That yellow. Whorled leaves. June to September. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Galium verum",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/plants/lady-s-bedstraw.jpg"
   }
 ]

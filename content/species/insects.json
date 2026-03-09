@@ -12,7 +12,11 @@
     "shortLocation": "Lakeland moorland",
     "ukPopulation": "Widespread in upland Britain.",
     "lakesPopulation": "Common on heather moorland across the Lakes. April and May. Males fly by day. That orange and grey. Unmistakeable.",
-    "habitat": ["Heather moorland", "Heath", "Upland"],
+    "habitat": [
+      "Heather moorland",
+      "Heath",
+      "Upland"
+    ],
     "description": "Emperor moths are the stars of spring moorland. April and May. Males fly by day with that bouncing flight. Orange and grey. The females are bigger, nocturnal. Heather moorland. The fells. Grizedale.",
     "identification": "Large moth. Male orange and grey with eye spots. Female larger, greyer. Day-flying male is the one you'll see.",
     "tips": "April and May. Heather moorland. Sunny day. Males fly with a distinctive bounce. You'll hear them before you see them sometimes.",
@@ -34,13 +38,18 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Declining. Localised in northern and western Britain.",
     "lakesPopulation": "Foulshaw Moss and Grizedale hold populations. Damp grassland with violets. May to July. Sunny day.",
-    "habitat": ["Damp grassland", "Woodland clearing", "Violet habitat"],
+    "habitat": [
+      "Damp grassland",
+      "Woodland clearing",
+      "Violet habitat"
+    ],
     "description": "Small pearl-bordered fritillaries need violets. The caterpillars eat them. Foulshaw Moss. Grizedale. Damp grassland. May to July. Sunny morning. They're orange and black. Fast. Follow them. They'll settle eventually.",
     "identification": "Orange and black fritillary. Pearl markings on the underside. Smaller than pearl-bordered. Violets nearby.",
     "tips": "May to July. Sunny morning. Damp grassland. Foulshaw Moss. Look for violets first. The butterflies will be there.",
     "difficulty": "moderate",
     "wikipediaTitle": "Small pearl-bordered fritillary",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/small-pearl-bordered-fritillary.jpg"
   },
   {
     "commonName": "Northern Brown Argus",
@@ -55,13 +64,18 @@
     "shortLocation": "Eastern fells",
     "ukPopulation": "Localised. Northern England and Scotland.",
     "lakesPopulation": "Eastern Lakes. Limestone. Scout Scar. Rock rose. June to August. Small brown butterfly. Orange spots.",
-    "habitat": ["Limestone grassland", "Rock outcrop", "Rock rose"],
+    "habitat": [
+      "Limestone grassland",
+      "Rock outcrop",
+      "Rock rose"
+    ],
     "description": "Northern brown argus is a small brown butterfly. Orange spots. Limestone grassland. Scout Scar. Orrest Head. Rock rose is the foodplant. June to August. Sunny day. They're localised. Worth the search.",
     "identification": "Small. Brown. Orange spots on the wings. Rock rose nearby. Eastern Lakes only.",
     "tips": "June to August. Eastern Lakes. Limestone. Scout Scar. Look for rock rose. The butterflies will be there.",
     "difficulty": "moderate",
     "wikipediaTitle": "Northern brown argus",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/northern-brown-argus.jpg"
   },
   {
     "commonName": "Green Hairstreak",
@@ -76,13 +90,18 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Widespread in northern and western Britain.",
     "lakesPopulation": "Grizedale and Foulshaw Moss. Heath and scrub. April to June. Green underside. The only green butterfly. They perch. Don't fly far.",
-    "habitat": ["Heath", "Scrub", "Moorland edge"],
+    "habitat": [
+      "Heath",
+      "Scrub",
+      "Moorland edge"
+    ],
     "description": "Green hairstreak is the only green butterfly in Britain. That underside. Grizedale. Foulshaw Moss. April to June. They perch on gorse and bilberry. Don't fly far. Easy to miss. Look for the green.",
     "identification": "Small. Green underside. Brown upperside. Perches with wings closed. The green is the giveaway.",
     "tips": "April to June. Heath and scrub. Grizedale. They perch. Move slowly. The green catches the light.",
     "difficulty": "moderate",
     "wikipediaTitle": "Green hairstreak",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/green-hairstreak.jpg"
   },
   {
     "commonName": "Large Heath",
@@ -95,13 +114,18 @@
     "bestTimeOfDay": "Sunny days. Flushes from bog.",
     "whereToSee": "Bog and wet heath. Foulshaw Moss, the fells. That orange. Bog specialist. Flushes when you walk.",
     "shortLocation": "Foulshaw Moss",
-    "habitat": ["Bog", "Wet heath", "Cotton grass"],
+    "habitat": [
+      "Bog",
+      "Wet heath",
+      "Cotton grass"
+    ],
     "description": "Large heaths live on the bog. Foulshaw Moss. That orange. They flush when you walk. June to August. Bog specialist. Cotton grass. Wet feet. Stay on the boardwalk.",
     "identification": "Orange. Bog. Flushes. Several subspecies. Scotch argus is different. Larger. Darker.",
     "tips": "June to August. Bog. Foulshaw Moss. Stay on the boardwalk. They flush.",
     "difficulty": "moderate",
     "wikipediaTitle": "Large heath (butterfly)",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/large-heath.jpg"
   },
   {
     "commonName": "Scotch Argus",
@@ -114,13 +138,18 @@
     "bestTimeOfDay": "Sunny days. Grassland.",
     "whereToSee": "Grassland, woodland edge. The eastern Lakes, Grizedale. That dark brown. Orange spots. Northern specialist.",
     "shortLocation": "Eastern Lakes",
-    "habitat": ["Grassland", "Woodland edge", "Scrub"],
+    "habitat": [
+      "Grassland",
+      "Woodland edge",
+      "Scrub"
+    ],
     "description": "Scotch argus is dark. That orange spots. Eastern Lakes. Grizedale. July to September. Northern specialist. Grassland. Woodland edge. Different to large heath. Darker. Larger.",
     "identification": "Dark brown. Orange spots. Northern. July to September. Larger than large heath.",
     "tips": "July to September. Eastern Lakes. Grassland. That dark. Orange spots.",
     "difficulty": "moderate",
     "wikipediaTitle": "Scotch argus",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/scotch-argus.jpg"
   },
   {
     "commonName": "High Brown Fritillary",
@@ -133,13 +162,18 @@
     "bestTimeOfDay": "Sunny mornings. Fast.",
     "whereToSee": "Woodland clearings, bracken. The Morecambe Bay limestone. Rare in the Lakes. Dark green fritillary is more common. Check the underside.",
     "shortLocation": "Rare in Lakes",
-    "habitat": ["Woodland clearing", "Bracken", "Violet"],
+    "habitat": [
+      "Woodland clearing",
+      "Bracken",
+      "Violet"
+    ],
     "description": "High brown fritillary is rare. Red list. The Morecambe Bay limestone. Rare in the Lakes. Dark green fritillary is more common. High brown has silver spots on underside. Dark green has green. Don't expect to see one.",
     "identification": "Orange. Fast. Silver spots on underside. Dark green has green. Rare.",
     "tips": "Rare. Dark green is more common. Check the underside. Silver spots. Don't expect to see one.",
     "difficulty": "specialist",
     "wikipediaTitle": "High brown fritillary",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/high-brown-fritillary.jpg"
   },
   {
     "commonName": "Pearl-bordered Fritillary",
@@ -152,13 +186,18 @@
     "bestTimeOfDay": "Sunny mornings. Violet habitat.",
     "whereToSee": "Woodland clearings, violet habitat. Grizedale, Foulshaw Moss, Borrowdale. That pearl. Declining. Violet leaves for caterpillars.",
     "shortLocation": "Grizedale Forest",
-    "habitat": ["Woodland clearing", "Violet", "Bracken"],
+    "habitat": [
+      "Woodland clearing",
+      "Violet",
+      "Bracken"
+    ],
     "description": "Pearl-bordered fritillaries need violets. April to June. Early. Grizedale. Foulshaw Moss. That pearl on the underside. Declining. Red list. Look for violets first.",
     "identification": "Orange. Pearl on underside. April to June. Early. Violet habitat.",
     "tips": "April to June. Woodland clearings. Look for violets. That pearl. Declining.",
     "difficulty": "moderate",
     "wikipediaTitle": "Pearl-bordered fritillary",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/pearl-bordered-fritillary.jpg"
   },
   {
     "commonName": "Dark Green Fritillary",
@@ -171,13 +210,18 @@
     "bestTimeOfDay": "Sunny days. Fast flight.",
     "whereToSee": "Grassland, moorland, woodland edge. Throughout the Lakes. That green on underside. Fast. Common. Larger than pearl-bordered.",
     "shortLocation": "Lake District",
-    "habitat": ["Grassland", "Moorland", "Woodland edge"],
+    "habitat": [
+      "Grassland",
+      "Moorland",
+      "Woodland edge"
+    ],
     "description": "Dark green fritillaries are fast. That green on underside. Throughout the Lakes. June to August. Common. Larger than pearl-bordered. They don't settle much. Follow them.",
     "identification": "Orange. Green on underside. Fast. Larger than pearl-bordered. Common.",
     "tips": "June to August. Grassland. Moorland. That green underside. Fast. Follow them.",
     "difficulty": "moderate",
     "wikipediaTitle": "Dark green fritillary",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/dark-green-fritillary.jpg"
   },
   {
     "commonName": "Common Blue",
@@ -190,13 +234,18 @@
     "bestTimeOfDay": "Sunny days. Grassland.",
     "whereToSee": "Grassland, heath. Throughout the Lakes. That blue. Male. Female brown. Common. Bird's foot trefoil.",
     "shortLocation": "Lake District",
-    "habitat": ["Grassland", "Heath", "Roadside"],
+    "habitat": [
+      "Grassland",
+      "Heath",
+      "Roadside"
+    ],
     "description": "Common blues are common. That blue. Male. Female brown. Grassland. Heath. Throughout the Lakes. April to September. Bird's foot trefoil. Two generations. Easy to see.",
     "identification": "Male blue. Female brown. Orange spots on underside. Common. Bird's foot trefoil.",
     "tips": "Grassland. That blue. Common. Two generations. April to September.",
     "difficulty": "easy",
     "wikipediaTitle": "Polyommatus icarus",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/common-blue.jpg"
   },
   {
     "commonName": "Small Copper",
@@ -209,13 +258,18 @@
     "bestTimeOfDay": "Sunny days. Perches.",
     "whereToSee": "Grassland, heath. Throughout the Lakes. That copper. Small. Fast. Sorrel and dock.",
     "shortLocation": "Lake District",
-    "habitat": ["Grassland", "Heath", "Roadside"],
+    "habitat": [
+      "Grassland",
+      "Heath",
+      "Roadside"
+    ],
     "description": "Small coppers are small. That copper. Grassland. Heath. Throughout the Lakes. Sorrel and dock. Two or three generations. Fast. They perch. Common.",
     "identification": "Small. Copper. Fast. Perches. Sorrel and dock. Common.",
     "tips": "Grassland. That copper. Small. Fast. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Lycaena phlaeas",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/small-copper.jpg"
   },
   {
     "commonName": "Orange-tip",
@@ -228,13 +282,18 @@
     "bestTimeOfDay": "Sunny days. Cuckoo flower.",
     "whereToSee": "Grassland, woodland edge. Throughout the Lakes. That orange tip. Male. Female has grey tip. Cuckoo flower. Garlic mustard.",
     "shortLocation": "Lake District",
-    "habitat": ["Grassland", "Woodland edge", "Roadside"],
+    "habitat": [
+      "Grassland",
+      "Woodland edge",
+      "Roadside"
+    ],
     "description": "Orange-tips are spring. That orange tip. Male. Female has grey. Cuckoo flower. Garlic mustard. April to June. One generation. Throughout the Lakes. Common.",
     "identification": "White. Orange tip. Male. Female grey tip. Spring. Cuckoo flower.",
     "tips": "April to June. Cuckoo flower. That orange tip. Spring. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Orange-tip",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/orange-tip.jpg"
   },
   {
     "commonName": "Peacock",
@@ -247,13 +306,18 @@
     "bestTimeOfDay": "Sunny days. That eye.",
     "whereToSee": "Gardens, woodland edge, everywhere. Throughout the Lakes. That eye. Unmistakeable. Nettle.",
     "shortLocation": "Lake District",
-    "habitat": ["Gardens", "Woodland edge", "Roadside"],
+    "habitat": [
+      "Gardens",
+      "Woodland edge",
+      "Roadside"
+    ],
     "description": "Peacocks have that eye. Unmistakeable. Gardens. Woodland edge. Throughout the Lakes. Nettle. Overwinters as adult. March to October. Common. Easy to see.",
     "identification": "That eye. Red. Unmistakeable. Nettle. Common.",
     "tips": "Everywhere. That eye. Common. Nettle.",
     "difficulty": "easy",
     "wikipediaTitle": "European peacock",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/peacock.jpg"
   },
   {
     "commonName": "Red Admiral",
@@ -266,13 +330,18 @@
     "bestTimeOfDay": "Sunny days. That red.",
     "whereToSee": "Everywhere. Gardens, Buddleia, fruit. Throughout the Lakes. That red. Black. White. Migrant. Common.",
     "shortLocation": "Lake District",
-    "habitat": ["Gardens", "Woodland edge", "Everywhere"],
+    "habitat": [
+      "Gardens",
+      "Woodland edge",
+      "Everywhere"
+    ],
     "description": "Red admirals are that red. Black. White. Migrant. Gardens. Buddleia. Throughout the Lakes. March to November. Overwinters now. Common. Easy to see.",
     "identification": "Red. Black. White. Migrant. Common. Unmistakeable.",
     "tips": "Gardens. Buddleia. That red. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Vanessa atalanta",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/red-admiral.jpg"
   },
   {
     "commonName": "Painted Lady",
@@ -285,13 +354,18 @@
     "bestTimeOfDay": "Sunny days. Fast.",
     "whereToSee": "Everywhere. Gardens, thistles. Throughout the Lakes. That orange. Migrant. Sahara. Numbers vary year to year.",
     "shortLocation": "Lake District",
-    "habitat": ["Gardens", "Thistles", "Everywhere"],
+    "habitat": [
+      "Gardens",
+      "Thistles",
+      "Everywhere"
+    ],
     "description": "Painted ladies migrate. Sahara. Numbers vary. That orange. Gardens. Thistles. May to October. Good years they're everywhere. Bad years few. Migrant. Don't expect them every year.",
     "identification": "Orange. Pink on underside. Migrant. Similar to red admiral. Painted lady has more orange.",
     "tips": "May to October. Numbers vary. Migrant. Thistles. Good years they're everywhere.",
     "difficulty": "easy",
     "wikipediaTitle": "Vanessa cardui",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/painted-lady.jpg"
   },
   {
     "commonName": "Large Red Damselfly",
@@ -304,13 +378,18 @@
     "bestTimeOfDay": "Sunny days. Ponds, streams.",
     "whereToSee": "Ponds, streams, tarns. Throughout the Lakes. That red. First damselfly in spring. Common. Easy to see.",
     "shortLocation": "Lake District",
-    "habitat": ["Ponds", "Streams", "Tarns"],
+    "habitat": [
+      "Ponds",
+      "Streams",
+      "Tarns"
+    ],
     "description": "Large red damselflies are first. April. That red. Ponds. Streams. Tarns. Throughout the Lakes. Common. Easy to see. Unmistakeable. First damselfly of the year.",
     "identification": "Red. Black legs. First in spring. Common. Unmistakeable.",
     "tips": "April. Ponds. Streams. First damselfly. That red. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Large red damselfly",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/large-red-damselfly.jpg"
   },
   {
     "commonName": "Azure Damselfly",
@@ -323,13 +402,18 @@
     "bestTimeOfDay": "Sunny days. Ponds.",
     "whereToSee": "Ponds, slow water. Throughout the Lakes. That blue. Common blue damselfly. Several similar. Azure has U on segment 2.",
     "shortLocation": "Lake District",
-    "habitat": ["Ponds", "Slow water", "Reedbeds"],
+    "habitat": [
+      "Ponds",
+      "Slow water",
+      "Reedbeds"
+    ],
     "description": "Azure damselflies are blue. Ponds. Slow water. Throughout the Lakes. May to September. Common blue. Several similar species. Azure has U on segment 2. Common blue has mushroom. Learn them.",
     "identification": "Blue. U on segment 2. Common blue has mushroom. Several similar.",
     "tips": "Ponds. May to September. That blue. U on segment 2. Several similar.",
     "difficulty": "moderate",
     "wikipediaTitle": "Azure damselfly",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/azure-damselfly.jpg"
   },
   {
     "commonName": "Golden-ringed Dragonfly",
@@ -342,13 +426,18 @@
     "bestTimeOfDay": "Sunny days. Fast streams.",
     "whereToSee": "Fast streams, becks. Stock Ghyll, the Rothay, Lakeland becks. That yellow rings. Large. Unmistakeable.",
     "shortLocation": "Ambleside streams",
-    "habitat": ["Fast streams", "Becks", "Clean water"],
+    "habitat": [
+      "Fast streams",
+      "Becks",
+      "Clean water"
+    ],
     "description": "Golden-ringed dragonflies have yellow rings. Large. Fast streams. Stock Ghyll. The Rothay. Lakeland becks. June to September. Unmistakeable. Our largest dragonfly. Clean water.",
     "identification": "Large. Yellow rings. Fast streams. Unmistakeable. Our largest.",
     "tips": "Fast streams. Stock Ghyll. That yellow rings. June to September. Unmistakeable.",
     "difficulty": "easy",
     "wikipediaTitle": "Golden-ringed dragonfly",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/golden-ringed-dragonfly.jpg"
   },
   {
     "commonName": "Four-spotted Chaser",
@@ -361,13 +450,18 @@
     "bestTimeOfDay": "Sunny days. Perches.",
     "whereToSee": "Ponds, tarns, lake edges. Throughout the Lakes. That four spots. Perches. Common. Easy to see.",
     "shortLocation": "Lake District",
-    "habitat": ["Ponds", "Tarns", "Lake edges"],
+    "habitat": [
+      "Ponds",
+      "Tarns",
+      "Lake edges"
+    ],
     "description": "Four-spotted chasers have four spots. Perches. Ponds. Tarns. Throughout the Lakes. May to August. Common. Easy to see. They return to the same perch. Wait.",
     "identification": "Four spots. Perches. Brown. Common. Returns to perch.",
     "tips": "Ponds. Tarns. That four spots. Perches. Wait. They return. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Four-spotted chaser",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/four-spotted-chaser.jpg"
   },
   {
     "commonName": "Oak Eggar",
@@ -380,13 +474,18 @@
     "bestTimeOfDay": "Daytime. Male flies. Female nocturnal.",
     "whereToSee": "Heath, moorland, woodland. Grizedale, Foulshaw Moss, the fells. That brown. Large moth. Male flies by day.",
     "shortLocation": "Grizedale Forest",
-    "habitat": ["Heath", "Moorland", "Woodland"],
+    "habitat": [
+      "Heath",
+      "Moorland",
+      "Woodland"
+    ],
     "description": "Oak eggar males fly by day. That brown. Large. Grizedale. Foulshaw Moss. July to August. Female is nocturnal. Heath. Moorland. Common. Don't confuse with northern eggar. Oak is more southern.",
     "identification": "Brown. Large. Male day-flying. Female nocturnal. Heath. Moorland.",
     "tips": "July to August. Heath. Moorland. Male flies by day. That brown. Common.",
     "difficulty": "moderate",
     "wikipediaTitle": "Oak eggar",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/oak-eggar.jpg"
   },
   {
     "commonName": "Northern Eggar",
@@ -399,7 +498,11 @@
     "bestTimeOfDay": "Daytime. Male flies.",
     "whereToSee": "Heather moorland. The fells, Foulshaw Moss. That brown. Upland form of oak eggar. Heather. Male flies by day.",
     "shortLocation": "Lakeland fells",
-    "habitat": ["Heather moorland", "Upland", "Heath"],
+    "habitat": [
+      "Heather moorland",
+      "Upland",
+      "Heath"
+    ],
     "description": "Northern eggar is the upland form. Heather moorland. The fells. Foulshaw Moss. June to July. Male flies by day. That brown. Similar to oak eggar. Upland. Heather.",
     "identification": "Brown. Upland. Heather. Similar to oak eggar. Northern form.",
     "tips": "June to July. Heather moorland. The fells. Male flies by day. Upland.",
@@ -418,13 +521,18 @@
     "bestTimeOfDay": "Sunny days. Grassland.",
     "whereToSee": "Grassland everywhere. Throughout the Lakes. That brown. Orange patch. Common. Our commonest butterfly.",
     "shortLocation": "Lake District",
-    "habitat": ["Grassland", "Roadside", "Moorland edge"],
+    "habitat": [
+      "Grassland",
+      "Roadside",
+      "Moorland edge"
+    ],
     "description": "Meadow browns are our commonest butterfly. That brown. Orange patch. Grassland. Throughout the Lakes. June to September. Common. Don't ignore them.",
     "identification": "Brown. Orange patch. Common. Our commonest. Grassland.",
     "tips": "Grassland. That brown. Common. Our commonest.",
     "difficulty": "easy",
     "wikipediaTitle": "Meadow brown",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/meadow-brown.jpg"
   },
   {
     "commonName": "Ringlet",
@@ -437,13 +545,18 @@
     "bestTimeOfDay": "Overcast days. Flies in dull weather.",
     "whereToSee": "Grassland, woodland edge. Throughout the Lakes. That dark. Ring spots. Flies in dull weather. Unlike most butterflies.",
     "shortLocation": "Lake District",
-    "habitat": ["Grassland", "Woodland edge", "Shade"],
+    "habitat": [
+      "Grassland",
+      "Woodland edge",
+      "Shade"
+    ],
     "description": "Ringlets fly in dull weather. That dark. Ring spots. Grassland. Woodland edge. Throughout the Lakes. June to August. Unlike most butterflies. They like shade.",
     "identification": "Dark. Ring spots. Flies in dull weather. Shade. Common.",
     "tips": "Dull weather. Shade. That dark. Ring spots. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Ringlet (butterfly)",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/ringlet.jpg"
   },
   {
     "commonName": "Small Heath",
@@ -456,13 +569,18 @@
     "bestTimeOfDay": "Sunny days. Low flight.",
     "whereToSee": "Short grassland, heath. Throughout the Lakes. That small. Low flight. Orange. Common.",
     "shortLocation": "Lake District",
-    "habitat": ["Short grassland", "Heath", "Moorland edge"],
+    "habitat": [
+      "Short grassland",
+      "Heath",
+      "Moorland edge"
+    ],
     "description": "Small heaths are small. Low flight. Short grassland. Heath. Throughout the Lakes. May to September. Common. Easy to miss. They're small.",
     "identification": "Small. Low flight. Orange. Short grassland. Common.",
     "tips": "Short grassland. That small. Low flight. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Small heath (butterfly)",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/small-heath.jpg"
   },
   {
     "commonName": "Speckled Wood",
@@ -475,12 +593,17 @@
     "bestTimeOfDay": "Sunny days. Woodland paths.",
     "whereToSee": "Woodland paths, dappled shade. Grizedale, Borrowdale, throughout the Lakes. That speckled. Territorial. Perches.",
     "shortLocation": "Grizedale Forest",
-    "habitat": ["Woodland", "Dappled shade", "Paths"],
+    "habitat": [
+      "Woodland",
+      "Dappled shade",
+      "Paths"
+    ],
     "description": "Speckled woods prefer shade. Woodland paths. Dappled light. Grizedale. Borrowdale. That speckled. Territorial. They perch. Return to the same spot. March to October.",
     "identification": "Speckled. Brown. Woodland. Shade. Territorial. Perches.",
     "tips": "Woodland paths. Dappled shade. That speckled. They perch. Return. Common.",
     "difficulty": "easy",
     "wikipediaTitle": "Speckled wood (butterfly)",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/insects/speckled-wood.jpg"
   }
 ]

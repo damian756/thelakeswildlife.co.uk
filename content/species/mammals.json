@@ -12,7 +12,11 @@
     "shortLocation": "Martindale",
     "ukPopulation": "Around 360,000 in the UK. Largest land mammal in Britain.",
     "lakesPopulation": "Martindale holds one of the most accessible populations in England. Grizedale and Ullswater too. You'll hear the rut before you see it.",
-    "habitat": ["Upland moorland", "Forest edge", "Valleys"],
+    "habitat": [
+      "Upland moorland",
+      "Forest edge",
+      "Valleys"
+    ],
     "diet": "Grass, heather, browse",
     "description": "Red deer are the monarchs of the Lakes. Martindale is the place. Dawn or dusk in October for the rut. You'll hear the stags roaring. Keep your distance. They're wild. The valley is a designated refuge.",
     "identification": "Large. Red-brown in summer, grey in winter. Stags have antlers. Hinds smaller. Unmistakeable.",
@@ -21,13 +25,23 @@
     "group": "mammal",
     "wikipediaTitle": "Red deer",
     "faq": [
-      { "question": "When is the red deer rut in the Lake District?", "answer": "October. The rut peaks in mid to late October. Martindale is the place. Dawn or dusk. You'll hear the stags roaring before you see them." },
-      { "question": "Where is the best place to see red deer in the Lake District?", "answer": "Martindale valley is the stronghold. Grizedale Forest and the Ullswater area also hold populations. Martindale is a designated refuge. Keep your distance." },
-      { "question": "Can I join a guided red deer rut walk in the Lake District?", "answer": "Yes. Several operators run guided walks in October. RSPB Haweswater and local guides offer rut watches. Book ahead. Dawn or dusk slots." }
+      {
+        "question": "When is the red deer rut in the Lake District?",
+        "answer": "October. The rut peaks in mid to late October. Martindale is the place. Dawn or dusk. You'll hear the stags roaring before you see them."
+      },
+      {
+        "question": "Where is the best place to see red deer in the Lake District?",
+        "answer": "Martindale valley is the stronghold. Grizedale Forest and the Ullswater area also hold populations. Martindale is a designated refuge. Keep your distance."
+      },
+      {
+        "question": "Can I join a guided red deer rut walk in the Lake District?",
+        "answer": "Yes. Several operators run guided walks in October. RSPB Haweswater and local guides offer rut watches. Book ahead. Dawn or dusk slots."
+      }
     ],
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/other-garden-wildlife/mammals/red-deer"
-    }
+    },
+    "localImage": "/images/species/mammals/red-deer.jpg"
   },
   {
     "commonName": "Otter",
@@ -42,7 +56,11 @@
     "shortLocation": "Lake District rivers",
     "ukPopulation": "Around 10,000 in England. Recovered from near extinction.",
     "lakesPopulation": "Present on most Lakeland rivers and lakes. Elusive. Dawn and dusk. Look for tracks on muddy banks.",
-    "habitat": ["Rivers", "Lakes", "Streams"],
+    "habitat": [
+      "Rivers",
+      "Lakes",
+      "Streams"
+    ],
     "diet": "Fish, amphibians, birds",
     "description": "Otters are back in the Lakes. They're elusive. Dawn and dusk. The Derwent, Rothay, Windermere shores. Look for tracks and spraints. You might get lucky. Patience pays.",
     "identification": "Long, sinuous. Brown fur. Flat tail. Webbed feet. Tracks show five toes.",
@@ -52,9 +70,18 @@
     "wikipediaTitle": "Eurasian otter",
     "localImage": "/images/species/mammals/otter.jpg",
     "faq": [
-      { "question": "Where can I see otters in the Lake District?", "answer": "Rivers and lakes throughout. The Derwent, Rothay, and shores of Windermere and Ullswater. Dawn and dusk. Look for tracks and spraints on muddy banks." },
-      { "question": "What time of day is best for otter watching in the Lake District?", "answer": "Dawn and dusk. Or after rain when they're more active. They're elusive. Patience pays. Don't expect to see one. Be pleased if you do." },
-      { "question": "How do I identify otter signs in the Lake District?", "answer": "Tracks show five toes. Spraints smell of fish and jasmine. Look on muddy banks and rocks by rivers. Quiet stretches. The Derwent and Rothay are good." }
+      {
+        "question": "Where can I see otters in the Lake District?",
+        "answer": "Rivers and lakes throughout. The Derwent, Rothay, and shores of Windermere and Ullswater. Dawn and dusk. Look for tracks and spraints on muddy banks."
+      },
+      {
+        "question": "What time of day is best for otter watching in the Lake District?",
+        "answer": "Dawn and dusk. Or after rain when they're more active. They're elusive. Patience pays. Don't expect to see one. Be pleased if you do."
+      },
+      {
+        "question": "How do I identify otter signs in the Lake District?",
+        "answer": "Tracks show five toes. Spraints smell of fish and jasmine. Look on muddy banks and rocks by rivers. Quiet stretches. The Derwent and Rothay are good."
+      }
     ],
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/other-garden-wildlife/mammals/otter"
@@ -73,7 +100,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 140,000 in the UK. Declining. Grey squirrel competition and disease.",
     "lakesPopulation": "Grizedale holds one of England's best populations. Whinlatter too. The Lake District is a stronghold. Feeders at the visitor centres.",
-    "habitat": ["Conifer woodland", "Mixed woodland", "Forest"],
+    "habitat": [
+      "Conifer woodland",
+      "Mixed woodland",
+      "Forest"
+    ],
     "diet": "Seeds, nuts, fungi, bark",
     "description": "Red squirrels are the Lakes. Grizedale is the place. The visitor centre has feeders. Whinlatter too. Go in the morning. They're used to people. That ear tufts. No grey squirrels here. They've been kept out.",
     "identification": "Red-brown fur. Ear tufts. Bushy tail. No grey. Smaller than grey squirrel.",
@@ -83,9 +114,18 @@
     "wikipediaTitle": "Red squirrel",
     "localImage": "/images/species/mammals/red-squirrel.jpg",
     "faq": [
-      { "question": "Where is the best place to see red squirrels in the Lake District?", "answer": "Grizedale Forest is the stronghold. The visitor centre has feeders. Whinlatter has a red squirrel trail. Go in the morning. They're used to people." },
-      { "question": "What time of day are red squirrels most active in the Lake District?", "answer": "Morning. First few hours after dawn. Late afternoon too. Grizedale and Whinlatter visitor centres have feeders. They're easier to see than you think." },
-      { "question": "Are there grey squirrels in the Lake District?", "answer": "The Lake District is a red squirrel stronghold. Grey squirrels have been kept out of the main conifer areas. Grizedale and Whinlatter are grey-free." }
+      {
+        "question": "Where is the best place to see red squirrels in the Lake District?",
+        "answer": "Grizedale Forest is the stronghold. The visitor centre has feeders. Whinlatter has a red squirrel trail. Go in the morning. They're used to people."
+      },
+      {
+        "question": "What time of day are red squirrels most active in the Lake District?",
+        "answer": "Morning. First few hours after dawn. Late afternoon too. Grizedale and Whinlatter visitor centres have feeders. They're easier to see than you think."
+      },
+      {
+        "question": "Are there grey squirrels in the Lake District?",
+        "answer": "The Lake District is a red squirrel stronghold. Grey squirrels have been kept out of the main conifer areas. Grizedale and Whinlatter are grey-free."
+      }
     ],
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/other-garden-wildlife/mammals/red-squirrel"
@@ -104,7 +144,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 3,700 in Britain. Mostly Scotland. Reintroduced to England.",
     "lakesPopulation": "Reintroduced to Grizedale and Whinlatter. Present but elusive. Trail cameras at the visitor centres sometimes catch them.",
-    "habitat": ["Conifer woodland", "Forest", "Woodland"],
+    "habitat": [
+      "Conifer woodland",
+      "Forest",
+      "Woodland"
+    ],
     "diet": "Small mammals, birds, eggs, berries",
     "description": "Pine martens are back in the Lakes. Reintroduced. Grizedale, Whinlatter. You won't see one. They're nocturnal. Trail cameras at the visitor centres. Check the screens. That's your best chance.",
     "identification": "Cat-sized. Brown fur. Cream throat patch. Long bushy tail. Weasel family.",
@@ -114,7 +158,8 @@
     "wikipediaTitle": "European pine marten",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/other-garden-wildlife/mammals/pine-marten"
-    }
+    },
+    "localImage": "/images/species/mammals/pine-marten.jpg"
   },
   {
     "commonName": "Badger",
@@ -129,7 +174,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 250,000 social groups. Widespread.",
     "lakesPopulation": "Common in Lakeland woodland. Setts in banks. Dusk is the time. Keep your distance. Don't use lights.",
-    "habitat": ["Woodland", "Woodland edge", "Pasture"],
+    "habitat": [
+      "Woodland",
+      "Woodland edge",
+      "Pasture"
+    ],
     "diet": "Earthworms, insects, small mammals, plants",
     "description": "Badgers are everywhere in the Lakes. Woodland edge. Setts in banks. Dusk. They're shy. Don't disturb the sett. Watch from a distance. No lights. Let your eyes adjust.",
     "identification": "Grey, black and white striped face. Stocky. Low to the ground. Unmistakeable.",
@@ -155,7 +204,11 @@
     "shortLocation": "Helvellyn range",
     "ukPopulation": "Around 350,000 in Scotland. Small introduced populations in England.",
     "lakesPopulation": "Introduced to the Lake District fells. Helvellyn, Coniston Old Man. White in winter. Brown in summer. High ground.",
-    "habitat": ["Mountain moorland", "High fells", "Above treeline"],
+    "habitat": [
+      "Mountain moorland",
+      "High fells",
+      "Above treeline"
+    ],
     "diet": "Heather, grasses, bark",
     "description": "Mountain hares live on the high fells. Helvellyn, Coniston. White in winter. Brown in summer. They're shy. You need to walk. Dawn and dusk. Or winter when the snow makes them stand out.",
     "identification": "Smaller than brown hare. White in winter. Brown in summer. Shorter ears than brown hare.",
@@ -165,7 +218,8 @@
     "wikipediaTitle": "Mountain hare",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/other-garden-wildlife/mammals/mountain-hare"
-    }
+    },
+    "localImage": "/images/species/mammals/mountain-hare.jpg"
   },
   {
     "commonName": "Water Vole",
@@ -180,7 +234,11 @@
     "shortLocation": "Derwent",
     "ukPopulation": "Around 132,000. Red list. Declining fast.",
     "lakesPopulation": "The Derwent. Rothay. Quiet stretches. That plop. Declining. Look for burrows in banks. Latrines. Don't expect to see one.",
-    "habitat": ["Rivers", "Streams", "Canals"],
+    "habitat": [
+      "Rivers",
+      "Streams",
+      "Canals"
+    ],
     "diet": "Vegetation. Grass, roots, stems.",
     "description": "Water voles plop. That sound. The Derwent. Rothay. Quiet stretches. Declining. Otters and mink. Look for burrows. Latrines. Round droppings. Don't expect to see one. Be pleased if you do.",
     "identification": "Round. Brown. Blunt nose. Small ears. Plop. Rat has pointed nose. Vole is rounder.",
@@ -188,7 +246,8 @@
     "difficulty": "specialist",
     "group": "mammal",
     "wikipediaTitle": "European water vole",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/water-vole.jpg"
   },
   {
     "commonName": "Stoat",
@@ -203,7 +262,11 @@
     "shortLocation": "Lakeland fells",
     "ukPopulation": "Around 438,000. Widespread.",
     "lakesPopulation": "The fells. Moorland. Drystone walls. That bounding run. Black tip on tail. Weasel is smaller, no black tip. Common. Fast.",
-    "habitat": ["Moorland", "Woodland edge", "Drystone walls"],
+    "habitat": [
+      "Moorland",
+      "Woodland edge",
+      "Drystone walls"
+    ],
     "diet": "Rabbits, voles, birds. Hunts actively.",
     "description": "Stoats bound. That run. Black tip on tail. Weasel is smaller, no black tip. The fells. Moorland. Drystone walls. Common. Fast. You'll get a glimpse.",
     "identification": "Long. Brown. Black tip on tail. Bounding run. Larger than weasel. Weasel has no black tip.",
@@ -211,7 +274,8 @@
     "difficulty": "moderate",
     "group": "mammal",
     "wikipediaTitle": "Stoat",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/stoat.jpg"
   },
   {
     "commonName": "Weasel",
@@ -226,7 +290,11 @@
     "shortLocation": "Lakeland fells",
     "ukPopulation": "Around 450,000. Widespread.",
     "lakesPopulation": "The fells. Moorland. Smaller than stoat. No black tip on tail. That dart. Common. Hard to see. Fast.",
-    "habitat": ["Moorland", "Woodland", "Hedgerows"],
+    "habitat": [
+      "Moorland",
+      "Woodland",
+      "Hedgerows"
+    ],
     "diet": "Voles, mice. Hunts in burrows.",
     "description": "Weasels are small. No black tip on tail. Stoat has black tip. That dart. The fells. Moorland. Common. Hard to see. Fast. You'll get a glimpse.",
     "identification": "Small. Brown. No black tip on tail. Smaller than stoat. That dart.",
@@ -234,7 +302,8 @@
     "difficulty": "moderate",
     "group": "mammal",
     "wikipediaTitle": "Least weasel",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/weasel.jpg"
   },
   {
     "commonName": "Brown Hare",
@@ -249,7 +318,11 @@
     "shortLocation": "Martindale",
     "ukPopulation": "Around 817,000. Declining.",
     "lakesPopulation": "Martindale. Farmland. Grassland. That boxing in March. Mad March hare. Long ears. Brown. Larger than rabbit. Dawn and dusk.",
-    "habitat": ["Farmland", "Grassland", "Open country"],
+    "habitat": [
+      "Farmland",
+      "Grassland",
+      "Open country"
+    ],
     "diet": "Grass, herbs, crops.",
     "description": "Brown hares box in March. That mad March hare. Martindale. Farmland. Long ears. Brown. Larger than rabbit. Dawn and dusk. Declining.",
     "identification": "Large. Brown. Long ears. Black tips. Larger than rabbit. No burrow. Above ground.",
@@ -257,7 +330,8 @@
     "difficulty": "moderate",
     "group": "mammal",
     "wikipediaTitle": "European hare",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/brown-hare.jpg"
   },
   {
     "commonName": "Roe Deer",
@@ -272,7 +346,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 500,000. Widespread. Increasing.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland edge. Smaller than red deer. That white rump. Common. Dawn and dusk. You'll see them from the road.",
-    "habitat": ["Woodland edge", "Farmland", "Scrub"],
+    "habitat": [
+      "Woodland edge",
+      "Farmland",
+      "Scrub"
+    ],
     "diet": "Browse, grass, herbs.",
     "description": "Roe deer are smaller than red deer. That white rump. Grizedale. Borrowdale. Woodland edge. Common. Dawn and dusk. Rut in July and August. Different to red deer. You'll see them.",
     "identification": "Small. Brown. White rump. Buck has small antlers. No neck mane. Smaller than red deer.",
@@ -280,7 +358,8 @@
     "difficulty": "easy",
     "group": "mammal",
     "wikipediaTitle": "Roe deer",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/roe-deer.jpg"
   },
   {
     "commonName": "Fox",
@@ -295,7 +374,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 357,000. Widespread.",
     "lakesPopulation": "Everywhere. Villages. Farmland. Woodland edge. That brush. Red. Dawn and dusk. You'll see them. Common.",
-    "habitat": ["Farmland", "Woodland edge", "Villages"],
+    "habitat": [
+      "Farmland",
+      "Woodland edge",
+      "Villages"
+    ],
     "diet": "Omnivorous. Rabbits, birds, fruit, scraps.",
     "description": "Foxes are everywhere. That brush. Red. Villages. Farmland. Dawn and dusk. You'll see them. Common. Don't feed them.",
     "identification": "Red. Bushy tail. White tip. Pointed ears. Unmistakeable.",
@@ -303,7 +386,8 @@
     "difficulty": "easy",
     "group": "mammal",
     "wikipediaTitle": "Red fox",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/fox.jpg"
   },
   {
     "commonName": "Pipistrelle Bat",
@@ -318,7 +402,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 2 million. Our commonest bat.",
     "lakesPopulation": "Villages. Woodland edge. Over water. Dusk. That flutter. Our commonest bat. Common and soprano pipistrelle. Both occur. You need a bat detector to tell them apart.",
-    "habitat": ["Woodland edge", "Villages", "Over water"],
+    "habitat": [
+      "Woodland edge",
+      "Villages",
+      "Over water"
+    ],
     "diet": "Flying insects. Catches in flight.",
     "description": "Pipistrelles flutter at dusk. Our commonest bat. Villages. Woodland edge. Over water. Actually two species. Common and soprano. You need a bat detector. Dusk. April to October.",
     "identification": "Small. Flutters. Dusk. Bat detector for species. 45 kHz or 55 kHz.",
@@ -326,7 +414,8 @@
     "difficulty": "easy",
     "group": "mammal",
     "wikipediaTitle": "Common pipistrelle",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/pipistrelle-bat.jpg"
   },
   {
     "commonName": "Daubenton's Bat",
@@ -341,7 +430,11 @@
     "shortLocation": "Windermere",
     "ukPopulation": "Around 150,000. Widespread.",
     "lakesPopulation": "Windermere. Ullswater. The Derwent. That skim. Low over water. Trails feet. Water bat. Dusk. Common. Easy to see over lakes.",
-    "habitat": ["Over water", "Lakes", "Rivers"],
+    "habitat": [
+      "Over water",
+      "Lakes",
+      "Rivers"
+    ],
     "diet": "Aquatic insects. Skims from surface.",
     "description": "Daubenton's bats skim. Low over water. Trails feet. Windermere. Ullswater. The Derwent. Water bat. Dusk. Common. Easy to see over lakes.",
     "identification": "Skims. Low over water. Trails feet. Brown. Bat detector 45-50 kHz.",
@@ -349,7 +442,8 @@
     "difficulty": "easy",
     "group": "mammal",
     "wikipediaTitle": "Daubenton's bat",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/daubenton-s-bat.jpg"
   },
   {
     "commonName": "Brown Long-eared Bat",
@@ -364,7 +458,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 200,000. Widespread.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. Those long ears. Slower flight. Gleaning. Picks insects from leaves. Dusk. Common. Bat detector 25-50 kHz.",
-    "habitat": ["Woodland", "Forest", "Buildings"],
+    "habitat": [
+      "Woodland",
+      "Forest",
+      "Buildings"
+    ],
     "diet": "Insects. Gleans from leaves. Also catches in flight.",
     "description": "Brown long-eared bats have those ears. Long. Grizedale. Borrowdale. Woodland. Slower flight. Gleaning. Picks from leaves. Dusk. Common.",
     "identification": "Long ears. Slow flight. Gleaning. Brown. Bat detector 25-50 kHz.",
@@ -372,7 +470,8 @@
     "difficulty": "moderate",
     "group": "mammal",
     "wikipediaTitle": "Brown long-eared bat",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/brown-long-eared-bat.jpg"
   },
   {
     "commonName": "Bank Vole",
@@ -387,7 +486,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 23 million. Widespread.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. Scrub. That rustle. Small. Brown. Redder than field vole. Common. You'll hear them. Rarely see them.",
-    "habitat": ["Woodland", "Scrub", "Hedgerows"],
+    "habitat": [
+      "Woodland",
+      "Scrub",
+      "Hedgerows"
+    ],
     "diet": "Seeds, nuts, insects, fungi.",
     "description": "Bank voles rustle. Small. Brown. Redder than field vole. Grizedale. Borrowdale. Woodland. Scrub. Common. You'll hear them. Rarely see them. Shy.",
     "identification": "Small. Brown. Redder than field vole. Rounded face. Woodland.",
@@ -395,7 +498,8 @@
     "difficulty": "moderate",
     "group": "mammal",
     "wikipediaTitle": "Bank vole",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/bank-vole.jpg"
   },
   {
     "commonName": "Common Shrew",
@@ -410,7 +514,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 41 million. Widespread.",
     "lakesPopulation": "Everywhere. Woodland. Grassland. Moorland. That rustle. High-pitched squeak. Small. Pointed nose. Common. You'll hear them. Dead ones on paths. Cats kill them. They smell.",
-    "habitat": ["Woodland", "Grassland", "Moorland"],
+    "habitat": [
+      "Woodland",
+      "Grassland",
+      "Moorland"
+    ],
     "diet": "Insects, worms. Eats constantly. High metabolism.",
     "description": "Common shrews squeak. High-pitched. Small. Pointed nose. Everywhere. Woodland. Grassland. They eat constantly. High metabolism. Dead ones on paths. Cats kill them. They smell. Don't pick them up. They bite.",
     "identification": "Small. Pointed nose. Brown. High-pitched squeak. Three-toned. Not a rodent.",
@@ -418,7 +526,8 @@
     "difficulty": "easy",
     "group": "mammal",
     "wikipediaTitle": "Common shrew",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/common-shrew.jpg"
   },
   {
     "commonName": "Common Frog",
@@ -433,7 +542,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread. Common.",
     "lakesPopulation": "Ponds. Tarns. Wet ground. Spawn in spring. February to April. Common. That clump of spawn. Don't move spawn. Disease.",
-    "habitat": ["Ponds", "Tarns", "Wet ground"],
+    "habitat": [
+      "Ponds",
+      "Tarns",
+      "Wet ground"
+    ],
     "diet": "Insects, slugs, worms.",
     "description": "Common frogs spawn in spring. That clump. February to April. Ponds. Tarns. Throughout the Lakes. Common. Don't move spawn. Disease. Ranavirus. Chytrid.",
     "identification": "Smooth. Brown. Dark patch behind eye. Spawn in clumps. Toad has string spawn.",
@@ -441,7 +554,8 @@
     "difficulty": "easy",
     "group": "amphibian",
     "wikipediaTitle": "Common frog",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/common-frog.jpg"
   },
   {
     "commonName": "Common Toad",
@@ -456,7 +570,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Widespread. Declining.",
     "lakesPopulation": "Ponds. Migration routes. That string spawn. February to April. Warty. Walks. Doesn't hop. Common. Toad patrols help them cross roads.",
-    "habitat": ["Ponds", "Woodland", "Gardens"],
+    "habitat": [
+      "Ponds",
+      "Woodland",
+      "Gardens"
+    ],
     "diet": "Insects, slugs, worms.",
     "description": "Common toads are warty. They walk. Don't hop like frogs. String spawn. Not clumps. February to April. Migration to ponds. Toad patrols help them cross roads. Declining.",
     "identification": "Warty. Brown. Walks. String spawn. Frog has clumps. Toad has string.",
@@ -464,7 +582,8 @@
     "difficulty": "easy",
     "group": "amphibian",
     "wikipediaTitle": "Common toad",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/common-toad.jpg"
   },
   {
     "commonName": "Palmate Newt",
@@ -479,7 +598,11 @@
     "shortLocation": "Lakeland ponds",
     "ukPopulation": "Widespread. Prefers acid water.",
     "lakesPopulation": "Ponds. Tarns. Acid water. The fells. Grizedale. That filament on tail. Male. Webbed feet. Smaller than smooth newt. Common in upland ponds.",
-    "habitat": ["Ponds", "Tarns", "Acid water"],
+    "habitat": [
+      "Ponds",
+      "Tarns",
+      "Acid water"
+    ],
     "diet": "Aquatic invertebrates. Tadpoles.",
     "description": "Palmate newts like acid water. The fells. Grizedale. That filament on tail. Male. Webbed feet. Smaller than smooth newt. Common in upland ponds. Torch at night. Net with care.",
     "identification": "Small. Filament on tail. Male. Webbed feet. Acid water. Smaller than smooth newt.",
@@ -487,7 +610,8 @@
     "difficulty": "moderate",
     "group": "amphibian",
     "wikipediaTitle": "Palmate newt",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/palmate-newt.jpg"
   },
   {
     "commonName": "Adder",
@@ -502,7 +626,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread. Declining.",
     "lakesPopulation": "Foulshaw Moss. Heath. Moorland. That zigzag. Basking in morning. Only venomous snake in Britain. Don't touch. They're shy. They'll move. Give them space.",
-    "habitat": ["Heath", "Moorland", "Bracken"],
+    "habitat": [
+      "Heath",
+      "Moorland",
+      "Bracken"
+    ],
     "diet": "Small mammals, lizards. Venomous.",
     "description": "Adders have that zigzag. Only venomous snake in Britain. Foulshaw Moss. Heath. Moorland. Basking in morning. Don't touch. They're shy. They'll move. Give them space. Declining.",
     "identification": "Zigzag. Red eye. Vertical pupil. Only venomous snake. Don't touch.",
@@ -510,7 +638,8 @@
     "difficulty": "moderate",
     "group": "reptile",
     "wikipediaTitle": "Vipera berus",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/adder.jpg"
   },
   {
     "commonName": "Common Lizard",
@@ -525,7 +654,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread. Our only native lizard.",
     "lakesPopulation": "Foulshaw Moss. Heath. Moorland. Drystone walls. That dart. Brown. Small. Only native lizard. Live-bearing. Basking in morning. Common.",
-    "habitat": ["Heath", "Moorland", "Drystone walls"],
+    "habitat": [
+      "Heath",
+      "Moorland",
+      "Drystone walls"
+    ],
     "diet": "Insects, spiders.",
     "description": "Common lizards dart. Brown. Small. Only native lizard. Live-bearing. Foulshaw Moss. Heath. Moorland. Basking in morning. They'll dart. Common. Don't catch them. Tail drops off.",
     "identification": "Brown. Small. Dart. Only native lizard. Live-bearing. Slow worm is legless.",
@@ -533,7 +666,8 @@
     "difficulty": "easy",
     "group": "reptile",
     "wikipediaTitle": "Viviparous lizard",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/common-lizard.jpg"
   },
   {
     "commonName": "Slow Worm",
@@ -548,7 +682,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Widespread. Common.",
     "lakesPopulation": "Foulshaw Moss. Heath. Grassland. That legless lizard. Not a snake. Blinks. Smooth. Common. Under refugia. Corrugated iron. They like warmth.",
-    "habitat": ["Heath", "Grassland", "Gardens"],
+    "habitat": [
+      "Heath",
+      "Grassland",
+      "Gardens"
+    ],
     "diet": "Slugs, worms, insects.",
     "description": "Slow worms are legless lizards. Not snakes. They blink. Snakes don't. Foulshaw Moss. Heath. Grassland. Under refugia. Corrugated iron. They like warmth. Common. Don't pick them up. Tail drops off.",
     "identification": "Legless. Smooth. Blinks. Not a snake. Snakes don't blink. Lizard.",
@@ -556,7 +694,8 @@
     "difficulty": "moderate",
     "group": "reptile",
     "wikipediaTitle": "Slow worm",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/slow-worm.jpg"
   },
   {
     "commonName": "Harvest Mouse",
@@ -571,7 +710,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Declining. Localised.",
     "lakesPopulation": "Foulshaw Moss. Tall grassland. Reedbeds. That nest. Tennis ball. In grass. Our smallest rodent. Rare. Don't expect to see one. Nests in winter. Look for them in cut grass.",
-    "habitat": ["Tall grassland", "Reedbeds", "Cereal fields"],
+    "habitat": [
+      "Tall grassland",
+      "Reedbeds",
+      "Cereal fields"
+    ],
     "diet": "Seeds, insects.",
     "description": "Harvest mice are our smallest rodent. That nest. Tennis ball. In grass. Foulshaw Moss. Tall grassland. Rare. Nests in winter. Look for them in cut grass. Don't expect to see one. Be pleased if you do.",
     "identification": "Tiny. Prehensile tail. Nest like tennis ball. In grass. Our smallest rodent.",
@@ -579,7 +722,8 @@
     "difficulty": "specialist",
     "group": "mammal",
     "wikipediaTitle": "Eurasian harvest mouse",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/harvest-mouse.jpg"
   },
   {
     "commonName": "Polecat",
@@ -594,7 +738,11 @@
     "shortLocation": "Eastern Lakes",
     "ukPopulation": "Around 47,000. Recovering from persecution.",
     "lakesPopulation": "Eastern Lakes. Woodland. Farmland. Recovering. Rare. Bandit mask. Dark. Often confused with feral ferret. Polecat has dark mask, ferret has pale. Road casualties. Don't expect to see one.",
-    "habitat": ["Woodland", "Farmland", "Hedgerows"],
+    "habitat": [
+      "Woodland",
+      "Farmland",
+      "Hedgerows"
+    ],
     "diet": "Rabbits, rodents, birds.",
     "description": "Polecats are recovering. Bandit mask. Dark. Eastern Lakes. Rare. Often confused with feral ferret. Polecat has dark mask. Ferret has pale. Nocturnal. Road casualties. Don't expect to see one.",
     "identification": "Bandit mask. Dark. Similar to ferret. Polecat darker. Ferret paler. Weasel family.",
@@ -602,6 +750,7 @@
     "difficulty": "specialist",
     "group": "mammal",
     "wikipediaTitle": "European polecat",
-    "externalLinks": {}
+    "externalLinks": {},
+    "localImage": "/images/species/mammals/polecat.jpg"
   }
 ]

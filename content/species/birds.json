@@ -12,13 +12,20 @@
     "shortLocation": "RSPB Haweswater",
     "ukPopulation": "Around 300 breeding pairs in the UK. Reintroduced to England in the 1990s.",
     "lakesPopulation": "RSPB Haweswater holds one of the most watched osprey nests in England. Foulshaw Moss and Bassenthwaite also have breeding pairs.",
-    "habitat": ["Upland lakes", "Reservoirs", "Rivers"],
+    "habitat": [
+      "Upland lakes",
+      "Reservoirs",
+      "Rivers"
+    ],
     "diet": "Fish. Almost exclusively. Dives feet-first to catch prey.",
     "description": "The osprey is the star of Lake District wildlife. Reintroduced to England after extinction, they now breed at several Lakeland sites. RSPB Haweswater is the place to go. Get there before 10am if you want a decent spot at the hide. The nest is visible from the road. Take binoculars.",
     "identification": "Large raptor. White head and underparts, dark brown back. Distinctive M-shaped wing profile in flight. Yellow eyes.",
     "tips": "April to August is the breeding season. The hide at Haweswater can get busy at weekends. Midweek is quieter. Check the RSPB website for nest activity updates.",
     "difficulty": "easy",
-    "relatedSpecies": ["buzzard", "peregrine-falcon"],
+    "relatedSpecies": [
+      "buzzard",
+      "peregrine-falcon"
+    ],
     "wikipediaTitle": "Osprey",
     "localImage": "/images/species/birds/osprey.jpg",
     "externalLinks": {
@@ -49,7 +56,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Over 4,000 breeding pairs. One of the UK's conservation success stories.",
     "lakesPopulation": "Established across the Lake District. Grizedale and the eastern valleys are reliable. Often seen from the road.",
-    "habitat": ["Woodland edge", "Open hillside", "Valleys"],
+    "habitat": [
+      "Woodland edge",
+      "Open hillside",
+      "Valleys"
+    ],
     "diet": "Carrion, small mammals, earthworms, birds",
     "description": "Red kites are everywhere in the Lakes now. Reintroduced in the 1990s, they've spread across Cumbria. You'll see them soaring, that distinctive forked tail, from most of the main valleys. Grizedale is a good bet.",
     "identification": "Large raptor with deeply forked tail. Reddish-brown body, pale head. Soars with wings held in a shallow V.",
@@ -58,7 +69,8 @@
     "wikipediaTitle": "Red kite",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/red-kite"
-    }
+    },
+    "localImage": "/images/species/birds/red-kite.jpg"
   },
   {
     "commonName": "Peregrine Falcon",
@@ -73,7 +85,11 @@
     "shortLocation": "Honister Pass",
     "ukPopulation": "Around 1,500 breeding pairs in the UK.",
     "lakesPopulation": "Breed on crags across the Lake District. Honister and Langdale are among the most accessible. Respect nesting sites and keep distance.",
-    "habitat": ["Mountain crags", "Cliffs", "Quarries"],
+    "habitat": [
+      "Mountain crags",
+      "Cliffs",
+      "Quarries"
+    ],
     "diet": "Birds. Pigeons, grouse, waders. Hunts in a characteristic stoop.",
     "description": "Peregrines nest on the crags. Honister, Langdale, Borrowdale. You'll hear them before you see them sometimes. That high-pitched kek-kek-kek. Keep your distance. Nesting birds are protected.",
     "identification": "Large falcon. Dark grey back, barred underparts. Distinctive black moustache. Fastest bird in the world when stooping.",
@@ -82,9 +98,18 @@
     "wikipediaTitle": "Peregrine falcon",
     "localImage": "/images/species/birds/peregrine-falcon.jpg",
     "faq": [
-      { "question": "Where can I see peregrine falcons in the Lake District?", "answer": "Crags throughout the fells. Honister Pass, Langdale Pikes, and the Borrowdale valley have reliable nesting sites. RSPB Haweswater sometimes has a pair. Scan with binoculars." },
-      { "question": "When is the best time to see peregrine falcons in the Lake District?", "answer": "April to July. Breeding season. Most visible when feeding chicks. Morning and evening when thermals build. Don't approach nests. Nesting birds are protected." },
-      { "question": "How do I identify a peregrine falcon in the Lake District?", "answer": "Large falcon. Dark grey back, barred underparts. Distinctive black moustache. You'll hear the high-pitched kek-kek-kek before you see them. Fastest bird in the world when stooping." }
+      {
+        "question": "Where can I see peregrine falcons in the Lake District?",
+        "answer": "Crags throughout the fells. Honister Pass, Langdale Pikes, and the Borrowdale valley have reliable nesting sites. RSPB Haweswater sometimes has a pair. Scan with binoculars."
+      },
+      {
+        "question": "When is the best time to see peregrine falcons in the Lake District?",
+        "answer": "April to July. Breeding season. Most visible when feeding chicks. Morning and evening when thermals build. Don't approach nests. Nesting birds are protected."
+      },
+      {
+        "question": "How do I identify a peregrine falcon in the Lake District?",
+        "answer": "Large falcon. Dark grey back, barred underparts. Distinctive black moustache. You'll hear the high-pitched kek-kek-kek before you see them. Fastest bird in the world when stooping."
+      }
     ],
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/peregrine"
@@ -103,14 +128,18 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Over 70,000 breeding pairs. Widespread across the UK.",
     "lakesPopulation": "Abundant. You'll struggle to do a day in the Lakes without seeing one. Often mistaken for eagles.",
-    "habitat": ["Open hillside", "Woodland edge", "Valleys"],
+    "habitat": [
+      "Open hillside",
+      "Woodland edge",
+      "Valleys"
+    ],
     "diet": "Small mammals, birds, earthworms, carrion",
     "description": "Buzzards are everywhere. The most common raptor in the Lakes. You'll see them from the car on most drives. Soaring, mewing. Don't confuse them with golden eagles. Buzzards are smaller and more numerous.",
     "identification": "Medium-sized raptor. Variable plumage from dark to pale. Broad wings, short tail. Often soars in circles.",
     "tips": "No tips needed. You'll see them. If you're not sure it's a buzzard, it probably is.",
     "difficulty": "easy",
     "wikipediaTitle": "Common buzzard",
-    "localImage": "/images/species/birds/common-buzzard.jpg",
+    "localImage": "/images/species/birds/buzzard.jpg",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/buzzard"
     }
@@ -128,7 +157,11 @@
     "shortLocation": "High fells",
     "ukPopulation": "Around 38,000 breeding pairs. Upland specialist.",
     "lakesPopulation": "Breed on the highest Lake District fells. You need to walk to find them. Listen for the mournful call.",
-    "habitat": ["Mountain moorland", "Blanket bog", "Farmland in winter"],
+    "habitat": [
+      "Mountain moorland",
+      "Blanket bog",
+      "Farmland in winter"
+    ],
     "diet": "Invertebrates, especially beetles and worms",
     "description": "Golden plovers breed on the high moorland. You need to get up there. Great Gable, Helvellyn, the Coniston range. That mournful pee-oo call carries a long way. In winter they form flocks on farmland.",
     "identification": "Medium wader. Golden speckled back in summer. Black face and belly in breeding plumage. Winter birds are duller.",
@@ -137,7 +170,8 @@
     "wikipediaTitle": "European golden plover",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/golden-plover"
-    }
+    },
+    "localImage": "/images/species/birds/golden-plover.jpg"
   },
   {
     "commonName": "Ring Ouzel",
@@ -152,7 +186,11 @@
     "shortLocation": "Langdale Pikes",
     "ukPopulation": "Around 6,000 breeding pairs. Declining. Upland specialist.",
     "lakesPopulation": "Breed on crags across the Lake District. Langdale and Borrowdale are reliable. The mountain blackbird.",
-    "habitat": ["Upland crags", "Boulder fields", "Rocky gullies"],
+    "habitat": [
+      "Upland crags",
+      "Boulder fields",
+      "Rocky gullies"
+    ],
     "diet": "Insects, worms, berries",
     "description": "The mountain blackbird. Ring ouzels breed on the crags. Langdale, Borrowdale, Helvellyn. That white breast band is the key. They're shy. You'll hear the chack call before you see them.",
     "identification": "Blackbird-sized. Black with white breast band. Female duller. Distinctive chack call.",
@@ -161,7 +199,8 @@
     "wikipediaTitle": "Ring ouzel",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/ring-ouzel"
-    }
+    },
+    "localImage": "/images/species/birds/ring-ouzel.jpg"
   },
   {
     "commonName": "Black Grouse",
@@ -176,7 +215,11 @@
     "shortLocation": "Eastern fells",
     "ukPopulation": "Around 5,000 displaying males. Declining. Red list.",
     "lakesPopulation": "Small population in the eastern Lake District. Lekking sites are sensitive. Join a guided walk if you want to see them.",
-    "habitat": ["Moorland edge", "Forestry", "Heather"],
+    "habitat": [
+      "Moorland edge",
+      "Forestry",
+      "Heather"
+    ],
     "diet": "Heather, berries, buds, insects",
     "description": "Black grouse lek at dawn. March to May. The eastern fells hold a small population. Lekking sites are protected. Don't go alone. Join a guided walk. RSPB and Wildlife Trusts run them.",
     "identification": "Male black with white wing bar and lyre-shaped tail. Female grey-brown, barred. Unmistakeable at a lek.",
@@ -185,7 +228,8 @@
     "wikipediaTitle": "Black grouse",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/black-grouse"
-    }
+    },
+    "localImage": "/images/species/birds/black-grouse.jpg"
   },
   {
     "commonName": "Dipper",
@@ -200,7 +244,11 @@
     "shortLocation": "Ambleside streams",
     "ukPopulation": "Around 6,000 breeding pairs. Upland stream specialist.",
     "lakesPopulation": "Common on Lakeland becks. Stock Ghyll in Ambleside is one of the easiest. They're tame in the village.",
-    "habitat": ["Fast streams", "Rivers", "Becks"],
+    "habitat": [
+      "Fast streams",
+      "Rivers",
+      "Becks"
+    ],
     "diet": "Aquatic invertebrates. Dives underwater to feed.",
     "description": "Dippers are the bird of Lakeland streams. Stock Ghyll in Ambleside is the easiest place. They bob on rocks, dive in, come up with insects. You can get close. Winter is best when the trees are bare.",
     "identification": "Plump, dark brown, white breast. Bobs constantly. Unmistakeable on a stream.",
@@ -209,7 +257,8 @@
     "wikipediaTitle": "White-throated dipper",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/dipper"
-    }
+    },
+    "localImage": "/images/species/birds/dipper.jpg"
   },
   {
     "commonName": "Pied Flycatcher",
@@ -224,7 +273,11 @@
     "shortLocation": "RSPB Haweswater",
     "ukPopulation": "Around 35,000 breeding pairs. Declining. Nest box schemes help.",
     "lakesPopulation": "RSPB Haweswater and Grizedale are strongholds. Nest box trails make them easy to find. May is the best month.",
-    "habitat": ["Oak woodland", "Mixed woodland", "Mature trees"],
+    "habitat": [
+      "Oak woodland",
+      "Mixed woodland",
+      "Mature trees"
+    ],
     "diet": "Flying insects. Catches them in the air.",
     "description": "Pied flycatchers love oak woodland. RSPB Haweswater has a nest box trail. Grizedale too. May is the month. The male is black and white, the female browner. You'll hear the song before you see them.",
     "identification": "Male black and white. Female brown with white wing patch. Small, active. Flicks tail.",
@@ -233,7 +286,8 @@
     "wikipediaTitle": "European pied flycatcher",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/pied-flycatcher"
-    }
+    },
+    "localImage": "/images/species/birds/pied-flycatcher.jpg"
   },
   {
     "commonName": "Redstart",
@@ -248,7 +302,11 @@
     "shortLocation": "Borrowdale",
     "ukPopulation": "Around 100,000 breeding pairs. Declining.",
     "lakesPopulation": "Common in Lakeland oak woods. Borrowdale and Haweswater are reliable. That red tail is the giveaway.",
-    "habitat": ["Oak woodland", "Mixed woodland", "Mature hedgerows"],
+    "habitat": [
+      "Oak woodland",
+      "Mixed woodland",
+      "Mature hedgerows"
+    ],
     "diet": "Insects. Catches them in flight and from leaves.",
     "description": "Redstarts share the oak woods with pied flycatchers. That red tail flicks as they hunt. Borrowdale, Haweswater, Grizedale. April to June. The song is a short warble. Once you know it you'll find them.",
     "identification": "Male grey back, black face, orange-red breast and tail. Female browner. Tail flicks constantly.",
@@ -257,7 +315,8 @@
     "wikipediaTitle": "Common redstart",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/redstart"
-    }
+    },
+    "localImage": "/images/species/birds/redstart.jpg"
   },
   {
     "commonName": "Wood Warbler",
@@ -272,7 +331,11 @@
     "shortLocation": "Borrowdale",
     "ukPopulation": "Around 6,000 breeding pairs. Declining. Amber list.",
     "lakesPopulation": "Borrowdale and Haweswater hold good numbers. Oak woodland. That song carries. Spinning coin then a descending trill.",
-    "habitat": ["Oak woodland", "Beech woodland", "Mature woodland"],
+    "habitat": [
+      "Oak woodland",
+      "Beech woodland",
+      "Mature woodland"
+    ],
     "diet": "Insects. Feeds in the canopy.",
     "description": "Wood warblers have the best song in the Lakes. That spinning coin, then the trill. Borrowdale, Haweswater. Oak woodland. May. They're high in the canopy. Listen first.",
     "identification": "Yellow breast, green back, yellow supercilium. Larger than chiffchaff. That song is the key.",
@@ -281,7 +344,8 @@
     "wikipediaTitle": "Wood warbler",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wood-warbler"
-    }
+    },
+    "localImage": "/images/species/birds/wood-warbler.jpg"
   },
   {
     "commonName": "Crossbill",
@@ -296,7 +360,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 40,000 breeding pairs. Irruptive. Good cone years bring more birds.",
     "lakesPopulation": "Grizedale and Whinlatter are the best bets. Conifer woodland. That crossed bill is for extracting seeds from cones.",
-    "habitat": ["Conifer woodland", "Spruce", "Pine"],
+    "habitat": [
+      "Conifer woodland",
+      "Spruce",
+      "Pine"
+    ],
     "diet": "Conifer seeds. Extracted with the crossed bill.",
     "description": "Crossbills live in the conifers. Grizedale, Whinlatter. That chip-chip call from the treetops. The crossed bill is for cone seeds. Good cone years mean more birds. They're hard to see. Listen first.",
     "identification": "Finch with crossed bill. Male red, female green. Call is distinctive. Chip-chip-chip.",
@@ -305,7 +373,8 @@
     "wikipediaTitle": "Red crossbill",
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/crossbill"
-    }
+    },
+    "localImage": "/images/species/birds/crossbill.jpg"
   },
   {
     "commonName": "Goldeneye",
@@ -320,7 +389,11 @@
     "shortLocation": "Ullswater",
     "ukPopulation": "Around 27,000 wintering birds. Breed in Scotland and Scandinavia.",
     "lakesPopulation": "Ullswater and Windermere hold good numbers in winter. Coniston too. They dive for food. The male has a white face patch.",
-    "habitat": ["Lakes", "Reservoirs", "Open water"],
+    "habitat": [
+      "Lakes",
+      "Reservoirs",
+      "Open water"
+    ],
     "diet": "Aquatic invertebrates, small fish. Dives to feed.",
     "description": "Goldeneyes winter on the lakes. Ullswater, Windermere, Coniston. Diving ducks. That head-throw display is something. The male has a white face patch. They're common. Easy to find.",
     "identification": "Medium diving duck. Male black and white with round white face patch. Female grey with brown head. Yellow eye.",
@@ -345,7 +418,11 @@
     "shortLocation": "Lakeland moorland",
     "ukPopulation": "Around 230,000 pairs. Moorland managed for grouse shooting.",
     "lakesPopulation": "Common on heather moorland across the Lakes. Walk any fell and you'll flush them.",
-    "habitat": ["Heather moorland", "Blanket bog", "Upland"],
+    "habitat": [
+      "Heather moorland",
+      "Blanket bog",
+      "Upland"
+    ],
     "diet": "Heather, berries, seeds",
     "description": "Red grouse are the sound of the moorland. That explosive burst from the heather. Brown, barred. You'll flush them on most fell walks. Grizedale, Foulshaw Moss, the high fells. They're resident. No migration.",
     "identification": "Plump. Red-brown. Barred plumage. Short tail. Unmistakeable on moorland.",
@@ -355,7 +432,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/red-grouse",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/red-grouse"
-    }
+    },
+    "localImage": "/images/species/birds/red-grouse.jpg"
   },
   {
     "commonName": "Merlin",
@@ -370,7 +448,11 @@
     "shortLocation": "Lakeland moorland",
     "ukPopulation": "Around 1,500 breeding pairs. Upland specialist.",
     "lakesPopulation": "Breed on moorland across the Lakes. Foulshaw Moss. The high fells. They're small. Don't confuse with kestrel. Merlin is darker, faster.",
-    "habitat": ["Heather moorland", "Blanket bog", "Upland"],
+    "habitat": [
+      "Heather moorland",
+      "Blanket bog",
+      "Upland"
+    ],
     "diet": "Small birds. Meadow pipits, skylarks. Catches them in flight.",
     "description": "Merlins are the small falcon of the moorland. Foulshaw Moss. The fells. They hunt low and fast. Meadow pipits are the main prey. Spring and summer. Look for that dark, compact shape.",
     "identification": "Small falcon. Dark. Male blue-grey. Female brown. Fast, low flight. Smaller than kestrel.",
@@ -380,7 +462,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/merlin",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/merlin"
-    }
+    },
+    "localImage": "/images/species/birds/merlin.jpg"
   },
   {
     "commonName": "Wheatear",
@@ -395,7 +478,11 @@
     "shortLocation": "Langdale",
     "ukPopulation": "Around 220,000 pairs. Declining.",
     "lakesPopulation": "Common on the fells. Langdale, Borrowdale. That white rump. They perch on walls and rocks. April to August.",
-    "habitat": ["Upland grassland", "Crags", "Boulder fields"],
+    "habitat": [
+      "Upland grassland",
+      "Crags",
+      "Boulder fields"
+    ],
     "diet": "Insects. Catches them on the ground.",
     "description": "Wheatears are the bird of upland walls. That white rump as they fly. Langdale, Borrowdale. They perch on rocks. April to August. Easy to see. They're confiding.",
     "identification": "Robin-sized. Grey back. Black face mask. White rump. Orange breast. Unmistakeable in flight.",
@@ -405,7 +492,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wheatear",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/wheatear"
-    }
+    },
+    "localImage": "/images/species/birds/wheatear.jpg"
   },
   {
     "commonName": "Dotterel",
@@ -420,7 +508,11 @@
     "shortLocation": "Helvellyn",
     "ukPopulation": "Around 400 breeding pairs. Red list. Declining.",
     "lakesPopulation": "A few pairs on the highest fells. Helvellyn, Scafell. Passage birds in May. Stick to paths. They're ground-nesting.",
-    "habitat": ["Mountain summit", "Arctic-alpine", "High fell"],
+    "habitat": [
+      "Mountain summit",
+      "Arctic-alpine",
+      "High fell"
+    ],
     "diet": "Insects, spiders",
     "description": "Dotterels are rare. The highest fells only. Helvellyn, Scafell. That chestnut belly. The female is brighter than the male. Unusual. Stick to paths. Don't disturb nesting birds.",
     "identification": "Small plover. Grey breast band. Chestnut belly. White eyebrow. Female brighter than male.",
@@ -430,7 +522,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/dotterel",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/dotterel"
-    }
+    },
+    "localImage": "/images/species/birds/dotterel.jpg"
   },
   {
     "commonName": "Short-eared Owl",
@@ -445,7 +538,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Around 2,000 pairs. Fluctuates with vole numbers.",
     "lakesPopulation": "Foulshaw Moss. Martindale. Moorland. They hunt by day. That moth-like flight. Vole years mean more owls.",
-    "habitat": ["Moorland", "Rough grassland", "Blanket bog"],
+    "habitat": [
+      "Moorland",
+      "Rough grassland",
+      "Blanket bog"
+    ],
     "diet": "Voles, small mammals. Hunts by day.",
     "description": "Short-eared owls hunt by day. Foulshaw Moss. Martindale. That buoyant, quartering flight. Vole years bring more. Dusk and dawn are best. They're nomadic. Numbers vary.",
     "identification": "Medium owl. Pale. Yellow eyes. Hunts by day. Buoyant flight. Long wings. The ears are barely visible.",
@@ -455,7 +552,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/short-eared-owl",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/short-eared-owl"
-    }
+    },
+    "localImage": "/images/species/birds/short-eared-owl.jpg"
   },
   {
     "commonName": "Hen Harrier",
@@ -470,7 +568,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Around 600 breeding pairs. Red list. Persecuted.",
     "lakesPopulation": "Foulshaw Moss in winter. Moorland. Rare. The grey male, brown female. Sky-dancing in spring. Don't expect to see one. Be pleased if you do.",
-    "habitat": ["Moorland", "Blanket bog", "Rough grassland"],
+    "habitat": [
+      "Moorland",
+      "Blanket bog",
+      "Rough grassland"
+    ],
     "diet": "Small birds, mammals. Hunts by quartering.",
     "description": "Hen harriers are rare. Persecuted. Foulshaw Moss gets winter birds. That low, quartering flight. Grey male. Brown female. Sky-dancing in spring. Don't expect to see one. Report any persecution.",
     "identification": "Male grey with black wing tips. Female brown, barred. Long tail. Low, quartering flight. Owl-like face.",
@@ -480,7 +582,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/hen-harrier",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/hen-harrier"
-    }
+    },
+    "localImage": "/images/species/birds/hen-harrier.jpg"
   },
   {
     "commonName": "Kestrel",
@@ -495,7 +598,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 46,000 pairs. Declining.",
     "lakesPopulation": "Common. Roadsides. Grassland. Moorland edge. You'll see them hovering. The valley roads. Borrowdale. Langdale.",
-    "habitat": ["Grassland", "Roadside", "Moorland edge"],
+    "habitat": [
+      "Grassland",
+      "Roadside",
+      "Moorland edge"
+    ],
     "diet": "Voles, small mammals. Hovers to hunt.",
     "description": "Kestrels hover. That's the giveaway. Roadsides. Grassland. Borrowdale. Langdale. You'll see them from the car. They're declining. Used to be everywhere. Still common in the Lakes.",
     "identification": "Small falcon. Hovers. Male has grey head. Female brown. Long tail. Pointed wings.",
@@ -505,7 +612,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/kestrel",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/kestrel"
-    }
+    },
+    "localImage": "/images/species/birds/kestrel.jpg"
   },
   {
     "commonName": "Raven",
@@ -520,7 +628,11 @@
     "shortLocation": "Honister Pass",
     "ukPopulation": "Around 7,500 pairs. Recovered from persecution.",
     "lakesPopulation": "Common on the fells. Honister. Langdale. Borrowdale. That cronk. They soar. They're big. Unmistakeable.",
-    "habitat": ["Crags", "Fells", "Valleys"],
+    "habitat": [
+      "Crags",
+      "Fells",
+      "Valleys"
+    ],
     "diet": "Carrion, eggs, small animals. Omnivorous.",
     "description": "Ravens are the sound of the crags. That cronk. Honister. Langdale. They soar. Big. Much bigger than crows. They've recovered. Used to be persecuted. Now they're everywhere on the fells.",
     "identification": "Large. All black. Wedge-shaped tail. Deep cronk call. Bigger than carrion crow.",
@@ -530,7 +642,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/raven",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/raven"
-    }
+    },
+    "localImage": "/images/species/birds/raven.jpg"
   },
   {
     "commonName": "Skylark",
@@ -545,7 +658,11 @@
     "shortLocation": "Lakeland moorland",
     "ukPopulation": "Around 1.5 million territories. Declining. Red list.",
     "lakesPopulation": "Common on moorland and rough grassland. The fells. That song flight. March to July. You'll hear them before you see them.",
-    "habitat": ["Moorland", "Grassland", "Rough pasture"],
+    "habitat": [
+      "Moorland",
+      "Grassland",
+      "Rough pasture"
+    ],
     "diet": "Seeds, insects",
     "description": "Skylarks sing in the air. That ascending song. Moorland. The fells. March to July. They're declining. Red list. But still common in the Lakes. That song is the sound of spring.",
     "identification": "Brown. Streaked. Crest. Sings in flight. Straight up, then hover. Unmistakeable song.",
@@ -555,7 +672,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/skylark",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/skylark"
-    }
+    },
+    "localImage": "/images/species/birds/skylark.jpg"
   },
   {
     "commonName": "Meadow Pipit",
@@ -570,7 +688,11 @@
     "shortLocation": "Lakeland moorland",
     "ukPopulation": "Around 2 million pairs. Declining.",
     "lakesPopulation": "Abundant. Moorland. Grassland. You'll flush them on every walk. That pip-pip call. They're the food of merlins.",
-    "habitat": ["Moorland", "Grassland", "Rough pasture"],
+    "habitat": [
+      "Moorland",
+      "Grassland",
+      "Rough pasture"
+    ],
     "diet": "Insects, seeds",
     "description": "Meadow pipits are everywhere on the moorland. You'll flush them. That pip-pip. They do a parachute display in spring. Straight up, then glide down. Merlins eat them. The most common bird on the fells.",
     "identification": "Brown. Streaked. Pipit. Walks. Flushes. Parachute display. Similar to tree pipit. Meadow is more common on open ground.",
@@ -580,7 +702,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/meadow-pipit",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/meadow-pipit"
-    }
+    },
+    "localImage": "/images/species/birds/meadow-pipit.jpg"
   },
   {
     "commonName": "Curlew",
@@ -595,7 +718,11 @@
     "shortLocation": "Lakeland moorland",
     "ukPopulation": "Around 58,000 breeding pairs. Red list. Declining fast.",
     "lakesPopulation": "Breed on moorland across the Lakes. That bubbling call. Martindale. Foulshaw Moss. They're declining. Worth seeking out. The call is the sound of the uplands.",
-    "habitat": ["Moorland", "Rough grassland", "Blanket bog"],
+    "habitat": [
+      "Moorland",
+      "Rough grassland",
+      "Blanket bog"
+    ],
     "diet": "Worms, insects. Long bill for probing.",
     "description": "Curlews have the best call. That bubbling. Moorland. Martindale. Foulshaw Moss. They're declining. Red list. The long curved bill. They probe for worms. Spring and summer. Listen for the call.",
     "identification": "Large wader. Long curved bill. Brown. That bubbling call. Unmistakeable.",
@@ -605,7 +732,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/curlew",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/curlew"
-    }
+    },
+    "localImage": "/images/species/birds/curlew.jpg"
   },
   {
     "commonName": "Snipe",
@@ -620,7 +748,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Around 80,000 breeding pairs. Declining.",
     "lakesPopulation": "Foulshaw Moss. Wet ground. That drumming in spring. The outer tail feathers vibrate. They zigzag when flushed. Wet flushes on the fells.",
-    "habitat": ["Wet grassland", "Bog", "Flush"],
+    "habitat": [
+      "Wet grassland",
+      "Bog",
+      "Flush"
+    ],
     "diet": "Worms, insects. Long bill for probing.",
     "description": "Snipes drum. That weird vibrating sound in spring. Foulshaw Moss. Wet ground. The outer tail feathers do it. They zigzag when flushed. Long bill. Striped head. Wet flushes on the fells.",
     "identification": "Long bill. Striped head. Brown. Zigzag flight. Drumming in spring. Unmistakeable.",
@@ -630,7 +762,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/snipe",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/snipe"
-    }
+    },
+    "localImage": "/images/species/birds/snipe.jpg"
   },
   {
     "commonName": "Common Sandpiper",
@@ -645,7 +778,11 @@
     "shortLocation": "Ullswater",
     "ukPopulation": "Around 15,000 breeding pairs.",
     "lakesPopulation": "Common on Lakeland shores. Ullswater. Windermere. That bobbing teeter. They fly low over the water. April to August.",
-    "habitat": ["Lakeshore", "Riverbank", "Stream"],
+    "habitat": [
+      "Lakeshore",
+      "Riverbank",
+      "Stream"
+    ],
     "diet": "Insects, small invertebrates",
     "description": "Common sandpipers bob. That teeter. Lakeshores. Ullswater. Windermere. They fly low over the water. Stiff wings. April to August. Easy to see. They're confiding.",
     "identification": "Brown. White breast. Bobs. Teeters. Flies low with stiff wings. Unmistakeable.",
@@ -655,7 +792,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/common-sandpiper",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/common-sandpiper"
-    }
+    },
+    "localImage": "/images/species/birds/common-sandpiper.jpg"
   },
   {
     "commonName": "Grey Wagtail",
@@ -670,7 +808,11 @@
     "shortLocation": "Ambleside streams",
     "ukPopulation": "Around 38,000 pairs. Declining.",
     "lakesPopulation": "Common on Lakeland streams. Stock Ghyll. The Rothay. That yellow. They wag their tail. Fast water. Don't confuse with yellow wagtail. Grey has grey back.",
-    "habitat": ["Fast streams", "Rivers", "Becks"],
+    "habitat": [
+      "Fast streams",
+      "Rivers",
+      "Becks"
+    ],
     "diet": "Aquatic insects. Picks from rocks.",
     "description": "Grey wagtails love fast water. Stock Ghyll. The Rothay. That yellow underparts. They wag. Long tail. Don't confuse with yellow wagtail. Grey has a grey back. Year-round on the becks.",
     "identification": "Grey back. Yellow underparts. Long tail. Wags. Fast water. Male has black throat in summer.",
@@ -680,7 +822,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/grey-wagtail",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/grey-wagtail"
-    }
+    },
+    "localImage": "/images/species/birds/grey-wagtail.jpg"
   },
   {
     "commonName": "Tree Pipit",
@@ -695,7 +838,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 80,000 pairs. Declining. Red list.",
     "lakesPopulation": "Grizedale. Whinlatter. Woodland edge. That song flight. Drops from a tree, then parachutes down. April to June. Declining.",
-    "habitat": ["Woodland edge", "Scrub", "Heath"],
+    "habitat": [
+      "Woodland edge",
+      "Scrub",
+      "Heath"
+    ],
     "diet": "Insects, seeds",
     "description": "Tree pipits sing from trees. Grizedale. Whinlatter. That parachute. They drop, then glide. Different to meadow pipit. Tree has a stronger bill. Woodland edge. April to June. Declining.",
     "identification": "Pipit. Streaked. Song flight from tree. Parachutes down. Stronger bill than meadow. Woodland edge.",
@@ -705,7 +852,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/tree-pipit",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/tree-pipit"
-    }
+    },
+    "localImage": "/images/species/birds/tree-pipit.jpg"
   },
   {
     "commonName": "Great Spotted Woodpecker",
@@ -720,7 +868,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 140,000 pairs. Increased.",
     "lakesPopulation": "Common in Lakeland woodland. Grizedale. Borrowdale. That drum in spring. Red undertail. Male has red nape. Easy to hear.",
-    "habitat": ["Woodland", "Forest", "Trees"],
+    "habitat": [
+      "Woodland",
+      "Forest",
+      "Trees"
+    ],
     "diet": "Insects, seeds. Drums for food.",
     "description": "Great spotted woodpeckers drum. That rapid tap. Grizedale. Borrowdale. March and April. Red undertail. Male has red nape. They're common. You'll hear them before you see them.",
     "identification": "Black and white. Red undertail. Male has red nape. Drumming. Unmistakeable.",
@@ -730,7 +882,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/great-spotted-woodpecker",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/great-spotted-woodpecker"
-    }
+    },
+    "localImage": "/images/species/birds/great-spotted-woodpecker.jpg"
   },
   {
     "commonName": "Treecreeper",
@@ -745,7 +898,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 200,000 pairs.",
     "lakesPopulation": "Common in Lakeland woodland. Grizedale. Borrowdale. They creep up trunks. Spiral. That curved bill. Small. Brown. Easy to miss.",
-    "habitat": ["Woodland", "Forest", "Trees"],
+    "habitat": [
+      "Woodland",
+      "Forest",
+      "Trees"
+    ],
     "diet": "Insects. Picks from bark.",
     "description": "Treecreepers creep. Up tree trunks. Spiral. Grizedale. Borrowdale. That curved bill. Small. Brown. They're common. Look for movement on the trunk. They never come down head first.",
     "identification": "Small. Brown. Streaked. Curved bill. Creeps up trunks. Spiral. Never head first down.",
@@ -755,7 +912,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/treecreeper",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/treecreeper"
-    }
+    },
+    "localImage": "/images/species/birds/treecreeper.jpg"
   },
   {
     "commonName": "Nuthatch",
@@ -770,7 +928,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 220,000 pairs. Expanding north.",
     "lakesPopulation": "Grizedale. Borrowdale. Oak woodland. That blue-grey. They climb down head first. Unlike treecreeper. That pew-pew call. Expanding in the Lakes.",
-    "habitat": ["Woodland", "Oak", "Mature trees"],
+    "habitat": [
+      "Woodland",
+      "Oak",
+      "Mature trees"
+    ],
     "diet": "Insects, nuts. Wedges nuts in bark.",
     "description": "Nuthatches climb down head first. Treecreepers don't. That blue-grey back. Grizedale. Borrowdale. That pew-pew call. They wedge nuts in bark and hack them open. Expanding north. More in the Lakes now.",
     "identification": "Blue-grey back. Orange underparts. Climbs down head first. Strong bill. Unmistakeable.",
@@ -780,7 +942,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/nuthatch",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/nuthatch"
-    }
+    },
+    "localImage": "/images/species/birds/nuthatch.jpg"
   },
   {
     "commonName": "Marsh Tit",
@@ -795,7 +958,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 41,000 pairs. Declining. Red list.",
     "lakesPopulation": "Grizedale. Borrowdale. Oak woodland. That pitchoo call. Marsh tit. Willow tit is similar. Marsh has glossy cap. Call is the best way.",
-    "habitat": ["Woodland", "Oak", "Deciduous"],
+    "habitat": [
+      "Woodland",
+      "Oak",
+      "Deciduous"
+    ],
     "diet": "Insects, seeds",
     "description": "Marsh tits are hard to separate from willow tits. The call helps. Pitchoo. Marsh has glossy cap. Willow has dull cap. Grizedale. Borrowdale. Both declining. Red list.",
     "identification": "Small tit. Black cap. Glossy. Pitchoo call. Similar to willow tit. Cap and call are the keys.",
@@ -805,7 +972,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/marsh-tit",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/marsh-tit"
-    }
+    },
+    "localImage": "/images/species/birds/marsh-tit.jpg"
   },
   {
     "commonName": "Willow Tit",
@@ -820,7 +988,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Around 3,500 pairs. Red list. Declining fast.",
     "lakesPopulation": "Foulshaw Moss. Wet woodland. That chay call. Dull cap. Different to marsh tit. Declining. Worth looking for. Wet scrub.",
-    "habitat": ["Wet woodland", "Scrub", "Carr"],
+    "habitat": [
+      "Wet woodland",
+      "Scrub",
+      "Carr"
+    ],
     "diet": "Insects, seeds",
     "description": "Willow tits are declining fast. Foulshaw Moss. Wet woodland. That chay-chay-chay. Dull cap. Marsh tit has glossy. The call is different. They excavate nest holes. Wet scrub. Red list.",
     "identification": "Small tit. Dull black cap. Chay call. Similar to marsh. Dull cap. Wet habitat.",
@@ -830,7 +1002,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/willow-tit",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/willow-tit"
-    }
+    },
+    "localImage": "/images/species/birds/willow-tit.jpg"
   },
   {
     "commonName": "Siskin",
@@ -845,7 +1018,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 400,000 pairs. Increased.",
     "lakesPopulation": "Grizedale. Whinlatter. Conifer woodland. That tzooee. Yellow and black. They flock. Winter at feeders. Common.",
-    "habitat": ["Conifer woodland", "Alder", "Birch"],
+    "habitat": [
+      "Conifer woodland",
+      "Alder",
+      "Birch"
+    ],
     "diet": "Seeds. Conifer, alder.",
     "description": "Siskins are small finches. Yellow and black. That tzooee call. Grizedale. Whinlatter. Conifer tops. They flock. Winter at feeders. Common in the Lakes.",
     "identification": "Small finch. Yellow and black. Streaked. Tzooee call. Conifer woodland.",
@@ -855,7 +1032,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/siskin",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/siskin"
-    }
+    },
+    "localImage": "/images/species/birds/siskin.jpg"
   },
   {
     "commonName": "Redpoll",
@@ -870,7 +1048,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 220,000 pairs. Declining.",
     "lakesPopulation": "Grizedale. Whinlatter. Birch woodland. That red forehead. They flock. Winter. Irruptive. Good years bring more.",
-    "habitat": ["Birch woodland", "Alder", "Conifer"],
+    "habitat": [
+      "Birch woodland",
+      "Alder",
+      "Conifer"
+    ],
     "diet": "Seeds. Birch, alder.",
     "description": "Redpolls have a red forehead. Small finch. Grizedale. Whinlatter. Birch woodland. They flock. Winter. Irruptive. Common and lesser both occur. Hard to separate.",
     "identification": "Small finch. Red forehead. Streaked. Flocks. Birch and alder.",
@@ -880,7 +1062,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/redpoll",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/redpoll"
-    }
+    },
+    "localImage": "/images/species/birds/redpoll.jpg"
   },
   {
     "commonName": "Goldcrest",
@@ -895,7 +1078,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 610,000 pairs. Our smallest bird.",
     "lakesPopulation": "Common in conifer woodland. Grizedale. Whinlatter. That high call. Tiny. Yellow crown stripe. They flit. Hard to see.",
-    "habitat": ["Conifer woodland", "Spruce", "Pine"],
+    "habitat": [
+      "Conifer woodland",
+      "Spruce",
+      "Pine"
+    ],
     "diet": "Tiny insects. Picks from needles.",
     "description": "Goldcrests are tiny. Our smallest bird. That high see-see-see. Grizedale. Whinlatter. Conifer tops. Yellow crown stripe. They flit. Hard to see. Follow the call.",
     "identification": "Tiny. Green. Yellow crown stripe. Orange in male. High call. Unmistakeable.",
@@ -905,7 +1092,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/goldcrest",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/goldcrest"
-    }
+    },
+    "localImage": "/images/species/birds/goldcrest.jpg"
   },
   {
     "commonName": "Goosander",
@@ -920,7 +1108,11 @@
     "shortLocation": "Ullswater",
     "ukPopulation": "Around 3,800 pairs. Winter visitors from north.",
     "lakesPopulation": "Ullswater. Windermere. The Derwent. That red head. Sawbill. They dive. Fish eaters. Common.",
-    "habitat": ["Lakes", "Rivers", "Reservoirs"],
+    "habitat": [
+      "Lakes",
+      "Rivers",
+      "Reservoirs"
+    ],
     "diet": "Fish. Dives to catch.",
     "description": "Goosanders are sawbills. That red head. Ullswater. Windermere. They dive for fish. Rivers in summer. Lakes in winter. Common. Easy to see.",
     "identification": "Large diving duck. Male white with red head. Female grey with chestnut head. Sawbill. Unmistakeable.",
@@ -930,7 +1122,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/goosander",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/goosander"
-    }
+    },
+    "localImage": "/images/species/birds/goosander.jpg"
   },
   {
     "commonName": "Red-breasted Merganser",
@@ -945,7 +1138,11 @@
     "shortLocation": "Bassenthwaite",
     "ukPopulation": "Around 2,300 pairs. Winter visitors.",
     "lakesPopulation": "Bassenthwaite. Ullswater. Winter. That shaggy crest. Red-breasted. Different to goosander. Less common.",
-    "habitat": ["Lakes", "Reservoirs", "Coast"],
+    "habitat": [
+      "Lakes",
+      "Reservoirs",
+      "Coast"
+    ],
     "diet": "Fish. Dives to catch.",
     "description": "Red-breasted mergansers have a shaggy crest. Bassenthwaite. Ullswater. Winter. Sawbill. Different to goosander. Red breast. Less common than goosander.",
     "identification": "Sawbill. Shaggy crest. Red breast. Male has green head. Female grey. Different to goosander.",
@@ -955,7 +1152,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/red-breasted-merganser",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/red-breasted-merganser"
-    }
+    },
+    "localImage": "/images/species/birds/red-breasted-merganser.jpg"
   },
   {
     "commonName": "Great Crested Grebe",
@@ -970,7 +1168,11 @@
     "shortLocation": "Windermere",
     "ukPopulation": "Around 5,000 pairs. Recovered from persecution.",
     "lakesPopulation": "Windermere. Ullswater. Bassenthwaite. That display. Head-shaking. Chicks on back. Common. Easy to see.",
-    "habitat": ["Lakes", "Reservoirs", "Open water"],
+    "habitat": [
+      "Lakes",
+      "Reservoirs",
+      "Open water"
+    ],
     "diet": "Fish. Dives to catch.",
     "description": "Great crested grebes have that head-shaking display. Windermere. Ullswater. Spring. Chicks ride on the back. That ruff. Unmistakeable. Common.",
     "identification": "Large grebe. Ruff. Crest. Head-shaking display. Chicks on back. Unmistakeable.",
@@ -980,7 +1182,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/great-crested-grebe",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/great-crested-grebe"
-    }
+    },
+    "localImage": "/images/species/birds/great-crested-grebe.jpg"
   },
   {
     "commonName": "Little Grebe",
@@ -995,7 +1198,11 @@
     "shortLocation": "Windermere",
     "ukPopulation": "Around 5,300 pairs.",
     "lakesPopulation": "Windermere. Ullswater. Smaller water bodies. That trill. Small. They dive. Fluffy rear. Common.",
-    "habitat": ["Lakes", "Ponds", "Slow rivers"],
+    "habitat": [
+      "Lakes",
+      "Ponds",
+      "Slow rivers"
+    ],
     "diet": "Insects, small fish. Dives.",
     "description": "Little grebes are small. That trill. Windermere. Ullswater. They dive. Fluffy rear. Dabchick. Common. Easy to miss. They're small.",
     "identification": "Small grebe. Rufous neck. Fluffy rear. Trill call. Dives. Unmistakeable.",
@@ -1005,7 +1212,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/little-grebe",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/little-grebe"
-    }
+    },
+    "localImage": "/images/species/birds/little-grebe.jpg"
   },
   {
     "commonName": "Tufted Duck",
@@ -1020,7 +1228,11 @@
     "shortLocation": "Windermere",
     "ukPopulation": "Around 16,000 pairs. Winter visitors.",
     "lakesPopulation": "Windermere. Ullswater. Bassenthwaite. That tuft. Black and white. They dive. Common. Easy to see.",
-    "habitat": ["Lakes", "Reservoirs", "Ponds"],
+    "habitat": [
+      "Lakes",
+      "Reservoirs",
+      "Ponds"
+    ],
     "diet": "Aquatic invertebrates. Dives.",
     "description": "Tufted ducks have that tuft. Black and white. Windermere. Ullswater. They dive. Common. The most common diving duck. Easy.",
     "identification": "Diving duck. Male black and white with tuft. Female brown. Tuft. Unmistakeable.",
@@ -1030,7 +1242,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/tufted-duck",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/tufted-duck"
-    }
+    },
+    "localImage": "/images/species/birds/tufted-duck.jpg"
   },
   {
     "commonName": "Wigeon",
@@ -1045,7 +1258,11 @@
     "shortLocation": "Windermere",
     "ukPopulation": "Around 400,000 wintering. Breed in north.",
     "lakesPopulation": "Windermere. Ullswater. Winter. That whee-oo. Grazing on lakeshore grass. Male has chestnut head. Common.",
-    "habitat": ["Lakes", "Reservoirs", "Estuaries"],
+    "habitat": [
+      "Lakes",
+      "Reservoirs",
+      "Estuaries"
+    ],
     "diet": "Grass, aquatic plants. Grazes.",
     "description": "Wigeon winter on the lakes. That whee-oo call. Windermere. Ullswater. Male has chestnut head. They graze. Winter. Common.",
     "identification": "Dabbling duck. Male chestnut head, cream crown. Whee-oo call. Grazes. Winter.",
@@ -1055,7 +1272,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wigeon",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/wigeon"
-    }
+    },
+    "localImage": "/images/species/birds/wigeon.jpg"
   },
   {
     "commonName": "Teal",
@@ -1070,7 +1288,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 2,100 pairs. Winter visitors.",
     "lakesPopulation": "Smaller water. Reed edges. That green patch on the male. Small. Shy. They flush. Winter flocks.",
-    "habitat": ["Ponds", "Reedbeds", "Marshes"],
+    "habitat": [
+      "Ponds",
+      "Reedbeds",
+      "Marshes"
+    ],
     "diet": "Seeds, aquatic plants. Dabbles.",
     "description": "Teal are small. That green patch on the male. Reed edges. Smaller water. Shy. They flush. Winter flocks. Common but easy to miss.",
     "identification": "Small duck. Male has green patch. Small. Shy. Flushes easily.",
@@ -1080,7 +1302,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/teal",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/teal"
-    }
+    },
+    "localImage": "/images/species/birds/teal.jpg"
   },
   {
     "commonName": "Heron",
@@ -1095,7 +1318,11 @@
     "shortLocation": "Windermere",
     "ukPopulation": "Around 13,000 nests. Widespread.",
     "lakesPopulation": "Every lake. Every river. That still figure. Grey. Tall. Stands. Waits. Strikes. Common.",
-    "habitat": ["Lakes", "Rivers", "Ponds"],
+    "habitat": [
+      "Lakes",
+      "Rivers",
+      "Ponds"
+    ],
     "diet": "Fish, amphibians. Stands and waits.",
     "description": "Herons stand. That grey figure. Lakeshores. Rivers. Windermere. Ullswater. They wait. They strike. Common. Unmistakeable.",
     "identification": "Large. Grey. Long neck. Long bill. Stands still. Unmistakeable.",
@@ -1105,7 +1332,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/heron",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/grey-heron"
-    }
+    },
+    "localImage": "/images/species/birds/heron.jpg"
   },
   {
     "commonName": "Kingfisher",
@@ -1120,7 +1348,11 @@
     "shortLocation": "Derwent",
     "ukPopulation": "Around 5,000 pairs. Vulnerable to cold winters.",
     "lakesPopulation": "The Derwent. Rothay. Clear rivers. That flash of blue. They perch. They dive. Elusive. Patience pays.",
-    "habitat": ["Rivers", "Streams", "Clear water"],
+    "habitat": [
+      "Rivers",
+      "Streams",
+      "Clear water"
+    ],
     "diet": "Fish. Dives from perch.",
     "description": "Kingfishers are a flash of blue. The Derwent. Rothay. Clear water. They perch. They dive. Elusive. You might get lucky. That blue. Unmistakeable.",
     "identification": "Blue and orange. That flash. Small. Perches. Dives. Unmistakeable.",
@@ -1130,7 +1362,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/kingfisher",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/kingfisher"
-    }
+    },
+    "localImage": "/images/species/birds/kingfisher.jpg"
   },
   {
     "commonName": "Oystercatcher",
@@ -1145,7 +1378,11 @@
     "shortLocation": "Windermere",
     "ukPopulation": "Around 110,000 pairs. Declining.",
     "lakesPopulation": "Lakeshores. Windermere. Ullswater. That peep. Black and white. Red bill. Common. Noisy.",
-    "habitat": ["Lakeshore", "Riverbank", "Coast"],
+    "habitat": [
+      "Lakeshore",
+      "Riverbank",
+      "Coast"
+    ],
     "diet": "Worms, insects. Probes with bill.",
     "description": "Oystercatchers peep. That call. Lakeshores. Windermere. Ullswater. Black and white. Red bill. Common. Noisy. Unmistakeable.",
     "identification": "Black and white. Red bill. Red eye. Peep call. Unmistakeable.",
@@ -1155,7 +1392,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/oystercatcher",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/oystercatcher"
-    }
+    },
+    "localImage": "/images/species/birds/oystercatcher.jpg"
   },
   {
     "commonName": "Barn Owl",
@@ -1170,7 +1408,11 @@
     "shortLocation": "Martindale",
     "ukPopulation": "Around 4,000 pairs. Declining.",
     "lakesPopulation": "Martindale. Rough grassland. Dusk. That ghostly flight. Pale. They're rare. Vole years help. Don't expect to see one.",
-    "habitat": ["Rough grassland", "Farmland", "Moorland edge"],
+    "habitat": [
+      "Rough grassland",
+      "Farmland",
+      "Moorland edge"
+    ],
     "diet": "Voles, mice. Hunts by sound.",
     "description": "Barn owls are ghosts. That pale flight. Dusk. Martindale. Rough grassland. They're rare. Vole years help. Don't expect to see one. Be pleased if you do.",
     "identification": "Pale. Heart-shaped face. Ghostly flight. Dusk. Unmistakeable.",
@@ -1180,7 +1422,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/barn-owl",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/barn-owl"
-    }
+    },
+    "localImage": "/images/species/birds/barn-owl.jpg"
   },
   {
     "commonName": "Tawny Owl",
@@ -1195,7 +1438,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 50,000 pairs. Widespread.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. That twit-twoo. Actually two birds. Female twit. Male twoo. You'll hear them. Rarely see them.",
-    "habitat": ["Woodland", "Forest", "Trees"],
+    "habitat": [
+      "Woodland",
+      "Forest",
+      "Trees"
+    ],
     "diet": "Small mammals, birds. Hunts at night.",
     "description": "Tawny owls call. That twit-twoo. Grizedale. Borrowdale. Actually two birds. Female twit. Male twoo. You'll hear them. Rarely see them. Nocturnal.",
     "identification": "Brown. Round face. Twit-twoo call. Nocturnal. Rarely seen.",
@@ -1205,7 +1452,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/tawny-owl",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/tawny-owl"
-    }
+    },
+    "localImage": "/images/species/birds/tawny-owl.jpg"
   },
   {
     "commonName": "Sparrowhawk",
@@ -1220,7 +1468,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 35,000 pairs. Recovered.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland edge. That dash. Small birds scatter. Male is small. Female bigger. Common.",
-    "habitat": ["Woodland", "Woodland edge", "Gardens"],
+    "habitat": [
+      "Woodland",
+      "Woodland edge",
+      "Gardens"
+    ],
     "diet": "Small birds. Dashes through trees.",
     "description": "Sparrowhawks dash. That burst through the trees. Small birds scatter. Grizedale. Borrowdale. Male is small. Female bigger. Common. You'll see the scatter before you see the hawk.",
     "identification": "Small raptor. Short wings. Long tail. Dashes. Male grey. Female brown. Barred underparts.",
@@ -1230,7 +1482,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/sparrowhawk",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/sparrowhawk"
-    }
+    },
+    "localImage": "/images/species/birds/sparrowhawk.jpg"
   },
   {
     "commonName": "Jackdaw",
@@ -1245,7 +1498,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 1.4 million pairs. Widespread.",
     "lakesPopulation": "Everywhere. Villages. Crags. That jack-jack. Grey nape. Flocks. Common. Don't ignore them.",
-    "habitat": ["Villages", "Crags", "Fields"],
+    "habitat": [
+      "Villages",
+      "Crags",
+      "Fields"
+    ],
     "diet": "Omnivorous. Seeds, insects, scraps.",
     "description": "Jackdaws are everywhere. That jack-jack. Grey nape. Flocks. Villages. Crags. Common. The small crow.",
     "identification": "Small crow. Grey nape. Pale eye. Jack call. Flocks. Unmistakeable.",
@@ -1255,7 +1512,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/jackdaw",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/jackdaw"
-    }
+    },
+    "localImage": "/images/species/birds/jackdaw.jpg"
   },
   {
     "commonName": "Jay",
@@ -1270,7 +1528,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 170,000 pairs. Widespread.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. That flash of blue. Pink. Screech. They cache acorns. Common. Shy.",
-    "habitat": ["Woodland", "Forest", "Oak"],
+    "habitat": [
+      "Woodland",
+      "Forest",
+      "Oak"
+    ],
     "diet": "Acorns, eggs, young birds. Omnivorous.",
     "description": "Jays have that flash of blue. Pink. Screech. Grizedale. Borrowdale. They cache acorns. Shy. You'll hear them before you see them. Common.",
     "identification": "Pink. Blue wing patch. Black tail. Screech. Unmistakeable.",
@@ -1280,7 +1542,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/jay",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/jay"
-    }
+    },
+    "localImage": "/images/species/birds/jay.jpg"
   },
   {
     "commonName": "Fieldfare",
@@ -1295,7 +1558,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 720,000 wintering. Nordic breeder.",
     "lakesPopulation": "Winter. Berry bushes. Hedgerows. That chack. Grey head. Flocks. They strip berries. Common in winter.",
-    "habitat": ["Hedgerows", "Farmland", "Berry bushes"],
+    "habitat": [
+      "Hedgerows",
+      "Farmland",
+      "Berry bushes"
+    ],
     "diet": "Berries, insects. Flocks in winter.",
     "description": "Fieldfares winter in the Lakes. Berry bushes. That chack. Grey head. Flocks. They strip holly and hawthorn. October to March. Common.",
     "identification": "Grey head. Chestnut back. Speckled breast. Chack call. Flocks. Winter.",
@@ -1305,7 +1572,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/fieldfare",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/fieldfare"
-    }
+    },
+    "localImage": "/images/species/birds/fieldfare.jpg"
   },
   {
     "commonName": "Redwing",
@@ -1320,7 +1588,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 690,000 wintering. Nordic breeder.",
     "lakesPopulation": "Winter. Berry bushes. That seep. Red flank. Often with fieldfares. Smaller. Common.",
-    "habitat": ["Hedgerows", "Woodland edge", "Berry bushes"],
+    "habitat": [
+      "Hedgerows",
+      "Woodland edge",
+      "Berry bushes"
+    ],
     "diet": "Berries, insects. Flocks in winter.",
     "description": "Redwings winter with fieldfares. That seep. Red flank. Smaller. Berry bushes. October to March. Common. Often in mixed flocks.",
     "identification": "Red flank. Cream stripe above eye. Speckled breast. Seep call. Smaller than fieldfare.",
@@ -1330,7 +1602,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/redwing",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/redwing"
-    }
+    },
+    "localImage": "/images/species/birds/redwing.jpg"
   },
   {
     "commonName": "Mistle Thrush",
@@ -1345,7 +1618,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 170,000 pairs. Declining.",
     "lakesPopulation": "Grizedale. The valleys. That rattling song. Larger than song thrush. Round spots. Defends holly in winter.",
-    "habitat": ["Woodland", "Parks", "Farmland"],
+    "habitat": [
+      "Woodland",
+      "Parks",
+      "Farmland"
+    ],
     "diet": "Berries, insects, worms.",
     "description": "Mistle thrushes are larger than song thrush. That rattling song. Round spots. They defend holly bushes in winter. Grizedale. The valleys. Declining.",
     "identification": "Larger than song thrush. Round spots. Grey flanks. Rattling song. Defends berries.",
@@ -1355,7 +1632,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/mistle-thrush",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/mistle-thrush"
-    }
+    },
+    "localImage": "/images/species/birds/mistle-thrush.jpg"
   },
   {
     "commonName": "Bullfinch",
@@ -1370,7 +1648,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 190,000 pairs. Declining.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland edge. That pink. Black cap. Shy. They eat buds. Gardeners don't love them. Common but elusive.",
-    "habitat": ["Woodland edge", "Scrub", "Gardens"],
+    "habitat": [
+      "Woodland edge",
+      "Scrub",
+      "Gardens"
+    ],
     "diet": "Seeds, buds, berries.",
     "description": "Bullfinches are pink. That black cap. Shy. Grizedale. Borrowdale. They eat buds. Gardeners don't love them. Common but elusive. That soft call.",
     "identification": "Male pink. Black cap. Female duller. Shy. Soft call. Unmistakeable.",
@@ -1380,7 +1662,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/bullfinch",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/bullfinch"
-    }
+    },
+    "localImage": "/images/species/birds/bullfinch.jpg"
   },
   {
     "commonName": "Linnet",
@@ -1395,7 +1678,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Around 430,000 pairs. Declining. Red list.",
     "lakesPopulation": "Foulshaw Moss. Heath. Scrub. That twitter. Red breast. Flocks. Declining. Worth looking for.",
-    "habitat": ["Heath", "Scrub", "Moorland edge"],
+    "habitat": [
+      "Heath",
+      "Scrub",
+      "Moorland edge"
+    ],
     "diet": "Seeds. Flocks.",
     "description": "Linnets flock. That twitter. Red breast in male. Foulshaw Moss. Heath. Scrub. Declining. Red list. They're small. Flocks in winter.",
     "identification": "Small finch. Male red breast. Grey head. Flocks. Twitter call. Declining.",
@@ -1405,7 +1692,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/linnet",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/linnet"
-    }
+    },
+    "localImage": "/images/species/birds/linnet.jpg"
   },
   {
     "commonName": "Reed Bunting",
@@ -1420,7 +1708,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Around 250,000 pairs. Declining.",
     "lakesPopulation": "Foulshaw Moss. Reedbeds. Wet edges. That black head. Simple song. Common. Easy to see.",
-    "habitat": ["Reedbeds", "Wet grassland", "Marsh"],
+    "habitat": [
+      "Reedbeds",
+      "Wet grassland",
+      "Marsh"
+    ],
     "diet": "Seeds, insects.",
     "description": "Reed buntings have a black head. Male. Foulshaw Moss. Reedbeds. That simple song. Common. Wet areas. Easy to see.",
     "identification": "Male black head, white collar. Female streaked. Reedbeds. Simple song.",
@@ -1430,7 +1722,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/reed-bunting",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/reed-bunting"
-    }
+    },
+    "localImage": "/images/species/birds/reed-bunting.jpg"
   },
   {
     "commonName": "Sedge Warbler",
@@ -1445,7 +1738,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Around 300,000 pairs. Declining.",
     "lakesPopulation": "Foulshaw Moss. Reedbeds. That chattering song. Streaked. Skulks. April to August. Common. Hard to see.",
-    "habitat": ["Reedbeds", "Wet scrub", "Marsh"],
+    "habitat": [
+      "Reedbeds",
+      "Wet scrub",
+      "Marsh"
+    ],
     "diet": "Insects. Catches in vegetation.",
     "description": "Sedge warblers chatter. That song. Foulshaw Moss. Reedbeds. Streaked. Skulks. April to August. You'll hear them. Hard to see. Common.",
     "identification": "Streaked. Pale stripe above eye. Chattering song. Reedbeds. Skulks.",
@@ -1455,7 +1752,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/sedge-warbler",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/sedge-warbler"
-    }
+    },
+    "localImage": "/images/species/birds/sedge-warbler.jpg"
   },
   {
     "commonName": "Stonechat",
@@ -1470,7 +1768,11 @@
     "shortLocation": "Foulshaw Moss",
     "ukPopulation": "Around 60,000 pairs. Recovered.",
     "lakesPopulation": "Foulshaw Moss. Heath. Moorland edge. That tick. Black head. Orange breast. Perches on gorse. Common. Easy to see.",
-    "habitat": ["Heath", "Moorland edge", "Gorse"],
+    "habitat": [
+      "Heath",
+      "Moorland edge",
+      "Gorse"
+    ],
     "diet": "Insects. Perches and drops.",
     "description": "Stonechats perch. That tick. Black head. Orange breast. Foulshaw Moss. Gorse. Heath. Common. Easy to see. They flick their wings.",
     "identification": "Black head. Orange breast. White collar. Tick call. Perches. Flicks wings.",
@@ -1480,7 +1782,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/stonechat",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/stonechat"
-    }
+    },
+    "localImage": "/images/species/birds/stonechat.jpg"
   },
   {
     "commonName": "Whinchat",
@@ -1495,7 +1798,11 @@
     "shortLocation": "Lakeland moorland",
     "ukPopulation": "Around 40,000 pairs. Declining.",
     "lakesPopulation": "Rough grassland. Moorland. That white eyebrow. Different to stonechat. Fence posts. April to August. Declining.",
-    "habitat": ["Rough grassland", "Moorland", "Heath"],
+    "habitat": [
+      "Rough grassland",
+      "Moorland",
+      "Heath"
+    ],
     "diet": "Insects. Perches and drops.",
     "description": "Whinchats are like stonechats. That white eyebrow. Rough grassland. Moorland. Fence posts. April to August. Declining. Less common than stonechat.",
     "identification": "White eyebrow. Buff breast. Similar to stonechat. White eyebrow is the key. Summer only.",
@@ -1505,7 +1812,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/whinchat",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/whinchat"
-    }
+    },
+    "localImage": "/images/species/birds/whinchat.jpg"
   },
   {
     "commonName": "Cuckoo",
@@ -1520,7 +1828,11 @@
     "shortLocation": "Lakeland moorland",
     "ukPopulation": "Around 15,000 pairs. Red list. Declining fast.",
     "lakesPopulation": "The fells. Moorland. That cuck-oo. Declining. April to June. Martindale. Foulshaw Moss. Used to be common. Not anymore.",
-    "habitat": ["Moorland", "Woodland edge", "Heath"],
+    "habitat": [
+      "Moorland",
+      "Woodland edge",
+      "Heath"
+    ],
     "diet": "Insects. Caterpillars. Parasitises meadow pipit and reed warbler nests.",
     "description": "Cuckoos are declining. That cuck-oo. The fells. Moorland. April to June. Used to be the sound of spring. Not anymore. Red list. Worth listening for.",
     "identification": "Grey. Barred. Cuck-oo call. Hawk-like in flight. Declining.",
@@ -1530,7 +1842,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/cuckoo",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/cuckoo"
-    }
+    },
+    "localImage": "/images/species/birds/cuckoo.jpg"
   },
   {
     "commonName": "Swallow",
@@ -1545,7 +1858,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 860,000 pairs. Declining.",
     "lakesPopulation": "Everywhere. Farms. Villages. Lakes. That fork tail. Blue. April to October. Common. The sound of summer.",
-    "habitat": ["Farms", "Villages", "Open country"],
+    "habitat": [
+      "Farms",
+      "Villages",
+      "Open country"
+    ],
     "diet": "Flying insects. Catches in flight.",
     "description": "Swallows are summer. That fork tail. Blue. Farms. Villages. Everywhere. April to October. Common. The sound of summer. Don't take them for granted.",
     "identification": "Blue. Fork tail. Red throat. Long tail streamers. Unmistakeable.",
@@ -1555,7 +1872,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/swallow",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/swallow"
-    }
+    },
+    "localImage": "/images/species/birds/swallow.jpg"
   },
   {
     "commonName": "House Martin",
@@ -1570,7 +1888,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 490,000 pairs. Declining.",
     "lakesPopulation": "Villages. Buildings. Under eaves. White rump. Shorter tail than swallow. April to October. Common. Often with swallows.",
-    "habitat": ["Villages", "Buildings", "Cliffs"],
+    "habitat": [
+      "Villages",
+      "Buildings",
+      "Cliffs"
+    ],
     "diet": "Flying insects. Catches in flight.",
     "description": "House martins nest under eaves. White rump. Shorter tail than swallow. Villages. April to October. Common. Often with swallows. Declining.",
     "identification": "White rump. Blue back. Shorter tail than swallow. Under eaves. Unmistakeable.",
@@ -1580,7 +1902,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/house-martin",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/house-martin"
-    }
+    },
+    "localImage": "/images/species/birds/house-martin.jpg"
   },
   {
     "commonName": "Swift",
@@ -1595,7 +1918,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 59,000 pairs. Declining.",
     "lakesPopulation": "Villages. Over lakes. That scream. Sickle shape. May to August. They don't land. They eat, sleep, mate in the air. Declining.",
-    "habitat": ["Villages", "Buildings", "Sky"],
+    "habitat": [
+      "Villages",
+      "Buildings",
+      "Sky"
+    ],
     "diet": "Flying insects. Catches in flight.",
     "description": "Swifts scream. That sickle shape. May to August. They don't land. Eat, sleep, mate in the air. Villages. Over lakes. Declining. Enjoy them. They're not here long.",
     "identification": "Sickle shape. Dark. Scream. Fast. Don't land. Unmistakeable.",
@@ -1605,7 +1932,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/swift",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/swift"
-    }
+    },
+    "localImage": "/images/species/birds/swift.jpg"
   },
   {
     "commonName": "Coal Tit",
@@ -1620,7 +1948,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 610,000 pairs. Widespread.",
     "lakesPopulation": "Grizedale. Whinlatter. Conifer woodland. That white nape. Small. Common. They hang. Conifer specialist.",
-    "habitat": ["Conifer woodland", "Spruce", "Pine"],
+    "habitat": [
+      "Conifer woodland",
+      "Spruce",
+      "Pine"
+    ],
     "diet": "Insects, seeds. Conifer specialist.",
     "description": "Coal tits have a white nape. Small. Grizedale. Whinlatter. Conifer woodland. Common. They hang. Conifer specialist. That high call.",
     "identification": "Small tit. Black cap. White nape. Grey. Conifer woodland. Unmistakeable.",
@@ -1630,7 +1962,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/coal-tit",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/coal-tit"
-    }
+    },
+    "localImage": "/images/species/birds/coal-tit.jpg"
   },
   {
     "commonName": "Blue Tit",
@@ -1645,7 +1978,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 3.4 million pairs. Widespread.",
     "lakesPopulation": "Everywhere. Woodland. Gardens. Feeders. That blue. Yellow. Common. Don't ignore them.",
-    "habitat": ["Woodland", "Gardens", "Everywhere"],
+    "habitat": [
+      "Woodland",
+      "Gardens",
+      "Everywhere"
+    ],
     "diet": "Insects, seeds. Omnivorous.",
     "description": "Blue tits are everywhere. That blue. Yellow. Woodland. Gardens. Feeders. Common. The default tit. Don't ignore them.",
     "identification": "Blue. Yellow. Small. Ubiquitous. Unmistakeable.",
@@ -1655,7 +1992,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/blue-tit",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/blue-tit"
-    }
+    },
+    "localImage": "/images/species/birds/blue-tit.jpg"
   },
   {
     "commonName": "Great Tit",
@@ -1670,7 +2008,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 2.5 million pairs. Widespread.",
     "lakesPopulation": "Everywhere. Woodland. Gardens. That teacher-teacher. Black stripe. Yellow. Common. Larger than blue tit.",
-    "habitat": ["Woodland", "Gardens", "Everywhere"],
+    "habitat": [
+      "Woodland",
+      "Gardens",
+      "Everywhere"
+    ],
     "diet": "Insects, seeds. Omnivorous.",
     "description": "Great tits are everywhere. That teacher-teacher. Black stripe. Yellow. Larger than blue tit. Common. Woodland. Gardens. Don't ignore them.",
     "identification": "Black stripe. Yellow. Larger than blue tit. Teacher-teacher. Unmistakeable.",
@@ -1680,7 +2022,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/great-tit",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/great-tit"
-    }
+    },
+    "localImage": "/images/species/birds/great-tit.jpg"
   },
   {
     "commonName": "Chaffinch",
@@ -1695,7 +2038,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 6.2 million pairs. Our commonest finch.",
     "lakesPopulation": "Everywhere. Woodland. Moorland. Gardens. That pink. White wing bars. Common. Our commonest finch. Don't ignore them.",
-    "habitat": ["Woodland", "Gardens", "Moorland"],
+    "habitat": [
+      "Woodland",
+      "Gardens",
+      "Moorland"
+    ],
     "diet": "Seeds, insects. Omnivorous.",
     "description": "Chaffinches are everywhere. Our commonest finch. That pink. White wing bars. Woodland. Moorland. Gardens. Common. That descending song.",
     "identification": "Male pink. White wing bars. Female brown. Common. Unmistakeable.",
@@ -1705,7 +2052,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/chaffinch",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/chaffinch"
-    }
+    },
+    "localImage": "/images/species/birds/chaffinch.jpg"
   },
   {
     "commonName": "Robin",
@@ -1720,7 +2068,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 6.7 million pairs. Widespread.",
     "lakesPopulation": "Everywhere. Woodland. Gardens. Moorland. That red breast. Sings all year. Common. Confiding. The default bird.",
-    "habitat": ["Woodland", "Gardens", "Everywhere"],
+    "habitat": [
+      "Woodland",
+      "Gardens",
+      "Everywhere"
+    ],
     "diet": "Insects, seeds. Omnivorous.",
     "description": "Robins are everywhere. That red breast. Sings all year. Woodland. Gardens. Moorland. Common. Confiding. The default bird. Don't ignore them.",
     "identification": "Red breast. Brown. Sings all year. Unmistakeable.",
@@ -1730,7 +2082,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/robin",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/robin"
-    }
+    },
+    "localImage": "/images/species/birds/robin.jpg"
   },
   {
     "commonName": "Wren",
@@ -1745,7 +2098,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 8.5 million pairs. Our commonest bird.",
     "lakesPopulation": "Everywhere. Woodland. Scrub. Gardens. That tiny. Loud song. Common. Our commonest bird. Don't ignore them.",
-    "habitat": ["Woodland", "Scrub", "Gardens"],
+    "habitat": [
+      "Woodland",
+      "Scrub",
+      "Gardens"
+    ],
     "diet": "Insects. Tiny.",
     "description": "Wrens are tiny. That loud song. Our commonest bird. Everywhere. Woodland. Scrub. Gardens. Common. That trill. Don't ignore them.",
     "identification": "Tiny. Brown. Upright tail. Loud song. Unmistakeable.",
@@ -1755,7 +2112,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/wren",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/wren"
-    }
+    },
+    "localImage": "/images/species/birds/wren.jpg"
   },
   {
     "commonName": "Blackbird",
@@ -1770,7 +2128,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 5.1 million pairs. Widespread.",
     "lakesPopulation": "Everywhere. Woodland. Gardens. Moorland. That black. Yellow bill. Common. That fluty song. Don't ignore them.",
-    "habitat": ["Woodland", "Gardens", "Everywhere"],
+    "habitat": [
+      "Woodland",
+      "Gardens",
+      "Everywhere"
+    ],
     "diet": "Worms, berries, insects. Omnivorous.",
     "description": "Blackbirds are everywhere. That black. Yellow bill. That fluty song. Woodland. Gardens. Common. Don't ignore them.",
     "identification": "Male black. Yellow bill. Female brown. Fluty song. Unmistakeable.",
@@ -1780,7 +2142,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/blackbird",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/blackbird"
-    }
+    },
+    "localImage": "/images/species/birds/blackbird.jpg"
   },
   {
     "commonName": "Song Thrush",
@@ -1795,7 +2158,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 1.2 million pairs. Red list. Declining.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. That song. Repeats phrases. Arrowhead spots. Declining. Worth listening for.",
-    "habitat": ["Woodland", "Gardens", "Hedgerows"],
+    "habitat": [
+      "Woodland",
+      "Gardens",
+      "Hedgerows"
+    ],
     "diet": "Worms, snails, insects. Smashes snails on stones.",
     "description": "Song thrushes repeat. That song. Same phrase two or three times. Arrowhead spots. Grizedale. Borrowdale. Declining. Red list. They smash snails on stones. Worth listening for.",
     "identification": "Arrowhead spots. Repeats song phrases. Brown. Smaller than mistle thrush.",
@@ -1805,7 +2172,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/song-thrush",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/song-thrush"
-    }
+    },
+    "localImage": "/images/species/birds/song-thrush.jpg"
   },
   {
     "commonName": "Goldfinch",
@@ -1820,7 +2188,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 1.2 million pairs. Increased.",
     "lakesPopulation": "Gardens. Woodland edge. Thistles. That red face. Yellow wing. Flocks. Common. That tinkling call. Increased.",
-    "habitat": ["Gardens", "Woodland edge", "Thistles"],
+    "habitat": [
+      "Gardens",
+      "Woodland edge",
+      "Thistles"
+    ],
     "diet": "Seeds. Thistle specialist.",
     "description": "Goldfinches have a red face. That yellow wing. Tinkling call. Gardens. Thistles. Flocks. Common. Increased. Easy to see.",
     "identification": "Red face. Yellow wing. Tinkling call. Flocks. Unmistakeable.",
@@ -1830,7 +2202,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/goldfinch",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/goldfinch"
-    }
+    },
+    "localImage": "/images/species/birds/goldfinch.jpg"
   },
   {
     "commonName": "Greenfinch",
@@ -1845,7 +2218,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 170,000 pairs. Red list. Declining fast.",
     "lakesPopulation": "Gardens. Woodland edge. That green. Yellow wing bar. Declining. Disease hit them. Worth looking for.",
-    "habitat": ["Gardens", "Woodland edge", "Farmland"],
+    "habitat": [
+      "Gardens",
+      "Woodland edge",
+      "Farmland"
+    ],
     "diet": "Seeds. Large bill.",
     "description": "Greenfinches are declining. That green. Yellow wing bar. Wheezing song. Disease hit them. Trichomonosis. Gardens. Woodland edge. Red list. Worth looking for.",
     "identification": "Green. Yellow wing bar. Large bill. Wheezing song. Declining.",
@@ -1855,7 +2232,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/greenfinch",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/greenfinch"
-    }
+    },
+    "localImage": "/images/species/birds/greenfinch.jpg"
   },
   {
     "commonName": "Willow Warbler",
@@ -1870,7 +2248,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 2.4 million pairs. Declining.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. Scrub. That descending song. Yellow. Common. April to August. Hard to separate from chiffchaff. Song is the key.",
-    "habitat": ["Woodland", "Scrub", "Moorland edge"],
+    "habitat": [
+      "Woodland",
+      "Scrub",
+      "Moorland edge"
+    ],
     "diet": "Insects. Feeds in foliage.",
     "description": "Willow warblers have a descending song. Grizedale. Borrowdale. Yellow. Common. April to August. Hard to separate from chiffchaff. Song descends. Chiffchaff doesn't.",
     "identification": "Yellow. Small. Descending song. Similar to chiffchaff. Song is the key. Legs paler than chiffchaff.",
@@ -1880,7 +2262,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/willow-warbler",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/willow-warbler"
-    }
+    },
+    "localImage": "/images/species/birds/willow-warbler.jpg"
   },
   {
     "commonName": "Chiffchaff",
@@ -1895,7 +2278,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 1.2 million pairs. Widespread.",
     "lakesPopulation": "Everywhere. Woodland. Scrub. That chiff-chaff. Common. First warbler in spring. March. Similar to willow warbler. Song doesn't descend.",
-    "habitat": ["Woodland", "Scrub", "Gardens"],
+    "habitat": [
+      "Woodland",
+      "Scrub",
+      "Gardens"
+    ],
     "diet": "Insects. Feeds in foliage.",
     "description": "Chiffchaffs say their name. Chiff-chaff. Grizedale. Borrowdale. Everywhere. Common. First warbler in spring. March. Similar to willow warbler. Song doesn't descend.",
     "identification": "Yellow. Small. Chiff-chaff song. Similar to willow warbler. Song doesn't descend. Dark legs.",
@@ -1905,7 +2292,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/chiffchaff",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/chiffchaff"
-    }
+    },
+    "localImage": "/images/species/birds/chiffchaff.jpg"
   },
   {
     "commonName": "Blackcap",
@@ -1920,7 +2308,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 1.2 million pairs. Some winter now.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. That black cap. Fluty song. Common. Some winter at feeders now. Male black cap. Female grey.",
-    "habitat": ["Woodland", "Scrub", "Gardens"],
+    "habitat": [
+      "Woodland",
+      "Scrub",
+      "Gardens"
+    ],
     "diet": "Insects, berries. Omnivorous.",
     "description": "Blackcaps have a black cap. Male. Grey in female. That fluty song. Grizedale. Borrowdale. Common. Some winter at feeders now. Increasing.",
     "identification": "Male black cap. Female grey cap. Fluty song. Warbler. Unmistakeable.",
@@ -1930,7 +2322,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/blackcap",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/blackcap"
-    }
+    },
+    "localImage": "/images/species/birds/blackcap.jpg"
   },
   {
     "commonName": "Garden Warbler",
@@ -1945,7 +2338,11 @@
     "shortLocation": "Grizedale Forest",
     "ukPopulation": "Around 170,000 pairs. Declining.",
     "lakesPopulation": "Grizedale. Borrowdale. Woodland. No cap. Plain. Rich song. Similar to blackcap but no cap. Hard to see. April to August.",
-    "habitat": ["Woodland", "Scrub", "Dense vegetation"],
+    "habitat": [
+      "Woodland",
+      "Scrub",
+      "Dense vegetation"
+    ],
     "diet": "Insects, berries.",
     "description": "Garden warblers are plain. No cap. Rich song. Grizedale. Borrowdale. Similar to blackcap but no cap. Hard to see. They skulk. April to August. Declining.",
     "identification": "Plain. No cap. Rich song. Similar to blackcap. No cap is the key. Skulks.",
@@ -1955,7 +2352,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/garden-warbler",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/garden-warbler"
-    }
+    },
+    "localImage": "/images/species/birds/garden-warbler.jpg"
   },
   {
     "commonName": "Whitethroat",
@@ -1970,7 +2368,11 @@
     "shortLocation": "Lake District",
     "ukPopulation": "Around 1.1 million pairs. Declining.",
     "lakesPopulation": "Scrub. Hedgerows. That white throat. Scratchy song. Sings from top of bush. April to August. Common. Easy to see when singing.",
-    "habitat": ["Scrub", "Hedgerows", "Bramble"],
+    "habitat": [
+      "Scrub",
+      "Hedgerows",
+      "Bramble"
+    ],
     "diet": "Insects, berries.",
     "description": "Whitethroats have a white throat. That scratchy song. Scrub. Hedgerows. Sings from top. April to August. Common. Easy to see when singing. Declining.",
     "identification": "White throat. Grey head. Scratchy song. Sings from top. Unmistakeable.",
@@ -1980,7 +2382,8 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/whitethroat",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/whitethroat"
-    }
+    },
+    "localImage": "/images/species/birds/whitethroat.jpg"
   },
   {
     "commonName": "Spotted Flycatcher",
@@ -1995,7 +2398,11 @@
     "shortLocation": "RSPB Haweswater",
     "ukPopulation": "Around 70,000 pairs. Red list. Declining fast.",
     "lakesPopulation": "RSPB Haweswater. Borrowdale. Woodland edge. That perch. Sallies for flies. Declining. May to August. Worth looking for. Grey. Streaked.",
-    "habitat": ["Woodland edge", "Gardens", "Mature trees"],
+    "habitat": [
+      "Woodland edge",
+      "Gardens",
+      "Mature trees"
+    ],
     "diet": "Flying insects. Sallies from perch.",
     "description": "Spotted flycatchers sally. That perch. Sallies for flies. Grey. Streaked. RSPB Haweswater. Borrowdale. Declining fast. Red list. May to August. Worth looking for.",
     "identification": "Grey. Streaked. Sits. Sallies. Flycatcher. Declining.",
@@ -2005,6 +2412,7 @@
     "externalLinks": {
       "rspb": "https://www.rspb.org.uk/birds-and-wildlife/spotted-flycatcher",
       "bto": "https://www.bto.org/understanding-birds/birdfacts/spotted-flycatcher"
-    }
+    },
+    "localImage": "/images/species/birds/spotted-flycatcher.jpg"
   }
 ]
