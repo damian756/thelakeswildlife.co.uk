@@ -41,10 +41,10 @@ type SortOption = "default" | "alpha" | "rarity" | "season" | "scientific";
 
 const SORT_OPTIONS: { value: SortOption; label: string }[] = [
   { value: "default",    label: "Default" },
-  { value: "alpha",      label: "A–Z (common name)" },
+  { value: "alpha",      label: "A-Z (common name)" },
   { value: "rarity",     label: "Rarity (Red first)" },
   { value: "season",     label: "Season (year-round first)" },
-  { value: "scientific", label: "Scientific name (A–Z)" },
+  { value: "scientific", label: "Scientific name (A-Z)" },
 ];
 
 const STATUS_ORDER: Record<string, number> = { red: 0, amber: 1, green: 2, unknown: 3 };
@@ -74,8 +74,8 @@ const birdSeasonOptions: SeasonOption[] = [
 
 const insectSeasonOptions: SeasonOption[] = [
   { value: "all", label: "All seasons", pillClass: "bg-[var(--fog)] text-[var(--slate)] border-[var(--reed)]" },
-  { value: "spring", label: "Spring (Mar–May)", pillClass: "bg-lime-100 text-lime-800 border-lime-200" },
-  { value: "summer", label: "Summer (Jun–Aug)", pillClass: "bg-amber-100 text-amber-800 border-amber-200" },
+  { value: "spring", label: "Spring (Mar/May)", pillClass: "bg-lime-100 text-lime-800 border-lime-200" },
+  { value: "summer", label: "Summer (Jun/Aug)", pillClass: "bg-amber-100 text-amber-800 border-amber-200" },
   { value: "autumn", label: "Autumn (Sep–Oct)", pillClass: "bg-orange-100 text-orange-800 border-orange-200" },
 ];
 
@@ -306,7 +306,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
                 <h2 className="text-lg font-bold text-[var(--fell)] mb-4 flex items-center gap-2 border-b border-[var(--fog)] pb-2">
                   <span>{cfg.icon}</span>
                   <span>{cfg.label}</span>
-                  <span className="text-sm font-normal text-[var(--slate)]/50 ml-1">— {groupSpecies.length} species</span>
+                  <span className="text-sm font-normal text-[var(--slate)]/50 ml-1">({groupSpecies.length} species)</span>
                 </h2>
                 <SpeciesGrid category={category} species={groupSpecies} />
               </section>

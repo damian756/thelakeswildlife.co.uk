@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
   const url = `https://www.thelakeswildlife.co.uk/blog/${slug}`;
   return {
-    title: `${post.title} — The Lakes Wildlife`,
+    title: `${post.title} | The Lakes Wildlife`,
     description: post.metaDescription,
     alternates: { canonical: url },
     openGraph: {

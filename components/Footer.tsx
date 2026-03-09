@@ -16,7 +16,7 @@ export function Footer() {
               <span className="text-[var(--copper)]">Wildlife</span>
             </p>
             <p className="text-white/60 text-sm leading-relaxed mt-2">
-              Independent guide to birds, nature and wildlife in the Lake District — from RSPB Haweswater to Grizedale Forest.
+              Independent guide to birds, nature and wildlife in the Lake District, from RSPB Haweswater to Grizedale Forest.
             </p>
             <p className="text-white/40 text-xs mt-4">
               Part of the{" "}

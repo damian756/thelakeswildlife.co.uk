@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const title = "Birdwatching in the Lake District — Guide, Best Spots & What to Bring";
+const title = "Birdwatching in the Lake District | Guide, Best Spots & What to Bring";
 const description =
   "Where to go birdwatching in the Lake District. RSPB Haweswater ospreys, Leighton Moss, Grizedale red squirrels. What to bring, when to go and what you'll see each season.";
 const url = "https://www.thelakeswildlife.co.uk/birdwatching-guide";
@@ -98,7 +98,7 @@ export default function BirdwatchingGuidePage() {
         {/* Stat block */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
           {[
-            { stat: "Ospreys", label: "RSPB Haweswater (Apr–Sep)" },
+            { stat: "Ospreys", label: "RSPB Haweswater (Apr/Sep)" },
             { stat: "4+", label: "Key sites to visit" },
             { stat: "RSPB members", label: "Free entry to reserves" },
             { stat: "Year-round", label: "Always something to see" },
@@ -146,7 +146,7 @@ export default function BirdwatchingGuidePage() {
           </div>
 
           <div className="card-hover rounded-xl border border-[var(--fog)] bg-white p-5">
-            <h3 className="font-bold text-[var(--fell)] mb-2">The fells — upland species</h3>
+            <h3 className="font-bold text-[var(--fell)] mb-2">The fells: upland species</h3>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               Red grouse, ring ouzel, wheatear, golden plover. Walk any of the higher fells in spring and summer and you&apos;ll encounter them. Martindale in October for the red deer rut. Dawn or dusk for the best chance of seeing stags.
             </p>
@@ -170,17 +170,17 @@ export default function BirdwatchingGuidePage() {
             </thead>
             <tbody className="divide-y divide-[var(--fog)]">
               <tr className="bg-sky-50">
-                <td className="px-3 py-2 font-medium text-sky-800">Apr – Jul</td>
+                <td className="px-3 py-2 font-medium text-sky-800">Apr/Jul</td>
                 <td className="px-3 py-2 text-[var(--slate)]">Ospreys at Haweswater, ring ouzel, wheatear, red grouse on the fells</td>
                 <td className="px-3 py-2 text-[var(--slate)]">Haweswater, fells</td>
               </tr>
               <tr>
-                <td className="px-3 py-2 font-medium text-amber-700">Aug – Sep</td>
+                <td className="px-3 py-2 font-medium text-amber-700">Aug/Sep</td>
                 <td className="px-3 py-2 text-[var(--slate)]">Osprey migration, wader passage at Leighton Moss</td>
                 <td className="px-3 py-2 text-[var(--slate)]">Haweswater, Leighton Moss</td>
               </tr>
               <tr className="bg-emerald-50">
-                <td className="px-3 py-2 font-medium text-emerald-700">Oct – Mar</td>
+                <td className="px-3 py-2 font-medium text-emerald-700">Oct/Mar</td>
                 <td className="px-3 py-2 text-[var(--slate)]">Red deer rut in Martindale, fieldfares, red grouse, bitterns at Leighton Moss</td>
                 <td className="px-3 py-2 text-[var(--slate)]">Martindale, Leighton Moss, fells</td>
               </tr>
@@ -207,7 +207,7 @@ export default function BirdwatchingGuidePage() {
           ].map(({ item, rec }) => (
             <div key={item} className="flex gap-3 text-sm">
               <span className="text-[var(--lichen)] mt-0.5 flex-shrink-0">▸</span>
-              <span className="text-[var(--slate)]"><strong className="text-[var(--slate)]">{item}</strong> — {rec}</span>
+              <span className="text-[var(--slate)]"><strong className="text-[var(--slate)]">{item}</strong>: {rec}</span>
             </div>
           ))}
         </div>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const title = "Ullswater — Red Deer, Goldeneye & Wildlife";
+const title = "Ullswater | Red Deer, Goldeneye & Wildlife";
 const description = "The second largest lake in the Lake District. Red deer in Martindale, goldeneye in winter. Landscape and wildlife.";
 const url = "https://www.thelakeswildlife.co.uk/nature/ullswater";
 

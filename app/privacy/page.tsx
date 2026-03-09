@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const title = "Privacy Policy — Sefton Coast Wildlife";
+const title = "Privacy Policy | The Lakes Wildlife";
 const description = "Privacy policy for thelakeswildlife.co.uk — how we handle your data.";
 const url = "https://www.thelakeswildlife.co.uk/privacy";
 
@@ -21,9 +21,9 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-2">Who we are</h2>
           <p>
-            Sefton Coast Wildlife (<a href="https://www.thelakeswildlife.co.uk" className="text-[var(--lichen)] hover:underline">thelakeswildlife.co.uk</a>) is
+            The Lakes Wildlife (<a href="https://www.thelakeswildlife.co.uk" className="text-[var(--lichen)] hover:underline">thelakeswildlife.co.uk</a>) is
             operated by Churchtown Media. Part of the{" "}
-            <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
+            <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
               The Lakes Network
             </a>.
           </p>
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
           <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-2">What data we collect</h2>
           <p className="mb-3">We keep data collection to a minimum:</p>
           <ul className="list-disc pl-5 space-y-1.5">
-            <li><strong>Contact form</strong> — if you use the contact form, we receive your name, email address and message. This is sent to us via Resend and is used solely to reply to your enquiry.</li>
+            <li><strong>Contact form</strong>: if you use the contact form, we receive your name, email address and message. This is sent to us via Resend and is used solely to reply to your enquiry.</li>
             <li><strong>Analytics</strong> — we use Plausible Analytics, a privacy-focused, cookieless analytics tool. Plausible does not use cookies, does not collect personal data, and is fully GDPR compliant. No data is shared with third parties.</li>
           </ul>
         </section>
@@ -48,10 +48,10 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-2">Third-party services</h2>
           <ul className="list-disc pl-5 space-y-1.5">
-            <li><strong>Plausible Analytics</strong> — cookieless, privacy-first web analytics. <a href="https://plausible.io/data-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Plausible data policy</a></li>
-            <li><strong>Resend</strong> — email delivery for the contact form. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Resend privacy policy</a></li>
-            <li><strong>Vercel</strong> — website hosting. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Vercel privacy policy</a></li>
-            <li><strong>Wikipedia / Wikimedia Commons</strong> — species images are loaded from Wikipedia&apos;s REST API. No personal data is sent to Wikipedia by this site.</li>
+            <li><strong>Plausible Analytics</strong>: cookieless, privacy-first web analytics. <a href="https://plausible.io/data-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Plausible data policy</a></li>
+            <li><strong>Resend</strong>: email delivery for the contact form. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Resend privacy policy</a></li>
+            <li><strong>Vercel</strong>: website hosting. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Vercel privacy policy</a></li>
+            <li><strong>Wikipedia / Wikimedia Commons</strong>: species images are loaded from Wikipedia&apos;s REST API. No personal data is sent to Wikipedia by this site.</li>
           </ul>
         </section>
 

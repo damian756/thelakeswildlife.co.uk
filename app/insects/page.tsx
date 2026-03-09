@@ -3,8 +3,8 @@ import { SpeciesList } from "@/components/SpeciesList";
 
 import type { Metadata } from "next";
 
-const title = "Lake District Insects — Butterflies, Moths & Beetles Guide";
-const description = "Butterflies, moths and beetles of the Lake District dunes and heathland — Dark Green Fritillary, Grayling, Six-spot Burnet, Dune Tiger Beetle and more. Where to see them and identification tips.";
+const title = "Lake District Insects | Butterflies, Moths & Beetles Guide";
+const description = "Butterflies, moths and beetles of the Lake District. Fells, woodland, grassland and wetland species. Where to see them and identification tips.";
 const url = "https://www.thelakeswildlife.co.uk/insects";
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default async function InsectsPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Insects of the Lake District",
-    description: "Butterflies, moths, dragonflies, beetles and bees recorded on the Lake District dunes, heathland and dune slacks.",
+    description: "Butterflies, moths, dragonflies, beetles and bees recorded in the Lake District. Fells, woodland, grassland and wetland habitats.",
     url,
     numberOfItems: species.length,
     itemListElement: species.map((s, i) => ({

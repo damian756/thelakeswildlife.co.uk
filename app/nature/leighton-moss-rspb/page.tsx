@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const title = "Leighton Moss RSPB — Bittern, Marsh Harrier & Reedbed";
+const title = "Leighton Moss RSPB | Bittern, Marsh Harrier & Reedbed";
 const description = "The largest reedbed in north-west England. Bittern, marsh harrier, bearded tit. RSPB reserve near Silverdale.";
 const url = "https://www.thelakeswildlife.co.uk/nature/leighton-moss-rspb";
 

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const title = "Grizedale Forest — Red Squirrels, Walks & Wildlife";
-const description = "Guide to Grizedale Forest in the Lake District — red squirrels, red deer, red kites. Visitor centre feeders and walking trails.";
+const title = "Grizedale Forest | Red Squirrels, Walks & Wildlife";
+const description = "Guide to Grizedale Forest in the Lake District: red squirrels, red deer, red kites. Visitor centre feeders and walking trails.";
 const url = "https://www.thelakeswildlife.co.uk/nature/grizedale-forest";
 
 export const metadata: Metadata = {

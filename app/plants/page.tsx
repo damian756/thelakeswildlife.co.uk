@@ -3,8 +3,8 @@ import { SpeciesList } from "@/components/SpeciesList";
 
 import type { Metadata } from "next";
 
-const title = "Lake District Plants — Dune & Marsh Flora Species Guide";
-const description = "Dune and marsh plants of the Lake District — including nationally rare species like Grass of Parnassus and Round-leaved Wintergreen at Ainsdale NNR. Identification guides and where to find them.";
+const title = "Lake District Plants | Upland & Woodland Flora Species Guide";
+const description = "Plants of the Lake District. Upland flora, limestone grassland, tarn-edge specialists and woodland species. Identification guides and where to find them.";
 const url = "https://www.thelakeswildlife.co.uk/plants";
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default async function PlantsPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Plants of the Lake District",
-    description: "Dune and saltmarsh flora of the Lake District — strandline annuals, orchids, dune slack specialists and nationally rare plants at Ainsdale NNR.",
+    description: "Flora of the Lake District. Upland species, limestone grassland, tarn-edge plants and woodland wildflowers.",
     url,
     numberOfItems: species.length,
     itemListElement: species.map((s, i) => ({

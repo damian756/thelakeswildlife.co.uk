@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 
-const title = "Contact — The Lakes Wildlife";
-const description = "Get in touch with The Lakes Wildlife — questions, species records, local knowledge or listing enquiries.";
+const title = "Contact | The Lakes Wildlife";
+const description = "Get in touch with The Lakes Wildlife: questions, species records, local knowledge or listing enquiries.";
 const url = "https://www.thelakeswildlife.co.uk/contact";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function ContactPage() {
             Contact us
           </h1>
           <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
-            Species records, questions about the site, listing enquiries or just something you&apos;ve spotted in the Lake District — we&apos;d like to hear from you.
+            Species records, questions about the site, listing enquiries or just something you&apos;ve spotted in the Lake District. We&apos;d like to hear from you.
           </p>
         </div>
       </div>
@@ -42,12 +42,12 @@ export default function ContactPage() {
             <div className="rounded-xl bg-[var(--fog)] p-5">
               <h2 className="font-semibold text-[var(--fell)] mb-3 text-sm">About the site</h2>
               <p className="text-sm text-[var(--slate)] leading-relaxed">
-                Sefton Coast Wildlife is an independent guide built by{" "}
+                The Lakes Wildlife is an independent guide built by{" "}
                 <a href="https://churchtownmedia.co.uk" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                   Churchtown Media
                 </a>{" "}
-                — part of the{" "}
-                <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
+                , part of the{" "}
+                <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                   The Lakes Network
                 </a>.
               </p>

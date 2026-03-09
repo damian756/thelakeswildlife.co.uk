@@ -1,9 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const title = "RSPB Haweswater Reserve — Ospreys, Parking & What to See";
+const title = "RSPB Haweswater Reserve | Ospreys, Parking & What to See";
 const description =
-  "Practical guide to RSPB Haweswater in the Lake District — osprey hide, pied flycatchers, red squirrels, parking and seasonal highlights.";
+  "Practical guide to RSPB Haweswater in the Lake District: osprey hide, pied flycatchers, red squirrels, parking and seasonal highlights.";
 const url = "https://www.thelakeswildlife.co.uk/nature/haweswater-rspb";
 
 export const metadata: Metadata = {
@@ -69,7 +69,7 @@ export default function HaweswaterPage() {
             { stat: "Ospreys", label: "Breeding pair" },
             { stat: "Free", label: "Entry" },
             { stat: "CA10 2LX", label: "Postcode" },
-            { stat: "Apr–Aug", label: "Osprey season" },
+            { stat: "Apr/Aug", label: "Osprey season" },
           ].map(({ stat, label }) => (
             <div key={label} className="rounded-xl bg-[var(--fog)] p-4 text-center">
               <p className="font-display text-2xl font-bold text-[var(--fell)]">{stat}</p>

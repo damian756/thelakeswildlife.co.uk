@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import type { Metadata } from "next";
 
-const title = "Nature Reserves — The Lakes Wildlife";
+const title = "Nature Reserves | The Lakes Wildlife";
 const description = "Guides to the Lake District's best nature reserves — RSPB Haweswater, Grizedale Forest, Foulshaw Moss, Leighton Moss and more.";
 const url = "https://www.thelakeswildlife.co.uk/nature";
 
@@ -52,7 +52,7 @@ export default function NaturePage() {
     <div className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="text-3xl font-bold text-[var(--fell)] mb-2">Nature Reserves</h1>
       <p className="text-[var(--slate)] mb-8 max-w-2xl">
-        The Lake District has some of the best wildlife sites in England — from RSPB osprey reserves to ancient woodland. Here&apos;s where to go and what to see.
+        The Lake District has some of the best wildlife sites in England, from RSPB osprey reserves to ancient woodland. Here&apos;s where to go and what to see.
       </p>
       <div className="grid gap-6 md:grid-cols-2">
         {reserves.map(({ href, name, tag, desc }) => (

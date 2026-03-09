@@ -6,9 +6,9 @@ import { getWikipediaImage } from "@/lib/wikipedia";
 import { BLOG_POSTS } from "@/content/blog/posts";
 import { PhotoGallery } from "@/components/PhotoGallery";
 
-const title = "The Lakes Wildlife — Birds, Nature & Wildlife in the Lake District";
+const title = "The Lakes Wildlife | Birds, Nature & Wildlife in the Lake District";
 const description =
-  "Independent guide to wildlife in the Lake District — RSPB Haweswater, ospreys, red deer, red squirrels, and a database of birds, insects, plants and mammals.";
+  "Independent guide to wildlife in the Lake District: RSPB Haweswater, ospreys, red deer, red squirrels, and a database of birds, insects, plants and mammals.";
 const url = "https://www.thelakeswildlife.co.uk";
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ const orgJsonLd = {
       "@id": "https://www.thelakeswildlife.co.uk/#website",
       url: "https://www.thelakeswildlife.co.uk",
       name: "The Lakes Wildlife",
-      description: "Independent guide to wildlife in the Lake District — birds, insects, plants and mammals.",
+      description: "Independent guide to wildlife in the Lake District: birds, insects, plants and mammals.",
       publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
       inLanguage: "en-GB",
     },

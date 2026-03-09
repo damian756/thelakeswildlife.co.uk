@@ -3,8 +3,8 @@ import { SpeciesList } from "@/components/SpeciesList";
 
 import type { Metadata } from "next";
 
-const title = "Lake District Mammals & Wildlife — Red Squirrels, Seals, Sand Lizards, Natterjack Toads";
-const description = "Mammals, reptiles and amphibians of the Lake District — Red Squirrels at Formby NT pinewoods, Grey Seals on the beach, Sand Lizards at Ainsdale NNR and the Natterjack Toad chorus. Where to see them, ID tips and seasonal guidance.";
+const title = "Lake District Mammals & Wildlife | Red Squirrels, Red Deer, Otters, Seals";
+const description = "Mammals of the Lake District. Red Squirrels at Grizedale, Red Deer rut at Martindale, Otters on the lakes and rivers, Grey Seals on the Cumbrian coast. Where to see them, ID tips and seasonal guidance.";
 const url = "https://www.thelakeswildlife.co.uk/mammals";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default async function MammalsPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Mammals of the Lake District",
-    description: "Mammals, reptiles and amphibians of the Lake District — including Red Squirrels, Grey Seals, Natterjack Toads, Otters and bats.",
+    description: "Mammals of the Lake District. Red Squirrels at Grizedale, Red Deer at Martindale, Otters, Grey Seals and bats.",
     url,
     numberOfItems: species.length,
     itemListElement: species.map((s, i) => ({

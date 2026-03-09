@@ -2,8 +2,8 @@ import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
 import type { Metadata } from "next";
 
-const title = "Lake District Birds — Species Guide, Where to See & ID Tips";
-const description = "119 bird species recorded on the Lake District — Pink-footed Geese at Marshside RSPB, breeding Avocets, Peregrines, waders and wildfowl. Seasonal presence, identification and viewing tips for each.";
+const title = "Lake District Birds | Species Guide, Where to See & ID Tips";
+const description = "Bird species of the Lake District. Ospreys at Haweswater RSPB, Peregrines on the crags, Pink-footed Geese, waders and wildfowl. Seasonal presence, identification and viewing tips for each.";
 const url = "https://www.thelakeswildlife.co.uk/birds";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default async function BirdsPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Birds of the Lake District",
-    description: "Species database of birds recorded on the Lake District — Marshside RSPB, the marshes, dunes and coastline from Southport to Formby.",
+    description: "Species database of birds recorded in the Lake District. Haweswater RSPB, Bassenthwaite, Derwentwater and the upland fells.",
     url,
     numberOfItems: species.length,
     itemListElement: species.map((s, i) => ({

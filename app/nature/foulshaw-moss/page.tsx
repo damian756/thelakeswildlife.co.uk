@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const title = "Foulshaw Moss — Osprey Viewing Platform";
+const title = "Foulshaw Moss | Osprey Viewing Platform";
 const description = "Cumbria Wildlife Trust reserve near Grange-over-Sands. Osprey viewing platform. Nest visible from the hide.";
 const url = "https://www.thelakeswildlife.co.uk/nature/foulshaw-moss";
 

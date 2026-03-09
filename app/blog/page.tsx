@@ -4,9 +4,9 @@ import { BLOG_POSTS } from "@/content/blog/posts";
 import { getWikipediaImage } from "@/lib/wikipedia";
 import { BlogListClient } from "@/components/BlogListClient";
 
-const title = "Wildlife Blog — The Lakes Wildlife";
+const title = "Wildlife Blog | The Lakes Wildlife";
 const description =
-  "Damian's notes from the Lake District — conservation news, species spotlights, seasonal watching guides, habitat guides and wildlife photography tips.";
+  "Damian's notes from the Lake District: conservation news, species spotlights, seasonal watching guides, habitat guides and wildlife photography tips.";
 const url = "https://www.thelakeswildlife.co.uk/blog";
 
 export const metadata: Metadata = {
@@ -51,7 +51,7 @@ export default async function BlogIndexPage() {
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">Wildlife Blog</h1>
           <p className="text-white/70 max-w-2xl leading-relaxed">
-            Notes from the Lake District — conservation, species spotlights, seasonal guides, habitat and photography.
+            Notes from the Lake District: conservation, species spotlights, seasonal guides, habitat and photography.
           </p>
         </div>
       </div>

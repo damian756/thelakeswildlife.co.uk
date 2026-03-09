@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const title = "Terms of Use — The Lakes Wildlife";
+const title = "Terms of Use | The Lakes Wildlife";
 const description = "Terms of use for thelakeswildlife.co.uk.";
 const url = "https://www.thelakeswildlife.co.uk/terms";
 
@@ -23,7 +23,7 @@ export default function TermsPage() {
           <p>
             The Lakes Wildlife (<a href="https://www.thelakeswildlife.co.uk" className="text-[var(--lichen)] hover:underline">thelakeswildlife.co.uk</a>) is
             operated by Churchtown Media. Part of the{" "}
-            <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
+            <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
               The Lakes Network
             </a>.
           </p>
@@ -48,7 +48,7 @@ export default function TermsPage() {
           <p>
             We make every effort to keep species data, seasonal information and practical details accurate and up to date.
             However, wildlife is unpredictable and conditions change. We accept no liability for decisions made based on
-            information on this site. Always check current conditions before visiting any site — particularly tides,
+            information on this site. Always check current conditions before visiting any site, particularly tides,
             weather and access restrictions.
           </p>
         </section>

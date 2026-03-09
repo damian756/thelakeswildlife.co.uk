@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     },
   },
   title: {
-    default: "The Lakes Wildlife — Birds, Nature & Wildlife in the Lake District",
+    default: "The Lakes Wildlife | Birds, Nature & Wildlife in the Lake District",
     template: "%s | The Lakes Wildlife",
   },
   description:
-    "Independent guide to wildlife in the Lake District — RSPB Haweswater, ospreys, red deer, red squirrels, and a database of birds, insects, plants and mammals.",
+    "Independent guide to wildlife in the Lake District: RSPB Haweswater, ospreys, red deer, red squirrels, and a database of birds, insects, plants and mammals.",
   openGraph: {
     title: "The Lakes Wildlife",
-    description: "Birds, nature and wildlife in the Lake District — Haweswater, Grizedale and beyond.",
+    description: "Birds, nature and wildlife in the Lake District: Haweswater, Grizedale and beyond.",
     url: "https://www.thelakeswildlife.co.uk",
     siteName: "The Lakes Wildlife",
     images: [

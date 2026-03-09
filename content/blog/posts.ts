@@ -47,8 +47,120 @@ export const BLOG_CATEGORIES: Record<BlogCategory, { label: string; description:
   },
 };
 
-export const BLOG_POSTS: BlogPost[] = [];
-/* Placeholder: add Lakes-specific blog posts when ready
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "ospreys-haweswater-rspb",
+    category: "species-spotlight",
+    categoryLabel: "Species Spotlights",
+    title: "Ospreys at Haweswater RSPB: Britain's Reintroduction Success Story",
+    date: "2026-02-15",
+    metaDescription:
+      "Ospreys at Haweswater RSPB in the Lake District. When to visit, where to watch, and the story of how ospreys returned to England after 150 years.",
+    heroWikipediaTitle: "Osprey",
+    heroAlt: "Osprey in flight, the raptor that returned to Haweswater after 150 years",
+    intro:
+      "Haweswater RSPB is the place to see ospreys in England. The birds returned to breed here in 2016 after a 150-year absence, and the reserve now provides a dedicated viewpoint for watching them. Here's what you need to know.",
+    sections: [
+      {
+        heading: "When they're present",
+        body: [
+          "Ospreys arrive in late March or early April and stay until September. The best viewing is from April through August when birds are nesting and feeding. The viewpoint is open daily during the breeding season.",
+          "Mornings are often quieter. The birds fish the reservoir and the tarns. If you're lucky, you'll see a bird dive and catch a fish.",
+        ],
+      },
+      {
+        heading: "Where to watch",
+        body: [
+          "The RSPB runs a dedicated osprey viewpoint at Haweswater. It's a short walk from the car park. Bring binoculars and a scope if you have one. The nest is visible from the hide.",
+          "Haweswater is in the eastern Lake District, near Shap. The road from Mardale Head is narrow. Allow time for the drive.",
+        ],
+      },
+      {
+        heading: "The reintroduction story",
+        body: [
+          "Ospreys were wiped out in England by persecution in the 1800s. They returned to Scotland in the 1950s and slowly spread south. The Lake District Osprey Project, a partnership between the RSPB and United Utilities, helped establish the first breeding pair at Haweswater in 2016.",
+          "The site is now one of the most reliable places to see ospreys in England. The birds have raised young every year since their return.",
+        ],
+      },
+    ],
+    tags: ["Osprey", "Haweswater", "RSPB", "raptors", "conservation"],
+  },
+  {
+    slug: "red-deer-rut-martindale",
+    category: "seasonal-watching",
+    categoryLabel: "Seasonal Watching",
+    title: "The Red Deer Rut at Martindale: When and Where to Watch",
+    date: "2026-09-20",
+    metaDescription:
+      "Red deer rut in the Lake District. Martindale is the place. Dawn or dusk in October. What to expect and how to watch responsibly.",
+    heroWikipediaTitle: "Red deer",
+    heroAlt: "Red deer stag during the rut, Martindale, Lake District",
+    intro:
+      "The red deer rut is one of the wildlife spectacles of the Lake District. Martindale, in the eastern fells, holds one of the largest free-ranging herds in England. October is the month. Dawn or dusk.",
+    sections: [
+      {
+        heading: "When to go",
+        body: [
+          "The rut runs from late September through October. Peak activity is usually mid-October. The stags are at their most vocal and visible then.",
+          "Dawn and dusk are the best times. The deer move into the open at first light and last light. Midday they tend to disappear into the bracken.",
+        ],
+      },
+      {
+        heading: "Where to watch",
+        body: [
+          "Martindale is the key area. The valley is accessible from the road between Pooley Bridge and Haweswater. Park considerately and walk from there.",
+          "Keep your distance. The stags are aggressive during the rut. Use binoculars or a scope. Do not approach.",
+        ],
+      },
+      {
+        heading: "What you'll see",
+        body: [
+          "Stags roaring. The sound carries across the valley. You'll hear them before you see them. The larger stags hold harems of hinds and defend them from rivals.",
+          "Sometimes you'll see stags locking antlers. It's dramatic but rare. Most of the time it's roaring, posturing, and the occasional chase.",
+        ],
+      },
+    ],
+    tags: ["Red deer", "rut", "Martindale", "October", "seasonal"],
+  },
+  {
+    slug: "red-squirrels-grizedale",
+    category: "species-spotlight",
+    categoryLabel: "Species Spotlights",
+    title: "Red Squirrels at Grizedale Forest: Where to See Them",
+    date: "2026-03-10",
+    metaDescription:
+      "Red squirrels in the Lake District. Grizedale Forest is one of the best places. When to go, what to look for, and how to avoid disturbing them.",
+    heroWikipediaTitle: "Red squirrel",
+    heroAlt: "Red squirrel in Grizedale Forest, one of the Lake District's strongholds",
+    intro:
+      "Grizedale Forest holds one of the healthiest red squirrel populations in the Lake District. The Forestry England woodland, mixed with the right habitat, gives them a chance against the grey squirrel. Here's where and when to look.",
+    sections: [
+      {
+        heading: "When to go",
+        body: [
+          "Red squirrels are active year-round. Autumn and winter are often the best times: they're more visible when the trees have lost their leaves, and they're busy caching food.",
+          "Early morning is best. They're most active in the first few hours after dawn. Quiet, patient watching usually pays off.",
+        ],
+      },
+      {
+        heading: "Where to look",
+        body: [
+          "The mixed conifer and broadleaf areas of Grizedale are the key. Red squirrels prefer Scots pine and Norway spruce. They need the right tree species to thrive.",
+          "The forest trails are well signposted. Walk quietly. Stop often. Look up. They're often higher in the canopy than you expect.",
+        ],
+      },
+      {
+        heading: "The grey squirrel problem",
+        body: [
+          "Grey squirrels outcompete reds for food and carry squirrelpox, which is fatal to reds. The Lake District is one of the last strongholds in England because the habitat is less suitable for greys.",
+          "Grizedale and the surrounding areas are managed to favour red squirrels. If you see a grey squirrel, you can report it to the Red Squirrel Survival Trust.",
+        ],
+      },
+    ],
+    tags: ["Red squirrel", "Grizedale", "Forestry England", "conservation"],
+  },
+];
+/* Placeholder: Sefton Coast content removed — Lakes blog posts above
 [
   {
     slug: "natterjack-toad-sefton-coast",

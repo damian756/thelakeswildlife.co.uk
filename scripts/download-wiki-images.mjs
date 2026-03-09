@@ -27,7 +27,7 @@ async function fetchWithRetry(url, retries = 3) {
   for (let i = 0; i < retries; i++) {
     try {
       const res = await fetch(url, {
-        headers: { "User-Agent": "SeftonCoastWildlife/1.0 (https://seftoncoastwildlife.co.uk)" },
+        headers: { "User-Agent": "TheLakesWildlife/1.0 (https://thelakeswildlife.co.uk)" },
       });
       if (res.ok) return res;
       if (res.status === 429 || res.status >= 500) {

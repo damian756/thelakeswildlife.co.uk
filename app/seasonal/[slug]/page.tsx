@@ -19,8 +19,8 @@ interface SeasonalPageData {
 const seasonalPages: Record<string, SeasonalPageData> = {
   "osprey-season": {
     title: "Osprey Season in the Lake District",
-    period: "April – August",
-    metaDescription: "When and where to see ospreys in the Lake District — RSPB Haweswater, Foulshaw Moss. Get there before 10am.",
+    period: "April/August",
+    metaDescription: "When and where to see ospreys in the Lake District: RSPB Haweswater, Foulshaw Moss. Get there before 10am.",
     heroWikipediaTitle: "Osprey",
     heroAlt: "Osprey in flight over water",
     intro: "Ospreys return to the Lake District from West Africa in March. By April they're on the nest. RSPB Haweswater and Foulshaw Moss are the main sites. Get there before 10am if you want a decent spot at the hide.",
@@ -73,7 +73,7 @@ const seasonalPages: Record<string, SeasonalPageData> = {
   },
   "winter-wildfowl": {
     title: "Winter Wildfowl in the Lake District",
-    period: "November – February",
+    period: "November/February",
     metaDescription: "Goldeneye, tufted duck and wigeon on the Lake District lakes. Ullswater, Windermere, Coniston.",
     heroWikipediaTitle: "Common goldeneye",
     heroAlt: "Goldeneye on lake",
@@ -106,11 +106,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!page) return {};
   const url = `https://www.thelakeswildlife.co.uk/seasonal/${slug}`;
   return {
-    title: `${page.title} — The Lakes Wildlife`,
+    title: `${page.title} | The Lakes Wildlife`,
     description: page.metaDescription,
     alternates: { canonical: url },
     openGraph: {
-      title: `${page.title} — The Lakes Wildlife`,
+      title: `${page.title} | The Lakes Wildlife`,
       description: page.metaDescription,
       url,
       siteName: "The Lakes Wildlife",
@@ -194,7 +194,7 @@ export default async function SeasonalSlugPage({ params }: Props) {
           <p className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)] mb-1">About the author</p>
           <p className="text-sm font-semibold text-[var(--fell)]">Damian Roche</p>
           <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
-            Damian walks the Lake District fells, watches the wildlife, and writes about what he finds. Ex-army, hiker, fisherman. Southport-based. Regular Lakes visitor for decades.
+            Damian walks the Lake District fells, watches the wildlife, and writes about what he finds. Ex-army, hiker, fisherman. Regular Lakes visitor for decades.
           </p>
         </div>
 
