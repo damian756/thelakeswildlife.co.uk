@@ -1,24 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --sand:   #f5f2eb;
-  --dune:   #e8e2d6;
-  --slate:  #2d3a3a;
-  --forest: #1c3220;
-  --marsh:  #4a6b5a;
-  --foam:   #8fa99e;
-  --ink:    #1a2323;
-  --gold:   #c9a96e;
+  /* Fell & Tarn — Lakes Wildlife palette */
+  --fell:    #162118;
+  --tarn:    #1E4A5C;
+  --lichen:  #3E7060;
+  --copper:  #A86C2A;
+  --mist:    #E8EDEA;
+  --fog:     #CED8D2;
+  --peat:    #162118;
+  --reed:    #6A9080;
+  --slate:   #4E5A50;
 
-  --font-inter:    "Inter", sans-serif;
-  --font-playfair: "Playfair Display", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-lora: "Lora", serif;
 }
 
 @theme inline {
-  --color-background: var(--sand);
-  --color-foreground: var(--ink);
+  --color-background: var(--mist);
+  --color-foreground: var(--peat);
   --font-sans:    var(--font-inter);
-  --font-display: var(--font-playfair);
+  --font-display: var(--font-lora);
 }
 
 html,
@@ -28,31 +30,31 @@ body {
 }
 
 body {
-  background: var(--sand);
-  color: var(--ink);
+  background: var(--mist);
+  color: var(--peat);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .font-display {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-lora), Georgia, serif;
 }
 
-/* Card lift on hover — matches network standard */
+/* Card lift on hover */
 .card-hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(28, 50, 32, 0.12);
+  box-shadow: 0 12px 32px rgba(20, 35, 28, 0.10);
 }
 
-/* Custom scrollbar — accent colour */
+/* Custom scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }
-::-webkit-scrollbar-thumb { background: #4a6b5a44; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--marsh); }
+::-webkit-scrollbar-thumb { background: #3E706044; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--tarn); }
 
 .scrollbar-hide {
   -ms-overflow-style: none;

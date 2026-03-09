@@ -75,7 +75,7 @@ export function BlogListClient({ posts }: Props) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search posts…"
-            className="w-full rounded-xl border border-[var(--dune)] bg-white pl-10 pr-4 py-2.5 text-sm text-[var(--ink)] placeholder:text-[var(--slate)]/40 focus:outline-none focus:border-[var(--marsh)] focus:ring-1 focus:ring-[var(--marsh)] transition"
+            className="w-full rounded-xl border border-[var(--fog)] bg-white pl-10 pr-4 py-2.5 text-sm text-[var(--peat)] placeholder:text-[var(--slate)]/40 focus:outline-none focus:border-[var(--lichen)] focus:ring-1 focus:ring-[var(--lichen)] transition"
           />
           {query && (
             <button
@@ -96,8 +96,8 @@ export function BlogListClient({ posts }: Props) {
             onClick={() => setActiveCategory(ALL)}
             className={`rounded-full border px-3.5 py-1.5 text-xs font-semibold transition ${
               activeCategory === ALL
-                ? "bg-[var(--forest)] text-white border-[var(--forest)]"
-                : "bg-white text-[var(--slate)] border-[var(--dune)] hover:border-[var(--marsh)]"
+                ? "bg-[var(--fell)] text-white border-[var(--fell)]"
+                : "bg-white text-[var(--slate)] border-[var(--fog)] hover:border-[var(--lichen)]"
             }`}
           >
             All posts
@@ -108,8 +108,8 @@ export function BlogListClient({ posts }: Props) {
               onClick={() => setActiveCategory(slug)}
               className={`rounded-full border px-3.5 py-1.5 text-xs font-semibold transition ${
                 activeCategory === slug
-                  ? "bg-[var(--marsh)] text-white border-[var(--marsh)]"
-                  : "bg-white text-[var(--slate)] border-[var(--dune)] hover:border-[var(--marsh)]"
+                  ? "bg-[var(--lichen)] text-white border-[var(--lichen)]"
+                  : "bg-white text-[var(--slate)] border-[var(--fog)] hover:border-[var(--lichen)]"
               }`}
             >
               {cat.label}
@@ -127,7 +127,7 @@ export function BlogListClient({ posts }: Props) {
             </p>
             <button
               onClick={() => { setQuery(""); setActiveCategory(ALL); }}
-              className="text-xs text-[var(--marsh)] hover:underline font-medium"
+              className="text-xs text-[var(--lichen)] hover:underline font-medium"
             >
               Clear
             </button>
@@ -141,7 +141,7 @@ export function BlogListClient({ posts }: Props) {
           <p className="text-[var(--slate)]/60 text-sm mb-3">No posts match your search.</p>
           <button
             onClick={() => { setQuery(""); setActiveCategory(ALL); }}
-            className="text-sm text-[var(--marsh)] hover:underline font-medium"
+            className="text-sm text-[var(--lichen)] hover:underline font-medium"
           >
             Clear filters
           </button>
@@ -152,12 +152,12 @@ export function BlogListClient({ posts }: Props) {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className={`card-hover group block rounded-2xl border border-[var(--dune)] bg-white overflow-hidden hover:border-[var(--marsh)]/50 transition ${
+              className={`card-hover group block rounded-2xl border border-[var(--fog)] bg-white overflow-hidden hover:border-[var(--lichen)]/50 transition ${
                 i === 0 && filtered.length > 2 ? "sm:col-span-2 lg:col-span-1" : ""
               }`}
             >
               {/* Image */}
-              <div className={`overflow-hidden bg-[var(--dune)] ${i === 0 && filtered.length > 2 ? "h-52 sm:h-64 lg:h-52" : "h-48"}`}>
+              <div className={`overflow-hidden bg-[var(--fog)] ${i === 0 && filtered.length > 2 ? "h-52 sm:h-64 lg:h-52" : "h-48"}`}>
                 {post.heroSrc ? (
                   <img
                     src={post.heroSrc}
@@ -166,16 +166,16 @@ export function BlogListClient({ posts }: Props) {
                     loading="lazy"
                   />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-[var(--marsh)] to-[var(--forest)]" />
+                  <div className="w-full h-full bg-gradient-to-br from-[var(--lichen)] to-[var(--fell)]" />
                 )}
               </div>
 
               {/* Content */}
               <div className="p-5">
-                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--marsh)] mb-2">
+                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--lichen)] mb-2">
                   {post.categoryLabel}
                 </span>
-                <h2 className="font-semibold text-[var(--forest)] leading-snug mb-1.5 group-hover:text-[var(--marsh)] transition text-base">
+                <h2 className="font-semibold text-[var(--fell)] leading-snug mb-1.5 group-hover:text-[var(--lichen)] transition text-base">
                   {post.title}
                 </h2>
                 <p className="text-xs text-[var(--slate)]/50 mb-3">{formatDate(post.date)}</p>

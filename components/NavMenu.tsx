@@ -49,14 +49,14 @@ export function NavMenu() {
     <header
       className={`sticky top-0 z-50 transition-shadow duration-300 ${
         scrolled ? "shadow-sm" : ""
-      } bg-white/95 backdrop-blur-sm border-b border-[var(--dune)]`}
+      } bg-white/95 backdrop-blur-sm border-b border-[var(--fog)]`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group" onClick={() => setMobileOpen(false)}>
-          <span className="text-base sm:text-lg font-semibold text-[var(--forest)] group-hover:text-[var(--marsh)] transition leading-none">
+          <span className="text-base sm:text-lg font-semibold text-[var(--fell)] group-hover:text-[var(--lichen)] transition leading-none">
             The Lakes{" "}
-            <span className="text-[var(--marsh)]">Wildlife</span>
+            <span className="text-[var(--lichen)]">Wildlife</span>
           </span>
         </Link>
 
@@ -65,14 +65,14 @@ export function NavMenu() {
           {nav.map((item) =>
             item.children ? (
               <div key={item.label} className="relative group">
-                <span className="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium text-[var(--slate)] hover:bg-[var(--dune)] hover:text-[var(--forest)] cursor-default transition">
+                <span className="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium text-[var(--slate)] hover:bg-[var(--fog)] hover:text-[var(--fell)] cursor-default transition">
                   {item.label}
                   <svg className="w-3.5 h-3.5 opacity-50 group-hover:opacity-80 transition" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </span>
                 <div className="absolute top-full left-0 pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-                  <div className="bg-white border border-[var(--dune)] rounded-xl shadow-lg py-1.5 min-w-[230px]">
+                  <div className="bg-white border border-[var(--fog)] rounded-xl shadow-lg py-1.5 min-w-[230px]">
                     {item.children.map((child) =>
                       child.href.startsWith("http") ? (
                         <a
@@ -80,7 +80,7 @@ export function NavMenu() {
                           href={child.href}
                           target="_blank"
                           rel="noopener"
-                          className="flex items-center gap-2.5 px-4 py-2.5 text-sm text-[var(--slate)] hover:bg-[var(--sand)] hover:text-[var(--forest)] transition"
+                          className="flex items-center gap-2.5 px-4 py-2.5 text-sm text-[var(--slate)] hover:bg-[var(--mist)] hover:text-[var(--fell)] transition"
                         >
                           {child.label}
                           <span className="ml-auto text-[10px] text-gray-400">↗</span>
@@ -89,7 +89,7 @@ export function NavMenu() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="flex items-center gap-2.5 px-4 py-2.5 text-sm text-[var(--slate)] hover:bg-[var(--sand)] hover:text-[var(--forest)] transition"
+                        className="flex items-center gap-2.5 px-4 py-2.5 text-sm text-[var(--slate)] hover:bg-[var(--mist)] hover:text-[var(--fell)] transition"
                       >
                         {child.label}
                       </Link>
@@ -102,7 +102,7 @@ export function NavMenu() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-3 py-2 rounded-md text-sm font-medium text-[var(--slate)] hover:bg-[var(--dune)] hover:text-[var(--forest)] transition"
+                className="px-3 py-2 rounded-md text-sm font-medium text-[var(--slate)] hover:bg-[var(--fog)] hover:text-[var(--fell)] transition"
               >
                 {item.label}
               </Link>
@@ -114,7 +114,7 @@ export function NavMenu() {
         <div className="hidden md:flex items-center gap-3">
           <Link
             href="/nature/haweswater-rspb"
-            className="rounded-lg bg-[var(--forest)] px-4 py-2 text-sm font-medium text-white hover:bg-[var(--marsh)] transition"
+            className="rounded-lg bg-[var(--fell)] px-4 py-2 text-sm font-medium text-white hover:bg-[var(--lichen)] transition"
           >
             Visit Haweswater
           </Link>
@@ -122,7 +122,7 @@ export function NavMenu() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 rounded-md text-[var(--slate)] hover:bg-[var(--dune)] transition"
+          className="md:hidden p-2 rounded-md text-[var(--slate)] hover:bg-[var(--fog)] transition"
           onClick={() => setMobileOpen((o) => !o)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
@@ -140,14 +140,14 @@ export function NavMenu() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-[var(--dune)] bg-white">
+        <div className="md:hidden border-t border-[var(--fog)] bg-white">
           <nav className="px-4 py-4 flex flex-col gap-1">
             {nav.map((item) => (
               <div key={item.label}>
                 <Link
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="block px-3 py-2.5 rounded-md text-sm font-medium text-[var(--slate)] hover:bg-[var(--sand)] hover:text-[var(--forest)] transition"
+                  className="block px-3 py-2.5 rounded-md text-sm font-medium text-[var(--slate)] hover:bg-[var(--mist)] hover:text-[var(--fell)] transition"
                 >
                   {item.label}
                 </Link>
@@ -161,7 +161,7 @@ export function NavMenu() {
                           target="_blank"
                           rel="noopener"
                           onClick={() => setMobileOpen(false)}
-                          className="block px-3 py-2 rounded-md text-sm text-[var(--slate)]/80 hover:bg-[var(--dune)] hover:text-[var(--forest)] transition"
+                          className="block px-3 py-2 rounded-md text-sm text-[var(--slate)]/80 hover:bg-[var(--fog)] hover:text-[var(--fell)] transition"
                         >
                           {child.label} ↗
                         </a>
@@ -170,7 +170,7 @@ export function NavMenu() {
                         key={child.href}
                         href={child.href}
                         onClick={() => setMobileOpen(false)}
-                        className="block px-3 py-2 rounded-md text-sm text-[var(--slate)]/80 hover:bg-[var(--dune)] hover:text-[var(--forest)] transition"
+                        className="block px-3 py-2 rounded-md text-sm text-[var(--slate)]/80 hover:bg-[var(--fog)] hover:text-[var(--fell)] transition"
                       >
                         {child.label}
                       </Link>
@@ -183,7 +183,7 @@ export function NavMenu() {
             <Link
               href="/nature/haweswater-rspb"
               onClick={() => setMobileOpen(false)}
-              className="mt-2 block text-center rounded-lg bg-[var(--forest)] px-4 py-2.5 text-sm font-medium text-white hover:bg-[var(--marsh)] transition"
+              className="mt-2 block text-center rounded-lg bg-[var(--fell)] px-4 py-2.5 text-sm font-medium text-white hover:bg-[var(--lichen)] transition"
             >
               Visit Haweswater
             </Link>

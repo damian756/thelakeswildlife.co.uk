@@ -36,7 +36,7 @@ export function ClickableImage({ src, alt, className, caption, fill, priority, s
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className={`group focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--marsh)] ${fill ? "absolute inset-0 w-full h-full" : "relative block w-full"}`}
+        className={`group focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--lichen)] ${fill ? "absolute inset-0 w-full h-full" : "relative block w-full"}`}
         aria-label={`Enlarge: ${alt}`}
       >
         <Image

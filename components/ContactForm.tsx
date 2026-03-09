@@ -65,7 +65,7 @@ export function ContactForm() {
   }
 
   const inputClass =
-    "w-full rounded-lg border border-[var(--dune)] bg-white px-4 py-2.5 text-sm text-[var(--ink)] placeholder:text-[var(--slate)]/40 focus:outline-none focus:border-[var(--marsh)] focus:ring-1 focus:ring-[var(--marsh)] transition";
+    "w-full rounded-lg border border-[var(--fog)] bg-white px-4 py-2.5 text-sm text-[var(--peat)] placeholder:text-[var(--slate)]/40 focus:outline-none focus:border-[var(--lichen)] focus:ring-1 focus:ring-[var(--lichen)] transition";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
@@ -136,7 +136,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full sm:w-auto rounded-lg bg-[var(--forest)] px-8 py-3 text-sm font-semibold text-white hover:bg-[var(--marsh)] disabled:opacity-60 disabled:cursor-not-allowed transition"
+        className="w-full sm:w-auto rounded-lg bg-[var(--fell)] px-8 py-3 text-sm font-semibold text-white hover:bg-[var(--lichen)] disabled:opacity-60 disabled:cursor-not-allowed transition"
       >
         {status === "sending" ? "Sending…" : "Send message"}
       </button>

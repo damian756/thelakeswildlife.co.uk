@@ -3,9 +3,9 @@ import Link from "next/link";
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-[var(--forest)] text-white">
+    <footer className="bg-[var(--fell)] text-white">
       {/* Accent strip */}
-      <div className="h-1 w-full bg-gradient-to-r from-[var(--marsh)] via-[var(--gold)] to-[var(--marsh)]" />
+      <div className="h-1 w-full bg-gradient-to-r from-[var(--lichen)] via-[var(--copper)] to-[var(--lichen)]" />
 
       <div className="mx-auto max-w-6xl px-4 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -13,7 +13,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <p className="text-lg font-semibold text-white leading-tight mb-1">
               The Lakes{" "}
-              <span className="text-[var(--gold)]">Wildlife</span>
+              <span className="text-[var(--copper)]">Wildlife</span>
             </p>
             <p className="text-white/60 text-sm leading-relaxed mt-2">
               Independent guide to birds, nature and wildlife in the Lake District — from RSPB Haweswater to Grizedale Forest.
@@ -28,7 +28,7 @@ export function Footer() {
 
           {/* Species */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--gold)] mb-4">Species</h3>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">Species</h3>
             <ul className="space-y-2.5 text-sm text-white/70">
               {[
                 { href: "/birds", label: "Birds" },
@@ -47,7 +47,7 @@ export function Footer() {
 
           {/* Nature */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--gold)] mb-4">Nature</h3>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">Nature</h3>
             <ul className="space-y-2.5 text-sm text-white/70">
               {[
                 { href: "/nature/haweswater-rspb", label: "RSPB Haweswater" },
@@ -68,7 +68,7 @@ export function Footer() {
 
           {/* Network */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--gold)] mb-4">The Lakes Network</h3>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">The Lakes Network</h3>
             <ul className="space-y-2.5 text-sm text-white/70">
               {[
                 { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide" },
@@ -89,9 +89,9 @@ export function Footer() {
         <div className="mt-12 border-t border-white/10 pt-6 pb-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
           <p className="text-white/50">
             Conservation group or local business?{" "}
-            <span className="text-[var(--gold)] font-semibold">Partner with The Lakes Network</span>
+            <span className="text-[var(--copper)] font-semibold">Partner with The Lakes Network</span>
           </p>
-          <a href="mailto:hello@thelakes.network" className="text-[var(--gold)] hover:text-white transition font-medium text-sm">
+          <a href="mailto:hello@thelakes.network" className="text-[var(--copper)] hover:text-white transition font-medium text-sm">
             hello@thelakes.network →
           </a>
         </div>

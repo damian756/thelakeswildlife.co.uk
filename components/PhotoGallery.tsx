@@ -46,7 +46,7 @@ export function PhotoGallery({ photos }: Props) {
             key={photo.src}
             type="button"
             onClick={() => setActive(photo)}
-            className="group relative aspect-square overflow-hidden rounded-xl block focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--marsh)]"
+            className="group relative aspect-square overflow-hidden rounded-xl block focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--lichen)]"
             aria-label={`View: ${photo.alt}`}
           >
             <Image

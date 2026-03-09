@@ -17,7 +17,7 @@ export default function GrizedalePage() {
   return (
     <>
       <div className="relative h-72 sm:h-96 w-full overflow-hidden bg-[var(--slate)]" />
-      <div className="bg-[var(--forest)] text-white">
+      <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-3xl px-4 py-10">
           <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
@@ -26,7 +26,7 @@ export default function GrizedalePage() {
             <span>/</span>
             <span className="text-white/80">Grizedale Forest</span>
           </nav>
-          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">Forestry England · Lake District · Free entry</p>
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">Forestry England · Lake District · Free entry</p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Grizedale Forest</h1>
           <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
             Red squirrels, red deer, red kites. The visitor centre has feeders. One of the best places in England to see red squirrels. Go in the morning.

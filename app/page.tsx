@@ -118,13 +118,13 @@ export default async function HomePage() {
       <section className="relative overflow-hidden">
         <div className="grid lg:grid-cols-2 min-h-[520px]">
           {/* Left panel */}
-          <div className="bg-[var(--forest)] flex flex-col justify-center px-8 md:px-14 py-16 lg:py-20 relative z-10">
-            <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-4">
+          <div className="bg-[var(--fell)] flex flex-col justify-center px-8 md:px-14 py-16 lg:py-20 relative z-10">
+            <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-4">
               Haweswater · Grizedale · Martindale
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Wildlife in the<br />
-              <span className="text-[var(--gold)]">Lake District.</span>
+              <span className="text-[var(--copper)]">Lake District.</span>
             </h1>
             <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-lg">
               {totalCount}+ species recorded. An independent guide to the birds, insects, plants
@@ -133,7 +133,7 @@ export default async function HomePage() {
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/nature/haweswater-rspb"
-                className="rounded-lg bg-[var(--gold)] px-6 py-3 text-sm font-semibold text-[var(--forest)] hover:opacity-90 transition"
+                className="rounded-lg bg-[var(--copper)] px-6 py-3 text-sm font-semibold text-[var(--fell)] hover:opacity-90 transition"
               >
                 RSPB Haweswater →
               </Link>
@@ -147,7 +147,7 @@ export default async function HomePage() {
           </div>
 
           {/* Right panel — hero image */}
-          <div className="relative min-h-[300px] lg:min-h-0 overflow-hidden bg-[var(--forest)]">
+          <div className="relative min-h-[300px] lg:min-h-0 overflow-hidden bg-[var(--fell)]">
             <Image
               src="/images/species/birds/osprey.jpg"
               alt="Osprey in flight over the Lake District"
@@ -156,33 +156,33 @@ export default async function HomePage() {
               className="object-cover object-center"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[var(--forest)]/40 via-transparent to-transparent lg:from-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--fell)]/40 via-transparent to-transparent lg:from-transparent" />
           </div>
         </div>
 
         {/* Wave divider */}
         <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
           <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-8 lg:h-10">
-            <path d="M0 40 Q360 0 720 20 Q1080 40 1440 10 L1440 40 Z" fill="var(--sand)" />
+            <path d="M0 40 Q360 0 720 20 Q1080 40 1440 10 L1440 40 Z" fill="var(--mist)" />
           </svg>
         </div>
       </section>
 
       {/* ── STATS STRIP ──────────────────────────────────────── */}
-      <section className="bg-[var(--dune)] border-b border-[var(--foam)]/30">
+      <section className="bg-[var(--fog)] border-b border-[var(--reed)]/30">
         <div className="mx-auto max-w-6xl px-4 py-5">
           <div className="flex flex-wrap gap-6 md:gap-10 items-center justify-center md:justify-start text-sm text-[var(--slate)]">
             <span className="flex items-center gap-2">
-              <strong className="text-[var(--forest)] font-bold">{totalCount}+</strong> species recorded
+              <strong className="text-[var(--fell)] font-bold">{totalCount}+</strong> species recorded
             </span>
             <span className="flex items-center gap-2">
-              <strong className="text-[var(--forest)] font-bold">Ospreys</strong> at RSPB Haweswater
+              <strong className="text-[var(--fell)] font-bold">Ospreys</strong> at RSPB Haweswater
             </span>
             <span className="flex items-center gap-2">
-              <strong className="text-[var(--forest)] font-bold">Free entry</strong> to RSPB Haweswater
+              <strong className="text-[var(--fell)] font-bold">Free entry</strong> to RSPB Haweswater
             </span>
             <span className="flex items-center gap-2">
-              <strong className="text-[var(--forest)] font-bold">214</strong> Wainwright fells
+              <strong className="text-[var(--fell)] font-bold">214</strong> Wainwright fells
             </span>
           </div>
         </div>
@@ -190,10 +190,10 @@ export default async function HomePage() {
 
       {/* ── SPECIES DATABASE ─────────────────────────────────── */}
       <section className="mx-auto max-w-6xl px-4 pt-16 pb-12">
-        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+        <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
           Species database
         </p>
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mb-3">
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--fell)] mb-3">
           What lives here
         </h2>
         <p className="text-[var(--slate)] max-w-2xl mb-8 leading-relaxed">
@@ -204,10 +204,10 @@ export default async function HomePage() {
             <Link
               key={href}
               href={href}
-              className="card-hover group relative rounded-2xl overflow-hidden border border-[var(--dune)] bg-white block"
+              className="card-hover group relative rounded-2xl overflow-hidden border border-[var(--fog)] bg-white block"
             >
               {/* Image */}
-              <div className="relative h-44 overflow-hidden bg-[var(--dune)]">
+              <div className="relative h-44 overflow-hidden bg-[var(--fog)]">
                 <Image
                   src={localImage}
                   alt={label}
@@ -222,7 +222,7 @@ export default async function HomePage() {
               </div>
               {/* Text */}
               <div className="p-4">
-                <h3 className="font-semibold text-[var(--forest)] mb-0.5">{label}</h3>
+                <h3 className="font-semibold text-[var(--fell)] mb-0.5">{label}</h3>
                 <p className="text-sm text-[var(--slate)]/80 leading-snug">{desc}</p>
               </div>
             </Link>
@@ -231,12 +231,12 @@ export default async function HomePage() {
       </section>
 
       {/* ── NATURE & COAST ───────────────────────────────────── */}
-      <section className="bg-[var(--dune)] py-14">
+      <section className="bg-[var(--fog)] py-14">
         <div className="mx-auto max-w-6xl px-4">
-          <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+          <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
             Reserves & guides
           </p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mb-8">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--fell)] mb-8">
             Nature & coast
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -269,12 +269,12 @@ export default async function HomePage() {
               <Link
                 key={href}
                 href={href}
-                className="card-hover group block rounded-2xl border border-[var(--foam)]/40 bg-white p-5 hover:border-[var(--marsh)]/50"
+                className="card-hover group block rounded-2xl border border-[var(--reed)]/40 bg-white p-5 hover:border-[var(--lichen)]/50"
               >
-                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--marsh)] bg-[var(--marsh)]/10 px-2 py-0.5 rounded-full mb-3">
+                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--lichen)] bg-[var(--lichen)]/10 px-2 py-0.5 rounded-full mb-3">
                   {tag}
                 </span>
-                <h3 className="font-semibold text-[var(--forest)] mb-2 group-hover:text-[var(--marsh)] transition">
+                <h3 className="font-semibold text-[var(--fell)] mb-2 group-hover:text-[var(--lichen)] transition">
                   {title}
                 </h3>
                 <p className="text-sm text-[var(--slate)]/80 leading-relaxed">{desc}</p>
@@ -289,16 +289,16 @@ export default async function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-14">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+            <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
               From the blog
             </p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)]">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--fell)]">
               Ed&apos;s notes
             </h2>
           </div>
           <Link
             href="/blog"
-            className="text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition hidden sm:block"
+            className="text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition hidden sm:block"
           >
             All posts →
           </Link>
@@ -309,9 +309,9 @@ export default async function HomePage() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="card-hover group block rounded-2xl border border-[var(--dune)] bg-white overflow-hidden"
+              className="card-hover group block rounded-2xl border border-[var(--fog)] bg-white overflow-hidden"
             >
-              <div className="relative h-44 overflow-hidden bg-[var(--dune)]">
+              <div className="relative h-44 overflow-hidden bg-[var(--fog)]">
                 {blogImages[i] ? (
                   <Image
                     src={blogImages[i]!}
@@ -321,14 +321,14 @@ export default async function HomePage() {
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-[var(--marsh)] to-[var(--forest)]" />
+                  <div className="w-full h-full bg-gradient-to-br from-[var(--lichen)] to-[var(--fell)]" />
                 )}
               </div>
               <div className="p-5">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--marsh)]">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--lichen)]">
                   {post.categoryLabel}
                 </span>
-                <h3 className="mt-1 font-semibold text-[var(--forest)] leading-snug mb-2 group-hover:text-[var(--marsh)] transition">
+                <h3 className="mt-1 font-semibold text-[var(--fell)] leading-snug mb-2 group-hover:text-[var(--lichen)] transition">
                   {post.title}
                 </h3>
                 <p className="text-xs text-[var(--slate)]/60">{formatDate(post.date)}</p>
@@ -340,7 +340,7 @@ export default async function HomePage() {
         <div className="mt-6 sm:hidden">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition"
           >
             All posts →
           </Link>
@@ -349,21 +349,21 @@ export default async function HomePage() {
       )}
 
       {/* ── GALLERY ──────────────────────────────────────────── */}
-      <section className="bg-[var(--dune)] py-14">
+      <section className="bg-[var(--fog)] py-14">
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex items-end justify-between mb-6">
             <div>
-              <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+              <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
                 From the fells
               </p>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mb-1">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--fell)] mb-1">
                 Photos from the Lake District
               </h2>
               <p className="text-[var(--slate)] text-sm">Real shots. No stock, no AI. Click any photo to enlarge.</p>
             </div>
             <Link
               href="/nature/haweswater-rspb"
-              className="text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition hidden sm:block"
+              className="text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition hidden sm:block"
             >
               Reserve guide →
             </Link>
@@ -379,15 +379,15 @@ export default async function HomePage() {
             ]}
           />
           <div className="mt-5 sm:hidden text-center">
-            <Link href="/nature/haweswater-rspb" className="text-sm text-[var(--marsh)] font-medium">Reserve guide →</Link>
+            <Link href="/nature/haweswater-rspb" className="text-sm text-[var(--lichen)] font-medium">Reserve guide →</Link>
           </div>
         </div>
       </section>
 
       {/* ── NETWORK BANNER ───────────────────────────────────── */}
-      <section className="bg-[var(--forest)] text-white py-10">
+      <section className="bg-[var(--fell)] text-white py-10">
         <div className="mx-auto max-w-6xl px-4">
-          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-2">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">
             The Lakes Network
           </p>
           <p className="text-white/80 text-sm max-w-2xl mb-5">

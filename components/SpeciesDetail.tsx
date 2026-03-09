@@ -88,7 +88,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
 
       <article>
         {/* ── HERO HEADER ── */}
-        <div className="bg-[var(--forest)] text-white">
+        <div className="bg-[var(--fell)] text-white">
           <div className="mx-auto max-w-5xl px-4 py-10">
             {/* Breadcrumb */}
             <nav className="text-sm text-white/50 mb-5 flex items-center gap-1.5">
@@ -171,7 +171,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
 
           {/* Overview */}
           <section>
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Overview</h2>
+            <h2 className="text-xl font-bold text-[var(--fell)] mb-4 pb-2 border-b border-[var(--fog)]">Overview</h2>
             <div className="prose prose-slate max-w-none text-[var(--slate)] leading-relaxed">
               <p>{species.description}</p>
             </div>
@@ -180,48 +180,48 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
           {/* At a Glance table */}
           {hasAtAGlance && (
             <section>
-              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">At a Glance</h2>
+              <h2 className="text-xl font-bold text-[var(--fell)] mb-4 pb-2 border-b border-[var(--fog)]">At a Glance</h2>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse">
                   <tbody>
                     {species.order && (
-                      <tr className="border-b border-[var(--dune)]">
-                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)] w-40">Order</td>
+                      <tr className="border-b border-[var(--fog)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--fell)] w-40">Order</td>
                         <td className="py-2.5 text-[var(--slate)]">{species.order}</td>
                       </tr>
                     )}
                     {species.family && (
-                      <tr className="border-b border-[var(--dune)]">
-                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Family</td>
+                      <tr className="border-b border-[var(--fog)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--fell)]">Family</td>
                         <td className="py-2.5 text-[var(--slate)]">{species.family}</td>
                       </tr>
                     )}
                     {species.habitat && species.habitat.length > 0 && (
-                      <tr className="border-b border-[var(--dune)]">
-                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Habitat</td>
+                      <tr className="border-b border-[var(--fog)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--fell)]">Habitat</td>
                         <td className="py-2.5 text-[var(--slate)]">{species.habitat.join(" · ")}</td>
                       </tr>
                     )}
                     {species.diet && (
-                      <tr className="border-b border-[var(--dune)]">
-                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Diet</td>
+                      <tr className="border-b border-[var(--fog)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--fell)]">Diet</td>
                         <td className="py-2.5 text-[var(--slate)]">{species.diet}</td>
                       </tr>
                     )}
                     {species.ukPopulation && (
-                      <tr className="border-b border-[var(--dune)]">
-                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">UK population</td>
+                      <tr className="border-b border-[var(--fog)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--fell)]">UK population</td>
                         <td className="py-2.5 text-[var(--slate)]">{species.ukPopulation}</td>
                       </tr>
                     )}
                     {species.lakesPopulation && (
-                      <tr className="border-b border-[var(--dune)]">
-                        <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Lake District</td>
+                      <tr className="border-b border-[var(--fog)]">
+                        <td className="py-2.5 pr-6 font-medium text-[var(--fell)]">Lake District</td>
                         <td className="py-2.5 text-[var(--slate)]">{species.lakesPopulation}</td>
                       </tr>
                     )}
-                    <tr className="border-b border-[var(--dune)]">
-                      <td className="py-2.5 pr-6 font-medium text-[var(--forest)]">Conservation</td>
+                    <tr className="border-b border-[var(--fog)]">
+                      <td className="py-2.5 pr-6 font-medium text-[var(--fell)]">Conservation</td>
                       <td className="py-2.5">
                         {species.conservationStatus && species.conservationStatus !== "unknown" ? (
                           <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold ${sc.bg} ${sc.text}`}>
@@ -240,17 +240,17 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
 
           {/* Where to see */}
           <section>
-            <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Where to See It</h2>
+            <h2 className="text-xl font-bold text-[var(--fell)] mb-4 pb-2 border-b border-[var(--fog)]">Where to See It</h2>
             <p className="text-[var(--slate)] leading-relaxed">{species.whereToSee}</p>
             {species.shortLocation && (
               <div className="mt-4">
                 {species.shortLocation.includes("Haweswater") && (
-                  <Link href="/birdwatching-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
+                  <Link href="/birdwatching-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
                     → RSPB Haweswater guide
                   </Link>
                 )}
                 {species.shortLocation.includes("Grizedale") && (
-                  <Link href="/birdwatching-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
+                  <Link href="/birdwatching-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
                     → Grizedale Forest guide
                   </Link>
                 )}
@@ -261,7 +261,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
           {/* Identification */}
           {species.identification && (
             <section>
-              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Identification</h2>
+              <h2 className="text-xl font-bold text-[var(--fell)] mb-4 pb-2 border-b border-[var(--fog)]">Identification</h2>
               <p className="text-[var(--slate)] leading-relaxed">{species.identification}</p>
             </section>
           )}
@@ -269,8 +269,8 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
           {/* Tips */}
           {species.tips && (
             <section>
-              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Viewing & Photography Tips</h2>
-              <div className="bg-[var(--dune)]/40 rounded-xl p-5 border border-[var(--dune)]">
+              <h2 className="text-xl font-bold text-[var(--fell)] mb-4 pb-2 border-b border-[var(--fog)]">Viewing & Photography Tips</h2>
+              <div className="bg-[var(--fog)]/40 rounded-xl p-5 border border-[var(--fog)]">
                 <p className="text-[var(--slate)] leading-relaxed">{species.tips}</p>
               </div>
             </section>
@@ -279,7 +279,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
           {/* Conservation callout */}
           {species.conservationStatus && species.conservationStatus !== "unknown" && (
             <section>
-              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Conservation Status</h2>
+              <h2 className="text-xl font-bold text-[var(--fell)] mb-4 pb-2 border-b border-[var(--fog)]">Conservation Status</h2>
               <div className={`rounded-xl p-5 border ${sc.callout}`}>
                 <h3 className={`font-semibold text-sm mb-1 ${sc.calloutHead}`}>
                   UK {sc.label}
@@ -315,11 +315,11 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
           {/* FAQ */}
           {species.faq && species.faq.length > 0 && (
             <section>
-              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Frequently Asked Questions</h2>
+              <h2 className="text-xl font-bold text-[var(--fell)] mb-4 pb-2 border-b border-[var(--fog)]">Frequently Asked Questions</h2>
               <div className="space-y-4">
                 {species.faq.map((item, i) => (
-                  <div key={i} className="border border-[var(--dune)] rounded-xl p-5 bg-white">
-                    <h3 className="font-semibold text-[var(--forest)] mb-2">{item.question}</h3>
+                  <div key={i} className="border border-[var(--fog)] rounded-xl p-5 bg-white">
+                    <h3 className="font-semibold text-[var(--fell)] mb-2">{item.question}</h3>
                     <p className="text-sm text-[var(--slate)] leading-relaxed">{item.answer}</p>
                   </div>
                 ))}
@@ -330,15 +330,15 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
           {/* Related species */}
           {related.length > 0 && (
             <section>
-              <h2 className="text-xl font-bold text-[var(--forest)] mb-4 pb-2 border-b border-[var(--dune)]">Related Species</h2>
+              <h2 className="text-xl font-bold text-[var(--fell)] mb-4 pb-2 border-b border-[var(--fog)]">Related Species</h2>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {related.map((r) => (
                   <Link
                     key={r.id}
                     href={`/${category}/${r.id}`}
-                    className="block p-4 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] hover:shadow-sm transition group"
+                    className="block p-4 rounded-xl border border-[var(--fog)] bg-white hover:border-[var(--lichen)] hover:shadow-sm transition group"
                   >
-                    <div className="font-medium text-[var(--forest)] group-hover:text-[var(--marsh)] transition">{r.commonName}</div>
+                    <div className="font-medium text-[var(--fell)] group-hover:text-[var(--lichen)] transition">{r.commonName}</div>
                     <div className="text-xs italic text-[var(--slate)]/60 mt-0.5">{r.scientificName}</div>
                     {r.seasonalPresence && (
                       <div className="text-xs text-[var(--slate)]/50 mt-1.5 leading-snug">{r.seasonalPresence.split('.')[0]}</div>
@@ -350,13 +350,13 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
           )}
 
           {/* CTA */}
-          <section className="bg-[var(--forest)] rounded-2xl p-6 sm:p-8 text-white">
+          <section className="bg-[var(--fell)] rounded-2xl p-6 sm:p-8 text-white">
             <h2 className="text-xl font-bold mb-2">Plan your visit to the Lake District</h2>
             <p className="text-white/70 text-sm mb-5 max-w-xl">
               RSPB Haweswater, Grizedale Forest, Leighton Moss. Practical guides to getting there, what to bring, and the best spots for each season.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white text-[var(--forest)] text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-[var(--sand)] transition">
+              <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white text-[var(--fell)] text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-[var(--mist)] transition">
                 Birdwatching guide →
               </Link>
               <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">

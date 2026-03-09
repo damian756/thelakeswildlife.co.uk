@@ -74,14 +74,14 @@ export default function BirdwatchingGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
 
       {/* Page header */}
-      <div className="bg-[var(--forest)] text-white">
+      <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-3xl px-4 py-10">
           <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <span className="text-white/80">Birdwatching guide</span>
           </nav>
-          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
             Practical guide · All levels
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -103,50 +103,50 @@ export default function BirdwatchingGuidePage() {
             { stat: "RSPB members", label: "Free entry to reserves" },
             { stat: "Year-round", label: "Always something to see" },
           ].map(({ stat, label }) => (
-            <div key={label} className="rounded-xl bg-[var(--dune)] p-4 text-center">
-              <p className="font-display text-2xl font-bold text-[var(--forest)]">{stat}</p>
+            <div key={label} className="rounded-xl bg-[var(--fog)] p-4 text-center">
+              <p className="font-display text-2xl font-bold text-[var(--fell)]">{stat}</p>
               <p className="text-xs text-[var(--slate)]/70 mt-1 leading-snug">{label}</p>
             </div>
           ))}
         </div>
 
         {/* Best spots */}
-        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+        <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
           Where to go
         </p>
-        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-6">Best spots</h2>
+        <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-6">Best spots</h2>
 
         <div className="space-y-5 mb-10">
-          <div className="card-hover rounded-xl border border-[var(--dune)] bg-white p-5">
+          <div className="card-hover rounded-xl border border-[var(--fog)] bg-white p-5">
             <div className="flex items-start justify-between gap-3 mb-2">
-              <h3 className="font-bold text-[var(--forest)]">RSPB Haweswater</h3>
-              <span className="text-xs bg-[var(--forest)] text-white px-2 py-0.5 rounded font-medium flex-shrink-0">Best for ospreys</span>
+              <h3 className="font-bold text-[var(--fell)]">RSPB Haweswater</h3>
+              <span className="text-xs bg-[var(--fell)] text-white px-2 py-0.5 rounded font-medium flex-shrink-0">Best for ospreys</span>
             </div>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               The osprey viewpoint hide overlooks the nest site. Open April to September. Get there before 10am in peak season. Red deer, ravens and upland species in the surrounding fells. The drive in from Mardale is spectacular.
             </p>
             <p className="text-xs text-[var(--slate)]/60 mb-1">Postcode: CA10 2LT · RSPB members free · Check opening times</p>
-            <a href="https://www.rspb.org.uk/reserves-and-events/reserves-a-z/haweswater" target="_blank" rel="noopener noreferrer" className="text-xs text-[var(--marsh)] font-medium hover:underline block">RSPB Haweswater page →</a>
+            <a href="https://www.rspb.org.uk/reserves-and-events/reserves-a-z/haweswater" target="_blank" rel="noopener noreferrer" className="text-xs text-[var(--lichen)] font-medium hover:underline block">RSPB Haweswater page →</a>
           </div>
 
-          <div className="card-hover rounded-xl border border-[var(--dune)] bg-white p-5">
-            <h3 className="font-bold text-[var(--forest)] mb-2">RSPB Leighton Moss</h3>
+          <div className="card-hover rounded-xl border border-[var(--fog)] bg-white p-5">
+            <h3 className="font-bold text-[var(--fell)] mb-2">RSPB Leighton Moss</h3>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               Near Silverdale, just south of the Lakes. The largest reedbed in northwest England. Bitterns, marsh harriers, bearded tits, otters. Excellent hides. Café on site. Worth a full day.
             </p>
             <p className="text-xs text-[var(--slate)]/60">Postcode: LA5 9TZ · RSPB members free · Café</p>
           </div>
 
-          <div className="card-hover rounded-xl border border-[var(--dune)] bg-white p-5">
-            <h3 className="font-bold text-[var(--forest)] mb-2">Grizedale Forest</h3>
+          <div className="card-hover rounded-xl border border-[var(--fog)] bg-white p-5">
+            <h3 className="font-bold text-[var(--fell)] mb-2">Grizedale Forest</h3>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               Red squirrels, red deer, woodland birds. Forestry England managed. Good for Treecreeper, Coal Tit, Crossbill in irruption years. The forest drives and trails are well signposted. Go early for squirrels.
             </p>
             <p className="text-xs text-[var(--slate)]/60">Postcode: LA22 0QJ · Parking charge · Visitor centre</p>
           </div>
 
-          <div className="card-hover rounded-xl border border-[var(--dune)] bg-white p-5">
-            <h3 className="font-bold text-[var(--forest)] mb-2">The fells — upland species</h3>
+          <div className="card-hover rounded-xl border border-[var(--fog)] bg-white p-5">
+            <h3 className="font-bold text-[var(--fell)] mb-2">The fells — upland species</h3>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               Red grouse, ring ouzel, wheatear, golden plover. Walk any of the higher fells in spring and summer and you&apos;ll encounter them. Martindale in October for the red deer rut. Dawn or dusk for the best chance of seeing stags.
             </p>
@@ -155,20 +155,20 @@ export default function BirdwatchingGuidePage() {
         </div>
 
         {/* Seasonal calendar */}
-        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+        <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
           When to visit
         </p>
-        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">Seasonal calendar</h2>
+        <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">Seasonal calendar</h2>
         <div className="overflow-x-auto mb-10">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="bg-[var(--forest)] text-white">
+              <tr className="bg-[var(--fell)] text-white">
                 <th className="text-left px-3 py-2 rounded-tl-lg">Season</th>
                 <th className="text-left px-3 py-2">Highlights</th>
                 <th className="text-left px-3 py-2 rounded-tr-lg">Best site</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[var(--dune)]">
+            <tbody className="divide-y divide-[var(--fog)]">
               <tr className="bg-sky-50">
                 <td className="px-3 py-2 font-medium text-sky-800">Apr – Jul</td>
                 <td className="px-3 py-2 text-[var(--slate)]">Ospreys at Haweswater, ring ouzel, wheatear, red grouse on the fells</td>
@@ -189,10 +189,10 @@ export default function BirdwatchingGuidePage() {
         </div>
 
         {/* Kit */}
-        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+        <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
           Kit list
         </p>
-        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">What to bring</h2>
+        <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">What to bring</h2>
         <p className="text-[var(--slate)] mb-4 text-sm leading-relaxed">
           You don&apos;t need expensive gear to start. A pair of 8×42 binoculars and a field guide will cover 90% of what you&apos;ll see. Upgrade the scope later when you&apos;ve decided you&apos;re hooked.
         </p>
@@ -206,17 +206,17 @@ export default function BirdwatchingGuidePage() {
             { item: "Thermos", rec: "Leighton Moss has a café. Haweswater doesn't. Plan accordingly." },
           ].map(({ item, rec }) => (
             <div key={item} className="flex gap-3 text-sm">
-              <span className="text-[var(--marsh)] mt-0.5 flex-shrink-0">▸</span>
+              <span className="text-[var(--lichen)] mt-0.5 flex-shrink-0">▸</span>
               <span className="text-[var(--slate)]"><strong className="text-[var(--slate)]">{item}</strong> — {rec}</span>
             </div>
           ))}
         </div>
 
         {/* Beginners */}
-        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+        <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
           Getting started
         </p>
-        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">If you&apos;re just starting out</h2>
+        <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">If you&apos;re just starting out</h2>
         <p className="text-[var(--slate)] mb-4 text-sm leading-relaxed">
           Go to Haweswater in spring. Sit in the osprey hide for an hour. You&apos;ll see the birds. In autumn, try Leighton Moss for bitterns and marsh harriers. The hides are comfortable and the reedbed is productive year-round.
         </p>
@@ -228,22 +228,22 @@ export default function BirdwatchingGuidePage() {
         </p>
 
         {/* FAQ */}
-        <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-2">
+        <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
           Common questions
         </p>
-        <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-6">FAQs</h2>
+        <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-6">FAQs</h2>
         <div className="space-y-5 mb-10">
           {faqs.map(({ q, a }) => (
-            <div key={q} className="border-b border-[var(--dune)] pb-5 last:border-0">
-              <h3 className="font-semibold text-[var(--forest)] mb-1.5 text-sm">{q}</h3>
+            <div key={q} className="border-b border-[var(--fog)] pb-5 last:border-0">
+              <h3 className="font-semibold text-[var(--fell)] mb-1.5 text-sm">{q}</h3>
               <p className="text-sm text-[var(--slate)] leading-relaxed">{a}</p>
             </div>
           ))}
         </div>
 
-        <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--dune)]">
-          <Link href="/birds" className="text-[var(--marsh)] font-medium hover:underline text-sm">Bird species database →</Link>
-          <Link href="/mammals" className="text-[var(--marsh)] font-medium hover:underline text-sm">Mammals & wildlife →</Link>
+        <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--fog)]">
+          <Link href="/birds" className="text-[var(--lichen)] font-medium hover:underline text-sm">Bird species database →</Link>
+          <Link href="/mammals" className="text-[var(--lichen)] font-medium hover:underline text-sm">Mammals & wildlife →</Link>
         </div>
       </div>
     </>

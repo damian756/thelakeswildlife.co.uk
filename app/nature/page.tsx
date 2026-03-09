@@ -50,7 +50,7 @@ const reserves = [
 export default function NaturePage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="text-3xl font-bold text-[var(--forest)] mb-2">Nature Reserves</h1>
+      <h1 className="text-3xl font-bold text-[var(--fell)] mb-2">Nature Reserves</h1>
       <p className="text-[var(--slate)] mb-8 max-w-2xl">
         The Lake District has some of the best wildlife sites in England — from RSPB osprey reserves to ancient woodland. Here&apos;s where to go and what to see.
       </p>
@@ -59,27 +59,27 @@ export default function NaturePage() {
           <Link
             key={href}
             href={href}
-            className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
+            className="block p-6 rounded-xl border border-[var(--fog)] bg-white hover:border-[var(--reed)] hover:shadow transition"
           >
-            <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-1">{tag}</p>
-            <h2 className="text-xl font-semibold text-[var(--forest)] mb-2">{name}</h2>
+            <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-1">{tag}</p>
+            <h2 className="text-xl font-semibold text-[var(--fell)] mb-2">{name}</h2>
             <p className="text-[var(--slate)] text-sm leading-relaxed">{desc}</p>
           </Link>
         ))}
         <Link
           href="/birdwatching-guide"
-          className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
+          className="block p-6 rounded-xl border border-[var(--fog)] bg-white hover:border-[var(--reed)] hover:shadow transition"
         >
-          <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-1">Guide</p>
-          <h2 className="text-xl font-semibold text-[var(--forest)] mb-2">Birdwatching guide</h2>
+          <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-1">Guide</p>
+          <h2 className="text-xl font-semibold text-[var(--fell)] mb-2">Birdwatching guide</h2>
           <p className="text-[var(--slate)] text-sm leading-relaxed">Best spots, seasons and kit for the Lake District.</p>
         </Link>
         <Link
           href="/seasonal"
-          className="block p-6 rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--foam)] hover:shadow transition"
+          className="block p-6 rounded-xl border border-[var(--fog)] bg-white hover:border-[var(--reed)] hover:shadow transition"
         >
-          <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-1">Guide</p>
-          <h2 className="text-xl font-semibold text-[var(--forest)] mb-2">Seasonal guides</h2>
+          <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-1">Guide</p>
+          <h2 className="text-xl font-semibold text-[var(--fell)] mb-2">Seasonal guides</h2>
           <p className="text-[var(--slate)] text-sm leading-relaxed">Ospreys, red deer rut, red squirrels and what to see when.</p>
         </Link>
       </div>

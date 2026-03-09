@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
       {heroSrc && (
-        <div className="relative h-64 sm:h-80 w-full overflow-hidden bg-[var(--dune)]">
+        <div className="relative h-64 sm:h-80 w-full overflow-hidden bg-[var(--fog)]">
           <ClickableImage
             src={heroSrc}
             alt={post.heroAlt}
@@ -107,17 +107,17 @@ export default async function BlogPostPage({ params }: Props) {
       <div className="mx-auto max-w-3xl px-4 py-10">
         {/* Breadcrumb */}
         <nav className="text-sm text-[var(--slate)]/60 mb-6 flex items-center gap-1.5 flex-wrap">
-          <Link href="/" className="hover:text-[var(--marsh)] transition">Home</Link>
+          <Link href="/" className="hover:text-[var(--lichen)] transition">Home</Link>
           <span>/</span>
-          <Link href="/blog" className="hover:text-[var(--marsh)] transition">Blog</Link>
+          <Link href="/blog" className="hover:text-[var(--lichen)] transition">Blog</Link>
           <span>/</span>
           <span className="text-[var(--slate)]">{post.categoryLabel}</span>
         </nav>
 
         {/* Header */}
         <div className="mb-8">
-          <span className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)]">{post.categoryLabel}</span>
-          <h1 className="font-display text-3xl sm:text-4xl font-bold text-[var(--forest)] mt-2 mb-3 leading-tight">{post.title}</h1>
+          <span className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)]">{post.categoryLabel}</span>
+          <h1 className="font-display text-3xl sm:text-4xl font-bold text-[var(--fell)] mt-2 mb-3 leading-tight">{post.title}</h1>
           <p className="text-sm text-[var(--slate)]/60">{formatDate(post.date)}</p>
         </div>
 
@@ -127,12 +127,12 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Sections */}
         {post.sections.map((section) => (
           <div key={section.heading} className="mb-8">
-            <h2 className="font-display text-xl font-bold text-[var(--forest)] mb-3">{section.heading}</h2>
+            <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">{section.heading}</h2>
             {section.body.map((para, i) => (
               <p key={i} className="text-[var(--slate)] text-sm leading-relaxed mb-3">{para}</p>
             ))}
             {section.imageAfter && (
-              <div className="mt-5 rounded-xl overflow-hidden border border-[var(--foam)]">
+              <div className="mt-5 rounded-xl overflow-hidden border border-[var(--reed)]">
                 <div className="relative w-full h-72 sm:h-80 md:h-96">
                   <ClickableImage
                     src={section.imageAfter.src}
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: Props) {
                   />
                 </div>
                 {section.imageAfter.caption && (
-                  <p className="text-xs text-[var(--slate)]/60 px-4 py-2 bg-[var(--dune)]/40 text-center leading-relaxed">
+                  <p className="text-xs text-[var(--slate)]/60 px-4 py-2 bg-[var(--fog)]/40 text-center leading-relaxed">
                     {section.imageAfter.caption}
                   </p>
                 )}
@@ -155,9 +155,9 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Tags */}
         {post.tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-10 pt-6 border-t border-[var(--dune)]">
+          <div className="flex flex-wrap gap-2 mt-10 pt-6 border-t border-[var(--fog)]">
             {post.tags.map((tag) => (
-              <span key={tag} className="text-xs bg-[var(--dune)] text-[var(--slate)]/70 px-2.5 py-1 rounded-full">
+              <span key={tag} className="text-xs bg-[var(--fog)] text-[var(--slate)]/70 px-2.5 py-1 rounded-full">
                 {tag}
               </span>
             ))}
@@ -165,9 +165,9 @@ export default async function BlogPostPage({ params }: Props) {
         )}
 
         {/* Author bio */}
-        <div className="mt-8 p-5 rounded-xl bg-[var(--dune)] border border-[var(--foam)]">
-          <p className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)] mb-1">About the author</p>
-          <p className="text-sm font-semibold text-[var(--forest)]">Damian</p>
+        <div className="mt-8 p-5 rounded-xl bg-[var(--fog)] border border-[var(--reed)]">
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)] mb-1">About the author</p>
+          <p className="text-sm font-semibold text-[var(--fell)]">Damian</p>
           <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
             Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.
           </p>
@@ -175,7 +175,7 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Back link */}
         <div className="mt-8">
-          <Link href="/blog" className="text-[var(--marsh)] font-medium hover:underline text-sm">← Back to all posts</Link>
+          <Link href="/blog" className="text-[var(--lichen)] font-medium hover:underline text-sm">← Back to all posts</Link>
         </div>
       </div>
     </>

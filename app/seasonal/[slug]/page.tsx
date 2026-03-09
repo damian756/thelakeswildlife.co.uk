@@ -148,7 +148,7 @@ export default async function SeasonalSlugPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
       {/* Page header band */}
-      <div className="bg-[var(--forest)] text-white">
+      <div className="bg-[var(--fell)] text-white">
     <div className="mx-auto max-w-3xl px-4 py-10">
           <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
@@ -157,7 +157,7 @@ export default async function SeasonalSlugPage({ params }: Props) {
             <span>/</span>
             <span className="text-white/80">{page.title}</span>
       </nav>
-          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
             Seasonal guide · {page.period}
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">{page.title}</h1>
@@ -169,20 +169,20 @@ export default async function SeasonalSlugPage({ params }: Props) {
 
         {page.sections.map((section) => (
           <div key={section.heading} className="mb-10">
-            <h2 className="font-display text-xl font-bold text-[var(--forest)] mb-3">{section.heading}</h2>
+            <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">{section.heading}</h2>
             {section.body.map((para, i) => (
               <p key={i} className="text-[var(--slate)] text-sm leading-relaxed mb-3">{para}</p>
             ))}
           </div>
         ))}
 
-        <div className="bg-[var(--dune)] rounded-xl p-5 mb-10">
-          <p className="text-[var(--marsh)] text-xs font-bold uppercase tracking-widest mb-3">Quick reference</p>
-          <h2 className="font-semibold text-[var(--forest)] mb-3">Practical tips</h2>
+        <div className="bg-[var(--fog)] rounded-xl p-5 mb-10">
+          <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-3">Quick reference</p>
+          <h2 className="font-semibold text-[var(--fell)] mb-3">Practical tips</h2>
           <ul className="space-y-1.5">
             {page.practicalTips.map((tip) => (
               <li key={tip} className="flex gap-2 text-sm text-[var(--slate)]">
-                <span className="text-[var(--marsh)] flex-shrink-0">▸</span>
+                <span className="text-[var(--lichen)] flex-shrink-0">▸</span>
                 <span>{tip}</span>
               </li>
             ))}
@@ -190,22 +190,22 @@ export default async function SeasonalSlugPage({ params }: Props) {
         </div>
 
         {/* Author bio */}
-        <div className="p-5 rounded-xl bg-[var(--dune)] border border-[var(--foam)] mb-10">
-          <p className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)] mb-1">About the author</p>
-          <p className="text-sm font-semibold text-[var(--forest)]">Damian Roche</p>
+        <div className="p-5 rounded-xl bg-[var(--fog)] border border-[var(--reed)] mb-10">
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)] mb-1">About the author</p>
+          <p className="text-sm font-semibold text-[var(--fell)]">Damian Roche</p>
           <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
             Damian walks the Lake District fells, watches the wildlife, and writes about what he finds. Ex-army, hiker, fisherman. Southport-based. Regular Lakes visitor for decades.
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--dune)]">
+        <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--fog)]">
           {page.relatedLinks.map((link) =>
             link.external ? (
-              <a key={link.href} href={link.href} target="_blank" rel="noopener" className="text-[var(--marsh)] font-medium hover:underline text-sm">
+              <a key={link.href} href={link.href} target="_blank" rel="noopener" className="text-[var(--lichen)] font-medium hover:underline text-sm">
                 {link.label} →
               </a>
             ) : (
-              <Link key={link.href} href={link.href} className="text-[var(--marsh)] font-medium hover:underline text-sm">
+              <Link key={link.href} href={link.href} className="text-[var(--lichen)] font-medium hover:underline text-sm">
                 {link.label} →
               </Link>
             )

@@ -9,7 +9,7 @@ import { classifySeason, type SeasonTag } from "@/lib/season";
 function SpeciesCardImage({ species }: { species: Species }) {
   if (!species.localImage) return null;
   return (
-    <div className="relative aspect-[4/3] overflow-hidden bg-[var(--dune)]">
+    <div className="relative aspect-[4/3] overflow-hidden bg-[var(--fog)]">
       <Image
         src={species.localImage}
         alt={species.commonName}
@@ -65,7 +65,7 @@ interface SeasonOption {
 }
 
 const birdSeasonOptions: SeasonOption[] = [
-  { value: "all", label: "All seasons", pillClass: "bg-[var(--dune)] text-[var(--slate)] border-[var(--foam)]" },
+  { value: "all", label: "All seasons", pillClass: "bg-[var(--fog)] text-[var(--slate)] border-[var(--reed)]" },
   { value: "year-round", label: "Year-round", pillClass: "bg-emerald-100 text-emerald-800 border-emerald-200" },
   { value: "winter", label: "Winter visitor", pillClass: "bg-sky-100 text-sky-800 border-sky-200" },
   { value: "summer", label: "Summer visitor", pillClass: "bg-amber-100 text-amber-800 border-amber-200" },
@@ -73,14 +73,14 @@ const birdSeasonOptions: SeasonOption[] = [
 ];
 
 const insectSeasonOptions: SeasonOption[] = [
-  { value: "all", label: "All seasons", pillClass: "bg-[var(--dune)] text-[var(--slate)] border-[var(--foam)]" },
+  { value: "all", label: "All seasons", pillClass: "bg-[var(--fog)] text-[var(--slate)] border-[var(--reed)]" },
   { value: "spring", label: "Spring (Mar–May)", pillClass: "bg-lime-100 text-lime-800 border-lime-200" },
   { value: "summer", label: "Summer (Jun–Aug)", pillClass: "bg-amber-100 text-amber-800 border-amber-200" },
   { value: "autumn", label: "Autumn (Sep–Oct)", pillClass: "bg-orange-100 text-orange-800 border-orange-200" },
 ];
 
 const plantSeasonOptions: SeasonOption[] = [
-  { value: "all", label: "All", pillClass: "bg-[var(--dune)] text-[var(--slate)] border-[var(--foam)]" },
+  { value: "all", label: "All", pillClass: "bg-[var(--fog)] text-[var(--slate)] border-[var(--reed)]" },
   { value: "year-round", label: "Year-round", pillClass: "bg-emerald-100 text-emerald-800 border-emerald-200" },
   { value: "spring", label: "Spring flowering", pillClass: "bg-lime-100 text-lime-800 border-lime-200" },
   { value: "summer", label: "Summer flowering", pillClass: "bg-amber-100 text-amber-800 border-amber-200" },
@@ -180,7 +180,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
           placeholder={`Search ${species.length} ${category}...`}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-[var(--dune)] bg-white text-sm text-[var(--slate)] placeholder:text-[var(--slate)]/40 focus:outline-none focus:border-[var(--marsh)] focus:ring-1 focus:ring-[var(--marsh)]"
+          className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-[var(--fog)] bg-white text-sm text-[var(--slate)] placeholder:text-[var(--slate)]/40 focus:outline-none focus:border-[var(--lichen)] focus:ring-1 focus:ring-[var(--lichen)]"
         />
       </div>
 
@@ -198,11 +198,11 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
                 className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition ${
                   active
                     ? s === "all"
-                      ? "bg-[var(--forest)] text-white border-[var(--forest)]"
+                      ? "bg-[var(--fell)] text-white border-[var(--fell)]"
                       : `${cfg!.bg} ${cfg!.text} border-transparent`
                     : s === "all"
-                    ? "bg-white text-[var(--slate)] border-[var(--dune)] hover:border-[var(--marsh)]"
-                    : `bg-white ${cfg!.text.replace("text-white", "text-[var(--slate)]")} border-[var(--dune)] hover:border-[var(--marsh)]`
+                    ? "bg-white text-[var(--slate)] border-[var(--fog)] hover:border-[var(--lichen)]"
+                    : `bg-white ${cfg!.text.replace("text-white", "text-[var(--slate)]")} border-[var(--fog)] hover:border-[var(--lichen)]`
                 }`}
               >
                 {s === "all" ? "All status" : cfg!.label + " List"}
@@ -223,9 +223,9 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
                   className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition ${
                     active
                       ? opt.value === "all"
-                        ? "bg-[var(--forest)] text-white border-[var(--forest)]"
+                        ? "bg-[var(--fell)] text-white border-[var(--fell)]"
                         : `${opt.pillClass} border-transparent font-bold`
-                      : `bg-white text-[var(--slate)] border-[var(--dune)] hover:border-[var(--marsh)]`
+                      : `bg-white text-[var(--slate)] border-[var(--fog)] hover:border-[var(--lichen)]`
                   }`}
                 >
                   {opt.label}
@@ -240,7 +240,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
           <select
             value={habitatFilter}
             onChange={(e) => setHabitatFilter(e.target.value)}
-            className="text-xs border border-[var(--dune)] rounded-full px-3 py-1.5 bg-white text-[var(--slate)] focus:outline-none focus:border-[var(--marsh)] cursor-pointer"
+            className="text-xs border border-[var(--fog)] rounded-full px-3 py-1.5 bg-white text-[var(--slate)] focus:outline-none focus:border-[var(--lichen)] cursor-pointer"
           >
             {habitats.map((h) => (
               <option key={h} value={h}>
@@ -258,7 +258,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
             <>
               Showing <strong className="text-[var(--slate)]">{filtered.length}</strong> of {species.length} species
               {" · "}
-              <button onClick={clearAll} className="text-[var(--marsh)] hover:underline font-medium">
+              <button onClick={clearAll} className="text-[var(--lichen)] hover:underline font-medium">
                 Clear
               </button>
             </>
@@ -276,7 +276,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
             id="sort-select"
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as SortOption)}
-            className="text-xs border border-[var(--dune)] rounded-lg px-3 py-1.5 bg-white text-[var(--slate)] focus:outline-none focus:border-[var(--marsh)] cursor-pointer transition"
+            className="text-xs border border-[var(--fog)] rounded-lg px-3 py-1.5 bg-white text-[var(--slate)] focus:outline-none focus:border-[var(--lichen)] cursor-pointer transition"
           >
             {SORT_OPTIONS.map((o) => (
               <option key={o.value} value={o.value}>
@@ -291,7 +291,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
       {filtered.length === 0 ? (
         <div className="py-16 text-center">
           <p className="text-[var(--slate)]/60 text-sm">No species match your filters.</p>
-          <button onClick={clearAll} className="mt-3 text-sm text-[var(--marsh)] hover:underline font-medium">
+          <button onClick={clearAll} className="mt-3 text-sm text-[var(--lichen)] hover:underline font-medium">
             Clear filters
           </button>
         </div>
@@ -303,7 +303,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
             const cfg = GROUP_CONFIG[group];
             return (
               <section key={group}>
-                <h2 className="text-lg font-bold text-[var(--forest)] mb-4 flex items-center gap-2 border-b border-[var(--dune)] pb-2">
+                <h2 className="text-lg font-bold text-[var(--fell)] mb-4 flex items-center gap-2 border-b border-[var(--fog)] pb-2">
                   <span>{cfg.icon}</span>
                   <span>{cfg.label}</span>
                   <span className="text-sm font-normal text-[var(--slate)]/50 ml-1">— {groupSpecies.length} species</span>
@@ -329,12 +329,12 @@ function SpeciesGrid({ category, species }: { category: SpeciesCategory; species
           <li key={s.id}>
             <Link
               href={`/${category}/${s.id}`}
-              className="card-hover block rounded-xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)] transition group h-full overflow-hidden"
+              className="card-hover block rounded-xl border border-[var(--fog)] bg-white hover:border-[var(--lichen)] transition group h-full overflow-hidden"
             >
               <SpeciesCardImage species={s} />
               <div className="p-4">
                 <div className="flex items-start justify-between gap-2 mb-1">
-                  <span className="font-semibold text-[var(--forest)] group-hover:text-[var(--marsh)] transition leading-snug">
+                  <span className="font-semibold text-[var(--fell)] group-hover:text-[var(--lichen)] transition leading-snug">
                     {s.commonName}
                   </span>
                   {sc && sc.label && (
@@ -347,7 +347,7 @@ function SpeciesGrid({ category, species }: { category: SpeciesCategory; species
                 {s.habitat && s.habitat.length > 0 && (
                   <div className="flex flex-wrap gap-1 mb-2">
                     {s.habitat.slice(0, 2).map((h) => (
-                      <span key={h} className="text-[10px] bg-[var(--dune)] text-[var(--slate)]/70 px-1.5 py-0.5 rounded">
+                      <span key={h} className="text-[10px] bg-[var(--fog)] text-[var(--slate)]/70 px-1.5 py-0.5 rounded">
                         {h}
                       </span>
                     ))}

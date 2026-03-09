@@ -16,9 +16,9 @@ export default function ContactPage() {
   return (
     <>
       {/* Page header */}
-      <div className="bg-[var(--forest)] text-white">
+      <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-3xl px-4 py-10">
-          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
             Get in touch
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -39,22 +39,22 @@ export default function ContactPage() {
 
           {/* Sidebar */}
           <aside className="md:col-span-2 space-y-6">
-            <div className="rounded-xl bg-[var(--dune)] p-5">
-              <h2 className="font-semibold text-[var(--forest)] mb-3 text-sm">About the site</h2>
+            <div className="rounded-xl bg-[var(--fog)] p-5">
+              <h2 className="font-semibold text-[var(--fell)] mb-3 text-sm">About the site</h2>
               <p className="text-sm text-[var(--slate)] leading-relaxed">
                 Sefton Coast Wildlife is an independent guide built by{" "}
-                <a href="https://churchtownmedia.co.uk" target="_blank" rel="noopener" className="text-[var(--marsh)] hover:underline">
+                <a href="https://churchtownmedia.co.uk" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                   Churchtown Media
                 </a>{" "}
                 — part of the{" "}
-                <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--marsh)] hover:underline">
+                <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                   The Lakes Network
                 </a>.
               </p>
             </div>
 
-            <div className="rounded-xl bg-[var(--dune)] p-5">
-              <h2 className="font-semibold text-[var(--forest)] mb-3 text-sm">Network sites</h2>
+            <div className="rounded-xl bg-[var(--fog)] p-5">
+              <h2 className="font-semibold text-[var(--fell)] mb-3 text-sm">Network sites</h2>
               <ul className="space-y-2 text-sm">
                 {[
                   { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide" },
@@ -63,7 +63,7 @@ export default function ContactPage() {
                   { href: "https://thelakes.network", label: "TheLakes.network" },
                 ].map(({ href, label }) => (
                   <li key={href}>
-                    <a href={href} target="_blank" rel="noopener" className="text-[var(--marsh)] hover:underline">
+                    <a href={href} target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                       {label} →
                     </a>
                   </li>

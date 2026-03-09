@@ -20,7 +20,7 @@ export default function NotFound() {
 
         <div className="text-7xl mb-4 select-none">🦅</div>
 
-        <h1 className="text-3xl font-bold text-[var(--forest)] mb-3">
+        <h1 className="text-3xl font-bold text-[var(--fell)] mb-3">
           Page not found
         </h1>
         <p className="text-[var(--slate)] mb-8 leading-relaxed">
@@ -29,13 +29,13 @@ export default function NotFound() {
 
         <Link
           href="/"
-          className="inline-flex items-center justify-center gap-2 bg-[var(--forest)] hover:bg-[var(--marsh)] text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-sm mb-10"
+          className="inline-flex items-center justify-center gap-2 bg-[var(--fell)] hover:bg-[var(--lichen)] text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-sm mb-10"
         >
           Back to home
         </Link>
 
-        <div className="border-t border-[var(--marsh)]/20 pt-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-[var(--marsh)] mb-5">
+        <div className="border-t border-[var(--lichen)]/20 pt-8">
+          <p className="text-xs font-bold uppercase tracking-widest text-[var(--lichen)] mb-5">
             Browse species
           </p>
           <div className="flex justify-center gap-6">
@@ -43,7 +43,7 @@ export default function NotFound() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm text-[var(--marsh)] hover:text-[var(--forest)] font-semibold hover:underline"
+                className="text-sm text-[var(--lichen)] hover:text-[var(--fell)] font-semibold hover:underline"
               >
                 {label}
               </Link>

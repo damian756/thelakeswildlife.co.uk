@@ -48,14 +48,14 @@ export default function SeasonalPage() {
   return (
     <>
       {/* Page header */}
-      <div className="bg-[var(--forest)] text-white">
+      <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-5xl px-4 py-10">
           <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <span className="text-white/80">Seasonal guides</span>
           </nav>
-          <p className="text-[var(--gold)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
             Year-round watching
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">Seasonal guides</h1>
@@ -71,12 +71,12 @@ export default function SeasonalPage() {
             <li key={s.slug}>
               <Link
                 href={`/seasonal/${s.slug}`}
-                className="card-hover group block p-6 rounded-2xl border border-[var(--dune)] bg-white hover:border-[var(--marsh)]/50"
+                className="card-hover group block p-6 rounded-2xl border border-[var(--fog)] bg-white hover:border-[var(--lichen)]/50"
               >
-                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--marsh)] bg-[var(--marsh)]/10 px-2 py-0.5 rounded-full mb-3">
+                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--lichen)] bg-[var(--lichen)]/10 px-2 py-0.5 rounded-full mb-3">
                   {s.tag}
                 </span>
-                <h2 className="font-display text-xl font-bold text-[var(--forest)] group-hover:text-[var(--marsh)] transition mb-1">
+                <h2 className="font-display text-xl font-bold text-[var(--fell)] group-hover:text-[var(--lichen)] transition mb-1">
                   {s.title}
                 </h2>
                 <p className="text-xs text-[var(--slate)]/60 mb-3">{s.period}</p>
