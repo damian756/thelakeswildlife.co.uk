@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const title = "Terms of Use — Sefton Coast Wildlife";
-const description = "Terms of use for seftoncoastwildlife.co.uk.";
-const url = "https://www.seftoncoastwildlife.co.uk/terms";
+const title = "Terms of Use — The Lakes Wildlife";
+const description = "Terms of use for thelakeswildlife.co.uk.";
+const url = "https://www.thelakeswildlife.co.uk/terms";
 
 export const metadata: Metadata = {
   title,
@@ -21,10 +21,10 @@ export default function TermsPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--forest)] mb-2">About this site</h2>
           <p>
-            Sefton Coast Wildlife (<a href="https://www.seftoncoastwildlife.co.uk" className="text-[var(--marsh)] hover:underline">seftoncoastwildlife.co.uk</a>) is
+            The Lakes Wildlife (<a href="https://www.thelakeswildlife.co.uk" className="text-[var(--marsh)] hover:underline">thelakeswildlife.co.uk</a>) is
             operated by Churchtown Media. Part of the{" "}
             <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--marsh)] hover:underline">
-              Sefton Coast Network
+              The Lakes Network
             </a>.
           </p>
         </section>
@@ -64,8 +64,8 @@ export default function TermsPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--forest)] mb-2">Intellectual property</h2>
           <p>
-            The Sefton Coast Wildlife name, design and editorial content are the property of Churchtown Media.
-            The Sefton Coast Network brand and associated trademarks belong to Churchtown Media.
+            The The Lakes Wildlife name, design and editorial content are the property of Churchtown Media.
+            The The Lakes Network brand and associated trademarks belong to Churchtown Media.
           </p>
         </section>
 

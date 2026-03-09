@@ -3,15 +3,15 @@ import { SpeciesList } from "@/components/SpeciesList";
 
 import type { Metadata } from "next";
 
-const title = "Sefton Coast Insects — Butterflies, Moths & Beetles Guide";
-const description = "Butterflies, moths and beetles of the Sefton Coast dunes and heathland — Dark Green Fritillary, Grayling, Six-spot Burnet, Dune Tiger Beetle and more. Where to see them and identification tips.";
-const url = "https://www.seftoncoastwildlife.co.uk/insects";
+const title = "Lake District Insects — Butterflies, Moths & Beetles Guide";
+const description = "Butterflies, moths and beetles of the Lake District dunes and heathland — Dark Green Fritillary, Grayling, Six-spot Burnet, Dune Tiger Beetle and more. Where to see them and identification tips.";
+const url = "https://www.thelakeswildlife.co.uk/insects";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -22,15 +22,15 @@ export default async function InsectsPage() {
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Insects of the Sefton Coast",
-    description: "Butterflies, moths, dragonflies, beetles and bees recorded on the Sefton Coast dunes, heathland and dune slacks.",
+    name: "Insects of the Lake District",
+    description: "Butterflies, moths, dragonflies, beetles and bees recorded on the Lake District dunes, heathland and dune slacks.",
     url,
     numberOfItems: species.length,
     itemListElement: species.map((s, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: s.commonName,
-      url: `https://www.seftoncoastwildlife.co.uk/insects/${s.id}`,
+      url: `https://www.thelakeswildlife.co.uk/insects/${s.id}`,
     })),
   };
 

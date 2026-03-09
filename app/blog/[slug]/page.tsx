@@ -15,16 +15,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
-  const url = `https://www.seftoncoastwildlife.co.uk/blog/${slug}`;
+  const url = `https://www.thelakeswildlife.co.uk/blog/${slug}`;
   return {
-    title: `${post.title} — Sefton Coast Wildlife`,
+    title: `${post.title} — The Lakes Wildlife`,
     description: post.metaDescription,
     alternates: { canonical: url },
     openGraph: {
       title: post.title,
       description: post.metaDescription,
       url,
-      siteName: "Sefton Coast Wildlife",
+      siteName: "The Lakes Wildlife",
       type: "article",
       publishedTime: post.date,
     },
@@ -46,7 +46,7 @@ export default async function BlogPostPage({ params }: Props) {
     : await getWikipediaImage(post.heroWikipediaTitle);
   const heroSrc = post.heroLocalSrc ?? heroImage?.src ?? null;
   const heroPageUrl = heroImage?.pageUrl ?? null;
-  const url = `https://www.seftoncoastwildlife.co.uk/blog/${slug}`;
+  const url = `https://www.thelakeswildlife.co.uk/blog/${slug}`;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -57,21 +57,21 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.date,
     author: {
       "@type": "Person",
-      name: "Ed",
+      name: "Damian",
       description:
-        "Ed has been walking the Sefton Coast since the 1980s. Retired geography teacher. Keeps a yearly bird tally. Still gets up at five.",
-      url: "https://www.seftoncoastwildlife.co.uk",
+        "Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.",
+      url: "https://www.thelakeswildlife.co.uk",
     },
     publisher: {
       "@type": "Organization",
-      name: "Sefton Coast Wildlife",
-      url: "https://www.seftoncoastwildlife.co.uk",
+      name: "The Lakes Wildlife",
+      url: "https://www.thelakeswildlife.co.uk",
     },
     keywords: post.tags.join(", "),
     ...(heroSrc && {
       image: {
         "@type": "ImageObject",
-        url: heroSrc.startsWith("/") ? `https://www.seftoncoastwildlife.co.uk${heroSrc}` : heroSrc,
+        url: heroSrc.startsWith("/") ? `https://www.thelakeswildlife.co.uk${heroSrc}` : heroSrc,
         width: 800,
       },
     }),
@@ -167,9 +167,9 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Author bio */}
         <div className="mt-8 p-5 rounded-xl bg-[var(--dune)] border border-[var(--foam)]">
           <p className="text-xs font-bold uppercase tracking-wider text-[var(--marsh)] mb-1">About the author</p>
-          <p className="text-sm font-semibold text-[var(--forest)]">Ed</p>
+          <p className="text-sm font-semibold text-[var(--forest)]">Damian</p>
           <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
-            Ed has been walking the Sefton Coast since the 1980s. He keeps a yearly bird tally, owns more waterproof jackets than he&apos;d care to admit, and has strong opinions about which hide has the best light in the morning. Retired geography teacher. Still gets up at five.
+            Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.
           </p>
         </div>
 

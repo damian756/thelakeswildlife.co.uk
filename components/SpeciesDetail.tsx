@@ -244,27 +244,14 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
             <p className="text-[var(--slate)] leading-relaxed">{species.whereToSee}</p>
             {species.shortLocation && (
               <div className="mt-4">
-                {species.shortLocation.includes("Marshside") && (
-                  <Link href="/nature/marshside-rspb" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
-                    → Marshside RSPB reserve guide
+                {species.shortLocation.includes("Haweswater") && (
+                  <Link href="/birdwatching-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
+                    → RSPB Haweswater guide
                   </Link>
                 )}
-                {species.shortLocation.includes("Formby") && (
-                  <Link href="/nature/sefton-coast" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
-                    → Formby & Sefton Coast guide
-                  </Link>
-                )}
-                {species.shortLocation.includes("Formby") && category === "mammals" && (
-                  <a
-                    href="https://www.formbyguide.co.uk/red-squirrels-formby"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition"
-                  >
-                    → Visiting the Formby red squirrel reserve — practical guide
-                  </a>
-                )}
-                {species.shortLocation.includes("Ainsdale") && (
-                  <Link href="/nature/sefton-coast" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
-                    → Ainsdale NNR & Sefton Coast guide
+                {species.shortLocation.includes("Grizedale") && (
+                  <Link href="/birdwatching-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--marsh)] hover:text-[var(--forest)] transition">
+                    → Grizedale Forest guide
                   </Link>
                 )}
               </div>
@@ -298,12 +285,12 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                   UK {sc.label}
                 </h3>
                 <p className={`text-sm leading-relaxed ${sc.calloutText}`}>
-                  {category === "birds" && status === "red" && "This species is on the UK Red List for Birds (BoCC5), indicating serious concern about its population decline or unfavourable conservation status. Monitoring this species on the Sefton Coast contributes to national population tracking."}
+                  {category === "birds" && status === "red" && "This species is on the UK Red List for Birds (BoCC5), indicating serious concern about its population decline or unfavourable conservation status. Monitoring in the Lake District contributes to national population tracking."}
                   {category === "birds" && status === "amber" && "This species is on the UK Amber List for Birds (BoCC5), indicating moderate concern. Population monitoring and habitat management remain important for its continued recovery."}
-                  {category === "birds" && status === "green" && "This species is on the UK Green List, indicating a healthy population status in the UK context. It remains an important component of Sefton Coast biodiversity."}
-                  {category !== "birds" && status === "red" && "This species is of serious conservation concern in the UK. Its presence on the Sefton Coast is important for local and national monitoring and habitat management."}
-                  {category !== "birds" && status === "amber" && "This species is of moderate conservation concern. Population monitoring and habitat management on the Sefton Coast support its continued recovery."}
-                  {category !== "birds" && status === "green" && "This species has a favourable conservation status in the UK and remains an important part of Sefton Coast biodiversity."}
+                  {category === "birds" && status === "green" && "This species is on the UK Green List, indicating a healthy population status in the UK context. It remains an important component of Lake District biodiversity."}
+                  {category !== "birds" && status === "red" && "This species is of serious conservation concern in the UK. Its presence in the Lake District is important for local and national monitoring and habitat management."}
+                  {category !== "birds" && status === "amber" && "This species is of moderate conservation concern. Population monitoring and habitat management in the Lake District support its continued recovery."}
+                  {category !== "birds" && status === "green" && "This species has a favourable conservation status in the UK and remains an important part of Lake District biodiversity."}
                 </p>
                 {species.externalLinks && (
                   <div className="flex flex-wrap gap-3 mt-3">
@@ -364,16 +351,16 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
 
           {/* CTA */}
           <section className="bg-[var(--forest)] rounded-2xl p-6 sm:p-8 text-white">
-            <h2 className="text-xl font-bold mb-2">Plan your visit to the Sefton Coast</h2>
+            <h2 className="text-xl font-bold mb-2">Plan your visit to the Lake District</h2>
             <p className="text-white/70 text-sm mb-5 max-w-xl">
-              Marshside RSPB, Formby pinewoods, Ainsdale NNR — practical guides to getting there, what to bring, and the best spots for each season.
+              RSPB Haweswater, Grizedale Forest, Leighton Moss. Practical guides to getting there, what to bring, and the best spots for each season.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white text-[var(--forest)] text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-[var(--sand)] transition">
                 Birdwatching guide →
               </Link>
-              <Link href="/nature/marshside-rspb" className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
-                Marshside RSPB
+              <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
+                RSPB Haweswater
               </Link>
               <Link href={`/${category}`} className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
                 All {label} →

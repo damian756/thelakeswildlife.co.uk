@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 type Props = { params: Promise<{ slug: string }> };
 
-const BASE = "https://www.seftoncoastwildlife.co.uk";
+const BASE = "https://www.thelakeswildlife.co.uk";
 
 function truncateAtSentence(text: string, max: number): string {
   if (text.length <= max) return text;
@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const species = getSpeciesBySlug("mammals", slug);
   if (!species) return {};
 
-  const location = species.shortLocation ?? "the Sefton Coast";
+  const location = species.shortLocation ?? "the Lake District";
   const title = `${species.commonName} at ${location}`;
   const description = truncateAtSentence(
-    species.description || `${species.commonName} (${species.scientificName}) on the Sefton Coast. ${species.seasonalPresence}.`,
+    species.description || `${species.commonName} (${species.scientificName}) on the Lake District. ${species.seasonalPresence}.`,
     155
   );
 
@@ -41,16 +41,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: { canonical },
     openGraph: {
-      title: `${title} | Sefton Coast Wildlife`,
+      title: `${title} | The Lakes Wildlife`,
       description,
       url: canonical,
-      siteName: "Sefton Coast Wildlife",
+      siteName: "The Lakes Wildlife",
       type: "article",
       ...(image && { images: [{ url: image, width: 800, alt: species.commonName }] }),
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | Sefton Coast Wildlife`,
+      title: `${title} | The Lakes Wildlife`,
       description,
       ...(image && { images: [image] }),
     },

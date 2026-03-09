@@ -10,10 +10,10 @@ const categoryLabels: Record<SpeciesCategory, string> = {
 };
 
 const categoryDescriptions: Record<SpeciesCategory, string> = {
-  birds: "Waders, wildfowl, raptors and passerines recorded on the Sefton Coast — from the Pink-footed Goose roosts at Marshside to breeding Avocets and Little Terns on the beach.",
-  insects: "Butterflies, moths, beetles and other invertebrates of the Sefton Coast dunes, slacks and heathland — one of the richest insect habitats in northwest England.",
-  plants: "Dune and marsh flora of the Sefton Coast — including nationally rare species such as Grass of Parnassus and Round-leaved Wintergreen at Ainsdale NNR.",
-  mammals: "Mammals, reptiles and amphibians of the Sefton Coast — Red Squirrels in the Formby pinewoods, Grey Seals on the beach, Sand Lizards at Ainsdale NNR and the Natterjack Toad chorus on warm spring nights.",
+  birds: "Waders, raptors and passerines of the Lake District. Ospreys at RSPB Haweswater, red grouse on the fells, and migrant waders at Leighton Moss.",
+  insects: "Butterflies, moths, beetles and other invertebrates of the Lake District fells, woodland and wetland habitats.",
+  plants: "Upland and wetland flora of the Lake District, including nationally rare species in the fells and tarns.",
+  mammals: "Mammals of the Lake District. Red squirrels at Grizedale, red deer in Martindale, otters and bats across the region.",
 };
 
 interface SpeciesListProps {
@@ -39,7 +39,7 @@ export function SpeciesList({ category, species }: SpeciesListProps) {
             <span className="text-white/80">{label}</span>
           </nav>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">
-            {label} of the Sefton Coast
+            {label} of the Lake District
           </h1>
           <p className="text-white/70 max-w-2xl leading-relaxed">{description}</p>
 

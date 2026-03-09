@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 
-const title = "Contact — Sefton Coast Wildlife";
-const description = "Get in touch with Sefton Coast Wildlife — questions, species records, local knowledge or listing enquiries.";
-const url = "https://www.seftoncoastwildlife.co.uk/contact";
+const title = "Contact — The Lakes Wildlife";
+const description = "Get in touch with The Lakes Wildlife — questions, species records, local knowledge or listing enquiries.";
+const url = "https://www.thelakeswildlife.co.uk/contact";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
 };
 
 export default function ContactPage() {
@@ -25,7 +25,7 @@ export default function ContactPage() {
             Contact us
           </h1>
           <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
-            Species records, questions about the site, listing enquiries or just something you&apos;ve spotted on the coast — we&apos;d like to hear from you.
+            Species records, questions about the site, listing enquiries or just something you&apos;ve spotted in the Lake District — we&apos;d like to hear from you.
           </p>
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 </a>{" "}
                 — part of the{" "}
                 <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="text-[var(--marsh)] hover:underline">
-                  Sefton Coast Network
+                  The Lakes Network
                 </a>.
               </p>
             </div>
@@ -57,10 +57,10 @@ export default function ContactPage() {
               <h2 className="font-semibold text-[var(--forest)] mb-3 text-sm">Network sites</h2>
               <ul className="space-y-2 text-sm">
                 {[
-                  { href: "https://www.southportguide.co.uk", label: "SouthportGuide" },
-                  { href: "https://www.formbyguide.co.uk", label: "FormbyGuide" },
-                  { href: "https://www.seftonlinks.com", label: "SeftonLinks" },
-                  { href: "https://seftoncoast.network", label: "SeftonCoast.network" },
+                  { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide" },
+                  { href: "https://www.thelakeswildlife.co.uk", label: "The Lakes Wildlife" },
+                  { href: "https://www.hikethelakes.com", label: "Hike The Lakes" },
+                  { href: "https://thelakes.network", label: "TheLakes.network" },
                 ].map(({ href, label }) => (
                   <li key={href}>
                     <a href={href} target="_blank" rel="noopener" className="text-[var(--marsh)] hover:underline">

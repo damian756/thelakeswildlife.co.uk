@@ -22,14 +22,14 @@ export async function POST(req: NextRequest) {
     }
 
     await resend.emails.send({
-      from: "Sefton Coast Wildlife <noreply@seftoncoastwildlife.co.uk>",
+      from: "The Lakes Wildlife <noreply@thelakeswildlife.co.uk>",
       to: "damian@churchtownmedia.co.uk",
       replyTo: email,
-      subject: subject ? `[Sefton Coast Wildlife] ${subject}` : `[Sefton Coast Wildlife] Message from ${name}`,
+      subject: subject ? `[The Lakes Wildlife] ${subject}` : `[The Lakes Wildlife] Message from ${name}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 24px;">
           <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #4a6b5a; margin: 0 0 8px;">
-            Sefton Coast Wildlife — Contact Form
+            The Lakes Wildlife — Contact Form
           </p>
           <h2 style="color: #1c3220; margin: 0 0 24px; font-size: 20px;">New message from ${name}</h2>
 
@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
           <div style="background: #f5f2eb; border-left: 4px solid #4a6b5a; padding: 16px; font-size: 14px; color: #2d3a3a; line-height: 1.6; white-space: pre-wrap;">${message}</div>
 
           <p style="font-size: 12px; color: #999; margin-top: 24px;">
-            Sent from <a href="https://www.seftoncoastwildlife.co.uk/contact" style="color: #4a6b5a;">seftoncoastwildlife.co.uk/contact</a>
+            Sent from <a href="https://www.thelakeswildlife.co.uk/contact" style="color: #4a6b5a;">thelakeswildlife.co.uk/contact</a>
           </p>
         </div>
       `,

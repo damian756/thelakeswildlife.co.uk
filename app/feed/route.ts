@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { BLOG_POSTS } from "@/content/blog/posts";
 
-const BASE_URL = "https://www.seftoncoastwildlife.co.uk";
+const BASE_URL = "https://www.thelakeswildlife.co.uk";
 
 function toRfc2822(dateStr: string): string {
   const d = new Date(dateStr);
@@ -16,9 +16,9 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sefton Coast Wildlife — Blog</title>
+    <title>The Lakes Wildlife — Blog</title>
     <link>${BASE_URL}/blog</link>
-    <description>Birds, nature and wildlife on the Sefton Coast — Marshside RSPB, seasonal guides, species spotlights and conservation.</description>
+    <description>Birds, nature and wildlife on the Lake District — Marshside RSPB, seasonal guides, species spotlights and conservation.</description>
     <language>en-gb</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${BASE_URL}/feed" rel="self" type="application/rss+xml"/>

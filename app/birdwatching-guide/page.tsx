@@ -1,39 +1,39 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const title = "Birdwatching on the Sefton Coast — Guide, Best Spots & What to Bring";
+const title = "Birdwatching in the Lake District — Guide, Best Spots & What to Bring";
 const description =
-  "Where to go birdwatching on the Sefton Coast — Marshside RSPB, Hesketh Out Marsh, Ainsdale NNR. What to bring, when to go and what you'll see each season.";
-const url = "https://www.seftoncoastwildlife.co.uk/birdwatching-guide";
+  "Where to go birdwatching in the Lake District. RSPB Haweswater ospreys, Leighton Moss, Grizedale red squirrels. What to bring, when to go and what you'll see each season.";
+const url = "https://www.thelakeswildlife.co.uk/birdwatching-guide";
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "Sefton Coast Wildlife", type: "article" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article" },
   twitter: { card: "summary_large_image", title, description },
 };
 
 const faqs = [
   {
-    q: "Where is the best place to go birdwatching on the Sefton Coast?",
-    a: "Marshside RSPB Reserve (postcode PR9 9PH) is the standout location — free entry, managed lagoons, two hides, and in winter, Pink-footed Geese in numbers you won't believe until you see them.",
+    q: "Where is the best place to go birdwatching in the Lake District?",
+    a: "RSPB Haweswater (postcode CA10 2LT) is the standout location for ospreys. The viewpoint hide opens April to September. Leighton Moss RSPB near Silverdale is excellent for bitterns, marsh harriers and bearded tits.",
   },
   {
-    q: "What binoculars do I need for birdwatching at Marshside?",
-    a: "8×42 binoculars cover everything you'll see from the hides. Celestron Nature DX or Kowa YF are solid entry-level options under £150. A telescope is useful in winter for picking through goose flocks on the estuary.",
+    q: "What binoculars do I need for birdwatching in the Lakes?",
+    a: "8×42 binoculars cover most situations. A scope is useful at Haweswater for the osprey nest and at Leighton Moss for distant marsh birds. Celestron Nature DX or Kowa YF are solid entry-level options under £150.",
   },
   {
-    q: "When is the best season for birdwatching on the Sefton Coast?",
-    a: "October to March for sheer spectacle — Pink-footed Geese, winter wildfowl and waders. April–June for breeding Avocets and Little Terns. July–September for southbound wader passage through the scrapes.",
+    q: "When is the best season for birdwatching in the Lake District?",
+    a: "April to July for ospreys at Haweswater and breeding upland birds. October for red deer rut in Martindale. Year-round at Leighton Moss. Winter brings red grouse on the fells and flocks of fieldfares.",
   },
   {
-    q: "Is birdwatching at Marshside suitable for beginners?",
-    a: "Yes — it's one of the best places in the North West to start. Walk the sea wall to the main hide and sit for twenty minutes. You'll see more than you expect, even in summer. Other birders at the hides are generally happy to help with identification.",
+    q: "Is birdwatching at Haweswater suitable for beginners?",
+    a: "Yes. The osprey viewpoint is accessible and the birds are visible from the hide. Staff and volunteers are on hand to help. Arrive before 10am in peak season for a decent spot.",
   },
   {
-    q: "Can I see Pink-footed Geese at Marshside?",
-    a: "Yes. Pink-footed Geese arrive from Iceland in October and numbers peak between late October and late November at 80,000+ on the Ribble Estuary. Evening and morning flighting from the sea wall is one of the best wildlife spectacles in England.",
+    q: "Can I see red squirrels in the Lake District?",
+    a: "Yes. Grizedale Forest has a healthy population. Go early in the morning, walk quietly, and look for feeders near the visitor centre. Red squirrels are also present in Whinlatter and other conifer woodland.",
   },
 ];
 
@@ -46,15 +46,15 @@ const pageJsonLd = [
     url,
     author: {
       "@type": "Person",
-      name: "Ed",
+      name: "Damian",
       description:
-        "Ed has been walking the Sefton Coast since the 1980s. Retired geography teacher. Keeps a yearly bird tally. Still gets up at five.",
-      url: "https://www.seftoncoastwildlife.co.uk",
+        "Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.",
+      url: "https://www.thelakeswildlife.co.uk",
     },
     publisher: {
       "@type": "Organization",
-      name: "Sefton Coast Wildlife",
-      url: "https://www.seftoncoastwildlife.co.uk",
+      name: "The Lakes Wildlife",
+      url: "https://www.thelakeswildlife.co.uk",
     },
   },
   {
@@ -85,10 +85,10 @@ export default function BirdwatchingGuidePage() {
             Practical guide · All levels
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
-            Birdwatching on the Sefton Coast
+            Birdwatching in the Lake District
           </h1>
           <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
-            The Sefton Coast is genuinely excellent for birds. In winter you can watch 80,000 Pink-footed Geese come off the estuary. In summer, Little Terns nest on the beach a few miles from Liverpool. You don&apos;t have to go to Norfolk.
+            The Lake District is genuinely excellent for birds. Ospreys at RSPB Haweswater, red grouse on the fells, marsh harriers at Leighton Moss. You don&apos;t have to go to Norfolk.
           </p>
         </div>
       </div>
@@ -98,9 +98,9 @@ export default function BirdwatchingGuidePage() {
         {/* Stat block */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
           {[
-            { stat: "80,000+", label: "Pink-footed Geese (peak)" },
-            { stat: "4", label: "Key sites to visit" },
-            { stat: "Free", label: "Entry to Marshside RSPB" },
+            { stat: "Ospreys", label: "RSPB Haweswater (Apr–Sep)" },
+            { stat: "4+", label: "Key sites to visit" },
+            { stat: "RSPB members", label: "Free entry to reserves" },
             { stat: "Year-round", label: "Always something to see" },
           ].map(({ stat, label }) => (
             <div key={label} className="rounded-xl bg-[var(--dune)] p-4 text-center">
@@ -119,38 +119,38 @@ export default function BirdwatchingGuidePage() {
         <div className="space-y-5 mb-10">
           <div className="card-hover rounded-xl border border-[var(--dune)] bg-white p-5">
             <div className="flex items-start justify-between gap-3 mb-2">
-              <h3 className="font-bold text-[var(--forest)]">Marshside RSPB Reserve</h3>
-              <span className="text-xs bg-[var(--forest)] text-white px-2 py-0.5 rounded font-medium flex-shrink-0">Best overall</span>
+              <h3 className="font-bold text-[var(--forest)]">RSPB Haweswater</h3>
+              <span className="text-xs bg-[var(--forest)] text-white px-2 py-0.5 rounded font-medium flex-shrink-0">Best for ospreys</span>
             </div>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
-              Managed lagoons and scrapes on the edge of the Ribble Estuary. Free entry. Two hides. Waders, wildfowl and in winter, Pink-footed Geese in numbers you won&apos;t believe until you see them. Go in the morning — better light and the geese are still on the fields.
+              The osprey viewpoint hide overlooks the nest site. Open April to September. Get there before 10am in peak season. Red deer, ravens and upland species in the surrounding fells. The drive in from Mardale is spectacular.
             </p>
-            <p className="text-xs text-[var(--slate)]/60 mb-1">Postcode: PR9 9PH · Free entry · Dogs on leads</p>
-            <Link href="/nature/marshside-rspb" className="text-xs text-[var(--marsh)] font-medium hover:underline block">Full guide to Marshside →</Link>
+            <p className="text-xs text-[var(--slate)]/60 mb-1">Postcode: CA10 2LT · RSPB members free · Check opening times</p>
+            <a href="https://www.rspb.org.uk/reserves-and-events/reserves-a-z/haweswater" target="_blank" rel="noopener noreferrer" className="text-xs text-[var(--marsh)] font-medium hover:underline block">RSPB Haweswater page →</a>
           </div>
 
           <div className="card-hover rounded-xl border border-[var(--dune)] bg-white p-5">
-            <h3 className="font-bold text-[var(--forest)] mb-2">Hesketh Out Marsh (RSPB)</h3>
+            <h3 className="font-bold text-[var(--forest)] mb-2">RSPB Leighton Moss</h3>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
-              A short drive north of Marshside. The outer marsh holds good numbers of waders at passage — Knot, Bar-tailed Godwit and Grey Plover in autumn. Views over the Ribble are excellent. Less visited than Marshside, which is sometimes an advantage.
+              Near Silverdale, just south of the Lakes. The largest reedbed in northwest England. Bitterns, marsh harriers, bearded tits, otters. Excellent hides. Café on site. Worth a full day.
             </p>
-            <p className="text-xs text-[var(--slate)]/60">Postcode: PR9 8DS · Free entry</p>
+            <p className="text-xs text-[var(--slate)]/60">Postcode: LA5 9TZ · RSPB members free · Café</p>
           </div>
 
           <div className="card-hover rounded-xl border border-[var(--dune)] bg-white p-5">
-            <h3 className="font-bold text-[var(--forest)] mb-2">Ainsdale NNR</h3>
+            <h3 className="font-bold text-[var(--forest)] mb-2">Grizedale Forest</h3>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
-              Managed by Natural England. Dune slack habitat holds Natterjack Toads (spring evenings) and dune-specialist insects. Breeding Stonechats and Linnets on the scrub edge. The pine woodland section can produce Crossbill in irruption years.
+              Red squirrels, red deer, woodland birds. Forestry England managed. Good for Treecreeper, Coal Tit, Crossbill in irruption years. The forest drives and trails are well signposted. Go early for squirrels.
             </p>
-            <p className="text-xs text-[var(--slate)]/60">Postcode: PR8 3RF · Free entry · Permits required for restricted areas</p>
+            <p className="text-xs text-[var(--slate)]/60">Postcode: LA22 0QJ · Parking charge · Visitor centre</p>
           </div>
 
           <div className="card-hover rounded-xl border border-[var(--dune)] bg-white p-5">
-            <h3 className="font-bold text-[var(--forest)] mb-2">Formby (National Trust) — beach and pinewoods</h3>
+            <h3 className="font-bold text-[var(--forest)] mb-2">The fells — upland species</h3>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
-              The beach is good for tideline waders — Sanderling and Dunlin year-round, Purple Sandpiper occasionally in winter. Little Terns nest at Ainsdale in summer. The pinewoods are the place for Red Squirrel and woodland species — Treecreeper, Coal Tit and occasional Woodcock.
+              Red grouse, ring ouzel, wheatear, golden plover. Walk any of the higher fells in spring and summer and you&apos;ll encounter them. Martindale in October for the red deer rut. Dawn or dusk for the best chance of seeing stags.
             </p>
-            <p className="text-xs text-[var(--slate)]/60">Postcode: L37 1YH · NT car park charge · Dogs allowed</p>
+            <p className="text-xs text-[var(--slate)]/60">No fixed postcode · Check weather · Bring layers</p>
           </div>
         </div>
 
@@ -170,19 +170,19 @@ export default function BirdwatchingGuidePage() {
             </thead>
             <tbody className="divide-y divide-[var(--dune)]">
               <tr className="bg-sky-50">
-                <td className="px-3 py-2 font-medium text-sky-800">Oct – Mar</td>
-                <td className="px-3 py-2 text-[var(--slate)]">Pink-footed Geese, Teal, Wigeon, Pintail, Short-eared Owl, Ruff, Golden Plover</td>
-                <td className="px-3 py-2 text-[var(--slate)]">Marshside</td>
+                <td className="px-3 py-2 font-medium text-sky-800">Apr – Jul</td>
+                <td className="px-3 py-2 text-[var(--slate)]">Ospreys at Haweswater, ring ouzel, wheatear, red grouse on the fells</td>
+                <td className="px-3 py-2 text-[var(--slate)]">Haweswater, fells</td>
               </tr>
               <tr>
-                <td className="px-3 py-2 font-medium text-amber-700">Apr – Jun</td>
-                <td className="px-3 py-2 text-[var(--slate)]">Breeding Avocets, Little Terns, Sedge Warbler, Reed Bunting, Lapwing, Redshank</td>
-                <td className="px-3 py-2 text-[var(--slate)]">Marshside, Ainsdale beach</td>
+                <td className="px-3 py-2 font-medium text-amber-700">Aug – Sep</td>
+                <td className="px-3 py-2 text-[var(--slate)]">Osprey migration, wader passage at Leighton Moss</td>
+                <td className="px-3 py-2 text-[var(--slate)]">Haweswater, Leighton Moss</td>
               </tr>
               <tr className="bg-emerald-50">
-                <td className="px-3 py-2 font-medium text-emerald-700">Jul – Sep</td>
-                <td className="px-3 py-2 text-[var(--slate)]">Wader passage — Greenshank, Green Sandpiper, Little Stint, Curlew Sandpiper, Black-tailed Godwit</td>
-                <td className="px-3 py-2 text-[var(--slate)]">Marshside, Hesketh</td>
+                <td className="px-3 py-2 font-medium text-emerald-700">Oct – Mar</td>
+                <td className="px-3 py-2 text-[var(--slate)]">Red deer rut in Martindale, fieldfares, red grouse, bitterns at Leighton Moss</td>
+                <td className="px-3 py-2 text-[var(--slate)]">Martindale, Leighton Moss, fells</td>
               </tr>
             </tbody>
           </table>
@@ -199,11 +199,11 @@ export default function BirdwatchingGuidePage() {
         <div className="space-y-3 mb-10">
           {[
             { item: "Binoculars", rec: "8×42 is the standard. Celestron Nature DX or Kowa YF are decent entry points under £150. Swarovski if you've made a commitment." },
-            { item: "Field guide", rec: "Collins Bird Guide. Not the pocket version — the full one. The waders in particular are worth having on paper." },
-            { item: "Scope and tripod", rec: "Worth it once you're doing regular winter visits. Marshside in January is much better with magnification." },
-            { item: "Layers", rec: "The sea wall at Marshside is exposed. In winter, dress for a boat trip and you'll be about right." },
-            { item: "Wellies or walking boots", rec: "Paths are generally firm but field edges can be muddy. Trainers are fine for the hides in summer." },
-            { item: "Thermos", rec: "There's nowhere to get a coffee at Marshside. Plan accordingly." },
+            { item: "Field guide", rec: "Collins Bird Guide. Not the pocket version. The full one. Upland species in particular are worth having on paper." },
+            { item: "Scope and tripod", rec: "Worth it for Haweswater ospreys and Leighton Moss. The hides have space. Dress for the weather." },
+            { item: "Layers", rec: "The fells change fast. Even in summer, bring a waterproof and a fleece. The Haweswater hide can be cold." },
+            { item: "Walking boots", rec: "Essential for the fells. Grizedale and Leighton Moss have good paths but can be muddy." },
+            { item: "Thermos", rec: "Leighton Moss has a café. Haweswater doesn't. Plan accordingly." },
           ].map(({ item, rec }) => (
             <div key={item} className="flex gap-3 text-sm">
               <span className="text-[var(--marsh)] mt-0.5 flex-shrink-0">▸</span>
@@ -218,10 +218,10 @@ export default function BirdwatchingGuidePage() {
         </p>
         <h2 className="font-display text-2xl font-bold text-[var(--forest)] mb-4">If you&apos;re just starting out</h2>
         <p className="text-[var(--slate)] mb-4 text-sm leading-relaxed">
-          Go to Marshside. Walk the sea wall path to the main hide. Sit for twenty minutes. You&apos;ll see more species than you expect, even in summer. In autumn and winter you may see things that make you want to come back every weekend. That&apos;s how it usually goes.
+          Go to Haweswater in spring. Sit in the osprey hide for an hour. You&apos;ll see the birds. In autumn, try Leighton Moss for bitterns and marsh harriers. The hides are comfortable and the reedbed is productive year-round.
         </p>
         <p className="text-[var(--slate)] mb-4 text-sm leading-relaxed">
-          Don&apos;t worry about identifying everything. Write down what you see — even rough descriptions — and look it up afterwards. The Collins Guide and the Merlin app (free) will cover most of what you encounter. Ask other birders at the hide; they&apos;ll usually be pleased you&apos;re interested.
+          Don&apos;t worry about identifying everything. Write down what you see and look it up afterwards. The Collins Guide and the Merlin app (free) will cover most of what you encounter. Ask other birders at the hide; they&apos;ll usually be pleased you&apos;re interested.
         </p>
         <p className="text-[var(--slate)] mb-10 text-sm leading-relaxed">
           Sometimes you stand in the rain for two hours and see nothing. That&apos;s birdwatching. Come back tomorrow.
@@ -242,10 +242,8 @@ export default function BirdwatchingGuidePage() {
         </div>
 
         <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--dune)]">
-          <Link href="/nature/marshside-rspb" className="text-[var(--marsh)] font-medium hover:underline text-sm">Marshside RSPB guide →</Link>
           <Link href="/birds" className="text-[var(--marsh)] font-medium hover:underline text-sm">Bird species database →</Link>
-          <Link href="/seasonal/pink-footed-geese" className="text-[var(--marsh)] font-medium hover:underline text-sm">Pink-footed Geese guide →</Link>
-          <Link href="/seasonal/wader-migration" className="text-[var(--marsh)] font-medium hover:underline text-sm">Wader migration guide →</Link>
+          <Link href="/mammals" className="text-[var(--marsh)] font-medium hover:underline text-sm">Mammals & wildlife →</Link>
         </div>
       </div>
     </>
