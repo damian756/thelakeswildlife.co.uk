@@ -42,3 +42,4 @@ next-env.d.ts
 
 # Cursor AI
 .cursor/
+.vercel
