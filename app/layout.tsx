@@ -85,7 +85,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
-        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Nkrq6vtdz1F1OLESgJnw+w" strategy="afterInteractive" />
+        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Nkrq6vtdz1F10LESgJnw+w" strategy="afterInteractive" />
       </body>
     </html>
   );
