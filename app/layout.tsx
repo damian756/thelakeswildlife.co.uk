@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Lora, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -80,12 +79,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${lora.variable} ${inter.variable}`}>
+      <head>
+        {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="xOo9IjOVu15HATFXVbk5mA" async></script>
+      </head>
       <body className="min-h-screen flex flex-col bg-[var(--mist)] text-[var(--peat)] antialiased">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
-        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Nkrq6vtdz1F10LESgJnw+w" strategy="afterInteractive" />
       </body>
     </html>
   );
