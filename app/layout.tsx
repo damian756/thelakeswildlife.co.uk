@@ -24,6 +24,7 @@ const BASE_URL = "https://www.thelakeswildlife.co.uk";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   alternates: {
+    canonical: BASE_URL,
     types: {
       "application/rss+xml": `${BASE_URL}/feed`,
     },
@@ -39,6 +40,8 @@ export const metadata: Metadata = {
     description: "Birds, nature and wildlife in the Lake District: Haweswater, Grizedale and beyond.",
     url: "https://www.thelakeswildlife.co.uk",
     siteName: "The Lakes Wildlife",
+    locale: "en_GB",
+    type: "website",
     images: [
       {
         url: `${BASE_URL}/images/species/birds/osprey.jpg`,
@@ -51,6 +54,17 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: [`${BASE_URL}/images/species/birds/osprey.jpg`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: [{ url: "/icon", sizes: "32x32", type: "image/png" }],
