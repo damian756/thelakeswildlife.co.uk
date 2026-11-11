@@ -51,7 +51,10 @@ const NO_ADVERT_POSTS = [
   "haweswater-in-winter",
 ];
 // Words that mean a post names a business. A post that keeps the space must contain none of them.
-const BUSINESS_WORDS = /(?:Steamers?|Tea ?room|Tearoom|caf[eé]|fishery|Estate Office|Dalemain|Wild Intrigue|United Utilities|hotel|pub|inn|boat trips?|hire|shop)/i;
+// Whole words only, so "public", "beginning" and "workshop" are not "pub", "inn" and "shop". Lookarounds,
+// not \b, so that "café" ends a word too (\b treats "é" as a non-word character).
+const BUSINESS_WORDS =
+  /(?<![\p{L}\p{N}])(?:Steamers?|Tea ?rooms?|caf[eé]s?|fisher(?:y|ies)|Estate Office|Dalemain|Wild Intrigue|United Utilities|hotels?|pubs?|inns?|boat trips?|hire|shops?)(?![\p{L}\p{N}])/iu;
 const postText = (p) =>
   [p.title, p.metaDescription, p.intro, ...(p.sections ?? []).flatMap((s) => [s.heading, ...(s.body ?? [])]), JSON.stringify(p.faq ?? [])].join(" ");
 
@@ -123,6 +126,16 @@ test("the end-of-post space is on species and seasonal posts only, never on a sp
   }
   assert.ok(BLOG_POSTS.some(hasPostEnd));
   assert.equal(hasPostEnd({ slug: "x", category: "species-spotlight", sponsor: { name: "S", url: "https://example.com" } }), false);
+});
+
+test("the business-word check finds business words, and only as whole words", () => {
+  const names = ["Ullswater Steamers", "the steamer", "a tea room", "the tearoom", "the café", "two cafes", "Esthwaite fishery",
+    "Estate Office", "Dalemain", "Wild Intrigue", "United Utilities", "a hotel", "the pub", "two pubs", "the inn",
+    "boat trips", "bike hire", "the shop"];
+  for (const w of names) assert.match(w, BUSINESS_WORDS, w);
+  const plain = ["a public footpath", "the beginning of May", "dinner", "spinning", "Cheshire", "a workshop", "the bishop",
+    "a fisherman", "hireling", "publication", "shopping"];
+  for (const w of plain) assert.doesNotMatch(w, BUSINESS_WORDS, w);
 });
 
 test("posts that name a business never show the end-of-post space", () => {
