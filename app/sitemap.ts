@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogUrls: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(post.updated ?? post.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -33,9 +33,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date("2026-11-11"), changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/birds`, lastModified: new Date("2026-11-11"), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/insects`, lastModified: new Date("2026-02-18"), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/plants`, lastModified: new Date("2026-02-15"), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/mammals`, lastModified: new Date("2026-02-12"), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/insects`, lastModified: new Date("2026-11-11"), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/plants`, lastModified: new Date("2026-11-11"), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/mammals`, lastModified: new Date("2026-11-11"), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/nature`, lastModified: new Date("2026-11-11"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/nature/haweswater-rspb`, lastModified: new Date("2026-11-11"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/nature/grizedale-forest`, lastModified: new Date("2026-11-11"), changeFrequency: "monthly", priority: 0.8 },

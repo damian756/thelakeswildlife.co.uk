@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/birds/goosander.jpg", alt: "Goosander drake swimming" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -77,7 +77,7 @@ export default function FishingGuidePage() {
 
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-3xl px-4 py-10">
-          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+          <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <span className="text-white/80">Fishing guide</span>
@@ -104,7 +104,7 @@ export default function FishingGuidePage() {
           ].map(({ stat, label }) => (
             <div key={label} className="rounded-xl bg-[var(--fog)] p-4 text-center">
               <p className="font-display text-xl font-bold text-[var(--fell)]">{stat}</p>
-              <p className="text-xs text-[var(--slate)]/90 mt-1">{label}</p>
+              <p className="text-xs text-[var(--slate)] mt-1">{label}</p>
             </div>
           ))}
         </div>
@@ -145,7 +145,7 @@ export default function FishingGuidePage() {
             Windermere holds brown trout, perch, and pike. Fishing on Windermere is free with a rod licence. Follow the local byelaws, which include a separate char close season on Windermere from 1 October to 30 April. The pike fishing is Windermere's open secret: large fish in accessible water, with catches reported to over 20lb.
           </p>
           <p>
-            Coniston Water is worth considering as an alternative to Windermere: less traffic, similar fish, and a more remote atmosphere. Esthwaite Water near Hawkshead (LA22 0QF) is a formally managed trout fishery with day tickets available at the fishing lodge. The stocking here is regular and the fish are catchable. The fishery stocks brown trout regularly.
+            Coniston Water is worth considering as an alternative to Windermere: less traffic, similar fish, and a more remote atmosphere. Esthwaite Water near Hawkshead (LA22 0QF) is a formally managed trout fishery with day tickets available at the fishing lodge. The stocking here is regular and the fish are catchable.
           </p>
 
           <h2>Arctic charr</h2>
@@ -178,7 +178,7 @@ export default function FishingGuidePage() {
                 {q}
                 <span className="text-[var(--copper)] text-lg group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <p className="mt-3 text-sm text-[var(--slate)]/80 leading-relaxed">{a}</p>
+              <p className="mt-3 text-sm text-[var(--slate)] leading-relaxed">{a}</p>
             </details>
           ))}
         </div>

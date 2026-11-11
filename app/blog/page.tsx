@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website", images: [{ url: "/images/species/mammals/badger.jpg", alt: "A badger in long grass" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -41,7 +41,7 @@ export default async function BlogIndexPage() {
       {/* Header */}
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-5xl px-4 py-10">
-          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+          <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <span className="text-white/80">Blog</span>

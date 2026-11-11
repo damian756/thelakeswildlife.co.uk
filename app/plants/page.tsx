@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website", images: [{ url: "/images/species/plants/cotton-grass.jpg", alt: "Cotton grass seed heads" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 

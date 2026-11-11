@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website", images: [{ url: "/images/species/mammals/red-deer.jpg", alt: "Red deer stag with large antlers standing in woodland" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -50,7 +50,7 @@ export default function SeasonalPage() {
       {/* Page header */}
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-5xl px-4 py-10">
-          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+          <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <span className="text-white/80">Seasonal guides</span>
@@ -79,7 +79,7 @@ export default function SeasonalPage() {
                 <h2 className="font-display text-xl font-bold text-[var(--fell)] group-hover:text-[var(--lichen)] transition mb-1">
                   {s.title}
                 </h2>
-                <p className="text-xs text-[var(--slate)]/90 mb-3">{s.period}</p>
+                <p className="text-xs text-[var(--slate)] mb-3">{s.period}</p>
                 <p className="text-sm text-[var(--slate)] leading-relaxed">{s.desc}</p>
               </Link>
             </li>

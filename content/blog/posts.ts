@@ -11,6 +11,7 @@ export interface BlogPost {
   categoryLabel: string;
   title: string;
   date: string; // ISO date string
+  updated?: string; // ISO date the post was last revised, when later than date
   metaDescription: string;
   heroWikipediaTitle?: string;
   heroLocalSrc?: string; // overrides Wikipedia fetch when set
@@ -170,7 +171,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "Where to see ospreys in and around the Lake District: Foulshaw Moss, Esthwaite Water and Bassenthwaite. When they arrive and leave, and why Haweswater is not on the list.",
     heroWikipediaTitle: "Osprey",
-    heroAlt: "An osprey",
+    heroAlt: "Osprey perched on a branch",
     intro:
       "Ospreys nest in and around the Lake District from late March to early September. The easiest place to watch them is Foulshaw Moss, a Cumbria Wildlife Trust reserve near Witherslack with a viewing platform and a webcam. An earlier version of this page described an RSPB osprey hide at Haweswater. There is no such hide, so the page has been rewritten.",
     sections: [
@@ -219,10 +220,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Seasonal Watching",
     title: "The Red Deer Rut at Martindale: When and Where to Watch",
     date: "2026-09-20",
+    updated: "2026-11-11",
     metaDescription:
       "Red deer rut in the Lake District. Martindale is the place. Dawn or dusk in October. What to expect and how to watch responsibly.",
     heroWikipediaTitle: "Red deer",
-    heroAlt: "Red deer stag during the rut, Martindale, Lake District",
+    heroAlt: "Red deer stag with large antlers standing in woodland",
     intro:
       "The red deer rut happens every autumn. The fells above Martindale, in the eastern Lake District, are home to England's oldest native herd of red deer, the National Park Authority says. October is the month. Dawn or dusk.",
     sections: [
@@ -256,10 +258,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Species Spotlights",
     title: "Red Squirrels at Grizedale Forest: Where to See Them",
     date: "2026-03-10",
+    updated: "2026-11-11",
     metaDescription:
       "Red squirrels in Grizedale Forest, Lake District. When to go, what to look for, and how to avoid disturbing them.",
     heroWikipediaTitle: "Red squirrel",
-    heroAlt: "Red squirrel in Grizedale Forest, one of the Lake District's strongholds",
+    heroAlt: "Red squirrel eating on a mossy tree stump",
     intro:
       "Red squirrels live in Grizedale Forest, and Forestry England's plan for the forest includes keeping suitable habitat for them and supporting grey squirrel control. Here is where and when to look.",
     sections: [
@@ -296,7 +299,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "Ospreys at Bassenthwaite Lake, north of Keswick. How they returned in 2001, why the Dodd Wood viewpoint no longer shows the nest, and where to look across the lake today.",
     heroWikipediaTitle: "Osprey",
-    heroAlt: "An osprey",
+    heroAlt: "Osprey perched on a branch",
     intro:
       "Ospreys have nested around Bassenthwaite Lake since 2001, the first to breed in the Lake District for more than 150 years. Forestry England calls Bassenthwaite the only 'true' lake in the National Park. The old viewpoint in Dodd Wood no longer looks at the nest, so here is what you can still do.",
     sections: [
@@ -332,10 +335,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Wildlife Photography",
     title: "Photographing the Red Deer Rut: Martindale in October",
     date: "2026-09-15",
+    updated: "2026-11-11",
     metaDescription:
       "How to photograph the red deer rut in Martindale, Lake District. Timing, kit, approach, and the locations that give the best results in October.",
     heroWikipediaTitle: "Red deer",
-    heroAlt: "Red deer stag roaring during the October rut at Martindale",
+    heroAlt: "Red deer stag with large antlers standing in woodland",
     intro:
       "The red deer rut draws photographers to Martindale every October. You need a long lens, low light and patience. Here is how to go about it.",
     sections: [
@@ -376,7 +380,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "Winter wildfowl guide for Ullswater. Goldeneye arrive in October. Goosander year-round. What to expect, where to watch from, and the best times for each species.",
     heroWikipediaTitle: "Common goldeneye",
-    heroAlt: "Goldeneye drake on Ullswater in winter, Lake District",
+    heroAlt: "Goldeneye drake swimming on open water",
     intro:
       "Goldeneye arrive on Ullswater in October from their Scandinavian breeding grounds. By December there are usually 30 to 50 birds on the lake. The males are bold black-and-white ducks with a yellow eye. They dive constantly. Watch from the northern end of the lake near Pooley Bridge.",
     sections: [
@@ -412,10 +416,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Habitat Guides",
     title: "Upland Birds for Beginners: What to Expect on the Lake District Fells",
     date: "2026-05-01",
+    updated: "2026-11-11",
     metaDescription:
       "Guide to the birds of the Lake District uplands for beginners. Red grouse, ring ouzel, golden plover, peregrine, raven. What to look for and where to find each species.",
     heroWikipediaTitle: "Red grouse",
-    heroAlt: "Red grouse on Lake District heather moorland",
+    heroAlt: "Red grouse standing in rough grass",
     intro:
       "The Lake District fells above 400 metres are a different birdwatching world from the valley woodlands and lake shores. Red grouse calling from the heather, ring ouzel singing from a boulder above the scree, peregrine hammering through a small flock of waders at speed. This is what you come for on the high ground.",
     sections: [
@@ -450,10 +455,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Habitat Guides",
     title: "Fishing Blea Tarn: Wild Trout Above Langdale",
     date: "2026-06-15",
+    updated: "2026-11-11",
     metaDescription:
       "Fishing guide for Blea Tarn in Langdale. Wild brown trout in a fell tarn below the Langdale Pikes. Access, approach, tackle, and what to expect.",
     heroWikipediaTitle: "Brown trout",
-    heroAlt: "Blea Tarn, Langdale, Lake District with the Langdale Pikes in the background",
+    heroAlt: "A brown trout on a black background",
     intro:
       "Blea Tarn in Little Langdale sits at around 200 metres above sea level below the Langdale Pikes. It holds wild brown trout. The tarn is accessible via a short walk from the Blea Tarn car park. The fishing is not stocked. These are wild fish.",
     sections: [
@@ -488,10 +494,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Species Spotlights",
     title: "The High Brown Fritillary: England's Most Threatened Butterfly",
     date: "2026-07-01",
+    updated: "2026-11-11",
     metaDescription:
       "The High Brown Fritillary, which Butterfly Conservation calls Britain's most endangered butterfly. Where it is found near the Lake District, when it flies, and why the Morecambe Bay limestone hills matter to it.",
     heroWikipediaTitle: "High Brown Fritillary",
-    heroAlt: "High Brown Fritillary butterfly on bracken in the Lake District",
+    heroAlt: "High brown fritillary butterfly resting on a leaf",
     intro:
       "Butterfly Conservation calls the High Brown Fritillary Britain's most endangered butterfly. Once widespread in England and Wales, it has declined dramatically since the 1950s. Its remaining strongholds are the Morecambe Bay Limestones, just south of the Lake District, Dartmoor and Exmoor, with a single colony left in Wales.",
     sections: [
@@ -529,7 +536,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "The golden eagles of Haweswater in the Lake District, from their return in 1969 to the death of the last male in 2015, and what has happened to golden eagles since.",
     heroWikipediaTitle: "Golden eagle",
-    heroAlt: "A golden eagle",
+    heroAlt: "Golden eagle in flight against a blue sky",
     intro:
       "From 1969 to 2015, Haweswater was the only place in England where golden eagles lived. The RSPB came to the valley to guard them and has stayed ever since. The last bird, a male, died in 2015 after twelve years alone.",
     sections: [
@@ -558,25 +565,26 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Species Spotlights",
     title: "Red Squirrels at Whinlatter Forest: England's Only Mountain Forest",
     date: "2026-03-20",
+    updated: "2026-11-11",
     metaDescription:
-      "Red squirrels at Whinlatter Forest above Braithwaite. The practical guide to visiting the red squirrel trail, the visitor centre cameras, and the best times for sightings.",
+      "Red squirrels at Whinlatter Forest above Braithwaite: where to look, the Wow Trail nature hide, and the best times for sightings.",
     heroWikipediaTitle: "Red squirrel",
-    heroAlt: "Red squirrel at Whinlatter Forest, Lake District",
+    heroAlt: "Red squirrel eating on a mossy tree stump",
     intro:
-      "Whinlatter Forest Park above Braithwaite is England's only mountain forest. It sits on the northern fells above Bassenthwaite Lake and runs up to over 500 metres. The red squirrel population here is well-established and the Forestry England visitor centre has live camera feeds from the feeder areas.",
+      "Forestry England calls Whinlatter Forest Park, above Braithwaite, England's only true mountain forest. Red Squirrels Northern England lists Whinlatter among Cumbria's red squirrel strongholds, and the visitor centre has a red squirrel experience.",
     sections: [
       {
         heading: "Why Whinlatter?",
         body: [
           "Whinlatter is a mixed conifer and broadleaf forest on the fellside above Braithwaite, planted from the 1920s and now managed by Forestry England. The red squirrel population is maintained by active grey squirrel control across the forest and the wider north-western fells landscape. Without this control the reds would have been displaced within years.",
-          "The visitor centre (CA12 5TW) has live CCTV feeds from feeder areas in the forest. These give close-up, reliable views of red squirrels without the uncertainty of looking for them in the trees. For families or for a first sighting, the cameras are a near-guarantee. The outdoor feeders near the visitor centre are visible from the terrace and usually have squirrels in the morning.",
+          "Red Squirrels Northern England says the visitor centre (CA12 5TW) has a red squirrel experience, and that red squirrels can be seen in the forest on any of the forest walks.",
         ],
       },
       {
-        heading: "The red squirrel trail",
+        heading: "Where to look",
         body: [
-          "Forestry England has marked a red squirrel trail through Whinlatter with interpretation boards explaining the conservation work and the species. The trail passes through the best squirrel habitat: mature Norway spruce and Sitka spruce where cone seeds are the primary food source.",
-          "Morning is the most productive time. The squirrels are active from first light through to late morning, caching food and feeding at the feeders. In autumn they are particularly visible as they work intensively to gather food before winter. A 90-minute circuit of the red squirrel trail in the first two hours after dawn in October gives an excellent chance of multiple squirrel sightings.",
+          "Forestry England's Wow Trail is 4.5 miles long, starts at the visitor centre and follows surfaced paths. It has a nature hide for spotting the forest's wildlife, which Forestry England says includes red squirrels, deer, badgers and foxes.",
+          "Morning is the most productive time. The squirrels are active from first light through to late morning, caching food. In autumn they are particularly visible as they work to gather food before winter.",
         ],
       },
       {
@@ -595,10 +603,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Species Spotlights",
     title: "Bitterns at Leighton Moss: Boom, Hide, and Wait",
     date: "2026-02-25",
+    updated: "2026-11-11",
     metaDescription:
       "Bitterns at Leighton Moss RSPB near Silverdale. When to hear the boom, where to watch from, and how the species has recovered from near-extinction in Britain.",
     heroWikipediaTitle: "Eurasian bittern",
-    heroAlt: "Bittern at reedbed edge, Leighton Moss RSPB",
+    heroAlt: "Bittern standing upright on short grass",
     intro:
       "Leighton Moss RSPB, near Silverdale in Lancashire, has the largest reedbed in north-west England, and bitterns live there. The booming call of the male carries across the reedbed in spring: mainly from March to May, with early birds from February. This is how to hear it, and with patience, see it.",
     sections: [
@@ -628,10 +637,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Seasonal Watching",
     title: "Spring Migrants at Grizedale: Pied Flycatchers in May",
     date: "2026-04-25",
+    updated: "2026-11-11",
     metaDescription:
       "Spring migrants at Grizedale Forest in May. Pied flycatcher, redstart, and wood warbler. When they arrive, where to find them, and what to look and listen for.",
     heroWikipediaTitle: "European pied flycatcher",
-    heroAlt: "Male pied flycatcher at nest box entrance in Lake District oak woodland",
+    heroAlt: "Male pied flycatcher perched on a branch",
     intro:
       "In late April, small birds that have spent the winter in sub-Saharan Africa arrive in the Lake District. Pied flycatchers, redstarts, and wood warblers fill the oak woodland with sound. Grizedale in early May is as good a place as any in England to find all three in a morning. Go early.",
     sections: [
@@ -667,10 +677,11 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: "Habitat Guides",
     title: "Martindale: A Guide to the Lake District's Red Deer Valley",
     date: "2026-09-01",
+    updated: "2026-11-11",
     metaDescription:
       "A guide to Martindale in the Lake District: the red deer, the valley's history, how to get there, where to park, and how to watch the deer without disturbing them.",
     heroWikipediaTitle: "Red deer",
-    heroAlt: "Red deer hinds in Martindale valley with the fells behind",
+    heroAlt: "Red deer stag with large antlers standing in woodland",
     intro:
       "Martindale is a quiet valley in the eastern Lake District. A narrow road runs south from Pooley Bridge along the eastern shore of Ullswater to Howtown and on into the valley. The fells above Martindale are home to England's oldest native herd of red deer, the National Park Authority says.",
     sections: [
@@ -709,7 +720,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "Haweswater in winter: salmon in Swindale Beck, red squirrels, redwings and fieldfares. Parking at Mardale Head, no toilets and no phone signal. What to know before you go.",
     heroWikipediaTitle: "Haweswater Reservoir",
-    heroAlt: "Haweswater reservoir and the surrounding fells",
+    heroAlt: "Haweswater reservoir seen from the fells above",
     intro:
       "Haweswater is a reservoir in the eastern Lake District. Around it, the RSPB and the landowner United Utilities run Wild Haweswater, a landscape restoration partnership across the Mardale, Naddle and Swindale valleys. In winter salmon run up Swindale Beck to spawn, winter thrushes feed on the berries and tree planting gets under way.",
     sections: [

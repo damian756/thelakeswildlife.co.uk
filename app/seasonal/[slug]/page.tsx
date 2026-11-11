@@ -138,7 +138,7 @@ const seasonalPages: Record<string, SeasonalPageData> = {
     metaDescription: "Where to see red squirrels in the Lake District. Grizedale Forest, Whinlatter, Haweswater. Morning is best. Practical guide to the best sites and what to look for.",
     heroWikipediaTitle: "Red squirrel",
     heroAlt: "Red squirrel in woodland",
-    intro: "Red squirrels are present year-round in the Lake District. They were largely gone from England south of a line from the Humber to the Mersey but the Lake District has held a significant population for decades. Grizedale Forest and Whinlatter are the two places to go. The feeders at both visitor centres give reliable close-range sightings. Go in the morning.",
+    intro: "Red squirrels are present year-round in the Lake District. They were largely gone from England south of a line from the Humber to the Mersey but the Lake District has held a significant population for decades. Grizedale Forest and Whinlatter are two places to go. Go in the morning.",
     sections: [
       {
         heading: "About the Lake District red squirrel population",
@@ -159,7 +159,7 @@ const seasonalPages: Record<string, SeasonalPageData> = {
       {
         heading: "Whinlatter Forest",
         body: [
-          "Whinlatter Forest Park above Braithwaite (CA12 5TW) is the northern Lakes' main red squirrel site. The visitor centre maintains a red squirrel camera system, with live feeds from the feeder areas that allow viewing without disturbing the animals. There is also a red squirrel trail through the woodland with marked viewing spots and information boards.",
+          "Whinlatter Forest Park above Braithwaite (CA12 5TW) is one of Cumbria's red squirrel strongholds, Red Squirrels Northern England says, and the visitor centre has a red squirrel experience. Forestry England's Wow Trail, which starts at the visitor centre, has a nature hide for spotting the forest's wildlife.",
           "Forestry England calls Whinlatter England's only true mountain forest. The fells above the visitor centre reach over 500 metres, and the forest has a different character from the lower-lying Grizedale. The trails through the spruce and larch give good red squirrel habitat, and the combination of fell walking and wildlife watching makes Whinlatter a full-day destination.",
           "The visitor centre has a cafe, useful on a cold morning before a wildlife walk.",
         ],
@@ -182,7 +182,7 @@ const seasonalPages: Record<string, SeasonalPageData> = {
     ],
     practicalTips: [
       "Grizedale Forest: visitor centre LA22 0QJ, early morning",
-      "Whinlatter Forest Park: CA12 5TW, red squirrel trail and camera feeds",
+      "Whinlatter Forest Park: CA12 5TW, Wow Trail nature hide",
       "Wild Haweswater: red squirrels in the woods, no public hides",
       "Best time: early morning, 8am to 11am, particularly in autumn and winter",
       "Look for stripped cones below trees: a reliable sign of squirrel activity",
@@ -273,6 +273,14 @@ export function generateStaticParams() {
   return Object.keys(seasonalPages).map((slug) => ({ slug }));
 }
 
+// Share images: species photos already in the repo.
+const SEASONAL_IMAGES: Record<string, { url: string; alt: string }> = {
+  "osprey-season": { url: "/images/species/birds/osprey.jpg", alt: "Osprey perched on a branch" },
+  "red-deer-rut": { url: "/images/species/mammals/red-deer.jpg", alt: "Red deer stag with large antlers standing in woodland" },
+  "red-squirrel-watching": { url: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel eating a nut on a mossy tree stump" },
+  "winter-wildfowl": { url: "/images/species/birds/goldeneye.jpg", alt: "Goldeneye drake on water" },
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = seasonalPages[slug];
@@ -288,6 +296,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       siteName: "The Lakes Wildlife",
       type: "article",
+      images: SEASONAL_IMAGES[slug] ? [SEASONAL_IMAGES[slug]] : undefined,
     },
     twitter: { card: "summary_large_image", title: page.title, description: page.metaDescription },
   };
@@ -334,7 +343,7 @@ export default async function SeasonalSlugPage({ params }: Props) {
       {/* Page header band */}
       <div className="bg-[var(--fell)] text-white">
     <div className="mx-auto max-w-3xl px-4 py-10">
-          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+          <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <Link href="/seasonal" className="hover:text-white/80 transition">Seasonal guides</Link>

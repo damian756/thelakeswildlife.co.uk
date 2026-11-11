@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website", images: [{ url: "/images/species/birds/osprey.jpg", alt: "Osprey perched on a branch" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -185,7 +185,7 @@ export default async function HomePage() {
       {/* ── STATS STRIP ──────────────────────────────────────── */}
       <section className="bg-[var(--fog)] border-b border-[var(--reed)]/30">
         <div className="mx-auto max-w-6xl px-4 py-5">
-          <div className="flex flex-wrap gap-6 md:gap-10 items-center justify-center md:justify-start text-sm text-[var(--slate)]">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-3 lg:flex lg:flex-wrap lg:gap-10 items-center text-sm text-[var(--slate)]">
             <span className="flex items-center gap-2">
               <strong className="text-[var(--fell)] font-bold">{totalCount}+</strong> species recorded
             </span>
@@ -237,7 +237,7 @@ export default async function HomePage() {
               {/* Text */}
               <div className="p-4">
                 <h3 className="font-semibold text-[var(--fell)] mb-0.5">{label}</h3>
-                <p className="text-sm text-[var(--slate)]/80 leading-snug">{desc}</p>
+                <p className="text-sm text-[var(--slate)] leading-snug">{desc}</p>
               </div>
             </Link>
           ))}
@@ -291,7 +291,7 @@ export default async function HomePage() {
                 <h3 className="font-semibold text-[var(--fell)] mb-2 group-hover:text-[var(--lichen)] transition">
                   {title}
                 </h3>
-                <p className="text-sm text-[var(--slate)]/80 leading-relaxed">{desc}</p>
+                <p className="text-sm text-[var(--slate)] leading-relaxed">{desc}</p>
               </Link>
             ))}
           </div>
@@ -318,7 +318,7 @@ export default async function HomePage() {
           </Link>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {recentPosts.map((post, i) => (
             <Link
               key={post.slug}
@@ -345,7 +345,7 @@ export default async function HomePage() {
                 <h3 className="mt-1 font-semibold text-[var(--fell)] leading-snug mb-2 group-hover:text-[var(--lichen)] transition">
                   {post.title}
                 </h3>
-                <p className="text-xs text-[var(--slate)]/90">{formatDate(post.date)}</p>
+                <p className="text-xs text-[var(--slate)]">{formatDate(post.date)}</p>
               </div>
             </Link>
           ))}

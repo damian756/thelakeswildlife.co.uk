@@ -1,7 +1,7 @@
 export interface WikiImage {
   /** 960px display version, used for the page hero (Wikimedia rejects some widths, such as 200 and 800) */
   src: string;
-  /** Original full-resolution URL */
+  /** 1280px version for a larger view (never the full-size original) */
   fullSrc: string;
   /** Link back to the Wikimedia Commons page */
   pageUrl: string;
@@ -24,6 +24,22 @@ async function fetchWithRetry(url: string, retries = 3, delayMs = 500): Promise<
   return null;
 }
 
+/**
+ * A thumbnail URL at the given width. Wikimedia serves only some widths
+ * (250, 330, 500, 960 and 1280 work; 200 and 800 return HTTP 400). Built from
+ * the summary's thumbnail, or from the original file when there is no
+ * thumbnail, so the full-size original (often over 1 MB) is never fetched.
+ */
+function thumbAt(data: { thumbnail?: { source?: string }; originalimage?: { source?: string } }, width: number): string | null {
+  const thumb = data.thumbnail?.source?.split("?")[0];
+  if (thumb && /\/\d+px-[^/]+$/.test(thumb)) return thumb.replace(/\/\d+px-([^/]+)$/, `/${width}px-$1`);
+  const original = data.originalimage?.source?.split("?")[0];
+  if (!original) return thumb ?? null;
+  if (/\/\d+px-[^/]+$/.test(original)) return original.replace(/\/\d+px-([^/]+)$/, `/${width}px-$1`);
+  const m = original.match(/^(https:\/\/[^/]+\/wikipedia\/commons)\/([0-9a-f])\/([0-9a-f]{2})\/([^/]+)$/);
+  return m ? `${m[1]}/thumb/${m[2]}/${m[3]}/${m[4]}/${width}px-${m[4]}` : original;
+}
+
 /** Lightweight thumbnail (330px) for use on species listing cards */
 export async function getCardThumbnail(title: string): Promise<string | null> {
   const res = await fetchWithRetry(
@@ -32,10 +48,7 @@ export async function getCardThumbnail(title: string): Promise<string | null> {
   if (!res) return null;
   try {
     const data = await res.json();
-    const base: string | undefined = data.originalimage?.source ?? data.thumbnail?.source;
-    if (!base) return null;
-    const sized = base.split("?")[0].replace(/\/\d+px-([^/]+)$/, "/330px-$1");
-    return sized || base;
+    return thumbAt(data, 330);
   } catch {
     return null;
   }
@@ -88,14 +101,9 @@ export async function getWikipediaImage(title: string): Promise<WikiImage | null
   try {
     const data = await res.json();
 
-    const original: string | undefined = data.originalimage?.source;
-    const thumb: string | undefined = data.thumbnail?.source;
-    const base = (original ?? thumb ?? "").split("?")[0];
-    if (!base) return null;
-
-    // Wikimedia serves only some thumbnail widths (250, 330, 500, 960 and 1280 work; 200 and 800 return 400).
-    const src = base.replace(/\/\d+px-([^/]+)$/, "/960px-$1");
-    const fullSrc = original ? original.split("?")[0] : src;
+    const src = thumbAt(data, 960);
+    if (!src) return null;
+    const fullSrc = thumbAt(data, 1280) ?? src;
     const pageUrl =
       data.content_urls?.desktop?.page ??
       `https://en.wikipedia.org/wiki/${encodeURIComponent(title)}`;

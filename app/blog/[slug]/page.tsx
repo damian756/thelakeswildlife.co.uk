@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { BLOG_POSTS, getPostBySlug } from "@/content/blog/posts";
 import { getWikipediaImage } from "@/lib/wikipedia";
 import { ClickableImage } from "@/components/ClickableImage";
+import { siteImage } from "@/lib/site-image";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -16,10 +17,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
   const url = `https://www.thelakeswildlife.co.uk/blog/${slug}`;
+  // Served through this site: Wikimedia refuses some crawlers (Facebook gets 403).
+  const remoteHero = !post.heroLocalSrc && post.heroWikipediaTitle
+    ? (await getWikipediaImage(post.heroWikipediaTitle))?.src
+    : undefined;
   const ogImage = post.heroLocalSrc
     ? `https://www.thelakeswildlife.co.uk${post.heroLocalSrc}`
-    : post.heroWikipediaTitle
-      ? (await getWikipediaImage(post.heroWikipediaTitle))?.src
+    : remoteHero
+      ? `https://www.thelakeswildlife.co.uk${siteImage(remoteHero, 1200)}`
       : undefined;
   const images = ogImage ? [{ url: ogImage, alt: post.heroAlt }] : undefined;
   return {
@@ -66,7 +71,7 @@ export default async function BlogPostPage({ params }: Props) {
       url,
       mainEntityOfPage: url,
       datePublished: post.date,
-      dateModified: post.date,
+      dateModified: post.updated ?? post.date,
       author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
       publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
       keywords: post.tags.join(", "),
@@ -118,7 +123,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <div className="mx-auto max-w-3xl px-4 py-10">
         {/* Breadcrumb */}
-        <nav className="text-sm text-[var(--slate)]/90 mb-6 flex items-center gap-1.5 flex-wrap">
+        <nav className="text-sm text-[var(--slate)] mb-6 flex items-center gap-1.5 flex-wrap">
           <Link href="/" className="hover:text-[var(--lichen)] transition">Home</Link>
           <span>/</span>
           <Link href="/blog" className="hover:text-[var(--lichen)] transition">Blog</Link>
@@ -130,7 +135,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="mb-8">
           <span className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)]">{post.categoryLabel}</span>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-[var(--fell)] mt-2 mb-3 leading-tight">{post.title}</h1>
-          <p className="text-sm text-[var(--slate)]/90">{formatDate(post.date)}</p>
+          <p className="text-sm text-[var(--slate)]">{formatDate(post.date)}</p>
         </div>
 
         {/* Intro */}
@@ -156,7 +161,7 @@ export default async function BlogPostPage({ params }: Props) {
                   />
                 </div>
                 {section.imageAfter.caption && (
-                  <p className="text-xs text-[var(--slate)]/90 px-4 py-2 bg-[var(--fog)]/40 text-center leading-relaxed">
+                  <p className="text-xs text-[var(--slate)] px-4 py-2 bg-[var(--fog)]/40 text-center leading-relaxed">
                     {section.imageAfter.caption}
                   </p>
                 )}
@@ -182,7 +187,7 @@ export default async function BlogPostPage({ params }: Props) {
         {post.tags.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-10 pt-6 border-t border-[var(--fog)]">
             {post.tags.map((tag) => (
-              <span key={tag} className="text-xs bg-[var(--fog)] text-[var(--slate)]/90 px-2.5 py-1 rounded-full">
+              <span key={tag} className="text-xs bg-[var(--fog)] text-[var(--slate)] px-2.5 py-1 rounded-full">
                 {tag}
               </span>
             ))}
