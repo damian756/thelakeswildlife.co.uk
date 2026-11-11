@@ -35,7 +35,9 @@ export default function TermsPage() {
           <p className="mb-3">
             All text, images, species data and editorial content on this site is provided for personal, non-commercial use.
             You may share links to any page freely. You may not reproduce, republish or redistribute content
-            without written permission from Churchtown Media.
+            without written permission from Churchtown Media. Photographs and plates from Wikimedia Commons and
+            Geograph keep their own licences, shown with each credit and on the{" "}
+            <Link href="/photo-credits" className="text-[var(--lichen)] hover:underline">Photo credits</Link> page.
           </p>
           <p>
             Species images are sourced from Wikipedia and Wikimedia Commons under their respective licences.
@@ -43,7 +45,9 @@ export default function TermsPage() {
             please <a href="/contact" className="text-[var(--lichen)] hover:underline">contact us</a>.
           </p>
           <p className="mt-3">
-            Illustrations on this site are computer-generated. Species photographs are credited to their photographers.
+            The scene illustrations at the top of some pages are computer-generated. Species photographs and botanical
+            plates are credited to their makers on each page and on the{" "}
+            <Link href="/photo-credits" className="text-[var(--lichen)] hover:underline">Photo credits</Link> page.
           </p>
         </section>
 
