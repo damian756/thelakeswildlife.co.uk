@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const title = "Privacy Policy | The Lakes Wildlife";
+const title = "Privacy Policy";
 const description = "Privacy policy for thelakeswildlife.co.uk: how we handle your data.";
 const url = "https://www.thelakeswildlife.co.uk/privacy";
 
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
             <li><strong>Ahrefs Web Analytics</strong>: page view statistics without cookies. <a href="https://ahrefs.com/legal/privacy-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Ahrefs privacy policy</a></li>
             <li><strong>Resend</strong>: email delivery for the contact form. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Resend privacy policy</a></li>
             <li><strong>Vercel</strong>: website hosting. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">Vercel privacy policy</a></li>
-            <li><strong>Wikipedia / Wikimedia Commons</strong>: species images are loaded from Wikipedia&apos;s REST API. No personal data is sent to Wikipedia by this site.</li>
+            <li><strong>Wikipedia and Wikimedia Commons</strong>: our species photos come from Wikimedia Commons. They are stored on this site or served through it, so your browser does not request them from Wikimedia.</li>
           </ul>
         </section>
 

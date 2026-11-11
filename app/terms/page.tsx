@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const title = "Terms of Use | The Lakes Wildlife";
+const title = "Terms of Use";
 const description = "Terms of use for thelakeswildlife.co.uk.";
 const url = "https://www.thelakeswildlife.co.uk/terms";
 
