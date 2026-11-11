@@ -227,6 +227,8 @@ export const AD_SLOTS: Record<AdSlotId, AdSlotConfig> = {
 
   // /seasonal/winter-wildfowl, sold with the Birds section as the winter birds package (November to
   // February). When the package is sold, give the same sponsor to "section-birds" for the same dates.
+  // Never sell it to a business the page names (the Ullswater Steamers): the card sits at the end of
+  // the guide and would read as an endorsement.
   "seasonal-winter-wildfowl": {
     option: "winter-birds",
     title: "Sponsor of the winter wildfowl guide",
@@ -236,9 +238,9 @@ export const AD_SLOTS: Record<AdSlotId, AdSlotConfig> = {
     sponsor: null,
   },
 
-  // End of every species and seasonal blog post (POST_END_CATEGORIES), one sponsor for all of them.
-  // Some of these posts name the Ullswater Steamers, the Esthwaite Water fishery and a tearoom: do not
-  // sell this space to a business the posts name.
+  // End of the species and seasonal blog posts (POST_END_CATEGORIES), one sponsor for all of them.
+  // Posts that name a business are left out (POST_END_EXCLUDED); still, never sell this space to a
+  // business any of these posts name.
   "post-end": {
     option: "section-sponsor",
     title: "Sponsor of the species and seasonal posts",
@@ -253,9 +255,22 @@ export const AD_SLOTS: Record<AdSlotId, AdSlotConfig> = {
 /** Blog categories whose posts end with the "post-end" space. */
 export const POST_END_CATEGORIES: readonly string[] = ["species-spotlight", "seasonal-watching"];
 
-/** True when a blog post shows the "post-end" space: species and seasonal posts, never a sponsored article. */
-export function hasPostEnd(post: { category: string; sponsor?: unknown }): boolean {
-  return !post.sponsor && POST_END_CATEGORIES.includes(post.category);
+/**
+ * Species and seasonal posts that name a business, so carry no "post-end" space: a sponsor's card
+ * under a post that names that business, or a rival, would read as an endorsement. Add any new
+ * species or seasonal post that names a business (tests/ads.test.mjs checks the common words).
+ */
+export const POST_END_EXCLUDED: readonly string[] = [
+  "ospreys-bassenthwaite-lake", // the Old Sawmill Tearoom
+  "ospreys-haweswater-rspb", // the Esthwaite Water fishery and its boat trips
+  "winter-wildfowl-ullswater", // the Ullswater Steamers
+  "red-deer-rut-martindale", // the Dalemain Estate
+  "haweswater-in-winter", // Wild Intrigue's hide, and United Utilities
+];
+
+/** True when a blog post shows the "post-end" space: species and seasonal posts that name no business, never a sponsored article. */
+export function hasPostEnd(post: { slug: string; category: string; sponsor?: unknown }): boolean {
+  return !post.sponsor && POST_END_CATEGORIES.includes(post.category) && !POST_END_EXCLUDED.includes(post.slug);
 }
 
 export function isAdSlotId(id: unknown): id is AdSlotId {

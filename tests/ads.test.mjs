@@ -41,6 +41,20 @@ const NO_ADVERT = [
   /^app\/layout\.tsx$/,
 ];
 
+// Species and seasonal posts that name a business (boat company, fishery, tearoom, estate, hide
+// operator): they must never show the end-of-post space.
+const NO_ADVERT_POSTS = [
+  "ospreys-bassenthwaite-lake",
+  "ospreys-haweswater-rspb",
+  "winter-wildfowl-ullswater",
+  "red-deer-rut-martindale",
+  "haweswater-in-winter",
+];
+// Words that mean a post names a business. A post that keeps the space must contain none of them.
+const BUSINESS_WORDS = /(?:Steamers?|Tea ?room|Tearoom|caf[eé]|fishery|Estate Office|Dalemain|Wild Intrigue|United Utilities|hotel|pub|inn|boat trips?|hire|shop)/i;
+const postText = (p) =>
+  [p.title, p.metaDescription, p.intro, ...(p.sections ?? []).flatMap((s) => [s.heading, ...(s.body ?? [])]), JSON.stringify(p.faq ?? [])].join(" ");
+
 // Components other than AdSlot itself that render a space.
 const adComponents = walk("components/")
   .filter((f) => f !== "components/AdSlot.tsx" && /<AdSlot\b/.test(read(f)))
@@ -103,11 +117,27 @@ test("no space is placed on a page from the no-advert list, and no page has more
 test("the end-of-post space is on species and seasonal posts only, never on a sponsored article", () => {
   assert.deepEqual([...POST_END_CATEGORIES], ["species-spotlight", "seasonal-watching"]);
   for (const post of BLOG_POSTS) {
-    const eligible = ["species-spotlight", "seasonal-watching"].includes(post.category) && !post.sponsor;
+    const eligible =
+      ["species-spotlight", "seasonal-watching"].includes(post.category) && !post.sponsor && !NO_ADVERT_POSTS.includes(post.slug);
     assert.equal(hasPostEnd(post), eligible, post.slug);
   }
   assert.ok(BLOG_POSTS.some(hasPostEnd));
-  assert.equal(hasPostEnd({ category: "species-spotlight", sponsor: { name: "S", url: "https://example.com" } }), false);
+  assert.equal(hasPostEnd({ slug: "x", category: "species-spotlight", sponsor: { name: "S", url: "https://example.com" } }), false);
+});
+
+test("posts that name a business never show the end-of-post space", () => {
+  for (const slug of NO_ADVERT_POSTS) {
+    const post = BLOG_POSTS.find((p) => p.slug === slug);
+    assert.ok(post, `${slug} is not a post`);
+    assert.equal(hasPostEnd(post), false, slug);
+  }
+  for (const post of BLOG_POSTS.filter(hasPostEnd)) {
+    const hit = postText(post).match(BUSINESS_WORDS);
+    assert.equal(hit, null, `${post.slug} keeps the space but names a business (${hit?.[0]})`);
+  }
+});
+
+test("the winter wildfowl guide keeps its own space", () => {
   assert.match(read("app/blog/[slug]/page.tsx"), /\{hasPostEnd\(post\) && <AdSlot id="post-end"/);
   assert.match(read("app/seasonal/[slug]/page.tsx"), /\{slug === "winter-wildfowl" && <AdSlot id="seasonal-winter-wildfowl"/);
 });
