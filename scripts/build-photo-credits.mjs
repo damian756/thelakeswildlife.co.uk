@@ -16,7 +16,10 @@
  *   recorded with the file, its credit and a 960 px thumbnail, and the site
  *   shows exactly that file.
  * - Author, licence and links come from the MediaWiki API (imageinfo with
- *   extmetadata: Artist, LicenseShortName, LicenseUrl, descriptionurl).
+ *   extmetadata: Artist, LicenseShortName, LicenseUrl, descriptionurl), with
+ *   the hand corrections in OVERRIDES (an author given only as a link, and
+ *   botanical plates credited with their book). An author that is only a link
+ *   is listed under "unmatched" until it has an override.
  *
  * Uses sharp, which is installed with Next.js. Reads public pages only.
  */
@@ -168,6 +171,36 @@ async function fillAuthors(infoMap) {
   }
 }
 
+/**
+ * Corrections read by hand from each file's Commons page (11 Nov 2026), applied over the API
+ * metadata. Keys are Commons file names with spaces.
+ * - An author the metadata gives only as a link, where the file page names the person.
+ * - Botanical plates: credited "Illustration:" with the book and year the file page names, never
+ *   a bare "Public domain".
+ */
+const OVERRIDES = {
+  // Author field is the Flickr account link https://www.flickr.com/photos/sbern/; the file page's
+  // Flickr licence review and the Flickr photo page both name Stefan Berndtsson.
+  "Common Goldeneye (Bucephala clangula).jpg": { artist: "Stefan Berndtsson" },
+  // "Source: Atlas des plantes de France. 1891", "Author: Amédée Masclef".
+  "203 Vaccinum myrtillus L.jpg": { kind: "illustration", artist: "Amédée Masclef", source: "Atlas des plantes de France", year: "1891" },
+  // "Date: 1897", "Author: Franz Eugen Köhler, Köhler's Medizinal-Pflanzen".
+  "Potentilla erecta - Köhler–s Medizinal-Pflanzen-248.jpg": { kind: "illustration", artist: "Franz Eugen Köhler", source: "Köhler's Medizinal-Pflanzen", year: "1897" },
+  // No Author field; "Original book source: Prof. Dr. Otto Wilhelm Thomé, Flora von Deutschland,
+  // Österreich und der Schweiz, 1885, Gera, Germany".
+  "Illustration Pyrola rotundifolia0.jpg": { kind: "illustration", artist: "Otto Wilhelm Thomé", source: "Flora von Deutschland, Österreich und der Schweiz", year: "1885" },
+};
+
+function applyOverrides(infoMap) {
+  for (const inf of infoMap.values()) {
+    const o = OVERRIDES[key(inf.file)];
+    if (o) Object.assign(inf, o, { authorFrom: "file page, by hand" });
+  }
+}
+
+/** The optional illustration fields of a record. */
+const plate = (inf) => (inf.kind ? { kind: inf.kind, source: inf.source, year: inf.year } : {});
+
 async function signature(buf) {
   const { data } = await sharp(buf).resize(16, 16, { fit: "fill" }).greyscale().raw().toBuffer({ resolveWithObject: true });
   return data;
@@ -201,6 +234,7 @@ const heroTitles = [...new Set([...postsSrc.matchAll(/heroWikipediaTitle: "([^"]
 const leads = await leadFiles([...species.flatMap((s) => s.titles), ...heroTitles]);
 const info330 = await fileInfo([...leads.values()], 330);
 await fillAuthors(info330);
+applyOverrides(info330);
 
 const photos = {};
 const unmatched = [];
@@ -222,7 +256,7 @@ for (const s of species) {
   }
   if (best && best.d < MATCH_THRESHOLD && best.inf.artist && best.inf.licence) {
     const { file, page, artist, licence, licenceUrl } = best.inf;
-    photos[s.src] = { subject: s.name, file, page, artist, licence, licenceUrl };
+    photos[s.src] = { subject: s.name, file, page, artist, licence, licenceUrl, ...plate(best.inf) };
   } else if (best && best.d < MATCH_THRESHOLD) {
     // Known file, but no machine-readable author or licence: link the file page only.
     photos[s.src] = { subject: s.name, file: best.inf.file, page: best.inf.page, artist: null, licence: best.inf.licence || null, licenceUrl: best.inf.licenceUrl };
@@ -239,6 +273,7 @@ process.stdout.write("\n");
 
 const reserveInfo = await fileInfo(Object.values(RESERVE_FILES), 330);
 await fillAuthors(reserveInfo);
+applyOverrides(reserveInfo);
 const reserves = {};
 for (const [src, f] of Object.entries(RESERVE_FILES)) {
   const inf = reserveInfo.get(key(f));
@@ -249,6 +284,7 @@ for (const [src, f] of Object.entries(RESERVE_FILES)) {
 
 const info960 = await fileInfo(heroTitles.map((t) => leads.get(t)).filter(Boolean), 960);
 await fillAuthors(info960);
+applyOverrides(info960);
 const wikipedia = {};
 for (const t of heroTitles) {
   const inf = leads.get(t) && info960.get(key(leads.get(t)));
@@ -263,11 +299,20 @@ for (const t of heroTitles) {
     continue;
   }
   const { file, page, artist, licence, licenceUrl, thumb } = inf;
-  wikipedia[t] = { file, page, artist, licence, licenceUrl, src: thumb };
+  wikipedia[t] = { file, page, artist, licence, licenceUrl, src: thumb, ...plate(inf) };
+}
+
+// An author that is only a link names no one: add the person the file page names to OVERRIDES.
+for (const [src, c] of [...Object.entries(photos), ...Object.entries(reserves), ...Object.entries(wikipedia)]) {
+  if (c.artist && /^(https?:\/\/|www\.)\S+$/.test(c.artist.trim())) {
+    unmatched.push({ src, reason: `${c.file}: author is only a link (${c.artist}); add the named person to OVERRIDES` });
+  }
 }
 
 // A photo shared by two species is credited once.
-const unmatchedOut = unmatched.filter((u) => !photos[u.src]?.artist).filter((u, i, a) => a.findIndex((x) => x.src === u.src) === i);
+const unmatchedOut = unmatched
+  .filter((u) => !photos[u.src]?.artist || /only a link/.test(u.reason))
+  .filter((u, i, a) => a.findIndex((x) => x.src === u.src) === i);
 
 const out = {
   note: "Generated by scripts/build-photo-credits.mjs from Wikipedia and Wikimedia Commons metadata. Do not edit by hand.",

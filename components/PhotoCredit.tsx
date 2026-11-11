@@ -4,12 +4,30 @@ import { creditFor } from "@/lib/photo-credits";
 
 const linkClass = "underline decoration-dotted underline-offset-2 hover:decoration-solid";
 
-/** "Photo: Author, CC BY-SA 4.0, via Wikimedia Commons", from Commons metadata only. */
+/**
+ * "Photo: Author, CC BY-SA 4.0, via Wikimedia Commons", from the file's Commons page. A botanical
+ * plate reads "Illustration: Author, Book (year), Public domain, via Wikimedia Commons".
+ */
 export function CreditText({ credit }: { credit: PhotoCredit | null }): React.ReactNode {
   if (credit?.artist && credit.licence) {
     return (
       <>
-        {credit.title ? <>&ldquo;{credit.title}&rdquo; by {credit.artist}</> : <>Photo: {credit.artist}</>},{" "}
+        {credit.title ? (
+          <>&ldquo;{credit.title}&rdquo; by {credit.artist}</>
+        ) : credit.kind === "illustration" ? (
+          <>
+            Illustration: {credit.artist}
+            {credit.source && (
+              <>
+                , <cite>{credit.source}</cite>
+                {credit.year && <> ({credit.year})</>}
+              </>
+            )}
+          </>
+        ) : (
+          <>Photo: {credit.artist}</>
+        )}
+        ,{" "}
         {credit.licenceUrl ? (
           <a href={credit.licenceUrl} target="_blank" rel="license noopener noreferrer" className={linkClass}>
             {credit.licence}

@@ -7,7 +7,7 @@ import { CreditText } from "@/components/PhotoCredit";
 import type { SpeciesCategory } from "@/lib/types";
 
 const title = "Photo Credits";
-const description = "Authors and licences of the Wikimedia Commons photographs used on The Lakes Wildlife.";
+const description = "Authors and licences of the Wikimedia Commons photographs and botanical plates used on The Lakes Wildlife.";
 const url = "https://www.thelakeswildlife.co.uk/photo-credits";
 
 export const metadata: Metadata = {
@@ -32,9 +32,10 @@ export default function PhotoCreditsPage() {
     <div className="mx-auto max-w-3xl px-4 py-12">
       <h1 className="font-display text-3xl font-bold text-[var(--fell)] mb-4">Photo credits</h1>
       <p className="text-sm text-[var(--slate)] leading-relaxed mb-8">
-        The species photographs on this site come from Wikimedia Commons. Each credit below (author, licence and a link
-        to the file) is taken from the file&rsquo;s own Commons metadata. Where Commons gives no author, we link to the
-        file page instead. If you are the author of a photo and something here is wrong, please use the{" "}
+        The species photographs and botanical plates on this site come from Wikimedia Commons. Each credit below
+        (author, licence and a link to the file) is taken from the file&rsquo;s own Commons page. Where its metadata gives
+        the author only as a link, we name the person the file page names, and each plate is credited with the book and
+        year the file page gives. If you are the author of a photo and something here is wrong, please use the{" "}
         <Link href="/contact" className="text-[var(--lichen)] hover:underline">contact form</Link>.
       </p>
 

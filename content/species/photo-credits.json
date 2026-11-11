@@ -102,7 +102,7 @@
       "subject": "Goldeneye",
       "file": "Common Goldeneye (Bucephala clangula).jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Common_Goldeneye_(Bucephala_clangula).jpg",
-      "artist": "https://www.flickr.com/photos/sbern/",
+      "artist": "Stefan Berndtsson",
       "licence": "CC BY 2.0",
       "licenceUrl": "https://creativecommons.org/licenses/by/2.0"
     },
@@ -840,7 +840,10 @@
       "page": "https://commons.wikimedia.org/wiki/File:203_Vaccinum_myrtillus_L.jpg",
       "artist": "Amédée Masclef",
       "licence": "Public domain",
-      "licenceUrl": null
+      "licenceUrl": null,
+      "kind": "illustration",
+      "source": "Atlas des plantes de France",
+      "year": "1891"
     },
     "/images/species/plants/bog-asphodel.jpg": {
       "subject": "Bog Asphodel",
@@ -974,9 +977,12 @@
       "subject": "Round-leaved Wintergreen",
       "file": "Illustration Pyrola rotundifolia0.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Illustration_Pyrola_rotundifolia0.jpg",
-      "artist": null,
+      "artist": "Otto Wilhelm Thomé",
       "licence": "Public domain",
-      "licenceUrl": null
+      "licenceUrl": null,
+      "kind": "illustration",
+      "source": "Flora von Deutschland, Österreich und der Schweiz",
+      "year": "1885"
     },
     "/images/species/plants/common-spotted-orchid.jpg": {
       "subject": "Common Spotted Orchid",
@@ -1006,9 +1012,12 @@
       "subject": "Tormentil",
       "file": "Potentilla erecta - Köhler–s Medizinal-Pflanzen-248.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Potentilla_erecta_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-248.jpg",
-      "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+      "artist": "Franz Eugen Köhler",
       "licence": "Public domain",
-      "licenceUrl": null
+      "licenceUrl": null,
+      "kind": "illustration",
+      "source": "Köhler's Medizinal-Pflanzen",
+      "year": "1897"
     },
     "/images/species/plants/wild-thyme.jpg": {
       "subject": "Wild Thyme",
@@ -1335,7 +1344,7 @@
     "Common goldeneye": {
       "file": "Common Goldeneye (Bucephala clangula).jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Common_Goldeneye_(Bucephala_clangula).jpg",
-      "artist": "https://www.flickr.com/photos/sbern/",
+      "artist": "Stefan Berndtsson",
       "licence": "CC BY 2.0",
       "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Common_Goldeneye_%28Bucephala_clangula%29.jpg/960px-Common_Goldeneye_%28Bucephala_clangula%29.jpg"
@@ -1397,10 +1406,5 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Haweswater_from_Harter_Fell_3.jpg/960px-Haweswater_from_Harter_Fell_3.jpg"
     }
   },
-  "unmatched": [
-    {
-      "src": "/images/species/plants/round-leaved-wintergreen.jpg",
-      "reason": "matches Illustration Pyrola rotundifolia0.jpg, but its Commons metadata has no author or licence"
-    }
-  ]
+  "unmatched": []
 }
