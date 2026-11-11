@@ -16,14 +16,14 @@ export default function TermsPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
       <h1 className="font-display text-3xl font-bold text-[var(--fell)] mb-6">Terms of Use</h1>
-      <p className="text-sm text-[var(--slate)]/60 mb-8">Last updated: February 2026</p>
+      <p className="text-sm text-[var(--slate)]/60 mb-8">Last updated: November 2026</p>
 
       <div className="space-y-8 text-sm text-[var(--slate)] leading-relaxed">
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-2">About this site</h2>
           <p>
             The Lakes Wildlife (<a href="https://www.thelakeswildlife.co.uk" className="text-[var(--lichen)] hover:underline">thelakeswildlife.co.uk</a>) is
-            operated by Churchtown Media. Part of the{" "}
+            operated by Churchtown Media. Part of{" "}
             <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
               The Lakes Network
             </a>.
@@ -65,8 +65,8 @@ export default function TermsPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-2">Intellectual property</h2>
           <p>
-            The The Lakes Wildlife name, design and editorial content are the property of Churchtown Media.
-            The The Lakes Network brand and associated trademarks belong to Churchtown Media.
+            The Lakes Wildlife name, design and editorial content are the property of Churchtown Media.
+            The Lakes Network brand and associated trademarks belong to Churchtown Media.
           </p>
         </section>
 
