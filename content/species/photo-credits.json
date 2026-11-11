@@ -1273,6 +1273,38 @@
       "artist": "Peter Trimming",
       "licence": "CC BY 2.0",
       "licenceUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "/images/species/birds/bittern.jpg": {
+      "subject": "Bittern",
+      "file": "Eurasian Bittern - Torrile - Italy 4528 (15409347121).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Eurasian_Bittern_-_Torrile_-_Italy_4528_(15409347121).jpg",
+      "artist": "Francesco Veronesi from Italy",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "/images/reserves/haweswater-mardale-head.jpg": {
+      "file": "Haweswater at Mardale Head - geograph.org.uk - 5812690.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Haweswater_at_Mardale_Head_-_geograph.org.uk_-_5812690.jpg",
+      "title": "Haweswater at Mardale Head",
+      "artist": "Peter Jeffery",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "/images/reserves/leighton-moss-reedbeds.jpg": {
+      "file": "Reedbeds, Leighton Moss - geograph.org.uk - 8002474.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Reedbeds,_Leighton_Moss_-_geograph.org.uk_-_8002474.jpg",
+      "title": "Reedbeds, Leighton Moss",
+      "artist": "Carroll Pierce",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "/images/reserves/foulshaw-moss-pool.jpg": {
+      "file": "Pool, Foulshaw Moss nature reserve - geograph.org.uk - 6921775.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pool,_Foulshaw_Moss_nature_reserve_-_geograph.org.uk_-_6921775.jpg",
+      "title": "Pool, Foulshaw Moss nature reserve",
+      "artist": "Christine Johnstone",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
     }
   },
   "wikipedia": {

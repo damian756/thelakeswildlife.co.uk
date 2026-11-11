@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllSpecies } from "@/lib/species";
 import { BLOG_POSTS } from "@/content/blog/posts";
-import { creditFor, wikipediaHero } from "@/lib/photo-credits";
+import { allPhotoCredits, creditFor, wikipediaHero } from "@/lib/photo-credits";
 import { CreditText } from "@/components/PhotoCredit";
 import type { SpeciesCategory } from "@/lib/types";
 
@@ -25,6 +25,9 @@ const SECTIONS: { category: SpeciesCategory; label: string }[] = [
 
 export default function PhotoCreditsPage() {
   const heroes = BLOG_POSTS.filter((p) => p.heroWikipediaTitle && !p.heroLocalSrc);
+  const speciesPhotos = new Set(
+    SECTIONS.flatMap(({ category }) => getAllSpecies(category).map((s) => s.localImage).filter(Boolean) as string[])
+  );
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
       <h1 className="font-display text-3xl font-bold text-[var(--fell)] mb-4">Photo credits</h1>
@@ -56,6 +59,19 @@ export default function PhotoCreditsPage() {
           </section>
         );
       })}
+
+      <section id="places" className="mb-10 scroll-mt-20">
+        <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">Reserve and other photos</h2>
+        <ul className="space-y-1.5 text-sm text-[var(--slate)]">
+          {Object.entries(allPhotoCredits())
+            .filter(([src]) => !speciesPhotos.has(src))
+            .map(([src, credit]) => (
+              <li key={src}>
+                <CreditText credit={credit} />
+              </li>
+            ))}
+        </ul>
+      </section>
 
       <section id="blog" className="mb-10 scroll-mt-20">
         <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">Blog photos</h2>

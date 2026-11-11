@@ -5,6 +5,8 @@ import data from "@/content/species/photo-credits.json";
 
 export interface PhotoCredit {
   subject?: string;
+  /** The photo's own title, for photos credited "Title" by Author. */
+  title?: string | null;
   file: string;
   page: string;
   artist: string | null;

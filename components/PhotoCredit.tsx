@@ -9,7 +9,7 @@ export function CreditText({ credit }: { credit: PhotoCredit | null }): React.Re
   if (credit?.artist && credit.licence) {
     return (
       <>
-        Photo: {credit.artist},{" "}
+        {credit.title ? <>&ldquo;{credit.title}&rdquo; by {credit.artist}</> : <>Photo: {credit.artist}</>},{" "}
         {credit.licenceUrl ? (
           <a href={credit.licenceUrl} target="_blank" rel="license noopener noreferrer" className={linkClass}>
             {credit.licence}
@@ -36,6 +36,11 @@ export function CreditText({ credit }: { credit: PhotoCredit | null }): React.Re
     );
   }
   return null;
+}
+
+/** The credit text for a stored photo, by its public path (for placing over an image). */
+export function PhotoCreditText({ src }: { src: string }) {
+  return <CreditText credit={creditFor(src)} />;
 }
 
 /** One credit line under a photo. */

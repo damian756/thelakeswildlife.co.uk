@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PhotoCredits } from "@/components/PhotoCredit";
+import { PhotoCredits, PhotoCreditText } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
 import { MapPin, Clock, Eye, AlertTriangle } from "lucide-react";
 
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel eating a nut on a mossy tree stump" }] },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/reserves/haweswater-mardale-head.jpg", alt: "Haweswater reservoir at Mardale Head, with a stone wall in the foreground and fells rising on both sides" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -82,12 +82,15 @@ export default function HaweswaterPage() {
       {/* Hero */}
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
-          src="/images/species/mammals/red-squirrel.jpg"
-          alt="Red squirrel eating a nut on a mossy tree stump"
+          src="/images/reserves/haweswater-mardale-head.jpg"
+          alt="Haweswater reservoir at Mardale Head, with a stone wall in the foreground and fells rising on both sides"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
+        <p className="absolute bottom-1.5 right-3 z-10 max-w-[90%] text-right text-[10px] leading-snug text-white/80 [text-shadow:0_1px_2px_rgba(0,0,0,0.9)]">
+          <PhotoCreditText src="/images/reserves/haweswater-mardale-head.jpg" />
+        </p>
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
           <nav className="flex items-center gap-1.5 text-xs text-white/80 mb-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
@@ -368,7 +371,7 @@ export default function HaweswaterPage() {
         <PhotoCredits
           className="border-t border-[var(--slate)]/10 pt-6 mt-10"
           items={[
-            { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
+            { label: "Haweswater at Mardale Head", src: "/images/reserves/haweswater-mardale-head.jpg" },
             { label: "Badger", src: "/images/species/mammals/badger.jpg" },
             { label: "Pied flycatcher", src: "/images/species/birds/pied-flycatcher.jpg" },
             { label: "Redstart", src: "/images/species/birds/redstart.jpg" },

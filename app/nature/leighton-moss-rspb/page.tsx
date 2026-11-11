@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PhotoCredits } from "@/components/PhotoCredit";
+import { PhotoCredits, PhotoCreditText } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
 import { MapPin, Clock, Eye, Train } from "lucide-react";
 
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/mammals/otter.jpg", alt: "Otter resting on a mossy rock" }] },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/reserves/leighton-moss-reedbeds.jpg", alt: "A channel of still water running between tall, pale reeds under a cloudy blue sky" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -92,12 +92,15 @@ export default function LeightonMossPage() {
       {/* Hero */}
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
-          src="/images/species/mammals/otter.jpg"
-          alt="Otter resting on a mossy rock"
+          src="/images/reserves/leighton-moss-reedbeds.jpg"
+          alt="A channel of still water running between tall, pale reeds under a cloudy blue sky"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
+        <p className="absolute bottom-1.5 right-3 z-10 max-w-[90%] text-right text-[10px] leading-snug text-white/80 [text-shadow:0_1px_2px_rgba(0,0,0,0.9)]">
+          <PhotoCreditText src="/images/reserves/leighton-moss-reedbeds.jpg" />
+        </p>
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
           <nav className="flex items-center gap-1.5 text-xs text-white/80 mb-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
@@ -367,7 +370,7 @@ export default function LeightonMossPage() {
         <PhotoCredits
           className="border-t border-[var(--slate)]/10 pt-6 mt-10"
           items={[
-            { label: "Otter", src: "/images/species/mammals/otter.jpg" },
+            { label: "Reedbeds, Leighton Moss", src: "/images/reserves/leighton-moss-reedbeds.jpg" },
             { label: "Bittern", src: "/images/species/birds/bittern.jpg" },
             { label: "Osprey", src: "/images/species/birds/osprey.jpg" },
             { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
