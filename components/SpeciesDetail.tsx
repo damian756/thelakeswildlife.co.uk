@@ -64,7 +64,7 @@ const difficultyColor: Record<string, string> = {
  * species the page says does not live here (black grouse, mountain hare,
  * Scotch argus), so the callout never contradicts the page.
  */
-function conservationNote(category: SpeciesCategory, status: ConservationStatus, livesHere: boolean): string {
+function conservationNote(category: SpeciesCategory, status: ConservationStatus, livesHere: boolean, gbRedList?: string): string {
   const parts: string[] = [];
   if (category === "birds") {
     if (status === "red") {
@@ -78,6 +78,7 @@ function conservationNote(category: SpeciesCategory, status: ConservationStatus,
     }
   } else if (status === "red") {
     parts.push("This species is of serious conservation concern in the UK.");
+    if (gbRedList) parts.push(`Butterfly Conservation's GB Red List (2022) lists it as ${gbRedList}.`);
     if (livesHere) parts.push("Its presence in the Lake District is important for local and national monitoring and habitat management.");
   } else if (status === "amber") {
     parts.push("This species is of moderate conservation concern.");
@@ -322,7 +323,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                   UK {sc.label}
                 </h3>
                 <p className={`text-sm leading-relaxed ${sc.calloutText}`}>
-                  {conservationNote(category, status, livesHere)}
+                  {conservationNote(category, status, livesHere, species.gbRedList)}
                 </p>
                 {species.externalLinks && (
                   <div className="flex flex-wrap gap-3 mt-3">

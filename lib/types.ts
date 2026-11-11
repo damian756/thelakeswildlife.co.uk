@@ -23,6 +23,11 @@ export interface Species {
   scientificName: string;
   category: SpeciesCategory;
   conservationStatus?: ConservationStatus;
+  /**
+   * Butterflies: the category on Butterfly Conservation's GB Red List (2022), e.g. "Vulnerable",
+   * named in the conservation box. Vulnerable and Endangered species are shown as red.
+   */
+  gbRedList?: string;
 
   // Taxonomy
   order?: string;
