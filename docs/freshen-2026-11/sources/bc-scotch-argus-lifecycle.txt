@@ -1,0 +1,13 @@
+https://butterfly-conservation.org/sites/default/files/2023-06/Scotch%20Argus%20-%20Lifecycle.jpg
+
+Scotch Argus lifecycle chart (an image on https://butterfly-conservation.org/butterflies/scotch-argus, "Lifecycle" section; the page has no flight period in its text, see bc-scotch-argus.txt).
+Fetched 11 Nov 2026. Read from the chart (one row per stage, January to December), checked against the chart's pixel columns (each month about 63 px wide, January starting at x = 133):
+
+Egg: early August to early September.
+Caterpillar: all year except roughly July; strongest in winter.
+Chrysalis: mid-June to early August, strongest in early July.
+Adult: from mid-July to early September, strongest in early August. One adult period a year.
+
+Used for the site's flight period: "mid-July to early September, mostly in August".
+
+The same page gives the conservation status used on the site: "GB Red List (2022): Vulnerable" (bc-scotch-argus.txt), and the wingspan, 35-40 mm; Butterfly Conservation gives the large heath's as 41 mm (bc-large-heath.txt), so the Scotch argus is not larger than the large heath.
