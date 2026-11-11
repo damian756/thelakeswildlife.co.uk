@@ -26,6 +26,14 @@
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     },
+    "/images/species/birds/buzzard.jpg": {
+      "subject": "Buzzard",
+      "file": "Common Buzzard by caroline legg (cropped).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Common_Buzzard_by_caroline_legg_(cropped).jpg",
+      "artist": "caroline legg",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
     "/images/species/birds/golden-plover.jpg": {
       "subject": "Golden Plover",
       "file": "European golden plover (Pluvialis apricaria) female breeding Keflavik.jpg",
@@ -126,7 +134,7 @@
       "subject": "Dotterel",
       "file": "Charadrius morinellus male.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Charadrius_morinellus_male.jpg",
-      "artist": null,
+      "artist": "Helwig Brunner",
       "licence": "CC BY-SA 2.5",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5"
     },
@@ -153,6 +161,14 @@
       "artist": "Andreas Trepte",
       "licence": "CC BY-SA 2.5",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+    },
+    "/images/species/birds/raven.jpg": {
+      "subject": "Raven",
+      "file": "Corvus corax clarionensis, Point Reyes National Seashore.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg",
+      "artist": "Frank Schulenburg",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     "/images/species/birds/skylark.jpg": {
       "subject": "Skylark",
@@ -202,6 +218,22 @@
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
+    "/images/species/birds/tree-pipit.jpg": {
+      "subject": "Tree Pipit",
+      "file": "Tree Pipit (Anthus trivialis) (39760400431) (cropped).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Tree_Pipit_(Anthus_trivialis)_(39760400431)_(cropped).jpg",
+      "artist": "Imran Shah from Islamabad, Pakistan",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "/images/species/birds/great-spotted-woodpecker.jpg": {
+      "subject": "Great Spotted Woodpecker",
+      "file": "Great spotted woodpecker (Dendrocopos major) male Drenthe.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Great_spotted_woodpecker_(Dendrocopos_major)_male_Drenthe.jpg",
+      "artist": "Charles J. Sharp",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
     "/images/species/birds/treecreeper.jpg": {
       "subject": "Treecreeper",
       "file": "Eurasian Treecreeper - Certhia familiaris (54192274817).jpg",
@@ -217,6 +249,14 @@
       "artist": "Isiwal",
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "/images/species/birds/marsh-tit.jpg": {
+      "subject": "Marsh Tit",
+      "file": "Sumpfmeise im NSG Hirschacker und Dossenwald 2.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Sumpfmeise_im_NSG_Hirschacker_und_Dossenwald_2.jpg",
+      "artist": "Stephan Sprinz",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
     },
     "/images/species/birds/willow-tit.jpg": {
       "subject": "Willow Tit",
@@ -298,6 +338,22 @@
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
+    "/images/species/birds/teal.jpg": {
+      "subject": "Teal",
+      "file": "Eurasian teal (Anas crecca crecca) male Qingshui.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Eurasian_teal_(Anas_crecca_crecca)_male_Qingshui.jpg",
+      "artist": "Charles J. Sharp",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "/images/species/birds/heron.jpg": {
+      "subject": "Heron",
+      "file": "Il pescatore solitario.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Il_pescatore_solitario.jpg",
+      "artist": "Giacomo Cimino ( foto.giacomocimino.workers.dev · @giacomociminoph )",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
     "/images/species/birds/kingfisher.jpg": {
       "subject": "Kingfisher",
       "file": "Alcedo atthis -England-8 (cropped).jpg",
@@ -337,6 +393,14 @@
       "artist": "Dion Art",
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "/images/species/birds/jackdaw.jpg": {
+      "subject": "Jackdaw",
+      "file": "Nordic jackdaw (52563242448).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Nordic_jackdaw_(52563242448).jpg",
+      "artist": "hedera.baltica from Wrocław, Poland",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
     },
     "/images/species/birds/jay.jpg": {
       "subject": "Jay",
@@ -410,6 +474,14 @@
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
+    "/images/species/birds/whinchat.jpg": {
+      "subject": "Whinchat",
+      "file": "Tarier des près Zaghouan NP001.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Tarier_des_pr%C3%A8s_Zaghouan_NP001.jpg",
+      "artist": "El Golli Mohamed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
     "/images/species/birds/cuckoo.jpg": {
       "subject": "Cuckoo",
       "file": "Cuckoo (51169010335).jpg",
@@ -438,6 +510,14 @@
       "subject": "Swift",
       "file": "Common Swift 2025 07 18 02 (cropped).jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Common_Swift_2025_07_18_02_(cropped).jpg",
+      "artist": "Alexis Lours",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "/images/species/birds/coal-tit.jpg": {
+      "subject": "Coal Tit",
+      "file": "Coal Tit 2026 03 23.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Coal_Tit_2026_03_23.jpg",
       "artist": "Alexis Lours",
       "licence": "CC BY 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
@@ -473,6 +553,14 @@
       "artist": "Francis C. Franklin",
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "/images/species/birds/wren.jpg": {
+      "subject": "Wren",
+      "file": "Eurasian wren 2023 12 31 02.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Eurasian_wren_2023_12_31_02.jpg",
+      "artist": "Alexis Lours",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
     },
     "/images/species/birds/blackbird.jpg": {
       "subject": "Blackbird",
@@ -521,6 +609,14 @@
       "artist": "Alexis Lours",
       "licence": "CC BY 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "/images/species/birds/blackcap.jpg": {
+      "subject": "Blackcap",
+      "file": "Eurasian blackcap (Sylvia atricapilla) male Drenthe.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Eurasian_blackcap_(Sylvia_atricapilla)_male_Drenthe.jpg",
+      "artist": "Charles J. Sharp",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     "/images/species/birds/garden-warbler.jpg": {
       "subject": "Garden Warbler",
@@ -586,6 +682,14 @@
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
+    "/images/species/insects/scotch-argus.jpg": {
+      "subject": "Scotch Argus",
+      "file": "Scotch argus (Erebia aethiops) male Wengen.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Scotch_argus_(Erebia_aethiops)_male_Wengen.jpg",
+      "artist": "Charles J. Sharp",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
     "/images/species/insects/high-brown-fritillary.jpg": {
       "subject": "High Brown Fritillary",
       "file": "Argynnis adippe - Feuriger Perlmutterfalter 04 (HS).JPG",
@@ -642,6 +746,14 @@
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     },
+    "/images/species/insects/red-admiral.jpg": {
+      "subject": "Red Admiral",
+      "file": "VanessaAtalanta Closeup.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:VanessaAtalanta_Closeup.jpg",
+      "artist": "Christian Fischer",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
     "/images/species/insects/painted-lady.jpg": {
       "subject": "Painted Lady",
       "file": "0 Belle-dame (Vanessa cardui) - Echinacea purpurea - Havré (3).jpg",
@@ -654,6 +766,14 @@
       "subject": "Large Red Damselfly",
       "file": "Large red damselfly (Pyrrhosoma nymphula) male Dry Sandford.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Large_red_damselfly_(Pyrrhosoma_nymphula)_male_Dry_Sandford.jpg",
+      "artist": "Charles J. Sharp",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "/images/species/insects/azure-damselfly.jpg": {
+      "subject": "Azure Damselfly",
+      "file": "Azure damselfly (Coenagrion puella) male Montiaghs Moss.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Azure_damselfly_(Coenagrion_puella)_male_Montiaghs_Moss.jpg",
       "artist": "Charles J. Sharp",
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
@@ -726,7 +846,7 @@
       "subject": "Bog Asphodel",
       "file": "Rome (3).jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Rome_(3).jpg",
-      "artist": null,
+      "artist": "Frode Inge Helland",
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
     },
@@ -822,7 +942,7 @@
       "subject": "Globe Flower",
       "file": "Trollius europaeus 020503.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Trollius_europaeus_020503.jpg",
-      "artist": null,
+      "artist": "BerndH",
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
     },
@@ -866,6 +986,14 @@
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
+    "/images/species/plants/yellow-mountain-saxifrage.jpg": {
+      "subject": "Yellow Mountain Saxifrage",
+      "file": "Saxifraga aizoides Warscheneck Totes Gebirge 20260809a.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Saxifraga_aizoides_Warscheneck_Totes_Gebirge_20260809a.jpg",
+      "artist": "Tigerente",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
     "/images/species/plants/alpine-lady-s-mantle.jpg": {
       "subject": "Alpine Lady's Mantle",
       "file": "Alchemilla alpina1.JPG",
@@ -886,7 +1014,7 @@
       "subject": "Wild Thyme",
       "file": "Thymus praecox.JPG",
       "page": "https://commons.wikimedia.org/wiki/File:Thymus_praecox.JPG",
-      "artist": null,
+      "artist": "Qwertzy2",
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
     },
@@ -926,7 +1054,7 @@
       "subject": "Harebell",
       "file": "Campanula rotondifolia.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Campanula_rotondifolia.jpg",
-      "artist": null,
+      "artist": "Tigerente",
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
     },
@@ -978,6 +1106,14 @@
       "licence": "CC BY 2.0",
       "licenceUrl": "https://creativecommons.org/licenses/by/2.0"
     },
+    "/images/species/mammals/badger.jpg": {
+      "subject": "Badger",
+      "file": "European badger (Meles meles taxus) Drenthe.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:European_badger_(Meles_meles_taxus)_Drenthe.jpg",
+      "artist": "Charles J. Sharp",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
     "/images/species/mammals/mountain-hare.jpg": {
       "subject": "Mountain Hare",
       "file": "Lepus timidus - Евгений Егорейченков - 96446302.jpeg",
@@ -1009,6 +1145,14 @@
       "artist": "Keven Law",
       "licence": "CC BY-SA 2.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "/images/species/mammals/brown-hare.jpg": {
+      "subject": "Brown Hare",
+      "file": "European hare ( Lepus europaeus).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:European_hare_(_Lepus_europaeus).jpg",
+      "artist": "Nagusb",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     "/images/species/mammals/roe-deer.jpg": {
       "subject": "Roe Deer",
@@ -1049,6 +1193,14 @@
       "artist": "Fourrure from France",
       "licence": "CC BY-SA 2.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "/images/species/mammals/bank-vole.jpg": {
+      "subject": "Bank Vole",
+      "file": "Bank vole (Clethrionomys glareolus) Drenthe.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Bank_vole_(Clethrionomys_glareolus)_Drenthe.jpg",
+      "artist": "Charles J. Sharp",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     "/images/species/mammals/common-shrew.jpg": {
       "subject": "Common Shrew",
@@ -1102,7 +1254,7 @@
       "subject": "Slow Worm",
       "file": "Anguidae.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Anguidae.jpg",
-      "artist": null,
+      "artist": "Marek bydg",
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
     },
@@ -1207,7 +1359,7 @@
     "Haweswater Reservoir": {
       "file": "Haweswater from Harter Fell 3.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:Haweswater_from_Harter_Fell_3.jpg",
-      "artist": null,
+      "artist": "Mick Knapton",
       "licence": "CC BY-SA 3.0",
       "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Haweswater_from_Harter_Fell_3.jpg/960px-Haweswater_from_Harter_Fell_3.jpg"
@@ -1215,112 +1367,8 @@
   },
   "unmatched": [
     {
-      "src": "/images/species/birds/buzzard.jpg",
-      "reason": "the article's lead image today (Common Buzzard by caroline legg (cropped).jpg) is a different photo (score 23.5)"
-    },
-    {
-      "src": "/images/species/birds/dotterel.jpg",
-      "reason": "matches Charadrius morinellus male.jpg, but its Commons metadata has no author or licence"
-    },
-    {
-      "src": "/images/species/birds/raven.jpg",
-      "reason": "the article's lead image today (3782 Common Raven in flight.jpg) is a different photo (score 36.8)"
-    },
-    {
-      "src": "/images/species/birds/tree-pipit.jpg",
-      "reason": "the article's lead image today (Tree Pipit (Anthus trivialis) (39760400431) (cropped).jpg) is a different photo (score 101.3)"
-    },
-    {
-      "src": "/images/species/birds/great-spotted-woodpecker.jpg",
-      "reason": "the article's lead image today (Great spotted woodpecker (Dendrocopos major) male Drenthe.jpg) is a different photo (score 62.1)"
-    },
-    {
-      "src": "/images/species/birds/marsh-tit.jpg",
-      "reason": "the article's lead image today (Sumpfmeise im NSG Hirschacker und Dossenwald 2.jpg) is a different photo (score 23.5)"
-    },
-    {
-      "src": "/images/species/birds/teal.jpg",
-      "reason": "the article's lead image today (Eurasian teal (Anas crecca crecca) male Qingshui.jpg) is a different photo (score 37.5)"
-    },
-    {
-      "src": "/images/species/birds/heron.jpg",
-      "reason": "the article's lead image today (Ardeidae-01.jpg) is a different photo (score 36.2)"
-    },
-    {
-      "src": "/images/species/birds/jackdaw.jpg",
-      "reason": "the article's lead image today (Nordic jackdaw (52563242448).jpg) is a different photo (score 32.9)"
-    },
-    {
-      "src": "/images/species/birds/whinchat.jpg",
-      "reason": "the article's lead image today (Tarier des près Zaghouan NP001.jpg) is a different photo (score 21.6)"
-    },
-    {
-      "src": "/images/species/birds/coal-tit.jpg",
-      "reason": "the article's lead image today (Coal Tit 2026 03 23.jpg) is a different photo (score 36.9)"
-    },
-    {
-      "src": "/images/species/birds/wren.jpg",
-      "reason": "the article's lead image today (Eurasian wren 2023 12 31 02.jpg) is a different photo (score 32.2)"
-    },
-    {
-      "src": "/images/species/birds/blackcap.jpg",
-      "reason": "the article's lead image today (Eurasian blackcap (Sylvia atricapilla) male Drenthe.jpg) is a different photo (score 65.0)"
-    },
-    {
-      "src": "/images/species/insects/scotch-argus.jpg",
-      "reason": "the article's lead image today (Scotch argus (Erebia aethiops) male Wengen.jpg) is a different photo (score 53.4)"
-    },
-    {
-      "src": "/images/species/insects/red-admiral.jpg",
-      "reason": "the article's lead image today (VanessaAtalanta Closeup.jpg) is a different photo (score 42.6)"
-    },
-    {
-      "src": "/images/species/insects/azure-damselfly.jpg",
-      "reason": "the article's lead image today (Azure damselfly (Coenagrion puella) male Montiaghs Moss.jpg) is a different photo (score 28.0)"
-    },
-    {
-      "src": "/images/species/plants/bog-asphodel.jpg",
-      "reason": "matches Rome (3).jpg, but its Commons metadata has no author or licence"
-    },
-    {
-      "src": "/images/species/plants/globe-flower.jpg",
-      "reason": "matches Trollius europaeus 020503.jpg, but its Commons metadata has no author or licence"
-    },
-    {
       "src": "/images/species/plants/round-leaved-wintergreen.jpg",
       "reason": "matches Illustration Pyrola rotundifolia0.jpg, but its Commons metadata has no author or licence"
-    },
-    {
-      "src": "/images/species/plants/yellow-mountain-saxifrage.jpg",
-      "reason": "the article's lead image today (Saxifraga aizoides Warscheneck Totes Gebirge 20260809a.jpg) is a different photo (score 82.1)"
-    },
-    {
-      "src": "/images/species/plants/wild-thyme.jpg",
-      "reason": "matches Thymus praecox.JPG, but its Commons metadata has no author or licence"
-    },
-    {
-      "src": "/images/species/plants/harebell.jpg",
-      "reason": "matches Campanula rotondifolia.jpg, but its Commons metadata has no author or licence"
-    },
-    {
-      "src": "/images/species/mammals/badger.jpg",
-      "reason": "the article's lead image today (European badger (Meles meles taxus) Drenthe.jpg) is a different photo (score 46.4)"
-    },
-    {
-      "src": "/images/species/mammals/brown-hare.jpg",
-      "reason": "the article's lead image today (European hare ( Lepus europaeus).jpg) is a different photo (score 43.6)"
-    },
-    {
-      "src": "/images/species/mammals/bank-vole.jpg",
-      "reason": "the article's lead image today (Bank vole (Clethrionomys glareolus) Drenthe.jpg) is a different photo (score 53.4)"
-    },
-    {
-      "src": "/images/species/mammals/slow-worm.jpg",
-      "reason": "matches Anguidae.jpg, but its Commons metadata has no author or licence"
-    },
-    {
-      "src": "wikipedia:Haweswater Reservoir",
-      "reason": "Haweswater from Harter Fell 3.jpg: Commons metadata has no author or licence"
     }
   ]
 }

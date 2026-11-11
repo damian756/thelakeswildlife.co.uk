@@ -115,6 +115,58 @@ async function fileInfo(files, width) {
   return out;
 }
 
+/** Wiki markup to plain text: user links to their label or user name, templates dropped. */
+function cleanWiki(a) {
+  return plain(
+    String(a)
+      .replace(/\{\{\s*[Cc]reator:([^}|]+)[^}]*\}\}/g, "$1")
+      .replace(/\{\{\s*[Uu]ser:[^}|]*\|([^}]+)\}\}/g, "$1")
+      .replace(/\{\{[^}]*\}\}/g, "")
+      .replace(/\[\[:?(?:[a-z]{2,3}:)?[Uu]ser:([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, u, label) => (label ?? u).replace(/_/g, " "))
+      .replace(/\[\[(?:[^\]|]*\|)?([^\]]+)\]\]/g, "$1")
+      .replace(/\[https?:\/\/\S+\s+([^\]]+)\]/g, "$1")
+      .replace(/'{2,}/g, "")
+  ).replace(/[.,;:\s]+$/, "");
+}
+
+/**
+ * Author from the file page's own wikitext: the {{Information}} author field,
+ * or, on old pages without that template, the page's own "Author:",
+ * "Photo/Picture/Image taken by" or "Foto:" line. Nothing else is guessed.
+ */
+function authorFromWikitext(text) {
+  const t = String(text ?? "");
+  const field = t.match(/^\s*\|\s*(?:author|photographer|artist)\s*=\s*(.*)$/im);
+  const free =
+    t.match(/^\s*\*?\s*Author:\s*(.+)$/im) ||
+    t.match(/(?:Picture|Photo|Foto|Image|Photograph)\s+(?:taken\s+)?by\s+(.+?)(?:\s+on\s+\d.*)?(?:\.\s*)?(?:\{\{.*)?$/im) ||
+    t.match(/^\s*(?:Foto|Photo):\s*(.+)$/im);
+  for (const m of [field, free]) {
+    if (!m) continue;
+    // A trailing note in brackets (a camera model, say) is not part of the name.
+    const a = cleanWiki(m[1]).replace(/\s*\([^)]*\)$/, "");
+    if (a && !/^(unknown|anonymous|own work|\{\{own\}\})$/i.test(a)) return a;
+  }
+  return null;
+}
+
+/** Fill missing authors from each file page's wikitext. */
+async function fillAuthors(infoMap) {
+  const missing = [...infoMap.values()].filter((i) => !i.artist);
+  for (const batch of chunks(missing, 20)) {
+    const titles = batch.map((i) => "File:" + i.file.replace(/_/g, " ")).join("|");
+    const q = `${COMMONS}?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&titles=${encodeURIComponent(titles)}`;
+    const data = await getJson(q);
+    for (const p of Object.values(data.query?.pages ?? {})) {
+      const text = p.revisions?.[0]?.slots?.main?.["*"] ?? p.revisions?.[0]?.["*"];
+      const author = authorFromWikitext(text);
+      const hit = batch.find((i) => key(i.file) === p.title.replace(/^File:/, "").replace(/_/g, " "));
+      if (hit && author) { hit.artist = author; hit.authorFrom = "wikitext"; }
+    }
+    await sleep(300);
+  }
+}
+
 async function signature(buf) {
   const { data } = await sharp(buf).resize(16, 16, { fit: "fill" }).greyscale().raw().toBuffer({ resolveWithObject: true });
   return data;
@@ -137,6 +189,7 @@ const heroTitles = [...new Set([...postsSrc.matchAll(/heroWikipediaTitle: "([^"]
 
 const leads = await leadFiles([...species.flatMap((s) => s.titles), ...heroTitles]);
 const info330 = await fileInfo([...leads.values()], 330);
+await fillAuthors(info330);
 
 const photos = {};
 const unmatched = [];
@@ -174,6 +227,7 @@ for (const s of species) {
 process.stdout.write("\n");
 
 const info960 = await fileInfo(heroTitles.map((t) => leads.get(t)).filter(Boolean), 960);
+await fillAuthors(info960);
 const wikipedia = {};
 for (const t of heroTitles) {
   const inf = leads.get(t) && info960.get(key(leads.get(t)));

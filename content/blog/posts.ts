@@ -60,7 +60,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "Wildlife hides in and around the Lake District: Leighton Moss, the Wild Haweswater badger and woodland hides, the Whinlatter nature hide and the Foulshaw Moss platform. Times, booking and prices.",
     heroLocalSrc: "/images/species/mammals/badger.jpg",
-    heroAlt: "A badger in long grass",
+    heroAlt: "A badger standing at the edge of a pool, with its reflection",
     intro:
       "Much of the Lake District's wildlife is watched from public footpaths, and some well-known places, such as Wild Haweswater, have no public hides at all. These are the hides and viewing platforms in and around the National Park, what each one is for, and which ones you have to book.",
     sections: [

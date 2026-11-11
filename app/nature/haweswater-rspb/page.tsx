@@ -185,7 +185,7 @@ export default function HaweswaterPage() {
             <div className="relative h-52 md:h-auto md:w-72 flex-none">
               <Image
                 src="/images/species/mammals/badger.jpg"
-                alt="Badger in long grass"
+                alt="A badger standing at the edge of a pool, with its reflection"
                 fill sizes="(max-width: 768px) 100vw, 288px"
                 className="object-cover"
               />

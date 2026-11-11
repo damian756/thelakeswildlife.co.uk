@@ -5,7 +5,7 @@ import { creditFor } from "@/lib/photo-credits";
 const linkClass = "underline decoration-dotted underline-offset-2 hover:decoration-solid";
 
 /** "Photo: Author, CC BY-SA 4.0, via Wikimedia Commons", from Commons metadata only. */
-export function CreditText({ credit }: { credit: PhotoCredit | null }) {
+export function CreditText({ credit }: { credit: PhotoCredit | null }): React.ReactNode {
   if (credit?.artist && credit.licence) {
     return (
       <>
@@ -25,17 +25,17 @@ export function CreditText({ credit }: { credit: PhotoCredit | null }) {
     );
   }
   if (credit?.page) {
+    // Commons names no author for this file: licence and the file page.
     return (
       <>
-        Photo:{" "}
+        Photo: {credit.licence ?? "licence on the file page"}, via{" "}
         <a href={credit.page} target="_blank" rel="noopener noreferrer" className={linkClass}>
-          {credit.file}
-        </a>{" "}
-        on Wikimedia Commons (author and licence on the file page)
+          Wikimedia Commons
+        </a>
       </>
     );
   }
-  return <>Photo from Wikimedia Commons; author details are being checked</>;
+  return null;
 }
 
 /** One credit line under a photo. */

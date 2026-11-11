@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website", images: [{ url: "/images/species/mammals/badger.jpg", alt: "A badger in long grass" }] },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website", images: [{ url: "/images/species/mammals/badger.jpg", alt: "A badger standing at the edge of a pool, with its reflection" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
