@@ -24,7 +24,7 @@ export default function TermsPage() {
           <p>
             The Lakes Wildlife (<a href="https://www.thelakeswildlife.co.uk" className="text-[var(--lichen)] hover:underline">thelakeswildlife.co.uk</a>) is
             operated by Churchtown Media. Part of{" "}
-            <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
+            <a href="https://www.thelakes.network/" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
               The Lakes Network
             </a>.
           </p>
