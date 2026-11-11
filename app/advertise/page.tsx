@@ -42,7 +42,7 @@ export default async function AdvertisePage({ searchParams }: Props) {
       {/* Page header */}
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-5xl px-4 py-12">
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">Advertising</p>
+          <p className="text-[var(--copper-light)] text-xs font-bold uppercase tracking-widest mb-3">Advertising</p>
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Advertise on The Lakes Wildlife
           </h1>
@@ -52,7 +52,7 @@ export default async function AdvertisePage({ searchParams }: Props) {
           </p>
           <Link
             href="/contact"
-            className="inline-block rounded-lg bg-[var(--copper)] px-6 py-3 text-sm font-semibold text-[var(--fell)] hover:opacity-90 transition"
+            className="inline-block rounded-lg bg-[var(--copper-light)] px-6 py-3 text-sm font-semibold text-[var(--fell)] hover:opacity-90 transition"
           >
             Ask through the contact form →
           </Link>
@@ -90,7 +90,7 @@ export default async function AdvertisePage({ searchParams }: Props) {
               >
                 <div className="self-end mb-3">
                   {bundle && (
-                    <p className="text-[var(--copper)] text-[11px] font-bold uppercase tracking-widest mb-2">All three Lakes sites</p>
+                    <p className="text-[var(--copper-light)] text-[11px] font-bold uppercase tracking-widest mb-2">All three Lakes sites</p>
                   )}
                   <h3 className={`font-display text-xl font-bold text-balance ${bundle ? "text-white" : "text-[var(--fell)]"}`}>{o.name}</h3>
                 </div>
@@ -104,7 +104,7 @@ export default async function AdvertisePage({ searchParams }: Props) {
                     {o.points.map((pt) => (
                       <li key={pt} className="flex gap-2.5">
                         <span
-                          className={`mt-2 h-1.5 w-1.5 flex-none rounded-full ${bundle ? "bg-[var(--copper)]" : "bg-[var(--lichen)]"}`}
+                          className={`mt-2 h-1.5 w-1.5 flex-none rounded-full ${bundle ? "bg-[var(--copper-light)]" : "bg-[var(--lichen)]"}`}
                           aria-hidden="true"
                         />
                         <span className="text-pretty">{pt}</span>
@@ -122,7 +122,7 @@ export default async function AdvertisePage({ searchParams }: Props) {
                   href="/contact"
                   className={`justify-self-start self-end rounded-lg px-5 py-2.5 text-sm font-semibold transition ${
                     bundle
-                      ? "bg-[var(--copper)] text-[var(--fell)] hover:opacity-90"
+                      ? "bg-[var(--copper-light)] text-[var(--fell)] hover:opacity-90"
                       : "bg-[var(--fell)] text-white hover:bg-[var(--lichen)]"
                   }`}
                 >
