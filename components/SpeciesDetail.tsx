@@ -382,7 +382,23 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
             </section>
           )}
 
-          {/* CTA */}
+          {/* CTA. A species not found in the Lake District gets a box that says so, not "Plan your visit". */}
+          {!livesHere ? (
+          <section className="bg-[var(--fell)] rounded-2xl p-6 sm:p-8 text-white">
+            <h2 className="text-xl font-bold mb-2">Wildlife you can see in the Lake District</h2>
+            <p className="text-white/70 text-sm mb-5 max-w-xl">
+              This species is not found in the Lake District. Our species pages and seasonal guides cover what is.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link href={`/${category}`} className="inline-flex items-center gap-2 bg-white text-[var(--fell)] text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-[var(--mist)] transition">
+                All {label} →
+              </Link>
+              <Link href="/seasonal" className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
+                Seasonal guides
+              </Link>
+            </div>
+          </section>
+          ) : (
           <section className="bg-[var(--fell)] rounded-2xl p-6 sm:p-8 text-white">
             <h2 className="text-xl font-bold mb-2">Plan your visit to the Lake District</h2>
             <p className="text-white/70 text-sm mb-5 max-w-xl">
@@ -400,6 +416,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
               </Link>
             </div>
           </section>
+          )}
 
         </div>
       </article>
