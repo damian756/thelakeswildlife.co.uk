@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { ORG_REF, PAGES_UPDATED, SITE_LAUNCHED, personAuthor } from "@/lib/schema";
 import { AdSlot } from "@/components/AdSlot";
 
 // Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
@@ -324,16 +325,17 @@ export default async function SeasonalSlugPage({ params }: Props) {
       description: page.metaDescription,
       url,
       mainEntityOfPage: url,
-      datePublished: "2024-04-01",
-      dateModified: "2025-03-01",
-      author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
-      publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
+      datePublished: SITE_LAUNCHED,
+      dateModified: PAGES_UPDATED,
+      // The author box at the foot of the page names Damian Roche.
+      author: personAuthor("Damian Roche"),
+      publisher: ORG_REF,
     },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thelakeswildlife.co.uk" },
-        { "@type": "ListItem", position: 2, name: "Seasonal Guides", item: "https://www.thelakeswildlife.co.uk/seasonal" },
+        { "@type": "ListItem", position: 2, name: "Seasonal guides", item: "https://www.thelakeswildlife.co.uk/seasonal" },
         { "@type": "ListItem", position: 3, name: page.title, item: url },
       ],
     },

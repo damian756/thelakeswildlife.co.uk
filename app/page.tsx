@@ -7,6 +7,7 @@ import { PhotoCredits } from "@/components/PhotoCredit";
 import { BLOG_POSTS } from "@/content/blog/posts";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { AdSlot } from "@/components/AdSlot";
+import { WEBSITE, ORGANIZATION, CHURCHTOWN_MEDIA } from "@/lib/schema";
 
 // Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
 export const revalidate = 86400;
@@ -24,49 +25,10 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title, description },
 };
 
+// The site's WebSite and Organization (lib/schema.ts); other pages refer to them by @id.
 const orgJsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://www.thelakeswildlife.co.uk/#website",
-      url: "https://www.thelakeswildlife.co.uk",
-      name: "The Lakes Wildlife",
-      description: "Independent guide to wildlife in the Lake District: birds, insects, plants and mammals.",
-      publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
-      inLanguage: "en-GB",
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.thelakeswildlife.co.uk/#organization",
-      name: "The Lakes Wildlife",
-      url: "https://www.thelakeswildlife.co.uk",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.thelakeswildlife.co.uk/og-default.png",
-        width: 1200,
-        height: 630,
-      },
-      sameAs: [
-        "https://www.thelakesguide.co.uk",
-        "https://www.hikethelakes.com",
-        "https://thelakes.network",
-        "https://www.linkedin.com/company/churchtownmedia",
-        "https://churchtownmedia.co.uk",
-      ],
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.churchtownmedia.co.uk/about#founder",
-      name: "Damian Roche",
-      jobTitle: "Founder, Churchtown Media",
-      url: "https://www.churchtownmedia.co.uk/about",
-      sameAs: [
-        "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
-        "https://find-and-update.company-information.service.gov.uk/company/16960442",
-      ],
-    },
-  ],
+  "@graph": [WEBSITE, ORGANIZATION, CHURCHTOWN_MEDIA],
 };
 
 function formatDate(iso: string) {

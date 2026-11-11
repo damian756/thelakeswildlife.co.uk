@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { ORG_REF, PAGES_UPDATED, SITE_LAUNCHED } from "@/lib/schema";
 
 const title = "Woodland Habitats | Wildlife of the Lake District Woodlands";
 const description =
@@ -43,20 +44,21 @@ const pageJsonLd = {
   {
     "@type": "Article",
     "@id": url + "#article",
-    headline: title,
+    headline: "Woodland Habitats",
     description,
     url,
     mainEntityOfPage: url,
-    datePublished: "2024-04-01",
-    dateModified: "2025-03-01",
-    author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
-    publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
+    datePublished: SITE_LAUNCHED,
+    dateModified: PAGES_UPDATED,
+    // No byline on the page: the site is the author.
+    author: ORG_REF,
+    publisher: ORG_REF,
   },
   {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thelakeswildlife.co.uk" },
-      { "@type": "ListItem", position: 2, name: "Woodland Habitats", item: url },
+      { "@type": "ListItem", position: 2, name: "Woodland habitats", item: url },
     ],
   },
   {

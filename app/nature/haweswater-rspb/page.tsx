@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { PhotoCredits, PhotoCreditText } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
+import { creditFor } from "@/lib/photo-credits";
+import { imageObject } from "@/lib/schema";
 import { MapPin, Clock, Eye, AlertTriangle } from "lucide-react";
 
 const title = "RSPB Haweswater: Red Squirrels, Parking and What to See";
@@ -52,6 +54,8 @@ const pageJsonLd = [
     name: "RSPB Haweswater (Wild Haweswater)",
     description: "Landscape restoration partnership between the RSPB and landowner United Utilities in the eastern Lake District. Red squirrels, ring ouzels, pied flycatchers and mountain ringlet butterflies.",
     url,
+    // The hero photograph, with the credit printed on it.
+    image: imageObject("/images/reserves/haweswater-mardale-head.jpg", creditFor("/images/reserves/haweswater-mardale-head.jpg")),
     address: { "@type": "PostalAddress", addressLocality: "Mardale Head, Haweswater", addressRegion: "Cumbria", addressCountry: "GB" },
     amenityFeature: [
       { "@type": "LocationFeatureSpecification", name: "Car park", value: true },

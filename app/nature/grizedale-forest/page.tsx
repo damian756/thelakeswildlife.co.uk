@@ -40,7 +40,6 @@ const pageJsonLd = [
     description:
       "Forestry England forest between Coniston Water and Windermere. Red squirrels, deer, red kites.",
     url,
-    geo: { "@type": "GeoCoordinates", latitude: 54.3333, longitude: -3.0333 },
     address: {
       "@type": "PostalAddress",
       addressLocality: "Hawkshead",

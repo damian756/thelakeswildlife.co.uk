@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { PhotoCredits, PhotoCreditText } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
+import { creditFor } from "@/lib/photo-credits";
+import { imageObject } from "@/lib/schema";
 import { MapPin, Clock, Eye, Leaf } from "lucide-react";
 
 const title = "Foulshaw Moss | Osprey Viewing, Wildlife & Practical Guide";
@@ -40,7 +42,8 @@ const pageJsonLd = [
     description:
       "Cumbria Wildlife Trust raised bog reserve near Witherslack. Osprey viewing platform, Large Heath butterfly, bog plants and summer wildlife.",
     url,
-    geo: { "@type": "GeoCoordinates", latitude: 54.2167, longitude: -2.9167 },
+    // The hero photograph, with the credit printed on it.
+    image: imageObject("/images/reserves/foulshaw-moss-pool.jpg", creditFor("/images/reserves/foulshaw-moss-pool.jpg")),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Witherslack",

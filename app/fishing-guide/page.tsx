@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { ORG_REF, PAGES_UPDATED, SITE_LAUNCHED, personAuthor } from "@/lib/schema";
 import { AdSlot } from "@/components/AdSlot";
 
 // Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
@@ -47,20 +48,21 @@ const pageJsonLd = {
   {
     "@type": "Article",
     "@id": url + "#article",
-    headline: title,
+    headline: "Fishing in the Lake District",
     description,
     url,
     mainEntityOfPage: url,
-    datePublished: "2024-04-01",
-    dateModified: "2025-03-01",
-    author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
-    publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
+    datePublished: SITE_LAUNCHED,
+    dateModified: PAGES_UPDATED,
+    // The author box at the foot of the page names Damian Roche.
+    author: personAuthor("Damian Roche"),
+    publisher: ORG_REF,
   },
   {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thelakeswildlife.co.uk" },
-      { "@type": "ListItem", position: 2, name: "Fishing Guide", item: url },
+      { "@type": "ListItem", position: 2, name: "Fishing guide", item: url },
     ],
   },
   {

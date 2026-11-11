@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { PhotoCredits, PhotoCreditText } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
+import { creditFor } from "@/lib/photo-credits";
+import { imageObject } from "@/lib/schema";
 import { MapPin, Clock, Eye, Train } from "lucide-react";
 
 const title = "Leighton Moss RSPB | Bittern, Marsh Harrier & Reedbed Wildlife Guide";
@@ -40,7 +42,8 @@ const pageJsonLd = [
     description:
       "RSPB reserve near Silverdale. The largest reedbed in north-west England. Bittern, marsh harrier, bearded tit, otter, water rail.",
     url,
-    geo: { "@type": "GeoCoordinates", latitude: 54.1667, longitude: -2.8333 },
+    // The hero photograph, with the credit printed on it.
+    image: imageObject("/images/reserves/leighton-moss-reedbeds.jpg", creditFor("/images/reserves/leighton-moss-reedbeds.jpg")),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Silverdale",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { SITE_URL, breadcrumbList } from "@/lib/schema";
 import { BLOG_POSTS } from "@/content/blog/posts";
 import { wikipediaHero } from "@/lib/photo-credits";
 import { PhotoCredits } from "@/components/PhotoCredit";
@@ -38,8 +39,12 @@ export default async function BlogIndexPage() {
     }))
   );
 
+  // The breadcrumb the header shows.
+  const breadcrumbJsonLd = { "@context": "https://schema.org", ...breadcrumbList([["Home", SITE_URL], ["Blog", url]]) };
+
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Header */}
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-5xl px-4 py-10">

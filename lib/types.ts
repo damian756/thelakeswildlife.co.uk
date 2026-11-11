@@ -126,6 +126,22 @@ export function speciesTitle(s: Pick<Species, 'commonName' | 'shortLocation'>): 
   return `${s.commonName} ${placePhrase(s.shortLocation)}`;
 }
 
+function truncateAtSentence(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const lastDot = cut.lastIndexOf(".");
+  if (lastDot > max * 0.4) return cut.slice(0, lastDot + 1);
+  return cut.replace(/\s+\S*$/, "") + "...";
+}
+
+/** Species page meta description (also the WebPage description in its JSON-LD). */
+export function speciesDescription(s: Species): string {
+  return truncateAtSentence(
+    s.description || `${s.commonName} (${s.scientificName}) on the Lake District. ${s.seasonalPresence}.`,
+    155
+  );
+}
+
 /** The fields a species list card needs (keeps list pages light). */
 export type SpeciesCard = Pick<
   Species,

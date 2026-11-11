@@ -1,6 +1,9 @@
 import type { Species, SpeciesCategory } from "@/lib/types";
-import { speciesTitle } from "@/lib/types";
+import { speciesDescription, speciesTitle } from "@/lib/types";
+import { creditFor } from "@/lib/photo-credits";
+import { ORG_REF, PAGES_UPDATED, SITE_LAUNCHED, SITE_URL, WEBSITE_ID, breadcrumbList, imageObject } from "@/lib/schema";
 
+// The trail the page's breadcrumb shows (components/SpeciesDetail.tsx).
 const categoryLabels: Record<SpeciesCategory, string> = {
   birds: "Birds",
   insects: "Insects",
@@ -14,108 +17,77 @@ interface SpeciesJsonLdProps {
   slug: string;
 }
 
+/**
+ * One JSON-LD graph per species page: the page (a WebPage, or an FAQPage when it shows
+ * questions), the species it is about (Taxon, with the family and order the page lists),
+ * the photo with the credit printed under it, and the breadcrumb the page shows. No byline
+ * is shown, so there is no author; the dates are the site's (lib/schema.ts).
+ */
 export function SpeciesJsonLd({ species, category, slug }: SpeciesJsonLdProps) {
-  const baseUrl = "https://www.thelakeswildlife.co.uk";
-  const pageUrl = `${baseUrl}/${category}/${slug}`;
-  const categoryLabel = categoryLabels[category];
+  const pageUrl = `${SITE_URL}/${category}/${slug}`;
+  const taxonId = `${pageUrl}#taxon`;
+  const imageId = `${pageUrl}#image`;
+  const faq = species.faq ?? [];
 
-  const graph: object[] = [];
+  const wikipedia =
+    species.externalLinks?.wikipedia ??
+    (species.wikipediaTitle ? `https://en.wikipedia.org/wiki/${encodeURIComponent(species.wikipediaTitle.replace(/ /g, "_"))}` : undefined);
 
-  // ── BreadcrumbList ────────────────────────────────────────────────────────
-  graph.push({
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
-      { "@type": "ListItem", position: 2, name: categoryLabel, item: `${baseUrl}/${category}` },
-      { "@type": "ListItem", position: 3, name: species.commonName, item: pageUrl },
-    ],
-  });
+  const order = species.order ? { "@type": "Taxon", name: species.order, taxonRank: "order" } : undefined;
+  const parentTaxon = species.family
+    ? { "@type": "Taxon", name: species.family, taxonRank: "family", ...(order && { parentTaxon: order }) }
+    : order;
 
-  // ── Taxon (schema.org/Taxon) ──────────────────────────────────────────────
-  const taxon: Record<string, unknown> = {
-    "@type": "Taxon",
-    "@id": pageUrl,
-    name: species.scientificName,
-    commonName: species.commonName,
-    taxonRank: "https://www.wikidata.org/entity/Q7432", // species
-    url: pageUrl,
-  };
-  if (species.order) {
-    taxon.parentTaxon = {
+  const graph: object[] = [
+    {
+      "@type": faq.length > 0 ? "FAQPage" : "WebPage",
+      "@id": pageUrl,
+      url: pageUrl,
+      name: speciesTitle(species),
+      description: speciesDescription(species),
+      inLanguage: "en-GB",
+      isPartOf: { "@id": WEBSITE_ID },
+      breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+      about: { "@id": taxonId },
+      ...(species.localImage && { primaryImageOfPage: { "@id": imageId } }),
+      datePublished: SITE_LAUNCHED,
+      dateModified: PAGES_UPDATED,
+      publisher: ORG_REF,
+      ...(faq.length > 0 && {
+        mainEntity: faq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
+        })),
+      }),
+    },
+    {
       "@type": "Taxon",
-      name: species.order,
-      taxonRank: "order",
-    };
-  }
-  if (species.externalLinks?.wikipedia) {
-    taxon.sameAs = species.externalLinks.wikipedia;
-  } else if (species.wikipediaTitle) {
-    taxon.sameAs = `https://en.wikipedia.org/wiki/${encodeURIComponent(species.wikipediaTitle)}`;
-  }
-  if (species.conservationStatus && species.conservationStatus !== "unknown") {
-    const value =
-      category === "birds"
-        ? `${species.conservationStatus.charAt(0).toUpperCase() + species.conservationStatus.slice(1)} List (BoCC5)`
-        : `${species.conservationStatus.charAt(0).toUpperCase() + species.conservationStatus.slice(1)} List`;
-    taxon.additionalProperty = {
-      "@type": "PropertyValue",
-      name: "UK Conservation Status",
-      value,
-    };
-  }
-  graph.push(taxon);
-
-  // ── Article ───────────────────────────────────────────────────────────────
-  const article: Record<string, unknown> = {
-    "@type": "Article",
-    headline: speciesTitle(species),
-    description: species.description,
-    about: { "@id": pageUrl },
-    author: {
-      "@type": "Person",
-      name: "Damian Roche",
-      description: "Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.",
-      url: baseUrl,
+      "@id": taxonId,
+      name: species.scientificName,
+      alternateName: species.commonName,
+      taxonRank: "species",
+      ...(parentTaxon && { parentTaxon }),
+      ...(wikipedia && { sameAs: wikipedia }),
+      ...(species.localImage && { image: { "@id": imageId } }),
     },
-    publisher: {
-      "@type": "Organization",
-      name: "The Lakes Wildlife",
-      url: baseUrl,
-    },
-    mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
-  };
-  if (species.wikipediaTitle) {
-    article.image = {
-      "@type": "ImageObject",
-      url: `https://en.wikipedia.org/wiki/Special:FilePath/${encodeURIComponent(species.wikipediaTitle)}`,
-    };
+    breadcrumbList(
+      [
+        ["Home", SITE_URL],
+        [categoryLabels[category], `${SITE_URL}/${category}`],
+        [species.commonName, pageUrl],
+      ],
+      `${pageUrl}#breadcrumb`
+    ),
+  ];
+  if (species.localImage) {
+    graph.push({ ...imageObject(species.localImage, creditFor(species.localImage)), "@id": imageId });
   }
-  graph.push(article);
-
-  // ── FAQPage ───────────────────────────────────────────────────────────────
-  if (species.faq && species.faq.length > 0) {
-    graph.push({
-      "@type": "FAQPage",
-      mainEntity: species.faq.map((item) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: item.answer,
-        },
-      })),
-    });
-  }
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": graph,
-  };
 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd, null, 0) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }) }}
     />
   );
 }

@@ -8,6 +8,7 @@ import { ClickableImage } from "@/components/ClickableImage";
 import { siteImage } from "@/lib/site-image";
 import { AdSlot } from "@/components/AdSlot";
 import { hasPostEnd } from "@/lib/ad-slots";
+import { ORG_REF, imageObject, personAuthor } from "@/lib/schema";
 
 // Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
 export const revalidate = 86400;
@@ -82,23 +83,19 @@ export default async function BlogPostPage({ params }: Props) {
       dateModified: post.updated ?? post.date,
       author: sponsor
         ? { "@type": "Organization", name: sponsor.name, url: sponsor.url }
-        : { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
-      publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
+        : personAuthor("Damian"), // the author box names "Damian"
+      publisher: ORG_REF,
       keywords: post.tags.join(", "),
-      ...(heroSrc && {
-        image: {
-          "@type": "ImageObject",
-          url: heroSrc.startsWith("/") ? `https://www.thelakeswildlife.co.uk${heroSrc}` : heroSrc,
-          width: 800,
-        },
-      }),
+      // The hero, with the credit printed on it.
+      ...(heroSrc && { image: imageObject(heroSrc, heroCredit) }),
     },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thelakeswildlife.co.uk" },
         { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.thelakeswildlife.co.uk/blog" },
-        { "@type": "ListItem", position: 3, name: post.title, item: url },
+        // The visible trail ends with the post's category, which is not a link.
+        { "@type": "ListItem", position: 3, name: post.categoryLabel },
       ],
     },
     ],

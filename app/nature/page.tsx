@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import type { Metadata } from "next";
+import { ORG_REF, WEBSITE_ID } from "@/lib/schema";
 
 const BASE = "https://www.thelakeswildlife.co.uk";
 const title = "Lake District Nature Reserves";
@@ -24,16 +25,9 @@ const pageJsonLd = {
       name: "Lake District Nature Reserves",
       description,
       url,
-      publisher: { "@id": `${BASE}/#organization` },
-      breadcrumb: { "@id": url + "#breadcrumb" },
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": url + "#breadcrumb",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
-        { "@type": "ListItem", position: 2, name: "Nature Reserves", item: url },
-      ],
+      isPartOf: { "@id": WEBSITE_ID },
+      publisher: ORG_REF,
+      // No BreadcrumbList: this page shows no breadcrumb.
     },
     {
       "@type": "ItemList",

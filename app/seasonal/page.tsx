@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { SITE_URL, breadcrumbList } from "@/lib/schema";
 import { AdSlot } from "@/components/AdSlot";
 
 // Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
@@ -49,9 +50,13 @@ const seasons = [
   },
 ];
 
+// The breadcrumb the page header shows.
+const breadcrumbJsonLd = { "@context": "https://schema.org", ...breadcrumbList([["Home", SITE_URL], ["Seasonal guides", `${SITE_URL}/seasonal`]]) };
+
 export default function SeasonalPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Page header */}
       <div className="relative overflow-hidden bg-[var(--fell)] text-white">
         <Image src="/images/illustrations/section-seasonal.webp" alt="Illustration of a Lakeland valley that changes from spring through summer and autumn to winter snow across the scene" fill priority sizes="100vw" className="object-cover object-center" />

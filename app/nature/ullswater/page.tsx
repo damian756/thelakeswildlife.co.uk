@@ -40,7 +40,6 @@ const pageJsonLd = [
     description:
       "The second largest lake in the Lake District. Red deer rut in Martindale in October. Goldeneye and wildfowl in winter. Ospreys fishing in summer.",
     url,
-    geo: { "@type": "GeoCoordinates", latitude: 54.5667, longitude: -2.8833 },
     address: {
       "@type": "PostalAddress",
       addressLocality: "Glenridding",
