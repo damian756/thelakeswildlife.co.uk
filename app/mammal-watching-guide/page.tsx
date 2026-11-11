@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/mammals/otter.jpg", alt: "Otter resting on a mossy rock" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -104,7 +104,7 @@ export default function MammalWatchingGuidePage() {
           ].map(({ stat, label }) => (
             <div key={label} className="rounded-xl bg-[var(--fog)] p-4 text-center">
               <p className="font-display text-xl font-bold text-[var(--fell)]">{stat}</p>
-              <p className="text-xs text-[var(--slate)]/70 mt-1">{label}</p>
+              <p className="text-xs text-[var(--slate)]/90 mt-1">{label}</p>
             </div>
           ))}
         </div>

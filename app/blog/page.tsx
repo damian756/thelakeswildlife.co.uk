@@ -4,7 +4,7 @@ import { BLOG_POSTS } from "@/content/blog/posts";
 import { getWikipediaImage } from "@/lib/wikipedia";
 import { BlogListClient } from "@/components/BlogListClient";
 
-const title = "Wildlife Blog | The Lakes Wildlife";
+const title = "Wildlife Blog";
 const description =
   "Damian's notes from the Lake District: conservation news, species spotlights, seasonal watching guides, habitat guides and wildlife photography tips.";
 const url = "https://www.thelakeswildlife.co.uk/blog";

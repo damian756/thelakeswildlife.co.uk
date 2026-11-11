@@ -279,7 +279,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!page) return {};
   const url = `https://www.thelakeswildlife.co.uk/seasonal/${slug}`;
   return {
-    title: `${page.title} | The Lakes Wildlife`,
+    title: page.title,
     description: page.metaDescription,
     alternates: { canonical: url },
     openGraph: {

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 
-const title = "Contact | The Lakes Wildlife";
-const description = "Get in touch with The Lakes Wildlife: questions, species records, local knowledge or listing enquiries.";
+const title = "Contact";
+const description = "Get in touch with The Lakes Wildlife: questions, species records or local knowledge.";
 const url = "https://www.thelakeswildlife.co.uk/contact";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function ContactPage() {
             Contact us
           </h1>
           <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
-            Species records, questions about the site, listing enquiries or just something you&apos;ve spotted in the Lake District. We&apos;d like to hear from you.
+            Species records, questions about the site, or just something you&apos;ve spotted in the Lake District. We&apos;d like to hear from you.
           </p>
         </div>
       </div>

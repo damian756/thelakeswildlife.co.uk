@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel eating a nut on a mossy tree stump" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -95,7 +95,7 @@ export default function HaweswaterPage() {
             <span>/</span>
             <span className="text-white/80">RSPB Haweswater</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
+          <p className="text-[#F2C796] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
             RSPB and United Utilities · Eastern Lake District · Free entry
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -157,7 +157,7 @@ export default function HaweswaterPage() {
               ["Best for", "Red squirrels, ring ouzels, pied flycatchers"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="shrink-0 text-[var(--slate)]/60">{k}</dt>
+                <dt className="shrink-0 text-[var(--slate)]/90">{k}</dt>
                 <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}
@@ -290,6 +290,28 @@ export default function HaweswaterPage() {
             <p className="text-sm text-[var(--slate)] leading-relaxed">
               The nearest railway station is Penrith, 14 miles (22.5 km) away. Once you are here, stay on the public rights of way, close gates behind you and take care around the grazing cattle and ponies.
             </p>
+          </div>
+          <div className="mt-4 rounded-xl border border-[var(--fog)] p-5">
+            <h3 className="font-semibold text-[var(--fell)] mb-2">Fells from Mardale Head</h3>
+            <p className="text-sm text-[var(--slate)] leading-relaxed mb-3">
+              Wild Haweswater says you can climb several Wainwrights from the car park. Route guides on our sister site, Hike The Lakes:
+            </p>
+            <ul className="flex flex-wrap gap-x-4 gap-y-1.5 text-sm">
+              {[
+                { slug: "high-street", name: "High Street" },
+                { slug: "kidsty-pike", name: "Kidsty Pike" },
+                { slug: "harter-fell-mardale", name: "Harter Fell" },
+                { slug: "mardale-ill-bell", name: "Mardale Ill Bell" },
+                { slug: "branstree", name: "Branstree" },
+                { slug: "selside-pike", name: "Selside Pike" },
+              ].map(({ slug, name }) => (
+                <li key={slug}>
+                  <a href={`https://www.hikethelakes.com/fells/${slug}`} className="text-[var(--lichen)] hover:underline">
+                    {name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 

@@ -4,33 +4,21 @@ import type { MetadataRoute } from "next";
 
 const baseUrl = "https://www.thelakeswildlife.co.uk";
 
-/**
- * Deterministic staggered date for species pages.
- * Spreads species across a date range so the sitemap doesn't show
- * all 257 species as bulk-created on one day.
- */
-function speciesDate(index: number, total: number): Date {
-  const start = new Date("2025-11-01").getTime();
-  const end = new Date("2026-02-28").getTime();
-  const step = (end - start) / Math.max(total - 1, 1);
-  return new Date(start + step * index);
-}
+// Date the species data last changed. Update it when content/species/*.json changes.
+const SPECIES_UPDATED = new Date("2026-11-11");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const categories = ["birds", "insects", "plants", "mammals"] as const;
 
-  let globalIndex = 0;
   const allSlugs: { cat: string; slug: string }[] = [];
   for (const cat of categories) {
     for (const slug of getAllSlugs(cat)) {
       allSlugs.push({ cat, slug });
     }
   }
-  const totalSpecies = allSlugs.length;
-
   const speciesUrls: MetadataRoute.Sitemap = allSlugs.map(({ cat, slug }) => ({
     url: `${baseUrl}/${cat}/${slug}`,
-    lastModified: speciesDate(globalIndex++, totalSpecies),
+    lastModified: SPECIES_UPDATED,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
@@ -65,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/upland-habitats`, lastModified: new Date("2026-11-11"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/woodland-habitats`, lastModified: new Date("2026-11-11"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified: new Date("2026-11-11"), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/contact`, lastModified: new Date("2025-12-01"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/contact`, lastModified: new Date("2026-11-11"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
   return [...staticPages, ...speciesUrls, ...blogUrls];

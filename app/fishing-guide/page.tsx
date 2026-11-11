@@ -104,7 +104,7 @@ export default function FishingGuidePage() {
           ].map(({ stat, label }) => (
             <div key={label} className="rounded-xl bg-[var(--fog)] p-4 text-center">
               <p className="font-display text-xl font-bold text-[var(--fell)]">{stat}</p>
-              <p className="text-xs text-[var(--slate)]/70 mt-1">{label}</p>
+              <p className="text-xs text-[var(--slate)]/90 mt-1">{label}</p>
             </div>
           ))}
         </div>

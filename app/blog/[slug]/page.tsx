@@ -16,8 +16,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
   const url = `https://www.thelakeswildlife.co.uk/blog/${slug}`;
+  const ogImage = post.heroLocalSrc
+    ? `https://www.thelakeswildlife.co.uk${post.heroLocalSrc}`
+    : post.heroWikipediaTitle
+      ? (await getWikipediaImage(post.heroWikipediaTitle))?.src
+      : undefined;
+  const images = ogImage ? [{ url: ogImage, alt: post.heroAlt }] : undefined;
   return {
-    title: `${post.title} | The Lakes Wildlife`,
+    title: post.title,
     description: post.metaDescription,
     alternates: { canonical: url },
     openGraph: {
@@ -27,8 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "The Lakes Wildlife",
       type: "article",
       publishedTime: post.date,
+      images,
     },
-    twitter: { card: "summary_large_image", title: post.title, description: post.metaDescription },
+    twitter: { card: "summary_large_image", title: post.title, description: post.metaDescription, images },
   };
 }
 
@@ -111,7 +118,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <div className="mx-auto max-w-3xl px-4 py-10">
         {/* Breadcrumb */}
-        <nav className="text-sm text-[var(--slate)]/60 mb-6 flex items-center gap-1.5 flex-wrap">
+        <nav className="text-sm text-[var(--slate)]/90 mb-6 flex items-center gap-1.5 flex-wrap">
           <Link href="/" className="hover:text-[var(--lichen)] transition">Home</Link>
           <span>/</span>
           <Link href="/blog" className="hover:text-[var(--lichen)] transition">Blog</Link>
@@ -123,7 +130,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="mb-8">
           <span className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)]">{post.categoryLabel}</span>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-[var(--fell)] mt-2 mb-3 leading-tight">{post.title}</h1>
-          <p className="text-sm text-[var(--slate)]/60">{formatDate(post.date)}</p>
+          <p className="text-sm text-[var(--slate)]/90">{formatDate(post.date)}</p>
         </div>
 
         {/* Intro */}
@@ -149,7 +156,7 @@ export default async function BlogPostPage({ params }: Props) {
                   />
                 </div>
                 {section.imageAfter.caption && (
-                  <p className="text-xs text-[var(--slate)]/60 px-4 py-2 bg-[var(--fog)]/40 text-center leading-relaxed">
+                  <p className="text-xs text-[var(--slate)]/90 px-4 py-2 bg-[var(--fog)]/40 text-center leading-relaxed">
                     {section.imageAfter.caption}
                   </p>
                 )}
@@ -175,7 +182,7 @@ export default async function BlogPostPage({ params }: Props) {
         {post.tags.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-10 pt-6 border-t border-[var(--fog)]">
             {post.tags.map((tag) => (
-              <span key={tag} className="text-xs bg-[var(--fog)] text-[var(--slate)]/70 px-2.5 py-1 rounded-full">
+              <span key={tag} className="text-xs bg-[var(--fog)] text-[var(--slate)]/90 px-2.5 py-1 rounded-full">
                 {tag}
               </span>
             ))}

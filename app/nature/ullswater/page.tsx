@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/birds/great-crested-grebe.jpg", alt: "Great crested grebe swimming on calm water" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -102,7 +102,7 @@ export default function UllswaterPage() {
             <span>/</span>
             <span className="text-white/80">Ullswater</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
+          <p className="text-[#F2C796] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
             Lake District · Eastern Fells · Martindale Red Deer
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -164,7 +164,7 @@ export default function UllswaterPage() {
               ["Parking (Pooley Bridge)", "CA10 2NQ, pay and display"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="shrink-0 text-[var(--slate)]/60">{k}</dt>
+                <dt className="shrink-0 text-[var(--slate)]/90">{k}</dt>
                 <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}

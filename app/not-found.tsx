@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | The Lakes Wildlife",
-  description: "That page doesn't exist. Browse birds, mammals, insects and plants recorded on the Lake District.",
+  title: "Page Not Found",
+  description: "That page doesn't exist. Browse birds, mammals, insects and plants recorded in the Lake District.",
 };
 
 const SPECIES_LINKS = [

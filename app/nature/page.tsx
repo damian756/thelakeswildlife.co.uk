@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 const BASE = "https://www.thelakeswildlife.co.uk";
-const title = "Nature Reserves | The Lakes Wildlife";
+const title = "Lake District Nature Reserves";
 const description = "Guides to nature reserves in and around the Lake District: RSPB Haweswater, Grizedale Forest, Foulshaw Moss, Leighton Moss and more.";
 const url = `${BASE}/nature`;
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "website", images: [{ url: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel eating a nut on a mossy tree stump" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 

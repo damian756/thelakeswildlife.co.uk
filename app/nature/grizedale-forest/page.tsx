@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/mammals/red-deer.jpg", alt: "Red deer stag with large antlers standing in woodland" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -104,7 +104,7 @@ export default function GrizedalePage() {
             <span>/</span>
             <span className="text-white/80">Grizedale Forest</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
+          <p className="text-[#F2C796] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
             Forestry England · Between Coniston and Windermere · Free entry
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -167,7 +167,7 @@ export default function GrizedalePage() {
               ["Peak season", "October (deer rut), May (woodland birds)"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="shrink-0 text-[var(--slate)]/60">{k}</dt>
+                <dt className="shrink-0 text-[var(--slate)]/90">{k}</dt>
                 <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}
@@ -264,8 +264,8 @@ export default function GrizedalePage() {
                 <div className="flex-none">
                   <p className="font-semibold text-[var(--fell)] text-sm">{trail.name}</p>
                   <div className="flex gap-2 mt-1">
-                    <span className="text-xs text-[var(--slate)]/60 bg-white rounded-full px-2 py-0.5">{trail.distance}</span>
-                    <span className="text-xs text-[var(--slate)]/60 bg-white rounded-full px-2 py-0.5">{trail.time}</span>
+                    <span className="text-xs text-[var(--slate)]/90 bg-white rounded-full px-2 py-0.5">{trail.distance}</span>
+                    <span className="text-xs text-[var(--slate)]/90 bg-white rounded-full px-2 py-0.5">{trail.time}</span>
                   </div>
                 </div>
                 <p className="text-sm text-[var(--slate)] leading-relaxed">{trail.detail}</p>

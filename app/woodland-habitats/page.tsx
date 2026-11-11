@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article" },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/birds/pied-flycatcher.jpg", alt: "Male pied flycatcher perched on a branch" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
