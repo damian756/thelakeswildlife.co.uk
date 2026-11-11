@@ -397,7 +397,7 @@ export default async function HomePage() {
             {[
               { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide" },
               { href: "https://www.hikethelakes.com", label: "Hike The Lakes" },
-              { href: "https://thelakes.network", label: "TheLakes.network" },
+              { href: "https://www.thelakes.network/", label: "TheLakes.network" },
             ].map(({ href, label }) => (
               <a
                 key={href}

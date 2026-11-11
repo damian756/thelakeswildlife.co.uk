@@ -43,11 +43,11 @@ export default function ContactPage() {
               <h2 className="font-semibold text-[var(--fell)] mb-3 text-sm">About the site</h2>
               <p className="text-sm text-[var(--slate)] leading-relaxed">
                 The Lakes Wildlife is an independent guide built by{" "}
-                <a href="https://churchtownmedia.co.uk" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
+                <a href="https://www.churchtownmedia.co.uk/" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                   Churchtown Media
                 </a>
                 , part of{" "}
-                <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
+                <a href="https://www.thelakes.network/" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                   The Lakes Network
                 </a>.
               </p>
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide" },
                   { href: "https://www.thelakeswildlife.co.uk", label: "The Lakes Wildlife" },
                   { href: "https://www.hikethelakes.com", label: "Hike The Lakes" },
-                  { href: "https://thelakes.network", label: "TheLakes.network" },
+                  { href: "https://www.thelakes.network/", label: "TheLakes.network" },
                 ].map(({ href, label }) => (
                   <li key={href}>
                     <a href={href} target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">

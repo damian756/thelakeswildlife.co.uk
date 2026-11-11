@@ -20,7 +20,7 @@ export function Footer() {
             </p>
             <p className="text-white/60 text-xs mt-4">
               Part of{" "}
-              <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-white/60 hover:text-white transition">
+              <a href="https://www.thelakes.network/" target="_blank" rel="noopener" className="text-white/60 hover:text-white transition">
                 The Lakes Network
               </a>
             </p>
@@ -73,7 +73,7 @@ export function Footer() {
               {[
                 { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide: restaurants, accommodation & walks" },
                 { href: "https://www.hikethelakes.com", label: "Hike The Lakes: 214 Wainwright fells" },
-                { href: "https://thelakes.network", label: "TheLakes.network" },
+                { href: "https://www.thelakes.network/", label: "TheLakes.network" },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <a href={href} target="_blank" rel="noopener" className="hover:text-white transition">
@@ -100,7 +100,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/60">
-          <span>© {year} The Lakes Wildlife · Built by <a href="https://churchtownmedia.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">Churchtown Media</a></span>
+          <span>© {year} The Lakes Wildlife · Built by <a href="https://www.churchtownmedia.co.uk/" target="_blank" rel="noopener" className="hover:text-white/60 transition">Churchtown Media</a></span>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-white/60 transition">Privacy</Link>
             <Link href="/terms" className="hover:text-white/60 transition">Terms</Link>
