@@ -4,17 +4,18 @@ import { AD_OPTIONS, AD_OPTION_ORDER, AD_SLOTS, isAdSlotId, priceText } from "@/
 
 // No advert on this page. Options and prices come from lib/ad-slots.ts; every price is shown plus VAT.
 
-const title = "Advertise";
+// The layout adds the site name to other titles; this one names the site itself.
+const title = "Lake District Advertising on The Lakes Wildlife";
 const description =
-  "Advertising on The Lakes Wildlife: section and guide sponsors, the home page card, sponsored articles and the Lakes network bundle. Prices plus VAT, and how to ask.";
+  "Advertise on The Lakes Wildlife: section and guide sponsors, a home page card, sponsored articles and the Lakes network bundle. Prices plus VAT, and how to ask.";
 const url = "https://www.thelakeswildlife.co.uk/advertise";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   alternates: { canonical: url },
   openGraph: {
-    title: "Advertise on The Lakes Wildlife",
+    title,
     description,
     url,
     siteName: "The Lakes Wildlife",

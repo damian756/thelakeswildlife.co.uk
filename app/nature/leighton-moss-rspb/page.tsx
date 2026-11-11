@@ -6,9 +6,9 @@ import { creditFor } from "@/lib/photo-credits";
 import { imageObject } from "@/lib/schema";
 import { MapPin, Clock, Eye, Train } from "lucide-react";
 
-const title = "Leighton Moss RSPB | Bittern, Marsh Harrier & Reedbed Wildlife Guide";
+const title = "Leighton Moss RSPB: Bittern, Marsh Harrier & Reedbed Guide";
 const description =
-  "Leighton Moss RSPB wildlife guide. The largest reedbed in north-west England. Bittern, marsh harrier, bearded tit, otter. Postcode LA5 0SW. Practical visit information, what to see and when.";
+  "Leighton Moss RSPB, the largest reedbed in north-west England: bitterns, marsh harriers, bearded tits and otters. Postcode LA5 0SW, what to see and when.";
 const url = "https://www.thelakeswildlife.co.uk/nature/leighton-moss-rspb";
 
 const faqs = [

@@ -4,7 +4,7 @@ import { ORG_REF, PAGES_UPDATED, SITE_LAUNCHED } from "@/lib/schema";
 
 const title = "Woodland Habitats | Wildlife of the Lake District Woodlands";
 const description =
-  "Guide to the wildlife of the Lake District's woodlands. Ancient oak woodland, conifer plantations, and their birds, mammals, and plants. What lives where and when to look.";
+  "Wildlife of the Lake District's woodlands: ancient oak woods and conifer plantations, and their birds, mammals and plants. What lives where and when to look.";
 const url = "https://www.thelakeswildlife.co.uk/woodland-habitats";
 
 export const metadata: Metadata = {

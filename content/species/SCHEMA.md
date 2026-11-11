@@ -21,5 +21,7 @@ Each file (`birds.json`, `insects.json`, `plants.json`, `mammals.json`) is an ar
 - **conservationStatus** — One of: `red`, `amber`, `green`, `unknown`. Use UK lists (e.g. Birds of Conservation Concern).
 - **relatedSpecies** — Optional array of slugs for internal linking.
 - **category** — Must match the file: `birds` in birds.json, etc.
+- **shortLocation** — Optional. The main place, shown as a pill and in the meta description ("at Foulshaw Moss"). For a species not found in the Lake District it is where the species is ("the Peak District"), and the title says so.
+- **titlePlace** — Optional. Replaces "in the Lake District" in the title and description when that would overstate, e.g. `"on Whitbarrow"` for the high brown fritillary. The title is otherwise "<Name>: Where to See Them in the Lake District" ("Where to Find It" for plants), built in `lib/types.ts`.
 
 Be specific to the Lake District. Include real seasonal timing and locations (Haweswater, Grizedale, Leighton Moss, Martindale, etc.).

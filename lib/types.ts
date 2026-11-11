@@ -32,8 +32,13 @@ export interface Species {
   seasonalPresence: string;
   bestTimeOfDay?: string;
   whereToSee: string;
-  /** Short primary location for meta titles e.g. "RSPB Haweswater", "Grizedale Forest" */
+  /** Short primary location, shown as a pill and in the meta description, e.g. "RSPB Haweswater", "Grizedale Forest" */
   shortLocation?: string;
+  /**
+   * Place phrase for the title and description when "in the Lake District" would overstate
+   * where the species is found, e.g. "on Whitbarrow" for the high brown fritillary.
+   */
+  titlePlace?: string;
 
   // Population
   ukPopulation?: string;
@@ -121,25 +126,83 @@ export function placePhrase(shortLocation?: string): string {
   return PLACE_PHRASES[place] ?? `in ${place}`;
 }
 
-/** Species page title, e.g. "Osprey at RSPB Haweswater", "Black Grouse in the Pennines". */
-export function speciesTitle(s: Pick<Species, 'commonName' | 'shortLocation'>): string {
-  return `${s.commonName} ${placePhrase(s.shortLocation)}`;
+const LAKE_DISTRICT = new Set(["Lake District", ""]);
+
+/** "See Them" for animals, "Find It" for plants, as titles and descriptions use them. */
+function verbs(s: Pick<Species, "category">) {
+  return s.category === "plants"
+    ? { title: "Find It", see: "find it", them: "it", their: "its" }
+    : { title: "See Them", see: "see them", them: "them", their: "their" };
 }
 
-function truncateAtSentence(text: string, max: number): string {
-  if (text.length <= max) return text;
-  const cut = text.slice(0, max);
-  const lastDot = cut.lastIndexOf(".");
-  if (lastDot > max * 0.4) return cut.slice(0, lastDot + 1);
-  return cut.replace(/\s+\S*$/, "") + "...";
+/**
+ * Species page title: the species and what the page answers, e.g. "Red Squirrel: Where
+ * to See Them in the Lake District", "Bog Asphodel: Where to Find It in the Lake District".
+ * A species not found in the Lake District names where it is ("Mountain Hare: Where to
+ * See Them in the Peak District"); `titlePlace` replaces "in the Lake District" where
+ * that would overstate (the high brown fritillary, on Whitbarrow at the edge). Names too
+ * long for the full form keep "in the Lake District", up to about 60 characters.
+ */
+export function speciesTitle(
+  s: Pick<Species, "commonName" | "shortLocation" | "category" | "lakesPopulation" | "seasonalPresence" | "titlePlace">
+): string {
+  const v = verbs(s);
+  if (notInLakeDistrict(s)) return `${s.commonName}: Where to ${v.title} ${placePhrase(s.shortLocation)}`;
+  if (s.titlePlace) return `${s.commonName}: Where to ${v.title} ${s.titlePlace}`;
+  const full = `${s.commonName}: Where to ${v.title} in the Lake District`;
+  return full.length <= 60 ? full : `${s.commonName} in the Lake District`;
 }
 
-/** Species page meta description (also the WebPage description in its JSON-LD). */
+const MONTHS = /^(January|February|March|April|May|June|July|August|September|October|November|December)\b/;
+
+const MONTH_NAME = /\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/;
+const runningText = (t: string) => (MONTHS.test(t) ? t : t.charAt(0).toLowerCase() + t.slice(1));
+
+/**
+ * The season line in running text, without sources in brackets: its first sentence, and the
+ * second when the first is only "Year-round" and the second names months ("year-round,
+ * flowers July to September").
+ */
+function seasonPhrase(seasonalPresence: string): string {
+  const [first, second] = seasonalPresence
+    .split(/\.(?:\s|$)/)
+    .map((t) => t.replace(/\s*\([^)]*\)/g, "").trim())
+    .filter(Boolean);
+  if (/^year-round$/i.test(first) && second && second.length <= 35 && MONTH_NAME.test(second)) {
+    return `year-round, ${runningText(second)}`;
+  }
+  return runningText(first);
+}
+
+/**
+ * Species page meta description (also the WebPage description in its JSON-LD): where and
+ * when, in plain words, from the page's own place, season, identification and status.
+ * Parts are dropped from the end until it fits in 160 characters.
+ */
 export function speciesDescription(s: Species): string {
-  return truncateAtSentence(
-    s.description || `${s.commonName} (${s.scientificName}) on the Lake District. ${s.seasonalPresence}.`,
-    155
-  );
+  const v = verbs(s);
+  const status = s.conservationStatus && s.conservationStatus !== "unknown";
+  const extras = [
+    s.identification ? `how to identify ${v.them}` : null,
+    status ? `${v.their} UK conservation status` : null,
+  ].filter(Boolean) as string[];
+  const place = s.shortLocation?.trim() ?? "";
+  let build: (extra: string[]) => string;
+  if (notInLakeDistrict(s)) {
+    build = (extra) =>
+      `${s.commonName}: not found in the Lake District. Where to ${v.see} instead (${placePhrase(place)})${extra.length ? ", " + extra.join(" and ") : ""}.`;
+  } else {
+    const where = s.titlePlace ? ` (${s.titlePlace})` : LAKE_DISTRICT.has(place) ? "" : ` (${placePhrase(place)})`;
+    const head = s.titlePlace ? s.commonName : `${s.commonName} in the Lake District`;
+    const when = s.seasonalPresence ? `, when (${seasonPhrase(s.seasonalPresence)})` : "";
+    build = (extra) =>
+      `${head}: where to ${v.see}${where}${when}${extra.length ? (extra.length > 1 ? ", " : " and ") + extra.join(" and ") : ""}.`;
+  }
+  for (let n = extras.length; n >= 0; n--) {
+    const d = build(extras.slice(0, n));
+    if (d.length <= 160 || n === 0) return d;
+  }
+  return build([]);
 }
 
 /** The fields a species list card needs (keeps list pages light). */

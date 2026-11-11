@@ -8,7 +8,7 @@ import { MapPin, Clock, Eye, Leaf } from "lucide-react";
 
 const title = "Foulshaw Moss | Osprey Viewing, Wildlife & Practical Guide";
 const description =
-  "Foulshaw Moss wildlife guide. Cumbria Wildlife Trust raised bog with osprey viewing platform, bog asphodel, sundew, and large heath butterflies. Postcode LA11 6SN. Free entry.";
+  "Foulshaw Moss: Cumbria Wildlife Trust's raised bog, with an osprey viewing platform, bog asphodel, sundew and large heath butterflies. LA11 6SN. Free entry.";
 const url = "https://www.thelakeswildlife.co.uk/nature/foulshaw-moss";
 
 const faqs = [

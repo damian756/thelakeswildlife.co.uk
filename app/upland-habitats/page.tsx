@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ORG_REF, PAGES_UPDATED, SITE_LAUNCHED } from "@/lib/schema";
 
-const title = "Upland Fell Habitats | Wildlife of the Lake District High Fells";
+const title = "Upland Fell Habitats: Wildlife of the Lake District Fells";
 const description =
-  "Guide to the wildlife of the Lake District upland habitats. Blanket bog, heather moorland, rocky crags, and montane grassland. What lives there, why, and where to find it.";
+  "Wildlife of the Lake District's upland habitats: blanket bog, heather moorland, rocky crags and montane grassland. What lives there, why, and where to find it.";
 const url = "https://www.thelakeswildlife.co.uk/upland-habitats";
 
 export const metadata: Metadata = {

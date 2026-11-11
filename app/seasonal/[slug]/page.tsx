@@ -25,7 +25,7 @@ const seasonalPages: Record<string, SeasonalPageData> = {
   "osprey-season": {
     title: "Osprey Season in the Lake District",
     period: "April – August",
-    metaDescription: "When and where to see ospreys in and around the Lake District: Foulshaw Moss, Esthwaite Water and Bassenthwaite. Practical guide to timing, sites, and what to bring.",
+    metaDescription: "When and where to see ospreys in and around the Lake District: Foulshaw Moss, Esthwaite Water and Bassenthwaite. Timing, sites and what to bring.",
     heroWikipediaTitle: "Osprey",
     heroAlt: "Osprey in flight over water",
     intro: "Ospreys return to the Lake District from West Africa in March. The males arrive first, check out the nest, and wait. The females follow a week or two later. By April the pair is on the nest and by June there are chicks. Ospreys returned to the Lake District naturally in 2001, when a pair bred at Bassenthwaite Lake.",
@@ -140,7 +140,7 @@ const seasonalPages: Record<string, SeasonalPageData> = {
   "red-squirrel-watching": {
     title: "Red Squirrel Watching in the Lake District",
     period: "Year-round",
-    metaDescription: "Where to see red squirrels in the Lake District. Grizedale Forest, Whinlatter, Haweswater. Morning is best. Practical guide to the best sites and what to look for.",
+    metaDescription: "Where to see red squirrels in the Lake District: Grizedale Forest, Whinlatter and Haweswater. Morning is best. The sites and what to look for.",
     heroWikipediaTitle: "Red squirrel",
     heroAlt: "Red squirrel in woodland",
     intro: "Red squirrels are present year-round in the Lake District. They were largely gone from England south of a line from the Humber to the Mersey but the Lake District has held a significant population for decades. Grizedale Forest and Whinlatter are two places to go. Go in the morning.",
@@ -205,7 +205,7 @@ const seasonalPages: Record<string, SeasonalPageData> = {
   "winter-wildfowl": {
     title: "Winter Wildfowl on the Lake District Lakes",
     period: "October – March",
-    metaDescription: "Winter wildfowl guide for the Lake District. Goldeneye, goosander, tufted duck on Ullswater, Windermere, and Coniston. When to go, what to look for, and which lakes hold the best birds.",
+    metaDescription: "Winter wildfowl on the Lake District lakes: goldeneye, goosander and tufted duck on Ullswater, Windermere and Coniston. When to go and what to look for.",
     heroWikipediaTitle: "Common goldeneye",
     heroAlt: "Goldeneye drake on lake in winter",
     intro: "From October the big lakes fill up with ducks from Scandinavia and Russia. Goldeneye are the star. The males are striking black-and-white diving ducks with a yellow eye that gives the species its name. Ullswater is the most reliable lake. Windermere and Coniston are worth checking. Binoculars and a scan of the open water from the shore is all it takes.",

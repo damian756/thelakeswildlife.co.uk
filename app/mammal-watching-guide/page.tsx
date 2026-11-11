@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ORG_REF, PAGES_UPDATED, SITE_LAUNCHED } from "@/lib/schema";
 
-const title = "Mammal Watching in the Lake District | Red Deer, Otter, Pine Marten";
+const title = "Mammal Watching in the Lake District: Deer, Otters, Martens";
 const description =
-  "Mammal watching guide for the Lake District. Red deer rut in Martindale, otters on the rivers, red squirrels in Grizedale, pine marten sightings. Where to go, when, and what to look for.";
+  "Mammal watching in the Lake District: the red deer rut in Martindale, otters on the rivers, red squirrels in Grizedale, pine martens. Where to go and when.";
 const url = "https://www.thelakeswildlife.co.uk/mammal-watching-guide";
 
 export const metadata: Metadata = {

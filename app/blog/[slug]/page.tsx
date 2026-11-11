@@ -34,12 +34,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `https://www.thelakeswildlife.co.uk${siteImage(remoteHero, 1200)}`
       : undefined;
   const images = ogImage ? [{ url: ogImage, alt: post.heroAlt }] : undefined;
+  const title = post.metaTitle ?? post.title;
   return {
-    title: post.title,
+    title,
     description: post.metaDescription,
     alternates: { canonical: url },
     openGraph: {
-      title: post.title,
+      title,
       description: post.metaDescription,
       url,
       siteName: "The Lakes Wildlife",
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       images,
     },
-    twitter: { card: "summary_large_image", title: post.title, description: post.metaDescription, images },
+    twitter: { card: "summary_large_image", title, description: post.metaDescription, images },
   };
 }
 

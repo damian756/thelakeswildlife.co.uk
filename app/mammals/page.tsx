@@ -7,8 +7,8 @@ import type { Metadata } from "next";
 // Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
 export const revalidate = 86400;
 
-const title = "Lake District Mammals & Wildlife | Red Squirrels, Red Deer, Otters, Seals";
-const description = "Mammals of the Lake District. Red Squirrels at Grizedale, Red Deer rut at Martindale, Otters on the lakes and rivers, Grey Seals on the Cumbrian coast. Where to see them, ID tips and seasonal guidance.";
+const title = "Lake District Mammals: Red Squirrels, Red Deer, Otters, Bats";
+const description = "Mammals, reptiles and amphibians of the Lake District: red squirrels, red deer, otters, pine martens, bats and adders. Where and when to see each.";
 const url = "https://www.thelakeswildlife.co.uk/mammals";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default async function MammalsPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Mammals of the Lake District",
-    description: "Mammals of the Lake District. Red Squirrels at Grizedale, Red Deer at Martindale, Otters, Grey Seals and bats.",
+    description: "Mammals, reptiles and amphibians of the Lake District: red squirrels, red deer, otters, pine martens, bats and adders.",
     url,
     numberOfItems: species.length,
     itemListElement: species.map((s, i) => ({

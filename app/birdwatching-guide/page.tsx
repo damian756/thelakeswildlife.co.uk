@@ -6,9 +6,9 @@ import { AdSlot } from "@/components/AdSlot";
 // Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
 export const revalidate = 86400;
 
-const title = "Birdwatching in the Lake District | Guide, Best Spots & What to Bring";
+const title = "Birdwatching in the Lake District: Best Spots & What to Bring";
 const description =
-  "Where to go birdwatching in and around the Lake District. Leighton Moss bitterns, Foulshaw Moss ospreys, Haweswater ring ouzels. What to bring, when to go and what you'll see each season.";
+  "Where to go birdwatching in and around the Lake District: Leighton Moss bitterns, Foulshaw Moss ospreys, Haweswater ring ouzels. What to bring and when to go.";
 const url = "https://www.thelakeswildlife.co.uk/birdwatching-guide";
 
 export const metadata: Metadata = {

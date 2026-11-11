@@ -8,7 +8,7 @@ import { MapPin, Clock, Eye, AlertTriangle } from "lucide-react";
 
 const title = "RSPB Haweswater: Red Squirrels, Parking and What to See";
 const description =
-  "Visitor guide to Wild Haweswater, the RSPB and United Utilities restoration partnership in the eastern Lake District: red squirrels, ring ouzels, pied flycatchers and parking at Mardale Head. Free entry.";
+  "Wild Haweswater, the RSPB and United Utilities project in the eastern Lake District: red squirrels, ring ouzels, pied flycatchers, parking at Mardale Head.";
 const url = "https://www.thelakeswildlife.co.uk/nature/haweswater-rspb";
 
 const faqs = [

@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const revalidate = 86400;
 
 const title = "Lake District Birds | Species Guide, Where to See & ID Tips";
-const description = "Bird species of the Lake District. Ospreys at Foulshaw Moss, Peregrines on the crags, Pink-footed Geese, waders and wildfowl. Seasonal presence, identification and viewing tips for each.";
+const description = "Bird species of the Lake District: ospreys at Foulshaw Moss, peregrines on the crags, waders and wildfowl. Where and when to see each, and how to identify it.";
 const url = "https://www.thelakeswildlife.co.uk/birds";
 
 export const metadata: Metadata = {

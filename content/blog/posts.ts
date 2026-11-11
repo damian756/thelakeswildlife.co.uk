@@ -10,6 +10,8 @@ export interface BlogPost {
   category: BlogCategory;
   categoryLabel: string;
   title: string;
+  /** Search title when the title is too long for results pages (the page and cards keep `title`). */
+  metaTitle?: string;
   date: string; // ISO date string
   updated?: string; // ISO date the post was last revised, when later than date
   metaDescription: string;
@@ -64,7 +66,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Wildlife Hides in and Around the Lake District",
     date: "2026-11-11",
     metaDescription:
-      "Wildlife hides in and around the Lake District: Leighton Moss, the Wild Haweswater badger and woodland hides, the Whinlatter nature hide and the Foulshaw Moss platform. Times, booking and prices.",
+      "Wildlife hides in and around the Lake District: Leighton Moss, Wild Haweswater's badger and woodland hides, Whinlatter and Foulshaw Moss. Booking and prices.",
     heroLocalSrc: "/images/species/mammals/badger.jpg",
     heroAlt: "A badger standing at the edge of a pool, with its reflection",
     intro:
@@ -120,7 +122,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Temperate Rainforest in the Lake District: Where to Find It",
     date: "2026-11-11",
     metaDescription:
-      "What temperate rainforest is, why so little is left, and where to find it in the Lake District: Borrowdale National Nature Reserve and Naddle Forest at Wild Haweswater.",
+      "What temperate rainforest is, why so little is left, and where to find it in the Lake District: Borrowdale and Naddle Forest at Wild Haweswater.",
     heroLocalSrc: "/images/species/plants/wood-anemone.jpg",
     heroAlt: "Wood anemones in flower among their leaves",
     intro:
@@ -175,7 +177,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Where to See Ospreys in the Lake District",
     date: "2026-11-11",
     metaDescription:
-      "Where to see ospreys in and around the Lake District: Foulshaw Moss, Esthwaite Water and Bassenthwaite. When they arrive and leave, and why Haweswater is not on the list.",
+      "Ospreys in and around the Lake District: Foulshaw Moss, Esthwaite Water and Bassenthwaite, when they arrive and leave, and why Haweswater is not on the list.",
     heroWikipediaTitle: "Osprey",
     heroAlt: "Osprey perched on a branch",
     intro:
@@ -303,7 +305,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Ospreys at Bassenthwaite Lake: The Birds North of Keswick",
     date: "2026-11-11",
     metaDescription:
-      "Ospreys at Bassenthwaite Lake, north of Keswick. How they returned in 2001, why the Dodd Wood viewpoint no longer shows the nest, and where to look across the lake today.",
+      "Ospreys at Bassenthwaite Lake, north of Keswick: how they returned in 2001, why Dodd Wood no longer shows the nest, and where to look across the lake today.",
     heroWikipediaTitle: "Osprey",
     heroAlt: "Osprey perched on a branch",
     intro:
@@ -382,9 +384,10 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "seasonal-watching",
     categoryLabel: "Seasonal Watching",
     title: "Winter Wildfowl on Ullswater: Goldeneye, Goosander and What to Look For",
+    metaTitle: "Winter Wildfowl on Ullswater: Goldeneye and Goosander",
     date: "2026-11-11",
     metaDescription:
-      "Winter wildfowl guide for Ullswater. Goldeneye arrive in October. Goosander year-round. What to expect, where to watch from, and the best times for each species.",
+      "Winter wildfowl on Ullswater: goldeneye arrive in October, goosander stay all year. What to expect, where to watch from and the best times for each.",
     heroWikipediaTitle: "Common goldeneye",
     heroAlt: "Goldeneye drake swimming on open water",
     intro:
@@ -421,10 +424,11 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "habitat-guides",
     categoryLabel: "Habitat Guides",
     title: "Upland Birds for Beginners: What to Expect on the Lake District Fells",
+    metaTitle: "Upland Birds for Beginners on the Lake District Fells",
     date: "2026-05-01",
     updated: "2026-11-11",
     metaDescription:
-      "Guide to the birds of the Lake District uplands for beginners. Red grouse, ring ouzel, golden plover, peregrine, raven. What to look for and where to find each species.",
+      "The birds of the Lake District fells for beginners: red grouse, ring ouzel, golden plover, peregrine and raven. What to look for and where to find each.",
     heroWikipediaTitle: "Red grouse",
     heroAlt: "Red grouse standing in rough grass",
     intro:
@@ -502,7 +506,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-07-01",
     updated: "2026-11-11",
     metaDescription:
-      "The High Brown Fritillary, which Butterfly Conservation calls Britain's most endangered butterfly, still breeds on Whitbarrow at the Lake District's southern edge and flies at Arnside Knott just south. When it flies and how to tell it apart.",
+      "Butterfly Conservation calls the high brown fritillary Britain's most endangered butterfly. It still breeds on Whitbarrow, on the Lake District's southern edge.",
     heroWikipediaTitle: "High Brown Fritillary",
     heroAlt: "High brown fritillary butterfly resting on a leaf",
     intro:
@@ -542,7 +546,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "The Haweswater Golden Eagles: England's Last Pair",
     date: "2026-11-11",
     metaDescription:
-      "The golden eagles of Haweswater in the Lake District, from their return in 1969 to the death of the last male in 2015, and what has happened to golden eagles since.",
+      "The golden eagles of Haweswater, from their return in 1969 to the death of the last male in 2015, and what has happened to golden eagles since.",
     heroWikipediaTitle: "Golden eagle",
     heroAlt: "Golden eagle in flight against a blue sky",
     intro:
@@ -572,6 +576,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "species-spotlight",
     categoryLabel: "Species Spotlights",
     title: "Red Squirrels at Whinlatter Forest: England's Only Mountain Forest",
+    metaTitle: "Red Squirrels at Whinlatter Forest: Where and When to Look",
     date: "2026-03-20",
     updated: "2026-11-11",
     metaDescription:
@@ -687,7 +692,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-09-01",
     updated: "2026-11-11",
     metaDescription:
-      "A guide to Martindale in the Lake District: the red deer, the valley's history, how to get there, where to park, and how to watch the deer without disturbing them.",
+      "Martindale in the Lake District: the red deer, the valley's history, how to get there, where to park and how to watch the deer without disturbing them.",
     heroWikipediaTitle: "Red deer",
     heroAlt: "Red deer stag with large antlers standing in woodland",
     intro:
@@ -726,7 +731,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Haweswater in Winter: Wildlife in the Quiet Season",
     date: "2026-11-11",
     metaDescription:
-      "Haweswater in winter: salmon in Swindale Beck, red squirrels, redwings and fieldfares. Parking at Mardale Head, no toilets and no phone signal. What to know before you go.",
+      "Haweswater in winter: salmon in Swindale Beck, red squirrels, redwings and fieldfares. Parking at Mardale Head, no toilets and no phone signal.",
     heroWikipediaTitle: "Haweswater Reservoir",
     heroAlt: "Haweswater reservoir seen from the fells above",
     intro:

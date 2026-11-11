@@ -8,7 +8,7 @@ export const revalidate = 86400;
 
 const title = "Fishing in the Lake District | Tarns, Becks & Lakes Guide";
 const description =
-  "Fishing guide for the Lake District. Brown trout in the becks, pike and perch on the lakes, trout in the tarns. Where to go, what to fish for, permits, and the best spots.";
+  "Fishing in the Lake District: brown trout in the becks and tarns, pike and perch on the lakes. Where to go, what to fish for and the permits you need.";
 const url = "https://www.thelakeswildlife.co.uk/fishing-guide";
 
 export const metadata: Metadata = {

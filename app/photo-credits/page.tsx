@@ -6,7 +6,7 @@ import { allPhotoCredits, creditFor, wikipediaHero } from "@/lib/photo-credits";
 import { CreditText } from "@/components/PhotoCredit";
 import type { SpeciesCategory } from "@/lib/types";
 
-const title = "Photo Credits";
+const title = "Photo Credits: Photographers, Plates and Licences";
 const description = "Authors and licences of the Wikimedia Commons photographs and botanical plates used on The Lakes Wildlife.";
 const url = "https://www.thelakeswildlife.co.uk/photo-credits";
 

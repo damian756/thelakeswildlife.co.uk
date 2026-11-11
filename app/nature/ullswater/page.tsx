@@ -4,9 +4,9 @@ import { PhotoCredits } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
 import { MapPin, Eye, Clock, Waves } from "lucide-react";
 
-const title = "Ullswater Wildlife | Red Deer Rut, Goldeneye & Martindale Guide";
+const title = "Ullswater Wildlife: Red Deer Rut, Goldeneye & Martindale";
 const description =
-  "Ullswater wildlife guide. Red deer rut in Martindale in October. Goldeneye and wildfowl in winter. Ospreys, peregrines, and fell birds. Practical visitor information and what to see when.";
+  "Ullswater wildlife: the red deer rut in Martindale in October, goldeneye and wildfowl in winter, ospreys, peregrines and fell birds. What to see and when.";
 const url = "https://www.thelakeswildlife.co.uk/nature/ullswater";
 
 const faqs = [
