@@ -29,7 +29,7 @@ const STATIC_PATHS = [
   "/nature/leighton-moss-rspb", "/nature/ullswater",
   "/birdwatching-guide", "/mammal-watching-guide", "/fishing-guide",
   "/upland-habitats", "/woodland-habitats",
-  "/seasonal", "/blog", "/contact", "/privacy", "/terms",
+  "/seasonal", "/blog", "/contact", "/privacy", "/terms", "/photo-credits",
 ];
 
 // Keep in step with the keys of seasonalPages in app/seasonal/[slug]/page.tsx.

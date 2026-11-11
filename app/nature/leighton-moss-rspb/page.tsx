@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PhotoCredits } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
 import { MapPin, Clock, Eye, Train } from "lucide-react";
 
@@ -362,6 +363,16 @@ export default function LeightonMossPage() {
           </div>
         </section>
 
+
+        <PhotoCredits
+          className="border-t border-[var(--slate)]/10 pt-6 mt-10"
+          items={[
+            { label: "Otter", src: "/images/species/mammals/otter.jpg" },
+            { label: "Bittern", src: "/images/species/birds/bittern.jpg" },
+            { label: "Osprey", src: "/images/species/birds/osprey.jpg" },
+            { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
+          ]}
+        />
       </div>
     </>
   );

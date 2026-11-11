@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PhotoCreditLine } from "@/components/PhotoCredit";
 import type { Species, SpeciesCategory } from "@/lib/types";
 import { WikiImage } from "@/components/WikiImage";
 import { SpeciesJsonLd } from "@/components/SpeciesJsonLd";
@@ -160,6 +161,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                     localSrc={species.localImage}
                     alt={species.commonName}
                   />
+                  <PhotoCreditLine src={species.localImage} className="mt-2 text-white/80 [&_a]:text-white" />
                 </div>
               )}
             </div>

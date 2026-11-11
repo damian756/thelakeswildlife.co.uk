@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PhotoCredits } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
 import { MapPin, Eye, Clock, Waves } from "lucide-react";
 
@@ -358,6 +359,17 @@ export default function UllswaterPage() {
           </div>
         </section>
 
+
+        <PhotoCredits
+          className="border-t border-[var(--slate)]/10 pt-6 mt-10"
+          items={[
+            { label: "Great crested grebe", src: "/images/species/birds/great-crested-grebe.jpg" },
+            { label: "Red deer", src: "/images/species/mammals/red-deer.jpg" },
+            { label: "Goldeneye", src: "/images/species/birds/goldeneye.jpg" },
+            { label: "Goosander", src: "/images/species/birds/goosander.jpg" },
+            { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
+          ]}
+        />
       </div>
     </>
   );

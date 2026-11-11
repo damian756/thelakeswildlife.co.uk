@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { BLOG_POSTS } from "@/content/blog/posts";
-import { getWikipediaImage } from "@/lib/wikipedia";
+import { wikipediaHero } from "@/lib/photo-credits";
+import { PhotoCredits } from "@/components/PhotoCredit";
 import { BlogListClient } from "@/components/BlogListClient";
 
 const title = "Wildlife Blog";
@@ -31,7 +32,7 @@ export default async function BlogIndexPage() {
       heroSrc: post.heroLocalSrc != null
           ? post.heroLocalSrc
           : post.heroWikipediaTitle != null
-            ? await getWikipediaImage(post.heroWikipediaTitle).then((img) => img?.src ?? null)
+            ? wikipediaHero(post.heroWikipediaTitle)?.src ?? null
             : null,
     }))
   );
@@ -55,6 +56,15 @@ export default async function BlogIndexPage() {
 
       {/* Interactive list: client component handles search + filter */}
       <BlogListClient posts={postsWithImages} />
+      <div className="mx-auto max-w-6xl px-4 pb-12">
+        <PhotoCredits
+          items={BLOG_POSTS.map((p) =>
+            p.heroLocalSrc
+              ? { label: p.heroAlt, src: p.heroLocalSrc }
+              : { label: p.heroAlt, credit: p.heroWikipediaTitle ? wikipediaHero(p.heroWikipediaTitle) : null }
+          )}
+        />
+      </div>
     </div>
   );
 }

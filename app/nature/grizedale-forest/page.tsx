@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PhotoCredits } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
 import { MapPin, Clock, TreePine } from "lucide-react";
 
@@ -335,6 +336,15 @@ export default function GrizedalePage() {
           </div>
         </section>
 
+
+        <PhotoCredits
+          className="border-t border-[var(--slate)]/10 pt-6 mt-10"
+          items={[
+            { label: "Red deer", src: "/images/species/mammals/red-deer.jpg" },
+            { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
+            { label: "Goldeneye", src: "/images/species/birds/goldeneye.jpg" },
+          ]}
+        />
       </div>
     </>
   );

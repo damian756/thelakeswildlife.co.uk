@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { getAllSpecies } from "@/lib/species";
-import { getWikipediaImage } from "@/lib/wikipedia";
+import { wikipediaHero } from "@/lib/photo-credits";
+import { PhotoCredits } from "@/components/PhotoCredit";
 import { BLOG_POSTS } from "@/content/blog/posts";
 import { PhotoGallery } from "@/components/PhotoGallery";
 
@@ -80,14 +81,8 @@ export default async function HomePage() {
   const recentPosts = BLOG_POSTS.filter((p) => p.date <= today)
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 3);
-  const blogImages = await Promise.all(
-    recentPosts.map((p) =>
-      p.heroLocalSrc
-        ? Promise.resolve(p.heroLocalSrc)
-        : p.heroWikipediaTitle != null
-          ? getWikipediaImage(p.heroWikipediaTitle).then((img) => img?.src ?? null)
-          : Promise.resolve(null)
-    )
+  const blogImages = recentPosts.map((p) =>
+    p.heroLocalSrc ?? (p.heroWikipediaTitle != null ? wikipediaHero(p.heroWikipediaTitle)?.src ?? null : null)
   );
 
   const speciesCategories = [
@@ -388,7 +383,7 @@ export default async function HomePage() {
               { src: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel eating on a tree stump", caption: "Red squirrel. Whinlatter and Thirlmere are among Cumbria's red squirrel strongholds." },
               { src: "/images/species/birds/goldeneye.jpg", alt: "Goldeneye drake on water", caption: "Goldeneye and other winter wildfowl at Haweswater and Ullswater." },
               { src: "/images/species/plants/heather.jpg", alt: "Flowering heather", caption: "Heather moorland. The fells hold rare plants in the right habitats." },
-              { src: "/images/species/insects/emperor-moth.jpg", alt: "Moth with eyespots, wings open, on a twig", caption: "Emperor moth. Common on heather moorland in spring and summer." },
+              { src: "/images/species/insects/emperor-moth.jpg", alt: "Male emperor moth with four eyespots, wings spread, on a stem", caption: "Emperor moth. Common on heather moorland in spring and summer." },
               { src: "/images/species/mammals/red-deer.jpg", alt: "Red deer stag with large antlers standing in woodland", caption: "Red deer. The fells above Martindale are home to England's oldest native herd." },
             ]}
           />
@@ -397,6 +392,26 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Photo credits for the photos on this page */}
+      <div className="mx-auto max-w-6xl px-4 pb-12">
+        <PhotoCredits
+          items={[
+            { label: "Osprey", src: "/images/species/birds/osprey.jpg" },
+            ...speciesCategories.map((c) => ({ label: c.label, src: c.localImage })),
+            { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
+            { label: "Goldeneye", src: "/images/species/birds/goldeneye.jpg" },
+            { label: "Heather", src: "/images/species/plants/heather.jpg" },
+            { label: "Emperor moth", src: "/images/species/insects/emperor-moth.jpg" },
+            { label: "Red deer", src: "/images/species/mammals/red-deer.jpg" },
+            ...recentPosts.map((p) =>
+              p.heroLocalSrc
+                ? { label: p.heroAlt, src: p.heroLocalSrc }
+                : { label: p.heroAlt, credit: p.heroWikipediaTitle ? wikipediaHero(p.heroWikipediaTitle) : null }
+            ),
+          ]}
+        />
+      </div>
 
       {/* ── NETWORK BANNER ───────────────────────────────────── */}
       <section className="bg-[var(--fell)] text-white py-10">

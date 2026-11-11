@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PhotoCredits } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
 import { MapPin, Clock, Eye, Leaf } from "lucide-react";
 
@@ -337,6 +338,16 @@ export default function FoulshawMossPage() {
           </div>
         </section>
 
+
+        <PhotoCredits
+          className="border-t border-[var(--slate)]/10 pt-6 mt-10"
+          items={[
+            { label: "Sphagnum moss", src: "/images/species/plants/sphagnum-moss.jpg" },
+            { label: "Osprey", src: "/images/species/birds/osprey.jpg" },
+            { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
+            { label: "Bittern", src: "/images/species/birds/bittern.jpg" },
+          ]}
+        />
       </div>
     </>
   );

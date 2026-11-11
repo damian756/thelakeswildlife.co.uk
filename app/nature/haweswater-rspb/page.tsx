@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PhotoCredits } from "@/components/PhotoCredit";
 import type { Metadata } from "next";
 import { MapPin, Clock, Eye, AlertTriangle } from "lucide-react";
 
@@ -363,6 +364,18 @@ export default function HaweswaterPage() {
           </div>
         </section>
 
+
+        <PhotoCredits
+          className="border-t border-[var(--slate)]/10 pt-6 mt-10"
+          items={[
+            { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
+            { label: "Badger", src: "/images/species/mammals/badger.jpg" },
+            { label: "Pied flycatcher", src: "/images/species/birds/pied-flycatcher.jpg" },
+            { label: "Redstart", src: "/images/species/birds/redstart.jpg" },
+            { label: "Goldeneye", src: "/images/species/birds/goldeneye.jpg" },
+            { label: "Red deer", src: "/images/species/mammals/red-deer.jpg" },
+          ]}
+        />
       </div>
     </>
   );

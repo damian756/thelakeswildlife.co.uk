@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { BLOG_POSTS, getPostBySlug } from "@/content/blog/posts";
-import { getWikipediaImage } from "@/lib/wikipedia";
+import { creditFor, wikipediaHero } from "@/lib/photo-credits";
+import { CreditText } from "@/components/PhotoCredit";
 import { ClickableImage } from "@/components/ClickableImage";
 import { siteImage } from "@/lib/site-image";
 
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `https://www.thelakeswildlife.co.uk/blog/${slug}`;
   // Served through this site: Wikimedia refuses some crawlers (Facebook gets 403).
   const remoteHero = !post.heroLocalSrc && post.heroWikipediaTitle
-    ? (await getWikipediaImage(post.heroWikipediaTitle))?.src
+    ? wikipediaHero(post.heroWikipediaTitle)?.src
     : undefined;
   const ogImage = post.heroLocalSrc
     ? `https://www.thelakeswildlife.co.uk${post.heroLocalSrc}`
@@ -53,11 +54,11 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const heroImage = (post.heroLocalSrc != null || post.heroWikipediaTitle == null)
-    ? null
-    : await getWikipediaImage(post.heroWikipediaTitle);
-  const heroSrc = post.heroLocalSrc ?? heroImage?.src ?? null;
-  const heroPageUrl = heroImage?.pageUrl ?? null;
+  // The hero is the stored photo, or the Commons file recorded for the Wikipedia
+  // article in content/species/photo-credits.json, with its credit.
+  const wikiHero = post.heroLocalSrc == null && post.heroWikipediaTitle != null ? wikipediaHero(post.heroWikipediaTitle) : null;
+  const heroSrc = post.heroLocalSrc ?? wikiHero?.src ?? null;
+  const heroCredit = post.heroLocalSrc ? creditFor(post.heroLocalSrc) : wikiHero;
   const url = `https://www.thelakeswildlife.co.uk/blog/${slug}`;
 
   const articleJsonLd = {
@@ -108,16 +109,11 @@ export default async function BlogPostPage({ params }: Props) {
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
-          {heroPageUrl && (
-            <div className="absolute bottom-0 left-0 right-0 p-6 pointer-events-none">
-              <p className="text-xs text-white/60">
-                Image:{" "}
-                <a href={heroPageUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-white/80 pointer-events-auto">
-                  Wikimedia Commons
-                </a>
-              </p>
-            </div>
-          )}
+          <div className="absolute bottom-0 left-0 right-0 px-4 py-3 sm:px-6 pointer-events-none">
+            <p className="text-xs text-white/85 [&_a]:pointer-events-auto [text-shadow:0_1px_2px_rgba(0,0,0,0.8)]">
+              <CreditText credit={heroCredit} />
+            </p>
+          </div>
         </div>
       )}
 
