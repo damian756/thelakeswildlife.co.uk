@@ -8,7 +8,7 @@ import mammals from "@/content/species/mammals.json";
 import { BLOG_POSTS } from "@/content/blog/posts";
 import { slugify } from "@/lib/types";
 
-// The list from app/api/p (the old beacon), plus a few common crawlers and tools.
+// The list from the old /api/p beacon (removed Nov 2026), plus common crawlers and tools.
 const BOT_PATTERNS = [
   "bot", "crawler", "spider", "Googlebot", "Bingbot", "Slurp", "DuckDuckBot",
   "Baiduspider", "YandexBot", "facebookexternalhit", "Twitterbot", "LinkedInBot",

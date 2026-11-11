@@ -1,7 +1,7 @@
 export interface WikiImage {
-  /** 800px display version — used for the page hero */
+  /** 960px display version, used for the page hero (Wikimedia rejects some widths, such as 200 and 800) */
   src: string;
-  /** Original full-resolution URL — used in the lightbox */
+  /** Original full-resolution URL */
   fullSrc: string;
   /** Link back to the Wikimedia Commons page */
   pageUrl: string;
@@ -24,7 +24,7 @@ async function fetchWithRetry(url: string, retries = 3, delayMs = 500): Promise<
   return null;
 }
 
-/** Lightweight thumbnail (200px) for use on species listing cards */
+/** Lightweight thumbnail (330px) for use on species listing cards */
 export async function getCardThumbnail(title: string): Promise<string | null> {
   const res = await fetchWithRetry(
     `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`
@@ -34,7 +34,7 @@ export async function getCardThumbnail(title: string): Promise<string | null> {
     const data = await res.json();
     const base: string | undefined = data.originalimage?.source ?? data.thumbnail?.source;
     if (!base) return null;
-    const sized = base.replace(/\/\d+px-([^/]+)$/, "/200px-$1");
+    const sized = base.split("?")[0].replace(/\/\d+px-([^/]+)$/, "/330px-$1");
     return sized || base;
   } catch {
     return null;
@@ -90,11 +90,12 @@ export async function getWikipediaImage(title: string): Promise<WikiImage | null
 
     const original: string | undefined = data.originalimage?.source;
     const thumb: string | undefined = data.thumbnail?.source;
-    const base = original ?? thumb ?? null;
+    const base = (original ?? thumb ?? "").split("?")[0];
     if (!base) return null;
 
-    const src = base.replace(/\/\d+px-([^/]+)$/, "/800px-$1");
-    const fullSrc = original ?? src;
+    // Wikimedia serves only some thumbnail widths (250, 330, 500, 960 and 1280 work; 200 and 800 return 400).
+    const src = base.replace(/\/\d+px-([^/]+)$/, "/960px-$1");
+    const fullSrc = original ? original.split("?")[0] : src;
     const pageUrl =
       data.content_urls?.desktop?.page ??
       `https://en.wikipedia.org/wiki/${encodeURIComponent(title)}`;

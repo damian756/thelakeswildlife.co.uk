@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { siteImage } from "@/lib/site-image";
 import React, { useState, useEffect, useCallback } from "react";
 
 interface Props {
@@ -83,7 +84,7 @@ export function ClickableImage({ src, alt, className, caption, fill, priority, s
 
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={src}
+              src={siteImage(src, 1920)}
               alt={alt}
               className="max-w-full max-h-[82vh] object-contain rounded-lg shadow-2xl"
             />
