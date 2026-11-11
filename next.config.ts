@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    // Fewer candidate widths in each srcset (Next's default has eight). The
+    // source photos are 600 px wide; 1920 covers full-width heroes.
+    deviceSizes: [640, 828, 1200, 1920],
     remotePatterns: [
       {
         protocol: "https",

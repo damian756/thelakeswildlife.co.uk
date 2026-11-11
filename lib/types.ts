@@ -76,3 +76,23 @@ export function slugify(name: string): string {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 }
+
+/** The fields a species list card needs (keeps list pages light). */
+export type SpeciesCard = Pick<
+  Species,
+  "id" | "commonName" | "scientificName" | "category" | "conservationStatus" | "seasonalPresence" | "habitat" | "group" | "localImage"
+>;
+
+export function toSpeciesCard(s: Species): SpeciesCard {
+  return {
+    id: s.id,
+    commonName: s.commonName,
+    scientificName: s.scientificName,
+    category: s.category,
+    conservationStatus: s.conservationStatus,
+    seasonalPresence: s.seasonalPresence,
+    habitat: s.habitat,
+    group: s.group,
+    localImage: s.localImage,
+  };
+}

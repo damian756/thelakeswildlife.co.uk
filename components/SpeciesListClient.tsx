@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import type { Species, SpeciesCategory } from "@/lib/types";
+import type { SpeciesCard, SpeciesCategory } from "@/lib/types";
 import { classifySeason, type SeasonTag } from "@/lib/season";
 
-function SpeciesCardImage({ species }: { species: Species }) {
+function SpeciesCardImage({ species }: { species: SpeciesCard }) {
   if (!species.localImage) return null;
   return (
     <div className="relative aspect-[4/3] overflow-hidden bg-[var(--fog)]">
@@ -93,9 +93,11 @@ const seasonOptionsByCategory: Partial<Record<SpeciesCategory, SeasonOption[]>> 
   plants: plantSeasonOptions,
 };
 
+const PAGE_SIZE = 24;
+
 interface SpeciesListClientProps {
   category: SpeciesCategory;
-  species: Species[];
+  species: SpeciesCard[];
 }
 
 export function SpeciesListClient({ category, species }: SpeciesListClientProps) {
@@ -104,6 +106,10 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
   const [seasonFilter, setSeasonFilter] = useState<SeasonTag | "all">("all");
   const [habitatFilter, setHabitatFilter] = useState("all");
   const [sortBy, setSortBy] = useState<SortOption>("default");
+  // Render the full list lazily: the first cards on load, more as you scroll.
+  // Every species is still linked from the A to Z list on the server-rendered page.
+  const [limit, setLimit] = useState(PAGE_SIZE);
+  const sentinel = useRef<HTMLDivElement>(null);
 
   const seasonOptions = seasonOptionsByCategory[category] ?? null;
 
@@ -164,6 +170,24 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
     setHabitatFilter("all");
     setSortBy("default");
   }
+
+  const lazy = !hasActiveFilter && !(category === "mammals");
+  const shown = lazy ? filtered.slice(0, limit) : filtered;
+  const more = lazy && limit < filtered.length;
+
+  useEffect(() => {
+    if (!more) return;
+    const el = sentinel.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) setLimit((l) => l + PAGE_SIZE);
+      },
+      { rootMargin: "800px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [more, limit]);
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
@@ -314,13 +338,26 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
           })}
         </div>
       ) : (
-        <SpeciesGrid category={category} species={filtered} />
+        <>
+          <SpeciesGrid category={category} species={shown} />
+          {more && (
+            <div ref={sentinel} className="mt-8 text-center">
+              <button
+                type="button"
+                onClick={() => setLimit(filtered.length)}
+                className="rounded-lg border border-[var(--fog)] bg-white px-4 py-2 text-sm font-medium text-[var(--fell)] hover:border-[var(--lichen)] transition"
+              >
+                Show all {filtered.length} species
+              </button>
+            </div>
+          )}
+        </>
       )}
     </div>
   );
 }
 
-function SpeciesGrid({ category, species }: { category: SpeciesCategory; species: Species[] }) {
+function SpeciesGrid({ category, species }: { category: SpeciesCategory; species: SpeciesCard[] }) {
   return (
     <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {species.map((s) => {

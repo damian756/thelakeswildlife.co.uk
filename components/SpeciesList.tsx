@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Species, SpeciesCategory } from "@/lib/types";
 import { SpeciesListClient } from "./SpeciesListClient";
+import { toSpeciesCard } from "@/lib/types";
 
 const categoryLabels: Record<SpeciesCategory, string> = {
   birds: "Birds",
@@ -74,7 +75,35 @@ export function SpeciesList({ category, species }: SpeciesListProps) {
           </p>
         </div>
       ) : (
-        <SpeciesListClient category={category} species={species} />
+        <SpeciesListClient category={category} species={species.map(toSpeciesCard)} />
+      )}
+
+      {/* Every species linked in plain HTML, whatever the list above has rendered */}
+      {species.length > 0 && (
+        <nav aria-label={`All ${label.toLowerCase()}, A to Z`} className="mx-auto max-w-5xl px-4 pb-12">
+          <details className="rounded-xl border border-[var(--fog)] bg-white p-4">
+            <summary className="cursor-pointer text-sm font-semibold text-[var(--fell)]">
+              All {species.length} {label.toLowerCase()}, A to Z
+            </summary>
+            <ul className="mt-3 columns-2 sm:columns-3 gap-6 text-sm">
+              {[...species]
+                .sort((a, b) => a.commonName.localeCompare(b.commonName))
+                .map((s) => (
+                  <li key={s.id} className="mb-1 break-inside-avoid">
+                    <Link href={`/${category}/${s.id}`} className="text-[var(--lichen)] hover:underline">
+                      {s.commonName}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </details>
+          <p className="mt-3 text-xs text-[var(--slate)]">
+            Photos from Wikimedia Commons.{" "}
+            <Link href={`/photo-credits#${category}`} className="underline decoration-dotted underline-offset-2 hover:decoration-solid">
+              Authors and licences
+            </Link>
+          </p>
+        </nav>
       )}
     </div>
   );
