@@ -94,12 +94,13 @@ export default function UllswaterPage() {
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
+        {/* Dark enough that every line of text over the illustration is at least 4.5:1 at 390 and 1440. */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/88 via-black/72 via-55% to-black/62" />
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
           <nav className="flex items-center gap-1.5 text-xs text-white/80 mb-4">
-            <Link href="/" className="hover:text-white transition">Home</Link>
+            <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
-            <Link href="/nature" className="hover:text-white transition">Nature</Link>
+            <Link href="/nature" className="hover:text-white">Nature</Link>
             <span>/</span>
             <span className="text-white/80">Ullswater</span>
           </nav>
