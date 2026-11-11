@@ -186,16 +186,16 @@ export default async function HomePage() {
       <section className="bg-[var(--fog)] border-b border-[var(--reed)]/30">
         <div className="mx-auto max-w-6xl px-4 py-5">
           <div className="grid grid-cols-2 gap-x-6 gap-y-3 lg:flex lg:flex-wrap lg:gap-10 items-center text-sm text-[var(--slate)]">
-            <span className="flex items-center gap-2">
+            <span>
               <strong className="text-[var(--fell)] font-bold">{totalCount}+</strong> species recorded
             </span>
-            <span className="flex items-center gap-2">
+            <span>
               <strong className="text-[var(--fell)] font-bold">Ospreys</strong> at Foulshaw Moss
             </span>
-            <span className="flex items-center gap-2">
+            <span>
               <strong className="text-[var(--fell)] font-bold">Free entry</strong> to RSPB Haweswater
             </span>
-            <span className="flex items-center gap-2">
+            <span>
               <strong className="text-[var(--fell)] font-bold">214</strong> Wainwright fells
             </span>
           </div>
