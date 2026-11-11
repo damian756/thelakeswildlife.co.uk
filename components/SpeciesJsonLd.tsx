@@ -1,4 +1,5 @@
 import type { Species, SpeciesCategory } from "@/lib/types";
+import { speciesTitle } from "@/lib/types";
 
 const categoryLabels: Record<SpeciesCategory, string> = {
   birds: "Birds",
@@ -67,7 +68,7 @@ export function SpeciesJsonLd({ species, category, slug }: SpeciesJsonLdProps) {
   // ── Article ───────────────────────────────────────────────────────────────
   const article: Record<string, unknown> = {
     "@type": "Article",
-    headline: `${species.commonName} in the Lake District`,
+    headline: speciesTitle(species),
     description: species.description,
     about: { "@id": pageUrl },
     author: {

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PhotoCreditLine } from "@/components/PhotoCredit";
-import type { Species, SpeciesCategory } from "@/lib/types";
+import type { ConservationStatus, Species, SpeciesCategory } from "@/lib/types";
+import { notInLakeDistrict } from "@/lib/types";
 import { WikiImage } from "@/components/WikiImage";
 import { SpeciesJsonLd } from "@/components/SpeciesJsonLd";
 
@@ -58,6 +59,39 @@ const difficultyColor: Record<string, string> = {
   specialist: "text-red-700 bg-red-50 border-red-200",
 };
 
+/**
+ * The conservation callout text. The Lake District sentence is left out for a
+ * species the page says does not live here (black grouse, mountain hare,
+ * Scotch argus), so the callout never contradicts the page.
+ */
+function conservationNote(category: SpeciesCategory, status: ConservationStatus, livesHere: boolean): string {
+  const parts: string[] = [];
+  if (category === "birds") {
+    if (status === "red") {
+      parts.push("This species is on the UK Red List for Birds (BoCC5), indicating serious concern about its population decline or unfavourable conservation status.");
+      if (livesHere) parts.push("Monitoring in the Lake District contributes to national population tracking.");
+    } else if (status === "amber") {
+      parts.push("This species is on the UK Amber List for Birds (BoCC5), indicating moderate concern. Population monitoring and habitat management remain important for its continued recovery.");
+    } else if (status === "green") {
+      parts.push("This species is on the UK Green List, indicating a healthy population status in the UK context.");
+      if (livesHere) parts.push("It remains an important component of Lake District biodiversity.");
+    }
+  } else if (status === "red") {
+    parts.push("This species is of serious conservation concern in the UK.");
+    if (livesHere) parts.push("Its presence in the Lake District is important for local and national monitoring and habitat management.");
+  } else if (status === "amber") {
+    parts.push("This species is of moderate conservation concern.");
+    if (livesHere) parts.push("Population monitoring and habitat management in the Lake District support its continued recovery.");
+  } else if (status === "green") {
+    parts.push(
+      livesHere
+        ? "This species has a favourable conservation status in the UK and remains an important part of Lake District biodiversity."
+        : "This species has a favourable conservation status in the UK."
+    );
+  }
+  return parts.join(" ");
+}
+
 interface SpeciesDetailProps {
   category: SpeciesCategory;
   species: Species;
@@ -69,6 +103,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
   const label = categoryLabels[category];
   const status = species.conservationStatus ?? "unknown";
   const sc = statusConfig[status];
+  const livesHere = !notInLakeDistrict(species);
 
   const hasAtAGlance =
     species.order ||
@@ -287,12 +322,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                   UK {sc.label}
                 </h3>
                 <p className={`text-sm leading-relaxed ${sc.calloutText}`}>
-                  {category === "birds" && status === "red" && "This species is on the UK Red List for Birds (BoCC5), indicating serious concern about its population decline or unfavourable conservation status. Monitoring in the Lake District contributes to national population tracking."}
-                  {category === "birds" && status === "amber" && "This species is on the UK Amber List for Birds (BoCC5), indicating moderate concern. Population monitoring and habitat management remain important for its continued recovery."}
-                  {category === "birds" && status === "green" && "This species is on the UK Green List, indicating a healthy population status in the UK context. It remains an important component of Lake District biodiversity."}
-                  {category !== "birds" && status === "red" && "This species is of serious conservation concern in the UK. Its presence in the Lake District is important for local and national monitoring and habitat management."}
-                  {category !== "birds" && status === "amber" && "This species is of moderate conservation concern. Population monitoring and habitat management in the Lake District support its continued recovery."}
-                  {category !== "birds" && status === "green" && "This species has a favourable conservation status in the UK and remains an important part of Lake District biodiversity."}
+                  {conservationNote(category, status, livesHere)}
                 </p>
                 {species.externalLinks && (
                   <div className="flex flex-wrap gap-3 mt-3">

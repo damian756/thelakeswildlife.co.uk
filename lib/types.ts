@@ -77,6 +77,55 @@ export function slugify(name: string): string {
     .replace(/^-|-$/g, '');
 }
 
+/**
+ * True when the species does not live in the Lake District: its page says
+ * "Not found" or "None" for the Lake District, or its season starts
+ * "Not found in the Lake District". Pages then leave out any line that
+ * presents the species as part of the Lake District's wildlife.
+ */
+export function notInLakeDistrict(s: Pick<Species, 'lakesPopulation' | 'seasonalPresence'>): boolean {
+  return (
+    /^(not found|none)\b/i.test((s.lakesPopulation ?? '').trim()) ||
+    /^not found in the lake district/i.test((s.seasonalPresence ?? '').trim())
+  );
+}
+
+/**
+ * The place part of a species page title, with the right preposition:
+ * "in the Lake District", "on the high fells", "at Foulshaw Moss",
+ * "in the Pennines". Anything not listed here takes "in".
+ */
+const PLACE_PHRASES: Record<string, string> = {
+  'Lake District': 'in the Lake District',
+  'Lakeland fells': 'on the Lakeland fells',
+  'High fells': 'on the high fells',
+  'Eastern fells': 'on the eastern fells',
+  'Eastern Lakes': 'in the eastern Lakes',
+  'Helvellyn': 'on Helvellyn',
+  'Langdale Pikes': 'on the Langdale Pikes',
+  'Derwent': 'on the Derwent',
+  'Honister Pass': 'at Honister Pass',
+  'Foulshaw Moss': 'at Foulshaw Moss',
+  'RSPB Haweswater': 'at RSPB Haweswater',
+  'Whitbarrow': 'on Whitbarrow',
+  'Windermere': 'on Windermere',
+  'Ullswater': 'on Ullswater',
+  'Bassenthwaite': 'on Bassenthwaite',
+  'Lakeland moorland': 'on Lakeland moorland',
+  'Ambleside streams': 'on Ambleside streams',
+};
+
+export function placePhrase(shortLocation?: string): string {
+  const place = shortLocation?.trim();
+  if (!place) return 'in the Lake District';
+  return PLACE_PHRASES[place] ?? `in ${place}`;
+}
+
+/** Species page title, e.g. "Osprey at RSPB Haweswater", "Black Grouse in the Pennines". */
+export function speciesTitle(s: Pick<Species, 'commonName' | 'shortLocation'>): string {
+  return `${s.commonName} ${placePhrase(s.shortLocation)}`;
+}
+
 /** The fields a species list card needs (keeps list pages light). */
 export type SpeciesCard = Pick<
   Species,
