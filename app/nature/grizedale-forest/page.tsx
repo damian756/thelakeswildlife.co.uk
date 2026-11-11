@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/mammals/red-deer.jpg", alt: "Red deer stag with large antlers standing in woodland" }] },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/illustrations/reserve-grizedale.webp", alt: "Illustration of a mixed conifer and broadleaf forest with a winding gravel trail, ferns and dappled light" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -91,8 +91,8 @@ export default function GrizedalePage() {
       {/* Hero */}
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
-          src="/images/species/mammals/red-deer.jpg"
-          alt="Red deer stag with large antlers standing in woodland"
+          src="/images/illustrations/reserve-grizedale.webp"
+          alt="Illustration of a mixed conifer and broadleaf forest with a winding gravel trail, ferns and dappled light"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
@@ -340,7 +340,6 @@ export default function GrizedalePage() {
         <PhotoCredits
           className="border-t border-[var(--slate)]/10 pt-6 mt-10"
           items={[
-            { label: "Red deer", src: "/images/species/mammals/red-deer.jpg" },
             { label: "Red squirrel", src: "/images/species/mammals/red-squirrel.jpg" },
             { label: "Goldeneye", src: "/images/species/birds/goldeneye.jpg" },
           ]}

@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/species/birds/great-crested-grebe.jpg", alt: "Great crested grebe swimming on calm water" }] },
+  openGraph: { title, description, url, siteName: "The Lakes Wildlife", type: "article", images: [{ url: "/images/illustrations/reserve-ullswater.webp", alt: "Illustration of a long lake below steep fells with a small steamer crossing the calm water" }] },
   twitter: { card: "summary_large_image", title, description },
 };
 
@@ -89,8 +89,8 @@ export default function UllswaterPage() {
       {/* Hero */}
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
-          src="/images/species/birds/great-crested-grebe.jpg"
-          alt="Great crested grebe swimming on calm water"
+          src="/images/illustrations/reserve-ullswater.webp"
+          alt="Illustration of a long lake below steep fells with a small steamer crossing the calm water"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
@@ -363,7 +363,6 @@ export default function UllswaterPage() {
         <PhotoCredits
           className="border-t border-[var(--slate)]/10 pt-6 mt-10"
           items={[
-            { label: "Great crested grebe", src: "/images/species/birds/great-crested-grebe.jpg" },
             { label: "Red deer", src: "/images/species/mammals/red-deer.jpg" },
             { label: "Goldeneye", src: "/images/species/birds/goldeneye.jpg" },
             { label: "Goosander", src: "/images/species/birds/goosander.jpg" },

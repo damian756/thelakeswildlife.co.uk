@@ -158,8 +158,8 @@ export default async function HomePage() {
           {/* Right panel — hero image */}
           <div className="relative min-h-[300px] lg:min-h-0 overflow-hidden bg-[var(--fell)]">
             <Image
-              src="/images/species/birds/osprey.jpg"
-              alt="Osprey perched on a branch"
+              src="/images/illustrations/home-hero.webp"
+              alt="Illustration of a misty Lakeland valley with layered fells, a still lake, woodland on the lower slopes and birds in a pale sky"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover object-center"

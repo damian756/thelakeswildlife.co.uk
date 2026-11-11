@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 const title = "Seasonal Wildlife Guides | Lake District";
@@ -48,8 +49,11 @@ export default function SeasonalPage() {
   return (
     <>
       {/* Page header */}
-      <div className="bg-[var(--fell)] text-white">
-        <div className="mx-auto max-w-5xl px-4 py-10">
+      <div className="relative overflow-hidden bg-[var(--fell)] text-white">
+        <Image src="/images/illustrations/section-seasonal.webp" alt="Illustration of a Lakeland valley that changes from spring through summer and autumn to winter snow across the scene" fill priority sizes="100vw" className="object-cover object-center" />
+        <div className="absolute inset-0 bg-[var(--fell)]/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--fell)]/80 via-[var(--fell)]/40 to-transparent" />
+        <div className="relative mx-auto max-w-5xl px-4 py-10">
           <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>

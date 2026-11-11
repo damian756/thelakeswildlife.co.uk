@@ -1,7 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Species, SpeciesCategory } from "@/lib/types";
 import { SpeciesListClient } from "./SpeciesListClient";
 import { toSpeciesCard } from "@/lib/types";
+
+// Section hero illustrations (computer-generated; see the terms page).
+const SECTION_ILLUSTRATIONS: Record<SpeciesCategory, { src: string; alt: string }> = {
+  birds: { src: "/images/illustrations/section-birds.webp", alt: "Illustration of a wetland below the fells, with a wading bird in the shallows and a bird of prey soaring above the crags" },
+  insects: { src: "/images/illustrations/section-insects.webp", alt: "Illustration of a summer meadow beside a pond, with butterflies over the flowers and dragonflies above the water" },
+  plants: { src: "/images/illustrations/section-plants.webp", alt: "Illustration of an oak woodland floor with blue woodland flowers, ferns and mossy rocks opening onto a daisy meadow" },
+  mammals: { src: "/images/illustrations/section-mammals.webp", alt: "Illustration of woodland edge and open fell, with a small red squirrel on a branch and a distant red deer on the hillside" },
+};
 
 const categoryLabels: Record<SpeciesCategory, string> = {
   birds: "Birds",
@@ -32,8 +41,11 @@ export function SpeciesList({ category, species }: SpeciesListProps) {
   return (
     <div>
       {/* Header — server-rendered, no interactivity needed */}
-      <div className="bg-[var(--fell)] text-white">
-        <div className="mx-auto max-w-5xl px-4 py-10">
+      <div className="relative overflow-hidden bg-[var(--fell)] text-white">
+        <Image src={SECTION_ILLUSTRATIONS[category].src} alt={SECTION_ILLUSTRATIONS[category].alt} fill priority sizes="100vw" className="object-cover object-center" />
+        <div className="absolute inset-0 bg-[var(--fell)]/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--fell)]/80 via-[var(--fell)]/40 to-transparent" />
+        <div className="relative mx-auto max-w-5xl px-4 py-10">
           <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
