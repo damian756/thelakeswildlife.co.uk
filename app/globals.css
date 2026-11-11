@@ -5,7 +5,10 @@
   --fell:    #162118;
   --tarn:    #1E4A5C;
   --lichen:  #3E7060;
-  --copper:  #A86C2A;
+  /* Copper accent, two shades so text passes 4.5:1 on both backgrounds
+     (was #A86C2A: 3.7:1 on mist, 3.0:1 on fog, 3.8:1 on fell). */
+  --copper:  #7F4D1D; /* on light: 5.9:1 mist, 7.0:1 white, 4.8:1 fog */
+  --copper-light: #C8884A; /* on dark: 5.6:1 on fell */
   --mist:    #E8EDEA;
   --fog:     #CED8D2;
   --peat:    #162118;

@@ -122,7 +122,7 @@ export default function FoulshawMossPage() {
             ].map(({ icon: Icon, stat, label }) => (
               <div key={label} className="bg-black/40 backdrop-blur rounded-xl px-3 py-2.5 border border-white/20">
                 <div className="flex items-center gap-1.5 mb-0.5">
-                  <Icon className="w-3 h-3 text-[var(--copper)]" />
+                  <Icon className="w-3 h-3 text-[var(--copper-light)]" />
                   <p className="text-white/80 text-[10px] uppercase tracking-wider">{label}</p>
                 </div>
                 <p className="font-display text-sm font-bold text-white">{stat}</p>
@@ -143,7 +143,7 @@ export default function FoulshawMossPage() {
               { href: "#seasonal", label: "Seasonal Highlights" },
               { href: "#getting-there", label: "Getting There" },
             ].map(({ href, label }) => (
-              <a key={href} href={href} className="text-white/60 hover:text-[var(--copper)] transition-colors font-medium">{label}</a>
+              <a key={href} href={href} className="text-white/60 hover:text-[var(--copper-light)] transition-colors font-medium">{label}</a>
             ))}
           </div>
         </div>

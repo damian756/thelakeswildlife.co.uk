@@ -128,12 +128,12 @@ export default async function HomePage() {
         <div className="grid lg:grid-cols-2 min-h-[520px]">
           {/* Left panel */}
           <div className="bg-[var(--fell)] flex flex-col justify-center px-8 md:px-14 py-16 lg:py-20 relative z-10">
-            <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-4">
+            <p className="text-[var(--copper-light)] text-xs font-bold uppercase tracking-widest mb-4">
               Haweswater · Grizedale · Martindale
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Wildlife <span className="whitespace-nowrap">in the</span><br />
-              <span className="text-[var(--copper)]">Lake District.</span>
+              <span className="text-[var(--copper-light)]">Lake District.</span>
             </h1>
             <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-lg">
               {totalCount}+ species recorded. An independent guide to the birds, insects, plants
@@ -142,7 +142,7 @@ export default async function HomePage() {
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/nature/haweswater-rspb"
-                className="rounded-lg bg-[var(--copper)] px-6 py-3 text-sm font-semibold text-[var(--fell)] hover:opacity-90 transition"
+                className="rounded-lg bg-[var(--copper-light)] px-6 py-3 text-sm font-semibold text-[var(--fell)] hover:opacity-90 transition"
               >
                 RSPB Haweswater →
               </Link>
@@ -416,7 +416,7 @@ export default async function HomePage() {
       {/* ── NETWORK BANNER ───────────────────────────────────── */}
       <section className="bg-[var(--fell)] text-white py-10">
         <div className="mx-auto max-w-6xl px-4">
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">
+          <p className="text-[var(--copper-light)] text-xs font-bold uppercase tracking-widest mb-2">
             The Lakes Network
           </p>
           <p className="text-white/80 text-sm max-w-2xl mb-5">

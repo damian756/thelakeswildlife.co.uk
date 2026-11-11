@@ -350,7 +350,7 @@ export default async function SeasonalSlugPage({ params }: Props) {
             <span>/</span>
             <span className="text-white/80">{page.title}</span>
       </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper-light)] text-xs font-bold uppercase tracking-widest mb-3">
             Seasonal guide · {page.period}
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">{page.title}</h1>

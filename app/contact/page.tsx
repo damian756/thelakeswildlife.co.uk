@@ -18,7 +18,7 @@ export default function ContactPage() {
       {/* Page header */}
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-3xl px-4 py-10">
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper-light)] text-xs font-bold uppercase tracking-widest mb-3">
             Get in touch
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">

@@ -78,7 +78,7 @@ export default function UplandHabitatsPage() {
             <span>/</span>
             <span className="text-white/80">Upland habitats</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper-light)] text-xs font-bold uppercase tracking-widest mb-3">
             Habitat guide · Lake District uplands
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
