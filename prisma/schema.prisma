@@ -18,3 +18,14 @@ model PageView {
   @@index([path])
   @@index([createdAt])
 }
+
+// Plain visit counts (Nov 2026): the page, the day and a number. Nothing about
+// the visitor is stored. Created by prisma/sql/2026-11-page-count.sql; written
+// by app/api/count. PageView above is the old table and is no longer written.
+model PageCount {
+  path  String
+  day   DateTime @db.Date
+  count Int      @default(0)
+
+  @@id([path, day])
+}

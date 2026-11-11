@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Lora, Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { VisitCount } from "@/components/VisitCount";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | The Lakes Wildlife",
   },
   description:
-    "Independent guide to wildlife in the Lake District: RSPB Haweswater, ospreys, red deer, red squirrels, and a database of birds, insects, plants and mammals.",
+    "Independent guide to wildlife in the Lake District: ospreys, red deer, red squirrels, nature reserves, and a database of birds, insects, plants and mammals.",
   openGraph: {
     title: "The Lakes Wildlife",
     description: "Birds, nature and wildlife in the Lake District: Haweswater, Grizedale and beyond.",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: `${BASE_URL}/images/species/birds/osprey.jpg`,
         width: 1200,
         height: 630,
-        alt: "Osprey at RSPB Haweswater, Lake District",
+        alt: "An osprey, the bird of prey that nests in and around the Lake District in summer",
       },
     ],
   },
@@ -66,10 +66,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  icons: {
-    icon: [{ url: "/icon", sizes: "32x32", type: "image/png" }],
-    apple: [{ url: "/icon", sizes: "32x32", type: "image/png" }],
-  },
 };
 
 export default function RootLayout({
@@ -87,7 +83,8 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <Analytics />
+        {/* Plain visit counts (path and day only), production only. */}
+        {process.env.VERCEL_ENV === "production" ? <VisitCount /> : null}
       </body>
     </html>
   );
