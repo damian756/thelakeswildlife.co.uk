@@ -42,6 +42,9 @@ export default function TermsPage() {
             Attribution is provided on each species page. If you believe any image has been used incorrectly,
             please <a href="/contact" className="text-[var(--lichen)] hover:underline">contact us</a>.
           </p>
+          <p className="mt-3">
+            Illustrations on this site are computer-generated. Species photographs are credited to their photographers.
+          </p>
         </section>
 
         <section>
