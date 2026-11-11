@@ -345,7 +345,7 @@ export default async function HomePage() {
                 <h3 className="mt-1 font-semibold text-[var(--fell)] leading-snug mb-2 group-hover:text-[var(--lichen)] transition">
                   {post.title}
                 </h3>
-                <p className="text-xs text-[var(--slate)]/60">{formatDate(post.date)}</p>
+                <p className="text-xs text-[var(--slate)]/90">{formatDate(post.date)}</p>
               </div>
             </Link>
           ))}

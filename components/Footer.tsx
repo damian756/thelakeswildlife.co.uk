@@ -18,7 +18,7 @@ export function Footer() {
             <p className="text-white/60 text-sm leading-relaxed mt-2">
               Independent guide to birds, nature and wildlife in the Lake District, from RSPB Haweswater to Grizedale Forest.
             </p>
-            <p className="text-white/40 text-xs mt-4">
+            <p className="text-white/60 text-xs mt-4">
               Part of{" "}
               <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-white/60 hover:text-white transition">
                 The Lakes Network
@@ -28,7 +28,7 @@ export function Footer() {
 
           {/* Species */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">Species</h3>
+            <h2 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">Species</h2>
             <ul className="space-y-2.5 text-sm text-white/70">
               {[
                 { href: "/birds", label: "Birds" },
@@ -47,7 +47,7 @@ export function Footer() {
 
           {/* Nature */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">Nature</h3>
+            <h2 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">Nature</h2>
             <ul className="space-y-2.5 text-sm text-white/70">
               {[
                 { href: "/nature/haweswater-rspb", label: "RSPB Haweswater" },
@@ -68,7 +68,7 @@ export function Footer() {
 
           {/* Network */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">The Lakes Network</h3>
+            <h2 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">The Lakes Network</h2>
             <ul className="space-y-2.5 text-sm text-white/70">
               {[
                 { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide: restaurants, accommodation & walks" },
@@ -97,7 +97,7 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40">
+        <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/60">
           <span>© {year} The Lakes Wildlife · Built by <a href="https://churchtownmedia.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">Churchtown Media</a></span>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-white/60 transition">Privacy</Link>

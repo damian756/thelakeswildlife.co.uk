@@ -80,8 +80,14 @@ export default function RootLayout({
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="xOo9IjOVu15HATFXVbk5mA" async></script>
       </head>
       <body className="min-h-screen flex flex-col bg-[var(--mist)] text-[var(--peat)] antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:rounded-md focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:font-medium focus:text-[var(--fell)] focus:shadow"
+        >
+          Skip to content
+        </a>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="main" className="flex-1">{children}</main>
         <Footer />
         {/* Plain visit counts (path and day only), production only. */}
         {process.env.VERCEL_ENV === "production" ? <VisitCount /> : null}

@@ -79,7 +79,7 @@ export default function SeasonalPage() {
                 <h2 className="font-display text-xl font-bold text-[var(--fell)] group-hover:text-[var(--lichen)] transition mb-1">
                   {s.title}
                 </h2>
-                <p className="text-xs text-[var(--slate)]/60 mb-3">{s.period}</p>
+                <p className="text-xs text-[var(--slate)]/90 mb-3">{s.period}</p>
                 <p className="text-sm text-[var(--slate)] leading-relaxed">{s.desc}</p>
               </Link>
             </li>
