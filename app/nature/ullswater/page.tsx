@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "Are there ospreys at Ullswater?",
-    a: "Ospreys fish on Ullswater between April and August. They are not breeding on the lake itself but birds from the wider Cumbrian reintroduction fish the lake regularly. Watch from the shore for a large, gull-sized bird of prey diving feet-first into the water.",
+    a: "Ospreys fish on Ullswater between April and August. They are not breeding on the lake itself. Ospreys returned to the Lake District naturally, first breeding near Bassenthwaite Lake in 2001. Watch from the shore for a large, gull-sized bird of prey diving feet-first into the water.",
   },
   {
     q: "Can I take the Ullswater Steamers for wildlife watching?",
@@ -109,7 +109,7 @@ export default function UllswaterPage() {
             Ullswater Wildlife
           </h1>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mb-8">
-            Red deer rut in October in Martindale. Goldeneye on the water in winter. Ospreys fishing in summer. One of the best all-round wildlife destinations in the Lake District, with the landscape making every season worth the journey.
+            Red deer rut in October in Martindale. Goldeneye on the water in winter. Ospreys fishing in summer.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
             {[
@@ -178,7 +178,7 @@ export default function UllswaterPage() {
             Ullswater is the second largest lake in the Lake District, stretching nine miles from Pooley Bridge in the north to Glenridding in the south. The lake is shaped by the glacial valleys of the eastern fells, Helvellyn to the west and the High Street range to the east, and sits at around 145 metres above sea level. It is deep, clear, and cold.
           </p>
           <p className="text-[var(--slate)] leading-relaxed">
-            For wildlife, Ullswater delivers across all seasons. Martindale to the east is one of the finest red deer landscapes in England. The lake itself holds excellent wildfowl in winter. Ospreys and peregrines use the surrounding fells. The combination of open water, wooded shorelines, upland fell, and the sheltered Martindale valley gives a diversity of habitat that few single locations match.
+            For wildlife, Ullswater delivers across all seasons. The fells above Martindale, to the east, are home to England&rsquo;s oldest native herd of red deer. The lake itself holds excellent wildfowl in winter. Ospreys and peregrines use the surrounding fells. The area mixes open water, wooded shorelines, upland fell and the sheltered Martindale valley.
           </p>
         </section>
 
@@ -187,8 +187,8 @@ export default function UllswaterPage() {
           <div className="rounded-2xl overflow-hidden border border-[var(--fell)]/10 md:flex mb-6">
             <div className="relative h-52 md:h-auto md:w-72 flex-none">
               <Image
-                src="https://images.unsplash.com/photo-1484723091739-30990338e8e0?w=600&q=80"
-                alt="Red deer stag roaring during the October rut"
+                src="/images/species/mammals/red-deer.jpg"
+                alt="Red deer stag with large antlers standing in woodland"
                 fill sizes="(max-width: 768px) 100vw, 288px"
                 className="object-cover"
               />
@@ -197,7 +197,7 @@ export default function UllswaterPage() {
               <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">October only</p>
               <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">The Martindale Red Deer Rut</h2>
               <p className="text-[var(--slate)] text-sm leading-relaxed">
-                The Martindale valley is one of the oldest managed red deer forests in England. The herd numbers in the hundreds and during the October rut the stags are visible throughout the day, though dawn and dusk are the most dramatic. You will hear the stags roaring before you see them.
+                The fells above Martindale hold England&rsquo;s oldest native herd of red deer, centred on the ancient deer forest of The Nab. The herd numbers in the hundreds and during the October rut the stags are visible throughout the day, though dawn and dusk are the most dramatic. You will hear the stags roaring before you see them.
               </p>
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function UllswaterPage() {
               {
                 name: "Goldeneye",
                 season: "October to April",
-                image: "https://images.unsplash.com/photo-1618229136403-eb6d4025a1d3?w=600&q=80",
+                image: "/images/species/birds/goldeneye.jpg",
                 desc: "Diving ducks from Scandinavia and northern Russia. The male is black and white with an iridescent green head and yellow eye. Watch courtship displays from Pooley Bridge shore on sunny winter mornings.",
               },
               {
@@ -292,10 +292,10 @@ export default function UllswaterPage() {
                 <h3 className="font-semibold text-[var(--fell)]">By Car</h3>
               </div>
               <ul className="space-y-2 text-sm text-[var(--slate)]">
-                <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Glenridding (CA11 0PD) — main car park, Steamers southern terminus</li>
-                <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Pooley Bridge (CA10 2NQ) — northern end, good for wildfowl</li>
-                <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> A592 runs the western shore. No road along the eastern shore.</li>
-                <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Martindale: from Pooley Bridge east through Dacre, then south</li>
+                <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Glenridding (CA11 0PD): main car park, Steamers southern terminus</li>
+                <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Pooley Bridge (CA10 2NQ): northern end, good for wildfowl</li>
+                <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> A592 runs the western shore. A narrow dead-end road runs south from Pooley Bridge along the eastern shore to Howtown, with a clearway where stopping is an offence.</li>
+                <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Martindale: take the road south from Pooley Bridge through Howtown. Parking near Howtown is limited to The Hause and a few small laybys.</li>
               </ul>
             </div>
             <div className="bg-[var(--fog)] rounded-xl p-5">
@@ -304,7 +304,7 @@ export default function UllswaterPage() {
                 <h3 className="font-semibold text-[var(--fell)]">Ullswater Steamers</h3>
               </div>
               <p className="text-sm text-[var(--slate)] leading-relaxed">
-                The Steamers connect Glenridding, Howtown, and Pooley Bridge by water. This is the best way to see the full lake and the wildlife on it. Book in advance in summer. For Martindale deer, disembark at Howtown and drive south into the valley.
+                The Steamers connect Glenridding, Howtown and Pooley Bridge by water, and a round-the-lake cruise takes in the full length of Ullswater. You can buy tickets online or on the day at the piers. The Aira Force pier is out of use until 2027. There is no car parking at Howtown pier.
               </p>
             </div>
           </div>
@@ -334,7 +334,7 @@ export default function UllswaterPage() {
               {
                 href: "/nature/haweswater-rspb",
                 name: "RSPB Haweswater",
-                desc: "Ospreys, pied flycatchers, red squirrels",
+                desc: "Red squirrels, ring ouzels, pied flycatchers",
                 image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80",
               },
               {

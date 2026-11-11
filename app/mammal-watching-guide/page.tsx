@@ -17,11 +17,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Where is the best place to see otters in the Lake District?",
-    a: "Leighton Moss RSPB (LA5 0SW) has resident otters and the Alan Turing hide gives good sightings, especially at dawn and dusk. Rivers flowing into the larger lakes — the Rothay at Rydal, the Brathay near Ambleside — also hold otters. Dawn is the most reliable time year-round.",
+    a: "Leighton Moss RSPB (LA5 0SW) has resident otters, and the RSPB reports sightings most days from the Causeway, Lower and Lilian's hides. Rivers flowing into the larger lakes, such as the Rothay at Rydal and the Brathay near Ambleside, also hold otters. Dawn is the most reliable time year-round.",
   },
   {
     q: "Are there pine martens in the Lake District?",
-    a: "Pine martens have been reintroduced to the Lake District as part of the Vincent Wildlife Trust's recovery programme. Confirmed sightings are increasing. The dense conifer woodland in the central fells is the most likely habitat. Trail cameras sometimes pick them up at night.",
+    a: "Pine martens are spreading from southern Scotland and naturally recolonising parts of Cumbria, the Vincent Wildlife Trust says, but they are still scarce in England. Trail cameras sometimes pick them up at night. Report any sighting to the Vincent Wildlife Trust.",
   },
   {
     q: "Where can I see badgers in the Lake District?",
@@ -29,11 +29,11 @@ const faqs = [
   },
   {
     q: "What is the best time of year for mammal watching in the Lake District?",
-    a: "October for the red deer rut in Martindale. Spring (April/May) for otter cubs and badger cubs. Year-round for red squirrels. Dawn and dusk year-round give the best chance of most species.",
+    a: "October for the red deer rut in Martindale. Spring (April/May) for badger cubs. Year-round for red squirrels. Otters can breed at any time of year, but most cubs are born between May and August. Dawn and dusk year-round give the best chance of most species.",
   },
   {
     q: "Are there water voles in the Lake District?",
-    a: "Water voles are present in some areas. The Eden Rivers Trust and Cumbria Wildlife Trust run water vole recovery projects. The lower becks and river margins with dense bankside vegetation are the habitat. Numbers are low and sightings require patience and luck.",
+    a: "Water voles had vanished from the Lake District, the Eden Rivers Trust says. Since 2023 the Trust and its partners have released several hundred, and reintroduced water voles now live in the becks at Wild Haweswater. The lower becks and river margins with dense bankside vegetation are the habitat. Numbers are low and sightings require patience and luck.",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function MammalWatchingGuidePage() {
             Mammal Watching in the Lake District
           </h1>
           <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
-            Red deer on the open fell, otters on the rivers, red squirrels in the conifer woodland. The Lake District holds a better range of mammals than most places in England. Getting up early helps. Knowing where to look helps more.
+            Red deer on the open fell, otters on the rivers, red squirrels in the conifer woodland. The Lake District has a good range of mammals. Getting up early helps. Knowing where to look helps more.
           </p>
         </div>
       </div>
@@ -100,7 +100,7 @@ export default function MammalWatchingGuidePage() {
             { stat: "Oct", label: "Red deer rut (Martindale)" },
             { stat: "Dawn", label: "Best time for most species" },
             { stat: "Year-round", label: "Red squirrels" },
-            { stat: "April/May", label: "Otter cubs" },
+            { stat: "May/Aug", label: "Most otter cubs born" },
           ].map(({ stat, label }) => (
             <div key={label} className="rounded-xl bg-[var(--fog)] p-4 text-center">
               <p className="font-display text-xl font-bold text-[var(--fell)]">{stat}</p>
@@ -112,10 +112,10 @@ export default function MammalWatchingGuidePage() {
         <div className="prose prose-slate max-w-none">
           <h2>Red deer</h2>
           <p>
-            Red deer are the largest wild land mammal in Britain and the Lake District holds one of England's better populations. Martindale in the eastern Lakes is the main stronghold — the Dalemain Estate has managed a deer forest here for centuries and the herd is significant. Grizedale Forest in the south holds deer throughout the year. The Caldbeck Fells and parts of the western fells also hold deer.
+            Red deer are the largest wild land mammal in Britain. Martindale in the eastern Lakes is the main stronghold: the Dalemain Estate says it is home to the oldest native, pure-bred red deer population in the UK. Grizedale Forest in the south holds deer throughout the year, though the Mammal Society says southern Lake District populations are now almost entirely red-sika hybrids. The Caldbeck Fells and parts of the western fells also hold deer.
           </p>
           <p>
-            The October rut is the event. Stags roar, fight, and herd hinds throughout the month. Martindale at dawn in the second week of October is one of the great wildlife experiences in northern England. The stags are visible on the open hillside, the roaring carries across the valley, and the light at that time of year makes every photograph worth taking.
+            The October rut is the event. Stags roar, fight, and herd hinds throughout the month. Martindale at dawn in the second week of October is well worth the early start. The stags are visible on the open hillside, the roaring carries across the valley, and the light at that time of year makes every photograph worth taking.
           </p>
           <p>
             Outside the rut, red deer are most visible at dawn and dusk. They move onto open ground from cover in low light. On the fell tops above Grizedale in November, a herd of hinds on the skyline at first light is a regular sight. Binoculars are enough for most views; a telescope is worth it for the Martindale rut if you want detail at distance.
@@ -126,10 +126,10 @@ export default function MammalWatchingGuidePage() {
             Otters are resident on most of the major rivers and lake systems in the Lake District. They were absent or very scarce in the 1970s and 1980s due to organochlorine pesticide contamination of river systems. The recovery since the 1990s has been substantial and otter sightings are now regular across the county.
           </p>
           <p>
-            Leighton Moss RSPB (LA5 0SW) near Silverdale is the most reliable otter site in the region. The open water lagoon hide — the Alan Turing hide — overlooks good otter habitat and sightings at dawn and dusk are consistent through the year, more so in winter when lower water levels concentrate fish. The otters here are used to the hides and will hunt through the viewing area.
+            Leighton Moss RSPB (LA5 0SW) near Silverdale is a good place to see otters. The RSPB reports otters most days from the Causeway, Lower and Lilian&apos;s hides.
           </p>
           <p>
-            On the rivers, look for otters along the Rothay between Grasmere and Ambleside, the Brathay near Skelwith Bridge, and the Kent near Kendal. Dawn on a quiet stretch of river in April or May, when the otter family is active and the light is coming up, is exactly as good as it sounds. Look for spraints (droppings) on prominent rocks at the water's edge as an indicator of regular otter use.
+            On the rivers, look for otters along the Rothay between Grasmere and Ambleside, the Brathay near Skelwith Bridge, and the Kent near Kendal. Dawn on a quiet stretch of river, with the light coming up, is a good time to look. Look for spraints (droppings) on prominent rocks at the water's edge as an indicator of regular otter use.
           </p>
 
           <h2>Red squirrel</h2>
@@ -142,10 +142,10 @@ export default function MammalWatchingGuidePage() {
 
           <h2>Pine marten</h2>
           <p>
-            Pine martens were functionally extinct in England for most of the 20th century. The Vincent Wildlife Trust launched a reintroduction programme in England in 2019 and 2020, translocating animals from Scotland. The Lake District is part of the recovery area and confirmed sightings are increasing in the conifer-rich central fells.
+            By 1915 pine martens were confined to a few remote areas of Britain. The Vincent Wildlife Trust says they are now spreading from southern Scotland and naturally recolonising parts of Cumbria and Northumberland, although they are still scarce in England. The Trust&apos;s own reintroductions in England were in the Forest of Dean (2019 to 2021) and Devon (2024 to 2025).
           </p>
           <p>
-            Pine martens are most active at night and at dusk. They are cat-sized, dark brown with a pale yellow-cream chest patch (the bib), and move through the tree canopy with remarkable speed. They are opportunistic feeders — berries, birds, small mammals, eggs, carrion. A bird feeder in the right woodland edge habitat can attract pine martens to close range.
+            Pine martens are most active at night and at dusk. They are cat-sized, dark brown with a pale yellow-cream chest patch (the bib), and move through the tree canopy with remarkable speed. They are opportunistic feeders: berries, birds, small mammals, eggs, carrion. A bird feeder in the right woodland edge habitat can attract pine martens to close range.
           </p>
           <p>
             Trail cameras are the most effective way to confirm pine marten presence in an area. If you are staying in a woodland property in the central Lakes, a camera trap placed near the woodland edge or near a bird feeder in September or October stands a reasonable chance. Report confirmed sightings to the Vincent Wildlife Trust to contribute to the monitoring programme.
@@ -163,10 +163,10 @@ export default function MammalWatchingGuidePage() {
 
           <h2>Smaller mammals</h2>
           <p>
-            The Lake District uplands hold mountain hare in small numbers on the highest fells — mainly Skiddaw and the northern fells above 600 metres. These are animals near the southern edge of their English range and sightings require patience and altitude. They turn white in winter, which makes them easier to spot against snow-free ground.
+            Mountain hares were released in the Lake District in the late 1800s, but the Mammal Society says only the hares taken to the Peak District survived. In England they now live only in the Peak District.
           </p>
           <p>
-            Water voles are present in some beck systems in the lower valleys. The Eden Rivers Trust runs active water vole reintroduction and monitoring programmes. They are well-camouflaged and require deliberate searching of bankside vegetation on sunny days in the middle of the day when they are most active. The characteristic feeding stations — nibbled grass stems and food scraps on flat rocks at the water's edge — are a reliable indicator.
+            Water voles had vanished from the Lake District, the Eden Rivers Trust says. Since 2023 the Trust and its partners have released several hundred, and reintroduced water voles now live in the becks at Wild Haweswater. They are well-camouflaged and require deliberate searching of bankside vegetation on sunny days in the middle of the day when they are most active. The characteristic feeding stations, nibbled grass stems and food scraps on flat rocks at the water&apos;s edge, are a reliable indicator.
           </p>
           <p>
             Stoats and weasels are present throughout the fells, though rarely seen. Stoats can be more visible in winter when they turn white (ermine). Short-tailed voles and wood mice are abundant and draw in the predators, so a quiet sit in moorland or woodland edge habitat at dusk often produces stoat or weasel activity.

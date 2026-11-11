@@ -45,8 +45,8 @@ export default function ContactPage() {
                 The Lakes Wildlife is an independent guide built by{" "}
                 <a href="https://churchtownmedia.co.uk" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                   Churchtown Media
-                </a>{" "}
-                , part of the{" "}
+                </a>
+                , part of{" "}
                 <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-[var(--lichen)] hover:underline">
                   The Lakes Network
                 </a>.

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { MapPin, Clock, Eye, TreePine } from "lucide-react";
+import { MapPin, Clock, TreePine } from "lucide-react";
 
 const title = "Grizedale Forest | Red Squirrels, Red Deer & Wildlife Guide";
 const description =
@@ -11,7 +11,7 @@ const url = "https://www.thelakeswildlife.co.uk/nature/grizedale-forest";
 const faqs = [
   {
     q: "Is Grizedale Forest free to enter?",
-    a: "Entry to the forest itself is free. Forestry England charges for car parking at the main visitor centre (LA22 0QJ). Day rates apply. The red squirrel feeders at the visitor centre are free to watch.",
+    a: "Entry to the forest itself is free. Forestry England charges for car parking at the main visitor centre (LA22 0QJ). Parking is pay on exit: free for under 20 minutes, then £2.90 for the first hour in the main car park, up to £14 for the day. The red squirrel feeders at the visitor centre are free to watch.",
   },
   {
     q: "When is the best time to see red squirrels at Grizedale?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "What walking routes are at Grizedale?",
-    a: "Forestry England maintains a network of marked trails from the visitor centre, ranging from 1.5 miles to 10 miles. The Ridding Wood Trail (2.5 miles) is excellent for wildlife. The Courthouse Trail (5 miles) gives the best combination of red deer habitat and forest views. Trail maps are available at the visitor centre.",
+    a: "Forestry England waymarks six walking trails, from the 1-mile Ridding Wood Trail to the 11-mile Silurian Way. The Carron Crag Trail (5 miles) climbs to the highest point in the forest, and the Grizedale Tarn Trail (4.5 miles) reaches Grizedale's only natural tarn. Pick up a map from Visitor Information or download one from Forestry England.",
   },
 ];
 
@@ -37,7 +37,7 @@ const pageJsonLd = [
     "@type": "TouristAttraction",
     name: "Grizedale Forest",
     description:
-      "Forestry England forest between Coniston Water and Windermere. Red squirrels, red deer, red kites. Visitor centre with feeders. One of England's best sites for seeing red squirrels.",
+      "Forestry England forest between Coniston Water and Windermere. Red squirrels, red deer, red kites. Visitor centre with feeders.",
     url,
     geo: { "@type": "GeoCoordinates", latitude: 54.3333, longitude: -3.0333 },
     address: {
@@ -92,7 +92,7 @@ export default function GrizedalePage() {
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=1400&q=80"
-          alt="Grizedale Forest in the Lake District — ancient woodland and conifer plantation"
+          alt="Grizedale Forest in the Lake District: ancient woodland and conifer plantation"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
@@ -112,7 +112,7 @@ export default function GrizedalePage() {
             Grizedale Forest
           </h1>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mb-8">
-            Red squirrels at the visitor centre feeders, red deer in the valley, red kites over the canopy. One of the best places in England to see all three in a single morning. Go early.
+            Red squirrels at the visitor centre feeders, red deer in the valley, red kites over the canopy. Go early.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
             {[
@@ -161,7 +161,7 @@ export default function GrizedalePage() {
               ["Postcode", "LA22 0QJ"],
               ["Managed by", "Forestry England"],
               ["Entry", "Free (car park charged)"],
-              ["Parking", "Pay and display at visitor centre"],
+              ["Parking", "Pay on exit (number-plate recognition)"],
               ["Facilities", "Visitor centre, cafe, toilets, cycle hire"],
               ["Dogs", "Allowed on leads in most areas"],
               ["Best for", "Red squirrels, red deer, red kites"],
@@ -191,8 +191,8 @@ export default function GrizedalePage() {
           <div className="rounded-2xl overflow-hidden border border-[var(--fell)]/10 md:flex mb-6">
             <div className="relative h-52 md:h-auto md:w-72 flex-none">
               <Image
-                src="https://images.unsplash.com/photo-1508283710081-1e54cbfa8b78?w=600&q=80"
-                alt="Red squirrel at Grizedale Forest feeders"
+                src="/images/species/mammals/red-squirrel.jpg"
+                alt="Red squirrel eating a nut on a mossy tree stump"
                 fill sizes="(max-width: 768px) 100vw, 288px"
                 className="object-cover"
               />
@@ -201,12 +201,12 @@ export default function GrizedalePage() {
               <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">Year-round, best in morning</p>
               <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">Red Squirrels</h2>
               <p className="text-[var(--slate)] text-sm leading-relaxed">
-                The feeders at the visitor centre are the most reliable red squirrel spot in the southern Lakes. Forestry England maintains them year-round and the squirrels are habituated to people to the point where close observation is straightforward. Go before 11am for the best activity.
+                Start at the feeders by the visitor centre. Forestry England maintains them year-round and the squirrels are habituated to people to the point where close observation is straightforward. Go before 11am for the best activity.
               </p>
             </div>
           </div>
           <p className="text-[var(--slate)] leading-relaxed mb-4">
-            Away from the feeders, red squirrels range widely through the forest. The Ridding Wood Trail and the Courthouse Trail both pass through good habitat. Quiet walkers who move slowly and stop often do better than those who march through. Look up as much as along — squirrels moving through the canopy are often detected by sound before sight, a rustling and occasional shower of spruce cone fragments.
+            Away from the feeders, red squirrels range widely through the forest. The Ridding Wood Trail, which starts by the visitor centre car park, passes through oak woodland. Quiet walkers who move slowly and stop often do better than those who march through. Look up as much as along. Squirrels moving through the canopy are often detected by sound before sight: a rustling and occasional shower of spruce cone fragments.
           </p>
           <div className="bg-[var(--fog)] rounded-xl p-4">
             <p className="font-semibold text-[var(--fell)] text-sm mb-2">Why Grizedale still has red squirrels</p>
@@ -221,11 +221,11 @@ export default function GrizedalePage() {
             Red deer are present year-round but the October rut is the reason to plan a specific visit. Stags roar from dawn, and the sound carries far through the valley. The Bogle Crag area and the Courthouse area both hold deer regularly. Arrive at first light, stay quiet, and move slowly.
           </p>
           <p className="text-[var(--slate)] leading-relaxed mb-6">
-            Outside the rut, red deer are most likely at dawn and dusk. Hinds are around 120kg, stags considerably more. In summer, stags in velvet are often seen in bachelor groups in forest clearings. In winter, herds of hinds and last year's calves move through the valleys. Patient walking on the Courthouse Trail in November or December regularly produces deer sightings.
+            Outside the rut, red deer are most likely at dawn and dusk. Hinds are around 120kg, stags considerably more. In summer, stags in velvet are often seen in bachelor groups in forest clearings. In winter, herds of hinds and last year&rsquo;s calves move through the valleys.
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <p className="font-semibold text-amber-800 text-sm mb-1">Rut timing</p>
-            <p className="text-amber-700 text-sm">October is peak rut. Dawn and dusk are most active. The Bogle Crag area and Courthouse Trail are the best locations. Arrive at first light. Keep quiet and at distance from rut stags.</p>
+            <p className="text-amber-700 text-sm">October is peak rut. Dawn and dusk are most active. Arrive at first light. Keep quiet and at distance from rut stags.</p>
           </div>
         </section>
 
@@ -247,7 +247,7 @@ export default function GrizedalePage() {
             May and June are the peak months for woodland birds. Grizedale holds breeding pied flycatchers, redstarts, wood warblers, and tree pipits, all summer migrants that arrive in April and leave by August. Resident year-round species include treecreepers, nuthatches, siskins, redpolls, and crossbills in the conifer sections.
           </p>
           <p className="text-[var(--slate)] leading-relaxed">
-            Listen for the liquid song of the wood warbler in the mature oak woodland, a sustained descending trill, one of the most distinctive bird sounds in the Lakes. It is a declining species across the UK and Grizedale is one of the better remaining strongholds in the north of England.
+            Listen for the liquid song of the wood warbler in the mature oak woodland, a sustained descending trill, one of the most distinctive bird sounds in the Lakes. It is a declining species across the UK.
           </p>
         </section>
 
@@ -256,9 +256,10 @@ export default function GrizedalePage() {
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-6">Walking Trails</h2>
           <div className="space-y-3">
             {[
-              { name: "Ridding Wood Trail", distance: "2.5 miles", time: "1.5 hrs", detail: "Excellent for wildlife. Passes through red squirrel habitat and the sculpture trail. Starts and ends at the visitor centre. A good combination of forest and open fell edge." },
-              { name: "Courthouse Trail", distance: "5 miles", time: "2.5 hrs", detail: "Best combination of red deer habitat and forest views. Passes through the Bogle Crag and Courthouse areas. Good for red deer year-round, especially November to February." },
-              { name: "Grizedale Tarn Trail", distance: "4 miles", time: "2 hrs", detail: "Reaches the forest tarn above the main valley. Good views of the surrounding fells and the two lakes. The high point gives the best scanning for red kites in thermal conditions." },
+              { name: "Ridding Wood Trail", distance: "1 mile", time: "45 mins", detail: "The shortest and easiest trail, mainly tarmac with some small steep inclines. Passes through oak woodland and unusual, ornate trees, with sculptures along the way. Starts by the visitor centre car park." },
+              { name: "Bogle Crag Trail", distance: "3 miles", time: "2 hrs", detail: "Starts at Bogle Crag car park and crosses the small Bogle Bridge, then climbs through mixed woodland to a view south over the Rusland Valley before dropping back to the car park." },
+              { name: "Grizedale Tarn Trail", distance: "4.5 miles", time: "2 hrs", detail: "Varied terrain, passing the remains of the old Grizedale Hall as it climbs to Grizedale Tarn, the forest's only natural tarn. The return crosses Mark's Bridge, built by volunteers, and drops back onto the Ridding Wood Trail." },
+              { name: "Carron Crag Trail", distance: "5 miles", time: "3 hrs", detail: "A strenuous walk to the highest point in the forest, a trig point on a rocky outcrop. It follows the stream along the valley bottom, then climbs to views over Coniston Old Man and the central fells." },
             ].map((trail) => (
               <div key={trail.name} className="bg-[var(--fog)] rounded-xl p-4 flex gap-4">
                 <div className="flex-none">
@@ -279,7 +280,7 @@ export default function GrizedalePage() {
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">Getting There and Parking</h2>
           <div className="bg-[var(--fog)] rounded-xl p-5">
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-3">
-              The visitor centre (LA22 0QJ) is signposted from Hawkshead village to the north and from the B5285 Coniston to Ambleside road. Parking charges apply at the visitor centre car park. Check current rates on the Forestry England website.
+              The visitor centre (LA22 0QJ) is signposted from Hawkshead village to the north and from the B5285 Coniston to Ambleside road. Parking charges apply at the visitor centre car park. It is pay on exit by number plate: pay by card at the machines, online with Park with Ease within 48 hours, or in cash at the visitor centre during opening hours. Check current rates on the Forestry England website.
             </p>
             <p className="text-sm text-[var(--slate)] leading-relaxed">
               Additional smaller car parks are at the forest edges (Bogle Crag, Force Mills) for those who want to avoid the visitor centre. The visitor centre has a cafe, toilets, and cycle hire.
@@ -311,7 +312,7 @@ export default function GrizedalePage() {
               {
                 href: "/nature/haweswater-rspb",
                 name: "RSPB Haweswater",
-                desc: "Ospreys and fell woodland birds",
+                desc: "Red squirrels, ring ouzels, pied flycatchers",
                 image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80",
               },
               {

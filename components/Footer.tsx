@@ -19,7 +19,7 @@ export function Footer() {
               Independent guide to birds, nature and wildlife in the Lake District, from RSPB Haweswater to Grizedale Forest.
             </p>
             <p className="text-white/40 text-xs mt-4">
-              Part of the{" "}
+              Part of{" "}
               <a href="https://thelakes.network" target="_blank" rel="noopener" className="text-white/60 hover:text-white transition">
                 The Lakes Network
               </a>

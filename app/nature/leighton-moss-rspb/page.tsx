@@ -19,15 +19,15 @@ const faqs = [
   },
   {
     q: "Can you hear bittern booming at Leighton Moss?",
-    a: "Yes. Bitterns boom at Leighton Moss from February to June. The booming sound is extraordinary, a deep resonating call that carries across the reedbed. Dawn is the most reliable time. February and March are peak booming season.",
+    a: "Yes. Bitterns boom at Leighton Moss from February, with the peak from March to May. The booming sound is extraordinary, a deep resonating call that carries across the reedbed. Dawn is the most reliable time.",
   },
   {
     q: "Are there otters at Leighton Moss?",
-    a: "Yes. Otters are resident and regularly seen. Dawn and dusk are the best times. The Alan Turing hide overlooking the open water gives the best chance. Otters are more visible in winter when water levels change and fish are more concentrated.",
+    a: "Yes. Otters are resident and regularly seen. Dawn and dusk are the best times. In November 2026 the RSPB reported otters most days from the Causeway, Lower and Lilian's hides. Otters are more visible in winter when water levels change and fish are more concentrated.",
   },
   {
     q: "Where is Leighton Moss in relation to the Lake District?",
-    a: "Leighton Moss is near Silverdale, Lancashire, on the southern edge of the Lake District national park. About 45 minutes from Windermere, 20 minutes from Arnside. The site has a train station (Silverdale station) directly adjacent.",
+    a: "Leighton Moss is near Silverdale, Lancashire, on the southern edge of the Lake District national park. About 45 minutes from Windermere, 20 minutes from Arnside. Silverdale station is about 250 metres from the reserve.",
   },
 ];
 
@@ -112,14 +112,14 @@ export default function LeightonMossPage() {
             Leighton Moss RSPB
           </h1>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mb-8">
-            The largest reedbed in north-west England. Bittern, marsh harrier, bearded tit, otter. Worth it. RSPB members get in free. Non-members pay an entry charge that is justified.
+            The largest reedbed in north-west England. Bittern, marsh harrier, bearded tit, otter. RSPB members get in free. Non-members pay an entry charge, £10 for adults.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
             {[
               { icon: MapPin, stat: "LA5 0SW", label: "Postcode" },
               { icon: Clock, stat: "Charged", label: "Entry (RSPB free)" },
               { icon: Eye, stat: "All year", label: "Open" },
-              { icon: Train, stat: "Feb–Jun", label: "Bittern booming" },
+              { icon: Train, stat: "Feb–May", label: "Bittern booming" },
             ].map(({ icon: Icon, stat, label }) => (
               <div key={label} className="bg-black/40 backdrop-blur rounded-xl px-3 py-2.5 border border-white/20">
                 <div className="flex items-center gap-1.5 mb-0.5">
@@ -162,10 +162,10 @@ export default function LeightonMossPage() {
               ["Managed by", "RSPB"],
               ["Entry", "Charged (RSPB members free)"],
               ["Parking", "Pay and display at visitor centre"],
-              ["Facilities", "Visitor centre, cafe, shop, toilets, 6 hides"],
-              ["Transport", "Silverdale train station adjacent"],
+              ["Facilities", "Visitor centre, cafe, shop, toilets, 7 hides, Skytower"],
+              ["Transport", "Silverdale station 250m. Buses 49, 51, 550"],
               ["Best for", "Bittern, marsh harrier, bearded tit, otter"],
-              ["Dogs", "On leads in car park only"],
+              ["Dogs", "Car parks, Causeway and dog route only"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between border-b border-[var(--slate)]/10 pb-1.5">
                 <dt className="text-[var(--slate)]/60">{k}</dt>
@@ -179,10 +179,10 @@ export default function LeightonMossPage() {
         <section className="mb-12">
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">About Leighton Moss</h2>
           <p className="text-[var(--slate)] leading-relaxed mb-4">
-            Leighton Moss sits in a low-lying valley between the limestone hills of Silverdale and the Kent estuary. The RSPB has managed the reserve since 1964. The reedbed, around 100 hectares of Phragmites reed, is the largest in north-west England and is surrounded by willow scrub, wet grassland, and open water pools that together create one of the most productive wildlife habitats in the country.
+            Leighton Moss sits in a low-lying valley between the limestone hills of Silverdale and the Kent estuary. The RSPB has managed the reserve since 1964. The reedbed is the largest in north-west England, and the RSPB has added a further 200 hectares of reedbed in recent years. Around it are mudflats, coastal marsh, saltwater lagoons, woodland and limestone grassland.
           </p>
           <p className="text-[var(--slate)] leading-relaxed">
-            The entry charge is worth it. The RSPB&rsquo;s management of the water levels, reedbed cutting, and grazing regime is what makes this place work for the wildlife it holds. Six hides overlook different parts of the reserve, from the main reedbed to the open lagoons and the coastal salt marsh.
+            The RSPB cuts back the reedbeds in summer and winter, manages the water levels all year and grazes the inner marshes with cattle. Seven hides and the 9m Skytower viewpoint look out over the reserve. Five hides overlook the reedbed, and the Allen and Eric Morecambe hides overlook the saltmarsh and Morecambe Bay from their own car park, a mile from the visitor centre.
           </p>
         </section>
 
@@ -198,10 +198,10 @@ export default function LeightonMossPage() {
               />
             </div>
             <div className="bg-[var(--fog)] p-6 flex flex-col justify-center md:flex-1">
-              <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">February to June (booming)</p>
+              <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">February to May (booming)</p>
               <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">Bittern</h2>
               <p className="text-[var(--slate)] text-sm leading-relaxed">
-                The flagship species at Leighton Moss and the main reason many people make the journey. The booming call is extraordinary: a deep, resonating foghorn sound that carries across the reserve and beyond. Males boom from February to June. Dawn is the most reliable time.
+                One of the reedbed species the RSPB manages Leighton Moss for, cutting back the reeds to keep conditions right. The booming call is extraordinary: a deep, resonating foghorn sound that carries across the reserve and beyond. Males boom from February, with a peak from March to May. Dawn is the most reliable time.
               </p>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function LeightonMossPage() {
           </p>
           <div className="bg-[var(--fog)] rounded-xl p-4">
             <p className="font-semibold text-[var(--fell)] text-sm mb-1">A conservation success story</p>
-            <p className="text-sm text-[var(--slate)] leading-relaxed">Britain&rsquo;s bittern population was down to a handful of males in the 1990s before intensive conservation work reversed the decline. Leighton Moss is one of the sites that supported breeding bitterns through that period and still does. The current UK population is around 200 booming males.</p>
+            <p className="text-sm text-[var(--slate)] leading-relaxed">In 1997 just 11 male bitterns boomed in the UK. New reedbeds created with the support of RSPB members helped bring them back. Leighton Moss is one of the sites that supported breeding bitterns through that period and still does. The latest RSPB and Natural England survey recorded 283 booming males.</p>
           </div>
         </section>
 
@@ -218,19 +218,19 @@ export default function LeightonMossPage() {
         <section id="marsh-harrier" className="mb-12 scroll-mt-20">
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">Marsh Harrier</h2>
           <p className="text-[var(--slate)] leading-relaxed mb-4">
-            Marsh harriers breed at Leighton Moss and are visible from April to September. The male is unmistakeable in breeding season: grey and brown with pale grey wingtips, quartering low over the reedbed with wings held in a shallow V. The female is larger and darker, with a cream crown. Watch from any of the main hides for harriers hunting or carrying prey to the nest.
+            Marsh harriers breed at Leighton Moss, and they are not only summer birds: many now spend the winter in the UK, and in early November 2026 the RSPB reported them from most hides here. The male has three-tone wings, brown nearest the body, then grey, with black tips. Watch for it quartering low over the reedbed with wings held in a shallow V. The female is larger and darker, with a cream crown. Watch from any of the main hides for harriers hunting or carrying prey to the nest.
           </p>
           <p className="text-[var(--slate)] leading-relaxed mb-6">
-            The food pass is worth waiting for. The male brings prey to the female and performs a spectacular aerial display, tossing the food for the female to catch in a stoop. This happens unpredictably but is one of the great raptor sightings in northern England when you do see it.
+            The food pass is worth waiting for. The male brings prey to the female and performs a spectacular aerial display, tossing the food for the female to catch in a stoop. This happens unpredictably.
           </p>
           <div className="grid sm:grid-cols-2 gap-3">
             <div className="bg-[var(--fog)] rounded-xl p-4">
               <p className="font-semibold text-[var(--fell)] text-sm mb-1">When to see them</p>
-              <p className="text-sm text-[var(--slate)]">April to September. Present almost daily in the breeding season. Best views from the Lower Hide or the main visitor centre windows.</p>
+              <p className="text-sm text-[var(--slate)]">Spring to autumn, and often in winter too. Present almost daily in the breeding season. Best views from the Lower Hide or the main visitor centre windows.</p>
             </div>
             <div className="bg-[var(--fog)] rounded-xl p-4">
               <p className="font-semibold text-[var(--fell)] text-sm mb-1">What to look for</p>
-              <p className="text-sm text-[var(--slate)]">A large, long-winged raptor quartering low over the reed tops. The male&rsquo;s grey wingtips are diagnostic. Wings held in a V, not flat like a buzzard.</p>
+              <p className="text-sm text-[var(--slate)]">A large, long-winged raptor quartering low over the reed tops. The male&rsquo;s three-tone wings, brown, grey and black-tipped, stand out. Wings held in a V, not flat like a buzzard.</p>
             </div>
           </div>
         </section>
@@ -250,15 +250,15 @@ export default function LeightonMossPage() {
         <section id="otter" className="mb-12 scroll-mt-20">
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">Otter</h2>
           <p className="text-[var(--slate)] leading-relaxed mb-4">
-            Otters are resident at Leighton Moss. Dawn and dusk are the reliable times. The Alan Turing hide on the open water lagoon is the best spot. Winter is often better than summer as lower water levels concentrate fish and make otter activity more visible.
+            Otters are resident at Leighton Moss. Dawn and dusk are the reliable times. In November 2026 the RSPB reported otters most days from the Causeway, Lower and Lilian&rsquo;s hides. Winter is often better than summer as lower water levels concentrate fish and make otter activity more visible.
           </p>
           <p className="text-[var(--slate)] leading-relaxed mb-6">
-            A hunting otter in open water is one of the most compelling things to watch in British wildlife. They move fast, dive cleanly, and resurface unpredictably. The wait can be long. Bring patience and binoculars, and scan the surface regularly from the hide.
+            A hunting otter in open water is fascinating to watch. They move fast, dive cleanly, and resurface unpredictably. The wait can be long. Bring patience and binoculars, and scan the surface regularly from the hide.
           </p>
           <div className="bg-[var(--fog)] rounded-xl p-4">
             <p className="font-semibold text-[var(--fell)] text-sm mb-2">Otter tips</p>
             <ul className="space-y-1.5 text-sm text-[var(--slate)]">
-              <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Alan Turing hide is the best location. Arrive at first light.</li>
+              <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Try the Causeway, Lower and Lilian&rsquo;s hides, where the RSPB reported otters most days in November 2026. Arrive at first light.</li>
               <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Winter gives better sightings as fish are more concentrated in lower water.</li>
               <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Scan the whole surface slowly. Otters can travel the width of the lagoon quickly.</li>
               <li className="flex gap-2"><span className="text-[var(--copper)] font-bold">•</span> Look for a V-shaped ripple moving across the water, then a head and back arching at the surface.</li>
@@ -299,7 +299,7 @@ export default function LeightonMossPage() {
                 <h3 className="font-semibold text-[var(--fell)]">By Train</h3>
               </div>
               <p className="text-sm text-[var(--slate)] leading-relaxed">
-                Silverdale station is directly adjacent to the reserve. Trains on the Furness Line stop here. The station is unstaffed and small but functional. The walk from the platform to the visitor centre entrance is about 2 minutes.
+                Silverdale station is about 250 metres from the reserve, on the Manchester Airport and Preston to Barrow line. Turn left out of the station entrance and take care walking along the road, then turn left and right into the reserve entrance. Buses 49, 51 and 550 stop right outside the visitor centre.
               </p>
             </div>
             <div className="bg-[var(--fog)] rounded-xl p-5">
@@ -308,7 +308,7 @@ export default function LeightonMossPage() {
                 <h3 className="font-semibold text-[var(--fell)]">By Car</h3>
               </div>
               <p className="text-sm text-[var(--slate)] leading-relaxed">
-                Take the A6 north from Carnforth, turn west at Yealand Redmayne and follow signs to Silverdale. Postcode LA5 0SW. Parking charges apply at the visitor centre. The cafe serves decent coffee and hot food throughout the day.
+                Take the A6 north from Carnforth, turn west at Yealand Redmayne and follow signs to Silverdale. Postcode LA5 0SW. Parking charges apply at the visitor centre. The cafe in the visitor centre is open daily from 9.30am to 5pm, with last orders for hot food at 3pm.
               </p>
             </div>
           </div>
@@ -344,7 +344,7 @@ export default function LeightonMossPage() {
               {
                 href: "/nature/haweswater-rspb",
                 name: "RSPB Haweswater",
-                desc: "Ospreys and fell woodland birds",
+                desc: "Red squirrels, ring ouzels, pied flycatchers",
                 image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80",
               },
             ].map(({ href, name, desc, image }) => (

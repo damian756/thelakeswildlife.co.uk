@@ -75,8 +75,11 @@ export default async function HomePage() {
   const mammalCount = getAllSpecies("mammals").length;
   const totalCount = birdCount + insectCount + plantCount + mammalCount;
 
-  // Fetch 3 recent blog post hero images
-  const recentPosts = BLOG_POSTS.slice(-3).reverse();
+  // Fetch hero images for the 3 newest posts by date, skipping any dated after today
+  const today = new Date().toISOString().slice(0, 10);
+  const recentPosts = BLOG_POSTS.filter((p) => p.date <= today)
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 3);
   const blogImages = await Promise.all(
     recentPosts.map((p) =>
       p.heroLocalSrc
@@ -161,7 +164,7 @@ export default async function HomePage() {
           <div className="relative min-h-[300px] lg:min-h-0 overflow-hidden bg-[var(--fell)]">
             <Image
               src="/images/species/birds/osprey.jpg"
-              alt="Osprey in flight over the Lake District"
+              alt="Osprey perched on a branch"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover object-center"
@@ -187,7 +190,7 @@ export default async function HomePage() {
               <strong className="text-[var(--fell)] font-bold">{totalCount}+</strong> species recorded
             </span>
             <span className="flex items-center gap-2">
-              <strong className="text-[var(--fell)] font-bold">Ospreys</strong> at RSPB Haweswater
+              <strong className="text-[var(--fell)] font-bold">Ospreys</strong> at Foulshaw Moss
             </span>
             <span className="flex items-center gap-2">
               <strong className="text-[var(--fell)] font-bold">Free entry</strong> to RSPB Haweswater
@@ -208,7 +211,7 @@ export default async function HomePage() {
           What lives here
         </h2>
         <p className="text-[var(--slate)] max-w-2xl mb-8 leading-relaxed">
-          From ospreys at RSPB Haweswater to red deer in Martindale and red squirrels in Grizedale, the Lake District holds some of the most important wildlife in England.
+          From red deer in Martindale to red squirrels at Whinlatter and breeding ospreys at Foulshaw Moss, there is a lot to see in the Lake District.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {speciesCategories.map(({ href, label, count, desc, localImage }) => (
@@ -255,13 +258,13 @@ export default async function HomePage() {
               {
                 href: "/nature/haweswater-rspb",
                 title: "RSPB Haweswater",
-                desc: "Ospreys, goldeneye, red deer. The flagship Lake District wildlife site. Get there early at weekends.",
+                desc: "Red squirrels, ring ouzels, red deer and salmon. A landscape restoration partnership between the RSPB and United Utilities, with no toilets, café or public hides.",
                 tag: "Reserve guide",
               },
               {
                 href: "/nature/grizedale-forest",
                 title: "Grizedale Forest",
-                desc: "Red squirrels, red deer, woodland birds. Miles of trails through Forestry England woodland.",
+                desc: "Red squirrels, deer, woodland birds. Miles of trails through Forestry England woodland.",
                 tag: "Reserve guide",
               },
               {
@@ -370,7 +373,7 @@ export default async function HomePage() {
               <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--fell)] mb-1">
                 Photos from the Lake District
               </h2>
-              <p className="text-[var(--slate)] text-sm">Real shots. No stock, no AI. Click any photo to enlarge.</p>
+              <p className="text-[var(--slate)] text-sm">Species photos from Wikipedia. Click any photo to enlarge.</p>
             </div>
             <Link
               href="/nature/haweswater-rspb"
@@ -381,12 +384,12 @@ export default async function HomePage() {
           </div>
           <PhotoGallery
             photos={[
-              { src: "/images/species/birds/osprey.jpg", alt: "Osprey in flight over the Lake District", caption: "Osprey at RSPB Haweswater. The reintroduction has been a success." },
-              { src: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel in Grizedale Forest", caption: "Red squirrel in Grizedale. One of the last strongholds in England." },
-              { src: "/images/species/birds/goldeneye.jpg", alt: "Goldeneye on a Lake District tarn", caption: "Goldeneye and other winter wildfowl at Haweswater and Ullswater." },
-              { src: "/images/species/plants/heather.jpg", alt: "Heather moorland in the Lake District", caption: "Heather moorland. The fells hold rare plants in the right habitats." },
-              { src: "/images/species/insects/emperor-moth.jpg", alt: "Emperor moth on upland heath", caption: "Emperor moth. Common on heather moorland in spring and summer." },
-              { src: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel in woodland", caption: "Red squirrels at Grizedale and Foulshaw Moss. Go early for the best chance." },
+              { src: "/images/species/birds/osprey.jpg", alt: "Osprey perched on a branch", caption: "Osprey. Ospreys returned to the Lake District naturally in 2001, when a pair bred at Bassenthwaite Lake." },
+              { src: "/images/species/mammals/red-squirrel.jpg", alt: "Red squirrel eating on a tree stump", caption: "Red squirrel. Whinlatter and Thirlmere are among Cumbria's red squirrel strongholds." },
+              { src: "/images/species/birds/goldeneye.jpg", alt: "Goldeneye drake on water", caption: "Goldeneye and other winter wildfowl at Haweswater and Ullswater." },
+              { src: "/images/species/plants/heather.jpg", alt: "Flowering heather", caption: "Heather moorland. The fells hold rare plants in the right habitats." },
+              { src: "/images/species/insects/emperor-moth.jpg", alt: "Moth with eyespots, wings open, on a twig", caption: "Emperor moth. Common on heather moorland in spring and summer." },
+              { src: "/images/species/mammals/red-deer.jpg", alt: "Red deer stag with large antlers standing in woodland", caption: "Red deer. The fells above Martindale are home to England's oldest native herd." },
             ]}
           />
           <div className="mt-5 sm:hidden text-center">

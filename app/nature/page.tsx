@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 const BASE = "https://www.thelakeswildlife.co.uk";
 const title = "Nature Reserves | The Lakes Wildlife";
-const description = "Guides to the Lake District's best nature reserves — RSPB Haweswater, Grizedale Forest, Foulshaw Moss, Leighton Moss and more.";
+const description = "Guides to nature reserves in and around the Lake District: RSPB Haweswater, Grizedale Forest, Foulshaw Moss, Leighton Moss and more.";
 const url = `${BASE}/nature`;
 
 export const metadata: Metadata = {
@@ -55,19 +55,19 @@ const reserves = [
     href: "/nature/haweswater-rspb",
     name: "RSPB Haweswater Reserve",
     tag: "RSPB · Free entry · Haweswater",
-    desc: "Ospreys, pied flycatchers and red squirrels. The flagship Lake District wildlife site. Get there before 10am for a spot at the osprey hide.",
+    desc: "Red squirrels, ring ouzels and pied flycatchers in a remote valley restored by the RSPB and United Utilities. No public hides or facilities, so bring a map and food.",
   },
   {
     href: "/nature/grizedale-forest",
     name: "Grizedale Forest",
     tag: "Forestry England · Free entry · Grizedale",
-    desc: "Red squirrels, red deer, red kites. The visitor centre has feeders. One of the best places in England to see red squirrels.",
+    desc: "Red squirrels, red deer, red kites. The visitor centre has feeders.",
   },
   {
     href: "/nature/foulshaw-moss",
     name: "Foulshaw Moss",
-    tag: "Cumbria Wildlife Trust · Free entry · Grange-over-Sands",
-    desc: "Osprey viewing platform. Nest visible from the hide. Foulshaw is one of the Lake District's osprey reintroduction success stories.",
+    tag: "Cumbria Wildlife Trust · Free entry · Witherslack",
+    desc: "Osprey viewing platform. Nest visible from the hide. Ospreys have nested here since at least 2014.",
   },
   {
     href: "/nature/leighton-moss-rspb",
@@ -90,7 +90,7 @@ export default function NaturePage() {
     <div className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="text-3xl font-bold text-[var(--fell)] mb-2">Nature Reserves</h1>
       <p className="text-[var(--slate)] mb-8 max-w-2xl">
-        The Lake District has some of the best wildlife sites in England, from RSPB osprey reserves to ancient woodland. Here&apos;s where to go and what to see.
+        The Lake District and its fringes hold wildlife sites from raised bogs and reedbeds to ancient woodland. Here&apos;s where to go and what to see.
       </p>
       <div className="grid gap-6 md:grid-cols-2">
         {reserves.map(({ href, name, tag, desc }) => (

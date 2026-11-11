@@ -10,7 +10,7 @@ const categoryLabels: Record<SpeciesCategory, string> = {
 };
 
 const categoryDescriptions: Record<SpeciesCategory, string> = {
-  birds: "Waders, raptors and passerines of the Lake District. Ospreys at RSPB Haweswater, red grouse on the fells, and migrant waders at Leighton Moss.",
+  birds: "Waders, raptors and passerines of the Lake District. Ospreys at Foulshaw Moss, red grouse on the fells, and migrant waders at Leighton Moss.",
   insects: "Butterflies, moths, beetles and other invertebrates of the Lake District fells, woodland and wetland habitats.",
   plants: "Upland and wetland flora of the Lake District, including nationally rare species in the fells and tarns.",
   mammals: "Mammals of the Lake District. Red squirrels at Grizedale, red deer in Martindale, otters and bats across the region.",

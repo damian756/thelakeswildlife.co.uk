@@ -52,38 +52,53 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "ospreys-haweswater-rspb",
     category: "species-spotlight",
     categoryLabel: "Species Spotlights",
-    title: "Ospreys at Haweswater RSPB: Britain's Reintroduction Success Story",
-    date: "2026-02-15",
+    title: "Where to See Ospreys in the Lake District",
+    date: "2026-11-11",
     metaDescription:
-      "Ospreys at Haweswater RSPB in the Lake District. When to visit, where to watch, and the story of how ospreys returned to England after 150 years.",
+      "Where to see ospreys in and around the Lake District: Foulshaw Moss, Esthwaite Water and Bassenthwaite. When they arrive and leave, and why Haweswater is not on the list.",
     heroWikipediaTitle: "Osprey",
-    heroAlt: "Osprey in flight, the raptor that returned to Haweswater after 150 years",
+    heroAlt: "An osprey",
     intro:
-      "Haweswater RSPB is the place to see ospreys in England. The birds returned to breed here in 2016 after a 150-year absence, and the reserve now provides a dedicated viewpoint for watching them. Here's what you need to know.",
+      "Ospreys nest in and around the Lake District from late March to early September. The easiest place to watch them is Foulshaw Moss, a Cumbria Wildlife Trust reserve near Witherslack with a viewing platform and a webcam. An earlier version of this page described an RSPB osprey hide at Haweswater. There is no such hide, so the page has been rewritten.",
     sections: [
       {
-        heading: "When they're present",
+        heading: "How ospreys came back",
         body: [
-          "Ospreys arrive in late March or early April and stay until September. The best viewing is from April through August when birds are nesting and feeding. The viewpoint is open daily during the breeding season.",
-          "Mornings are often quieter. The birds fish the reservoir and the tarns. If you're lucky, you'll see a bird dive and catch a fish.",
+          "Ospreys had died out as a breeding bird in the UK by the early 20th century. They returned to nest in Scotland in the 1950s, and the RSPB says as many as 400 pairs now nest across the UK each year. Scotland is still their stronghold.",
+          "In the Lake District a pair arrived in 2001 and bred near Bassenthwaite Lake. The Lake District National Park Authority describes this as natural colonisation, helped by nest platforms that the Forestry Commission and the RSPB put up at Dodd Wood. The Lake District Osprey Project that looked after the birds was disbanded in 2022, because ospreys were by then breeding at sites around the Lake District.",
         ],
       },
       {
-        heading: "Where to watch",
+        heading: "When to look",
         body: [
-          "The RSPB runs a dedicated osprey viewpoint at Haweswater. It's a short walk from the car park. Bring binoculars and a scope if you have one. The nest is visible from the hide.",
-          "Haweswater is in the eastern Lake District, near Shap. The road from Mardale Head is narrow. Allow time for the drive.",
+          "Cumbria Wildlife Trust says its Foulshaw Moss ospreys arrive around the end of March and usually leave by the start of September. Eggs are laid towards the end of April and chicks usually hatch in early June.",
+          "The National Park Authority says June to August is the best time to look, when the adults have to hunt more to feed their chicks. Most UK ospreys spend the winter in West Africa, so from September to March there are none to see.",
         ],
       },
       {
-        heading: "The reintroduction story",
+        heading: "Foulshaw Moss",
         body: [
-          "Ospreys were wiped out in England by persecution in the 1800s. They returned to Scotland in the 1950s and slowly spread south. The Lake District Osprey Project, a partnership between the RSPB and United Utilities, helped establish the first breeding pair at Haweswater in 2016.",
-          "The site is now one of the most reliable places to see ospreys in England. The birds have raised young every year since their return.",
+          "Foulshaw Moss (LA11 6SN) is a Cumbria Wildlife Trust reserve near Witherslack, reached by a track off the A590. Ospreys have nested there since at least 2014, and in 2025 a second pair nested on a man-made platform. A boardwalk leads 1.5 km (1 mile) to a viewing platform. Entry is free and the car park is small.",
+          "You can also watch the nest on the Trust's osprey webcam, which streams from March to September. Stay on the boardwalks: the ground off them is very soft, with deep water in places, and ticks and adders are common. In November 2026 the boardwalks were closed because they were slippery, so check the Trust's page before you go.",
+        ],
+      },
+      {
+        heading: "Esthwaite Water, Bassenthwaite and Campfield Marsh",
+        body: [
+          "Esthwaite Water, south of Hawkshead, is a private fishery with resident ospreys. It runs self-drive and guided osprey boat trips in season.",
+          "Ospreys have nested around Bassenthwaite Lake since 2001. The National Park Authority says the nest can no longer be seen from the old Dodd Wood viewpoint, because the birds moved to a less visible spot. Forestry England's Wow Trail at Whinlatter looks across Bassenthwaite Lake towards Dodd Wood.",
+          "Further north, on the Cumbrian coast, the RSPB announced in August 2026 that three osprey chicks had hatched at RSPB Campfield Marsh, the first ospreys to breed on an RSPB reserve in England since the Victorian period. The nest platform there can be seen from a nearby hide.",
+        ],
+      },
+      {
+        heading: "What about Haweswater?",
+        body: [
+          "Wild Haweswater, the RSPB's partnership with the landowner United Utilities, has no public hides or designated viewpoints, and ospreys are not among the wildlife it lists. Its famous birds were golden eagles, which lived in the valley from 1969 until the last male died in 2015.",
+          "Go to Haweswater for red squirrels, ring ouzels, red deer and the fells, and go to Foulshaw Moss for ospreys.",
         ],
       },
     ],
-    tags: ["Osprey", "Haweswater", "RSPB", "raptors", "conservation"],
+    tags: ["Osprey", "Foulshaw Moss", "Esthwaite Water", "Bassenthwaite", "raptors", "conservation"],
   },
   {
     slug: "red-deer-rut-martindale",
@@ -96,7 +111,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroWikipediaTitle: "Red deer",
     heroAlt: "Red deer stag during the rut, Martindale, Lake District",
     intro:
-      "The red deer rut is one of the wildlife spectacles of the Lake District. Martindale, in the eastern fells, holds one of the largest free-ranging herds in England. October is the month. Dawn or dusk.",
+      "The red deer rut happens every autumn. The fells above Martindale, in the eastern Lake District, are home to England's oldest native herd of red deer, the National Park Authority says. October is the month. Dawn or dusk.",
     sections: [
       {
         heading: "When to go",
@@ -108,8 +123,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Where to watch",
         body: [
-          "Martindale is the key area. The valley is accessible from the road between Pooley Bridge and Haweswater. Park considerately and walk from there.",
-          "Keep your distance. The stags are aggressive during the rut. Use binoculars or a scope. Do not approach.",
+          "Martindale is the key area. Reach it by the narrow dead-end road that runs south from Pooley Bridge to Howtown. Public parking around Howtown is limited to The Hause and a few small laybys, and part of the road is a clearway where you must not stop.",
+          "Keep your distance. The stags are aggressive during the rut. Use binoculars or a scope. Do not approach. The Dalemain Estate asks visitors to keep away from the deer at all times, and its sanctuary at The Nab and Rampsgill may be closed between September and February, so check access with the Estate Office before you go.",
         ],
       },
       {
@@ -129,11 +144,11 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Red Squirrels at Grizedale Forest: Where to See Them",
     date: "2026-03-10",
     metaDescription:
-      "Red squirrels in the Lake District. Grizedale Forest is one of the best places. When to go, what to look for, and how to avoid disturbing them.",
+      "Red squirrels in Grizedale Forest, Lake District. When to go, what to look for, and how to avoid disturbing them.",
     heroWikipediaTitle: "Red squirrel",
     heroAlt: "Red squirrel in Grizedale Forest, one of the Lake District's strongholds",
     intro:
-      "Grizedale Forest holds one of the healthiest red squirrel populations in the Lake District. The Forestry England woodland, mixed with the right habitat, gives them a chance against the grey squirrel. Here's where and when to look.",
+      "Red squirrels live in Grizedale Forest, and Forestry England's plan for the forest includes keeping suitable habitat for them and supporting grey squirrel control. Here is where and when to look.",
     sections: [
       {
         heading: "When to go",
@@ -163,40 +178,39 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "ospreys-bassenthwaite-lake",
     category: "species-spotlight",
     categoryLabel: "Species Spotlights",
-    title: "Ospreys at Bassenthwaite Lake: The Birds Above Keswick",
-    date: "2026-04-10",
+    title: "Ospreys at Bassenthwaite Lake: The Birds North of Keswick",
+    date: "2026-11-11",
     metaDescription:
-      "Ospreys at Bassenthwaite Lake. The only public-access osprey nest with a viewing point above Keswick. When to visit, where to watch, and the story of the birds.",
+      "Ospreys at Bassenthwaite Lake, north of Keswick. How they returned in 2001, why the Dodd Wood viewpoint no longer shows the nest, and where to look across the lake today.",
     heroWikipediaTitle: "Osprey",
-    heroAlt: "Osprey flying over a lake in the Lake District",
+    heroAlt: "An osprey",
     intro:
-      "Bassenthwaite Lake is the only natural lake in the Lake District — all the others are 'meres' or 'waters'. It is also home to ospreys that can be watched from Dodd Wood above the lake. The viewing site has been running since 2001. Get there before 10am. Take binoculars.",
+      "Ospreys have nested around Bassenthwaite Lake since 2001, the first to breed in the Lake District for more than 150 years. Forestry England calls Bassenthwaite the only 'true' lake in the National Park. The old viewpoint in Dodd Wood no longer looks at the nest, so here is what you can still do.",
     sections: [
       {
         heading: "The Bassenthwaite ospreys",
         body: [
-          "Ospreys first bred at Bassenthwaite Lake in 2001, the first confirmed breeding in England in over 150 years outside Scotland. The Lake District Osprey Project, a partnership involving the RSPB and the Forestry England Dodd Wood site, has supported the birds and provided a viewing facility that has run every breeding season since. The pair raises young most years.",
-          "The nest is in a tall conifer above the lake. The viewing site at Dodd Wood car park (CA12 4QE) gives line-of-sight to the nest with telescopes provided during the season. RSPB and Forestry England rangers staff the site from April to August and can explain what is happening at the nest.",
-          "The osprey pair is monitored throughout the season. Ring data allows individual birds to be identified and their movements tracked. Adults from this pair have been recorded on the coast of West Africa during their winter migration.",
+          "In 2001 a pair of ospreys took to a nest platform in Wythop Woods above the lake and raised one chick, the Lake District Osprey Project says. It was the first successful nesting in the Lake District for over 150 years, and it came about by natural recolonisation. The birds later moved to a nest site in Dodd Wood.",
+          "The project was a partnership of the Forestry Commission, the Lake District National Park and the RSPB, with help from volunteers. The National Park Authority says it was disbanded in 2022, because ospreys were by then breeding at several places around the Lake District.",
         ],
       },
       {
-        heading: "What to see and when",
+        heading: "Can you still see the nest?",
         body: [
-          "The season runs from late March when the adults return to early September when the young birds disperse. The most productive viewing period is May to August. Nest activity peaks during chick-rearing in June and July — the male makes fishing trips and returns to the nest with prey, and the female or chicks call loudly on each return.",
-          "The Bassenthwaite osprey webcam is available online throughout the season. If you cannot visit in person, the webcam gives real-time views of nest activity. Webcam access is via the Lake District Wildlife website.",
-          "The Dodd Wood trails extend well beyond the osprey viewpoint. The red squirrel trail through the conifer woodland is excellent, and Dodd summit above the wood gives views across the whole of Bassenthwaite and north to Skiddaw.",
+          "For years you could watch the nest from a viewpoint in Dodd Wood, run by Forestry England with the RSPB and the National Park Authority. The National Park Authority says that ended when the birds chose a nest site that is less visible.",
+          "Ospreys still return in summer. Cumbria Wildlife Trust's Foulshaw ospreys arrive around the end of March and usually leave by the start of September, and the National Park Authority says June to August is the best time to look, when the adults hunt more to feed their chicks.",
+          "Forestry England's Wow Trail at Whinlatter Forest looks across Bassenthwaite Lake, which it says has been home to ospreys for over 20 years, towards Dodd Wood and Skiddaw. The 4.5-mile trail starts at the visitor centre (CA12 5TW) and follows surfaced paths, and it has a nature hide for the forest's own wildlife.",
         ],
       },
       {
-        heading: "Getting there",
+        heading: "Dodd Wood today",
         body: [
-          "Dodd Wood car park (CA12 4QE) is on the A591 between Keswick and Carlisle, 5 miles north of Keswick. The car park is managed by Forestry England with a parking charge. The walk from the car park to the osprey viewpoint is around 15 minutes on a good path.",
-          "The Osprey Cafe at the base of Dodd Wood provides food and drink during the season. Worth planning around for a post-walk coffee. The main osprey viewing hide is free to use once you have parked.",
+          "Dodd Wood is still worth a visit for its trails and views. Forestry England says red squirrels live in the wood all year, and the trails climb to the top of Dodd for views across the fells.",
+          "The car park (sat nav CA12 4QE) is on the A591 from Keswick towards Bothel, opposite Mirehouse. It is open 24 hours and is pay on exit: up to 20 minutes free, then £0.55 per 15 minutes, up to £13 for the day. Blue Badge holders pay too. Toilets are in the car park, and the Old Sawmill Tearoom is next to it.",
         ],
       },
     ],
-    tags: ["osprey", "Bassenthwaite", "Dodd Wood", "raptors", "spring", "conservation"],
+    tags: ["osprey", "Bassenthwaite", "Dodd Wood", "Whinlatter", "raptors", "conservation"],
   },
 
   {
@@ -210,14 +224,14 @@ export const BLOG_POSTS: BlogPost[] = [
     heroWikipediaTitle: "Red deer",
     heroAlt: "Red deer stag roaring during the October rut at Martindale",
     intro:
-      "The red deer rut is one of the most photographed wildlife events in England. Martindale in October is the place. A 400mm lens, low light, and patience. This is what actually works.",
+      "The red deer rut draws photographers to Martindale every October. You need a long lens, low light and patience. Here is how to go about it.",
     sections: [
       {
         heading: "Timing and light",
         body: [
-          "The second and third weeks of October are peak rut. Dawn is the best light — low, warm, directional light from the east that illuminates the stags on the hillside and puts them against a sky or fell backdrop. Arrive at the valley before the sun is up. This means a 6am start from Pooley Bridge in mid-October.",
+          "The second and third weeks of October are peak rut. Dawn is the best light: low, warm, directional light from the east that illuminates the stags on the hillside and puts them against a sky or fell backdrop. Arrive at the valley before the sun is up. This means a 6am start from Pooley Bridge in mid-October.",
           "Dusk gives a second window. The light is similar quality but the animals have been active all day and can be less predictable in their movements. Dawn has the additional advantage that mist sometimes fills the lower valley, putting stags on the edge of visibility for atmospheric shots. This is not reliable but when it happens it is exceptional.",
-          "Flat overcast days are not useless — the soft light reduces harsh shadows on the animals and makes the eye detail more visible. Avoid shooting in direct overhead sun on a bright day if you have a choice. The brown-red colouring of the stags bleaches out badly in high-contrast light.",
+          "Flat overcast days are not useless. The soft light reduces harsh shadows on the animals and makes the eye detail more visible. Avoid shooting in direct overhead sun on a bright day if you have a choice. The brown-red colouring of the stags bleaches out badly in high-contrast light.",
         ],
       },
       {
@@ -225,15 +239,15 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "A 400mm lens is the minimum focal length for usable rut shots at the distance you will typically be working. 500mm or 600mm is better. A full-frame camera gives the best low-light performance for dawn shooting. A monopod or tripod steadies the long lens for the waits between action.",
           "Camouflage or dull earth colours for clothing. The deer will see you regardless but there is no reason to draw their attention. Move slowly and avoid sudden movements when you are repositioning.",
-          "Bring more memory cards than you think you need. A 20-minute rut encounter with multiple stags can fill a 64GB card if you shoot continuously. Battery performance drops in cold October morning air — carry a spare.",
+          "Bring more memory cards than you think you need. A 20-minute rut encounter with multiple stags can fill a 64GB card if you shoot continuously. Battery performance drops in cold October morning air, so carry a spare.",
         ],
       },
       {
         heading: "Approach and composition",
         body: [
-          "Stay on the valley floor initially. Let the deer settle and identify you before you try to close any distance. Stags during the rut are tracking rivals and hinds, not humans, and if you give them time they will often ignore you at 50 to 80 metres.",
+          "Stay on the paths and let the lens close the distance. The Dalemain Estate asks visitors to keep away from the red deer at all times, and its sanctuary at The Nab and Rampsgill may be closed between September and February, so check access with the Estate Office before you go.",
           "Composition: put the stag against open sky or fell if you can choose your angle. A roaring stag against the valley hillside, with the Martindale crags behind, is the classic Martindale shot. Get low. A low angle puts the animal against sky rather than ground and removes distracting background detail.",
-          "The parallel walk — when two stags walk side by side assessing each other before fighting — is fleeting and difficult to anticipate. If you see two stags moving toward each other, lock focus on the closer one and wait. The parallel walk can last seconds or minutes. A fight, if it happens, is over very quickly.",
+          "The parallel walk, when two stags walk side by side assessing each other before fighting, is fleeting and difficult to anticipate. If you see two stags moving toward each other, lock focus on the closer one and wait. The parallel walk can last seconds or minutes. A fight, if it happens, is over very quickly.",
         ],
       },
     ],
@@ -245,7 +259,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "seasonal-watching",
     categoryLabel: "Seasonal Watching",
     title: "Winter Wildfowl on Ullswater: Goldeneye, Goosander and What to Look For",
-    date: "2026-11-20",
+    date: "2026-11-11",
     metaDescription:
       "Winter wildfowl guide for Ullswater. Goldeneye arrive in October. Goosander year-round. What to expect, where to watch from, and the best times for each species.",
     heroWikipediaTitle: "Common goldeneye",
@@ -256,16 +270,16 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Goldeneye",
         body: [
-          "Goldeneye are the winter duck that birders specifically travel to Ullswater to see. They arrive from Scandinavia and northern Russia in October, peak in December and January, and begin moving north again in March. The males in winter plumage are striking: black-and-white body, rounded dark green head (which can appear black), and the bright yellow eye that gives the species its name.",
-          "They feed by diving, typically to depths of 2 to 4 metres. On a calm day you can count the seconds between each dive — usually 10 to 20 seconds — and start to predict roughly where the bird will resurface. Watch a group of diving goldeneye and the collective rhythm of their feeding becomes almost hypnotic.",
-          "The male courtship display begins in late January and continues through February and March. The male throws his head back in an extreme backwards movement, exposing the white cheek patches, then snaps his head forward. Multiple males displaying simultaneously around a single female is one of the more spectacular duck displays in Britain.",
+          "Goldeneye are the winter duck to look for on Ullswater. They arrive from Scandinavia and northern Russia in October, peak in December and January, and begin moving north again in March. The males in winter plumage are striking: black-and-white body, rounded dark green head (which can appear black), and the bright yellow eye that gives the species its name.",
+          "They feed by diving, typically to depths of 2 to 4 metres. On a calm day you can count the seconds between each dive (usually 10 to 20 seconds) and start to predict roughly where the bird will resurface. Watch a group of diving goldeneye and the collective rhythm of their feeding becomes almost hypnotic.",
+          "The male courtship display begins in late January and continues through February and March. The male throws his head back in an extreme backwards movement, exposing the white cheek patches, then snaps his head forward. Several males often display around a single female at once.",
         ],
       },
       {
         heading: "Goosander",
         body: [
           "Goosander are resident on Ullswater year-round. They are long, streamlined fish-eating ducks with serrated bills and a low profile on the water. The male in winter is white with a pink flush and a dark green head; the female is grey-bodied with a chestnut-brown head and a prominent ragged crest. Both sexes are often seen resting on exposed rocks along the water's edge.",
-          "Goosander breed in tree holes beside the lake and rivers. In late winter the females begin prospecting nest sites in the valley woodland. Courtship is in January and February. By May the female is incubating eggs in a tree cavity and the male has largely abandoned her. The female brings the ducklings down from the nest — sometimes a considerable distance if the tree is far from water — within 24 hours of hatching.",
+          "Goosander breed in tree holes beside the lake and rivers. In late winter the females begin prospecting nest sites in the valley woodland. Courtship is in January and February. By May the female is incubating eggs in a tree cavity and the male has largely abandoned her. The female brings the ducklings down from the nest within 24 hours of hatching, sometimes a considerable distance if the tree is far from water.",
         ],
       },
       {
@@ -295,21 +309,21 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Red grouse",
         body: [
-          "Red grouse are the signature bird of the Lake District heather moorland. Medium-sized, reddish-brown game birds that flush explosively when disturbed, calling loudly as they go. The call — a rapid, slightly indignant 'go-back go-back gobak-gobak-gobak' — is one of the characteristic sounds of the high fells. Once you know it you hear it everywhere on the Skiddaw massif, the eastern fells, and anywhere heather moorland persists.",
+          "Red grouse are the signature bird of the Lake District heather moorland. Medium-sized, reddish-brown game birds that flush explosively when disturbed, calling loudly as they go. The call, a rapid, slightly indignant 'go-back go-back gobak-gobak-gobak', is one of the characteristic sounds of the high fells. Once you know it you hear it everywhere on the Skiddaw massif, the eastern fells, and anywhere heather moorland persists.",
           "Red grouse breed in the heather from April to June, nesting in the deep heather stems. In August the family groups are visible working through the heather, the young birds not much smaller than adults but noticeably softer in plumage. Best seen on still, clear mornings in April to August when they are calling from prominent rocks or fence posts.",
         ],
       },
       {
         heading: "Ring ouzel",
         body: [
-          "The ring ouzel is the mountain blackbird — a blackbird-sized thrush with a broad white crescent on the breast (the male), breeding in rocky gullies, scree slopes, and mountain stream gorges above roughly 400 metres. It arrives from North Africa in April and departs in August or September. The song is wild and fluting, delivered from a prominent boulder.",
+          "The ring ouzel is the mountain blackbird: a blackbird-sized thrush with a broad white crescent on the breast (the male), breeding in rocky gullies, scree slopes, and mountain stream gorges above roughly 400 metres. It arrives from late March and flies back to Africa in September, the RSPB says. The song is wild and fluting, delivered from a prominent boulder.",
           "Ring ouzels are worth a specific effort in late April and May when they are freshly arrived and singing. The crags of Helvellyn's eastern face, the rocky gullies of Blencathra's south face, and the head of the Langdale valley all hold birds. Walk early and scan the boulders on the fell sides from below.",
         ],
       },
       {
         heading: "Golden plover and peregrine",
         body: [
-          "Golden plover breed on the higher blanket bog areas above 500 metres from April to July. Their call is a melancholy, liquid two-note whistle that carries across the bog in clear weather. The birds in summer plumage are handsome — black face and belly, golden-spangled back. The Skiddaw Forest plateau and the high areas of the central fells hold golden plover in summer.",
+          "Golden plover breed on the higher blanket bog areas above 500 metres from April to July. Their call is a melancholy, liquid two-note whistle that carries across the bog in clear weather. The birds in summer plumage are handsome, with a black face and belly, golden-spangled back. The Skiddaw Forest plateau and the high areas of the central fells hold golden plover in summer.",
           "Peregrines are present year-round on the crags throughout the Lake District. The fastest animal on earth in a stoop, they are most visible in the breeding season from March to July. Watch from the valley floor for a compact raptor with long pointed wings soaring above the crags or stooping at speed on prey. The stoop produces a distinctive high tearing sound.",
         ],
       },
@@ -328,27 +342,27 @@ export const BLOG_POSTS: BlogPost[] = [
     heroWikipediaTitle: "Brown trout",
     heroAlt: "Blea Tarn, Langdale, Lake District with the Langdale Pikes in the background",
     intro:
-      "Blea Tarn in Little Langdale sits at around 200 metres above sea level below the Langdale Pikes. It holds wild brown trout. The tarn is accessible via a short walk from the Blea Tarn car park. The fishing is not stocked. These are genuinely wild fish in an outstanding setting.",
+      "Blea Tarn in Little Langdale sits at around 200 metres above sea level below the Langdale Pikes. It holds wild brown trout. The tarn is accessible via a short walk from the Blea Tarn car park. The fishing is not stocked. These are wild fish.",
     sections: [
       {
         heading: "The tarn",
         body: [
           "Blea Tarn is owned by the National Trust. It is a natural tarn fed by rainfall and surface run-off from the surrounding fell slopes. The water is slightly peaty and coloured, which gives the wild trout a dark, well-marked appearance. The tarn is approximately 300 metres long and 150 metres wide at its widest point.",
-          "The setting is one of the best in the Lake District. The Langdale Pikes are visible directly north. Wrynose Fell and the Crinkles fill the west. On a clear summer morning with low cloud on the surrounding fells and rising trout on a calm surface, this is exactly what fell fishing is supposed to be.",
+          "The Langdale Pikes are visible directly north. Wrynose Fell and the Crinkles fill the west. On a clear summer morning with low cloud on the surrounding fells and rising trout on a calm surface, this is exactly what fell fishing is supposed to be.",
         ],
       },
       {
         heading: "Fishing the tarn",
         body: [
-          "Fly fishing is the most appropriate method. A 9-foot, 5-weight or 6-weight rod works well. The wild trout are mostly small — 6 to 9 inches is typical — but they are beautiful fish. Dry fly in June, July, and August when sedges and midges hatch in the evening. Wet fly earlier in the season, fished through the deeper water off the rocky outcrops on the eastern shore.",
-          "The fish are not naive. Blea Tarn sees enough fly fishers through the season that the trout have been educated. A careful approach — low profile, casting from distance before moving closer, changing fly pattern if fish refuse — gives better results than working over the tarn quickly. This is the fishing you come to think in, not to fill a bag.",
+          "Fly fishing is the most appropriate method. A 9-foot, 5-weight or 6-weight rod works well. The wild trout are mostly small (6 to 9 inches is typical), but they are beautiful fish. Dry fly in June, July, and August when sedges and midges hatch in the evening. Wet fly earlier in the season, fished through the deeper water off the rocky outcrops on the eastern shore.",
+          "The fish are not naive. Blea Tarn sees enough fly fishers through the season that the trout have been educated. A careful approach (low profile, casting from distance before moving closer, changing fly pattern if fish refuse) gives better results than working over the tarn quickly. This is the fishing you come to think in, not to fill a bag.",
           "The east shore is sheltered and warms early, producing the first surface activity of the day. The outfall stream at the northern end holds trout in the deeper pool. An early morning visit in late June or July, arriving at dawn, fishing the calm surface before the wind picks up, is the tarn at its best.",
         ],
       },
       {
         heading: "Access and permit",
         body: [
-          "The Blea Tarn car park (LA22 9PJ) is off the road between Langdale and Little Langdale. The walk to the tarn from the car park is less than 5 minutes. An Environment Agency rod licence is required. The fishing rights are managed by the Lake District Angling Improvement Association — a day ticket or season permit is available. Check their website for current fees and conditions.",
+          "The Blea Tarn car park (LA22 9PJ) is off the road between Langdale and Little Langdale. The walk to the tarn from the car park is less than 5 minutes. Anyone aged 13 or over needs a rod fishing licence, and gov.uk says you also need permission from the land or fishery owner, usually a fishing permit. The fishing rights are managed by the Lake District Angling Improvement Association. A day ticket or season permit is available. Check their website for current fees and conditions.",
         ],
       },
     ],
@@ -362,23 +376,23 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "The High Brown Fritillary: England's Most Threatened Butterfly",
     date: "2026-07-01",
     metaDescription:
-      "The High Brown Fritillary in the Lake District. One of England's most threatened butterflies. Where it is found, when it flies, and why the Lake District is critical to its survival.",
+      "The High Brown Fritillary, which Butterfly Conservation calls Britain's most endangered butterfly. Where it is found near the Lake District, when it flies, and why the Morecambe Bay limestone hills matter to it.",
     heroWikipediaTitle: "High Brown Fritillary",
     heroAlt: "High Brown Fritillary butterfly on bracken in the Lake District",
     intro:
-      "The High Brown Fritillary is one of England's most threatened butterflies. It has been lost from most of its former range in southern England. The Lake District — particularly the bracken-covered limestone hills of the Morecambe Bay area — is now one of its last strongholds.",
+      "Butterfly Conservation calls the High Brown Fritillary Britain's most endangered butterfly. Once widespread in England and Wales, it has declined dramatically since the 1950s. Its remaining strongholds are the Morecambe Bay Limestones, just south of the Lake District, Dartmoor and Exmoor, with a single colony left in Wales.",
     sections: [
       {
         heading: "About the High Brown Fritillary",
         body: [
           "The High Brown Fritillary is a large, fast-flying butterfly with a bright orange upperwing patterned with black markings. The underwing shows distinctive silver spots with brown cell borders that separate it from the similar Silver-washed Fritillary. It is on the wing in June and July, flying in warm sunshine over bracken-covered slopes.",
-          "The species has declined catastrophically since the 1970s. It has been lost from over 95% of its former sites. The cause is habitat change: the loss of open, warm woodland and scrubby grassland where its larval foodplant, common dog-violet, grows in the right microclimate. Active conservation management is now essential to maintain the remaining populations.",
+          "The species has declined dramatically since the 1950s. The cause is habitat change: the loss of open, warm woodland and scrubby grassland where its larval foodplant, common dog-violet, grows in the right microclimate. Active conservation management is now essential to maintain the remaining populations.",
         ],
       },
       {
-        heading: "Where to find them in the Lake District",
+        heading: "Where to find them near the Lake District",
         body: [
-          "The Morecambe Bay limestone hills — Arnside Knott and Warton Crag — are the main Lake District sites. The butterfly requires south-facing bracken slopes with abundant dog-violets in the litter beneath the bracken. Butterfly Conservation manages these sites with targeted scrub clearance and bracken management to maintain the open conditions the butterfly needs.",
+          "The Morecambe Bay limestone hills, including Arnside Knott and Warton Crag, lie just south of the Lake District. The butterfly requires south-facing bracken slopes with abundant dog-violets in the litter beneath the bracken. Butterfly Conservation manages these sites with targeted scrub clearance and bracken management to maintain the open conditions the butterfly needs.",
           "Arnside Knott (LA5 0AD) National Trust reserve is the more accessible site. The south-facing slopes above the woodland edge hold the main population. Visit on a warm, sunny day in late June or early July. Early afternoon, when the air temperature peaks, is when the butterflies are most active and visible.",
         ],
       },
@@ -386,7 +400,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Conservation",
         body: [
           "Butterfly Conservation runs targeted conservation work for the High Brown Fritillary at the Morecambe Bay sites. This involves scrub clearance to maintain open, warm habitat, bracken management to allow the dog-violet to establish, and annual population monitoring by transect survey.",
-          "The species is listed as a priority species under the UK Biodiversity Action Plan. If you visit Arnside Knott in July and see these butterflies, you are seeing a conservation success in action — a threatened species that still exists because people are managing specifically for it.",
+          "The species is listed as a priority species under the UK Biodiversity Action Plan. If you visit Arnside Knott in July and see these butterflies, you are seeing a conservation success in action: a threatened species that still exists because people are managing specifically for it.",
         ],
       },
     ],
@@ -397,33 +411,32 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "haweswater-golden-eagle",
     category: "conservation",
     categoryLabel: "Conservation",
-    title: "The Haweswater Golden Eagle: England's Last Wild Breeding Attempt",
-    date: "2026-02-01",
+    title: "The Haweswater Golden Eagles: England's Last Pair",
+    date: "2026-11-11",
     metaDescription:
-      "The story of the last golden eagle at Haweswater in the English Lake District. Its history, why it failed to breed, and what the future holds for golden eagle recovery in England.",
+      "The golden eagles of Haweswater in the Lake District, from their return in 1969 to the death of the last male in 2015, and what has happened to golden eagles since.",
     heroWikipediaTitle: "Golden eagle",
-    heroAlt: "Golden eagle in flight over mountains",
+    heroAlt: "A golden eagle",
     intro:
-      "For many years a single female golden eagle lived on the fells above Haweswater. The lone eagle. She was the last wild golden eagle in England, and she waited for a mate that never came. She was last seen in 2016. The story of the Haweswater eagle is one of the most important wildlife stories in England.",
+      "From 1969 to 2015, Haweswater was the only place in England where golden eagles lived. The RSPB came to the valley to guard them and has stayed ever since. The last bird, a male, died in 2015 after twelve years alone.",
     sections: [
       {
         heading: "The history",
         body: [
-          "Golden eagles bred in the Lake District until the 19th century, when they were eliminated by persecution — gamekeepers, egg collectors, and the general attitude of the Victorian era that birds of prey were vermin. By 1900 they were gone from England.",
-          "In the 1960s a pair began summering above Haweswater in the eastern Lake District. They attempted to breed several times over the following decades but were consistently disturbed or failed due to weather and food shortage. The female raised only one chick to fledging, in 1969. The male disappeared in 1977. The female survived alone for decades, a solitary bird in a habitat that could support a pair.",
-          "The RSPB monitored the bird throughout her life at Haweswater. She became a celebrated resident. Thousands of people made the journey to Haweswater hoping to see her soaring over the reservoir. She was last recorded alive in December 2016. No confirmed sightings have been made since. She is presumed to have died of old age.",
+          "Lakeland had been without breeding eagles for at least 150 years when golden eagles returned in 1969, from a healthy and expanding population in southern Scotland, the RSPB's Wild Haweswater team writes. The pair nested first on Harter Fell, above the southern end of the reservoir, then moved into neighbouring Riggindale.",
+          "The RSPB was invited to Haweswater in 1969 to monitor and protect England's last remaining pair. Over 46 years, two female and three male eagles made their home in the valley, with new birds arriving to keep the pair together as one or other died. They reared young in 16 of those years.",
+          "The last male spent his final 12 years alone, with no female for company. He died in 2015, and no golden eagles have lived at Haweswater since.",
         ],
       },
       {
-        heading: "The future",
+        heading: "What came next",
         body: [
-          "Golden eagle reintroduction to England is being discussed by conservation organisations. The natural stepping-stone route would be from Scotland, where the population is healthy and expanding southward, through northern England and into the Lake District. The prey base — red grouse, mountain hare, rabbits — exists in the Lake District uplands to support a small population.",
-          "The main obstacles are human attitudes, particularly from the grouse shooting community, and the lack of suitable unoccupied territory in northern England. Any serious reintroduction programme would require stakeholder engagement across the whole of northern England.",
-          "For now, there are no golden eagles breeding in England. An occasional wandering bird from Scotland is reported every few years. The Haweswater reserve still bears the memory of what was lost and what might return.",
+          "The RSPB stayed. It now runs Wild Haweswater with the landowner, United Utilities, as a landscape restoration partnership across the Mardale, Naddle and Swindale valleys. Visitors come for red squirrels, ring ouzels, red deer and the fells.",
+          "Golden eagles have done better in Scotland, where numbers passed 500 pairs in 2015, almost all north of the central belt, with a few pairs in the Borders. A project to strengthen that small southern population moved young golden eagles there in 2018 and 2019. Young golden eagles can roam hundreds of miles looking for a territory of their own.",
         ],
       },
     ],
-    tags: ["golden eagle", "Haweswater", "England", "conservation", "extinction", "reintroduction"],
+    tags: ["golden eagle", "Haweswater", "Riggindale", "England", "conservation", "RSPB"],
   },
 
   {
@@ -449,14 +462,14 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "The red squirrel trail",
         body: [
-          "Forestry England has marked a red squirrel trail through Whinlatter with interpretation boards explaining the conservation work and the species. The trail passes through the best squirrel habitat — mature Norway spruce and Sitka spruce where cone seeds are the primary food source.",
+          "Forestry England has marked a red squirrel trail through Whinlatter with interpretation boards explaining the conservation work and the species. The trail passes through the best squirrel habitat: mature Norway spruce and Sitka spruce where cone seeds are the primary food source.",
           "Morning is the most productive time. The squirrels are active from first light through to late morning, caching food and feeding at the feeders. In autumn they are particularly visible as they work intensively to gather food before winter. A 90-minute circuit of the red squirrel trail in the first two hours after dawn in October gives an excellent chance of multiple squirrel sightings.",
         ],
       },
       {
         heading: "Beyond the squirrels",
         body: [
-          "Whinlatter also holds crossbills in irruption years, siskins and redpolls in the birch and alder at the forest edge, coal tits throughout the conifers, and occasional goshawk over the forest canopy. The fell above the forest — Grisedale Pike and the Coledale round — is one of the best hill walks in the north-western Lake District. Combining a morning squirrel walk in the forest with an afternoon on the Coledale fells is a full day's wildlife and walking.",
+          "Whinlatter also holds crossbills in irruption years, siskins and redpolls in the birch and alder at the forest edge, coal tits throughout the conifers, and occasional goshawk over the forest canopy. Above the forest are Grisedale Pike and the Coledale round. Combining a morning squirrel walk in the forest with an afternoon on the Coledale fells is a full day's wildlife and walking.",
         ],
       },
     ],
@@ -474,20 +487,20 @@ export const BLOG_POSTS: BlogPost[] = [
     heroWikipediaTitle: "Eurasian bittern",
     heroAlt: "Bittern at reedbed edge, Leighton Moss RSPB",
     intro:
-      "Leighton Moss RSPB is one of Britain's most important bittern sites. The booming call of the male bittern — one of the most extraordinary sounds in British wildlife — carries across the reedbed from February to June. This is how to hear it, and with patience, see it.",
+      "Leighton Moss RSPB, near Silverdale in Lancashire, has the largest reedbed in north-west England, and bitterns live there. The booming call of the male carries across the reedbed in spring: mainly from March to May, with early birds from February. This is how to hear it, and with patience, see it.",
     sections: [
       {
         heading: "The bittern's boom",
         body: [
-          "The bittern's booming call is produced by the male from February to June to advertise territory and attract females. The call is a deep, resonating 'oom' repeated several times, almost like a foghorn. It can carry for up to two kilometres in still conditions. The sound is so distinctive that once you have heard it you will never mistake it.",
-          "Peak booming activity is at dawn and dusk in February and March. On still mornings the boom seems to come from everywhere and nowhere — the sound disperses through the reed as much as it travels through the air. Stand quietly at the edge of the reedbed at dawn in early March and wait. You will hear it.",
-          "Britain had fewer than 30 booming males in the 1990s after decades of habitat loss and water quality decline. Active conservation work — reedbed restoration, water management, and the creation of new reedbed habitat — has brought the population back to over 200 booming males. Leighton Moss was one of the sites that maintained breeding bitterns through the worst period.",
+          "The male bittern booms mainly from March to May, with early birds from February, to mark his territory and attract females. The call is a deep, resonating 'oom' repeated several times, almost like a foghorn. The RSPB says it can be heard up to three miles away. The sound is so distinctive that once you have heard it you will never mistake it.",
+          "Booming peaks from March to May. On still mornings the boom seems to come from everywhere and nowhere. The sound disperses through the reed as much as it travels through the air. Stand quietly at the edge of the reedbed at dawn in spring and wait.",
+          "In 1997 just 11 male bitterns boomed in the UK, the RSPB says. The latest RSPB and Natural England survey recorded 283 booming males. Leighton Moss was one of the sites that maintained breeding bitterns through the worst period.",
         ],
       },
       {
         heading: "Seeing a bittern",
         body: [
-          "Seeing a bittern is harder than hearing one. They spend most of their time concealed in the reed, moving through the stems on foot rather than flying. They are extraordinarily well camouflaged — the vertical streaking of the plumage matches the reed stems and a standing bittern simply disappears.",
+          "Seeing a bittern is harder than hearing one. They spend most of their time concealed in the reed, moving through the stems on foot rather than flying. They are extraordinarily well camouflaged. The vertical streaking of the plumage matches the reed stems and a standing bittern simply disappears.",
           "The most reliable sighting opportunity is a flying bittern. In the breeding season, males fly between reedbed patches at dawn and dusk, moving low over the reed tops. From the main hides at Leighton Moss, these flight views are the standard sighting. The Grisedale Hide and the Lower Hide overlook reedbed edges where bitterns sometimes hunt or stand in the open.",
           "In cold winter weather bitterns become more visible as they are forced to hunt more actively to maintain body condition. On frosty mornings in December or January, bitterns sometimes stand at the reedbed edge for extended periods. This is the best chance of prolonged close views.",
         ],
@@ -513,15 +526,15 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Pied flycatcher",
         body: [
           "The pied flycatcher arrives in late April. The male comes first, establishes a territory around a nest hole or nest box, and sings continuously from the tree tops for two to three weeks before the female arrives. The song is a rapid, varied warbling delivered from high in the oak canopy. The male is unmistakeable: clean black-and-white, with a white forehead patch.",
-          "Grizedale's nest box scheme has provided nest sites throughout the woodland for decades. The RSPB nest box trail at Haweswater (CA10 2LX) is specifically designed for pied flycatcher watching, but Grizedale's oak woodland edge holds birds too, particularly in the mature sessile oak areas of the forest edges.",
+          "Grizedale's nest box scheme has provided nest sites throughout the woodland for decades. Grizedale's oak woodland edge holds birds, particularly in the mature sessile oak areas of the forest edges. At Wild Haweswater, the RSPB says pied flycatchers and redstarts return each spring to the woods of the Naddle and Swindale valleys.",
           "Female pied flycatchers arrive a week to two weeks after the males. Watch for the more discreet brown-and-white female investigating nest boxes in early May.",
         ],
       },
       {
         heading: "Redstart and wood warbler",
         body: [
-          "Redstarts arrive slightly earlier than pied flycatchers — the first males can appear in late April in a good year. The male is one of the most beautiful British birds: slate-grey back, black face, russet-orange breast and tail. The tail shivers constantly. They sing from high, open perches in the woodland canopy.",
-          "The wood warbler arrives last of the three, often in the first week of May. Its habitat requirements are more specific — open-canopied sessile oak woodland with a clear woodland floor. The song is one of the great bird sounds of the British uplands: a vibrating, accelerating trill that drops into a descending liquid call. Once you know it you hear it everywhere in the right woodland in May.",
+          "Redstarts arrive slightly earlier than pied flycatchers: the first males can appear in late April in a good year. The male is striking: slate-grey back, black face, russet-orange breast and tail. The tail shivers constantly. They sing from high, open perches in the woodland canopy.",
+          "The wood warbler arrives last of the three, often in the first week of May. Its habitat requirements are more specific: open-canopied sessile oak woodland with a clear woodland floor. The song is one of the great bird sounds of the British uplands: a vibrating, accelerating trill that drops into a descending liquid call. Once you know it you hear it everywhere in the right woodland in May.",
         ],
       },
       {
@@ -539,34 +552,35 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "martindale-complete-guide",
     category: "habitat-guides",
     categoryLabel: "Habitat Guides",
-    title: "Martindale: The Complete Guide to the Lake District's Red Deer Valley",
+    title: "Martindale: A Guide to the Lake District's Red Deer Valley",
     date: "2026-09-01",
     metaDescription:
-      "Complete guide to Martindale in the Lake District. Red deer, the valley's history, how to get there, where to park, and the best approaches for wildlife watching throughout the year.",
+      "A guide to Martindale in the Lake District: the red deer, the valley's history, how to get there, where to park, and how to watch the deer without disturbing them.",
     heroWikipediaTitle: "Red deer",
     heroAlt: "Red deer hinds in Martindale valley with the fells behind",
     intro:
-      "Martindale is one of the quietest, most beautiful valleys in the eastern Lake District. A narrow road runs south from Howtown on Ullswater into two valleys — Martindale proper and Ramps Gill — that between them hold one of England's most significant red deer herds. The place is largely unchanged from the medieval deer forest it has been for centuries.",
+      "Martindale is a quiet valley in the eastern Lake District. A narrow road runs south from Pooley Bridge along the eastern shore of Ullswater to Howtown and on into the valley. The fells above Martindale are home to England's oldest native herd of red deer, the National Park Authority says.",
     sections: [
       {
         heading: "About Martindale",
         body: [
-          "Martindale is an estate valley owned by the Dalemain Estate, managed as a deer forest since at least the 16th century. The red deer herd is one of the oldest managed herds in England. The valley is enclosed by the fells of Place Fell, Beda Fell, and Steel Knotts, giving it a contained, cathedral quality — you feel cut off from the wider world in a way that few Lake District valleys achieve.",
-          "The village of Martindale has a church — St Peter's at the dale head — that dates from 1882, though there has been a place of worship in the valley for much longer. The older chapel (St Martin's) near the dale entrance is medieval. A very small community lives in the valley year-round.",
+          "The Dalemain Estate says Martindale is home to the oldest native, pure-breed red deer population in the UK. At its heart, in Rampsgill and the Nab, is the hind forest, a sanctuary where the deer can live undisturbed by people or dogs. The valley is enclosed by the fells of Place Fell, Beda Fell and Steel Knotts.",
+          "The village of Martindale has a church, St Peter's at the dale head, that dates from 1882, though there has been a place of worship in the valley for much longer. The older chapel (St Martin's) near the dale entrance is medieval. A very small community lives in the valley year-round.",
         ],
       },
       {
         heading: "Getting there and parking",
         body: [
-          "The approach is from Pooley Bridge at the northern end of Ullswater. Take the road east from Pooley Bridge through Dacre and south through the villages of Martindale. Alternatively, take the Ullswater Steamers to Howtown and walk or take the minor road south into the valley.",
-          "Parking is severely limited. There are a handful of spaces at the dale head and a small parking area near the dale entrance. Arrive before 8am on peak October mornings to be sure of parking. Overloading the valley with vehicles damages both the experience and the ground. Consider the Ullswater Steamer approach from Glenridding if possible.",
+          "The approach is from Pooley Bridge at the northern end of Ullswater. Take the road south along the eastern shore to Howtown and beyond. It is a dead end and narrow in places, and part of it is a legally defined clearway, where it is an offence to stop and park. Alternatively, take the Ullswater Steamers to Howtown and walk into the valley from there.",
+          "Parking is very limited. The National Park Authority says public parking around Howtown is only at The Hause and at several small laybys, and there is no car parking at Howtown pier. If you can, take the Steamer from Glenridding or Pooley Bridge instead of driving.",
         ],
       },
       {
         heading: "Wildlife through the year",
         body: [
+          "The Dalemain Estate asks you to keep away from the red deer at all times, especially at calving time, and says the sanctuary at The Nab and Rampsgill may be closed between September and February for deer management. Check access with the Dalemain Estate Office before you go.",
           "October is the rut. Come early, move quietly, stay at distance. The stags are visible on the open fellside from first light. November and December: hinds and last year's calves in valley groups. Good lighting conditions on clear winter days. January to March: the valley is quiet but the deer are there. Spring: calves are born in May and June and kept hidden in deep vegetation.",
-          "Year-round, Martindale is good for buzzard, raven, red kite, and peregrine. The raptors use the valley thermals and hunt along the fell edges. Red kites — unmistakeable large raptors with forked tails — are increasingly common above the valley after the Cumbrian reintroduction.",
+          "Year-round, Martindale is good for buzzard, raven, red kite, and peregrine. The raptors use the valley thermals and hunt along the fell edges. Red kites, unmistakeable large raptors with forked tails, are increasingly common above the valley after the Cumbrian reintroduction.",
         ],
       },
     ],
@@ -577,38 +591,40 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "haweswater-in-winter",
     category: "seasonal-watching",
     categoryLabel: "Seasonal Watching",
-    title: "Haweswater in Winter: The Quiet Season at England's Most Remote Reservoir",
-    date: "2026-12-05",
+    title: "Haweswater in Winter: Wildlife in the Quiet Season",
+    date: "2026-11-11",
     metaDescription:
-      "Haweswater in winter. Red deer on the fell sides, red squirrels at the feeders, wildfowl on the reservoir. The most visited RSPB site in the Lake District in its quietest season.",
+      "Haweswater in winter: salmon in Swindale Beck, red squirrels, redwings and fieldfares. Parking at Mardale Head, no toilets and no phone signal. What to know before you go.",
     heroWikipediaTitle: "Haweswater Reservoir",
-    heroAlt: "Haweswater reservoir and the surrounding fells in winter light",
+    heroAlt: "Haweswater reservoir and the surrounding fells",
     intro:
-      "In winter, Haweswater is a different place. The summer crowds are gone. The reservoir sits dark and still under the fells. Red deer move down from the high ground onto the lower slopes. Goosander fish the reservoir. The red squirrels are at the feeders every morning. The weather can be brutal, but it is worth it.",
+      "Haweswater is a reservoir in the eastern Lake District. Around it, the RSPB and the landowner United Utilities run Wild Haweswater, a landscape restoration partnership across the Mardale, Naddle and Swindale valleys. In winter salmon run up Swindale Beck to spawn, winter thrushes feed on the berries and tree planting gets under way.",
     sections: [
       {
-        heading: "Why Haweswater in winter",
+        heading: "What to look for in winter",
         body: [
-          "Most people visit Haweswater in summer for the ospreys. The ospreys leave in September. But the valley in winter has a quality that the summer season does not — the absence of crowds, the stark simplicity of the fell landscape in short light, and the wildlife that winter brings down from the high fell.",
-          "Red deer are more visible in winter. With the bracken down and the vegetation minimal, deer on the lower fell slopes are easy to spot from the reservoir road. A herd of hinds on the fell above the waterline on a still December morning is a reliable winter sight.",
+          "Wild Haweswater's own notes for the season list Atlantic salmon moving from the sea into Swindale Beck to spawn, and redwings and fieldfares feeding on berries before they fly back to Scandinavia to breed.",
+          "Red squirrels live in the forest, recently reintroduced water voles live in the becks, dippers plunge into the fast streams and buzzards circle overhead. Herds of fell ponies and Luing and Belted Galloway cattle graze the site for conservation.",
+          "Earlier in the autumn you may hear pink-footed geese overhead, and red deer roar on the fells in October.",
         ],
       },
       {
-        heading: "Wildfowl and red squirrels",
+        heading: "Hides and guided walks",
         body: [
-          "Goosander are present on the reservoir year-round but more visible in winter when lower water levels concentrate them. Watch for these long, streamlined ducks fishing on the reservoir surface. The male in winter plumage is white with a dark head; the female grey-brown with a rusty head crest.",
-          "The red squirrel feeders at the RSPB Haweswater site (CA10 2LX) are maintained year-round. In winter, when the oak woodland is bare, squirrels at the feeders are more visible against the background. The morning visit is still the best approach — the squirrels are most active in the first hours after dawn.",
+          "There are no public hides or designated viewpoints at Wild Haweswater: you walk the public footpaths and bridleways and see what is about. The pre-booked hides are Wild Intrigue's Woodland Wildlife Hide, open from November to June, and the RSPB's Badger Watching Hide, open from April to October.",
+          "Winter is tree-planting season, when staff and volunteers plant out trees from the reserve's own nursery. The RSPB runs guided walks such as Meet Cumbria's Rainforest in Naddle Forest; check the Wild Haweswater events page for dates.",
         ],
       },
       {
         heading: "Practical notes",
         body: [
-          "The road to Haweswater from Shap is narrow and can be icy in winter. Check road conditions before visiting. The car park at the reservoir head is sometimes inaccessible in heavy snow. Carry winter kit — boots, waterproofs, warm layers — even for short reservoir-side walks. The wind off the fell can be sharp.",
-          "The RSPB volunteer presence at Haweswater is seasonal, ending with the osprey season in September. In winter you are on your own. The reserve is open all year but unstaffed. The birds and mammals are there regardless of whether there is someone to interpret them for you.",
+          "Park at Mardale Head, the main visitor car park at the southern end of the reservoir, reached by a winding road along the shore. It is open at all times, but a Public Space Protection Order bans overnight parking. There are no toilets: the nearest are in Shap, about ten miles away. There is no visitor centre or café, and no phone signal across most of the site.",
+          "Entry is free. A donation cairn in the car park suggests £2, cash only because there is no signal for card payments. Bring OS map OL5, food, a hot drink and waterproofs, and check the forecast before you head into the hills.",
+          "Dogs are welcome on the public rights of way under close control. Keep them on a lead around livestock and around birds resting on the ground.",
         ],
       },
     ],
-    tags: ["Haweswater", "winter wildlife", "red deer", "red squirrel", "goosander", "RSPB", "eastern fells"],
+    tags: ["Haweswater", "winter wildlife", "salmon", "red squirrel", "RSPB", "eastern fells"],
   },
 
 ];

@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 const title = "Seasonal Wildlife Guides | Lake District";
-const description = "What to see when in the Lake District — ospreys, red deer rut, red squirrels and winter wildfowl.";
+const description = "What to see when in the Lake District: ospreys, red deer rut, red squirrels and winter wildfowl.";
 const url = "https://www.thelakeswildlife.co.uk/seasonal";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ const seasons = [
     slug: "osprey-season",
     title: "Osprey Season",
     period: "April/August",
-    desc: "Ospreys return from West Africa to breed at RSPB Haweswater and Foulshaw Moss. Get there before 10am for a spot at the hide.",
+    desc: "Ospreys return from Africa to breed at Foulshaw Moss, where Cumbria Wildlife Trust has a viewing platform and an osprey webcam.",
     tag: "Peak season",
   },
   {
@@ -60,7 +60,7 @@ export default function SeasonalPage() {
           </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">Seasonal guides</h1>
           <p className="text-white/70 max-w-2xl leading-relaxed">
-            When to visit the Lake District for specific wildlife, from ospreys at Haweswater to the red deer rut in Martindale.
+            When to visit the Lake District for specific wildlife, from ospreys at Foulshaw Moss to the red deer rut in Martindale.
           </p>
         </div>
       </div>

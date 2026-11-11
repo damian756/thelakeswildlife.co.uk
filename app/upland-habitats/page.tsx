@@ -25,11 +25,11 @@ const faqs = [
   },
   {
     q: "Are there mountain hare on the Lake District fells?",
-    a: "Yes, in small numbers. The Skiddaw massif and the northern fells are the main sites. They are near the southern edge of their English range. Look on open fell above 600 metres, particularly in winter when they can turn white.",
+    a: "No. Mountain hares were released in the Lake District in the late 1800s, but the Mammal Society says only the hares taken to the Peak District survived.",
   },
   {
     q: "What is blanket bog and why does it matter for wildlife?",
-    a: "Blanket bog is deep peat formed over thousands of years, fed by rainfall. It covers many of the higher Lake District plateaux. It stores significant amounts of carbon and supports specialist species — golden plover, dunlin, large heath butterfly. Damaged bog drains, releasing carbon. Intact bog is both a wildlife habitat and a climate asset.",
+    a: "Blanket bog is deep peat formed over thousands of years, fed by rainfall. It covers many of the higher Lake District plateaux. It stores significant amounts of carbon and supports specialist species: golden plover, dunlin, large heath butterfly. Damaged bog drains, releasing carbon. Intact bog is both a wildlife habitat and a climate asset.",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function UplandHabitatsPage() {
             Upland Fell Habitats
           </h1>
           <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
-            Above the intake walls, the Lake District belongs to a different set of species. Ring ouzel, peregrine, red grouse, golden plover. The fell habitats — blanket bog, heather moorland, crags, and scree — are specialist wildlife country. Understanding what you are walking through makes the wildlife make more sense.
+            Above the intake walls, the Lake District belongs to a different set of species. Ring ouzel, peregrine, red grouse, golden plover. The fell habitats, from blanket bog and heather moorland to crags and scree, are specialist wildlife country. Understanding what you are walking through makes the wildlife make more sense.
           </p>
         </div>
       </div>
@@ -94,10 +94,10 @@ export default function UplandHabitatsPage() {
         <div className="prose prose-slate max-w-none">
           <h2>Heather moorland</h2>
           <p>
-            Heather moorland is the dominant vegetation on many of the drier fell tops and south-facing slopes between about 300 and 600 metres. The characteristic plants are ling (Calluna vulgaris), bell heather, and bilberry. In August the heather blooms and the moors turn purple — this is when the red grouse population is most visible, as the birds move through the heather in family groups.
+            Heather moorland is the dominant vegetation on many of the drier fell tops and south-facing slopes between about 300 and 600 metres. The characteristic plants are ling (Calluna vulgaris), bell heather, and bilberry. In August the heather blooms and the moors turn purple. This is when the red grouse population is most visible, as the birds move through the heather in family groups.
           </p>
           <p>
-            Red grouse are the moorland flagship species. They are medium-sized, reddish-brown game birds that spend their entire lives in heather moorland. They roost, nest, and feed in the heather. The males call loudly — the distinctive "go back, go back, go back" call, running words together at speed — particularly early in the morning. On the Skiddaw and Blencathra moorlands and the eastern fells above Patterdale, red grouse are reliable year-round.
+            Red grouse are the moorland flagship species. They are medium-sized, reddish-brown game birds that spend their entire lives in heather moorland. They roost, nest, and feed in the heather. The males call loudly, particularly early in the morning: the distinctive &quot;go back, go back, go back&quot; call, running words together at speed. On the Skiddaw and Blencathra moorlands and the eastern fells above Patterdale, red grouse are reliable year-round.
           </p>
           <p>
             Heather management for grouse shooting involves rotational burning (muirburn) to maintain a mosaic of ages from regenerating shoots (for feeding) to mature heather (for nesting and cover). The patchwork this creates is visible on many Lake District moorlands. Whether the wildlife interest is better served by grouse management or by allowing moorland to develop naturally is a genuine question; the habitats support different species mixes.
@@ -105,10 +105,10 @@ export default function UplandHabitatsPage() {
 
           <h2>Blanket bog</h2>
           <p>
-            Blanket bog covers the higher, wetter plateaux of the Lake District — Cross Fell and the surrounding fells in the north-east, parts of the Skiddaw Forest, and the high areas of the central fells. Blanket bog forms where the annual rainfall is high and temperatures low enough to prevent the decomposition of dead plant material, resulting in the accumulation of peat over thousands of years. Some Lake District peats are several metres deep.
+            Blanket bog covers the higher, wetter plateaux of the Lake District. Blanket bog forms where the annual rainfall is high and temperatures low enough to prevent the decomposition of dead plant material, resulting in the accumulation of peat over thousands of years. Some Lake District peats are several metres deep.
           </p>
           <p>
-            The specialist birds of blanket bog are golden plover and dunlin, both present as breeding species on the higher areas from April to July. Golden plover in summer plumage are handsome birds — black-faced with a golden spangled back. Their melancholy call, a liquid two-note whistle, carries across the bog in clear weather. Dunlin are small waders with a distinctive drooped bill tip and a black belly patch in summer.
+            The specialist birds of blanket bog are golden plover and dunlin, both present as breeding species on the higher areas from April to July. Golden plover in summer plumage are handsome birds: black-faced with a golden spangled back. Their melancholy call, a liquid two-note whistle, carries across the bog in clear weather. Dunlin are small waders with a distinctive drooped bill tip and a black belly patch in summer.
           </p>
           <p>
             The large heath butterfly is a blanket and raised bog specialist (see Foulshaw Moss) that occurs on the wetter flat areas. Bog asphodel flowers in July and August on the wet bog surfaces. Sphagnum moss in multiple species forms the living infrastructure. Sundew catches insects. This is a complete and ancient ecosystem that looks featureless to the uninitiated.
@@ -116,10 +116,10 @@ export default function UplandHabitatsPage() {
 
           <h2>Rocky crags and scree</h2>
           <p>
-            Peregrine falcons breed on rocky crags throughout the Lake District. They are present year-round, though most visible in the breeding season from March to July when the adults are defending territory and feeding young. The peregrine stoops — dives at speed — on prey birds with a speed that is difficult to follow with the eye. The stoop makes a distinctive high-pitched tearing sound as the bird descends.
+            Peregrine falcons breed on rocky crags throughout the Lake District. They are present year-round, though most visible in the breeding season from March to July when the adults are defending territory and feeding young. The peregrine stoops (dives at speed) on prey birds with a speed that is difficult to follow with the eye. The stoop makes a distinctive high-pitched tearing sound as the bird descends.
           </p>
           <p>
-            The rocky crags of Helvellyn's east face, the Borrowdale volcanic crags, and the limestone crags on the southern edge of the national park all hold peregrines. Scree below the crags provides habitat for common lizard and slow worm in the south-facing exposures. Ring ouzel breed in rocky gullies and scree above 500 metres from April to August — the male is a blackbird-sized bird with a white crescent on the breast, often singing from a prominent boulder.
+            The rocky crags of Helvellyn's east face, the Borrowdale volcanic crags, and the limestone crags on the southern edge of the national park all hold peregrines. Scree below the crags provides habitat for common lizard and slow worm in the south-facing exposures. Ring ouzel breed in rocky gullies and scree above 500 metres from April to August. The male is a blackbird-sized bird with a white crescent on the breast, often singing from a prominent boulder.
           </p>
 
           <h2>Montane grassland and high summit flora</h2>
@@ -132,10 +132,10 @@ export default function UplandHabitatsPage() {
 
           <h2>Dotterel</h2>
           <p>
-            Dotterel pass through the Lake District in May on migration from their African wintering grounds to the Scottish mountains and Scandinavian breeding areas. They stop briefly on the high fell tops and plateaux to rest and feed. Small groups — trips of dotterel — are found on the same traditional stopping places year after year: the summit areas of Helvellyn, Blencathra, and the Skiddaw massif. They are confiding birds, allowing close approach, and the male (which does most of the incubation in this species) is strikingly marked with a chestnut breast and bold white face markings.
+            Dotterel pass through the Lake District in May on migration from their African wintering grounds to the Scottish mountains and Scandinavian breeding areas. They stop briefly on the high fell tops and plateaux to rest and feed. Small groups, called trips, are found on the same traditional stopping places year after year: the summit areas of Helvellyn, Blencathra, and the Skiddaw massif. They are confiding birds, allowing close approach. The female is the brighter bird, with a chestnut belly, white chest band and white eyestripe, and the male raises the young.
           </p>
           <p>
-            The timing is narrow — the main migration window is from late April to mid-May. A cold spell can delay them or cause them to stop in larger numbers. Check local birding records in late April for reports of dotterel on the high fells.
+            The timing is narrow. The main migration window is from late April to mid-May. A cold spell can delay them or cause them to stop in larger numbers. Check local birding records in late April for reports of dotterel on the high fells.
           </p>
 
           <h2>Ravens</h2>

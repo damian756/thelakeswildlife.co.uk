@@ -5,21 +5,21 @@ import { MapPin, Clock, Eye, Leaf } from "lucide-react";
 
 const title = "Foulshaw Moss | Osprey Viewing, Wildlife & Practical Guide";
 const description =
-  "Foulshaw Moss wildlife guide. Cumbria Wildlife Trust raised bog with osprey viewing platform, bog asphodel, sundew, and large heath butterflies. Postcode LA11 6QZ. Free entry.";
+  "Foulshaw Moss wildlife guide. Cumbria Wildlife Trust raised bog with osprey viewing platform, bog asphodel, sundew, and large heath butterflies. Postcode LA11 6SN. Free entry.";
 const url = "https://www.thelakeswildlife.co.uk/nature/foulshaw-moss";
 
 const faqs = [
   {
     q: "Is Foulshaw Moss free to enter?",
-    a: "Yes. Entry to the reserve is free. There is a small car park on the minor road off the A590 which is also free. Managed by Cumbria Wildlife Trust.",
+    a: "Yes. Entry to the reserve is free. There is a small car park at the end of a track off the A590. Managed by Cumbria Wildlife Trust.",
   },
   {
     q: "When is the best time to see ospreys at Foulshaw Moss?",
-    a: "April to August. The viewing platform overlooks the osprey nest platform. The birds return from West Africa in March or early April. June and July are peak chick-rearing time. Get there before 10am for the best activity at the nest.",
+    a: "Late March to early September. The viewing platform overlooks the osprey nest platform. The birds return from West Africa in March or early April. June and July are peak chick-rearing time. Get there before 10am for the best activity at the nest.",
   },
   {
     q: "Is Foulshaw Moss good for butterflies?",
-    a: "Yes. The Large Heath butterfly is the flagship insect species here. It flies in June and July and is restricted to raised bog habitats. Foulshaw is one of the better places in northern England to see it. The boardwalk through the bog is the right area.",
+    a: "Yes. The Large Heath butterfly is one of the summer highlights here. It flies in June and July and is restricted to raised bog habitats. Green hairstreaks fly in May. The boardwalk through the bog is the right area.",
   },
   {
     q: "What plants grow at Foulshaw Moss?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "How difficult is the walking at Foulshaw Moss?",
-    a: "Easy. The main route is a boardwalk across the bog and a clear path to the viewing platform. The entire circuit is around 1.5 miles on flat ground. Suitable for all abilities. Wellies recommended in wet weather.",
+    a: "The landscape is challenging, but boardwalks make visiting easy-going. They lead from the car park across the bog, one of them to the viewing platform 1.5 km (1 mile) away. Stay on the boardwalk: the ground off it is very soft, with deep water in places. Ticks and adders are present in large numbers. Check Cumbria Wildlife Trust's page before you go: in November 2026 the boardwalks were closed because wet weather had made them very slippery. Wellies recommended in wet weather.",
   },
 ];
 
@@ -37,13 +37,13 @@ const pageJsonLd = [
     "@type": "TouristAttraction",
     name: "Foulshaw Moss",
     description:
-      "Cumbria Wildlife Trust raised bog reserve near Grange-over-Sands. Osprey viewing platform, Large Heath butterfly, bog plants and summer wildlife.",
+      "Cumbria Wildlife Trust raised bog reserve near Witherslack. Osprey viewing platform, Large Heath butterfly, bog plants and summer wildlife.",
     url,
     geo: { "@type": "GeoCoordinates", latitude: 54.2167, longitude: -2.9167 },
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Grange-over-Sands",
-      postalCode: "LA11 6QZ",
+      addressLocality: "Witherslack",
+      postalCode: "LA11 6SN",
       addressCountry: "GB",
     },
     amenityFeature: [
@@ -90,7 +90,7 @@ export default function FoulshawMossPage() {
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1504198266287-1659872e6590?w=1400&q=80"
-          alt="Foulshaw Moss raised bog reserve near Grange-over-Sands"
+          alt="Foulshaw Moss raised bog reserve near Witherslack"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
@@ -104,19 +104,19 @@ export default function FoulshawMossPage() {
             <span className="text-white/80">Foulshaw Moss</span>
           </nav>
           <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
-            Cumbria Wildlife Trust · Near Grange-over-Sands · Free entry
+            Cumbria Wildlife Trust · Near Witherslack · Free entry
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Foulshaw Moss
           </h1>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mb-8">
-            A restored raised bog with an osprey nest you can watch from a viewing platform. Part of the Lake District osprey reintroduction. Go in summer for the ospreys, the Large Heath butterfly, and a bog landscape that looks like nowhere else in the Lakes.
+            A restored raised bog with an osprey nest you can watch from a viewing platform. Go in summer for the ospreys, the Large Heath butterfly, and a lowland raised bog, one of Western Europe&rsquo;s rarest habitats.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
             {[
-              { icon: MapPin, stat: "LA11 6QZ", label: "Postcode" },
+              { icon: MapPin, stat: "LA11 6SN", label: "Postcode" },
               { icon: Clock, stat: "Free", label: "Entry and parking" },
-              { icon: Eye, stat: "Apr–Aug", label: "Osprey season" },
+              { icon: Eye, stat: "Mar–Sep", label: "Osprey season" },
               { icon: Leaf, stat: "Jun–Jul", label: "Large Heath" },
             ].map(({ icon: Icon, stat, label }) => (
               <div key={label} className="bg-black/40 backdrop-blur rounded-xl px-3 py-2.5 border border-white/20">
@@ -155,14 +155,14 @@ export default function FoulshawMossPage() {
           <h2 className="font-semibold text-[var(--fell)] mb-3 text-sm uppercase tracking-wider">Practical information</h2>
           <dl className="grid sm:grid-cols-2 gap-y-2 gap-x-6 text-sm">
             {[
-              ["Postcode", "LA11 6QZ"],
+              ["Postcode", "LA11 6SN"],
               ["Managed by", "Cumbria Wildlife Trust"],
               ["Entry", "Free"],
-              ["Parking", "Free, roadside car park"],
+              ["Parking", "Small car park, track off the A590"],
               ["Facilities", "Viewing platform, boardwalk, information boards"],
               ["Dogs", "On leads please"],
               ["Best for", "Ospreys, Large Heath butterfly, bog plants"],
-              ["Peak season", "May to August"],
+              ["Best time to visit", "April to September"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between border-b border-[var(--slate)]/10 pb-1.5">
                 <dt className="text-[var(--slate)]/60">{k}</dt>
@@ -176,7 +176,7 @@ export default function FoulshawMossPage() {
         <section className="mb-12">
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">About Foulshaw Moss</h2>
           <p className="text-[var(--slate)] leading-relaxed mb-4">
-            Foulshaw Moss is a raised bog on the southern edge of the Lake District, just off the A590 near Grange-over-Sands. Managed by Cumbria Wildlife Trust and part of the Morecambe Bay Limestones and Wetlands project, it is one of the most productive wildlife habitats in the southern Lakes fringe.
+            Foulshaw Moss is a raised bog on the southern edge of the Lake District, just off the A590 near Witherslack. It is managed by Cumbria Wildlife Trust and covers 350 hectares. Lowland raised bogs like this are one of Western Europe&rsquo;s rarest and most threatened habitats.
           </p>
           <p className="text-[var(--slate)] leading-relaxed">
             Raised bogs are rare habitats. They form over thousands of years where peat accumulates above the surrounding landscape, fed entirely by rainfall. The sphagnum mosses absorb water like a sponge and create the acidic, nutrient-poor conditions that support the specialist plant and insect communities found here. Foulshaw was partly damaged by drainage and peat cutting. Restoration work since 2001 has rebuilt the bog hydrology with rewetting and drain blocking.
@@ -195,10 +195,10 @@ export default function FoulshawMossPage() {
               />
             </div>
             <div className="bg-[var(--fog)] p-6 flex flex-col justify-center md:flex-1">
-              <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">April to August</p>
+              <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">Late March to early September</p>
               <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">Ospreys</h2>
               <p className="text-[var(--slate)] text-sm leading-relaxed">
-                The nest platform at Foulshaw is part of the Cumbria Osprey Project. The birds use the nest platform reliably and raise chicks most years. The viewing platform overlooks the nest at a respectful distance with a clear line of sight. This is part of the same reintroduction programme that includes the Haweswater pair.
+                Ospreys have nested at Foulshaw since at least 2014, and the pair has bred successfully for a number of years. In 2025 a second pair nested on a man-made platform on the reserve. The viewing platform overlooks the nest at a respectful distance with a clear line of sight. Cumbria Wildlife Trust&rsquo;s osprey volunteers welcome visitors on site.
               </p>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function FoulshawMossPage() {
           </p>
           <div className="bg-[var(--fog)] rounded-xl p-4">
             <p className="font-semibold text-[var(--fell)] text-sm mb-1">Why this matters</p>
-            <p className="text-sm text-[var(--slate)] leading-relaxed">Forty years ago there were no ospreys in England. There are now several pairs breeding across the Lakes. The success at Foulshaw, Haweswater, and multiple other sites is a genuine conservation story.</p>
+            <p className="text-sm text-[var(--slate)] leading-relaxed">No osprey nest was recorded in England from the 1830s until a pair bred near Bassenthwaite Lake in 2001. Ospreys came back naturally, helped by nest platforms, and now breed at several Lake District sites, Foulshaw among them.</p>
           </div>
         </section>
 
@@ -218,7 +218,7 @@ export default function FoulshawMossPage() {
         <section id="large-heath" className="mb-12 scroll-mt-20">
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">Large Heath Butterfly</h2>
           <p className="text-[var(--slate)] leading-relaxed mb-4">
-            The Large Heath is one of Britain's rarest butterflies, restricted to upland and lowland raised bogs across the north and west of the country. Foulshaw is one of the better sites in the north-west. The butterfly is on the wing in June and July, flying low over the bog surface and perching on cotton grass stems.
+            The Large Heath is one of Britain&rsquo;s rarest butterflies, restricted to upland and lowland raised bogs across the north and west of the country. The butterfly is on the wing in June and July, flying low over the bog surface and perching on cotton grass stems.
           </p>
           <p className="text-[var(--slate)] leading-relaxed mb-4">
             The male has a pale orange-brown forewing with one eyespot; the female has two. They can be distinguished from the commoner Small Heath by size and habitat. If you are on a raised bog in June, the larger brown butterfly is almost certainly a Large Heath.
@@ -265,7 +265,7 @@ export default function FoulshawMossPage() {
               { period: "May to June", detail: "Osprey nest activity. Pied flycatchers and redstarts in nearby woodland. Cotton grass in flower." },
               { period: "June to July", detail: "Large Heath butterfly on the wing. Bog asphodel flowering. Peak insect diversity on the reserve." },
               { period: "July to August", detail: "Young ospreys fledging. Dragonflies and damselflies active over the wet areas. Golden-ringed dragonfly on the bog edges." },
-              { period: "September to October", detail: "Ospreys depart. Bog asphodel turning orange-red. Wildfowl beginning to arrive on the nearby estuary." },
+              { period: "September to October", detail: "Ospreys have usually left by the start of September, though migrating ospreys pass through that month. Bog asphodel turning orange-red. Wildfowl beginning to arrive on the nearby estuary." },
             ].map(({ period, detail }) => (
               <div key={period} className="bg-[var(--fog)] rounded-xl p-4 flex gap-4">
                 <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-wider flex-none w-28 pt-0.5">{period}</p>
@@ -280,10 +280,10 @@ export default function FoulshawMossPage() {
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">Getting There</h2>
           <div className="bg-[var(--fog)] rounded-xl p-5">
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-3">
-              The reserve entrance and car park are on a minor road off the A590, approximately 3 miles east of Grange-over-Sands. The postcode LA11 6QZ brings you to the right area. Look for the Cumbria Wildlife Trust signs. The car park is free and holds around 15 vehicles.
+              The reserve is off the A590 near Witherslack. From Kendal, take the A590 towards Barrow-in-Furness. About 1 km (0.6 miles) past the end of the dual carriageway at Gilpin Bridge, a track leaves the road just before a signed parking layby. Go through the gate and follow the track to the small car park. From the Grange and Barrow direction, pass the Witherslack junction: the track is on the right about 0.6 km later, just after the layby. Take care turning in, as the road can be very busy. The postcode LA11 6SN brings you to the right area. Look for the Cumbria Wildlife Trust signs. The car park is free and holds around 15 vehicles.
             </p>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-3">
-              The reserve is not served by public transport. The nearest town is Grange-over-Sands, which has a train station on the Furness line. A taxi from Grange-over-Sands to the reserve is around 10 minutes.
+              The X6 bus between Kendal, Ulverston and Barrow stops a few minutes on foot from the entrance: Low Fell End, at the nearby layby, for westbound buses, and Parkside Cottages, on the other side of the dual carriageway, for eastbound buses. Check Stagecoach for times. The reserve is also on National Cycle Routes 70 and 700. The nearest town is Grange-over-Sands, which has a train station on the Furness line. A taxi from Grange-over-Sands to the reserve is around 10 minutes.
             </p>
             <p className="text-sm text-[var(--slate)] font-medium">What to bring: wellies or waterproof footwear, binoculars, water and food (no cafe on site). The nearest facilities are in Grange-over-Sands.</p>
           </div>
@@ -313,7 +313,7 @@ export default function FoulshawMossPage() {
               {
                 href: "/nature/haweswater-rspb",
                 name: "RSPB Haweswater",
-                desc: "Ospreys, pied flycatchers, red squirrels",
+                desc: "Red squirrels, ring ouzels, pied flycatchers",
                 image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80",
               },
               {

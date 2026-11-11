@@ -245,12 +245,12 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
             {species.shortLocation && (
               <div className="mt-4">
                 {species.shortLocation.includes("Haweswater") && (
-                  <Link href="/birdwatching-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
+                  <Link href="/nature/haweswater-rspb" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
                     → RSPB Haweswater guide
                   </Link>
                 )}
                 {species.shortLocation.includes("Grizedale") && (
-                  <Link href="/birdwatching-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
+                  <Link href="/nature/grizedale-forest" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
                     → Grizedale Forest guide
                   </Link>
                 )}
@@ -359,7 +359,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
               <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white text-[var(--fell)] text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-[var(--mist)] transition">
                 Birdwatching guide →
               </Link>
-              <Link href="/birdwatching-guide" className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
+              <Link href="/nature/haweswater-rspb" className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
                 RSPB Haweswater
               </Link>
               <Link href={`/${category}`} className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/20 hover:bg-white/20 transition">
