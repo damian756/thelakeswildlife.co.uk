@@ -64,6 +64,7 @@ This report's first version, `9e31ba2`, was pushed with those.
 | `398e8cb` to `9e46ead` | Final review fixes (section 4), the London region line and `fix-*` screenshots |
 | this report | |
 | four privacy and terms commits, then one terms commit | last (section 13) |
+| `278c5cc` to `bdcdbaf`, then the SEO report, then one privacy and terms link commit | SEO pass on top of the live tip `1bed7b9` (section 18) |
 
 The stage 2 commits made before the review, including the two new posts and the visit counts, sit earlier in the same history.
 
@@ -530,4 +531,117 @@ About 250 species entries read as machine-made, and some are Sefton coast specie
 
 ## 18. SEO pass
 
-To follow as its own push once this is live, by an agent that did not write the pages (brief: `lakes-seo-pass-brief.md` in the coordinating notes). It adds its findings, the sitemap count, the URLs for Damian to submit and "Traffic: what to do next" here.
+Done on the night of 11 Nov 2026 by an agent that did not write the pages (brief: `lakes-seo-pass-brief.md` in the coordinating notes), on top of the live tip `1bed7b9`. Checked on a production build served on port 3112 with `DATABASE_URL` empty: every URL in the sitemap was fetched before and after, recording status, redirect, robots, canonical, og:url, title, description, H1 and JSON-LD.
+
+**Commits** (none needs to go before the privacy and terms commits of section 13):
+
+| Commit | What it does |
+|---|---|
+| `278c5cc` | Canonicals and share tags |
+| `f12d3a0` | Schema |
+| `8cfba09` | Titles and descriptions |
+| `c0efaee` | Sister-site links to their www addresses |
+| `906c6ae` | Scotch argus flight period (review fix 1) |
+| `14fdea7` | Butterfly Red List status (review fix 2) |
+| `7947d57` | `tests/ads.test.mjs` business-word check (review fix 3) |
+| `978d24a` | Closing box on species not found here (review fix 4) |
+| `f2309d7` | Species pages link to the guide for their main site |
+| `cfb8cb5`, `bdcdbaf` | Screenshots `seo-*` |
+| this report | |
+| last | Privacy and terms: the "The Lakes Network" link goes to https://www.thelakes.network/ (link only; wording unchanged) |
+
+### What was found and what changed
+
+**1. The advertising page.** `/advertise` was "Advertise | The Lakes Wildlife", with a 164-character description. It is now "Lake District Advertising on The Lakes Wildlife": the site named once (the template is not added), the word advertising, no claims. The description (158 characters) says what the page offers today: section and guide sponsors, a home page card, sponsored articles and the Lakes network bundle, prices plus VAT, and how to ask. The page is new tonight, so no ranked title was given up. `/advertise?space=...` keeps the clean canonical.
+
+**2. Canonicals.**
+- The layout gave every page the home page as a default canonical and og:url. The 404 page therefore had canonical = home, and `/photo-credits` (and the noindex `/privacy` and `/terms`) had og:url = home. The default is gone; each page sets its own.
+- The 404 carried two robots tags, "noindex" and "index, follow". It now carries only Next's noindex.
+- After: all 202 sitemap URLs have exactly one canonical, absolute, on www, pointing at the page itself, with og:url equal to it. `/contact?type=...` and `/advertise?space=...` point at the clean URL. No hreflang (one language, none needed).
+- Share images no longer claim sizes they are not (the osprey is 600 x 400, not 1200 x 630).
+
+**3. Schema (JSON-LD).**
+- **Organization.** Its sameAs listed The Lakes Guide, Hike The Lakes, the bare https://thelakes.network (a 307), LinkedIn and churchtownmedia.co.uk, which says they are the same organisation. They are not. Churchtown Media Ltd is now its parentOrganization, with the Companies House record. The logo was `og-default.png`, which does not exist (404); it is now the site icon. WebSite and Organization are described once, on the home page, and referred to by @id elsewhere. The home page's Person node (no byline there) is gone. Same pattern as The Lakes Guide and Hike The Lakes tonight.
+- **Species pages (160).** Each had two JSON-LD blocks with the same @id and different data: invented dates (2024-04-01 and 2025-03-01, before the site existed), an author bio no species page shows, an image URL that was not a file (`Special:FilePath/Osprey`, built from an article title), and a property Taxon does not have. Now one graph per page:
+  - the page itself (an FAQPage where it shows questions), dated 9 Mar 2026 (launch) and 11 Nov 2026, with no author, as none is shown;
+  - the Taxon, with the family and order the page lists;
+  - the breadcrumb as shown ("Mammals & Wildlife", not "Mammals");
+  - the photo, whose creator, licence and creditText repeat the credit line printed under it, and are left out where the page shows no author.
+- **Guides and seasonal guides.** Dates were 2024-04-01 and 2025-03-01; now 9 Mar 2026 and 11 Nov 2026, from git. Author: Damian Roche on the fishing and seasonal guides, whose author box names him; the site on the birdwatching, mammal-watching, upland and woodland guides, which show no byline. Headline is the page's H1, not the meta title.
+- **Posts.** The author was an @id defined only on the home page; now "Damian", as the author box says. The hero image carries the credit printed on it. The breadcrumb ends with the category the page shows.
+- **Reserve pages.** GeoCoordinates removed: they were not shown, and Foulshaw Moss's was about 6 km south-west of its grid reference (SD 458 837, Cumbria Wildlife Trust); the others were rounded guesses. Haweswater, Leighton Moss and Foulshaw Moss carry their credited hero photograph. `/nature` had a BreadcrumbList but shows no breadcrumb (removed); `/blog` and `/seasonal` show one and now have it.
+- No AggregateRating, Review, LocalBusiness or SearchAction anywhere. Every block parses, and every @id and URL is on the www host.
+
+**4. Titles and descriptions.**
+- **Species.** Titles were thin: "Barn Owl in Martindale" (22 characters). They are now "Barn Owl: Where to See Them in the Lake District" ("Where to Find It" for plants); names too long for that take "Great Spotted Woodpecker in the Lake District". The three species not found here say where they are: "Mountain Hare: Where to See Them in the Peak District", the Pennines for black grouse, Scotland for the Scotch argus. The high brown fritillary keeps "on Whitbarrow", as its page puts it on the Lake District's edge. The species name, the main phrase, still leads; the place moved from the title to the description. Descriptions were the first 155 characters of the machine-made copy ("Barn owls are ghosts. That pale flight. Dusk."). They now say where, when and what the page covers, from its own fields: "Osprey in the Lake District: where to see them (at Foulshaw Moss), when (late March to early September), how to identify them and their UK conservation status."
+- **Sefton leftovers.** `/mammals` promised grey seals and `/birds` pink-footed geese; neither has a page here. Fixed.
+- **Thin and long titles.** `/contact`, `/photo-credits` and `/blog` ("Lake District Wildlife Blog") had 7 to 13 characters. Nine titles of 63 to 73 characters were shortened, each keeping its main phrase; for three posts this is a new `metaTitle`, and the heading on the page is unchanged.
+- **Descriptions.** 24 descriptions over 160 characters cut to fit, saying the same things.
+- **Script check over the served build:** 202 unique titles and 202 unique descriptions. Titles run 27 to 62 characters before the site name; the home page's own title is 66 and was left alone, as it may rank. Descriptions run 84 to 160. No em dash in any page, head or JSON-LD; no stray "2025"; no Southport or Sefton leftovers.
+
+**5. Sitemaps and robots.**
+- https://www.thelakeswildlife.co.uk/sitemap.xml has 202 URLs, live and after these changes (none added or removed). All 202 were fetched from the served build: each answered 200, with no redirect, none noindex, each canonical to itself.
+- lastmod is 11 Nov 2026 on every URL, and that is true: every page's source or content changed on 11 Nov (git), and every post carries its own date or its `updated` date, which is 11 Nov for all of them. The dates are fixed in `app/sitemap.ts`, not "now".
+- Tonight's new pages are in: `/advertise`, `/photo-credits` and the two new posts.
+- robots.txt: "Sitemap: https://www.thelakeswildlife.co.uk/sitemap.xml". It disallows only `/api/` and `/dashboard/`, and blocks no CSS, JS or page.
+- `/privacy` and `/terms` stay noindex, as before, and out of the sitemap. The bare host answers 307 to www, so submit the www address.
+
+### The four review fixes, and the photo swap
+
+1. **Scotch argus flight period.** Read from Butterfly Conservation's lifecycle chart, an image on its species page, as the high brown fritillary's was. The reading is in `sources/bc-scotch-argus-lifecycle.txt`: adults from mid-July to early September, strongest in early August. The page now says "It flies from mid-July to early September, mostly in August, in one generation (Butterfly Conservation)." The identification line also lost "Larger than large heath", which Butterfly Conservation's wingspans contradict (35-40 mm against 41 mm).
+2. **Scotch argus status.** It is Vulnerable on the GB Red List (2022) but was shown amber, "of moderate conservation concern". The site's scheme for non-birds shows serious concern as red, and it already showed the pearl-bordered fritillary, also Vulnerable, as red. The Scotch argus is now red, and its box says "Butterfly Conservation's GB Red List (2022) lists it as Vulnerable." The same understatement was on three more pages and is fixed with it: small pearl-bordered fritillary and northern brown argus (Vulnerable) and large heath (Endangered) were all amber. All six Red List butterflies now name their category. Sources are in `sources/bc-*.txt`.
+3. **`tests/ads.test.mjs`.** Worse than reported. The intended `\b` boundaries had been saved as two backspace characters, so the pattern matched nothing at all: "Ullswater Steamers" passed as easily as "public". It now matches whole words (lookarounds, which also end a word after "café"), takes plurals, and a new test proves it catches each business word and passes "public", "beginning", "workshop", "Cheshire" and "fisherman". All posts that keep the end-of-post space still pass.
+4. **"Plan your visit" box.** It is replaced on every species page whose Lake District line or season says not found (today the mountain hare, black grouse and Scotch argus; the same test the conservation box uses). The new box says "This species is not found in the Lake District. Our species pages and seasonal guides cover what is.", with links to the section and the seasonal guides.
+5. **Photo swap for Grizedale and Ullswater: not done.** No candidate photos had been chosen. Choosing, downloading, resizing, regenerating the credits (the script re-reads Commons for all of the site's photos), checking contrast and taking four-width screenshots is nearer an hour than ten minutes. It is item 4 under "Traffic: what to do next". The terms' illustrations line stays true either way.
+
+**Also:** 31 species pages whose main site is Foulshaw Moss (25), Ullswater (3) or Martindale (3) now link to that guide, as the Haweswater and Grizedale ones already did.
+
+**Checks.**
+- `tsc`: 0 errors.
+- eslint on the 34 changed code files: 9 errors and 1 warning, all existing (unescaped apostrophes in four guide pages, and the layout's unused disable comment); none new.
+- `next build`: passed.
+- `npm run test:contact`: 9 of 9 passed. `node --test tests/*.test.mjs`: 26 of 26 passed.
+- Em dash scan of changed files: none in customer-facing text.
+- Screenshots `seo-*` at 1440, 1024, 768 and 390.
+
+### URLs for Damian to submit
+
+Every one of the 202 sitemap URLs is new or changed on 11 Nov 2026, so submitting the sitemap covers them all. All are on https://www.thelakeswildlife.co.uk:
+- **160 species pages**: `/birds/<slug>` (80), `/insects/<slug>` (25), `/plants/<slug>` (30), `/mammals/<slug>` (25). For example `/birds/osprey`, `/mammals/red-squirrel`, `/insects/scotch-argus`.
+- **17 posts**, `/blog/<slug>`. Two are new: `/blog/wildlife-hides-lake-district` and `/blog/temperate-rainforest-lake-district`. For example `/blog/ospreys-haweswater-rspb`.
+- **New pages:** `/advertise`, `/photo-credits`.
+- **The rest:** `/`, `/birds`, `/insects`, `/plants`, `/mammals`, `/nature`, `/nature/haweswater-rspb`, `/nature/grizedale-forest`, `/nature/foulshaw-moss`, `/nature/leighton-moss-rspb`, `/nature/ullswater`, `/birdwatching-guide`, `/mammal-watching-guide`, `/fishing-guide`, `/upland-habitats`, `/woodland-habitats`, `/seasonal`, `/seasonal/osprey-season`, `/seasonal/red-deer-rut`, `/seasonal/red-squirrel-watching`, `/seasonal/winter-wildfowl`, `/blog`, `/contact`.
+
+### For Damian to decide
+
+- **Post dates.** The posts' dates were set when they were written on 9 Mar 2026. One is earlier than the site's launch (`leighton-moss-bitterns`, 25 Feb 2026), and several were future dates then, although the pages were already live. The schema uses the date each page shows, so they were left as they are. Changing them would be a visible change for you to make.
+- **Overlapping pages.** Three pages answer "where to see ospreys in the Lake District" (`/birds/osprey`, `/seasonal/osprey-season`, `/blog/ospreys-haweswater-rspb`), four answer the red squirrel question and five the red deer rut. See item 2 below.
+- **No ranking data.** The Ahrefs API (`C:\Projects\ahref`) answered 403 for this domain.
+
+## 19. Traffic: what to do next
+
+**How this is ranked.** No measured evidence was available. The Ahrefs API answered 403 for this domain, the old PageView log holds 13 rows from March, and the visit counts (`PageCount`) start tonight. So the ranking is by reasoning, from the size of each set of pages and how widely its subjects are searched. No visit numbers are given, because none could be measured.
+
+1. **The species rewrite (section 17): about 250 entries, 160 live pages.** This is the largest set and the biggest opportunity. Tonight's titles and descriptions now say what each page answers, but the pages still read "That blue. Yellow. Common.", and pages rank on what they say.
+   - Rewrite from official pages, about 20 a fortnight.
+   - Start with the species people search with "Lake District": red squirrel, osprey, red deer, otter, pine marten, badger, red kite, peregrine, dipper, ring ouzel, hen harrier, barn owl, kingfisher, adder and curlew. Then do the rest.
+   - Each page needs named sites, months from a source, how to watch without disturbing, and links to its reserve guide, seasonal guide and posts.
+   - Drop or redirect the Sefton coast leftovers as section 17 says.
+2. **Pages one edit away: link the pages that answer the same question.** This costs little and may be the quickest gain. The osprey (3 pages), red squirrel (4) and red deer (5) pages mostly do not link to each other, so they compete for the same searches.
+   - Add a "More on this species" box to species pages, listing the seasonal guide and the posts.
+   - Link the posts back to the species page.
+   - That tells Google which page leads and passes readers along.
+   - Tonight's links from 31 species pages to the Foulshaw Moss, Ullswater and Martindale guides are the first step.
+3. **Search terms the site does not cover yet** (by reasoning; each is a large seasonal or regional search):
+   - bluebells, Rannerdale in particular: late April to May. The wood anemone page names Rannerdale, but no page is about the bluebells.
+   - salmon spawning in Cumbria: now.
+   - Wild Ennerdale.
+   - Thirlmere red squirrels.
+   - the mountain ringlet.
+   - beavers in Cumbria.
+   - a "Lake District birds of prey" page linking the raptor species pages.
+
+   Section 10 has dates and search terms for most of these.
+4. **Real photographs on the Grizedale and Ullswater reserve pages** (about an hour, by the d3e7e31 route). CC BY-SA Geograph photos of both exist. Real photos of the named place help image search and share previews more than the generated illustrations do.
+5. **Two posts a month**, as in section 10. Publish each four to six weeks before its season, aim it at one search term the site does not cover, and link it to two to four species or reserve pages. More posts than that would be thinner; until the rewrite is done, an hour on species pages is worth more than an extra post.
+6. **Measure next time.** Add the site to Google Search Console and submit the sitemap, and add it to the Ahrefs account, so the next ranking comes from data.
