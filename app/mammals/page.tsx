@@ -1,7 +1,11 @@
 import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
+import { AdSlot } from "@/components/AdSlot";
 
 import type { Metadata } from "next";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 const title = "Lake District Mammals & Wildlife | Red Squirrels, Red Deer, Otters, Seals";
 const description = "Mammals of the Lake District. Red Squirrels at Grizedale, Red Deer rut at Martindale, Otters on the lakes and rivers, Grey Seals on the Cumbrian coast. Where to see them, ID tips and seasonal guidance.";
@@ -37,6 +41,9 @@ export default async function MammalsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <SpeciesList category="mammals" species={species}  />
+      <div className="mx-auto max-w-5xl px-4 pb-12">
+        <AdSlot id="section-mammals" />
+      </div>
     </>
   );
 }

@@ -1,7 +1,11 @@
 import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
+import { AdSlot } from "@/components/AdSlot";
 
 import type { Metadata } from "next";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 const title = "Lake District Plants | Upland & Woodland Flora Species Guide";
 const description = "Plants of the Lake District. Upland flora, limestone grassland, tarn-edge specialists and woodland species. Identification guides and where to find them.";
@@ -38,6 +42,9 @@ export default async function PlantsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <SpeciesList category="plants" species={species}  />
+      <div className="mx-auto max-w-5xl px-4 pb-12">
+        <AdSlot id="section-plants" />
+      </div>
     </>
   );
 }

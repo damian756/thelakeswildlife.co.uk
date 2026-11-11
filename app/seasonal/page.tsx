@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { AdSlot } from "@/components/AdSlot";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 const title = "Seasonal Wildlife Guides | Lake District";
 const description = "What to see when in the Lake District: ospreys, red deer rut, red squirrels and winter wildfowl.";
@@ -89,6 +93,7 @@ export default function SeasonalPage() {
             </li>
           ))}
         </ul>
+        <AdSlot id="section-seasonal" className="mt-10" />
       </div>
     </>
   );

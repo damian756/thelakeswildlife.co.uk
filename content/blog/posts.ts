@@ -25,6 +25,12 @@ export interface BlogPost {
   tags: string[];
   /** Optional internal links shown after the sections ("More on this site"). */
   links?: { href: string; label: string }[];
+  /**
+   * A paid article (the "Sponsored article" option on /advertise). Set only on a sponsored post: it is
+   * labelled Sponsored, bylined "Sponsored by <name>", has no author box and no other advert, and links to
+   * the sponsor carry rel="sponsored noopener".
+   */
+  sponsor?: { name: string; url: string };
 }
 
 export const BLOG_CATEGORIES: Record<BlogCategory, { label: string; description: string }> = {

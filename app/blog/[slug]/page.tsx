@@ -6,6 +6,11 @@ import { creditFor, wikipediaHero } from "@/lib/photo-credits";
 import { CreditText } from "@/components/PhotoCredit";
 import { ClickableImage } from "@/components/ClickableImage";
 import { siteImage } from "@/lib/site-image";
+import { AdSlot } from "@/components/AdSlot";
+import { hasPostEnd } from "@/lib/ad-slots";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -60,6 +65,8 @@ export default async function BlogPostPage({ params }: Props) {
   const heroSrc = post.heroLocalSrc ?? wikiHero?.src ?? null;
   const heroCredit = post.heroLocalSrc ? creditFor(post.heroLocalSrc) : wikiHero;
   const url = `https://www.thelakeswildlife.co.uk/blog/${slug}`;
+  // A sponsored article: labelled Sponsored, bylined "Sponsored by <name>", no author box, no other advert.
+  const sponsor = post.sponsor ?? null;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -73,7 +80,9 @@ export default async function BlogPostPage({ params }: Props) {
       mainEntityOfPage: url,
       datePublished: post.date,
       dateModified: post.updated ?? post.date,
-      author: { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
+      author: sponsor
+        ? { "@type": "Organization", name: sponsor.name, url: sponsor.url }
+        : { "@id": "https://www.churchtownmedia.co.uk/about#founder" },
       publisher: { "@id": "https://www.thelakeswildlife.co.uk/#organization" },
       keywords: post.tags.join(", "),
       ...(heroSrc && {
@@ -130,7 +139,20 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Header */}
         <div className="mb-8">
           <span className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)]">{post.categoryLabel}</span>
+          {sponsor && (
+            <span className="ml-2 inline-block rounded-full bg-[var(--copper)]/15 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-[var(--fell)]">
+              Sponsored
+            </span>
+          )}
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-[var(--fell)] mt-2 mb-3 leading-tight">{post.title}</h1>
+          {sponsor && (
+            <p className="text-sm text-[var(--slate)] mb-1">
+              Sponsored by{" "}
+              <a href={sponsor.url} target="_blank" rel="sponsored noopener" className="font-semibold text-[var(--lichen)] hover:underline">
+                {sponsor.name}
+              </a>
+            </p>
+          )}
           <p className="text-sm text-[var(--slate)]">{formatDate(post.date)}</p>
         </div>
 
@@ -173,7 +195,14 @@ export default async function BlogPostPage({ params }: Props) {
             <ul className="space-y-2 text-sm">
               {post.links.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-[var(--lichen)] hover:underline">{l.label}</Link>
+                  {/^https?:\/\//.test(l.href) ? (
+                    // An outside link; on a sponsored article it is marked as paid.
+                    <a href={l.href} target="_blank" rel={sponsor ? "sponsored noopener" : "noopener"} className="text-[var(--lichen)] hover:underline">
+                      {l.label}
+                    </a>
+                  ) : (
+                    <Link href={l.href} className="text-[var(--lichen)] hover:underline">{l.label}</Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -190,14 +219,19 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         )}
 
-        {/* Author bio */}
-        <div className="mt-8 p-5 rounded-xl bg-[var(--fog)] border border-[var(--reed)]">
-          <p className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)] mb-1">About the author</p>
-          <p className="text-sm font-semibold text-[var(--fell)]">Damian</p>
-          <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
-            Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.
-          </p>
-        </div>
+        {/* Advert: the end of species and seasonal posts, never on a sponsored article (lib/ad-slots.ts). */}
+        {hasPostEnd(post) && <AdSlot id="post-end" className="mt-10" />}
+
+        {/* Author bio (never on a sponsored article) */}
+        {!sponsor && (
+          <div className="mt-8 p-5 rounded-xl bg-[var(--fog)] border border-[var(--reed)]">
+            <p className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)] mb-1">About the author</p>
+            <p className="text-sm font-semibold text-[var(--fell)]">Damian</p>
+            <p className="text-sm text-[var(--slate)] mt-1 leading-relaxed">
+              Damian has been walking the Lake District fells for decades. Ex-army, outdoor enthusiast. Keeps a yearly bird tally. Still gets up at five.
+            </p>
+          </div>
+        )}
 
         {/* Back link */}
         <div className="mt-8">

@@ -1,6 +1,10 @@
 import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
+import { AdSlot } from "@/components/AdSlot";
 import type { Metadata } from "next";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 const title = "Lake District Birds | Species Guide, Where to See & ID Tips";
 const description = "Bird species of the Lake District. Ospreys at Foulshaw Moss, Peregrines on the crags, Pink-footed Geese, waders and wildfowl. Seasonal presence, identification and viewing tips for each.";
@@ -36,6 +40,9 @@ export default async function BirdsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <SpeciesList category="birds" species={species} />
+      <div className="mx-auto max-w-5xl px-4 pb-12">
+        <AdSlot id="section-birds" />
+      </div>
     </>
   );
 }

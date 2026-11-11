@@ -1,5 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { AdSlot } from "@/components/AdSlot";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 const title = "Birdwatching in the Lake District | Guide, Best Spots & What to Bring";
 const description =
@@ -242,6 +246,8 @@ export default function BirdwatchingGuidePage() {
             </div>
           ))}
         </div>
+
+        <AdSlot id="birdwatching-guide" className="mb-10" />
 
         <div className="flex flex-wrap gap-4 pt-4 border-t border-[var(--fog)]">
           <Link href="/birds" className="text-[var(--lichen)] font-medium hover:underline text-sm">Bird species database →</Link>

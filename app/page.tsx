@@ -6,6 +6,10 @@ import { wikipediaHero } from "@/lib/photo-credits";
 import { PhotoCredits } from "@/components/PhotoCredit";
 import { BLOG_POSTS } from "@/content/blog/posts";
 import { PhotoGallery } from "@/components/PhotoGallery";
+import { AdSlot } from "@/components/AdSlot";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 const title = "The Lakes Wildlife | Birds, Nature & Wildlife in the Lake District";
 const description =
@@ -335,7 +339,7 @@ export default async function HomePage() {
               </div>
               <div className="p-5">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--lichen)]">
-                  {post.categoryLabel}
+                  {post.sponsor ? "Sponsored" : post.categoryLabel}
                 </span>
                 <h3 className="mt-1 font-semibold text-[var(--fell)] leading-snug mb-2 group-hover:text-[var(--lichen)] transition">
                   {post.title}
@@ -356,6 +360,11 @@ export default async function HomePage() {
         </div>
       </section>
       )}
+
+      {/* ── ADVERT: the home page card (lib/ad-slots.ts) ─────── */}
+      <div className={`mx-auto max-w-6xl px-4 pb-14 ${recentPosts.length > 0 ? "" : "pt-14"}`}>
+        <AdSlot id="home-card" />
+      </div>
 
       {/* ── GALLERY ──────────────────────────────────────────── */}
       <section className="bg-[var(--fog)] py-14">

@@ -1,5 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { AdSlot } from "@/components/AdSlot";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 const title = "Fishing in the Lake District | Tarns, Becks & Lakes Guide";
 const description =
@@ -182,6 +186,8 @@ export default function FishingGuidePage() {
             </details>
           ))}
         </div>
+
+        <AdSlot id="section-fishing" className="mt-10" />
 
         <div className="mt-10 border-t border-[var(--slate)]/10 pt-8">
           <p className="text-xs font-bold uppercase tracking-wider text-[var(--lichen)] mb-1">About the author</p>

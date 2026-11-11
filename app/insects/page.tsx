@@ -1,7 +1,11 @@
 import { getAllSpecies } from "@/lib/species";
 import { SpeciesList } from "@/components/SpeciesList";
+import { AdSlot } from "@/components/AdSlot";
 
 import type { Metadata } from "next";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 const title = "Lake District Insects | Butterflies, Moths & Beetles Guide";
 const description = "Butterflies, moths and beetles of the Lake District. Fells, woodland, grassland and wetland species. Where to see them and identification tips.";
@@ -38,6 +42,9 @@ export default async function InsectsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <SpeciesList category="insects" species={species}  />
+      <div className="mx-auto max-w-5xl px-4 pb-12">
+        <AdSlot id="section-insects" />
+      </div>
     </>
   );
 }

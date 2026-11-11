@@ -15,6 +15,8 @@ interface PostWithImage {
   heroAlt: string;
   tags: string[];
   heroSrc: string | null;
+  /** A sponsored article: its card is labelled Sponsored. */
+  sponsored?: boolean;
 }
 
 interface Props {
@@ -175,7 +177,7 @@ export function BlogListClient({ posts }: Props) {
               {/* Content */}
               <div className="p-5">
                 <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-[var(--lichen)] mb-2">
-                  {post.categoryLabel}
+                  {post.sponsored ? "Sponsored" : post.categoryLabel}
                 </span>
                 <h2 className="font-semibold text-[var(--fell)] leading-snug mb-1.5 group-hover:text-[var(--lichen)] transition text-base">
                   {post.title}

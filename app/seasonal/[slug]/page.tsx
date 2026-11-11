@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { AdSlot } from "@/components/AdSlot";
+
+// Rebuilt at least once a day, so an advert whose `until` date has passed drops off (lib/ad-slots.ts).
+export const revalidate = 86400;
 
 /* ─── per-page content ────────────────────────────────────── */
 
@@ -381,6 +385,9 @@ export default async function SeasonalSlugPage({ params }: Props) {
             ))}
           </ul>
         </div>
+
+        {/* Advert: only the winter guide has a space, sold as the winter birds package (lib/ad-slots.ts). */}
+        {slug === "winter-wildfowl" && <AdSlot id="seasonal-winter-wildfowl" className="mb-10" />}
 
         {/* Author bio */}
         <div className="p-5 rounded-xl bg-[var(--fog)] border border-[var(--reed)] mb-10">
