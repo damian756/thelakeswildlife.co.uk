@@ -71,8 +71,8 @@ export function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--copper)] mb-4">The Lakes Network</h3>
             <ul className="space-y-2.5 text-sm text-white/70">
               {[
-                { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide — restaurants, accommodation & walks" },
-                { href: "https://www.hikethelakes.com", label: "Hike The Lakes — 214 Wainwright fells" },
+                { href: "https://www.thelakesguide.co.uk", label: "The Lakes Guide: restaurants, accommodation & walks" },
+                { href: "https://www.hikethelakes.com", label: "Hike The Lakes: 214 Wainwright fells" },
                 { href: "https://thelakes.network", label: "TheLakes.network" },
               ].map(({ href, label }) => (
                 <li key={href}>
@@ -91,9 +91,9 @@ export function Footer() {
             Conservation group or local business?{" "}
             <span className="text-[var(--copper)] font-semibold">Partner with The Lakes Network</span>
           </p>
-          <a href="mailto:hello@thelakes.network" className="text-[var(--copper)] hover:text-white transition font-medium text-sm">
-            hello@thelakes.network →
-          </a>
+          <Link href="/contact" className="text-[var(--copper)] hover:text-white transition font-medium text-sm">
+            Use the contact form →
+          </Link>
         </div>
 
         {/* Bottom bar */}

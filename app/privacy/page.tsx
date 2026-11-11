@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 const title = "Privacy Policy | The Lakes Wildlife";
-const description = "Privacy policy for thelakeswildlife.co.uk — how we handle your data.";
+const description = "Privacy policy for thelakeswildlife.co.uk: how we handle your data.";
 const url = "https://www.thelakeswildlife.co.uk/privacy";
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function PrivacyPage() {
           <p className="mb-3">We keep data collection to a minimum:</p>
           <ul className="list-disc pl-5 space-y-1.5">
             <li><strong>Contact form</strong>: if you use the contact form, we receive your name, email address and message. This is sent to us via Resend and is used solely to reply to your enquiry.</li>
-            <li><strong>Analytics</strong> — we use Plausible Analytics, a privacy-focused, cookieless analytics tool. Plausible does not use cookies, does not collect personal data, and is fully GDPR compliant. No data is shared with third parties.</li>
+            <li><strong>Analytics</strong>: we use Plausible Analytics, a privacy-focused, cookieless analytics tool. Plausible does not use cookies, does not collect personal data, and is fully GDPR compliant. No data is shared with third parties.</li>
           </ul>
         </section>
 
@@ -58,16 +59,16 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-2">Your rights</h2>
           <p>
-            If you&apos;ve submitted a contact form and would like your data deleted, email{" "}
-            <a href="mailto:damian@churchtownmedia.co.uk" className="text-[var(--lichen)] hover:underline">damian@churchtownmedia.co.uk</a>.
+            If you&apos;ve submitted a contact form and would like your data deleted, use the{" "}
+            <Link href="/contact" className="text-[var(--lichen)] hover:underline">contact form</Link> or write to Churchtown Media Ltd, Suite RA01, <span className="whitespace-nowrap">195-197 Wood Street</span>, London, E17 3NU.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-2">Contact</h2>
           <p>
-            For any privacy-related questions, contact{" "}
-            <a href="mailto:damian@churchtownmedia.co.uk" className="text-[var(--lichen)] hover:underline">damian@churchtownmedia.co.uk</a>.
+            For any privacy-related questions, use the{" "}
+            <Link href="/contact" className="text-[var(--lichen)] hover:underline">contact form</Link> or write to Churchtown Media Ltd, Suite RA01, <span className="whitespace-nowrap">195-197 Wood Street</span>, London, E17 3NU.
           </p>
         </section>
       </div>

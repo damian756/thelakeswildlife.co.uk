@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 const title = "Terms of Use | The Lakes Wildlife";
 const description = "Terms of use for thelakeswildlife.co.uk.";
@@ -80,8 +81,8 @@ export default function TermsPage() {
         <section>
           <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-2">Contact</h2>
           <p>
-            For any questions about these terms, contact{" "}
-            <a href="mailto:damian@churchtownmedia.co.uk" className="text-[var(--lichen)] hover:underline">damian@churchtownmedia.co.uk</a>.
+            For any questions about these terms, use the{" "}
+            <Link href="/contact" className="text-[var(--lichen)] hover:underline">contact form</Link> or write to Churchtown Media Ltd, Suite RA01, <span className="whitespace-nowrap">195-197 Wood Street</span>, London, E17 3NU.
           </p>
         </section>
       </div>

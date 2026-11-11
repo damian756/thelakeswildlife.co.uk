@@ -19,6 +19,7 @@ export function ContactForm() {
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
     };
 
     try {
@@ -68,7 +69,15 @@ export function ContactForm() {
     "w-full rounded-lg border border-[var(--fog)] bg-white px-4 py-2.5 text-sm text-[var(--peat)] placeholder:text-[var(--slate)]/40 focus:outline-none focus:border-[var(--lichen)] focus:ring-1 focus:ring-[var(--lichen)] transition";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+    <form onSubmit={handleSubmit} className="relative space-y-5" noValidate>
+      {/* Honeypot: hidden from people and screen readers; bots fill it. */}
+      <div aria-hidden="true" className="absolute -left-[9999px] w-px h-px overflow-hidden">
+        <label>
+          Website
+          <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
+
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="name" className="block text-xs font-semibold text-[var(--slate)] mb-1.5">

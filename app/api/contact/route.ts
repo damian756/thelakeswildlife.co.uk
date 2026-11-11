@@ -1,66 +1,65 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import {
+  HONEYPOT_FIELD,
+  LIMITS,
+  buildEnquiryEmail,
+  isValidEmail,
+  logSendError,
+} from "@/lib/contact";
+
+const str = (value: unknown) => (typeof value === "string" ? value.trim() : "");
+const FAILED = "Sorry, your message could not be sent. Please try again later.";
 
 export async function POST(req: NextRequest) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
+  let body: Record<string, unknown>;
   try {
-    const body = await req.json();
-    const { name, email, subject, message } = body as {
-      name: string;
-      email: string;
-      subject: string;
-      message: string;
-    };
-
-    if (!name || !email || !message) {
-      return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return NextResponse.json({ error: "Invalid email address." }, { status: 400 });
-    }
-
-    await resend.emails.send({
-      from: "The Lakes Wildlife <noreply@thelakeswildlife.co.uk>",
-      to: "damian@churchtownmedia.co.uk",
-      replyTo: email,
-      subject: subject ? `[The Lakes Wildlife] ${subject}` : `[The Lakes Wildlife] Message from ${name}`,
-      html: `
-        <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 24px;">
-          <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #4a6b5a; margin: 0 0 8px;">
-            The Lakes Wildlife — Contact Form
-          </p>
-          <h2 style="color: #1c3220; margin: 0 0 24px; font-size: 20px;">New message from ${name}</h2>
-
-          <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 24px;">
-            <tr>
-              <td style="padding: 8px 12px; font-weight: 600; color: #2d3a3a; background: #f5f2eb; width: 100px;">Name</td>
-              <td style="padding: 8px 12px; color: #2d3a3a; background: #f5f2eb;">${name}</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px 12px; font-weight: 600; color: #2d3a3a;">Email</td>
-              <td style="padding: 8px 12px; color: #2d3a3a;"><a href="mailto:${email}" style="color: #4a6b5a;">${email}</a></td>
-            </tr>
-            ${subject ? `<tr>
-              <td style="padding: 8px 12px; font-weight: 600; color: #2d3a3a; background: #f5f2eb;">Subject</td>
-              <td style="padding: 8px 12px; color: #2d3a3a; background: #f5f2eb;">${subject}</td>
-            </tr>` : ""}
-          </table>
-
-          <h3 style="color: #1c3220; font-size: 14px; margin: 0 0 8px;">Message</h3>
-          <div style="background: #f5f2eb; border-left: 4px solid #4a6b5a; padding: 16px; font-size: 14px; color: #2d3a3a; line-height: 1.6; white-space: pre-wrap;">${message}</div>
-
-          <p style="font-size: 12px; color: #999; margin-top: 24px;">
-            Sent from <a href="https://www.thelakeswildlife.co.uk/contact" style="color: #4a6b5a;">thelakeswildlife.co.uk/contact</a>
-          </p>
-        </div>
-      `,
-    });
-
-    return NextResponse.json({ success: true });
-  } catch (err) {
-    console.error("Contact form error:", err);
-    return NextResponse.json({ error: "Failed to send message. Please try again." }, { status: 500 });
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
+
+  // A filled honeypot means a bot: answer as if sent, send nothing.
+  if (str(body[HONEYPOT_FIELD])) {
+    return NextResponse.json({ success: true });
+  }
+
+  const name = str(body.name);
+  const email = str(body.email);
+  const subject = str(body.subject);
+  const message = str(body.message);
+
+  if (!name || !email || !message) {
+    return NextResponse.json({ error: "Name, email and message are required." }, { status: 400 });
+  }
+  if (!isValidEmail(email)) {
+    return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
+  }
+  if (name.length > LIMITS.name || subject.length > LIMITS.subject) {
+    return NextResponse.json({ error: "Name or subject is too long." }, { status: 400 });
+  }
+  if (message.length > LIMITS.message) {
+    return NextResponse.json({ error: `Message is too long (max ${LIMITS.message} characters).` }, { status: 400 });
+  }
+
+  const key = process.env.RESEND_API_KEY;
+  if (!key) {
+    logSendError({ name: "ConfigError", message: "RESEND_API_KEY is not set" });
+    return NextResponse.json({ error: FAILED }, { status: 502 });
+  }
+
+  try {
+    const { error } = await new Resend(key).emails.send(
+      buildEnquiryEmail({ name, email, subject, message }),
+    );
+    if (error) {
+      logSendError(error);
+      return NextResponse.json({ error: FAILED }, { status: 502 });
+    }
+  } catch (err) {
+    logSendError(err);
+    return NextResponse.json({ error: FAILED }, { status: 502 });
+  }
+
+  return NextResponse.json({ success: true });
 }
