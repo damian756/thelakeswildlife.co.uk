@@ -46,9 +46,6 @@ export default async function BlogIndexPage() {
             <span>/</span>
             <span className="text-white/80">Blog</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
-            Written by Ed
-          </p>
           <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">Wildlife Blog</h1>
           <p className="text-white/70 max-w-2xl leading-relaxed">
             Notes from the Lake District: conservation, species spotlights, seasonal guides, habitat and photography.
@@ -56,7 +53,7 @@ export default async function BlogIndexPage() {
         </div>
       </div>
 
-      {/* Interactive list — client component handles search + filter */}
+      {/* Interactive list: client component handles search + filter */}
       <BlogListClient posts={postsWithImages} />
     </div>
   );

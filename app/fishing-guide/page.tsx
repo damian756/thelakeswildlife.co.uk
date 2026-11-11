@@ -145,7 +145,7 @@ export default function FishingGuidePage() {
             Windermere holds brown trout, perch, and pike. Fishing on Windermere is free with a rod licence. Follow the local byelaws, which include a separate char close season on Windermere from 1 October to 30 April. The pike fishing is Windermere's open secret: large fish in accessible water, with catches reported to over 20lb.
           </p>
           <p>
-            Coniston Water is worth considering as an alternative to Windermere: less traffic, similar fish, and a more remote atmosphere. Esthwaite Water near Hawkshead (LA22 0QF) is a formally managed trout fishery with day tickets available at the fishing lodge. The stocking here is regular and the fish are catchable. It is the place to go for a reliable day's trout fishing without the planning complexity of the wilder options.
+            Coniston Water is worth considering as an alternative to Windermere: less traffic, similar fish, and a more remote atmosphere. Esthwaite Water near Hawkshead (LA22 0QF) is a formally managed trout fishery with day tickets available at the fishing lodge. The stocking here is regular and the fish are catchable. The fishery stocks brown trout regularly.
           </p>
 
           <h2>Arctic charr</h2>

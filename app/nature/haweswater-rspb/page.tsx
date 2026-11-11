@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Are there toilets or a cafe?",
-    a: "No. There are no toilets, cafe or visitor centre. The nearest public toilets, food and drink are in Shap, about ten miles away. Bring your own food and drink.",
+    a: "No. There are no toilets, cafe or visitor centre. The nearest public toilets are in Shap, about ten miles away. Wild Haweswater lists places to eat within ten minutes' drive, including the Haweswater Hotel, the Mardale Inn at Bampton and Bampton Valley Stores.",
   },
   {
     q: "Are dogs allowed at RSPB Haweswater?",
@@ -86,7 +86,7 @@ export default function HaweswaterPage() {
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
@@ -95,7 +95,7 @@ export default function HaweswaterPage() {
             <span>/</span>
             <span className="text-white/80">RSPB Haweswater</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
             RSPB and United Utilities · Eastern Lake District · Free entry
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -156,9 +156,9 @@ export default function HaweswaterPage() {
               ["Dogs", "Close control. Leads in nesting season and near livestock"],
               ["Best for", "Red squirrels, ring ouzels, pied flycatchers"],
             ].map(([k, v]) => (
-              <div key={k} className="flex justify-between border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="text-[var(--slate)]/60">{k}</dt>
-                <dd className="font-medium text-[var(--fell)]">{v}</dd>
+              <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
+                <dt className="shrink-0 text-[var(--slate)]/60">{k}</dt>
+                <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}
           </dl>
@@ -202,7 +202,7 @@ export default function HaweswaterPage() {
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <p className="font-semibold text-amber-800 text-sm mb-1">Plan ahead</p>
-            <p className="text-amber-700 text-sm">There are no toilets, cafe or visitor centre, and there is no phone signal across most of the site. The nearest toilets, food and drink are in Shap, about ten miles away. Check the forecast and bring an OS map (OL5), food, water and waterproofs.</p>
+            <p className="text-amber-700 text-sm">There are no toilets, cafe or visitor centre, and there is no phone signal across most of the site. The nearest public toilets are in Shap, about ten miles away, and the nearest food is in Bampton and at the Haweswater Hotel, within ten minutes&rsquo; drive. Check the forecast and bring an OS map (OL5), food, water and waterproofs.</p>
           </div>
         </section>
 
@@ -221,7 +221,7 @@ export default function HaweswaterPage() {
                 name: "Redstart",
                 season: "April to August",
                 image: "/images/species/birds/redstart.jpg",
-                desc: "The male has a blue-grey back, orange-red breast, and constantly quivering rust-red tail. Arrives in April and breeds in the old oak woodland along the lakeshore.",
+                desc: "The male has a blue-grey back, orange-red breast, and constantly quivering rust-red tail. Wild Haweswater says redstarts return each spring to the woods of the Naddle and Swindale valleys.",
               },
             ].map((bird) => (
               <div key={bird.name} className="bg-[var(--fog)] rounded-xl overflow-hidden">
@@ -240,7 +240,7 @@ export default function HaweswaterPage() {
             ))}
           </div>
           <p className="text-[var(--slate)] leading-relaxed">
-            Naddle Forest is one of the last fragments of temperate rainforest left in Cumbria. Other woodland species include wood warbler (a declining summer visitor with a distinctive shivering song), nuthatch, treecreeper, and a range of tit species. Cuckoos return in spring, and dippers feed in the fast-flowing streams all year.
+            Naddle Forest is one of the last fragments of temperate rainforest left in Cumbria. Cuckoos return in spring, and dippers feed in the fast-flowing streams all year.
           </p>
         </section>
 
@@ -248,7 +248,7 @@ export default function HaweswaterPage() {
         <section id="red-squirrels" className="mb-12 scroll-mt-20">
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">Red Squirrels</h2>
           <p className="text-[var(--slate)] leading-relaxed">
-            Red squirrels live in the woods at Haweswater all year, including the temperate rainforest of Naddle Forest. These squirrels are genuinely wild and sightings depend on the time of day and season. Autumn and early morning give the best chances. The landscape is mountainous and vast, so wildlife is not always easy to see.
+            Red squirrels live in the woods at Haweswater all year, including the temperate rainforest of Naddle Forest. Sightings depend on the time of day and season. The landscape is mountainous and vast, so wildlife is not always easy to see.
           </p>
         </section>
 
@@ -318,17 +318,19 @@ export default function HaweswaterPage() {
                 href: "/nature/ullswater",
                 name: "Ullswater",
                 desc: "Red deer in Martindale, goldeneye in winter",
-                image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+                image: "/images/species/birds/goldeneye.jpg",
+                imageAlt: "Goldeneye drake on water",
               },
               {
                 href: "/nature/grizedale-forest",
                 name: "Grizedale Forest",
                 desc: "Red squirrels, red deer, red kites",
-                image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=600&q=80",
+                image: "/images/species/mammals/red-deer.jpg",
+                imageAlt: "Red deer stag with large antlers standing in woodland",
               },
-            ].map(({ href, name, desc, image }) => (
+            ].map(({ href, name, desc, image, imageAlt }) => (
               <Link key={href} href={href} className="group relative h-36 rounded-2xl overflow-hidden block">
-                <Image src={image} alt={name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={image} alt={imageAlt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="text-white font-display font-bold text-sm">{name}</p>

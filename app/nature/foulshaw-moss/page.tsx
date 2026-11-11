@@ -89,12 +89,12 @@ export default function FoulshawMossPage() {
       {/* Hero */}
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1504198266287-1659872e6590?w=1400&q=80"
-          alt="Foulshaw Moss raised bog reserve near Witherslack"
+          src="/images/species/plants/sphagnum-moss.jpg"
+          alt="Close-up of green sphagnum moss"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
@@ -103,7 +103,7 @@ export default function FoulshawMossPage() {
             <span>/</span>
             <span className="text-white/80">Foulshaw Moss</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
             Cumbria Wildlife Trust · Near Witherslack · Free entry
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -164,9 +164,9 @@ export default function FoulshawMossPage() {
               ["Best for", "Ospreys, Large Heath butterfly, bog plants"],
               ["Best time to visit", "April to September"],
             ].map(([k, v]) => (
-              <div key={k} className="flex justify-between border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="text-[var(--slate)]/60">{k}</dt>
-                <dd className="font-medium text-[var(--fell)]">{v}</dd>
+              <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
+                <dt className="shrink-0 text-[var(--slate)]/60">{k}</dt>
+                <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}
           </dl>
@@ -188,8 +188,8 @@ export default function FoulshawMossPage() {
           <div className="rounded-2xl overflow-hidden border border-[var(--fell)]/10 md:flex mb-6">
             <div className="relative h-52 md:h-auto md:w-72 flex-none">
               <Image
-                src="https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80"
-                alt="Osprey returning to nest at Foulshaw Moss"
+                src="/images/species/birds/osprey.jpg"
+                alt="Osprey perched on a branch"
                 fill sizes="(max-width: 768px) 100vw, 288px"
                 className="object-cover"
               />
@@ -280,7 +280,7 @@ export default function FoulshawMossPage() {
           <h2 className="font-display text-2xl font-bold text-[var(--fell)] mb-4">Getting There</h2>
           <div className="bg-[var(--fog)] rounded-xl p-5">
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-3">
-              The reserve is off the A590 near Witherslack. From Kendal, take the A590 towards Barrow-in-Furness. About 1 km (0.6 miles) past the end of the dual carriageway at Gilpin Bridge, a track leaves the road just before a signed parking layby. Go through the gate and follow the track to the small car park. From the Grange and Barrow direction, pass the Witherslack junction: the track is on the right about 0.6 km later, just after the layby. Take care turning in, as the road can be very busy. The postcode LA11 6SN brings you to the right area. Look for the Cumbria Wildlife Trust signs. The car park is free and holds around 15 vehicles.
+              The reserve is off the A590 near Witherslack. From Kendal, take the A590 towards Barrow-in-Furness. About 1 km (0.6 miles) past the end of the dual carriageway at Gilpin Bridge, a track leaves the road just before a signed parking layby. Go through the gate and follow the track to the small car park. From the Grange and Barrow direction, pass the Witherslack junction: the track is on the right about 0.6 km later, just after the layby. Take care turning in, as the road can be very busy. The postcode LA11 6SN brings you to the right area. Look for the Cumbria Wildlife Trust signs. Entry is free and the car park is small.
             </p>
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-3">
               The X6 bus between Kendal, Ulverston and Barrow stops a few minutes on foot from the entrance: Low Fell End, at the nearby layby, for westbound buses, and Parkside Cottages, on the other side of the dual carriageway, for eastbound buses. Check Stagecoach for times. The reserve is also on National Cycle Routes 70 and 700. The nearest town is Grange-over-Sands, which has a train station on the Furness line. A taxi from Grange-over-Sands to the reserve is around 10 minutes.
@@ -314,17 +314,19 @@ export default function FoulshawMossPage() {
                 href: "/nature/haweswater-rspb",
                 name: "RSPB Haweswater",
                 desc: "Red squirrels, ring ouzels, pied flycatchers",
-                image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80",
+                image: "/images/species/mammals/red-squirrel.jpg",
+                imageAlt: "Red squirrel eating a nut on a mossy tree stump",
               },
               {
                 href: "/nature/leighton-moss-rspb",
                 name: "Leighton Moss RSPB",
                 desc: "Bittern, marsh harrier, the largest reedbed in NW England",
-                image: "https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=600&q=80",
+                image: "/images/species/birds/bittern.jpg",
+                imageAlt: "Bittern standing in short grass",
               },
-            ].map(({ href, name, desc, image }) => (
+            ].map(({ href, name, desc, image, imageAlt }) => (
               <Link key={href} href={href} className="group relative h-36 rounded-2xl overflow-hidden block">
-                <Image src={image} alt={name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={image} alt={imageAlt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="text-white font-display font-bold text-sm">{name}</p>

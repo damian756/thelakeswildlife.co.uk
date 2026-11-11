@@ -145,14 +145,14 @@ const seasonalPages: Record<string, SeasonalPageData> = {
         body: [
           "The red squirrel population in the Lake District is one of the largest in England. The combination of continuous conifer woodland across the central fells, active grey squirrel control programmes, and the geographical semi-isolation of Cumbria has allowed the red squirrel to persist here while disappearing from almost everywhere else in England.",
           "Grey squirrels carry squirrelpox virus, which is lethal to red squirrels. Greys were introduced to Britain in the 1870s and have displaced reds across most of England and Wales. In the Lake District, Forestry England and the Red Squirrel Survival Trust carry out targeted grey squirrel control, which is why the red squirrels are still here. Without this work the reds would have gone within a decade.",
-          "The Lake District red squirrel population is therefore a managed population, not a purely wild one. Understanding this is part of understanding what you are watching. The conservation effort is real, ongoing, and consequential. The squirrels at the Grizedale feeders are alive because people are working to keep them alive.",
+          "The Lake District red squirrel population is therefore a managed population, not a purely wild one. Understanding this is part of understanding what you are watching. The conservation effort is real, ongoing, and consequential. The squirrels at Grizedale are there because people are working to keep them alive.",
         ],
       },
       {
         heading: "Grizedale Forest",
         body: [
-          "Grizedale visitor centre (LA22 0QJ) is the most reliable red squirrel site in the southern Lakes. Forestry England maintains feeders adjacent to the visitor centre and the squirrels are habituated to human presence. Early morning visits, particularly between 8am and 11am, give the best chance of squirrel activity at the feeders. Car park charges apply.",
-          "Away from the feeders, red squirrels range throughout the forest. The Ridding Wood Trail and the Millwood Trail both start near the visitor centre. Quiet movement and occasional stops give the best chance of squirrel sightings in the woodland proper. Listen for the sound of squirrels moving through branches: a rustling and occasional dropped cone fragments are often the first indication of a squirrel above you.",
+          "Red squirrels live in Grizedale Forest (visitor centre LA22 0QJ), and Forestry England's plan for the forest includes keeping suitable habitat for them and supporting grey squirrel control. Early morning gives the best chance. Car park charges apply.",
+          "Red squirrels range throughout the forest. The Ridding Wood Trail and the Millwood Trail both start near the visitor centre. Quiet movement and occasional stops give the best chance of squirrel sightings in the woodland proper. Listen for the sound of squirrels moving through branches: a rustling and occasional dropped cone fragments are often the first indication of a squirrel above you.",
           "Autumn is particularly good. The squirrels are actively caching food for winter, carrying large mouthfuls of cones and nuts with surprising speed. They are often seen on the forest floor at this time, digging small holes to bury food. Winter, when the canopy is bare, makes aerial movement through the trees easier to see.",
         ],
       },
@@ -176,12 +176,12 @@ const seasonalPages: Record<string, SeasonalPageData> = {
         heading: "Identification and behaviour",
         body: [
           "Red squirrels are smaller than grey squirrels and more slender. The ear tufts are the most immediately distinctive feature in winter: long, prominent, and clearly visible. In summer the ear tufts are reduced and the animals can appear more similar to grey squirrels. The colour is variable: in winter the back is a rich chestnut-red; in summer many individuals appear brownish or even grey-brown on the back, which confuses people. The key features are the ear tufts, the smaller size, and the white underparts with a sharp demarcation from the back colour.",
-          "Behaviour is similar to grey squirrels: rapid movement, cache-burying in autumn, territorial chasing between individuals. Red squirrels are generally more nervous than habituated grey squirrels and will move away if approached too closely. At the feeder sites they are relatively tolerant of quiet observers but will retreat if disturbed.",
+          "Behaviour is similar to grey squirrels: rapid movement, cache-burying in autumn, territorial chasing between individuals. Red squirrels are generally more nervous than habituated grey squirrels and will move away if approached too closely. They will retreat if disturbed.",
         ],
       },
     ],
     practicalTips: [
-      "Grizedale visitor centre feeders: LA22 0QJ, the most reliable southern Lakes site",
+      "Grizedale Forest: visitor centre LA22 0QJ, early morning",
       "Whinlatter Forest Park: CA12 5TW, red squirrel trail and camera feeds",
       "Wild Haweswater: red squirrels in the woods, no public hides",
       "Best time: early morning, 8am to 11am, particularly in autumn and winter",

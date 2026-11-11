@@ -134,10 +134,10 @@ export default function MammalWatchingGuidePage() {
 
           <h2>Red squirrel</h2>
           <p>
-            The Lake District holds the largest red squirrel population in England. Grizedale Forest (LA22 0QJ) and Whinlatter Forest (CA12 5TW) are the two main visitor sites with managed feeders. Haweswater, the Forestry England woodlands above Thirlmere, and the National Trust woodlands around Ullswater all hold squirrels.
+            The Lake District holds the largest red squirrel population in England. Grizedale Forest (LA22 0QJ) and Whinlatter Forest (CA12 5TW) are two of the main visitor sites; Whinlatter's visitor centre has a red squirrel experience. Haweswater, the Forestry England woodlands above Thirlmere, and the National Trust woodlands around Ullswater all hold squirrels.
           </p>
           <p>
-            Morning is reliably the best time at the feeders. The squirrels are most active in the first few hours after dawn. In autumn they are busy caching food and seen more frequently on the forest floor. In summer they spend more time at height in the canopy, so early morning when they descend to feed is the opportunity.
+            Morning is reliably the best time. The squirrels are most active in the first few hours after dawn. In autumn they are busy caching food and seen more frequently on the forest floor. In summer they spend more time at height in the canopy, so early morning when they descend to feed is the opportunity.
           </p>
 
           <h2>Pine marten</h2>

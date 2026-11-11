@@ -68,7 +68,7 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Leighton Moss, near Silverdale in Lancashire, just south of the Lake District, has the largest reedbed in north-west England. The RSPB says it has seven hides and one viewpoint, all open from dawn to dusk.",
           "Lilian's, Tim Jackson, Grisedale, Causeway and Lower hides overlook the reedbed. The Allen and Eric Morecambe hides look over the saltmarsh and Morecambe Bay from a separate car park, a mile from the visitor centre, with a 2m height limit. The 9m Skytower gives a view over the reserve and the bay beyond.",
-          "All the hides have step-free access and are wheelchair accessible, and most have lower windows. The trails are mostly flat, and all of them except the path to Lower Hide are fully accessible. RSPB members go in free. Non-members pay £10 for an adult and £7 for a student; 16 to 24 year olds, the first child and under-5s are free, and non-members who arrive by public transport or bike pay £5.",
+          "All the hides have step-free access and are wheelchair accessible, and most have lower windows. The trails are mostly flat, and all of them except the path to Lower Hide are fully accessible. RSPB members go in free. Non-members pay £10 for an adult, £7 for a student and £5 for a child aged 5 to 17; 16 to 24 year olds, the first child and under-5s are free, and non-members who arrive by public transport or bike pay £5.",
           "In early November 2026 the RSPB's sightings page reported bitterns from the Lower and Causeway hides most days, otters from the Causeway, Lower and Lilian's hides, and marsh harriers from most hides.",
         ],
       },
@@ -91,7 +91,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Viewing platforms for ospreys",
         body: [
-          "Foulshaw Moss, Cumbria Wildlife Trust's reserve near Witherslack (LA11 6SN), has an open viewing platform rather than a hide, 1.5 km (1 mile) along a boardwalk. Ospreys nest there from around the end of March to early September. In winter the Trust lists marsh and hen harriers, snipe and teal, and red deer that can be seen from the raised platform. Entry is free and the car park is small.",
+          "Foulshaw Moss, Cumbria Wildlife Trust's reserve near Witherslack (LA11 6SN), has an open viewing platform, 1.5 km (1 mile) along a boardwalk. Ospreys nest there from around the end of March to early September. In winter the Trust lists marsh and hen harriers, snipe and teal, and red deer that can be seen from the raised platform. Entry is free and the car park is small.",
           "In November 2026 the Foulshaw boardwalks were closed because they were slippery, so check the Trust's page before you go.",
           "Elsewhere in Cumbria, RSPB Campfield Marsh has an osprey nesting platform that can be seen from a nearby hide. The RSPB says three chicks hatched there in June 2026, the first ospreys to breed on an RSPB reserve in England since the Victorian period.",
         ],
@@ -140,7 +140,7 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Naddle Forest, part of Wild Haweswater in the eastern Lake District, is one of the last fragments of temperate rainforest left in the Lake District, the Wild Haweswater team says. The RSPB and the landowner United Utilities are working to extend it, by planting trees and by letting them regenerate on their own.",
           "That second part means easing the grazing pressure. Wild Haweswater says the land was overgrazed for decades by livestock and wild deer, so it keeps cattle and ponies in low numbers and uses professional deer stalkers to bring deer numbers down. Young trees are raised in the reserve's own nursery.",
-          "Winter is tree-planting season. The RSPB runs guided walks such as Meet Cumbria's Rainforest, where you can plant a tree in Celebration Wood, and tours of Naddle Forest for groups of 10 to 20 for a suggested donation. In autumn, look for fungi in Naddle Forest.",
+          "Winter is tree-planting season. The RSPB runs guided walks such as Meet Cumbria's Rainforest, where you can plant a tree in Celebration Wood, and tours of Naddle Forest for 10 to 20 people who want to learn about the work for professional or practical reasons, for a suggested donation. The tours are not suitable for children or dogs. In autumn, look for fungi in Naddle Forest.",
           "There is no visitor parking at the Naddle Farm office except for pre-booked visits. The main car park is at Mardale Head, at the southern end of the reservoir.",
         ],
       },
@@ -184,8 +184,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "When to look",
         body: [
-          "Cumbria Wildlife Trust says its Foulshaw Moss ospreys arrive around the end of March and usually leave by the start of September. Eggs are laid towards the end of April and chicks usually hatch in early June.",
-          "The National Park Authority says June to August is the best time to look, when the adults have to hunt more to feed their chicks. Most UK ospreys spend the winter in West Africa, so from September to March there are none to see.",
+          "Cumbria Wildlife Trust says its Foulshaw Moss ospreys arrive around the end of March and usually leave by the start of September. The National Park Authority says eggs are laid towards the end of April and chicks usually hatch in early June.",
+          "The National Park Authority says June to August is the best time to look, when the adults have to hunt more to feed their chicks. Most UK ospreys spend the winter in West Africa, so from October to mid-March there are none to see.",
         ],
       },
       {

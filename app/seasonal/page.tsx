@@ -32,7 +32,7 @@ const seasons = [
     slug: "red-squirrel-watching",
     title: "Red Squirrel Watching",
     period: "Year-round",
-    desc: "Grizedale Forest and Whinlatter. The visitor centre feeders. Morning is best. One of England's strongholds.",
+    desc: "Grizedale Forest and Whinlatter, one of Cumbria's red squirrel strongholds. Morning is best.",
     tag: "Best in morning",
   },
   {

@@ -88,12 +88,12 @@ export default function UllswaterPage() {
       {/* Hero */}
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80"
-          alt="Ullswater lake at dawn in the Lake District"
+          src="/images/species/birds/great-crested-grebe.jpg"
+          alt="Great crested grebe swimming on calm water"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
@@ -102,7 +102,7 @@ export default function UllswaterPage() {
             <span>/</span>
             <span className="text-white/80">Ullswater</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
             Lake District · Eastern Fells · Martindale Red Deer
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -163,9 +163,9 @@ export default function UllswaterPage() {
               ["Parking (Glenridding)", "CA11 0PD, pay and display"],
               ["Parking (Pooley Bridge)", "CA10 2NQ, pay and display"],
             ].map(([k, v]) => (
-              <div key={k} className="flex justify-between border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="text-[var(--slate)]/60">{k}</dt>
-                <dd className="font-medium text-[var(--fell)]">{v}</dd>
+              <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
+                <dt className="shrink-0 text-[var(--slate)]/60">{k}</dt>
+                <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}
           </dl>
@@ -227,7 +227,7 @@ export default function UllswaterPage() {
               {
                 name: "Goosander",
                 season: "Year-round resident",
-                image: "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=600&q=80",
+                image: "/images/species/birds/goosander.jpg",
                 desc: "Long and streamlined with serrated bills for gripping fish. The male is pink-washed white with a dark green head. Often resting on exposed rocks along the shoreline. Resident year-round.",
               },
             ].map((bird) => (
@@ -335,17 +335,19 @@ export default function UllswaterPage() {
                 href: "/nature/haweswater-rspb",
                 name: "RSPB Haweswater",
                 desc: "Red squirrels, ring ouzels, pied flycatchers",
-                image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80",
+                image: "/images/species/mammals/red-squirrel.jpg",
+                imageAlt: "Red squirrel eating a nut on a mossy tree stump",
               },
               {
                 href: "/nature/grizedale-forest",
                 name: "Grizedale Forest",
                 desc: "Red squirrels, red deer, red kites",
-                image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=600&q=80",
+                image: "/images/species/mammals/red-deer.jpg",
+                imageAlt: "Red deer stag with large antlers standing in woodland",
               },
-            ].map(({ href, name, desc, image }) => (
+            ].map(({ href, name, desc, image, imageAlt }) => (
               <Link key={href} href={href} className="group relative h-36 rounded-2xl overflow-hidden block">
-                <Image src={image} alt={name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={image} alt={imageAlt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="text-white font-display font-bold text-sm">{name}</p>

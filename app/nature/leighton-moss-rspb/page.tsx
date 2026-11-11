@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Where is Leighton Moss in relation to the Lake District?",
-    a: "Leighton Moss is near Silverdale, Lancashire, on the southern edge of the Lake District national park. About 45 minutes from Windermere, 20 minutes from Arnside. Silverdale station is about 250 metres from the reserve.",
+    a: "Leighton Moss is near Silverdale in Lancashire. It is outside the Lake District National Park, in the Arnside and Silverdale Area of Outstanding Natural Beauty. Silverdale station is about 250 metres from the reserve.",
   },
 ];
 
@@ -91,12 +91,12 @@ export default function LeightonMossPage() {
       {/* Hero */}
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=1400&q=80"
-          alt="Leighton Moss RSPB reedbed near Silverdale, Lancashire"
+          src="/images/species/mammals/otter.jpg"
+          alt="Otter resting on a mossy rock"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
@@ -105,7 +105,7 @@ export default function LeightonMossPage() {
             <span>/</span>
             <span className="text-white/80">Leighton Moss RSPB</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
             RSPB Reserve · Silverdale · Entry charge (RSPB members free)
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -161,15 +161,15 @@ export default function LeightonMossPage() {
               ["Postcode", "LA5 0SW"],
               ["Managed by", "RSPB"],
               ["Entry", "Charged (RSPB members free)"],
-              ["Parking", "Pay and display at visitor centre"],
+              ["Parking", "Main car park, open dawn to dusk"],
               ["Facilities", "Visitor centre, cafe, shop, toilets, 7 hides, Skytower"],
               ["Transport", "Silverdale station 250m. Buses 49, 51, 550"],
               ["Best for", "Bittern, marsh harrier, bearded tit, otter"],
               ["Dogs", "Car parks, Causeway and dog route only"],
             ].map(([k, v]) => (
-              <div key={k} className="flex justify-between border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="text-[var(--slate)]/60">{k}</dt>
-                <dd className="font-medium text-[var(--fell)]">{v}</dd>
+              <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
+                <dt className="shrink-0 text-[var(--slate)]/60">{k}</dt>
+                <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}
           </dl>
@@ -191,8 +191,8 @@ export default function LeightonMossPage() {
           <div className="rounded-2xl overflow-hidden border border-[var(--fell)]/10 md:flex mb-6">
             <div className="relative h-52 md:h-auto md:w-72 flex-none">
               <Image
-                src="https://images.unsplash.com/photo-1504198266287-1659872e6590?w=600&q=80"
-                alt="Bittern in the reedbed at Leighton Moss RSPB"
+                src="/images/species/birds/bittern.jpg"
+                alt="Bittern standing in short grass"
                 fill sizes="(max-width: 768px) 100vw, 288px"
                 className="object-cover"
               />
@@ -308,7 +308,7 @@ export default function LeightonMossPage() {
                 <h3 className="font-semibold text-[var(--fell)]">By Car</h3>
               </div>
               <p className="text-sm text-[var(--slate)] leading-relaxed">
-                Take the A6 north from Carnforth, turn west at Yealand Redmayne and follow signs to Silverdale. Postcode LA5 0SW. Parking charges apply at the visitor centre. The cafe in the visitor centre is open daily from 9.30am to 5pm, with last orders for hot food at 3pm.
+                Take the A6 north from Carnforth, turn west at Yealand Redmayne and follow signs to Silverdale. Postcode LA5 0SW. The cafe in the visitor centre is open daily from 9.30am to 5pm, with last orders for hot food at 3pm.
               </p>
             </div>
           </div>
@@ -339,17 +339,19 @@ export default function LeightonMossPage() {
                 href: "/nature/foulshaw-moss",
                 name: "Foulshaw Moss",
                 desc: "Osprey nest, Large Heath butterfly, raised bog",
-                image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?w=600&q=80",
+                image: "/images/species/birds/osprey.jpg",
+                imageAlt: "Osprey perched on a branch",
               },
               {
                 href: "/nature/haweswater-rspb",
                 name: "RSPB Haweswater",
                 desc: "Red squirrels, ring ouzels, pied flycatchers",
-                image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80",
+                image: "/images/species/mammals/red-squirrel.jpg",
+                imageAlt: "Red squirrel eating a nut on a mossy tree stump",
               },
-            ].map(({ href, name, desc, image }) => (
+            ].map(({ href, name, desc, image, imageAlt }) => (
               <Link key={href} href={href} className="group relative h-36 rounded-2xl overflow-hidden block">
-                <Image src={image} alt={name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={image} alt={imageAlt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="text-white font-display font-bold text-sm">{name}</p>

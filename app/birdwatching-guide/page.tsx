@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "Can I see red squirrels in the Lake District?",
-    a: "Yes. Grizedale Forest has a healthy population. Go early in the morning, walk quietly, and look for feeders near the visitor centre. Red squirrels are also present in Whinlatter and other conifer woodland.",
+    a: "Yes. Grizedale Forest has a healthy population. Go early in the morning and walk quietly. Red squirrels are also present in Whinlatter and other conifer woodland.",
   },
 ];
 

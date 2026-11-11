@@ -61,13 +61,13 @@ const reserves = [
     href: "/nature/grizedale-forest",
     name: "Grizedale Forest",
     tag: "Forestry England · Free entry · Grizedale",
-    desc: "Red squirrels, red deer, red kites. The visitor centre has feeders.",
+    desc: "Red squirrels, deer and red kites in a large Forestry England forest.",
   },
   {
     href: "/nature/foulshaw-moss",
     name: "Foulshaw Moss",
     tag: "Cumbria Wildlife Trust · Free entry · Witherslack",
-    desc: "Osprey viewing platform. Nest visible from the hide. Ospreys have nested here since at least 2014.",
+    desc: "Osprey viewing platform. Ospreys have nested here since at least 2014 and can be seen from the platform.",
   },
   {
     href: "/nature/leighton-moss-rspb",

@@ -5,17 +5,17 @@ import { MapPin, Clock, TreePine } from "lucide-react";
 
 const title = "Grizedale Forest | Red Squirrels, Red Deer & Wildlife Guide";
 const description =
-  "Grizedale Forest wildlife guide. Red squirrels at the visitor centre feeders, red deer in the forest, red kites overhead. Postcode LA22 0QJ, parking, best trails and what to bring.";
+  "Grizedale Forest wildlife guide. Red squirrels, deer and red kites in the forest. Postcode LA22 0QJ, parking, best trails and what to bring.";
 const url = "https://www.thelakeswildlife.co.uk/nature/grizedale-forest";
 
 const faqs = [
   {
     q: "Is Grizedale Forest free to enter?",
-    a: "Entry to the forest itself is free. Forestry England charges for car parking at the main visitor centre (LA22 0QJ). Parking is pay on exit: free for under 20 minutes, then £2.90 for the first hour in the main car park, up to £14 for the day. The red squirrel feeders at the visitor centre are free to watch.",
+    a: "Entry to the forest itself is free. Forestry England charges for car parking at the main visitor centre (LA22 0QJ). Parking is pay on exit: free for under 20 minutes, then £2.90 for the first hour in the main car park, up to £14 for the day.",
   },
   {
     q: "When is the best time to see red squirrels at Grizedale?",
-    a: "Year-round, but the feeders at the visitor centre are most active in the morning, particularly between 8am and 11am. Autumn and winter are good when the canopy is bare and squirrels are more visible. Go early to avoid the family crowd at the feeders.",
+    a: "Year-round. Mornings are best. Autumn and winter are good when the canopy is bare and squirrels are more visible.",
   },
   {
     q: "When is the red deer rut at Grizedale?",
@@ -37,7 +37,7 @@ const pageJsonLd = [
     "@type": "TouristAttraction",
     name: "Grizedale Forest",
     description:
-      "Forestry England forest between Coniston Water and Windermere. Red squirrels, red deer, red kites. Visitor centre with feeders.",
+      "Forestry England forest between Coniston Water and Windermere. Red squirrels, deer, red kites.",
     url,
     geo: { "@type": "GeoCoordinates", latitude: 54.3333, longitude: -3.0333 },
     address: {
@@ -50,7 +50,6 @@ const pageJsonLd = [
       { "@type": "LocationFeatureSpecification", name: "Car park", value: true },
       { "@type": "LocationFeatureSpecification", name: "Visitor centre", value: true },
       { "@type": "LocationFeatureSpecification", name: "Walking trails", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Red squirrel feeders", value: true },
       { "@type": "LocationFeatureSpecification", name: "Cafe", value: true },
       { "@type": "LocationFeatureSpecification", name: "Toilets", value: true },
     ],
@@ -91,12 +90,12 @@ export default function GrizedalePage() {
       {/* Hero */}
       <section className="relative min-h-[480px] flex items-end text-white overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=1400&q=80"
-          alt="Grizedale Forest in the Lake District: ancient woodland and conifer plantation"
+          src="/images/species/mammals/red-deer.jpg"
+          alt="Red deer stag with large antlers standing in woodland"
           fill priority sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
@@ -105,14 +104,14 @@ export default function GrizedalePage() {
             <span>/</span>
             <span className="text-white/80">Grizedale Forest</span>
           </nav>
-          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
             Forestry England · Between Coniston and Windermere · Free entry
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Grizedale Forest
           </h1>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mb-8">
-            Red squirrels at the visitor centre feeders, red deer in the valley, red kites over the canopy. Go early.
+            Red squirrels in the woods, deer in the valley, red kites over the canopy. Go early.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
             {[
@@ -167,9 +166,9 @@ export default function GrizedalePage() {
               ["Best for", "Red squirrels, red deer, red kites"],
               ["Peak season", "October (deer rut), May (woodland birds)"],
             ].map(([k, v]) => (
-              <div key={k} className="flex justify-between border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="text-[var(--slate)]/60">{k}</dt>
-                <dd className="font-medium text-[var(--fell)]">{v}</dd>
+              <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
+                <dt className="shrink-0 text-[var(--slate)]/60">{k}</dt>
+                <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}
           </dl>
@@ -201,12 +200,12 @@ export default function GrizedalePage() {
               <p className="text-[var(--copper)] text-xs font-bold uppercase tracking-widest mb-2">Year-round, best in morning</p>
               <h2 className="font-display text-xl font-bold text-[var(--fell)] mb-3">Red Squirrels</h2>
               <p className="text-[var(--slate)] text-sm leading-relaxed">
-                Start at the feeders by the visitor centre. Forestry England maintains them year-round and the squirrels are habituated to people to the point where close observation is straightforward. Go before 11am for the best activity.
+                Red squirrels live in the forest, and Forestry England&rsquo;s plan for Grizedale includes keeping suitable habitat for them and supporting grey squirrel control. Go early in the morning for the best chance.
               </p>
             </div>
           </div>
           <p className="text-[var(--slate)] leading-relaxed mb-4">
-            Away from the feeders, red squirrels range widely through the forest. The Ridding Wood Trail, which starts by the visitor centre car park, passes through oak woodland. Quiet walkers who move slowly and stop often do better than those who march through. Look up as much as along. Squirrels moving through the canopy are often detected by sound before sight: a rustling and occasional shower of spruce cone fragments.
+            Red squirrels range widely through the forest. The Ridding Wood Trail, which starts by the visitor centre car park, passes through oak woodland. Quiet walkers who move slowly and stop often do better than those who march through. Look up as much as along. Squirrels moving through the canopy are often detected by sound before sight: a rustling and occasional shower of spruce cone fragments.
           </p>
           <div className="bg-[var(--fog)] rounded-xl p-4">
             <p className="font-semibold text-[var(--fell)] text-sm mb-2">Why Grizedale still has red squirrels</p>
@@ -313,17 +312,19 @@ export default function GrizedalePage() {
                 href: "/nature/haweswater-rspb",
                 name: "RSPB Haweswater",
                 desc: "Red squirrels, ring ouzels, pied flycatchers",
-                image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&q=80",
+                image: "/images/species/mammals/red-squirrel.jpg",
+                imageAlt: "Red squirrel eating a nut on a mossy tree stump",
               },
               {
                 href: "/nature/ullswater",
                 name: "Ullswater",
                 desc: "Red deer in Martindale, goldeneye in winter",
-                image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+                image: "/images/species/birds/goldeneye.jpg",
+                imageAlt: "Goldeneye drake on water",
               },
-            ].map(({ href, name, desc, image }) => (
+            ].map(({ href, name, desc, image, imageAlt }) => (
               <Link key={href} href={href} className="group relative h-36 rounded-2xl overflow-hidden block">
-                <Image src={image} alt={name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={image} alt={imageAlt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="text-white font-display font-bold text-sm">{name}</p>
