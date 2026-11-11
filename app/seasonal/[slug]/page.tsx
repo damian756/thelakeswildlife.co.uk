@@ -295,7 +295,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: page.metaDescription,
     alternates: { canonical: url },
     openGraph: {
-      title: `${page.title} | The Lakes Wildlife`,
+      title: page.title,
       description: page.metaDescription,
       url,
       siteName: "The Lakes Wildlife",

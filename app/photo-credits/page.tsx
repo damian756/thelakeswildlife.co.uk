@@ -14,6 +14,16 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: url },
+  openGraph: {
+    title,
+    description,
+    url,
+    siteName: "The Lakes Wildlife",
+    locale: "en_GB",
+    type: "website",
+    images: [{ url: "/images/species/birds/osprey.jpg", width: 600, height: 400, alt: "Osprey perched on a branch" }],
+  },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 const SECTIONS: { category: SpeciesCategory; label: string }[] = [

@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Page Not Found",
   description: "That page doesn't exist. Browse birds, mammals, insects and plants recorded in the Lake District.",
+  // Drops the layout's "index, follow", so the 404 carries only the noindex Next adds itself.
+  robots: null,
 };
 
 const SPECIES_LINKS = [

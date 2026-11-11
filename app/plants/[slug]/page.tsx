@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: canonical,
       siteName: "The Lakes Wildlife",
       type: "article",
-      ...(image && { images: [{ url: image, width: 800, alt: species.commonName }] }),
+      ...(image && { images: [{ url: image, alt: species.commonName }] }),
     },
     twitter: {
       card: "summary_large_image",

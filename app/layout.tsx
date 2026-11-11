@@ -23,8 +23,9 @@ const BASE_URL = "https://www.thelakeswildlife.co.uk";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  // No default canonical or og:url here: each page sets its own. A default gave every page
+  // without one (the 404 included) the home page as its canonical and og:url.
   alternates: {
-    canonical: BASE_URL,
     types: {
       "application/rss+xml": `${BASE_URL}/feed`,
     },
@@ -38,15 +39,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Lakes Wildlife",
     description: "Birds, nature and wildlife in the Lake District: Haweswater, Grizedale and beyond.",
-    url: "https://www.thelakeswildlife.co.uk",
     siteName: "The Lakes Wildlife",
     locale: "en_GB",
     type: "website",
     images: [
       {
         url: `${BASE_URL}/images/species/birds/osprey.jpg`,
-        width: 1200,
-        height: 630,
+        width: 600,
+        height: 400,
         alt: "An osprey, the bird of prey that nests in and around the Lake District in summer",
       },
     ],
