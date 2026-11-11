@@ -502,35 +502,37 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-07-01",
     updated: "2026-11-11",
     metaDescription:
-      "The High Brown Fritillary, which Butterfly Conservation calls Britain's most endangered butterfly. Where it is found near the Lake District, when it flies, and why the Morecambe Bay limestone hills matter to it.",
+      "The High Brown Fritillary, which Butterfly Conservation calls Britain's most endangered butterfly, still breeds on Whitbarrow at the Lake District's southern edge and flies at Arnside Knott just south. When it flies and how to tell it apart.",
     heroWikipediaTitle: "High Brown Fritillary",
     heroAlt: "High brown fritillary butterfly resting on a leaf",
     intro:
-      "Butterfly Conservation calls the High Brown Fritillary Britain's most endangered butterfly. Once widespread in England and Wales, it has declined dramatically since the 1950s. Its remaining strongholds are the Morecambe Bay Limestones, just south of the Lake District, Dartmoor and Exmoor, with a single colony left in Wales.",
+      "Butterfly Conservation calls the High Brown Fritillary Britain's most endangered butterfly. Once widespread in England and Wales, it has declined dramatically since the 1950s and is down to around 50 sites. Its strongholds are the Morecambe Bay Limestones, Dartmoor and Exmoor, with a single colony left in Wales. On the Morecambe Bay limestone hills it breeds on Whitbarrow, on the Lake District's southern edge, and flies at Arnside Knott, just south.",
     sections: [
       {
         heading: "About the High Brown Fritillary",
         body: [
-          "The High Brown Fritillary is a large, fast-flying butterfly with a bright orange upperwing patterned with black markings. The underwing shows distinctive silver spots with brown cell borders that separate it from the similar Silver-washed Fritillary. It is on the wing in June and July, flying in warm sunshine over bracken-covered slopes.",
-          "The species has declined dramatically since the 1950s. The cause is habitat change: the loss of open, warm woodland and scrubby grassland where its larval foodplant, common dog-violet, grows in the right microclimate. Active conservation management is now essential to maintain the remaining populations.",
+          "The High Brown Fritillary is a large, powerful butterfly, usually seen flying fast over the tops of bracken or low vegetation in woodland clearings. Butterfly Conservation's lifecycle chart shows the adults flying from June to August, mostly in July, in one brood a year.",
+          "In flight the males are almost impossible to tell from the Dark Green Fritillary, which often shares the same places. Both visit thistles and bramble flowers, and that is your chance to see the underside: the High Brown has orange-ringed \"pearls\" under the hindwing, which the Dark Green lacks.",
+          "Its caterpillars feed on common dog-violet, and also on hairy violet in limestone areas. It lives on bracken slopes, grass and bracken mosaics, and limestone outcrops, usually where scrub or woodland has recently been cleared or coppiced.",
         ],
       },
       {
-        heading: "Where to find them near the Lake District",
+        heading: "Where to find it: Whitbarrow and Arnside Knott",
         body: [
-          "The Morecambe Bay limestone hills, including Arnside Knott and Warton Crag, lie just south of the Lake District. The butterfly requires south-facing bracken slopes with abundant dog-violets in the litter beneath the bracken. Butterfly Conservation manages these sites with targeted scrub clearance and bracken management to maintain the open conditions the butterfly needs.",
-          "Arnside Knott (LA5 0AD) National Trust reserve is the more accessible site. The south-facing slopes above the woodland edge hold the main population. Visit on a warm, sunny day in late June or early July. Early afternoon, when the air temperature peaks, is when the butterflies are most active and visible.",
+          "Cumbria Wildlife Trust says the High Brown is one of four fritillaries that breed on its Whitbarrow (Hervey Memorial) reserve, with the Dark Green, Pearl-bordered and Small Pearl-bordered. Whitbarrow is a limestone hill near Witherslack, on the Lake District's southern edge, and the reserve covers 100 hectares of limestone pavement, low crags and scree on its top. Every way in means a walk of at least 1 km. The footpaths from Witherslack Hall and North Lodge climb fairly steeply, and the approach from the east is gentler. Parking is limited, and dogs must be on a lead.",
+          "Arnside Knott is a limestone hill owned by the National Trust above Arnside village, just south of the Lake District, with views north across the Kent Estuary to the fells. The Arnside and Silverdale National Landscape lists the High Brown among its butterflies and calls the Knott one of the best sites in Britain to see butterflies, especially in June and July. The National Trust car park takes 15 to 20 cars, and Knott Lane's postcode is LA5 0BP.",
+          "Go on a warm, sunny day in July, when most adults are flying.",
         ],
       },
       {
         heading: "Conservation",
         body: [
-          "Butterfly Conservation runs targeted conservation work for the High Brown Fritillary at the Morecambe Bay sites. This involves scrub clearance to maintain open, warm habitat, bracken management to allow the dog-violet to establish, and annual population monitoring by transect survey.",
-          "The species is listed as a priority species under the UK Biodiversity Action Plan. If you visit Arnside Knott in July and see these butterflies, you are seeing a conservation success in action: a threatened species that still exists because people are managing specifically for it.",
+          "Butterfly Conservation says conservationists are working at its remaining sites to save it from extinction. Its numbers fell by 65% between 1978 and 2019, and the area it occupies by 87% between 1985 and 2019. It is Endangered on the GB Red List (2022), a species of principal importance in England under Section 41 of the NERC Act, and fully protected in Great Britain under the Wildlife and Countryside Act 1981.",
+          "On Whitbarrow, Cumbria Wildlife Trust has brought back light grazing with sheep and cattle all year to keep a mosaic of habitats. On Arnside Knott, coppicing helps keep the variety of wildflowers and the butterflies that go with them, the National Landscape says.",
         ],
       },
     ],
-    tags: ["High Brown Fritillary", "butterflies", "Arnside", "Morecambe Bay", "conservation", "endangered species"],
+    tags: ["High Brown Fritillary", "butterflies", "Whitbarrow", "Arnside", "Morecambe Bay", "conservation", "endangered species"],
   },
 
   {
