@@ -158,6 +158,19 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         ))}
 
+        {/* Internal links */}
+        {post.links && post.links.length > 0 && (
+          <div className="mt-10 rounded-xl bg-[var(--fog)] p-5">
+            <h2 className="font-display text-lg font-bold text-[var(--fell)] mb-3">More on this site</h2>
+            <ul className="space-y-2 text-sm">
+              {post.links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="text-[var(--lichen)] hover:underline">{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         {/* Tags */}
         {post.tags.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-10 pt-6 border-t border-[var(--fog)]">

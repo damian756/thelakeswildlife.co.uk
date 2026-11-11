@@ -22,6 +22,8 @@ export interface BlogPost {
     imageAfter?: { src: string; alt: string; caption: string; objectPosition?: string };
   }[];
   tags: string[];
+  /** Optional internal links shown after the sections ("More on this site"). */
+  links?: { href: string; label: string }[];
 }
 
 export const BLOG_CATEGORIES: Record<BlogCategory, { label: string; description: string }> = {
@@ -48,6 +50,117 @@ export const BLOG_CATEGORIES: Record<BlogCategory, { label: string; description:
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "wildlife-hides-lake-district",
+    category: "habitat-guides",
+    categoryLabel: "Habitat Guides",
+    title: "Wildlife Hides in and Around the Lake District",
+    date: "2026-11-11",
+    metaDescription:
+      "Wildlife hides in and around the Lake District: Leighton Moss, the Wild Haweswater badger and woodland hides, the Whinlatter nature hide and the Foulshaw Moss platform. Times, booking and prices.",
+    heroLocalSrc: "/images/species/mammals/badger.jpg",
+    heroAlt: "A badger in long grass",
+    intro:
+      "Much of the Lake District's wildlife is watched from public footpaths, and some well-known places, such as Wild Haweswater, have no public hides at all. These are the hides and viewing platforms in and around the National Park, what each one is for, and which ones you have to book.",
+    sections: [
+      {
+        heading: "Leighton Moss RSPB, Silverdale",
+        body: [
+          "Leighton Moss, near Silverdale in Lancashire, just south of the Lake District, has the largest reedbed in north-west England. The RSPB says it has seven hides and one viewpoint, all open from dawn to dusk.",
+          "Lilian's, Tim Jackson, Grisedale, Causeway and Lower hides overlook the reedbed. The Allen and Eric Morecambe hides look over the saltmarsh and Morecambe Bay from a separate car park, a mile from the visitor centre, with a 2m height limit. The 9m Skytower gives a view over the reserve and the bay beyond.",
+          "All the hides have step-free access and are wheelchair accessible, and most have lower windows. The trails are mostly flat, and all of them except the path to Lower Hide are fully accessible. RSPB members go in free. Non-members pay £10 for an adult and £7 for a student; 16 to 24 year olds, the first child and under-5s are free, and non-members who arrive by public transport or bike pay £5.",
+          "In early November 2026 the RSPB's sightings page reported bitterns from the Lower and Causeway hides most days, otters from the Causeway, Lower and Lilian's hides, and marsh harriers from most hides.",
+        ],
+      },
+      {
+        heading: "Wild Haweswater: two hides you book",
+        body: [
+          "Wild Haweswater, the RSPB's restoration partnership with United Utilities in the eastern fells, has no public hides or designated viewpoints. It does have two hides you book in advance.",
+          "The RSPB's Badger Watching Hide is a new hide, opened in 2024 over an area badgers already use. It is open from April to October, and you book a session through the Wild Haweswater events pages. The RSPB says badgers can come within a metre of the hide, which has ramps for wheelchair users and a parking space beside it.",
+          "Wild Intrigue's Woodland Wildlife Hide, run by one of the RSPB's partners at Wild Haweswater, is open from November to June and is also booked in advance.",
+          "Everything else at Haweswater is done on foot, on the public footpaths and bridleways from Mardale Head car park.",
+        ],
+      },
+      {
+        heading: "Whinlatter Forest: the Wow Trail nature hide",
+        body: [
+          "Forestry England's Wow Trail at Whinlatter Forest has a nature hide for spotting the forest's wildlife. Forestry England names red squirrels, deer, badgers and foxes among the animals in the forest.",
+          "The trail is 4.5 miles long and starts at the visitor centre (CA12 5TW). It follows surfaced paths with no stiles, steps or gates, though some slopes are steep. It also looks across Bassenthwaite Lake, which Forestry England says has been home to ospreys for over 20 years. The main car park is open from 8.30am to 8.30pm.",
+        ],
+      },
+      {
+        heading: "Viewing platforms for ospreys",
+        body: [
+          "Foulshaw Moss, Cumbria Wildlife Trust's reserve near Witherslack (LA11 6SN), has an open viewing platform rather than a hide, 1.5 km (1 mile) along a boardwalk. Ospreys nest there from around the end of March to early September. In winter the Trust lists marsh and hen harriers, snipe and teal, and red deer that can be seen from the raised platform. Entry is free and the car park is small.",
+          "In November 2026 the Foulshaw boardwalks were closed because they were slippery, so check the Trust's page before you go.",
+          "Elsewhere in Cumbria, RSPB Campfield Marsh has an osprey nesting platform that can be seen from a nearby hide. The RSPB says three chicks hatched there in June 2026, the first ospreys to breed on an RSPB reserve in England since the Victorian period.",
+        ],
+      },
+    ],
+    tags: ["wildlife hides", "Leighton Moss", "Haweswater", "badger", "Whinlatter", "Foulshaw Moss"],
+    links: [
+      { href: "/nature/leighton-moss-rspb", label: "Leighton Moss RSPB: bitterns, otters and marsh harriers" },
+      { href: "/nature/haweswater-rspb", label: "RSPB Haweswater: parking and what to see" },
+      { href: "/nature/foulshaw-moss", label: "Foulshaw Moss: ospreys and the raised bog" },
+      { href: "/mammals/badger", label: "Badger: species guide" },
+    ],
+  },
+
+  {
+    slug: "temperate-rainforest-lake-district",
+    category: "habitat-guides",
+    categoryLabel: "Habitat Guides",
+    title: "Temperate Rainforest in the Lake District: Where to Find It",
+    date: "2026-11-11",
+    metaDescription:
+      "What temperate rainforest is, why so little is left, and where to find it in the Lake District: Borrowdale National Nature Reserve and Naddle Forest at Wild Haweswater.",
+    heroLocalSrc: "/images/species/plants/wood-anemone.jpg",
+    heroAlt: "Wood anemones in flower among their leaves",
+    intro:
+      "The Lake District has temperate rainforest: steep, wet woodland of old oaks, birches and ferns, where lichens, mosses and liverworts grow over the trees and rocks. Natural England says this globally rare habitat now covers less than 1% of England. Two places to find it are Borrowdale and Naddle Forest at Haweswater.",
+    sections: [
+      {
+        heading: "What makes it a rainforest",
+        body: [
+          "Temperate rainforest grows where rainfall and humidity are high and the temperature changes little through the year, Natural England says. That damp, even climate suits lichens and mosses. The habitat was once widespread in the UK because of its oceanic climate.",
+          "The RSPB's Wild Haweswater team says rainforest once covered 20% of these islands and now covers less than 1%. Around Haweswater, as across much of the Lake District, trees were cleared for shipbuilding, mining and other uses, and later to make more room for grazing sheep.",
+          "The government's temperate rainforest strategy covers the rainforests of Cornwall, Devon and Cumbria, backed by £750,000 of research and development funding.",
+        ],
+      },
+      {
+        heading: "Borrowdale National Nature Reserve",
+        body: [
+          "In May 2024 Natural England declared Borrowdale a National Nature Reserve, describing it as England's largest temperate rainforest. It is a 721-hectare National Trust site.",
+          "Borrowdale is the wettest inhabited place in England, and the upper end of the valley gets twice the rainfall of the lower end. Its upland woods are full of rare lichens, mosses and liverworts among ancient oaks, birches and ferns. They support redstarts, pied flycatchers, tree pipits and red squirrels, and Natural England calls the woods a stronghold for the squirrels.",
+          "The National Trust plans to make some paths more accessible. Natural England says the focus is on local people and existing visitors, without encouraging more people to come to the valley, so keep to the paths and leave the place as you find it.",
+        ],
+      },
+      {
+        heading: "Naddle Forest, Wild Haweswater",
+        body: [
+          "Naddle Forest, part of Wild Haweswater in the eastern Lake District, is one of the last fragments of temperate rainforest left in the Lake District, the Wild Haweswater team says. The RSPB and the landowner United Utilities are working to extend it, by planting trees and by letting them regenerate on their own.",
+          "That second part means easing the grazing pressure. Wild Haweswater says the land was overgrazed for decades by livestock and wild deer, so it keeps cattle and ponies in low numbers and uses professional deer stalkers to bring deer numbers down. Young trees are raised in the reserve's own nursery.",
+          "Winter is tree-planting season. The RSPB runs guided walks such as Meet Cumbria's Rainforest, where you can plant a tree in Celebration Wood, and tours of Naddle Forest for groups of 10 to 20 for a suggested donation. In autumn, look for fungi in Naddle Forest.",
+          "There is no visitor parking at the Naddle Farm office except for pre-booked visits. The main car park is at Mardale Head, at the southern end of the reservoir.",
+        ],
+      },
+      {
+        heading: "What to look for",
+        body: [
+          "Look at the trees as much as for the animals: the lichens, mosses and liverworts are what make these woods rare.",
+          "In spring, redstarts, pied flycatchers and cuckoos return to the woods of the Naddle and Swindale valleys, Wild Haweswater says. Red squirrels live in both woods.",
+        ],
+      },
+    ],
+    tags: ["temperate rainforest", "Borrowdale", "Naddle Forest", "Haweswater", "woodland", "lichens"],
+    links: [
+      { href: "/woodland-habitats", label: "Lake District woodland habitats" },
+      { href: "/nature/haweswater-rspb", label: "RSPB Haweswater: parking and what to see" },
+      { href: "/birds/redstart", label: "Redstart: species guide" },
+      { href: "/mammals/red-squirrel", label: "Red squirrel: species guide" },
+    ],
+  },
+
   {
     slug: "ospreys-haweswater-rspb",
     category: "species-spotlight",
