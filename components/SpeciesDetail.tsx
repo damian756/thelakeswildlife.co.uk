@@ -292,6 +292,21 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                     → Grizedale Forest guide
                   </Link>
                 )}
+                {species.shortLocation.includes("Foulshaw") && (
+                  <Link href="/nature/foulshaw-moss" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
+                    → Foulshaw Moss guide
+                  </Link>
+                )}
+                {species.shortLocation.includes("Ullswater") && (
+                  <Link href="/nature/ullswater" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
+                    → Ullswater wildlife guide
+                  </Link>
+                )}
+                {species.shortLocation.includes("Martindale") && (
+                  <Link href="/blog/martindale-complete-guide" className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lichen)] hover:text-[var(--fell)] transition">
+                    → Martindale guide
+                  </Link>
+                )}
               </div>
             )}
           </section>
