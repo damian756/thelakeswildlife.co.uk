@@ -1,5 +1,7 @@
 # The Lakes Wildlife: November 2026 report
 
+**Standing rule** (Damian, 11 Nov 2026): "their only goal is to drive traffic, we dont need to focus much on conversion, but just raw numbers. Having high traffic is what will sell the advert space locally". Every choice is judged by visits from search; see "Traffic: what to do next" (added by the SEO pass).
+
 Internal report. Work done 11 Nov 2026 on `main` (after the stage 1 contact commit `a83b0c5`). Screenshots are in `docs/freshen-2026-11/screens/` (JPEG, quality 70); the text of every source used is in `docs/freshen-2026-11/sources/`, all fetched on 11 Nov 2026. Playbook: `C:\Projects\lakes-guide\docs\GUIDE-SITES-PLAYBOOK-2026-11.md` (section 9 for the Lakes sites).
 
 ## Stage 1: contact form, no email address
@@ -42,7 +44,26 @@ The dependency upgrade `6bb2686` was pushed on its own on 11 Nov. Then, on `main
 | `66c130d` | Gallery title and hero line break |
 | `c5aef2c` | `AGENTS.md` |
 
-This report comes next. The privacy and terms commits come last and are held for Damian.
+This report's first version, `9e31ba2`, was pushed with those.
+
+**Later on 11 Nov (Damian's decisions through the coordinating chat):**
+
+| Commit | What it does |
+|---|---|
+| `fd1b011` | Species list pages lighter: `/birds` HTML 357.5 KB to 164.5 KB; cards render as you scroll; every species linked A to Z |
+| `ce5fa8b` | Every Wikimedia Commons photo credited from Commons metadata (`scripts/build-photo-credits.mjs`, `content/species/photo-credits.json`, the `/photo-credits` page); the emperor moth photo replaced with a real emperor moth (Saturnia pavonia, jean-pierre Hamon, CC BY-SA 3.0) |
+| `8d7fc89` | Copper accent at 4.5:1 or better: `#7F4D1D` on light, `#C8884A` on dark |
+| `e4ba028` | Screenshots, hero photo candidates, range sources |
+| `5e6c110` | 19 photos replaced with identified Commons files at the same paths (each Commons description names the species); 7 of 8 missing authors read from the file pages; round-leaved wintergreen is an 1885 plate |
+| `756f6b7` | Four species pages say plainly where each is and is not found (mountain hare, black grouse, Scotch argus, high brown fritillary) |
+| `079b609` | 177 unused Sefton coast species images deleted (nothing referenced them) |
+| `d3e7e31` | Real, credited Geograph photographs (CC BY-SA 2.0) as the Haweswater, Leighton Moss and Foulshaw Moss heroes |
+| `b75bf3e` | Generated illustrations as the home, Grizedale, Ullswater and five section heroes |
+| `df39674` | Screenshots `heroes-*` |
+| `c07be24`, `3a024de`, `f71e2d9`, `f72d6cb` | Advertising, stage B (section 9) |
+| `398e8cb` to `9e46ead` | Final review fixes (section 4), the London region line and `fix-*` screenshots |
+| this report | |
+| four privacy and terms commits, then one terms commit | last (section 13) |
 
 The stage 2 commits made before the review, including the two new posts and the visit counts, sit earlier in the same history.
 
@@ -272,7 +293,29 @@ A third pass (`9fe48f8..f05ad28`) found no must-fix or should-fix items. Its two
 
 Left for Damian: the "Damian's notes" heading and his author bio.
 
-## 5. Suggestions for Damian (not done)
+### Final review (`9e31ba2..2edead8`) and what was done
+An independent reviewer read the range, checked 31 Commons file pages (all 19 replaced photos show the named species; authors and licences match), scrolled every species list at 390 and 1440, fetched every image path in the sitemap (all exist; the 11 remote heroes return 200) and counted adverts on every sitemap page. tsc clean, `test:contact` 9/9, tests 23/23.
+
+| # | Severity | Finding | Done |
+|---|---|---|---|
+| 1 | Must | High brown fritillary said "not found in the Lake District"; Cumbria Wildlife Trust lists it breeding on Whitbarrow, a Lake District fell | `398e8cb`: breeds on Whitbarrow (the Lake District's southern edge) and flies at Arnside Knott; one flight period (June to August, mostly July) on the page and the post; unsupported details removed; sources saved |
+| 2 | Must | Species boilerplate ("Its presence in the Lake District is important") contradicted the four corrected pages; Scotch argus marked green though GB Red List Vulnerable; titles like "Black Grouse at the Pennines" | `748e745`: no Lake District line for species not found here; Scotch argus amber; titles take the right preposition ("Black Grouse in the Pennines", "Osprey at Foulshaw Moss") |
+| 3 | Must | Dark copper on the dark advertise header and bundle card, 2.36:1 | `fa24946`: copper-light, 5.59:1 |
+| 4 | Must | Terms: "Illustrations on this site are computer-generated" was untrue of three 19th-century botanical plates; the terms restricted all images in ways the CC licences forbid | `66d3bf0` credits the plates as illustrations with book and year; the terms commit says "The scene illustrations at the top of some pages are computer-generated. Species photographs and botanical plates are credited to their makers on each page and on the Photo credits page." and that Commons and Geograph images keep their own licences |
+| 5 | Must | End-of-post advert on posts that name businesses | `db9cd3e`: off five posts (ospreys at Bassenthwaite and Haweswater, winter wildfowl at Ullswater, the Martindale red deer rut, Haweswater in winter); the ads test fails if a post with the space names a business; the winter wildfowl guide's space is never to be sold to the Ullswater Steamers |
+| 6 | Should | Goldeneye credited to a Flickr URL | `66d3bf0`: "Photo: Stefan Berndtsson, CC BY 2.0, via Wikimedia Commons"; the credits script flags any author that is only a link |
+| 7 | Should | Grizedale and Ullswater illustrated heroes: kicker 2.2 to 2.8:1 | `dfa68ca`: darker overlay; the weakest text is 5.30:1 at 390 and 1440 |
+| 8 | Should | Flight periods unsourced and inconsistent | Fixed with item 1 (read from Butterfly Conservation's lifecycle chart; note in `sources/`) |
+| 9 | Should | Winter wildfowl space under a named boat company | Code note added (item 5) |
+| 10 | Note | Black grouse "not found" is an inference from the RSPB range list | Left: the wording is the safe one |
+| 11 | Note | `/advertise` not counted | `7975e54` |
+| 12 | Note | Stage B's own departures (winter wildfowl space, one shared post sponsor, section spaces on list pages only, daily rebuild) | Sound, kept |
+
+Also: `4104452` adds `vercel.json` with `{ "regions": ["lhr1"] }`. Live responses showed `lhr1::iad1` (the server code ran in Washington while the database is in London); after the deploy `/api/count` should answer `lhr1::lhr1`, or the line is reverted.
+
+## 5. Suggestions for Damian
+
+Done since this list was written: image credits on every photo and the `/photo-credits` page (the terms' attribution claim is now true); the emperor moth photo; the Unsplash cards (replaced earlier with repo photos); the copper contrast; the "listing enquiries" wording. Still open: the species copy rewrite (section 17), the author bios, the command centre reading `PageView`, and the winter wildfowl dates.
 
 - **The species data reads as machine-made.** About 250 entries read like "That blue. Yellow. Common. Don't ignore them." The data also includes Sefton coast dune species and photos that are not Lake District subjects (sand lizard, sea holly, and Ainsdale jellyfish images under `public/images/blog/beachcombing`). A rewrite from official species pages is a bigger job. Screenshot: `before-birds-osprey-*`.
 - **Image credits.**
@@ -354,13 +397,39 @@ The 9 test rows were left in place by decision. The key-protected `app/api/comma
 | "The The Lakes Network brand and associated trademarks belong to Churchtown Media." | "The Lakes Network brand and associated trademarks belong to Churchtown Media." |
 | "Last updated: February 2026" | "Last updated: November 2026" |
 
-## 9. Advertising today (for stage 3)
+## 9. Advertising (stage B, approved by Damian: "Yes, go with it")
 
-- There is no advertise page, no advert slot, no "featured" or "sponsored" card, and no paid placement anywhere on the site.
-- The only commercial prompt is the footer line "Conservation group or local business? Partner with The Lakes Network", which links to the contact form (`components/Footer.tsx`).
-- The contact page invites "listing enquiries".
-- No prices are shown anywhere.
-- The key-protected `app/api/command-centre/stats/route.ts` returns placeholder revenue fields (hub members, featured listings, affiliate), all set to 0.
+**Before:** no advertise page, no spaces, no prices; the footer's "Partner with The Lakes Network" went to the contact form.
+
+**Now, https://www.thelakeswildlife.co.uk/advertise**, every price plus VAT:
+
+| Option | Price |
+|---|---|
+| Section sponsor (Birds, Mammals, Insects, Plants, Seasonal or the Fishing guide) | £35 a month, 3 months minimum |
+| Birdwatching guide sponsor | £35 a month, 3 months minimum |
+| Home page card | £39 a month, 3 months minimum |
+| Sponsored article | £99, one-off, live for 12 months |
+| Winter birds package (Birds section plus the winter wildfowl guide) | £79, November to February, one payment |
+| Lakes network bundle | £99 a month, 3 months minimum |
+
+The page also carries the founding offer word for word ("For the first ten advertisers across the Lakes network sites: half price for your first three months, and your monthly price held for twelve months."), How it works and Where adverts never appear. No email address, no traffic or audience claims; every button goes to /contact (the form has no enquiry type).
+
+**Spaces** (at most one per page, all empty today):
+- home, after the latest posts;
+- /birds, /mammals, /insects and /plants, after the species list; /seasonal after the guides;
+- /fishing-guide and /birdwatching-guide, after the FAQs;
+- /seasonal/winter-wildfowl, before the author box (sold as the winter package; never to a business the page names);
+- species and seasonal posts that name no business, before the author box (one shared sponsor at the section price).
+
+**No adverts on:** the `/nature/*` reserve pages, contact, privacy, terms, advertise, the 404, and the five posts that name businesses.
+
+**To put an advert live** (after the invoice is paid): set `sponsor` on the slot in `lib/ad-slots.ts` and deploy. Pages with a space rebuild daily, so a lapsed sponsor drops off within a day. Sponsored posts are labelled on home and blog cards and their feed title starts "Sponsored:". `tests/ads.test.mjs` (npm run test:ads) fails if a sponsor is committed, a price lacks "plus VAT", a space lands on a no-advert page or a post with the space names a business.
+
+**Footer:** "Partner with The Lakes Network" now goes to /advertise.
+
+**Price recheck:** look at the prices again in three months (mid-February 2027), against what has sold and how much of the founding offer has been used.
+
+**Screenshots:** `ads-*` (the advertise page, a named space, each space type empty, the home card with a temporary example sponsor set back to null before commit), `fix-*`.
 
 ## 10. Keeping it fresh
 
@@ -400,10 +469,10 @@ Damian, 11 Nov: "anything extra that's needed".
 | 8 | Broken links | | Checked: none (45 internal, 12 external, across 18 pages) |
 | 9 | 13 meta descriptions are over 160 characters | 30 min | Left |
 | 10 | Rewrite the machine-written species copy and drop the Sefton coast species | days | Proposal (`idea-birds-blue-tit-*`, `idea-mammals-*`) |
-| 11 | Licensed Lake District landscape photos for the reserve heroes (now 600 px species photos, stretched) | needs photos | Proposal (`idea-nature-ullswater-*`) |
-| 12 | Credit the Wikimedia photos (the terms page claims attribution that no page shows) | half a day | Proposal (`idea-birds-osprey-*`) |
-| 13 | The copper accent is 3.7:1 on light backgrounds and 3.8:1 on dark | 1 hour, design call | Proposal (`idea-home-*`) |
-| 14 | `/birds` is 392 KB of HTML with 160 cards: paginate it or render lazily | half a day | Proposal (`idea-birds-*`) |
+| 11 | Licensed Lake District landscape photos for the reserve heroes (now 600 px species photos, stretched) | needs photos | Done: Geograph photos for Haweswater, Leighton Moss and Foulshaw Moss (`d3e7e31`); illustrations for Grizedale, Ullswater, home and the sections (`b75bf3e`, section 15) |
+| 12 | Credit the Wikimedia photos (the terms page claims attribution that no page shows) | half a day | Done (`ce5fa8b`, `5e6c110`, `66d3bf0`; section 14) |
+| 13 | The copper accent is 3.7:1 on light backgrounds and 3.8:1 on dark | 1 hour, design call | Done (`8d7fc89`, `fa24946`) |
+| 14 | `/birds` is 392 KB of HTML with 160 cards: paginate it or render lazily | half a day | Done (`fd1b011`) |
 
 Screenshots: `improve-*`, `after-review-*` and `final-*`, at 1440, 1024, 768 and 390.
 
@@ -435,3 +504,30 @@ Section 8 lists the stage 2 changes. Later rounds changed three more things:
 - **"Last updated" line.** Now at full contrast.
 
 The rest of the wording is as in section 8.
+
+**Final wording, approved by Damian ("go with your suggestions"), in the last commits:**
+- Ahrefs: "Ahrefs Web Analytics: page view statistics without cookies. It records the page address (including any query string), the referring page, your browser, operating system and device, screen size and language, and when a link is clicked or a form is sent. It uses your IP address to work out your approximate location (city level) and a daily visitor ID that cannot be linked across days; the IP address itself is discarded, not stored." (checked against Ahrefs' help page; a short Ahrefs line with its privacy policy link stays in the third-party list).
+- Terms: "The scene illustrations at the top of some pages are computer-generated. Species photographs and botanical plates are credited to their makers on each page and on the Photo credits page.", and Commons and Geograph photographs and plates keep their own licences, shown with each credit.
+
+## 14. Photo credits
+
+- Every Wikimedia Commons photo on the site carries a credit built from Commons metadata (`scripts/build-photo-credits.mjs` writes `content/species/photo-credits.json`): author, licence (linked) and "via Wikimedia Commons" (linked to the file page). `/photo-credits` lists them all; the footer links to it.
+- 19 photos whose Commons file did not show or name the species were replaced, at the same path and width, by the species' current Wikipedia lead image. For 7 of 8 files with no author in the metadata, the author came from the file page's own text. The three 19th-century botanical plates (bilberry, tormentil, round-leaved wintergreen) are credited "Illustration:" with author, book and year.
+- The three Geograph reserve heroes carry title, author, licence (CC BY-SA 2.0) and file link on the image and on `/photo-credits`.
+- Left: a few credits show Commons user handles (for example "Aconcagua ( talk )"), which is how those authors sign; they are not links.
+
+## 15. Illustrations (Damian: generated images allowed where the site has no adequate real picture)
+
+Eight generated images in one style (Recraft, the site's palette): the home hero, the Grizedale and Ullswater reserve heroes, and the Birds, Mammals, Insects, Plants and Seasonal section heroes. Alt text begins "Illustration of". None is used as a species picture or presented as a photograph of a named place. The generated Haweswater, Leighton Moss and Foulshaw Moss images were not used: those pages have real, credited Geograph photographs. The terms say which images are computer-generated. **For Damian:** Grizedale and Ullswater also have CC BY-SA Geograph photos available, the same route as the other three reserves, if he prefers real photos there.
+
+## 16. Visit counts tonight
+
+The database note in section 7 stands. `/advertise` is counted from `7975e54`.
+
+## 17. Planned work: the species rewrite (the largest set of pages)
+
+About 250 species entries read as machine-made, and some are Sefton coast species that do not belong on a Lake District site (sand lizard, sea holly, beachcombing images). Plan: rewrite each entry from official pages (RSPB, Butterfly Conservation, Plantlife, the Mammal Society, Cumbria Wildlife Trust, the National Park), with where and when to see it in the Lake District, and drop or redirect the coast species. Do it in batches of about 20 a fortnight, birds first, ordered by what people search (the SEO pass's traffic section ranks it). Never invent a site or a date: if no source places a species in the Lake District, say so, as the four corrected pages now do.
+
+## 18. SEO pass
+
+To follow as its own push once this is live, by an agent that did not write the pages (brief: `lakes-seo-pass-brief.md` in the coordinating notes). It adds its findings, the sitemap count, the URLs for Damian to submit and "Traffic: what to do next" here.
