@@ -137,7 +137,7 @@ export default async function HomePage() {
               Haweswater · Grizedale · Martindale
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Wildlife in the<br />
+              Wildlife <span className="whitespace-nowrap">in the</span><br />
               <span className="text-[var(--copper)]">Lake District.</span>
             </h1>
             <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-lg">
@@ -368,10 +368,10 @@ export default async function HomePage() {
           <div className="flex items-end justify-between mb-6">
             <div>
               <p className="text-[var(--lichen)] text-xs font-bold uppercase tracking-widest mb-2">
-                From the fells
+                Gallery
               </p>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--fell)] mb-1">
-                Photos from the Lake District
+                Species photos
               </h2>
               <p className="text-[var(--slate)] text-sm">Species photos from Wikipedia. Click any photo to enlarge.</p>
             </div>
