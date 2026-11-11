@@ -89,7 +89,9 @@ export function Footer() {
         <div className="mt-12 border-t border-white/10 pt-6 pb-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
           <p className="text-white/70">
             Conservation group or local business?{" "}
-            <span className="text-[var(--copper-light)] font-semibold">Partner with The Lakes Network</span>
+            <Link href="/advertise" className="text-[var(--copper-light)] font-semibold hover:text-white transition">
+              Partner with The Lakes Network
+            </Link>
           </p>
           <Link href="/contact" className="text-[var(--copper-light)] hover:text-white transition font-medium text-sm">
             Use the contact form →
