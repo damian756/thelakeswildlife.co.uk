@@ -62,7 +62,7 @@ export function BlogListClient({ posts }: Props) {
         {/* Search input */}
         <div className="relative max-w-lg">
           <svg
-            className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--slate)]/90 pointer-events-none"
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--slate)] pointer-events-none"
             fill="none"
             stroke="currentColor"
             strokeWidth={2}
@@ -76,12 +76,12 @@ export function BlogListClient({ posts }: Props) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search posts…"
-            className="w-full rounded-xl border border-[var(--fog)] bg-white pl-10 pr-4 py-2.5 text-sm text-[var(--peat)] placeholder:text-[var(--slate)]/90 focus:outline-none focus:border-[var(--lichen)] focus:ring-1 focus:ring-[var(--lichen)] transition"
+            className="w-full rounded-xl border border-[var(--fog)] bg-white pl-10 pr-4 py-2.5 text-sm text-[var(--peat)] placeholder:text-[var(--slate)] focus:outline-none focus:border-[var(--lichen)] focus:ring-1 focus:ring-[var(--lichen)] transition"
           />
           {query && (
             <button
               onClick={() => setQuery("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--slate)]/90 hover:text-[var(--slate)] transition"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--slate)] hover:text-[var(--slate)] transition"
               aria-label="Clear search"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -121,7 +121,7 @@ export function BlogListClient({ posts }: Props) {
         {/* Result count */}
         {hasFilter && (
           <div className="flex items-center gap-3">
-            <p className="text-sm text-[var(--slate)]/90">
+            <p className="text-sm text-[var(--slate)]">
               {filtered.length === 0
                 ? "No posts found"
                 : `${filtered.length} post${filtered.length !== 1 ? "s" : ""}`}
@@ -139,7 +139,7 @@ export function BlogListClient({ posts }: Props) {
       {/* Grid */}
       {filtered.length === 0 ? (
         <div className="py-20 text-center">
-          <p className="text-[var(--slate)]/90 text-sm mb-3">No posts match your search.</p>
+          <p className="text-[var(--slate)] text-sm mb-3">No posts match your search.</p>
           <button
             onClick={() => { setQuery(""); setActiveCategory(ALL); }}
             className="text-sm text-[var(--lichen)] hover:underline font-medium"
@@ -158,7 +158,7 @@ export function BlogListClient({ posts }: Props) {
               }`}
             >
               {/* Image */}
-              <div className={`relative overflow-hidden bg-[var(--fog)] ${i === 0 && filtered.length > 2 ? "h-52 sm:h-64 lg:h-52" : "h-48"}`}>
+              <div className={`relative overflow-hidden bg-[var(--fog)] ${i === 0 && filtered.length > 2 ? "h-52 sm:h-64 lg:h-48" : "h-48"}`}>
                 {post.heroSrc ? (
                   <Image
                     src={post.heroSrc}
@@ -180,8 +180,8 @@ export function BlogListClient({ posts }: Props) {
                 <h2 className="font-semibold text-[var(--fell)] leading-snug mb-1.5 group-hover:text-[var(--lichen)] transition text-base">
                   {post.title}
                 </h2>
-                <p className="text-xs text-[var(--slate)]/90 mb-3">{formatDate(post.date)}</p>
-                <p className="text-sm text-[var(--slate)]/90 leading-relaxed line-clamp-2">
+                <p className="text-xs text-[var(--slate)] mb-3">{formatDate(post.date)}</p>
+                <p className="text-sm text-[var(--slate)] leading-relaxed line-clamp-2">
                   {post.metaDescription}
                 </p>
               </div>

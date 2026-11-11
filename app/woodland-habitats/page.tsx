@@ -77,7 +77,7 @@ export default function WoodlandHabitatsPage() {
 
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-3xl px-4 py-10">
-          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+          <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <span className="text-white/80">Woodland habitats</span>
@@ -162,7 +162,7 @@ export default function WoodlandHabitatsPage() {
                 {q}
                 <span className="text-[var(--copper)] text-lg group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <p className="mt-3 text-sm text-[var(--slate)]/80 leading-relaxed">{a}</p>
+              <p className="mt-3 text-sm text-[var(--slate)] leading-relaxed">{a}</p>
             </details>
           ))}
         </div>

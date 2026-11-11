@@ -87,7 +87,7 @@ export function Footer() {
 
         {/* Partner banner */}
         <div className="mt-12 border-t border-white/10 pt-6 pb-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
-          <p className="text-white/50">
+          <p className="text-white/70">
             Conservation group or local business?{" "}
             <span className="text-[var(--copper)] font-semibold">Partner with The Lakes Network</span>
           </p>

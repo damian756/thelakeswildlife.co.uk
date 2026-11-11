@@ -33,7 +33,7 @@ export function SpeciesList({ category, species }: SpeciesListProps) {
       {/* Header — server-rendered, no interactivity needed */}
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-5xl px-4 py-10">
-          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+          <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <span className="text-white/80">{label}</span>
@@ -68,7 +68,7 @@ export function SpeciesList({ category, species }: SpeciesListProps) {
       {/* Interactive grid — client component */}
       {species.length === 0 ? (
         <div className="mx-auto max-w-5xl px-4 py-10">
-          <p className="text-[var(--slate)]/80">
+          <p className="text-[var(--slate)]">
             No species in the database yet. Add entries to{" "}
             <code className="bg-[var(--fog)] px-1 rounded">content/species/{category}.json</code>.
           </p>

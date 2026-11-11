@@ -91,7 +91,7 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
         <div className="bg-[var(--fell)] text-white">
           <div className="mx-auto max-w-5xl px-4 py-10">
             {/* Breadcrumb */}
-            <nav className="text-sm text-white/50 mb-5 flex items-center gap-1.5">
+            <nav className="text-sm text-white/80 mb-5 flex items-center gap-1.5">
               <Link href="/" className="hover:text-white/80 transition">Home</Link>
               <span>/</span>
               <Link href={`/${category}`} className="hover:text-white/80 transition">{label}</Link>
@@ -129,24 +129,24 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                 {/* Quick facts strip */}
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                    <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Season</div>
+                    <div className="text-xs uppercase tracking-wider text-white/75 mb-0.5">Season</div>
                     <div className="text-sm text-white/90">{species.seasonalPresence}</div>
                   </div>
                   {species.bestTimeOfDay && (
                     <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                      <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Best time of day</div>
+                      <div className="text-xs uppercase tracking-wider text-white/75 mb-0.5">Best time of day</div>
                       <div className="text-sm text-white/90">{species.bestTimeOfDay}</div>
                     </div>
                   )}
                   {species.lakesPopulation && (
                     <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                      <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">Lake District</div>
+                      <div className="text-xs uppercase tracking-wider text-white/75 mb-0.5">Lake District</div>
                       <div className="text-sm text-white/90">{species.lakesPopulation}</div>
                     </div>
                   )}
                   {species.ukPopulation && (
                     <div className="bg-white/8 rounded-lg p-3 border border-white/10">
-                      <div className="text-xs uppercase tracking-wider text-white/40 mb-0.5">UK population</div>
+                      <div className="text-xs uppercase tracking-wider text-white/75 mb-0.5">UK population</div>
                       <div className="text-sm text-white/90">{species.ukPopulation}</div>
                     </div>
                   )}
@@ -339,9 +339,9 @@ export function SpeciesDetail({ category, species, related, slug }: SpeciesDetai
                     className="block p-4 rounded-xl border border-[var(--fog)] bg-white hover:border-[var(--lichen)] hover:shadow-sm transition group"
                   >
                     <div className="font-medium text-[var(--fell)] group-hover:text-[var(--lichen)] transition">{r.commonName}</div>
-                    <div className="text-xs italic text-[var(--slate)]/90 mt-0.5">{r.scientificName}</div>
+                    <div className="text-xs italic text-[var(--slate)] mt-0.5">{r.scientificName}</div>
                     {r.seasonalPresence && (
-                      <div className="text-xs text-[var(--slate)]/90 mt-1.5 leading-snug">{r.seasonalPresence.split('.')[0]}</div>
+                      <div className="text-xs text-[var(--slate)] mt-1.5 leading-snug">{r.seasonalPresence.split('.')[0]}</div>
                     )}
                   </Link>
                 ))}

@@ -78,7 +78,7 @@ export default function BirdwatchingGuidePage() {
       {/* Page header */}
       <div className="bg-[var(--fell)] text-white">
         <div className="mx-auto max-w-3xl px-4 py-10">
-          <nav className="text-sm text-white/50 mb-4 flex items-center gap-1.5">
+          <nav className="text-sm text-white/80 mb-4 flex items-center gap-1.5">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <span>/</span>
             <span className="text-white/80">Birdwatching guide</span>
@@ -107,7 +107,7 @@ export default function BirdwatchingGuidePage() {
           ].map(({ stat, label }) => (
             <div key={label} className="rounded-xl bg-[var(--fog)] p-4 text-center">
               <p className="font-display text-2xl font-bold text-[var(--fell)]">{stat}</p>
-              <p className="text-xs text-[var(--slate)]/90 mt-1 leading-snug">{label}</p>
+              <p className="text-xs text-[var(--slate)] mt-1 leading-snug">{label}</p>
             </div>
           ))}
         </div>
@@ -127,7 +127,7 @@ export default function BirdwatchingGuidePage() {
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               A landscape restoration partnership between the RSPB and United Utilities. There are no RSPB trails, public hides, viewpoints, toilets or café. Park at Mardale Head and explore the public footpaths for red squirrels, ring ouzels and red deer.
             </p>
-            <p className="text-xs text-[var(--slate)]/90 mb-1">Mardale Head car park: what3words weary.intrigued.published · Free entry · No toilets</p>
+            <p className="text-xs text-[var(--slate)] mb-1">Mardale Head car park: what3words weary.intrigued.published · Free entry · No toilets</p>
             <a href="https://www.rspb.org.uk/days-out/reserves/haweswater" target="_blank" rel="noopener noreferrer" className="text-xs text-[var(--lichen)] font-medium hover:underline block">RSPB Haweswater page →</a>
           </div>
 
@@ -136,7 +136,7 @@ export default function BirdwatchingGuidePage() {
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               Near Silverdale, just south of the Lakes. The largest reedbed in northwest England. Bitterns, marsh harriers, bearded tits, otters. Excellent hides. Café on site. Worth a full day.
             </p>
-            <p className="text-xs text-[var(--slate)]/90">Postcode: LA5 0SW · RSPB members free · Café</p>
+            <p className="text-xs text-[var(--slate)]">Postcode: LA5 0SW · RSPB members free · Café</p>
           </div>
 
           <div className="card-hover rounded-xl border border-[var(--fog)] bg-white p-5">
@@ -144,7 +144,7 @@ export default function BirdwatchingGuidePage() {
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               Red squirrels, red deer, woodland birds. Forestry England managed. Good for Treecreeper, Coal Tit, Crossbill in irruption years. The forest drives and trails are well signposted. Go early for squirrels.
             </p>
-            <p className="text-xs text-[var(--slate)]/90">Postcode: LA22 0QJ · Parking charge · Visitor centre</p>
+            <p className="text-xs text-[var(--slate)]">Postcode: LA22 0QJ · Parking charge · Visitor centre</p>
           </div>
 
           <div className="card-hover rounded-xl border border-[var(--fog)] bg-white p-5">
@@ -152,7 +152,7 @@ export default function BirdwatchingGuidePage() {
             <p className="text-sm text-[var(--slate)] leading-relaxed mb-2">
               Red grouse, ring ouzel, wheatear, golden plover. Walk any of the higher fells in spring and summer and you&apos;ll encounter them. Martindale in October for the red deer rut. Dawn or dusk for the best chance of seeing stags.
             </p>
-            <p className="text-xs text-[var(--slate)]/90">No fixed postcode · Check weather · Bring layers</p>
+            <p className="text-xs text-[var(--slate)]">No fixed postcode · Check weather · Bring layers</p>
           </div>
         </div>
 

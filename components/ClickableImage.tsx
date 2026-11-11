@@ -90,7 +90,7 @@ export function ClickableImage({ src, alt, className, caption, fill, priority, s
             />
 
             {(caption ?? alt) && (
-              <p className="text-xs text-white/50 mt-3 text-center max-w-2xl leading-relaxed">
+              <p className="text-xs text-white/75 mt-3 text-center max-w-2xl leading-relaxed">
                 {caption ?? alt}
               </p>
             )}

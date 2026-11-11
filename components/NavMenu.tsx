@@ -38,6 +38,14 @@ const nav = [
 export function NavMenu() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!openMenu) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpenMenu(null); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [openMenu]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -62,16 +70,34 @@ export function NavMenu() {
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1" aria-label="Main">
-          {nav.map((item) =>
+          {nav.map((item, index) =>
             item.children ? (
-              <div key={item.label} className="relative group">
-                <span tabIndex={0} aria-haspopup="true" className="flex items-center gap-1 whitespace-nowrap px-3 py-2 rounded-md text-sm font-medium text-[var(--slate)] hover:bg-[var(--fog)] hover:text-[var(--fell)] cursor-default transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--lichen)]">
+              <div
+                key={item.label}
+                className="relative group"
+                onMouseLeave={() => setOpenMenu((m) => (m === item.label ? null : m))}
+                onBlur={(e) => {
+                  if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOpenMenu((m) => (m === item.label ? null : m));
+                }}
+              >
+                <button
+                  type="button"
+                  aria-expanded={openMenu === item.label}
+                  aria-controls={`menu-${index}`}
+                  onClick={() => setOpenMenu((m) => (m === item.label ? null : item.label))}
+                  className="flex items-center gap-1 whitespace-nowrap px-3 py-2 rounded-md text-sm font-medium text-[var(--slate)] hover:bg-[var(--fog)] hover:text-[var(--fell)] transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--lichen)]"
+                >
                   {item.label}
                   <svg className="w-3.5 h-3.5 opacity-50 group-hover:opacity-80 transition" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
-                </span>
-                <div className="absolute top-full left-0 pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-150">
+                </button>
+                <div
+                  id={`menu-${index}`}
+                  className={`absolute top-full ${index === nav.length - 1 ? "right-0" : "left-0"} pt-1 transition-all duration-150 ${
+                    openMenu === item.label ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                  }`}
+                >
                   <div className="bg-white border border-[var(--fog)] rounded-xl shadow-lg py-1.5 min-w-[230px]">
                     {item.children.map((child) =>
                       child.href.startsWith("http") ? (
@@ -126,7 +152,7 @@ export function NavMenu() {
           onClick={() => setMobileOpen((o) => !o)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
-          aria-controls="mobile-menu"
+          aria-controls={mobileOpen ? "mobile-menu" : undefined}
         >
           {mobileOpen ? (
             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -163,7 +189,7 @@ export function NavMenu() {
                           target="_blank"
                           rel="noopener"
                           onClick={() => setMobileOpen(false)}
-                          className="block px-3 py-2 rounded-md text-sm text-[var(--slate)]/80 hover:bg-[var(--fog)] hover:text-[var(--fell)] transition"
+                          className="block px-3 py-2 rounded-md text-sm text-[var(--slate)] hover:bg-[var(--fog)] hover:text-[var(--fell)] transition"
                         >
                           {child.label} ↗
                         </a>
@@ -172,7 +198,7 @@ export function NavMenu() {
                         key={child.href}
                         href={child.href}
                         onClick={() => setMobileOpen(false)}
-                        className="block px-3 py-2 rounded-md text-sm text-[var(--slate)]/80 hover:bg-[var(--fog)] hover:text-[var(--fell)] transition"
+                        className="block px-3 py-2 rounded-md text-sm text-[var(--slate)] hover:bg-[var(--fog)] hover:text-[var(--fell)] transition"
                       >
                         {child.label}
                       </Link>

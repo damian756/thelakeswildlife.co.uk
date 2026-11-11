@@ -170,7 +170,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
       {/* Search */}
       <div className="relative mb-5">
         <svg
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--slate)]/90"
+          className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--slate)]"
           fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
@@ -180,7 +180,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
           placeholder={`Search ${species.length} ${category}...`}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-[var(--fog)] bg-white text-sm text-[var(--slate)] placeholder:text-[var(--slate)]/90 focus:outline-none focus:border-[var(--lichen)] focus:ring-1 focus:ring-[var(--lichen)]"
+          className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-[var(--fog)] bg-white text-sm text-[var(--slate)] placeholder:text-[var(--slate)] focus:outline-none focus:border-[var(--lichen)] focus:ring-1 focus:ring-[var(--lichen)]"
         />
       </div>
 
@@ -253,7 +253,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
 
       {/* Results count + arrange by */}
       <div className="flex items-center justify-between gap-4 mb-5">
-        <p className="text-sm text-[var(--slate)]/90">
+        <p className="text-sm text-[var(--slate)]">
           {hasActiveFilter ? (
             <>
               Showing <strong className="text-[var(--slate)]">{filtered.length}</strong> of {species.length} species
@@ -269,7 +269,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
 
         {/* Arrange by */}
         <div className="flex items-center gap-2 flex-shrink-0">
-          <label htmlFor="sort-select" className="text-xs text-[var(--slate)]/90 hidden sm:block whitespace-nowrap">
+          <label htmlFor="sort-select" className="text-xs text-[var(--slate)] hidden sm:block whitespace-nowrap">
             Arrange by
           </label>
           <select
@@ -290,7 +290,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
       {/* Grid or grouped sections */}
       {filtered.length === 0 ? (
         <div className="py-16 text-center">
-          <p className="text-[var(--slate)]/90 text-sm">No species match your filters.</p>
+          <p className="text-[var(--slate)] text-sm">No species match your filters.</p>
           <button onClick={clearAll} className="mt-3 text-sm text-[var(--lichen)] hover:underline font-medium">
             Clear filters
           </button>
@@ -306,7 +306,7 @@ export function SpeciesListClient({ category, species }: SpeciesListClientProps)
                 <h2 className="text-lg font-bold text-[var(--fell)] mb-4 flex items-center gap-2 border-b border-[var(--fog)] pb-2">
                   <span>{cfg.icon}</span>
                   <span>{cfg.label}</span>
-                  <span className="text-sm font-normal text-[var(--slate)]/90 ml-1">({groupSpecies.length} species)</span>
+                  <span className="text-sm font-normal text-[var(--slate)] ml-1">({groupSpecies.length} species)</span>
                 </h2>
                 <SpeciesGrid category={category} species={groupSpecies} />
               </section>
@@ -343,18 +343,18 @@ function SpeciesGrid({ category, species }: { category: SpeciesCategory; species
                     </span>
                   )}
                 </div>
-                <span className="text-xs italic text-[var(--slate)]/90 block mb-2">{s.scientificName}</span>
+                <span className="text-xs italic text-[var(--slate)] block mb-2">{s.scientificName}</span>
                 {s.habitat && s.habitat.length > 0 && (
                   <div className="flex flex-wrap gap-1 mb-2">
                     {s.habitat.slice(0, 2).map((h) => (
-                      <span key={h} className="text-[10px] bg-[var(--fog)] text-[var(--slate)]/90 px-1.5 py-0.5 rounded">
+                      <span key={h} className="text-[10px] bg-[var(--fog)] text-[var(--slate)] px-1.5 py-0.5 rounded">
                         {h}
                       </span>
                     ))}
                   </div>
                 )}
                 {s.seasonalPresence && (
-                  <span className="text-xs text-[var(--slate)]/90 leading-snug block">
+                  <span className="text-xs text-[var(--slate)] leading-snug block">
                     {s.seasonalPresence.split(".")[0]}
                   </span>
                 )}

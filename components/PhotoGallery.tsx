@@ -119,7 +119,7 @@ export function PhotoGallery({ photos }: Props) {
             />
 
             {(active.caption ?? active.alt) && (
-              <p className="text-xs text-white/50 mt-3 text-center max-w-2xl leading-relaxed">
+              <p className="text-xs text-white/75 mt-3 text-center max-w-2xl leading-relaxed">
                 {active.caption ?? active.alt}
               </p>
             )}

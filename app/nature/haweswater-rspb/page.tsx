@@ -88,7 +88,7 @@ export default function HaweswaterPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
         <div className="relative w-full max-w-3xl mx-auto px-4 pb-12 pt-32">
-          <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-4">
+          <nav className="flex items-center gap-1.5 text-xs text-white/80 mb-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
             <span>/</span>
             <Link href="/nature" className="hover:text-white transition">Nature</Link>
@@ -114,7 +114,7 @@ export default function HaweswaterPage() {
               <div key={label} className="bg-black/40 backdrop-blur rounded-xl px-3 py-2.5 border border-white/20">
                 <div className="flex items-center gap-1.5 mb-0.5">
                   <Icon className="w-3 h-3 text-[var(--copper)]" />
-                  <p className="text-white/50 text-[10px] uppercase tracking-wider">{label}</p>
+                  <p className="text-white/80 text-[10px] uppercase tracking-wider">{label}</p>
                 </div>
                 <p className="font-display text-sm font-bold text-white">{stat}</p>
               </div>
@@ -157,7 +157,7 @@ export default function HaweswaterPage() {
               ["Best for", "Red squirrels, ring ouzels, pied flycatchers"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-3 border-b border-[var(--slate)]/10 pb-1.5">
-                <dt className="shrink-0 text-[var(--slate)]/90">{k}</dt>
+                <dt className="shrink-0 text-[var(--slate)]">{k}</dt>
                 <dd className="font-medium text-right text-[var(--fell)]">{v}</dd>
               </div>
             ))}
@@ -325,7 +325,7 @@ export default function HaweswaterPage() {
                   {q}
                   <span className="text-[var(--copper)] text-lg group-open:rotate-45 transition-transform flex-shrink-0 ml-4">+</span>
                 </summary>
-                <p className="mt-3 text-sm text-[var(--slate)]/80 leading-relaxed">{a}</p>
+                <p className="mt-3 text-sm text-[var(--slate)] leading-relaxed">{a}</p>
               </details>
             ))}
           </div>
