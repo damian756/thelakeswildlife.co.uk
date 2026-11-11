@@ -61,7 +61,7 @@ export interface Species {
   /** Wikipedia article title for image fetching e.g. "Pink-footed goose" */
   wikipediaTitle?: string;
 
-  /** Local image path served from /public, e.g. "/images/species/birds/pink-footed-goose.jpg" */
+  /** Local image path served from /public, e.g. "/images/species/birds/osprey.jpg" */
   localImage?: string;
 
   /** Sub-group within a category e.g. "mammal" | "reptile" | "amphibian" */
